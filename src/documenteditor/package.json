@@ -1,0 +1,54 @@
+{
+	"name": "@syncfusion/ej2-react-documenteditor",
+	"version": "16.3.27",
+	"description": "Feature-rich document editor control with built-in support for context menu, options pane and dialogs. for React",
+	"author": "Syncfusion Inc.",
+	"license": "SEE LICENSE IN license",
+	"keywords": [
+		"ej2",
+		"web-components",
+		"syncfusion",
+		"Javascript",
+		"TypeScript",
+		"js",
+		"documenteditor",
+		"document-editor",
+		"word-editor",
+		"react",
+		"react-documenteditor",
+		"ej2-react-documenteditor"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/syncfusion/ej2-react-documenteditor.git"
+	},
+	"main": "./dist/ej2-react-documenteditor.umd.min.js",
+	"module": "./index.js",
+	"es2015": "dist/es6/ej2-react-documenteditor.es2015.js",
+	"readme": "ReadMe.md",
+	"dependencies": {
+		"@syncfusion/ej2-base": "*",
+		"@syncfusion/ej2-react-base": "*",
+		"@syncfusion/ej2-documenteditor": "*"
+	},
+	"devDependencies": {
+		"awesome-typescript-loader": "^3.1.3",
+		"source-map-loader": "^0.2.1",
+		"@types/chai": "^3.4.28",
+		"@types/es6-promise": "0.0.28",
+		"@types/jasmine": "^2.2.29",
+		"@types/jasmine-ajax": "^3.1.27",
+		"@types/react": "^15.0.24",
+		"@types/react-dom": "^15.5.0",
+		"@types/requirejs": "^2.1.26",
+		"es6-promise": "^3.2.1",
+		"gulp": "^3.9.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-typescript": "^3.1.6",
+		"requirejs": "^2.3.3",
+		"typescript": "2.3.4"
+	},
+	"scripts": {
+		"build": "gulp build"
+	}
+}

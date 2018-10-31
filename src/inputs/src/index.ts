@@ -1,0 +1,7 @@
+export * from './textbox';
+export * from './numerictextbox';
+export * from './maskedtextbox';
+export * from './slider';
+export * from './uploader';
+export * from './color-picker';
+export * from '@syncfusion/ej2-inputs';
