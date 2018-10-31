@@ -1,6 +1,6 @@
 # Syncfusion React UI Components Library (Essential JS 2)
 
-Syncfusion React is a modern React UI Components library that has been built from the ground up to be lightweight, responsive, modular and touch friendly.
+Syncfusion React UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 50+ UI components that every applications will ever need.
 
 > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
 >
