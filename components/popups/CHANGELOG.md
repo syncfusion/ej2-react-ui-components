@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 16.3.32 (2018-11-15)
+
+### Dialog
+
+#### Bug Fixes
+
+- Resolved the issue with max-height in dialog.
+
+## 16.3.29 (2018-10-31)
+
 ### Dialog
 
 #### New Features

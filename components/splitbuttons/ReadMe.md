@@ -1,6 +1,6 @@
 # ej2-react-splitbuttons
 
-A package of Essential JS 2 DropDownButton, SplitButton, ProgressButton and ButtonGroup components.
+A package of Syncfusion React UI Components (Essential JS 2) DropDownButton, SplitButton, ProgressButton and ButtonGroup.
 
 ![SplitButton](https://ej2.syncfusion.com/products/images/splitbutton/readme.gif)
 
@@ -21,91 +21,91 @@ npm install @syncfusion/ej2-react-splitbuttons
 Following list of components are available in the package.
 
 * DropDownButton - `DropDownButton` is used to toggle contextual overlays for displaying list of action items.
-    * [Getting Started](https://ej2.syncfusion.com/react/documentation/drop-down-button/getting-started.html?utm_source=npm&utm_campaign=drop-down-button)
+    * [Getting Started](https://ej2.syncfusion.com/react/documentation/drop-down-button/getting-started?utm_source=npm&utm_campaign=drop-down-button)
     * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=drop-down-button#/material/button/drop-down-button)
-    * [Product Page](https://www.syncfusion.com/products/react/dropdown-button)
+    * [Product Page](https://www.syncfusion.com/react-ui-components/dropdown-menu)
 
 * SplitButton - `SplitButton` has primary and secondary button. Primary button is used to select default action and secondary button is used to toggle contextual overlays for displaying list of action items.
-    * [Getting Started](https://ej2.syncfusion.com/react/documentation/split-button/getting-started.html?utm_source=npm&utm_campaign=split-button)
+    * [Getting Started](https://ej2.syncfusion.com/react/documentation/split-button/getting-started?utm_source=npm&utm_campaign=split-button)
     * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=split-button#/material/button/split-button)
-    * [Product Page](https://www.syncfusion.com/products/react/split-button)
+    * [Product Page](https://www.syncfusion.com/react-ui-components/split-button)
 
 * ProgressButton - `ProgressButton` visualizes the progression of an operation to indicate the user that a process is happening in the background with visual representation.
-    * [Getting Started](https://ej2.syncfusion.com/react/documentation/progress-button/getting-started.html?utm_source=npm&utm_campaign=progress-button)
+    * [Getting Started](https://ej2.syncfusion.com/react/documentation/progress-button/getting-started?utm_source=npm&utm_campaign=progress-button)
     * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=progress-button#/material/button/progress-button)
-    * [Product Page](https://www.syncfusion.com/products/react/progress-button)
+    * [Product Page](https://www.syncfusion.com/react-ui-components/progress-button)
 
 * ButtonGroup - `ButtonGroup` is a graphical user interface that groups series of buttons horizontally or vertically.
-    * [Getting Started](https://ej2.syncfusion.com/react/documentation/button-group/getting-started.html?utm_source=npm&utm_campaign=button-group)
-    * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=grid#/material/button/button-group)
-    * [Product Page](https://www.syncfusion.com/products/react/button-group)
+    * [Getting Started](https://ej2.syncfusion.com/react/documentation/button-group/getting-started?utm_source=npm&utm_campaign=button-group)
+    * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=button-group#/material/button/button-group)
+    * [Product Page](https://www.syncfusion.com/react-ui-components/button-group)
 
 ## Supported Frameworks
 
 These components are available in following list of frameworks.
 
-1. [Angular](https://github.com/syncfusion/ej2-ng-splitbuttons?utm_source=npm&utm_campaign=splitbutton)
-2. [VueJS](https://github.com/syncfusion/ej2-vue-splitbuttons?utm_source=npm&utm_campaign=splitbutton)
-3. [ASP.NET Core](https://www.syncfusion.com/products/aspnetcore)
-4. [ASP.NET MVC](https://www.syncfusion.com/products/aspnetmvc)
-5. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript)
+1. [Angular](https://github.com/syncfusion/ej2-angular-ui-components/tree/master/components/splitbuttons?utm_source=npm&utm_campaign=split-button)
+2. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components/tree/master/components/splitbuttons?utm_source=npm&utm_campaign=split-button)
+3. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls)
+4. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls)
+5. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls)
 
 ## Key Features
 
 ### DropDownButton
 
-* [**Icons and Navigations**](https://ej2.syncfusion.com/react/documentation/drop-down-button/popup-items.html#icons) - Supports text and icon on the DropDownButton and Popup items. URL can be given to Popup items  that creates the anchor link to navigate to the URL provided.
+* [**Icons and Navigations**](https://ej2.syncfusion.com/react/documentation/drop-down-button/popup-items#icons) - Supports text and icon on the DropDownButton and Popup items. URL can be given to Popup items  that creates the anchor link to navigate to the URL provided.
 
-* [**Separator**](https://ej2.syncfusion.com/react/documentation/drop-down-button/popup-items.html#separator) - Supports Popup items grouping by using the Separator.
+* [**Separator**](https://ej2.syncfusion.com/react/documentation/drop-down-button/popup-items#separator) - Supports Popup items grouping by using the Separator.
 
-* [**Accessibility**](https://ej2.syncfusion.com/react/documentation/drop-down-button/accessibility.html#accessibility) - Provided with built-in accessibility support that helps to access all the DropDownButton component features through the keyboard, screen readers, or other assistive technology devices.
+* [**Accessibility**](https://ej2.syncfusion.com/react/documentation/drop-down-button/accessibility#accessibility) - Provided with built-in accessibility support that helps to access all the DropDownButton component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### SplitButton
 
-* [**Icons and Navigations**](https://ej2.syncfusion.com/react/documentation/split-button/icons-and-separator.html#splitbutton-icons) - Supports text and icon on the SplitButton and Popup items. URL can be given to Popup items  that creates the anchor link to navigate to the URL provided.
+* [**Icons and Navigations**](https://ej2.syncfusion.com/react/documentation/split-button/icons-and-separator#splitbutton-icons) - Supports text and icon on the SplitButton and Popup items. URL can be given to Popup items  that creates the anchor link to navigate to the URL provided.
 
-* [**Separator**](https://ej2.syncfusion.com/react/documentation/split-button/icons-and-separator.html#separator) - Supports Popup items grouping by using the Separator.
+* [**Separator**](https://ej2.syncfusion.com/react/documentation/split-button/icons-and-separator#separator) - Supports Popup items grouping by using the Separator.
 
-* [**Accessibility**](https://ej2.syncfusion.com/react/documentation/split-button/accessibility.html#accessibility) - Provided with built-in accessibility support that helps to access all the SplitButton component features through the keyboard, screen readers, or other assistive technology devices.
+* [**Accessibility**](https://ej2.syncfusion.com/react/documentation/split-button/accessibility#accessibility) - Provided with built-in accessibility support that helps to access all the SplitButton component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### ProgressButton
 
 * **Types, Sizes, and Styles** - Provided with different types, sizes and predefined styles of progress button.
 
-* **Icons and Spinner** - Supports icon, spinner and its positioning.
+* [**Icons and Spinner**](https://ej2.syncfusion.com/react/documentation/progress-button/spinner-and-progress#spinner) - Supports icon, spinner and its positioning.
 
-* **Animation** - Provided with predefined animation and progress indicator.
+* [**Animation**](https://ej2.syncfusion.com/react/documentation/progress-button/spinner-and-progress#content-animation) - Provided with predefined animation and progress indicator.
 
-* **Events** - Supports event triggering at specified interval.
+* [**Events**](https://ej2.syncfusion.com/react/documentation/progress-button/spinner-and-progress#change-step-of-the-progressbutton) - Supports event triggering at specified interval.
 
-* **Accessibility** - Provided with built-in accessibility support that helps to access all the ProgressButton component features through the keyboard, screen readers, or other assistive technology devices.
+* [**Accessibility**](https://ej2.syncfusion.com/react/documentation/progress-button/accessibility#accessibility) - Provided with built-in accessibility support that helps to access all the ProgressButton component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### ButtonGroup
 
-* [**Types, Sizes, and Styles**](https://ej2.syncfusion.com/react/documentation/button-group/types-and-styles.html#buttongroup-types) - Provided with different types, sizes and predefined styles of button.
+* [**Types, Sizes, and Styles**](https://ej2.syncfusion.com/react/documentation/button-group/types-and-styles#buttongroup-types) - Provided with different types, sizes and predefined styles of button.
 
-* [**Selection**](https://ej2.syncfusion.com/react/documentation/button-group/selection-and-nesting.html#selection) - Supports single and multiple selection behaviors.
+* [**Selection**](https://ej2.syncfusion.com/react/documentation/button-group/selection-and-nesting#selection) - Supports single and multiple selection behaviors.
 
-* [**Orientation**](https://ej2.syncfusion.com/react/documentation/button-group/getting-started.html#orientation) - Supports horizontal and vertical orientations.
+* [**Orientation**](https://ej2.syncfusion.com/react/documentation/button-group/getting-started#orientation) - Supports horizontal and vertical orientations.
 
-* [**Nesting**](https://ej2.syncfusion.com/react/documentation/button-group/selection-and-nesting.html#nesting) - Supports nesting with drop-down and split button components.
+* [**Nesting**](https://ej2.syncfusion.com/react/documentation/button-group/selection-and-nesting#nesting) - Supports nesting with drop-down and split button components.
 
-* [**Accessibility**](https://ej2.syncfusion.com/react/documentation/button-group/accessibility.html#accessibility) - Built-in accessibility features to access all the button group using the keyboard, screen readers, or other assistive technology devices.
+* [**Accessibility**](https://ej2.syncfusion.com/react/documentation/button-group/accessibility#accessibility) - Built-in accessibility features to access all the button group using the keyboard, screen readers, or other assistive technology devices.
 
 ## Support
 
 Product support is available for through following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=splitbutton) support system or [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_campaign=splitbutton).
-* New [GitHub issue](https://github.com/syncfusion/ej2-react-splitbuttons/issues/new).
-* Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_campaign=splitbutton) with tag `syncfusion`, `ej2`.
+* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=split-button) support system or [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_campaign=split-button).
+* New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new).
+* Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_campaign=split-button) with tag `syncfusion`, `ej2`.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_campaign=splitbutton).
+Check the license detail [here](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_campaign=split-button).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-react-splitbuttons/blob/master/CHANGELOG.md?utm_source=npm&utm_campaign=splitbutton)
+Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/splitbuttons/CHANGELOG.md?utm_source=npm&utm_campaign=split-button)
 
 © Copyright 2018 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

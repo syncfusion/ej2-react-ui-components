@@ -28,7 +28,6 @@ export class DropDownButtonComponent extends DropDownButton {
 
     constructor(props: any) {
         super(props);
-        this.state = props;
     }
 
     public render(): any {

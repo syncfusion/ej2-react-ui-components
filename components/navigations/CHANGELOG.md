@@ -2,30 +2,7 @@
 
 ## [Unreleased]
 
-### TreeView
-
-#### New Features
-
-- Provided an option to prevent the tree node from auto checking when checked state of the parent or child tree node is modified.
-- Provided support to use hierarchical data as remote data source of the TreeView component by using offline mode of data manager plugin.
-
-## 16.3.27 (2018-10-23)
-
-### Menu
-
-#### Bug Fixes
-
-- Destroy method issue while using multiple menu is fixed.
-
-## 16.3.25 (2018-10-15)
-
-### Menu
-
-#### Bug Fixes
-
-- Issue with sub menu positioning fixed.
-
-## 16.3.23 (2018-10-03)
+## 16.3.32 (2018-11-15)
 
 ### Sidebar
 
@@ -38,14 +15,6 @@
 #### Bug Fixes
 
 - The issue with tab selection after remove other tabs has been fixed.
-
-## 16.3.21 (2018-09-22)
-
-### TreeView
-
-#### Bug Fixes
-
-- The `nodeData` argument in `nodeSelected` event showing wrong value issue has been fixed.
 
 ## 16.3.17 (2018-09-12)
 
@@ -62,17 +31,6 @@ Menu is a graphical user interface that serves as navigation header for your app
 - **Template and Multilevel Nesting** - Supports template and multilevel nesting in Menu.
 
 - **Accessibility** - Provided with built-in accessibility support that helps to access all the Menu component features through the keyboard, screen readers, or other assistive technology devices.
-
-### TreeView
-
-#### New Features
-
-- Provided an option to get updated data source of tree view after drag and drop, editing, deleting, and adding nodes in tree view.
-- Support to get custom data from tree view.
-- Support to maintain expanded nodes of tree view on page reloads.
-- Provided an option to get all the checked nodes if the tree node is expanded or collapsed.
-- Provided 'none' option in 'expandOn' property to prevent expand or collapse of tree node
-- Provided an option to prevent the parent node from expanding, while adding a node to the tree view control.
 
 ## 16.2.49 (2018-08-21)
 

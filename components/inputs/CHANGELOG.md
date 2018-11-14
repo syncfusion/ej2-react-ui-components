@@ -2,17 +2,7 @@
 
 ## [Unreleased]
 
-### MaskedTextBox
-
-#### Bug Fixes
-
-- Issue with using the space as "promptChar" in Masked TextBox has been fixed.
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- Issue with triggering unwanted “focusout” and “change” events has been fixed.
+## 16.3.32 (2018-11-15)
 
 ### Uploader
 
@@ -20,45 +10,23 @@
 
 - Resolved the issue with triggering selected event on cancel the file selection.
 
-## 16.3.27 (2018-10-23)
-
-### TextBox
-
-#### Bug Fixes
-
-- The issue with updating `value` property on model binding has been fixed.
-
-## 16.3.25 (2018-10-15)
-
 ### TextBox
 
 #### Bug Fixes
 
 - The issue with adding multiple classes in `cssClass` property has been fixed.
 
-### MaskedTextBox
+### FormValidator
 
 #### Bug Fixes
 
-- Issue with entering the first character in masked text box when "floatLabelType" is set to "Never" has been fixed.
-
-- Always last MaskedTextBox component get focus on initial page load in IE browser, issue has been fixed.
-
-## 16.3.24 (2018-10-09)
+- Form validator for number contain email domain name issue has been fixed.
 
 ### MaskedTextBox
 
 #### Bug Fixes
 
 - Issue with setting placeholder in IE browser when "floatLabelType" is set to "never" has been fixed.
-
-## 16.3.22 (2018-09-25)
-
-### FormValidator
-
-#### Bug Fixes
-
-- Form validator for number contain email domain name issue has been fixed.
 
 ### NumericTextBox
 

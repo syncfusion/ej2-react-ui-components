@@ -28,6 +28,7 @@ export class NumericTextBoxComponent extends NumericTextBox {
 
     constructor(props: any) {
         super(props);
+        this.state = props;
     }
 
     public render(): any {

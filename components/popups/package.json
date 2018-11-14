@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-popups",
-	"version": "16.3.25",
+	"version": "16.3.30",
 	"description": "A package of Essential JS 2 popup components such as Dialog and Tooltip that is used to display information or messages in separate pop-ups. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -44,7 +44,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-react-popups.git"
+		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
 	},
 	"main": "./dist/ej2-react-popups.umd.min.js",
 	"module": "./index.js",

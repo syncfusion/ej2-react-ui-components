@@ -28,7 +28,6 @@ export class ProgressButtonComponent extends ProgressButton {
 
     constructor(props: any) {
         super(props);
-        this.state = props;
     }
 
     public render(): any {

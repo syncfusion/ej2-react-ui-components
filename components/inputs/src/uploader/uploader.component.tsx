@@ -31,6 +31,7 @@ export class UploaderComponent extends Uploader {
 
     constructor(props: any) {
         super(props);
+        this.state = props;
     }
 
     public render(): any {

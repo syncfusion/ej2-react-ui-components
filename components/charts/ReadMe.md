@@ -20,24 +20,24 @@ Following list of components are available in the package
 *	Chart - Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball. 
       *	[Getting Started](https://ej2.syncfusion.com/react/documentation/chart/)
       *	[View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/chart/line)
-      *	[Product Page](https://www.syncfusion.com/products/react/chart)
+      *	[Product Page](https://www.syncfusion.com/react-ui-components/charts/)
 *	Accumulation Chart - Built-in support for Pie, Doughnut, Pyramid and funnel series type, to show the proportions and percentages between the categories.
       *	[Getting Started](https://ej2.syncfusion.com/react/documentation/accumulation-chart/getting-started.html)
       *	[View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/chart/default-pie)
-      *	[Product Page](https://www.syncfusion.com/products/react/chart)
+      *	[Product Page](https://www.syncfusion.com/react-ui-components/charts/)
 *	Range Navigator - Interface for selecting a small range from a large collection. It is commonly used in financial dashboards to filter a date range for data that needs to be visualized. 
       *	[Getting Started](https://ej2.syncfusion.com/react/documentation/rangenavigator/getting-started.html)
       *	[View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/rangenavigator/default)
-      *	[Product Page](https://www.syncfusion.com/products/react/rangenavigator)
+      *	[Product Page](https://www.syncfusion.com/react-ui-components/range-selector/)
 
 ## Supported frameworks
  `Chart` components are available in following list of  
   
-  1. [Angular](https://github.com/syncfusion/ej2-ng-charts/?utm_source=npm&utm_campaign=chart)
-  2. [Vue.js](https://github.com/syncfusion/ej2-vue-charts?utm_source=npm&utm_campaign=chart)
+  1. [Angular](https://github.com/syncfusion/ej2-angular-ui-components/?utm_source=npm&utm_campaign=chart)
+  2. [Vue.js](https://github.com/syncfusion/ej2-vue-ui-components/?utm_source=npm&utm_campaign=chart)
   3. [ASP.NET Core](https://aspdotnetcore.syncfusion.com/Chart/Line#/material)
   4. [ASP.NET MVC](https://aspnetmvc.syncfusion.com/Chart/Line#/material)
-  5. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript/chart)
+  5. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/charts/)
 
 ## Key Features
 
@@ -83,15 +83,15 @@ Following list of components are available in the package
    Product support is available for through following mediums.
 
    * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=chart) support system or [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_campaign=chart).
-   * New [GitHub issue](https://github.com/syncfusion/ej2-react-charts/issues/new).
+   * New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new).
    * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`. 
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2/blob/master/license)
+Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license)
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-react-charts/blob/master/CHANGELOG.md)
+Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/charts/CHANGELOG.md)
 
 © Copyright 2018 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

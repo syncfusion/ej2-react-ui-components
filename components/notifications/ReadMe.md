@@ -39,11 +39,12 @@ The toast is a small container, in which user can show a single or multiple info
 
 `Notification` component is also offered in following list of frameworks.
 
-1. [Angular](https://www.npmjs.com/package/@syncfusion/ej2-ng-notifications?utm_source=npm&utm_campaign=notification)
-2. [VueJS](https://www.npmjs.com/package/@syncfusion/ej2-vue-notifications?utm_source=npm&utm_campaign=notification)
-3. [ASP.NET Core](https://www.syncfusion.com/products/aspnetcore/badge)
-4. [ASP.NET MVC](https://www.syncfusion.com/products/aspnetmvc/badge)
-5. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript/badge)
+1. [JavaScript](https://github.com/syncfusion/ej2-javascript-ui-controls)
+2. [Angular](https://github.com/syncfusion/ej2-angular-ui-components)
+3. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components)
+4. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls)
+5. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls)
+6. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls)
 
 ## Key Features
 

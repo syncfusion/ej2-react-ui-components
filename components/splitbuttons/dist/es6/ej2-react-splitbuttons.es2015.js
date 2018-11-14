@@ -13,7 +13,6 @@ class DropDownButtonComponent extends DropDownButton {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.state = props;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -38,7 +37,6 @@ class SplitButtonComponent extends SplitButton {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.state = props;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -63,7 +61,6 @@ class ProgressButtonComponent extends ProgressButton {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.state = props;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

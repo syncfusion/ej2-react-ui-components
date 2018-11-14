@@ -72,12 +72,12 @@ Following list of components are available in the package
 
 `Navigation` component is also offered in following list of frameworks.
 
-1. [JavaScript](https://www.npmjs.com/package/@syncfusion/ej2-navigations?utm_source=npm&utm_campaign=navigation)
-2. [Angular](https://www.npmjs.com/package/@syncfusion/ej2-ng-navigations?utm_source=npm&utm_campaign=navigation)
-3. [VueJS](https://www.npmjs.com/package/@syncfusion/ej2-vue-navigations?utm_source=npm&utm_campaign=navigation)
-4. [ASP.NET Core](https://www.syncfusion.com/products/aspnetcore/accordion)
-5. [ASP.NET MVC](https://www.syncfusion.com/products/aspnetmvc/accordion)
-6. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript/accordion)
+1. [JavaScript](https://github.com/syncfusion/ej2-javascript-ui-controls)
+2. [Angular](https://github.com/syncfusion/ej2-angular-ui-components)
+3. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components)
+4. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls)
+5. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls)
+6. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls)
 
 ## Use-case samples / Showcase samples
 

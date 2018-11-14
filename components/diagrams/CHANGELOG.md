@@ -2,6 +2,77 @@
 
 ## [Unreleased]
 
+## 16.3.29 (2018-10-31)
+
+### Diagram
+
+#### Bug Fixes
+
+- Node position is not updated properly in expand and collapse feature is now fixed.
+- Diagram getting overflow when use a flex layout UI 100% width/height is now working properly.
+
+## 16.3.27 (2018-10-23)
+
+### Diagram
+
+#### Bug Fixes
+
+- Improper positioning of group offset in initial rendering is working properly.
+
+## 16.3.25 (2018-10-15)
+
+### Diagram
+
+#### Bug Fixes
+
+- Connector annotation not hide on Expand and Collapse is now working properly.
+- Gridlines not disables dynamically is now working properly.
+
+## 16.3.17 (2018-09-12)
+
+### Diagram
+
+#### Bug Fixes
+
+- Data binding for Native and HTML nodes is now working properly.
+- Issue with apply gradient for BPMN shapes has been fixed.
+- Issue with drop event argument has been fixed.
+- The image node is now rendered properly in the symbol palette.
+
+#### New Features
+
+- Annotation can be moved, rotated, and resized interactively.
+- Group node can be added into the symbol palette.
+- Poly line connector tool support has been added.
+- Text annotation can be associated with BPMN nodes interactively.
+
+## 16.2.47 (2018-08-07)
+
+### Diagram
+
+#### Bug Fixes
+
+- Issue on applying gradient for BPMN shapes have fixed.
+- Issue on rendering diagram in IE browser have been fixed.
+- Issue on template binding for HTML and Native node have been fixed.
+
+## 16.2.46 (2018-07-30)
+
+### Diagram
+
+#### Bug Fixes
+
+- Issue on Drag event arguments have been resolved.
+- Issue on changing the background image at run time has been fixed.
+
+## 16.2.45 (2018-07-17)
+
+### Diagram
+
+#### Bug Fixes
+
+- Issue on click event arguments have been resolved.
+
 ## 16.2.41 (2018-06-25)
 
 ### Diagram

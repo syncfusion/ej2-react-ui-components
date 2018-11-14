@@ -13,6 +13,7 @@ class ListViewComponent extends ListView {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
+        this.state = props;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

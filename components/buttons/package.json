@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-buttons",
-	"version": "16.3.25",
+	"version": "16.3.30",
 	"description": "A package of feature-rich Essential JS 2 components such as Button, CheckBox, RadioButton and Switch. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -38,7 +38,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-react-buttons.git"
+		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
 	},
 	"main": "./dist/ej2-react-buttons.umd.min.js",
 	"module": "./index.js",

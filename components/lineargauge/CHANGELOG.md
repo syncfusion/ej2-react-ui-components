@@ -8,6 +8,14 @@
 
 ## [Unreleased]
 
+## 16.3.32 (2018-11-15)
+
+### LinearGauge
+
+#### Bug Fixes
+
+- Linear gauge is rendering properly now, even if the id is not specified for the div element.
+
 ## 16.3.17 (2018-09-12)
 
 ### LinearGauge

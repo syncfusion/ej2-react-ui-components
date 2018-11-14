@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-documenteditor",
-	"version": "16.3.27",
+	"version": "16.3.30",
 	"description": "Feature-rich document editor control with built-in support for context menu, options pane and dialogs. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -20,7 +20,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-react-documenteditor.git"
+		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
 	},
 	"main": "./dist/ej2-react-documenteditor.umd.min.js",
 	"module": "./index.js",

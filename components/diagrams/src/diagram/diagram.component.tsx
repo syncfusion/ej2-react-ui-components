@@ -29,7 +29,6 @@ export class DiagramComponent extends Diagram {
 
     constructor(props: any) {
         super(props);
-        this.state = props;
     }
 
     public render(): any {

@@ -18,7 +18,7 @@ npm install @syncfusion/ej2-lineargauge
 
 * [Getting Started](https://ej2.syncfusion.com/react/documentation/linear-gauge/getting-started.html)
 * [View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/lineargauge/default)
-* [Product Page](https://www.syncfusion.com/products/react/lineargauge)
+* [Product Page](https://www.syncfusion.com/react-ui-components/gauge-charts)
 
 ## Supported Frameworks
 
@@ -29,7 +29,7 @@ Linear gauge component is also offered in following list of frameworks.
 3. [Vue.js](https://www.npmjs.com/package/@syncfusion/ej2-vue-lineargauge?utm_source=npm&utm_campaign=lineargauge)
 4. [ASP.NET Core](https://aspdotnetcore.syncfusion.com/LinearGauge/Default#/material)
 5. [ASP.NET MVC](https://aspnetmvc.syncfusion.com/LinearGauge/DefaultFunctionalities#/material) 
-6. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript/lineargauge)
+6. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/gauge-charts)
 
 ## Use case samples
 

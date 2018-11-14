@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-calendars",
-	"version": "16.3.29",
+	"version": "16.3.30",
 	"description": "A complete package of date or time components with built-in features such as date formatting, inline editing, multiple (range) selection, range restriction, month and year selection, strict mode, and globalization. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -47,7 +47,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-react-calendars.git"
+		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
 	},
 	"main": "./dist/ej2-react-calendars.umd.min.js",
 	"module": "./index.js",

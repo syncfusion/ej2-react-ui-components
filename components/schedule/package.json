@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-schedule",
-	"version": "16.3.24",
+	"version": "16.3.31",
 	"description": "Flexible scheduling library with more built-in features and enhanced customization options similar to outlook and google calendar, allowing the users to plan and manage their appointments with efficient data-binding support. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -28,7 +28,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-react-schedule.git"
+		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
 	},
 	"main": "./dist/ej2-react-schedule.umd.min.js",
 	"module": "./index.js",

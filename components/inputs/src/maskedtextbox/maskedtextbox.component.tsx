@@ -31,6 +31,7 @@ export class MaskedTextBoxComponent extends MaskedTextBox {
 
     constructor(props: any) {
         super(props);
+        this.state = props;
     }
 
     public render(): any {
