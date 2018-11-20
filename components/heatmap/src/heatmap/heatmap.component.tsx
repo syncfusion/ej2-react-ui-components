@@ -28,7 +28,6 @@ export class HeatMapComponent extends HeatMap {
 
     constructor(props: any) {
         super(props);
-        this.state = props;
     }
 
     public render(): any {

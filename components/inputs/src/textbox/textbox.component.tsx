@@ -28,7 +28,6 @@ export class TextBoxComponent extends TextBox {
 
     constructor(props: any) {
         super(props);
-        this.state = props;
     }
 
     public render(): any {

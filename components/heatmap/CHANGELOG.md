@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 16.3.27 (2018-10-23)
+
+### HeatMap
+
+#### Bug Fixes
+
+- Axis labels tooltip cropping issue has been fixed
+- Issue with heatmap margin with minimum axis label size has been fixed.
+
+## 16.3.24 (2018-10-09)
+
+### HeatMap
+
+#### Bug Fixes
+
+- Issue with rendering heatmap with smaller dimensions has been fixed.
+
 ## 16.3.21 (2018-09-22)
 
 ### HeatMap

@@ -82,8 +82,9 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                 if (propkey === 'className') {
                     this.element.classList.remove(this.props[propkey]);
                     this.element.classList.add(dProps[propkey]);
+                } else if (propkey !=='disabled') {
+                    delete dProps[propkey];
                 }
-                delete dProps[propkey]
             }
         }
         if (dProps['children']) {

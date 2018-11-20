@@ -31,7 +31,6 @@ export class SliderComponent extends Slider {
 
     constructor(props: any) {
         super(props);
-        this.state = props;
     }
 
     public render(): any {

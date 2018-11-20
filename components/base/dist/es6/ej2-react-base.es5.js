@@ -74,7 +74,9 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
                     this.element.classList.remove(this.props[propkey]);
                     this.element.classList.add(dProps[propkey]);
                 }
-                delete dProps[propkey];
+                else if (propkey !== 'disabled') {
+                    delete dProps[propkey];
+                }
             }
         }
         if (dProps['children']) {

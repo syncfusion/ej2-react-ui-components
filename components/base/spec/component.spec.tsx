@@ -14,13 +14,13 @@ class DummyInject {
     }
 }
 
-class Sample extends React.PureComponent<{ content?: string ,name?:string}, { content?: string ,name?:string}>{
+class Sample extends React.PureComponent<{ content?: string ,name?:string,disabled?:boolean}, { content?: string ,name?:string,disabled?:boolean}>{
     constructor(props: any) {
         super(props);
-        this.state = { content: 'initial' ,name:'snm'};
+        this.state = { content: 'initial' ,name:'snm',disabled:false};
     }
     public changeState(): void {
-        this.setState({name:'ff'});
+        this.setState({name:'ff',disabled:true});
     }
     public duplicateUpdte(): void {
         this.setState({content: new Date().toDateString()})
@@ -29,7 +29,7 @@ class Sample extends React.PureComponent<{ content?: string ,name?:string}, { co
         return <div>
             <button onClick={this.duplicateUpdte.bind(this)} id="dup-state">DuplicateUpdate</button>
             <button onClick={this.changeState.bind(this)} id="change-state">ChangeState</button>
-            <ReactStyler1 ref='ReactStyler1' className={this.state.name} content={this.state.content}><FieldsDirective><FieldDirective name={this.state.content} status='processed'>
+            <ReactStyler1 ref='ReactStyler1' id="snm" className={this.state.name} disabled={this.state.disabled} content={this.state.content}><FieldsDirective><FieldDirective name={this.state.content} status='processed'>
             <InnerFieldsDirective>
                 <InnerFieldDirective name='snm' status='processed'></InnerFieldDirective>
                 <InnerFieldDirective name='snm1' status='processed1'></InnerFieldDirective>

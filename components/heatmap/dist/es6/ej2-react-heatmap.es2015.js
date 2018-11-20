@@ -13,7 +13,6 @@ class HeatMapComponent extends HeatMap {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.state = props;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

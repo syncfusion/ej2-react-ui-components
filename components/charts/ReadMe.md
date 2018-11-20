@@ -33,8 +33,8 @@ Following list of components are available in the package
 ## Supported frameworks
  `Chart` components are available in following list of  
   
-  1. [Angular](https://github.com/syncfusion/ej2-angular-ui-components/?utm_source=npm&utm_campaign=chart)
-  2. [Vue.js](https://github.com/syncfusion/ej2-vue-ui-components/?utm_source=npm&utm_campaign=chart)
+  1. [Angular](https://github.com/syncfusion/ej2-angular-ui-components/tree/master/components/charts?utm_source=npm&utm_campaign=chart)
+  2. [Vue.js](https://github.com/syncfusion/ej2-vue-ui-components/tree/master/components/charts?utm_source=npm&utm_campaign=chart)
   3. [ASP.NET Core](https://aspdotnetcore.syncfusion.com/Chart/Line#/material)
   4. [ASP.NET MVC](https://aspnetmvc.syncfusion.com/Chart/Line#/material)
   5. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/charts/)

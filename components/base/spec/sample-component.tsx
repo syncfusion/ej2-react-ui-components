@@ -12,6 +12,7 @@ export interface StylerModel {
     enableRtl?: boolean;
     locale?: string;
     created?: Function;
+    disabled?: boolean;
     destroyed?: Function;
     content?: string;
     template?: string | Function;
@@ -40,6 +41,8 @@ export class Styler extends Component<HTMLElement> implements INotifyPropertyCha
     public settings: { color: string, size: number };
     @Property()
     public template:string;
+     @Property()
+    public disbled:boolean;
     @Property([])
     public items: string[];
     @Property()

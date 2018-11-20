@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 16.3.33 (2018-11-15)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed the `disabled` property value not included in the component model.
+
 ## 16.3.31 (2018-11-07)
 
 ### Common

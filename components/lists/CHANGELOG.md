@@ -2,7 +2,49 @@
 
 ## [Unreleased]
 
-## 16.3.32 (2018-11-15)
+## 16.3.33 (2018-11-15)
+
+### ListView
+
+#### Bug Fixes
+
+- Fixed focus out event not triggered properly while interact `ListView` with keyboard navigation keys.
+
+## 16.3.30 (2018-11-01)
+
+### ListView
+
+#### New Features
+
+- Included `refreshItemHeight` public API to recalculate list item height in `UI Virtualization`.
+
+## 16.3.27 (2018-10-23)
+
+### ListView
+
+#### Bug Fixes
+
+- Fixed issue with `imageUrl` property while using with `template` rendering.
+
+## 16.3.25 (2018-10-15)
+
+### ListView
+
+#### Bug Fixes
+
+- Fixed remove selection of list items with `undefined` input using `selectItem` public method.
+
+- Fixed custom `cssClass` not removed properly while using `destroy` public method.
+
+## 16.3.23 (2018-10-03)
+
+### ListView
+
+#### Bug Fixes
+
+- Fixed issue with typings while using custom fields in removeItem
+
+## 16.3.22 (2018-09-25)
 
 ### ListView
 
