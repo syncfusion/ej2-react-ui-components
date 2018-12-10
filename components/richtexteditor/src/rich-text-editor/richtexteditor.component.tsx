@@ -37,7 +37,7 @@ export class RichTextEditorComponent extends RichTextEditor {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('textarea', this.getDefaultAttributes(), this.props.children);
+            return React.createElement('div', this.getDefaultAttributes(), this.props.children);
         }
 
     }

@@ -28,7 +28,6 @@ export class PivotViewComponent extends PivotView {
 
     constructor(props: any) {
         super(props);
-        this.state = props;
     }
 
     public render(): any {

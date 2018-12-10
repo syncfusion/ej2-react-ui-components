@@ -22,9 +22,9 @@ Following list of components are available in the package
 * Accordion - Vertically collapsible content panel that displays one or more panels at a time within the available space.
 
   * [Getting Started](https://ej2.syncfusion.com/react/documentation/accordion/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=accordion)
-  * [API References](https://ej2.syncfusion.com/react/documentation/api/accordion?utm_source=npm&utm_campaign=accordion)
+  * [API References](https://ej2.syncfusion.com/react/documentation/accordion/api-accordion.html?utm_source=npm&utm_campaign=accordion)
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=accordion#/material/accordion/default.html)
-  * [Product Page](https://www.syncfusion.com/react-ui-components/accordion)
+  * [Product Page](https://www.syncfusion.com/products/react/accordion)
 
 * ContextMenu - Graphical user interface that appears on the user right click/touch hold action. It has the support to provide nested level menu items.
 
@@ -35,31 +35,31 @@ Following list of components are available in the package
 
 * Sidebar - Expandable and collapsible component that typically acts as a side container to place primary or secondary content alongside the main content.
 
-  * [Getting started](https://ej2.syncfusion.com/react/documentation/sidebar/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=sidebar)
+  * [Getting started](https://ej2.syncfusion.com/react/documentation/sidebar/getting-started?lang=typescript&utm_source=npm&utm_campaign=sidebar#getting-started)
   * [API references](https://ej2.syncfusion.com/react/documentation/api/sidebar?utm_source=npm&utm_campaign=sidebar)
-  * [View online demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=sidebar#/material/sidebar/default)
-  * [Product page](https://www.syncfusion.com/react-ui-components/sidebar?utm_source=npm&utm_campaign=ej2-react-navigations)
+  * [View online demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=tab#/material/sidebar/default.html)
+  * [Product page](https://www.syncfusion.com/products/react-ui-components/sidebar)
 
 * Tab - Content panel to show multiple contents in a specific space, one at a time.
 
   * [Getting Started](https://ej2.syncfusion.com/react/documentation/tab/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=tab)
-  * [API References](https://ej2.syncfusion.com/react/documentation/api/tab?utm_source=npm&utm_campaign=tab)
+  * [API References](https://ej2.syncfusion.com/react/documentation/tab/api-tab.html?utm_source=npm&utm_campaign=tab)
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=tab#/material/tab/default.html)
-  * [Product Page](https://www.syncfusion.com/react-ui-components/tabs)
+  * [Product Page](https://www.syncfusion.com/products/react/tab)
 
 * Toolbar - Displays a group of command buttons arranged horizontally.
 
   * [Getting Started](https://ej2.syncfusion.com/react/documentation/toolbar/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=toolbar)
-  * [API References](https://ej2.syncfusion.com/react/documentation/api/toolbar?utm_source=npm&utm_campaign=toolbar)
+  * [API References](https://ej2.syncfusion.com/react/documentation/toolbar/api-toolbar.html?utm_source=npm&utm_campaign=toolbar)
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=toolbar#/material/toolbar/default.html)
-  * [Product Page](https://www.syncfusion.com/react-ui-components/toolbar)
+  * [Product Page](https://www.syncfusion.com/products/react/toolbar)
 
 * TreeView - Represent hierarchical data in a tree like structure with advanced functions to edit, drag and drop, select with CheckBox and more.
 
   * [Getting Started](https://ej2.syncfusion.com/react/documentation/treeview/getting-started.html?utm_source=npm&utm_campaign=treeview)
-  * [API References](https://ej2.syncfusion.com/react/documentation/api/treeview?utm_source=npm&utm_campaign=treeview)
+  * [API References](https://ej2.syncfusion.com/react/documentation/treeview/api.html?utm_source=npm&utm_campaign=treeview)
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=treeview#/material/treeview/default)
-  * [Product Page](https://www.syncfusion.com/react-ui-components/treeview)
+  * [Product Page](https://www.syncfusion.com/products/react/treeview)
 
 * Menu - Graphical user interface that serves as navigation header for your application or site. It has the support to provide nested level menu items that can be populated from a data source such as an array of JavaScript objects.
 
@@ -78,6 +78,13 @@ Following list of components are available in the package
 4. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/accordion)
 5. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/accordion)
 6. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/accordion)
+
+## Use-case samples / Showcase samples
+
+Sidebar component is used in the following samples.
+
+* Expanse tracker ([Source](https://github.com/syncfusion/ej2-sample-ts-expensetracker), [Live Demo](https://ej2.syncfusion.com/showcase/typescript/expensetracker/?utm_source=npm&utm_campaign=sidebar#/dashboard))
+* Web mail ([Source](https://github.com/syncfusion/ej2-sample-ts-webmail), [Live Demo](https://ej2.syncfusion.com/showcase/typescript/webmail/?utm_source=npm&utm_campaign=sidebar))
 
 ## Key Features
 

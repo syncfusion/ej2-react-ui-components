@@ -28,7 +28,6 @@ export class PivotFieldListComponent extends PivotFieldList {
 
     constructor(props: any) {
         super(props);
-        this.state = props;
     }
 
     public render(): any {

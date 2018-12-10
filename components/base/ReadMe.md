@@ -2,7 +2,7 @@
 
 # ej2-react-base
 
-A common package of Syncfusion React UI Components which contains base libraries, methods and class definitions.
+A common package of Essential JS 2 for React which contains base libraries, methods and class definitions.
 
 > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
 > 
@@ -18,9 +18,9 @@ npm install @syncfusion/ej2-react-base
 
 ## Resources
 
-* [Getting Started](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start?utm_source=npm&utm_campaign=ej2-react-base)
+* [Getting Started](https://ej2.syncfusion.com/react/documentation/base/getting-started.html?utm_source=npm&utm_campaign=ej2-react-base)
 * [View Online Demos](https://ej2.syncfusion.com/react/demos?utm_source=npm&utm_campaign=ej2-react-base)
-* [Product Page](https://www.syncfusion.com/react-ui-components?utm_source=npm&utm_campaign=ej2-react-base)
+* [Product Page](https://www.syncfusion.com/products/react?utm_source=npm&utm_campaign=ej2-react-base)
 
 ## Framework highlights
 
@@ -56,11 +56,11 @@ With our commitment to at least four major updates per year, you receive the mos
 
 The Essential JS 2 is also offered in following list of frameworks.
 
-* [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-react-base)
-* [Angular](https://www.syncfusion.com/angular-ui-components?utm_source=npm&utm_campaign=ej2-react-base)
-* [Vue.js](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-react-base)
-* [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_campaign=ej2-react-base)
-* [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_campaign=ej2-react-base)
+* [JavaScript](https://www.syncfusion.com/products/javascript?utm_source=npm&utm_campaign=ej2-react-base)
+* [Angular](https://www.syncfusion.com/products/angular?utm_source=npm&utm_campaign=ej2-react-base)
+* [Vue.js](https://www.syncfusion.com/products/vue?utm_source=npm&utm_campaign=ej2-react-base)
+* [ASP.NET Core](https://www.syncfusion.com/products/aspnetcore?utm_source=npm&utm_campaign=ej2-react-base)
+* [ASP.NET MVC](https://www.syncfusion.com/products/aspnetmvc?utm_source=npm&utm_campaign=ej2-react-base)
 
 ## Support
 
@@ -72,7 +72,7 @@ Product support is available for through following mediums.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license).
+Check the license detail [here](https://github.com/syncfusion/ej2-react-base/blob/master/license).
 
 ## Changelog
 

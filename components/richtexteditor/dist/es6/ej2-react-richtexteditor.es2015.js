@@ -20,7 +20,7 @@ class RichTextEditorComponent extends RichTextEditor {
             this.initRenderCalled = true;
         }
         else {
-            return createElement('textarea', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), this.props.children);
         }
     }
 }

@@ -1,6 +1,6 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 import { PureComponent, createElement } from 'react';
-import { AccumulationChart, Chart, RangeNavigator, Smithchart, Sparkline } from '@syncfusion/ej2-charts';
+import { AccumulationChart, Chart, RangeNavigator, Smithchart, Sparkline, StockChart } from '@syncfusion/ej2-charts';
 
 /**
  * `SeriesDirective` directive represent a series of the react chart.
@@ -453,7 +453,211 @@ class SmithchartComponent extends Smithchart {
 }
 applyMixins(SmithchartComponent, [ComponentBase, PureComponent]);
 
-export { SeriesDirective, SeriesCollectionDirective, TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, AxisDirective, AxesDirective, StripLineDirective, StripLinesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, CategoryDirective, CategoriesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent };
+/**
+ * `SeriesDirective` directive represent a series of the react chart.
+ * It must be contained in a Chart component(`ChartComponent`).
+ * ```tsx
+ * <StockChartComponent>
+ * <StockChartSeriesCollectionDirective>
+ * <StockChartSeriesDirective></SeriesDirective>
+ * </StockChartSeriesCollectionDirective>
+ * </StockChartComponent>
+ * ```
+ */
+class StockChartSeriesDirective extends ComplexBase {
+}
+StockChartSeriesDirective.moduleName = 'stockChartSeries';
+class StockChartSeriesCollectionDirective extends ComplexBase {
+}
+StockChartSeriesCollectionDirective.propertyName = 'series';
+StockChartSeriesCollectionDirective.moduleName = 'stockChartSeriesCollection';
+
+/**
+ * `TrendlineDirective` directive represent a trendline of the react chart.
+ * It must be contained in a Chart component(`ChartComponent`).
+ * ```tsx
+ * <StockChartComponent>
+ * <StockChartSeriesCollectionDirective>
+ * <StockSeriesDirective>
+ * <TrendlinesDirective>
+ * <TrendlineDirective></TrendlineDirective>
+ * </TrendlinesDirective>
+ * </StockChartSeriesDirective>
+ * </StockChartSeriesCollectionDirective>
+ * </StockChartComponent>
+ * ```
+ */
+class StockChartTrendlineDirective extends ComplexBase {
+}
+StockChartTrendlineDirective.moduleName = 'stockChartTrendline';
+class StockChartTrendlinesDirective extends ComplexBase {
+}
+StockChartTrendlinesDirective.propertyName = 'trendlines';
+StockChartTrendlinesDirective.moduleName = 'stockChartTrendlines';
+
+/**
+ * `Axis` directive represent a axis row of the react Chart.
+ * It must be contained in a Chart component(`ChartComponent`).
+ * ```tsx
+ * <StockChartComponent>
+ * <StockChartAxesDirective>
+ * <StockChartAxisDirective></StockChartAxisDirective>
+ * </StockChartAxesDirective>
+ * </StockChartComponent>
+ * ```
+ */
+class StockChartAxisDirective extends ComplexBase {
+}
+StockChartAxisDirective.moduleName = 'stockChartAxis';
+class StockChartAxesDirective extends ComplexBase {
+}
+StockChartAxesDirective.propertyName = 'axes';
+StockChartAxesDirective.moduleName = 'stockChartAxes';
+
+/**
+ * `StriplineDirective` directive represent a stripline of the react chart.
+ * It must be contained in a Chart component(`ChartComponent`).
+ * ```tsx
+ * <StockChartComponent>
+ * <StockChartAxesDirective>
+ * <StockchartAxisDirective>
+ * <StriplinesDirective>
+ * <StriplineDirective></StriplineDirective>
+ * </StriplinesDirective>
+ * </StockChartAxisDirective>
+ * </StockChartAxesDirective>
+ * </StockChartComponent>
+ * ```
+ */
+class StockChartStripLineDirective extends ComplexBase {
+}
+StockChartStripLineDirective.moduleName = 'stockChartStripLine';
+class StockChartStripLinesDirective extends ComplexBase {
+}
+StockChartStripLinesDirective.propertyName = 'stripLines';
+StockChartStripLinesDirective.moduleName = 'stockChartStripLines';
+
+/**
+ * `Row` directive represent a axis row of the react Chart.
+ * It must be contained in a Chart component(`ChartComponent`).
+ * ```tsx
+ * <StockChartComponent>
+ * <RowsDirective>
+ * <RowDirective></RowDirective>
+ * </RowsDirective>
+ * </ChartComponent>
+ * ```
+ */
+class StockChartRowDirective extends ComplexBase {
+}
+StockChartRowDirective.moduleName = 'stockChartRow';
+class StockChartRowsDirective extends ComplexBase {
+}
+StockChartRowsDirective.propertyName = 'rows';
+StockChartRowsDirective.moduleName = 'stockChartRows';
+
+/**
+ * `Annotation` directive represent a annotation of the react Chart.
+ * It must be contained in a Chart component(`ChartComponent`).
+ * ```tsx
+ * <StockChartComponent>
+ * <StockChartAnnotationsDirective>
+ * <StockChartAnnotationDirective></StockChartAnnotationDirective>
+ * </StockChartAnnotationsDirective>
+ * </StockChartComponent>
+ * ```
+ */
+class StockChartAnnotationDirective extends ComplexBase {
+}
+StockChartAnnotationDirective.moduleName = 'stockChartAnnotation';
+class StockChartAnnotationsDirective extends ComplexBase {
+}
+StockChartAnnotationsDirective.propertyName = 'annotations';
+StockChartAnnotationsDirective.moduleName = 'stockChartAnnotations';
+
+/**
+ * `SelectedDataIndex` directive represent the selected data in react Chart.
+ * It must be contained in a Chart component(`ChartComponent`).
+ * ```tsx
+ * <ChartComponent>
+ * <SelectedDataIndexesDirective>
+ * <SelectedDataIndexDirective></SelectedDataIndexDirective>
+ * </SelectedDataIndexesDirective>
+ * </ChartComponent>
+ * ```
+ */
+class StockChartSelectedDataIndexDirective extends ComplexBase {
+}
+StockChartSelectedDataIndexDirective.moduleName = 'stockChartSelectedDataIndex';
+class StockChartSelectedDataIndexesDirective extends ComplexBase {
+}
+StockChartSelectedDataIndexesDirective.propertyName = 'selectedDataIndexes';
+StockChartSelectedDataIndexesDirective.moduleName = 'stockChartSelectedDataIndexes';
+
+/**
+ * `IndicatorDirective` directive represent a indicator of the react chart.
+ * It must be contained in a Chart component(`ChartComponent`).
+ * ```tsx
+ * <StockChartComponent>
+ * <StockChartIndicatorsDirective>
+ * <StockChartIndicatorDirective></StockChartIndicatorDirective>
+ * </StockChartIndicatorsDirective>
+ * </StockChartComponent>
+ * ```
+ */
+class StockChartPeriodDirective extends ComplexBase {
+}
+StockChartPeriodDirective.moduleName = 'stockChartPeriod';
+class StockChartPeriodsDirective extends ComplexBase {
+}
+StockChartPeriodsDirective.propertyName = 'periods';
+StockChartPeriodsDirective.moduleName = 'stockChartPeriods';
+
+/**
+ * `IndicatorDirective` directive represent a indicator of the react chart.
+ * It must be contained in a Chart component(`ChartComponent`).
+ * ```tsx
+ * <StockChartComponent>
+ * <StockChartIndicatorsDirective>
+ * <StockChartIndicatorDirective></StockChartIndicatorDirective>
+ * </StockChartIndicatorsDirective>
+ * </StockChartComponent>
+ * ```
+ */
+class StockChartIndicatorDirective extends ComplexBase {
+}
+StockChartIndicatorDirective.moduleName = 'stockChartIndicator';
+class StockChartIndicatorsDirective extends ComplexBase {
+}
+StockChartIndicatorsDirective.propertyName = 'indicators';
+StockChartIndicatorsDirective.moduleName = 'stockChartIndicators';
+
+/**
+ * Represents react Chart Component
+ * ```tsx
+ * <StockChartComponent></StockChartComponent>
+ * ```
+ */
+class StockChartComponent extends StockChart {
+    constructor(props) {
+        super(props);
+        this.initRenderCalled = false;
+        this.checkInjectedModules = true;
+        this.directivekeys = { 'stockChartSeriesCollection': { 'stockChartSeries': { 'stockChartTrendlines': 'stockChartTrendline' } }, 'stockChartAxes': { 'stockChartAxis': { 'stockChartStripLines': 'stockChartStripLine' } }, 'stockChartRows': 'stockChartRow', 'stockChartAnnotations': 'stockChartAnnotation', 'stockChartSelectedDataIndexes': 'stockChartSelectedDataIndex', 'stockChartPeriods': 'stockChartPeriod', 'stockChartIndicators': 'stockChartIndicator' };
+    }
+    render() {
+        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+            super.render();
+            this.initRenderCalled = true;
+        }
+        else {
+            return createElement('div', this.getDefaultAttributes(), this.props.children);
+        }
+    }
+}
+applyMixins(StockChartComponent, [ComponentBase, PureComponent]);
+
+export { SeriesDirective, SeriesCollectionDirective, TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, AxisDirective, AxesDirective, StripLineDirective, StripLinesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, CategoryDirective, CategoriesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartStripLineDirective, StockChartStripLinesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent };
 export * from '@syncfusion/ej2-charts';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-charts.es2015.js.map
