@@ -16,7 +16,7 @@ export class DatePickerComponent extends DatePicker {
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
+    private checkInjectedModules: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DatePickerModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

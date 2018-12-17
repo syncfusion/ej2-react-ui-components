@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 16.4.42 (2018-12-10)
+
+### Calendar
+
+#### New Features
+
+- Added the Islamic calendar support.
+
+### DatePicker
+
+#### New Features
+
+- Added the Islamic DatePicker support.
+
+### DateTimePicker
+
+#### New Features
+
+- Added the Islamic DateTimePicker support.
+
 ## 16.4.40-beta (2018-12-10)
 
 ### DatePicker

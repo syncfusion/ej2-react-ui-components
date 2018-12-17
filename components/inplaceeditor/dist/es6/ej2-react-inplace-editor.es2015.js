@@ -29,4 +29,4 @@ applyMixins(InPlaceEditorComponent, [ComponentBase, PureComponent]);
 export { InPlaceEditorComponent };
 export * from '@syncfusion/ej2-inplace-editor';
 export { Inject } from '@syncfusion/ej2-react-base';
-//# sourceMappingURL=ej2-react-inplaceeditor.es2015.js.map
+//# sourceMappingURL=ej2-react-inplace-editor.es2015.js.map

@@ -16,7 +16,7 @@ export class CalendarComponent extends Calendar {
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
+    private checkInjectedModules: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<CalendarModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

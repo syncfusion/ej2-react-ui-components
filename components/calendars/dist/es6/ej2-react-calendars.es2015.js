@@ -12,7 +12,7 @@ class CalendarComponent extends Calendar {
     constructor(props) {
         super(props);
         this.initRenderCalled = false;
-        this.checkInjectedModules = false;
+        this.checkInjectedModules = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -36,7 +36,7 @@ class DatePickerComponent extends DatePicker {
     constructor(props) {
         super(props);
         this.initRenderCalled = false;
-        this.checkInjectedModules = false;
+        this.checkInjectedModules = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -129,7 +129,7 @@ class DateTimePickerComponent extends DateTimePicker {
     constructor(props) {
         super(props);
         this.initRenderCalled = false;
-        this.checkInjectedModules = false;
+        this.checkInjectedModules = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -145,4 +145,5 @@ applyMixins(DateTimePickerComponent, [ComponentBase, PureComponent]);
 
 export { CalendarComponent, DatePickerComponent, TimePickerComponent, PresetDirective, PresetsDirective, DateRangePickerComponent, DateTimePickerComponent };
 export * from '@syncfusion/ej2-calendars';
+export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-calendars.es2015.js.map

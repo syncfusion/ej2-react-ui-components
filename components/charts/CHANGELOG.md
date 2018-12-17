@@ -2,13 +2,22 @@
 
 ## [Unreleased]
 
+## 16.4.42 (2018-12-10)
+
+### Chart
+
+#### Breaking Changes
+
+- Export functionality has been moved into separate module. To export the chart, inject the `Export` module.
+
 ## 16.4.40-beta (2018-12-10)
 
 ### Chart
 
-#### Bug Fixes
+#### New Features
 
-- Default tooltip format for box and whisker is corrected.
+- Support for grid line animation has been provided.
+- Support has been provided to load data on-demand.
 
 ### Accumulation chart
 

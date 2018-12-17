@@ -55,9 +55,6 @@
 
 - Provided one way binding support for Axes properties in Angular platform.
 
-- Provided one way binding support for Axes properties in Angular platform.
-
-
 ## 16.1.24
 
 ### Common

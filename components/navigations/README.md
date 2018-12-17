@@ -57,9 +57,9 @@ Following list of components are available in the package
 * TreeView - Represent hierarchical data in a tree like structure with advanced functions to edit, drag and drop, select with CheckBox and more.
 
   * [Getting Started](https://ej2.syncfusion.com/react/documentation/treeview/getting-started.html?utm_source=npm&utm_campaign=treeview)
-  * [API References](https://ej2.syncfusion.com/react/documentation/treeview/api.html?utm_source=npm&utm_campaign=treeview)
+  * [API References](https://ej2.syncfusion.com/react/documentation/api/treeview?utm_source=npm&utm_campaign=treeview)
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=treeview#/material/treeview/default)
-  * [Product Page](https://www.syncfusion.com/products/react/treeview)
+  * [Product Page](https://www.syncfusion.com/react-ui-components/treeview)
 
 * Menu - Graphical user interface that serves as navigation header for your application or site. It has the support to provide nested level menu items that can be populated from a data source such as an array of JavaScript objects.
 

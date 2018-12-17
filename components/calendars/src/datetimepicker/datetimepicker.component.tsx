@@ -16,7 +16,7 @@ export class DateTimePickerComponent extends DateTimePicker {
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
+    private checkInjectedModules: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DateTimePickerModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
