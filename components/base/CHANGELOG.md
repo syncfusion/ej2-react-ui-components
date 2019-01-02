@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 16.4.45 (2018-12-24)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved the unwanted property change called on state changes issue.
+
 ## 16.2.41 (2018-06-25)
 
 ### Common

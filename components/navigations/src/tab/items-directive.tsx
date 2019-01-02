@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { TabItemModel } from '@syncfusion/ej2-navigations';
 
 export interface TabItemDirTypecast {
-    content?: string | Function;
+    content?: string | Function | any;
 }
 /**
  * `TabItemDirective` directive represent a column of the react Tab. 

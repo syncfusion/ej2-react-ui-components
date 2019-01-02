@@ -2,8 +2,8 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { AccordionItemModel } from '@syncfusion/ej2-navigations';
 
 export interface AccordionItemDirTypecast {
-    header?: string | Function;
-    content?: string | Function;
+    header?: string | Function | any;
+    content?: string | Function | any;
 }
 /**
  * `ItemDirective` directive represent a item of the react Accordion. 

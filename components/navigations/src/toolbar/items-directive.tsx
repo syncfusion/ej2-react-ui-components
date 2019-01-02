@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { ItemModel } from '@syncfusion/ej2-navigations';
 
 export interface ItemDirTypecast {
-    template?: string | Function;
+    template?: string | Function | any;
 }
 /**
  * `ItemDirective` directive represent a item of the react Toolbar. 

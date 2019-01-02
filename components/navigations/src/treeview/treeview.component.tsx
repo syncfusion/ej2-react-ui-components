@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface TreeViewTypecast {
-    nodeTemplate?: string | Function;
+    nodeTemplate?: string | Function | any;
 }
 /**
  * `TreeViewComponent` represents the react TreeView Component.
