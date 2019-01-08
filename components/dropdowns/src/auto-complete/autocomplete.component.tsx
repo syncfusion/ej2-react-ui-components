@@ -4,10 +4,10 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface AutoCompleteTypecast {
-    footerTemplate?: string | Function;
-    headerTemplate?: string | Function;
-    groupTemplate?: string | Function;
-    itemTemplate?: string | Function;
+    footerTemplate?: string | Function | any;
+    headerTemplate?: string | Function | any;
+    groupTemplate?: string | Function | any;
+    itemTemplate?: string | Function | any;
 }
 /**
  *The AutoComplete component provides the matched suggestion list when type into the input, from which the user can select one.

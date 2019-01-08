@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { AnnotationModel } from '@syncfusion/ej2-maps';
 
 export interface AnnotationDirTypecast {
-    content?: string | Function;
+    content?: string | Function | any;
 }
 /**
  * `AnnotationsDirective` directive represent a annotation of the react maps. 

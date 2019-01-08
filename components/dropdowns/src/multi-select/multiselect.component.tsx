@@ -4,10 +4,10 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface MultiSelectTypecast {
-    footerTemplate?: string | Function;
-    headerTemplate?: string | Function;
-    valueTemplate?: string | Function;
-    itemTemplate?: string | Function;
+    footerTemplate?: string | Function | any;
+    headerTemplate?: string | Function | any;
+    valueTemplate?: string | Function | any;
+    itemTemplate?: string | Function | any;
 }
 /**
 * The MultiSelect allows the user to pick a values from the predefined list of values.

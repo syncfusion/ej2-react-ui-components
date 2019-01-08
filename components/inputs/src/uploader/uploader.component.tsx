@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface UploaderTypecast {
-    template?: string | Function;
+    template?: string | Function | any;
 }
 /**
  * Represents the React Uploader Component

@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { AccumulationAnnotationSettingsModel } from '@syncfusion/ej2-charts';
 
 export interface AccumulationAnnotationSettingsDirTypecast {
-    content?: string | Function;
+    content?: string | Function | any;
 }
 /**
  * `AccumulationAnnotationsDirective` directive represent a annotation of the react AccumulationChart.

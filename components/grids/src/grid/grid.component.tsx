@@ -4,10 +4,10 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface GridTypecast {
-    rowTemplate?: string | Function;
-    detailTemplate?: string | Function;
-    toolbarTemplate?: string | Function;
-    pagerTemplate?: string | Function;
+    rowTemplate?: string | Function | any;
+    detailTemplate?: string | Function | any;
+    toolbarTemplate?: string | Function | any;
+    pagerTemplate?: string | Function | any;
 }
 /**
  * `GridComponent` represents the react Grid.

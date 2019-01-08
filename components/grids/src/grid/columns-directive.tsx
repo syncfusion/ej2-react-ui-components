@@ -2,11 +2,11 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { ColumnModel } from '@syncfusion/ej2-grids';
 
 export interface ColumnDirTypecast {
-    template?: string | Function;
-    headerTemplate?: string | Function;
-    commandsTemplate?: string | Function;
-    editTemplate?: string | Function;
-    filterTemplate?: string | Function;
+    template?: string | Function | any;
+    headerTemplate?: string | Function | any;
+    commandsTemplate?: string | Function | any;
+    editTemplate?: string | Function | any;
+    filterTemplate?: string | Function | any;
 }
 /**
  * `ColumnDirective` represent a column of the react Grid. 

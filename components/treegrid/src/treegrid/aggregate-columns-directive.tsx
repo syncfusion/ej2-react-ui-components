@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { AggregateColumnModel } from '@syncfusion/ej2-treegrid';
 
 export interface AggregateColumnDirTypecast {
-    footerTemplate?: string | Function;
+    footerTemplate?: string | Function | any;
 }
 /**
  * `AggregateColumnDirective represent a aggregate column of the react TreeGrid. 

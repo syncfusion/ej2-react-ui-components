@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface RichTextEditorTypecast {
-    valueTemplate?: string | Function;
+    valueTemplate?: string | Function | any;
 }
 /**
  * `RichTextEditor` represents the react RichTextEditor.

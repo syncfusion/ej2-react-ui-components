@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 16.4.46 (2019-01-02)
+
+### Diagram
+
+#### Bug Fixes
+
+- Performance has been improved when dragging more number of nodes and connectors.
+- Issue on applying style for connector’s annotation is now fixed.
+
 ## 16.4.44 (2018-12-24)
 
 ### Diagram

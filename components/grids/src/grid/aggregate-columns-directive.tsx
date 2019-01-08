@@ -2,9 +2,9 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { AggregateColumnModel } from '@syncfusion/ej2-grids';
 
 export interface AggregateColumnDirTypecast {
-    footerTemplate?: string | Function;
-    groupFooterTemplate?: string | Function;
-    groupCaptionTemplate?: string | Function;
+    footerTemplate?: string | Function | any;
+    groupFooterTemplate?: string | Function | any;
+    groupCaptionTemplate?: string | Function | any;
 }
 /**
  * `AggregateColumnDirective represent a aggregate column of the react Grid. 

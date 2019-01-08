@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface PagerTypecast {
-    template?: string | Function;
+    template?: string | Function | any;
 }
 /**
  * `PagerComponent` represents the react Pager.

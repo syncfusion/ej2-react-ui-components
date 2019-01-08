@@ -4,11 +4,11 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface DropDownListTypecast {
-    footerTemplate?: string | Function;
-    headerTemplate?: string | Function;
-    valueTemplate?: string | Function;
-    groupTemplate?: string | Function;
-    itemTemplate?: string | Function;
+    footerTemplate?: string | Function | any;
+    headerTemplate?: string | Function | any;
+    valueTemplate?: string | Function | any;
+    groupTemplate?: string | Function | any;
+    itemTemplate?: string | Function | any;
 }
 /**
  * The DropDownList component contains a list of predefined values, from which the user can choose a single value.

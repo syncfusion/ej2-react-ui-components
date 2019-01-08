@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { AnnotationModel } from '@syncfusion/ej2-lineargauge';
 
 export interface AnnotationDirTypecast {
-    content?: string | Function;
+    content?: string | Function | any;
 }
 /**
  * `Annotations` directive represent a annotations of the react linear gauge. 

@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { ChartAnnotationSettingsModel } from '@syncfusion/ej2-charts';
 
 export interface ChartAnnotationSettingsDirTypecast {
-    content?: string | Function;
+    content?: string | Function | any;
 }
 /**
  * `Annotation` directive represent a annotation of the react Chart. 

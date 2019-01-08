@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { MarkerSettingsModel } from '@syncfusion/ej2-maps';
 
 export interface MarkerSettingsDirTypecast {
-    template?: string | Function;
+    template?: string | Function | any;
 }
 /**
  * `MarkerSettingsDirective` directive represent a marker settings of the react maps. 

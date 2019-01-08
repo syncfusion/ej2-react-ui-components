@@ -4,10 +4,10 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface ComboBoxTypecast {
-    footerTemplate?: string | Function;
-    headerTemplate?: string | Function;
-    groupTemplate?: string | Function;
-    itemTemplate?: string | Function;
+    footerTemplate?: string | Function | any;
+    headerTemplate?: string | Function | any;
+    groupTemplate?: string | Function | any;
+    itemTemplate?: string | Function | any;
 }
 /**
  *The ComboBox component allows the user to type a value or choose an option from the list of predefined options.

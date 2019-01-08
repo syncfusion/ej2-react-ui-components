@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { PanePropertiesModel } from '@syncfusion/ej2-layouts';
 
 export interface PanePropertiesDirTypecast {
-    content?: string | Function;
+    content?: string | Function | any;
 }
 /**
  * PanesDirective` represent a panes of the react splitter. 

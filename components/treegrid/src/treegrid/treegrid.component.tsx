@@ -4,8 +4,8 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface TreeGridTypecast {
-    toolbarTemplate?: string | Function;
-    pagerTemplate?: string | Function;
+    toolbarTemplate?: string | Function | any;
+    pagerTemplate?: string | Function | any;
 }
 /**
  * `TreeTreeGridComponent` represents the react TreeTreeGrid.
