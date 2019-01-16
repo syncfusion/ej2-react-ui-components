@@ -4,10 +4,10 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface ScheduleTypecast {
-    dateHeaderTemplate?: string | Function;
-    cellTemplate?: string | Function;
-    editorTemplate?: string | Function;
-    resourceHeaderTemplate?: string | Function;
+    dateHeaderTemplate?: string | Function | any;
+    cellTemplate?: string | Function | any;
+    editorTemplate?: string | Function | any;
+    resourceHeaderTemplate?: string | Function | any;
 }
 /**
  * `ScheduleComponent` represents the react Schedule.

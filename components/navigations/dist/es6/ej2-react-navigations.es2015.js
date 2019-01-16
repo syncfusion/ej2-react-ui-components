@@ -210,6 +210,14 @@ class SidebarComponent extends Sidebar {
 }
 applyMixins(SidebarComponent, [ComponentBase, PureComponent]);
 
+class MenuItemDirective extends ComplexBase {
+}
+MenuItemDirective.moduleName = 'menuItem';
+class MenuItemsDirective extends ComplexBase {
+}
+MenuItemsDirective.propertyName = 'items';
+MenuItemsDirective.moduleName = 'menuItems';
+
 /**
  * `MenuComponent` represents the react Menu Component.
  * ```ts
@@ -221,6 +229,7 @@ class MenuComponent extends Menu {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.directivekeys = { 'menuItems': 'menuItem' };
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -234,7 +243,7 @@ class MenuComponent extends Menu {
 }
 applyMixins(MenuComponent, [ComponentBase, PureComponent]);
 
-export { AccordionItemDirective, AccordionItemsDirective, AccordionComponent, ItemDirective, ItemsDirective, ToolbarComponent, ContextMenuComponent, TabItemDirective, TabItemsDirective, TabComponent, TreeViewComponent, SidebarComponent, MenuComponent };
+export { AccordionItemDirective, AccordionItemsDirective, AccordionComponent, ItemDirective, ItemsDirective, ToolbarComponent, ContextMenuComponent, TabItemDirective, TabItemsDirective, TabComponent, TreeViewComponent, SidebarComponent, MenuItemDirective, MenuItemsDirective, MenuComponent };
 export * from '@syncfusion/ej2-navigations';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-navigations.es2015.js.map

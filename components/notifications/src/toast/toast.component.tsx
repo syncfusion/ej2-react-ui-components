@@ -4,9 +4,9 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface ToastTypecast {
-    title?: string | Function;
-    content?: string | Function;
-    template?: string | Function;
+    title?: string | Function | any;
+    content?: string | Function | any;
+    template?: string | Function | any;
 }
 /**
  * Represents the React Toast Component

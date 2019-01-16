@@ -126,3 +126,5 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 ## Changelog
 
 Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/inputs/CHANGELOG.md/?utm_source=npm&utm_campaign=input)
+
+© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

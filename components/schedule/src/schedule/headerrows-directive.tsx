@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { HeaderRowsModel } from '@syncfusion/ej2-schedule';
 
 export interface HeaderRowsDirTypecast {
-    template?: string | Function;
+    template?: string | Function | any;
 }
 /**
  * `HeaderRowsDirective` represent a header rows of the react Schedule. 

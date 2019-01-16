@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface InPlaceEditorTypecast {
-    template?: string | Function;
+    template?: string | Function | any;
 }
 /**
  * `InPlaceEditor` represents the react InPlaceEditor.

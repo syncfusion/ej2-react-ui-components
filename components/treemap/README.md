@@ -66,4 +66,4 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_campaign=treemap)
 
-© Copyright 2018 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

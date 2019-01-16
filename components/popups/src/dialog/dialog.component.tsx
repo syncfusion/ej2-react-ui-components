@@ -4,9 +4,9 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface DialogTypecast {
-    footerTemplate?: string | Function;
-    header?: string | Function;
-    content?: string | Function;
+    footerTemplate?: string | Function | any;
+    header?: string | Function | any;
+    content?: string | Function | any;
 }
 /**
  * Represents the React Dialog Component

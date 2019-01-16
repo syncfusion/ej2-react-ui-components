@@ -4,9 +4,9 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface ListViewTypecast {
-    template?: string | Function;
-    groupTemplate?: string | Function;
-    headerTemplate?: string | Function;
+    template?: string | Function | any;
+    groupTemplate?: string | Function | any;
+    headerTemplate?: string | Function | any;
 }
 /**
  * Represents ListView component for React

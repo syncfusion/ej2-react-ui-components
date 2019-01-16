@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface TooltipTypecast {
-    content?: string | Function;
+    content?: string | Function | any;
 }
 /**
  * Represents the React Tooltip component that displays a piece of information about the target element on mouse hover.

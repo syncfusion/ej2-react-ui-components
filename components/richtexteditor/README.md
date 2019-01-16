@@ -65,4 +65,4 @@ Check the license details [here](https://github.com/syncfusion/ej2/blob/master/l
 ## 8. Change log 
  Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/richtexteditor/CHANGELOG.md)
 
-© Copyright 2018 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

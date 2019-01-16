@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { LevelSettingsModel } from '@syncfusion/ej2-treemap';
 
 export interface LevelSettingsDirTypecast {
-    headerTemplate?: string | Function;
+    headerTemplate?: string | Function | any;
 }
 /**
  * `LevelsDirective` directive represent a levels of the react treemap. 

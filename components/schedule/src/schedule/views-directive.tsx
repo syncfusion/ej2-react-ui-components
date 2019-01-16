@@ -2,10 +2,10 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { ViewsModel } from '@syncfusion/ej2-schedule';
 
 export interface ViewsDirTypecast {
-    dateHeaderTemplate?: string | Function;
-    cellTemplate?: string | Function;
-    eventTemplate?: string | Function;
-    resourceHeaderTemplate?: string | Function;
+    dateHeaderTemplate?: string | Function | any;
+    cellTemplate?: string | Function | any;
+    eventTemplate?: string | Function | any;
+    resourceHeaderTemplate?: string | Function | any;
 }
 /**
  * `ViewsDirective` represent a view of the react Schedule. 
