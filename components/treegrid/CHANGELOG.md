@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 16.4.48 (2019-01-16)
+
+### TreeGrid
+
+#### Bug Fixes
+
+- `Query` maintenance support provided for `refresh` method after expanding any child rows.
+
 ## 16.4.46 (2019-01-08)
 
 ### TreeGrid
