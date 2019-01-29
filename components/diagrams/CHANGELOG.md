@@ -2,7 +2,24 @@
 
 ## [Unreleased]
 
-## 16.4.48 (2019-01-16)
+## 17.1.1-beta (2019-01-22)
+
+### Diagram
+
+#### New Features
+
+- Support to flip the node/connector in both horizontal and vertical direction has been added.
+- Support to export HTML /Native node to image format has been added.
+- Support to retain the selection for the object which is affected when performing the undo/redo operation has been added.
+- Padding between a connector’s end point and the object to which the connector gets connected is added.
+- Prevent the selection gets cleared when dragging the symbol from symbol palette and before dropping into the diagram is added.
+- Support for cancelling the drag and drop operation from symbol palette to diagram when pressing the ESC key is added.
+
+#### Bug Fixes
+
+- Exception thrown while enable zoom and pan tool dynamically is now working fine.
+
+## 16.4.48 (2019-01-22)
 
 ### Diagram
 

@@ -2,66 +2,20 @@
 
 ## [Unreleased]
 
-## 16.4.47 (2019-01-16)
-
-### CircularGauge
-
-#### Bug Fixes
-
-- Issue with annotation is not properly resolved now.
-
-## 16.4.45 (2019-01-02)
-
-### CircularGauge
-
-#### Bug Fixes
-
-- When drag the range bar pointer, the console error thrown resolved now.
-
-## 16.4.40-beta (2018-12-10)
+## 17.1.1-beta (2019-01-22)
 
 ### CircularGauge
 
 #### New Features
 
-- Support has been added to set gap between the ranges.
-- Support has been added to calculate the radius of the gauge based on the start and end angles.
-
-## 16.3.33 (2018-11-20)
-
-### CircularGauge
+- Provided rounding places support for the axis labels and tooltip text in circular gauge.
+- Provided support to display the last axis label, even if it is not in the interval value.
+- Provided event to get and set the calculated radius of the circular gauge.
+- Provided support to assign percentage values for pointer width, ranges width and axis line width.
 
 #### Bug Fixes
 
-- Issue with range bar pointer tooltip is resolved now.
-
-## 16.3.32 (2018-11-13)
-
-### CircularGauge
-
-#### Bug Fixes
-
-- Tooltip is rendering properly without flickering, while the circular gauge is rendered in small space.
-
-## 16.3.30 (2018-11-01)
-
-### CircularGauge
-
-#### New Features
-
-- Provided support to calculate the radius of the gauge, based on the start and end angles.
-
-#### Bug Fixes
-
-- The range bar pointer is rendering properly now, when the axis minimum and pointer values are same.
-
-## 16.3.17 (2018-09-12)
-
-### CircularGauge
-
-#### Breaking Changes
-
-- The circular gauge tooltip has been replaced with `EJ2 SVG Tooltip`, so now it is mandatory to include `ej2-svg-base.umd.min.js` in system.js configuration if you are using system.js module loader. Update the system.js configuration while using this version and above.
+- Pointer drag in circular gauge is working fine now in touch devices.
 
 ## 16.2.41 (2018-06-25)
 
@@ -71,7 +25,10 @@
 
 - Provided one way binding support for Axes properties in Angular platform.
 
-## 16.1.24
+- Provided one way binding support for Axes properties in Angular platform.
+
+
+## 16.1.24 (2018-02-22)
 
 ### Common
 

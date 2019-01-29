@@ -101,7 +101,7 @@ describe('test', () => {
         expect(result.getInjectedModules().length).toBe(1);
     });
     it('component doesnot have injectable', () => {
-        result = ReactDom.render(<ReactStyler1 template={{template: templateFunction}}><Inject services={[DummyInject]} /></ReactStyler1>, ele);
+        result = ReactDom.render(<ReactStyler1 template={templateFunction}><Inject services={[DummyInject]} /></ReactStyler1>, ele);
         expect(result.getInjectedModules()).toBe(undefined);
     });
     describe('Directive child processed properly ', () => {

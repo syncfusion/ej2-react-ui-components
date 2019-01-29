@@ -15,7 +15,7 @@ export interface StylerModel {
     disabled?: boolean;
     destroyed?: Function;
     content?: string;
-    template?: string | Function | any;
+    template?: string | Function;
 }
 
 export class LocalField extends ChildProperty<LocalField> {

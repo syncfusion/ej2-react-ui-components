@@ -270,13 +270,7 @@ function compile(templateElement, helper) {
         return function (data) {
             var ele = document.createElement('div');
             document.body.appendChild(ele);
-            var actTemplate = templateElement;
-            var actData = data;
-            if (typeof actTemplate === 'object') {
-                actTemplate = templateElement.template;
-                actData = extend({}, data, templateElement.data || {});
-            }
-            render(actTemplate(actData), ele);
+            render(templateElement(data), ele);
             detach(ele);
             return ele.children;
         };
