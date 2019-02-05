@@ -14,7 +14,7 @@ class DummyInject {
     }
 }
 
-class Sample extends React.PureComponent<{ content?: string ,name?:string,disabled?:boolean}, { content?: string ,name?:string,disabled?:boolean}>{
+class Sample extends React.PureComponent<{ content?: string ,name?:string,disabled?:boolean}, { content?: string ,name?:string,disabled?:boolean, dummyVal?:string}>{
     constructor(props: any) {
         super(props);
         this.state = { content: 'initial' ,name:'snm',disabled:false};
@@ -27,6 +27,7 @@ class Sample extends React.PureComponent<{ content?: string ,name?:string,disabl
     }
     public render(): any {
         return <div>
+            <ReactStyler disabled={false}></ReactStyler>
             <button onClick={this.duplicateUpdte.bind(this)} id="dup-state">DuplicateUpdate</button>
             <button onClick={this.changeState.bind(this)} id="change-state">ChangeState</button>
             <ReactStyler1 ref='ReactStyler1' id="snm" className={this.state.name} disabled={this.state.disabled} content={this.state.content}><FieldsDirective><FieldDirective name={this.state.content} status='processed'>
@@ -101,7 +102,13 @@ describe('test', () => {
         expect(result.getInjectedModules().length).toBe(1);
     });
     it('component doesnot have injectable', () => {
-        result = ReactDom.render(<ReactStyler1 template={templateFunction}><Inject services={[DummyInject]} /></ReactStyler1>, ele);
+        result = ReactDom.render(<ReactStyler1
+             template={{template:templateFunction,data:{}}}><Inject services={[DummyInject]} /></ReactStyler1>, ele);
+        expect(result.getInjectedModules()).toBe(undefined);
+    });
+    it('component doesnot have injectable with empty data', () => {
+        result = ReactDom.render(<ReactStyler1
+             template={{template:templateFunction}}><Inject services={[DummyInject]} /></ReactStyler1>, ele);
         expect(result.getInjectedModules()).toBe(undefined);
     });
     describe('Directive child processed properly ', () => {
@@ -142,8 +149,7 @@ describe('test', () => {
        setTimeout( ()=>{
         expect(result.val[0].innerHTML).toBe('access');
         done();
-       },10)
-      
+       },10);
     });
     describe('PropertyChange', () => {
         beforeEach((done: Function) => {

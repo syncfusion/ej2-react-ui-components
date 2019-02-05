@@ -1,6 +1,6 @@
 import { Children, PureComponent } from 'react';
 import { findDOMNode, render } from 'react-dom';
-import { detach, extend, getTemplateEngine, setTemplateEngine } from '@syncfusion/ej2-base';
+import { detach, extend, getTemplateEngine, isNullOrUndefined, setTemplateEngine } from '@syncfusion/ej2-base';
 
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -66,11 +66,16 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         var keys = Object.keys(nextProps);
         for (var _i = 0, keys_1 = keys; _i < keys_1.length; _i++) {
             var propkey = keys_1[_i];
+            var isClassName = propkey === 'className';
+            if (!isClassName && !isNullOrUndefined(this.htmlattributes[propkey]) &&
+                this.htmlattributes[propkey] !== dProps[propkey]) {
+                this.htmlattributes[propkey] = dProps[propkey];
+            }
             if (this.props[propkey] === nextProps[propkey]) {
                 delete dProps[propkey];
             }
             else if (this.attrKeys.indexOf(propkey) !== -1) {
-                if (propkey === 'className') {
+                if (isClassName) {
                     this.element.classList.remove(this.props[propkey]);
                     this.element.classList.add(dProps[propkey]);
                 }
@@ -89,6 +94,9 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     };
     ComponentBase.prototype.getDefaultAttributes = function () {
         return this.htmlattributes;
+    };
+    ComponentBase.prototype.compareObjects = function (oldProps, newProps) {
+        return JSON.stringify(oldProps) === JSON.stringify(newProps);
     };
     ComponentBase.prototype.refreshChild = function (silent, props) {
         if (this.checkInjectedModules) {
@@ -110,6 +118,21 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
                         var fields = _b[_a];
                         delete directiveValue[fields];
                     }
+                }
+                if (this.prevProperties) {
+                    var dKeys = Object.keys(this.prevProperties);
+                    for (var i = 0; i < dKeys.length; i++) {
+                        var key = dKeys[i];
+                        if (this.compareObjects(this.prevProperties[key], directiveValue[key])) {
+                            delete directiveValue[key];
+                        }
+                        else {
+                            this.prevProperties = extend(this.prevProperties, directiveValue);
+                        }
+                    }
+                }
+                else {
+                    this.prevProperties = extend({}, directiveValue, {}, true);
                 }
                 this.setProperties(directiveValue, silent);
             }
@@ -169,7 +192,11 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
                     ret.push(extend({}, prop, {}, true));
                 }
                 else {
-                    ret.push(this.validateChildren(extend({}, prop), matcher[key], prop) || prop);
+                    var cachedValue = this.validateChildren(extend({}, prop), matcher[key], prop) || prop;
+                    if (cachedValue['children']) {
+                        delete cachedValue['children'];
+                    }
+                    ret.push(cachedValue);
                 }
             }
         }
@@ -270,7 +297,13 @@ function compile(templateElement, helper) {
         return function (data) {
             var ele = document.createElement('div');
             document.body.appendChild(ele);
-            render(templateElement(data), ele);
+            var actTemplate = templateElement;
+            var actData = data;
+            if (typeof actTemplate === 'object') {
+                actTemplate = templateElement.template;
+                actData = extend({}, data, templateElement.data || {});
+            }
+            render(actTemplate(actData), ele);
             detach(ele);
             return ele.children;
         };

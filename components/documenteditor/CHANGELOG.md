@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 17.1.1-beta (2019-01-22)
-
-### Document Editor
-
-#### Bug Fixes
-
-- Document default format is now serialized properly.
-
-## 16.4.48 (2019-01-22)
+## 16.4.52 (2019-02-05)
 
 ### Document Editor
 

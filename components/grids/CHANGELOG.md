@@ -2,7 +2,97 @@
 
 ## [Unreleased]
 
-## 17.1.1-beta (2019-01-22)
+## 16.4.52 (2019-02-05)
+
+### Grid
+
+#### Bug Fixes
+
+- `selectCell` event throws script error when two grid refresh requests are made simultaneously is fixed.
+- Promise is not resolved while perform CRUD operation with Observables is fixed.
+- Validation message misplaced in dialog editing when we render the new row at bottom issue is fixed.
+- Argument is not returned well in `rowDragStart` Event is resolved.
+- Column chooser dialog not getting hidden while click outside of the Grid is fixed.
+- Selecting cell using arrow keys with frozen column and cell selection is `misfocused` issue is fixed.
+- Provide property change handling for `selectedRowIndex` is resolved.
+- Edit dialog does not destroyed after perform add operation with custom binding is resolved.
+- Server requests sent twice when column is not defined in the grid is resolved.
+- custom attribute is missing in stacked header issue is fixed.
+- Column `allowEditing` false is working for `datepicker` edit when it is specified as primary key column is resolved.
+- `allowEditing` property is not working in identity column is resolved.
+- Provided support to `addparams` for filtering.
+- Misalignment occurs when `footer aggreagate` in grid and also while editing is resolved.
+- Script error thrown when reorder header template column in grid using angular is fixed.
+- `RemoteSaveAdaptor` returns empty row while perform adding in Grid is resolved.
+- Filtering the localized date column throws script error is fixed.
+- Provided support for dynamic property change handling for `selectedRowIndex`.
+- Filtering after grouping any column focuses out of the `filterbar` is resolved.
+- `Deselecting` event is not triggered after double clicking a particular row and select different row is resolved.
+- Column data `stringify` is not working properly when persistence enabled is resolved.
+
+#### New Features
+
+- `Toggle` option for Selected Row is provided.
+- Property change handling for `SelectedRowIndex` is provided.
+- Support to add `params` for `filtering` is added.
+- Support to perform searching only based on the visible columns in Grid is provided.
+- `Reorder` position support for target field is provided.
+- Send the culture file name as parameter to excel export function is added.
+
+## 16.4.48 (2019-01-22)
+
+### Grid
+
+#### Bug Fixes
+
+- Argument is not returned well in `rowDragStart` Event is resolved.
+- Column chooser dialog not getting hidden while click outside of the Grid is fixed.
+- Selecting cell using arrow keys with frozen column and cell selection is `misfocused` issue is fixed.
+
+## 16.4.47 (2019-01-16)
+
+### Grid
+
+#### Bug Fixes
+
+- Provide property change handling for `selectedRowIndex` is resolved.
+
+## 16.4.46 (2019-01-08)
+
+### Grid
+
+#### Bug Fixes
+
+- Edit dialog does not destroyed after perform add operation with custom binding is resolved.
+
+## 16.4.45 (2019-01-02)
+
+### Grid
+
+#### Bug Fixes
+
+- Server requests sent twice when column is not defined in the grid is resolved.
+- custom attribute is missing in stacked header issue is fixed.
+- Column `allowEditing` false is working for `datepicker` edit when it is specified as primary key column is resolved.
+- `allowEditing` property is not working in identity column is resolved.
+- Provided support to `addparams` for filtering.
+
+## 16.4.44 (2018-12-24)
+
+### Grid
+
+#### Bug Fixes
+
+- Misalignment occurs when `footer aggreagate` in grid and also while editing is resolved.
+- Script error thrown when reorder header template column in grid using angular is fixed.
+- `RemoteSaveAdaptor` returns empty row while perform adding in Grid is resolved.
+- Filtering the localized date column throws script error is fixed.
+- Provided support for dynamic property change handling for `selectedRowIndex`.
+- Filtering after grouping any column focuses out of the `filterbar` is resolved.
+- `Deselecting` event is not triggered after double clicking a particular row and select different row is resolved.
+- Column data `stringify` is not working properly when persistence enabled is resolved.
+
+## 16.4.42 (2018-12-14)
 
 ### Grid
 
@@ -35,9 +125,6 @@
 - support for `paste option` to Grid from `Excelsheet/Grid` is provided.
 - `Excel-Like Auto Filling` support is added.
 
-- Filter template support added.
-- Edit template support added.
-
 ## 16.4.40-beta (2018-12-10)
 
 ### Grid
@@ -65,6 +152,11 @@ Interface changed for `PdfExportProperties`
 | **theme.caption** | borders.color | border.color |
 | | borders.lineStyle | border.dashStyle |
 
+
+#### New Features
+
+- Filter template support added.
+- Edit template support added.
 
 ## 16.3.33 (2018-11-20)
 

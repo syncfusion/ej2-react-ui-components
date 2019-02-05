@@ -13,19 +13,21 @@ export function applyMixins(derivedClass: any, baseClass: any[]): void {
 }
  // tslint:enable:typedef
 
-
+ type MouseEventHandler<T = Element> = React.EventHandler<React.MouseEvent<T>>;
+ type FocusEventHandler<T = Element> = React.EventHandler<React.FocusEvent<T>>;
 export interface DefaultHtmlAttributes {
     alt?: string;
     className?: string;
     disabled?: boolean;
     form?: string;
     id?: string;
+    name?: string;
     readOnly?: boolean;
     style?: React.CSSProperties;
     tabIndex?: number;
     title?: string;
     type?: string;
-    onClick?: MouseEventInit;
-    onFocus?: FocusEventInit;
-    onBlur?: FocusEventInit;
+    onClick?: MouseEventHandler;
+    onFocus?: FocusEventHandler;
+    onBlur?: FocusEventHandler;
 }

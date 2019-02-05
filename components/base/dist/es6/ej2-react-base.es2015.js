@@ -1,6 +1,6 @@
 import { Children, PureComponent } from 'react';
 import { findDOMNode, render } from 'react-dom';
-import { detach, extend, getTemplateEngine, setTemplateEngine } from '@syncfusion/ej2-base';
+import { detach, extend, getTemplateEngine, isNullOrUndefined, setTemplateEngine } from '@syncfusion/ej2-base';
 
 /**
  * React Component Base
@@ -48,11 +48,16 @@ class ComponentBase extends PureComponent {
         let dProps = extend({}, nextProps);
         let keys = Object.keys(nextProps);
         for (let propkey of keys) {
+            let isClassName = propkey === 'className';
+            if (!isClassName && !isNullOrUndefined(this.htmlattributes[propkey]) &&
+                this.htmlattributes[propkey] !== dProps[propkey]) {
+                this.htmlattributes[propkey] = dProps[propkey];
+            }
             if (this.props[propkey] === nextProps[propkey]) {
                 delete dProps[propkey];
             }
             else if (this.attrKeys.indexOf(propkey) !== -1) {
-                if (propkey === 'className') {
+                if (isClassName) {
                     this.element.classList.remove(this.props[propkey]);
                     this.element.classList.add(dProps[propkey]);
                 }
@@ -72,6 +77,9 @@ class ComponentBase extends PureComponent {
     getDefaultAttributes() {
         return this.htmlattributes;
     }
+    compareObjects(oldProps, newProps) {
+        return JSON.stringify(oldProps) === JSON.stringify(newProps);
+    }
     refreshChild(silent, props) {
         if (this.checkInjectedModules) {
             let prevModule = this.getInjectedModules() || [];
@@ -90,6 +98,21 @@ class ComponentBase extends PureComponent {
                     for (let fields of this.skipRefresh) {
                         delete directiveValue[fields];
                     }
+                }
+                if (this.prevProperties) {
+                    var dKeys = Object.keys(this.prevProperties);
+                    for (var i = 0; i < dKeys.length; i++) {
+                        var key = dKeys[i];
+                        if (this.compareObjects(this.prevProperties[key], directiveValue[key])) {
+                            delete directiveValue[key];
+                        }
+                        else {
+                            this.prevProperties = extend(this.prevProperties, directiveValue);
+                        }
+                    }
+                }
+                else {
+                    this.prevProperties = extend({}, directiveValue, {}, true);
                 }
                 this.setProperties(directiveValue, silent);
             }
@@ -147,7 +170,11 @@ class ComponentBase extends PureComponent {
                     ret.push(extend({}, prop, {}, true));
                 }
                 else {
-                    ret.push(this.validateChildren(extend({}, prop), matcher[key], prop) || prop);
+                    let cachedValue = this.validateChildren(extend({}, prop), matcher[key], prop) || prop;
+                    if (cachedValue['children']) {
+                        delete cachedValue['children'];
+                    }
+                    ret.push(cachedValue);
                 }
             }
         }
@@ -210,7 +237,13 @@ function compile(templateElement, helper) {
         return (data) => {
             let ele = document.createElement('div');
             document.body.appendChild(ele);
-            render(templateElement(data), ele);
+            let actTemplate = templateElement;
+            let actData = data;
+            if (typeof actTemplate === 'object') {
+                actTemplate = templateElement.template;
+                actData = extend({}, data, templateElement.data || {});
+            }
+            render(actTemplate(actData), ele);
             detach(ele);
             return ele.children;
         };

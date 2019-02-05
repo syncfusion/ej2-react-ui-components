@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-base",
-	"version": "16.2.41",
+	"version": "16.4.47",
 	"description": "A common package of Essential JS 2 React base, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -19,6 +19,7 @@
 		"type": "git",
 		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
 	},
+	"homepage": "https://www.syncfusion.com/react-ui-components",
 	"main": "./dist/ej2-react-base.umd.min.js",
 	"module": "./index.js",
 	"readme": "ReadMe.md",

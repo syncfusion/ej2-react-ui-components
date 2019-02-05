@@ -3,7 +3,7 @@
  */
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { extend } from '@syncfusion/ej2-base';
+import { extend, isNullOrUndefined } from '@syncfusion/ej2-base';
 /**
  * Interface for processing directives
  */
@@ -30,9 +30,10 @@ const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
 /* tslint:disable */
 export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private setProperties: Function;
-    private element:any;
+    private element: any;
     private appendTo: Function;
     private destroy: Function;
+    private prevProperties: Object;
     private checkInjectedModules: boolean;
     private getInjectedModules: Function;
     private injectedModules: Object[];
@@ -60,7 +61,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
         this.cachedTimeOut = setTimeout(() => {
             let ele: Element = ReactDOM.findDOMNode(this);
-            if(ele){
+            if (ele) {
                 this.isAppendCalled = true;
                 this.appendTo(ele);
             }
@@ -76,13 +77,18 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         let dProps: Object = extend({}, nextProps);
         let keys: string[] = Object.keys(nextProps);
         for (let propkey of keys) {
+            let isClassName: boolean = propkey === 'className';
+            if (!isClassName && !isNullOrUndefined(this.htmlattributes[propkey]) &&
+                this.htmlattributes[propkey] !== dProps[propkey]) {
+                this.htmlattributes[propkey] = dProps[propkey]
+            }
             if (this.props[propkey] === nextProps[propkey]) {
                 delete dProps[propkey];
             } else if (this.attrKeys.indexOf(propkey) !== -1) {
-                if (propkey === 'className') {
+                if (isClassName) {
                     this.element.classList.remove(this.props[propkey]);
                     this.element.classList.add(dProps[propkey]);
-                } else if (propkey !=='disabled') {
+                } else if (propkey !== 'disabled') {
                     delete dProps[propkey];
                 }
             }
@@ -99,7 +105,9 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     public getDefaultAttributes(): Object {
         return this.htmlattributes;
     }
-
+    public compareObjects(oldProps: Object, newProps: Object) {
+        return JSON.stringify(oldProps) === JSON.stringify(newProps);
+    }
     private refreshChild(silent: boolean, props?: Object): void {
         if (this.checkInjectedModules) {
             let prevModule: Object[] = this.getInjectedModules() || [];
@@ -119,6 +127,19 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                     for (let fields of this.skipRefresh) {
                         delete directiveValue[fields];
                     }
+                }
+                if (this.prevProperties) {
+                    var dKeys = Object.keys(this.prevProperties);
+                    for (var i = 0; i < dKeys.length; i++) {
+                        var key = dKeys[i];
+                        if (this.compareObjects(this.prevProperties[key], directiveValue[key])) {
+                            delete directiveValue[key];
+                        } else {
+                            this.prevProperties = extend(this.prevProperties, directiveValue);
+                        }
+                    }
+                } else {
+                    this.prevProperties = extend({}, directiveValue, {}, true);
                 }
                 this.setProperties(directiveValue, silent);
             }
@@ -144,7 +165,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                 let childProps: object[] = this.getChildProps(React.Children.toArray((child as any).props.children), key);
                 if (childProps.length) {
                     flag = true;
-                     // tslint:disable
+                    // tslint:disable
                     childCache[(child as any).type.propertyName || ifield] = childProps;
                 }
             }
@@ -179,15 +200,20 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                 if (accessProp || !(<Directive>prop).children) {
                     ret.push(extend({}, prop, {}, true));
                 } else {
-                    ret.push(this.validateChildren(
+                    let cachedValue: Object = this.validateChildren(
                         <{ [key: string]: Object }>extend({}, prop), <{ [key: string]: Object }>matcher[key],
-                        <{ children: React.ReactNode; }>prop) || prop);
+                        <{ children: React.ReactNode; }>prop) || prop;
+                    if (cachedValue['children']) {
+                        delete cachedValue['children'];
+                    }
+                    ret.push(cachedValue);
                 }
             }
         }
+
         return ret;
     }
-// tslint:disable:no-any
+    // tslint:disable:no-any
     public getInjectedServices(): Object[] {
         let childs: React.ReactNode[] & Directive[] = (<React.ReactNode[] & Directive[]>React.Children.toArray(this.props.children));
         for (let child of childs) {
