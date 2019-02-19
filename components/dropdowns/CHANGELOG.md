@@ -2,6 +2,36 @@
 
 ## [Unreleased]
 
+## 16.4.54 (2019-02-19)
+
+### DropDownList
+
+#### Bug Fixes
+
+- When page scroll, grouping template is hiding issue has been resolved.
+
+- Reset the initial value in form reset action behavior has been changed.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- Reset the initial value in form reset action behavior has been changed.
+
+### ComboBox
+
+#### Bug Fixes
+
+- Reset the initial value in form reset action behavior has been changed.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- Now, you can enter special characters inside MultiSelect using virtual keyboard.
+
+- Reset the initial value in form reset action behavior has been changed.
+
 ## 16.4.53 (2019-02-13)
 
 ### DropDownList

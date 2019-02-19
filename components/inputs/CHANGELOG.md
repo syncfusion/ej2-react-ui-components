@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 16.4.54 (2019-02-19)
+
+### TextBox
+
+#### Bug Fixes
+
+- Now, input event will trigger after clear the textbox value using clear icon.
+
+### Uploader
+
+#### New Features
+
+- Provided `cssClass` property to add custom CSS classes to an uploader.
+
 ## 16.4.53 (2019-02-13)
 
 ### ColorPicker
