@@ -21,6 +21,7 @@ var __extends = (undefined && undefined.__extends) || (function () {
 var defaulthtmlkeys = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
+var delayUpdate = ['accordion', 'tab'];
 /* tslint:disable */
 var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     __extends(ComponentBase, _super);
@@ -45,6 +46,7 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     ComponentBase.prototype.componentDidMount = function () {
         var _this = this;
         this.refreshChild(true);
+        this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
         this.cachedTimeOut = setTimeout(function () {
@@ -57,6 +59,7 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     };
     // tslint:disable-next-line:no-any
     ComponentBase.prototype.componentWillReceiveProps = function (nextProps) {
+        var _this = this;
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
             this.isAppendCalled = true;
@@ -87,6 +90,16 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         if (dProps['children']) {
             delete dProps['children'];
         }
+        if (this.canDelayUpdate) {
+            setTimeout(function () {
+                _this.refreshProperties(dProps, nextProps);
+            });
+        }
+        else {
+            this.refreshProperties(dProps, nextProps);
+        }
+    };
+    ComponentBase.prototype.refreshProperties = function (dProps, nextProps) {
         if (Object.keys(dProps).length) {
             this.setProperties(dProps);
         }
@@ -94,6 +107,26 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     };
     ComponentBase.prototype.getDefaultAttributes = function () {
         return this.htmlattributes;
+    };
+    /* tslint:disable:no-any */
+    ComponentBase.prototype.trigger = function (eventName, eventProp) {
+        if (this.isDestroyed !== true) {
+            if ((eventName === 'change' || eventName === 'input')) {
+                if (this.props.onChange && eventProp.event) {
+                    this.props.onChange.call(undefined, {
+                        syntheticEvent: eventProp.event,
+                        nativeEvent: { text: eventProp.value },
+                        value: eventProp.value,
+                        target: this
+                    });
+                }
+            }
+            var prevDetection = this.isProtectedOnChange;
+            this.isProtectedOnChange = false;
+            this.modelObserver.notify(eventName, eventProp);
+            this.isProtectedOnChange = prevDetection;
+        }
+        /* tslint:enable:no-any */
     };
     ComponentBase.prototype.compareObjects = function (oldProps, newProps) {
         return JSON.stringify(oldProps) === JSON.stringify(newProps);

@@ -25,12 +25,18 @@ class Sample extends React.PureComponent<{ content?: string ,name?:string,disabl
     public duplicateUpdte(): void {
         this.setState({content: new Date().toDateString()})
     }
+    
+    public triggerChange(): void {
+
+    }
     public render(): any {
         return <div>
             <ReactStyler disabled={false}></ReactStyler>
             <button onClick={this.duplicateUpdte.bind(this)} id="dup-state">DuplicateUpdate</button>
             <button onClick={this.changeState.bind(this)} id="change-state">ChangeState</button>
-            <ReactStyler1 ref='ReactStyler1' id="snm" className={this.state.name} disabled={this.state.disabled} content={this.state.content}><FieldsDirective><FieldDirective name={this.state.content} status='processed'>
+            <ReactStyler1 ref='ReactStyler1' id="snm" className={this.state.name}
+             disabled={this.state.disabled} content={this.state.content}   onChange= {this.triggerChange} change={this.triggerChange}>
+             <FieldsDirective><FieldDirective name={this.state.content} status='processed'>
             <InnerFieldsDirective>
                 <InnerFieldDirective name='snm' status='processed'></InnerFieldDirective>
                 <InnerFieldDirective name='snm1' status='processed1'></InnerFieldDirective>
@@ -187,6 +193,8 @@ describe('test', () => {
             result.setState({ content: 'changed' });
             expect(result.refs.ReactStyler2.content).toBe('changed');
             expect(result.refs.ReactStyler2.fields[0].name).toBe('initial');
+            result.refs.ReactStyler2.canDelayUpdate =  true;
+            result.setState({ content: 'Networkcheck' });
         });
     });
     describe('destroy calls working propelry ', () => {

@@ -1,9 +1,14 @@
 # ej2-react-layouts
 
-The layout package contains cards, avatars, and splitter components. The card is a small container in which user can
-show defined content in specific structure. The avatars are icons, initials or figures representing a particular
-person, used in popular media formats like images, SVG, font icons, and letters.
-The splitter is container component which used to construct different layouts using multiple and nested panes.
+The layout package contains cards, avatars, splitter and Dashboard Layout components. 
+
+* The `card` is a small container in which user can show defined content in specific structure. 
+
+* The `avatars` are icons, initials or figures representing a particular person, used in popular media formats like images, SVG, font icons, and letters.
+
+* The `splitter` is container component which used to construct different layouts using multiple and nested panes.
+
+* The `DashboardLayout` is a grid structured layout component that helps to create a dashboard with panels. Panels hold the UI components and allow resize, reorder, drag-n-drop, remove and add options. This allows users to easily place the components at the desired position within the grid layout.
 
 ![Layout](https://ej2.syncfusion.com/products/images/layout/readme.png)
 
@@ -38,6 +43,11 @@ Following list of components are available in the package
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=splitter#/material/splitter/default)
   * [Product Page](https://www.syncfusion.com/react-ui-components/splitter/?utm_source=npm&utm_campaign=layout)
 
+* Dashboard Layout - Used to build dashboards with panels that holds the UI components and allow resize, reorder, drag-n-drop, remove and add options.
+  * [Getting Started](https://ej2.syncfusion.com/react/documentation/dashboard-layout/getting-started/?utm_source=npm&utm_campaign=layout)
+  * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=dashboard-layout#/material/dashboardlayout/default.html)
+  * [Product Page](https://www.syncfusion.com/react-ui-controls/dashboard-layout/?utm_source=npm&utm_campaign=layout)
+
 ## Supported Frameworks
 
 These components are available in following list of:
@@ -58,6 +68,7 @@ These components are available in following list of:
 * Contact Application ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_campaign=avatar#/material/avatar/listview.html))
 * Avatar Badge ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_campaign=avatar#/material/avatar/badge.html))
 * Avatar Card ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_campaign=avatar#/material/avatar/card.html))
+* SEO Analysis Dashboard ([Live Demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=dashboard-layout#/material/dashboard-layout/analytics-dashboard.html))
 
 ## Key Features
 
@@ -91,6 +102,16 @@ These components are available in following list of:
   * [Integration](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=splitter#/material/splitter/accordion-navigation-menu) - Other React UI components can be integrated within panes.
 
   * [Nested Panes](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=splitter#/material/splitter/code-editor-layout) - Another splitter can be integrated within panes to create a complex layout.
+
+* Dashboard Layout
+ 
+   * [Drag and Drop](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=dashboard-layout#/material/dashboard-layout/properties.html) - Allows drag and drop of panels at the desired location within the dashboard.
+
+   * [Floating](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=dashboard-layout#/material/dashboard-layout/properties.html) - Floats the panels upward when the dragging option is enabled.
+
+   * [Resizing](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=dashboard-layout#/material/dashboard-layout/properties.html) - Support to resize the panels in any direction as per the requirement.
+
+   * [MediaQuery](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=dashboard-layout#/material/dashboard-layout/default.html) - Allows the panels to be stacked when the specified resolution is met.
 
 ## Support
 

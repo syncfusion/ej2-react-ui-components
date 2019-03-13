@@ -3,7 +3,10 @@ import { DateRangePicker, DateRangePickerModel } from '@syncfusion/ej2-calendars
 import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/ej2-react-base';
 
 
-
+export interface DateRangePickerTypecast {
+    start?: string | Function | any;
+    end?: string | Function | any;
+}
 /**
  * Represents the Essential JS 2 React DateRangePicker Component.
  * ```ts
@@ -12,14 +15,14 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class DateRangePickerComponent extends DateRangePicker {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<DateRangePickerModel & DefaultHtmlAttributes>;
+    & Readonly<DateRangePickerModel & DefaultHtmlAttributes| DateRangePickerTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'presets': 'preset'};
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<DateRangePickerModel & DefaultHtmlAttributes>;
+     & Readonly<DateRangePickerModel & DefaultHtmlAttributes| DateRangePickerTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public isReactComponent: Object;

@@ -2,7 +2,19 @@
 
 ## [Unreleased]
 
-## 16.4.55 (2019-02-27)
+## 17.1.32-beta (2019-03-13)
+
+### Common
+
+#### New Features
+
+- Provided `react-final-form` support for Form components.
+
+#### Bug Fixes
+
+- Resolved template rendering issue on state changes.
+
+## 16.4.52 (2019-02-05)
 
 ### Common
 

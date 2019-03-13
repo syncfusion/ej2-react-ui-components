@@ -1,6 +1,20 @@
+<!-- markdownlint-disable MD010 -->
+
+<!-- markdownlint-disable MD030 -->
+
+<!-- markdownlint-disable MD004 -->
+
 # Changelog
 
 ## [Unreleased]
+
+## 17.1.32-beta (2019-03-13)
+
+### Maps
+
+#### Bug Fixes
+
+- Now, the border style is applied properly to the shapes when performing selection.
 
 ## 16.4.55 (2019-02-27)
 
@@ -100,7 +114,6 @@
 
 The Maps control is used to visualize the geographical data. It is used to represent the statistical data of a particular geographical area on Earth, with user interactivity and provides various customizing options. All the map elements are rendered using Scalable Vector Graphics (SVG).
 
-
 - **Layers** - Map is maintained through layers and it can accommodate one or more layers.
 - **GeoJSON Data Input** - Supports GeoJSON data, which allows you to plot your own shapes in the maps.
 - **Map Providers** - Supports map providers such as Bing and OpenStreetMap that can be added to any layers.
@@ -112,5 +125,3 @@ The Maps control is used to visualize the geographical data. It is used to repre
 - **Navigation Lines** - Lines can be rendered between various points in map.
 - **Annotations** - Supports placing any HTML element on desired location in the map.
 - **User interaction** - Supports interactive features like zooming, panning, tooltip, highlight, selection and interactive legend.
-
-

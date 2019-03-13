@@ -3,7 +3,9 @@ import { PivotView, PivotViewModel } from '@syncfusion/ej2-pivotview';
 import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/ej2-react-base';
 
 
-
+export interface PivotViewTypecast {
+    cellTemplate?: string | Function | any;
+}
 /**
  * `PivotViewComponent` represents the react PivotView.
  * ```tsx
@@ -12,13 +14,13 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class PivotViewComponent extends PivotView {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<PivotViewModel & DefaultHtmlAttributes>;
+    & Readonly<PivotViewModel & DefaultHtmlAttributes| PivotViewTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<PivotViewModel & DefaultHtmlAttributes>;
+     & Readonly<PivotViewModel & DefaultHtmlAttributes| PivotViewTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public isReactComponent: Object;

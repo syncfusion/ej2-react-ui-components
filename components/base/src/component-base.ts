@@ -27,14 +27,17 @@ interface Directive {
 const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
+const delayUpdate: string[] = ['accordion', 'tab'];
 /* tslint:disable */
 export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private setProperties: Function;
     private element: any;
     private appendTo: Function;
     private destroy: Function;
+    private getModuleName: () => string;
     private prevProperties: Object;
     private checkInjectedModules: boolean;
+    private curModuleName: string;
     private getInjectedModules: Function;
     private injectedModules: Object[];
     private skipRefresh: string[];
@@ -44,6 +47,10 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private attrKeys: string[] = [];
     private cachedTimeOut: number = 0;
     private isAppendCalled: boolean = false;
+    private modelObserver: any;
+    private isDestroyed: boolean;
+    private isProtectedOnChange: boolean;
+    private canDelayUpdate: boolean;
     public componentWillMount(): void {
         let propKeys: string[] = Object.keys(this.props);
         this.htmlattributes = {};
@@ -57,6 +64,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
 
     public componentDidMount(): void {
         this.refreshChild(true);
+        this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
         this.cachedTimeOut = setTimeout(() => {
@@ -96,14 +104,43 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         if (dProps['children']) {
             delete dProps['children'];
         }
+        if (this.canDelayUpdate) {
+            setTimeout(() => {
+                this.refreshProperties(dProps, nextProps);
+            })
+        } else {
+            this.refreshProperties(dProps, nextProps);
+        }
+    }
+    public refreshProperties(dProps: Object, nextProps: Object): void {
         if (Object.keys(dProps).length) {
             this.setProperties(dProps);
         }
         this.refreshChild(false, nextProps);
     }
-
     public getDefaultAttributes(): Object {
         return this.htmlattributes;
+    }
+      /* tslint:disable:no-any */
+    public trigger(eventName: string, eventProp?: any): void {
+      
+        if (this.isDestroyed !== true) {
+            if ((eventName === 'change' || eventName === 'input')) {
+                if ((this.props as any).onChange && eventProp.event) {
+                    (this.props as any).onChange.call(undefined, {
+                        syntheticEvent: eventProp.event,
+                        nativeEvent: { text: eventProp.value },
+                        value: eventProp.value,
+                        target: this
+                    });
+                }
+            }
+            let prevDetection: boolean = this.isProtectedOnChange;
+            this.isProtectedOnChange = false;
+            this.modelObserver.notify(eventName, eventProp);
+            this.isProtectedOnChange = prevDetection;
+        }
+        /* tslint:enable:no-any */
     }
     public compareObjects(oldProps: Object, newProps: Object) {
         return JSON.stringify(oldProps) === JSON.stringify(newProps);

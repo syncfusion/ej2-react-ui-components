@@ -16,6 +16,8 @@ export interface StylerModel {
     destroyed?: Function;
     content?: string;
     template?: string | Function | any;
+    change?: any;
+    onChange?:any;
 }
 
 export class LocalField extends ChildProperty<LocalField> {
@@ -59,6 +61,10 @@ export class Styler extends Component<HTMLElement> implements INotifyPropertyCha
     public created: Function;
     @Event()
     public destroyed: Function;
+    @Event()
+    public change: Function;
+    @Event()
+    public input: Function;
     public val:any;
     constructor(fontObj?: StylerModel, id?: string | HTMLElement) {
         super(fontObj, id);
@@ -79,6 +85,7 @@ export class Styler extends Component<HTMLElement> implements INotifyPropertyCha
             let compiledString: Function = compile(this.template);
             this.val = compiledString({test:'access'});
         }
+        this.trigger('change',{event:{},value:'snm'});
     }
     public destroy(): void {
         this.element.classList.remove('e-styler');
