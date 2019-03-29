@@ -13,11 +13,11 @@ import { StockEventsSettingsModel } from '@syncfusion/ej2-charts';
  * </StockChartComponent>
  * ```
  */
-export class StockChartStockEventDirective extends ComplexBase<StockEventsSettingsModel, StockEventsSettingsModel> {
-    public static moduleName: string = 'stockChartStockEvent';
+export class StockEventDirective extends ComplexBase<StockEventsSettingsModel, StockEventsSettingsModel> {
+    public static moduleName: string = 'stockEvent';
 }
 
-export class StockChartStockEventsDirective extends ComplexBase<{}, {}> {
+export class StockEventsDirective extends ComplexBase<{}, {}> {
     public static propertyName: string = 'stockEvents';
-    public static moduleName: string = 'stockChartStockEvents';
+    public static moduleName: string = 'stockEvents';
 }

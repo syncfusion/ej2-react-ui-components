@@ -1,6 +1,6 @@
 import { Children, PureComponent } from 'react';
 import { findDOMNode, render } from 'react-dom';
-import { detach, extend, getTemplateEngine, isNullOrUndefined, setTemplateEngine } from '@syncfusion/ej2-base';
+import { detach, extend, getTemplateEngine, getValue, isNullOrUndefined, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
 
 /**
  * React Component Base
@@ -9,7 +9,7 @@ const defaulthtmlkeys = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
 const delayUpdate = ['accordion', 'tab'];
-/* tslint:disable */
+// tslint:disable
 class ComponentBase extends PureComponent {
     constructor() {
         super(...arguments);
@@ -40,7 +40,6 @@ class ComponentBase extends PureComponent {
             }
         });
     }
-    // tslint:disable-next-line:no-any
     componentWillReceiveProps(nextProps) {
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
@@ -82,9 +81,21 @@ class ComponentBase extends PureComponent {
     }
     refreshProperties(dProps, nextProps) {
         if (Object.keys(dProps).length) {
+            this.processComplexTemplate(dProps, this);
             this.setProperties(dProps);
         }
         this.refreshChild(false, nextProps);
+    }
+    processComplexTemplate(curObject, context) {
+        let compTemplate = context.complexTemplate;
+        if (compTemplate) {
+            for (let prop in compTemplate) {
+                let PropVal = compTemplate[prop];
+                if (curObject[prop]) {
+                    setValue(PropVal, getValue(prop, curObject), curObject);
+                }
+            }
+        }
     }
     getDefaultAttributes() {
         return this.htmlattributes;
@@ -107,7 +118,6 @@ class ComponentBase extends PureComponent {
             this.modelObserver.notify(eventName, eventProp);
             this.isProtectedOnChange = prevDetection;
         }
-        /* tslint:enable:no-any */
     }
     compareObjects(oldProps, newProps) {
         return JSON.stringify(oldProps) === JSON.stringify(newProps);
@@ -199,13 +209,19 @@ class ComponentBase extends PureComponent {
             let field = this.getChildType(child);
             if (field === key) {
                 if (accessProp || !prop.children) {
-                    ret.push(extend({}, prop, {}, true));
+                    // tslint:disable
+                    let cacheVal = extend({}, prop, {}, true);
+                    // tslint:disable
+                    this.processComplexTemplate(cacheVal, child.type);
+                    ret.push(cacheVal);
                 }
                 else {
                     let cachedValue = this.validateChildren(extend({}, prop), matcher[key], prop) || prop;
                     if (cachedValue['children']) {
                         delete cachedValue['children'];
                     }
+                    // tslint:disable
+                    this.processComplexTemplate(cachedValue, child.type);
                     ret.push(cachedValue);
                 }
             }
@@ -224,6 +240,7 @@ class ComponentBase extends PureComponent {
         return [];
     }
 }
+/* tslint:enable:no-any */
 
 // tslint:disable-next-line:no-any
 function applyMixins(derivedClass, baseClass) {

@@ -16,6 +16,7 @@ export interface StylerModel {
     destroyed?: Function;
     content?: string;
     template?: string | Function | any;
+    headerText?: string | Function | any;
     change?: any;
     onChange?:any;
 }
@@ -25,11 +26,14 @@ export class LocalField extends ChildProperty<LocalField> {
     public status: string;
     @Property()
     public name: string;
+    @Property()
+    public header: Object;
 }
 export interface FieldModel {
       status?: string;
       name?: string;
       template?:string | Function;
+      headerText ?: string;
 }
 @NotifyPropertyChanges
 export class Styler extends Component<HTMLElement> implements INotifyPropertyChanged {
@@ -49,6 +53,8 @@ export class Styler extends Component<HTMLElement> implements INotifyPropertyCha
     public items: string[];
     @Property()
     public event1: Function;
+    @Property({})
+    public header: Object;
     @Collection([], LocalField)
     public fields: FieldModel[];
     @Property('true')
@@ -70,6 +76,7 @@ export class Styler extends Component<HTMLElement> implements INotifyPropertyCha
         super(fontObj, id);
     }
     public touchModule: Touch;
+ 
     public preRender(): void { }
     public getModuleName(): string {
         return 'Styler';
@@ -107,6 +114,7 @@ export class ReactStyler extends Styler {
     public forceUpdate: (callBack?: () => any) => void;
     private getDefaultAttributes: Function;
     public context: any;
+    private complexTemplate:Object = {headerText: 'header.text'};
     public isReactComponent: Object;
     public controlAttributes: string[] =['form'];
     public refs: {
@@ -127,6 +135,7 @@ export class ReactStyler extends Styler {
 }
 export class FieldDirective extends  ComplexBase<FieldModel, FieldModel> {
     public static moduleName:string = 'field';
+    public static complexTemplate:Object = {headerText: 'header.text'};
 }
 
 export class FieldsDirective extends  ComplexBase<{},{}> {

@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.1.38 (2019-03-29)
+
+### Diagram
+
+#### Bug Fixes
+
+- The "nodes distributed incorrectly" issue has been fixed.
+- The "duplicate SVG appears when node's SVG is changed" issue has been fixed.
+
 ## 17.1.32-beta (2019-03-13)
 
 ### Diagram

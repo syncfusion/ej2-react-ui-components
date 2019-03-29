@@ -2,6 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { SeriesModel } from '@syncfusion/ej2-charts';
 
 export interface SeriesDirTypecast {
+    dataLabelTemplate?: string | Function | any;
 }
 /**
  * `SeriesDirective` directive represent a series of the react chart. 
@@ -16,6 +17,7 @@ export interface SeriesDirTypecast {
  */
 export class SeriesDirective extends ComplexBase<SeriesModel| SeriesDirTypecast, SeriesModel| SeriesDirTypecast> {
     public static moduleName: string = 'series';
+    public static complexTemplate: Object = {'dataLabelTemplate': 'dataLabel.template'};
 }
 
 export class SeriesCollectionDirective extends ComplexBase<{}, {}> {

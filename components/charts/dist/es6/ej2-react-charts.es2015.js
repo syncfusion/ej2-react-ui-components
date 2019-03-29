@@ -16,6 +16,7 @@ import { AccumulationChart, Chart, RangeNavigator, Smithchart, Sparkline, StockC
 class SeriesDirective extends ComplexBase {
 }
 SeriesDirective.moduleName = 'series';
+SeriesDirective.complexTemplate = { 'dataLabelTemplate': 'dataLabel.template' };
 class SeriesCollectionDirective extends ComplexBase {
 }
 SeriesCollectionDirective.propertyName = 'series';
@@ -294,6 +295,7 @@ applyMixins(ChartComponent, [ComponentBase, PureComponent]);
 class AccumulationSeriesDirective extends ComplexBase {
 }
 AccumulationSeriesDirective.moduleName = 'accumulationSeries';
+AccumulationSeriesDirective.complexTemplate = { 'dataLabelTemplate': 'dataLabel.template' };
 class AccumulationSeriesCollectionDirective extends ComplexBase {
 }
 AccumulationSeriesCollectionDirective.propertyName = 'series';
@@ -624,13 +626,13 @@ StockChartPeriodsDirective.moduleName = 'stockChartPeriods';
  * </StockChartComponent>
  * ```
  */
-class StockChartStockEventDirective extends ComplexBase {
+class StockEventDirective extends ComplexBase {
 }
-StockChartStockEventDirective.moduleName = 'stockChartStockEvent';
-class StockChartStockEventsDirective extends ComplexBase {
+StockEventDirective.moduleName = 'stockEvent';
+class StockEventsDirective extends ComplexBase {
 }
-StockChartStockEventsDirective.propertyName = 'stockEvents';
-StockChartStockEventsDirective.moduleName = 'stockChartStockEvents';
+StockEventsDirective.propertyName = 'stockEvents';
+StockEventsDirective.moduleName = 'stockEvents';
 
 /**
  * `IndicatorDirective` directive represent a indicator of the react chart.
@@ -662,7 +664,7 @@ class StockChartComponent extends StockChart {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.directivekeys = { 'stockChartSeriesCollection': { 'stockChartSeries': { 'stockChartTrendlines': 'stockChartTrendline' } }, 'stockChartAxes': { 'stockChartAxis': { 'stockChartStripLines': 'stockChartStripLine' } }, 'stockChartRows': 'stockChartRow', 'stockChartAnnotations': 'stockChartAnnotation', 'stockChartSelectedDataIndexes': 'stockChartSelectedDataIndex', 'stockChartPeriods': 'stockChartPeriod', 'stockChartStockEvents': 'stockChartStockEvent', 'stockChartIndicators': 'stockChartIndicator' };
+        this.directivekeys = { 'stockChartSeriesCollection': { 'stockChartSeries': { 'stockChartTrendlines': 'stockChartTrendline' } }, 'stockChartAxes': { 'stockChartAxis': { 'stockChartStripLines': 'stockChartStripLine' } }, 'stockChartRows': 'stockChartRow', 'stockChartAnnotations': 'stockChartAnnotation', 'stockChartSelectedDataIndexes': 'stockChartSelectedDataIndex', 'stockChartPeriods': 'stockChartPeriod', 'stockEvents': 'stockEvent', 'stockChartIndicators': 'stockChartIndicator' };
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -676,7 +678,7 @@ class StockChartComponent extends StockChart {
 }
 applyMixins(StockChartComponent, [ComponentBase, PureComponent]);
 
-export { SeriesDirective, SeriesCollectionDirective, TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, AxisDirective, AxesDirective, StripLineDirective, StripLinesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, CategoryDirective, CategoriesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartStripLineDirective, StockChartStripLinesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockChartStockEventDirective, StockChartStockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent };
+export { SeriesDirective, SeriesCollectionDirective, TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, AxisDirective, AxesDirective, StripLineDirective, StripLinesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, CategoryDirective, CategoriesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartStripLineDirective, StockChartStripLinesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockEventDirective, StockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent };
 export * from '@syncfusion/ej2-charts';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-charts.es2015.js.map

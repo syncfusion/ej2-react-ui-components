@@ -6,8 +6,16 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 export interface ScheduleTypecast {
     dateHeaderTemplate?: string | Function | any;
     cellTemplate?: string | Function | any;
+    eventSettingsTooltipTemplate?: string | Function | any;
+    eventSettingsTemplate?: string | Function | any;
     editorTemplate?: string | Function | any;
+    timeScaleMinorSlotTemplate?: string | Function | any;
+    timeScaleMajorSlotTemplate?: string | Function | any;
     resourceHeaderTemplate?: string | Function | any;
+    quickInfoTemplatesHeader?: string | Function | any;
+    quickInfoTemplatesContent?: string | Function | any;
+    quickInfoTemplatesFooter?: string | Function | any;
+    groupHeaderTooltipTemplate?: string | Function | any;
 }
 /**
  * `ScheduleComponent` represents the react Schedule.

@@ -17,6 +17,7 @@ import { Grid, Pager } from '@syncfusion/ej2-grids';
 class ColumnDirective extends ComplexBase {
 }
 ColumnDirective.moduleName = 'column';
+ColumnDirective.complexTemplate = { 'filterItemTemplate': 'filter.itemTemplate' };
 class ColumnsDirective extends ComplexBase {
 }
 ColumnsDirective.propertyName = 'columns';

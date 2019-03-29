@@ -4,6 +4,8 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface TreeMapTypecast {
+    tooltipSettingsTemplate?: string | Function | any;
+    leafItemSettingsLabelTemplate?: string | Function | any;
 }
 /**
  * Represents react TreeMap Component

@@ -3,6 +3,7 @@ import { TabItemModel } from '@syncfusion/ej2-navigations';
 
 export interface TabItemDirTypecast {
     content?: string | Function | any;
+    headerText?: string | Function | any;
 }
 /**
  * `TabItemDirective` directive represent a column of the react Tab. 
@@ -18,6 +19,7 @@ export interface TabItemDirTypecast {
  */
 export class TabItemDirective extends ComplexBase<TabItemModel| TabItemDirTypecast, TabItemModel| TabItemDirTypecast> {
     public static moduleName: string = 'tabItem';
+    public static complexTemplate: Object = {'headerText': 'header.text'};
 }
 
 export class TabItemsDirective extends ComplexBase<{}, {}> {

@@ -1,5 +1,5 @@
 import { PureComponent, createElement } from 'react';
-import { AutoComplete, ComboBox, DropDownList, MultiSelect } from '@syncfusion/ej2-dropdowns';
+import { AutoComplete, ComboBox, DropDownList, ListBox, MultiSelect } from '@syncfusion/ej2-dropdowns';
 import { ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
 /**
@@ -98,7 +98,31 @@ class MultiSelectComponent extends MultiSelect {
 }
 applyMixins(MultiSelectComponent, [ComponentBase, PureComponent]);
 
-export { DropDownListComponent, ComboBoxComponent, AutoCompleteComponent, MultiSelectComponent };
+/**
+* The ListBox allows the user to select values from the predefined list of values.
+ * ```
+ * <ListBoxComponent dataSource={data} />
+ * ```
+ */
+class ListBoxComponent extends ListBox {
+    constructor(props) {
+        super(props);
+        this.initRenderCalled = false;
+        this.checkInjectedModules = true;
+    }
+    render() {
+        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+            super.render();
+            this.initRenderCalled = true;
+        }
+        else {
+            return createElement('input', this.getDefaultAttributes());
+        }
+    }
+}
+applyMixins(ListBoxComponent, [ComponentBase, PureComponent]);
+
+export { DropDownListComponent, ComboBoxComponent, AutoCompleteComponent, MultiSelectComponent, ListBoxComponent };
 export * from '@syncfusion/ej2-dropdowns';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-dropdowns.es2015.js.map

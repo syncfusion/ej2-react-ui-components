@@ -7,6 +7,13 @@ export interface GanttTypecast {
     parentTaskbarTemplate?: string | Function | any;
     milestoneTemplate?: string | Function | any;
     taskbarTemplate?: string | Function | any;
+    labelSettingsRightLabel?: string | Function | any;
+    labelSettingsLeftLabel?: string | Function | any;
+    labelSettingsTaskLabel?: string | Function | any;
+    tooltipSettingsTaskbar?: string | Function | any;
+    tooltipSettingsBaseline?: string | Function | any;
+    tooltipSettingsConnectorLine?: string | Function | any;
+    tooltipSettingsEditing?: string | Function | any;
 }
 /**
  * `GanttComponent` represents the react Gantt.

@@ -34,15 +34,15 @@ class Sample extends React.PureComponent<{ content?: string ,name?:string,disabl
             <ReactStyler disabled={false}></ReactStyler>
             <button onClick={this.duplicateUpdte.bind(this)} id="dup-state">DuplicateUpdate</button>
             <button onClick={this.changeState.bind(this)} id="change-state">ChangeState</button>
-            <ReactStyler1 ref='ReactStyler1' id="snm" className={this.state.name}
+            <ReactStyler1 ref='ReactStyler1' id="snm" className={this.state.name} headerText = "string"
              disabled={this.state.disabled} content={this.state.content}   onChange= {this.triggerChange} change={this.triggerChange}>
-             <FieldsDirective><FieldDirective name={this.state.content} status='processed'>
+             <FieldsDirective><FieldDirective name={this.state.content} status='processed' headerText='string'>
             <InnerFieldsDirective>
                 <InnerFieldDirective name='snm' status='processed'></InnerFieldDirective>
                 <InnerFieldDirective name='snm1' status='processed1'></InnerFieldDirective>
             </InnerFieldsDirective>
         </FieldDirective>
-            <FieldDirective name='snm1' status='processed1'></FieldDirective>></FieldsDirective></ReactStyler1 ></div>
+            <FieldDirective name='snm1' status='processed1' headerText='string'></FieldDirective>></FieldsDirective></ReactStyler1 ></div>
     }
 }
 
@@ -180,6 +180,12 @@ describe('test', () => {
             expect(propChangeSpy).toHaveBeenCalled();
             document.getElementById('dup-state').click();
             document.getElementById('change-state').click();
+        });
+        it('check the dynamic template with multi level',()=>{
+            expect(result.refs.ReactStyler1.fields[0].header.text).toBe('string');
+        });
+        it('check the dynamic template with single level',()=>{
+            expect(result.refs.ReactStyler1.fields[1].header.text).toBe('string');
         });
     });
     describe('Prevent directive child Propertyrefresh', () => {

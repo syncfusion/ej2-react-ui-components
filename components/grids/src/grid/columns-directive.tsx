@@ -5,6 +5,7 @@ export interface ColumnDirTypecast {
     template?: string | Function | any;
     headerTemplate?: string | Function | any;
     commandsTemplate?: string | Function | any;
+    filterItemTemplate?: string | Function | any;
     editTemplate?: string | Function | any;
     filterTemplate?: string | Function | any;
 }
@@ -22,6 +23,7 @@ export interface ColumnDirTypecast {
  */
 export class ColumnDirective extends ComplexBase<ColumnModel| ColumnDirTypecast, ColumnModel| ColumnDirTypecast> {
     public static moduleName: string = 'column';
+    public static complexTemplate: Object = {'filterItemTemplate': 'filter.itemTemplate'};
 }
 
 export class ColumnsDirective extends ComplexBase<{}, {}> {

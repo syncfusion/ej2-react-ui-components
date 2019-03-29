@@ -1,6 +1,6 @@
 import { Children, PureComponent } from 'react';
 import { findDOMNode, render } from 'react-dom';
-import { detach, extend, getTemplateEngine, isNullOrUndefined, setTemplateEngine } from '@syncfusion/ej2-base';
+import { detach, extend, getTemplateEngine, getValue, isNullOrUndefined, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
 
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -22,7 +22,7 @@ var defaulthtmlkeys = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
 var delayUpdate = ['accordion', 'tab'];
-/* tslint:disable */
+// tslint:disable
 var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     __extends(ComponentBase, _super);
     function ComponentBase() {
@@ -57,7 +57,6 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             }
         });
     };
-    // tslint:disable-next-line:no-any
     ComponentBase.prototype.componentWillReceiveProps = function (nextProps) {
         var _this = this;
         if (!this.isAppendCalled) {
@@ -101,9 +100,21 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     };
     ComponentBase.prototype.refreshProperties = function (dProps, nextProps) {
         if (Object.keys(dProps).length) {
+            this.processComplexTemplate(dProps, this);
             this.setProperties(dProps);
         }
         this.refreshChild(false, nextProps);
+    };
+    ComponentBase.prototype.processComplexTemplate = function (curObject, context) {
+        var compTemplate = context.complexTemplate;
+        if (compTemplate) {
+            for (var prop in compTemplate) {
+                var PropVal = compTemplate[prop];
+                if (curObject[prop]) {
+                    setValue(PropVal, getValue(prop, curObject), curObject);
+                }
+            }
+        }
     };
     ComponentBase.prototype.getDefaultAttributes = function () {
         return this.htmlattributes;
@@ -126,7 +137,6 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             this.modelObserver.notify(eventName, eventProp);
             this.isProtectedOnChange = prevDetection;
         }
-        /* tslint:enable:no-any */
     };
     ComponentBase.prototype.compareObjects = function (oldProps, newProps) {
         return JSON.stringify(oldProps) === JSON.stringify(newProps);
@@ -222,13 +232,19 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             var field = this.getChildType(child);
             if (field === key) {
                 if (accessProp || !prop.children) {
-                    ret.push(extend({}, prop, {}, true));
+                    // tslint:disable
+                    var cacheVal = extend({}, prop, {}, true);
+                    // tslint:disable
+                    this.processComplexTemplate(cacheVal, child.type);
+                    ret.push(cacheVal);
                 }
                 else {
                     var cachedValue = this.validateChildren(extend({}, prop), matcher[key], prop) || prop;
                     if (cachedValue['children']) {
                         delete cachedValue['children'];
                     }
+                    // tslint:disable
+                    this.processComplexTemplate(cachedValue, child.type);
                     ret.push(cachedValue);
                 }
             }
@@ -249,6 +265,8 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     };
     return ComponentBase;
 }(PureComponent));
+
+/* tslint:enable:no-any */
 
 // tslint:disable-next-line:no-any
 function applyMixins(derivedClass, baseClass) {

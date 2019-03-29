@@ -132,6 +132,7 @@ applyMixins(ContextMenuComponent, [ComponentBase, PureComponent]);
 class TabItemDirective extends ComplexBase {
 }
 TabItemDirective.moduleName = 'tabItem';
+TabItemDirective.complexTemplate = { 'headerText': 'header.text' };
 class TabItemsDirective extends ComplexBase {
 }
 TabItemsDirective.propertyName = 'items';

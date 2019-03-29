@@ -17,6 +17,7 @@ import { RecurrenceEditor, Schedule } from '@syncfusion/ej2-schedule';
 class ViewDirective extends ComplexBase {
 }
 ViewDirective.moduleName = 'view';
+ViewDirective.complexTemplate = { 'timeScaleMinorSlotTemplate': 'timeScale.minorSlotTemplate', 'timeScaleMajorSlotTemplate': 'timeScale.majorSlotTemplate', 'groupHeaderTooltipTemplate': 'group.headerTooltipTemplate' };
 class ViewsDirective extends ComplexBase {
 }
 ViewsDirective.propertyName = 'views';

@@ -4,6 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface StockChartTypecast {
+    tooltipTemplate?: string | Function | any;
 }
 /**
  * Represents react Chart Component
@@ -18,7 +19,7 @@ export class StockChartComponent extends StockChart {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'stockChartSeriesCollection': {'stockChartSeries': {'stockChartTrendlines': 'stockChartTrendline'}}, 'stockChartAxes': {'stockChartAxis': {'stockChartStripLines': 'stockChartStripLine'}}, 'stockChartRows': 'stockChartRow', 'stockChartAnnotations': 'stockChartAnnotation', 'stockChartSelectedDataIndexes': 'stockChartSelectedDataIndex', 'stockChartPeriods': 'stockChartPeriod', 'stockChartStockEvents': 'stockChartStockEvent', 'stockChartIndicators': 'stockChartIndicator'};
+    public directivekeys: { [key: string]: Object } = {'stockChartSeriesCollection': {'stockChartSeries': {'stockChartTrendlines': 'stockChartTrendline'}}, 'stockChartAxes': {'stockChartAxis': {'stockChartStripLines': 'stockChartStripLine'}}, 'stockChartRows': 'stockChartRow', 'stockChartAnnotations': 'stockChartAnnotation', 'stockChartSelectedDataIndexes': 'stockChartSelectedDataIndex', 'stockChartPeriods': 'stockChartPeriod', 'stockEvents': 'stockEvent', 'stockChartIndicators': 'stockChartIndicator'};
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<StockChartModel & DefaultHtmlAttributes| StockChartTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

@@ -4,6 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface CircularGaugeTypecast {
+    tooltipTemplate?: string | Function | any;
 }
 /**
  * Represents react Circular Gauge Component

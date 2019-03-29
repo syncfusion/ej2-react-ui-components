@@ -3,7 +3,7 @@
  */
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { extend, isNullOrUndefined } from '@syncfusion/ej2-base';
+import { extend, isNullOrUndefined, setValue, getValue } from '@syncfusion/ej2-base';
 /**
  * Interface for processing directives
  */
@@ -28,7 +28,8 @@ const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
 const delayUpdate: string[] = ['accordion', 'tab'];
-/* tslint:disable */
+
+ // tslint:disable
 export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private setProperties: Function;
     private element: any;
@@ -75,7 +76,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             }
         });
     }
-    // tslint:disable-next-line:no-any
+   
     public componentWillReceiveProps(nextProps: any): void {
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
@@ -114,10 +115,24 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     }
     public refreshProperties(dProps: Object, nextProps: Object): void {
         if (Object.keys(dProps).length) {
+            this.processComplexTemplate(dProps, (this as any));
             this.setProperties(dProps);
         }
         this.refreshChild(false, nextProps);
     }
+
+    private processComplexTemplate(curObject: Object, context: {complexTemplate: Object}){
+        let compTemplate: Object = context.complexTemplate
+        if(compTemplate){
+            for(let  prop in compTemplate){
+                let PropVal: string = compTemplate[prop];
+                if(curObject[prop]){
+                    setValue(PropVal, getValue(prop, curObject), curObject);
+                }
+            }
+        }
+    }
+
     public getDefaultAttributes(): Object {
         return this.htmlattributes;
     }
@@ -140,7 +155,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             this.modelObserver.notify(eventName, eventProp);
             this.isProtectedOnChange = prevDetection;
         }
-        /* tslint:enable:no-any */
+    
     }
     public compareObjects(oldProps: Object, newProps: Object) {
         return JSON.stringify(oldProps) === JSON.stringify(newProps);
@@ -235,7 +250,11 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             let field: string = this.getChildType(<any>child);
             if (field === key) {
                 if (accessProp || !(<Directive>prop).children) {
-                    ret.push(extend({}, prop, {}, true));
+                     // tslint:disable
+                    let cacheVal: Object = extend({}, prop, {}, true);
+                     // tslint:disable
+                    this.processComplexTemplate(cacheVal, (child as any ).type);
+                    ret.push(cacheVal);
                 } else {
                     let cachedValue: Object = this.validateChildren(
                         <{ [key: string]: Object }>extend({}, prop), <{ [key: string]: Object }>matcher[key],
@@ -243,6 +262,8 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                     if (cachedValue['children']) {
                         delete cachedValue['children'];
                     }
+                     // tslint:disable
+                    this.processComplexTemplate(cachedValue, (child as any ).type);
                     ret.push(cachedValue);
                 }
             }
@@ -262,3 +283,4 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         return [];
     }
 }
+/* tslint:enable:no-any */

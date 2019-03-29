@@ -39,6 +39,7 @@ LayersDirective.moduleName = 'layers';
 class MarkerDirective extends ComplexBase {
 }
 MarkerDirective.moduleName = 'marker';
+MarkerDirective.complexTemplate = { 'tooltipSettingsTemplate': 'tooltipSettings.template' };
 class MarkersDirective extends ComplexBase {
 }
 MarkersDirective.propertyName = 'markerSettings';
@@ -62,6 +63,7 @@ MarkersDirective.moduleName = 'markers';
 class BubbleDirective extends ComplexBase {
 }
 BubbleDirective.moduleName = 'bubble';
+BubbleDirective.complexTemplate = { 'tooltipSettingsTemplate': 'tooltipSettings.template' };
 class BubblesDirective extends ComplexBase {
 }
 BubblesDirective.propertyName = 'bubbleSettings';
@@ -110,6 +112,7 @@ ColorMappingsDirective.moduleName = 'colorMappings';
 class NavigationLineDirective extends ComplexBase {
 }
 NavigationLineDirective.moduleName = 'navigationLine';
+NavigationLineDirective.complexTemplate = { 'tooltipSettingsTemplate': 'tooltipSettings.template' };
 class NavigationLinesDirective extends ComplexBase {
 }
 NavigationLinesDirective.propertyName = 'navigationLineSettings';
