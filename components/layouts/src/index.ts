@@ -1,3 +1,3 @@
 export * from './splitter';
-export * from './dashboardlayout';
+export * from './dashboard-layout';
 export * from '@syncfusion/ej2-layouts';
