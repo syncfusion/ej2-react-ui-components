@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 17.1.40 (2019-04-09)
+## 17.1.41 (2019-04-16)
 
 ### In-place Editor
 
@@ -41,6 +41,7 @@
 - `space` key action issue is fixed with clicking save and cancel buttons.
 - Value persistence issue with `multi-select` when doing cancel action after removing selected item.
 - Double-Click issue in IOS device is fixed.
+- `Invalid background value` warning thrown in `In-place Editor`, that issue has been fixed.
 
 ## 16.4.40-beta (2018-12-10)
 

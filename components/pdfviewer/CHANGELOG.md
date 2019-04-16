@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.41 (2019-04-16)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- The font size is missing warning will no longer be thrown from styles in the PDF Viewer.
+
 ## 17.1.40 (2019-04-09)
 
 ### PDF Viewer

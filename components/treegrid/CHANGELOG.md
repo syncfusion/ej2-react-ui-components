@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.41 (2019-04-16)
+
+### TreeGrid
+
+#### Bug Fixes
+
+-#143815 - `GridLine` property is working fine in MVC
+
 ## 17.1.40 (2019-04-09)
 
 ### TreeGrid

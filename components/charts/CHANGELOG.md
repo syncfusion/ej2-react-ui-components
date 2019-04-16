@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.41 (2019-04-16)
+
+### Chart
+
+#### Bug Fixes
+
+- Support has been provided for multiple export in horizontal mode.
+
 ## 17.1.40 (2019-04-09)
 
 ### Accumulation chart
