@@ -2,7 +2,23 @@
 
 ## [Unreleased]
 
-## 17.1.41 (2019-04-16)
+## 17.1.42 (2019-04-23)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Rule with AND operator is not properly updated in ASP.NET MVC and Core.
+
+## 17.1.40 (2019-04-09)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Updating conditions throws script error after using 'setRules' method.
+
+## 17.1.38 (2019-03-29)
 
 ### QueryBuilder
 

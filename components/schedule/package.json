@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-schedule",
-	"version": "17.1.38",
+	"version": "17.1.41",
 	"description": "Flexible scheduling library with more built-in features and enhanced customization options similar to outlook and google calendar, allowing the users to plan and manage their appointments with efficient data-binding support. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",

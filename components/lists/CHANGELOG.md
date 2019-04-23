@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 17.1.41 (2019-04-16)
+## 17.1.42 (2019-04-23)
+
+### ListView
+
+#### Bug Fixes
+
+- Issue in enabling `virtualization` with empty data source has been fixed.
+
+## 17.1.40 (2019-04-09)
 
 ### ListBase
 
