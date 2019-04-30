@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### Document Editor
+
+#### Bug Fixes
+
+- #233908 - Height for merged cell is now updated properly.
+
 ## 17.1.42 (2019-04-23)
 
 ### Document Editor

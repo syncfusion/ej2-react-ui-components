@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Multiselect datasource not properly updated for in and notin operators.
+
 ## 17.1.42 (2019-04-23)
 
 ### QueryBuilder

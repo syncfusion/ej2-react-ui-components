@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### DatePicker
+
+- #143352 - Now, the DatePicker fires input's blur when click outside without select the date from calendar popup.
+
 ## 17.1.42 (2019-04-23)
 
 ### DateRangePicker

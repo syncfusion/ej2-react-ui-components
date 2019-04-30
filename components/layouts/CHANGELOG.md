@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### Dashboard Layout
+
+#### Bug Fixes
+
+- #234604 - Issue with draggable cursor appears on hovering over the panels when dragging is disabled has been fixed.
+
 ## 17.1.40 (2019-04-09)
 
 ### Dashboard Layout

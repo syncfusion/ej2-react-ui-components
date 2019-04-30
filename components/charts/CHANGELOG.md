@@ -2,7 +2,17 @@
 
 ## [Unreleased]
 
-## 17.1.42 (2019-04-23)
+## 17.1.43 (2019-04-30)
+
+### Chart
+
+#### Bug Fixes
+
+- #219174 - Multi line axis label is not proper when using multiple rows intersect action issue has been fixed.
+- #231943 - Console error throws when using area chart out of the axis range has been fixed.
+- #234027 - Chart is not destroying properly while calling destroy method issue fixed.
+
+## 17.1.41 (2019-04-16)
 
 ### Chart
 

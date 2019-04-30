@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### Gantt
+
+#### Bug Fixes
+
+- Bug fixes included.
+
+## 17.1.40 (2019-04-09)
+
+### Gantt
+
+#### Bug Fixes
+
+- Internal bug fixes included.
+
 ## 17.1.32-beta (2019-03-13)
 
 ### Gantt

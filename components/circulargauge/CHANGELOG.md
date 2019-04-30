@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### CircularGauge
+
+#### Bug Fixes
+
+- #I234082 - Circular gauge tooltip is not shown in IE browser issue has been fixed.
+- #I234174 - Tooltip content width and adding a border to control container alignment issues have been fixed
+
 ## 16.4.54 (2019-02-19)
 
 ### CircularGauge

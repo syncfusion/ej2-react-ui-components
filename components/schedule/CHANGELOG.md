@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### Schedule
+
+#### Bug Fixes
+
+- #233410 - An issue with date is not retrieved in view navigation in timeline month view is fixed.
+
 ## 17.1.42 (2019-04-23)
 
 ### Schedule
