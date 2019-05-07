@@ -34,6 +34,7 @@ class QueryBuilderComponent extends QueryBuilder {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'columns': 'column' };
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

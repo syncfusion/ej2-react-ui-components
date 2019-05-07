@@ -19,6 +19,7 @@ export class TooltipComponent extends Tooltip {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TooltipModel & DefaultHtmlAttributes| TooltipTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

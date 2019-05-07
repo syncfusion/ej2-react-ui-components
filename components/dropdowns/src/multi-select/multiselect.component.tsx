@@ -22,6 +22,7 @@ export class MultiSelectComponent extends MultiSelect {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<MultiSelectModel & DefaultHtmlAttributes| MultiSelectTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

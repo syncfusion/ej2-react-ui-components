@@ -102,6 +102,7 @@ class CircularGaugeComponent extends CircularGauge {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'axes': { 'axis': { 'annotations': 'annotation', 'ranges': 'range', 'pointers': 'pointer' } } };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

@@ -22,6 +22,7 @@ export class AutoCompleteComponent extends AutoComplete {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<AutoCompleteModel & DefaultHtmlAttributes| AutoCompleteTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

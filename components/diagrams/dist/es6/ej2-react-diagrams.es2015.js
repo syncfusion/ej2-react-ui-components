@@ -143,6 +143,7 @@ class DiagramComponent extends Diagram {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'layers': 'layer', 'connectors': { 'connector': { 'connectorAnnotations': 'connectorAnnotation' } }, 'nodes': { 'node': { 'nodeAnnotations': 'nodeAnnotation', 'ports': 'port' } } };
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -187,6 +188,7 @@ class SymbolPaletteComponent extends SymbolPalette {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'palettes': 'palette' };
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -211,6 +213,7 @@ class OverviewComponent extends Overview {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

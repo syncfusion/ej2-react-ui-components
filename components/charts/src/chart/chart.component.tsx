@@ -20,6 +20,7 @@ export class ChartComponent extends Chart {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'seriesCollection': {'series': {'trendlines': 'trendline', 'segments': 'segment'}}, 'axes': {'axis': {'stripLines': 'stripLine', 'multiLevelLabels': {'multiLevelLabel': {'categories': 'category'}}}}, 'rows': 'row', 'columns': 'column', 'annotations': 'annotation', 'selectedDataIndexes': 'selectedDataIndex', 'indicators': 'indicator'};
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ChartModel & DefaultHtmlAttributes| ChartTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

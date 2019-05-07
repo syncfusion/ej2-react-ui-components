@@ -22,6 +22,7 @@ export class TreeGridComponent extends TreeGrid {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'columns': 'column', 'aggregates': {'aggregate': {'aggregateColumns': 'aggregateColumn'}}};
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TreeGridModel & DefaultHtmlAttributes| TreeGridTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

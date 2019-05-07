@@ -20,6 +20,7 @@ export class CircularGaugeComponent extends CircularGauge {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'axes': {'axis': {'annotations': 'annotation', 'ranges': 'range', 'pointers': 'pointer'}}};
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<CircularGaugeModel & DefaultHtmlAttributes| CircularGaugeTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

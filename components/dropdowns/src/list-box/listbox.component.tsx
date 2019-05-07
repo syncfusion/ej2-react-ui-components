@@ -19,6 +19,7 @@ export class ListBoxComponent extends ListBox {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ListBoxModel & DefaultHtmlAttributes| ListBoxTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

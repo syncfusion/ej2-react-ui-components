@@ -20,6 +20,7 @@ export class LinearGaugeComponent extends LinearGauge {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'axes': {'axis': {'ranges': 'range', 'pointers': 'pointer'}}, 'annotations': 'annotation'};
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<LinearGaugeModel & DefaultHtmlAttributes| LinearGaugeTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

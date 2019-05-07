@@ -20,6 +20,7 @@ export class RangeNavigatorComponent extends RangeNavigator {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'rangenavigatorSeriesCollection': 'rangenavigatorSeries'};
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<RangeNavigatorModel & DefaultHtmlAttributes| RangeNavigatorTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

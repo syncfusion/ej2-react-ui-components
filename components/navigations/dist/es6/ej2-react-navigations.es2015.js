@@ -34,6 +34,7 @@ class AccordionComponent extends Accordion {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'accordionItems': 'accordionItem' };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -79,6 +80,7 @@ class ToolbarComponent extends Toolbar {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'items': 'item' };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -104,6 +106,7 @@ class ContextMenuComponent extends ContextMenu {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -150,6 +153,7 @@ class TabComponent extends Tab {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'tabItems': 'tabItem' };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -174,6 +178,7 @@ class TreeViewComponent extends TreeView {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -198,6 +203,7 @@ class SidebarComponent extends Sidebar {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -231,6 +237,7 @@ class MenuComponent extends Menu {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'menuItems': 'menuItem' };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

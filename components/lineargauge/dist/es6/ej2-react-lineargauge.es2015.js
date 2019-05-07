@@ -98,6 +98,7 @@ class LinearGaugeComponent extends LinearGauge {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'axes': { 'axis': { 'ranges': 'range', 'pointers': 'pointer' } }, 'annotations': 'annotation' };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

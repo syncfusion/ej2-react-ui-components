@@ -21,6 +21,7 @@ export class TreeMapComponent extends TreeMap {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'levels': 'level'};
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TreeMapModel & DefaultHtmlAttributes| TreeMapTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

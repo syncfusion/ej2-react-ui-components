@@ -17,6 +17,7 @@ export class DocumentEditorContainerComponent extends DocumentEditorContainer {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
+    private checkTemplate: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DocumentEditorContainerModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

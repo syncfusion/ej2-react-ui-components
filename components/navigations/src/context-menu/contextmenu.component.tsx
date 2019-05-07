@@ -18,6 +18,7 @@ export class ContextMenuComponent extends ContextMenu {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
+    private checkTemplate: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ContextMenuModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

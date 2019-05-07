@@ -149,6 +149,7 @@ class MapsComponent extends Maps {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'layers': { 'layer': { 'markers': 'marker', 'bubbles': { 'bubble': { 'colorMappings': 'colorMapping' } }, 'navigationLines': 'navigationLine' } }, 'annotations': 'annotation' };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

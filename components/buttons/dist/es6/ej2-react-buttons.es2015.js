@@ -13,6 +13,7 @@ class ButtonComponent extends Button {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -37,6 +38,7 @@ class CheckBoxComponent extends CheckBox {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -61,6 +63,7 @@ class RadioButtonComponent extends RadioButton {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -85,6 +88,7 @@ class SwitchComponent extends Switch {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -129,6 +133,7 @@ class ChipListComponent extends ChipList {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'chips': 'chip' };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

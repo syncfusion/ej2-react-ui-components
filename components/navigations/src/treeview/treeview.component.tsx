@@ -19,6 +19,7 @@ export class TreeViewComponent extends TreeView {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
+    private checkTemplate: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TreeViewModel & DefaultHtmlAttributes| TreeViewTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

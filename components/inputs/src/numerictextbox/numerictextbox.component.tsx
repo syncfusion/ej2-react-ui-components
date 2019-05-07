@@ -17,6 +17,7 @@ export class NumericTextBoxComponent extends NumericTextBox {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
+    private checkTemplate: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<NumericTextBoxModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

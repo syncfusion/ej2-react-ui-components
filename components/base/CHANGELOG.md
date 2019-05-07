@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 17.1.43 (2019-04-30)
+## 17.1.44 (2019-05-07)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved the delay execution of input components in react.
+
+## 17.1.38 (2019-03-29)
 
 ### Common
 

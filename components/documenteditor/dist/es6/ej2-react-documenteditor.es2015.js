@@ -13,6 +13,7 @@ class DocumentEditorComponent extends DocumentEditor {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -37,6 +38,7 @@ class DocumentEditorContainerComponent extends DocumentEditorContainer {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

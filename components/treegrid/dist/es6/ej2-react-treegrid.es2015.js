@@ -88,6 +88,7 @@ class TreeGridComponent extends TreeGrid {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'columns': 'column', 'aggregates': { 'aggregate': { 'aggregateColumns': 'aggregateColumn' } } };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

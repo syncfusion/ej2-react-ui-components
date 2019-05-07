@@ -18,6 +18,7 @@ export class SmithchartComponent extends Smithchart {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'smithchartSeriesCollection': 'smithchartSeries'};
+    private checkTemplate: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SmithchartModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

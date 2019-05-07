@@ -49,13 +49,22 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
-        this.cachedTimeOut = setTimeout(function () {
-            var ele = findDOMNode(_this);
-            if (ele) {
-                _this.isAppendCalled = true;
-                _this.appendTo(ele);
-            }
-        });
+        var listName = ['textbox', 'input', 'maskedtextbox', 'numerictextbox', 'slider', 'button', 'calendar', 'datepicker', 'daterangepicker', 'datetimepicker', 'timepicker', 'check-box', 'radio-button', 'dropdown-btn', 'progress-btn', 'split-btn', 'contextmenu', 'sidebar', 'smithchart', 'sparkline'];
+        if (listName.indexOf(this.getModuleName()) === -1) {
+            this.cachedTimeOut = setTimeout(function () {
+                _this.addClass();
+            });
+        }
+        else {
+            this.addClass();
+        }
+    };
+    ComponentBase.prototype.addClass = function () {
+        var ele = findDOMNode(this);
+        if (ele) {
+            this.isAppendCalled = true;
+            this.appendTo(ele);
+        }
     };
     ComponentBase.prototype.componentWillReceiveProps = function (nextProps) {
         var _this = this;

@@ -13,6 +13,7 @@ class TextBoxComponent extends TextBox {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -37,6 +38,7 @@ class NumericTextBoxComponent extends NumericTextBox {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -62,6 +64,7 @@ class MaskedTextBoxComponent extends MaskedTextBox {
         this.controlAttributes = ['name'];
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -87,6 +90,7 @@ class SliderComponent extends Slider {
         this.controlAttributes = ['name'];
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -132,6 +136,7 @@ class UploaderComponent extends Uploader {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'files': 'uploadedFiles' };
+        this.checkTemplate = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -156,6 +161,7 @@ class ColorPickerComponent extends ColorPicker {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.checkTemplate = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
