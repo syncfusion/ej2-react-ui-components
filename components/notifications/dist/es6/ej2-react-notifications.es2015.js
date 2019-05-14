@@ -34,7 +34,7 @@ class ToastComponent extends Toast {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'buttonModelProp': 'buttonModelProps' };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

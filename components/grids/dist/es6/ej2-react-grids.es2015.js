@@ -88,7 +88,7 @@ class GridComponent extends Grid {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'columns': 'column', 'aggregates': { 'aggregate': { 'aggregateColumns': 'aggregateColumn' } } };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -113,7 +113,7 @@ class PagerComponent extends Pager {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

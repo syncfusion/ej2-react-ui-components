@@ -5,6 +5,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 export interface TreeGridTypecast {
     toolbarTemplate?: string | Function | any;
+    rowTemplate?: string | Function | any;
     pagerTemplate?: string | Function | any;
     editSettingsTemplate?: string | Function | any;
 }
@@ -22,7 +23,7 @@ export class TreeGridComponent extends TreeGrid {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'columns': 'column', 'aggregates': {'aggregate': {'aggregateColumns': 'aggregateColumn'}}};
-    private checkTemplate: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TreeGridModel & DefaultHtmlAttributes| TreeGridTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

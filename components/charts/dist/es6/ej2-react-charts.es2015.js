@@ -268,7 +268,7 @@ class ChartComponent extends Chart {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'seriesCollection': { 'series': { 'trendlines': 'trendline', 'segments': 'segment' } }, 'axes': { 'axis': { 'stripLines': 'stripLine', 'multiLevelLabels': { 'multiLevelLabel': { 'categories': 'category' } } } }, 'rows': 'row', 'columns': 'column', 'annotations': 'annotation', 'selectedDataIndexes': 'selectedDataIndex', 'indicators': 'indicator' };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -333,7 +333,7 @@ class AccumulationChartComponent extends AccumulationChart {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'accumulationSeriesCollection': 'accumulationSeries', 'accumulationAnnotations': 'accumulationAnnotation' };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -378,7 +378,7 @@ class RangeNavigatorComponent extends RangeNavigator {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'rangenavigatorSeriesCollection': 'rangenavigatorSeries' };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -412,7 +412,7 @@ class SparklineComponent extends Sparkline {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'rangeBandSettings': 'rangeBandSetting' };
-        this.checkTemplate = false;
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -446,7 +446,7 @@ class SmithchartComponent extends Smithchart {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'smithchartSeriesCollection': 'smithchartSeries' };
-        this.checkTemplate = false;
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -670,7 +670,7 @@ class StockChartComponent extends StockChart {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'stockChartSeriesCollection': { 'stockChartSeries': { 'stockChartTrendlines': 'stockChartTrendline' } }, 'stockChartAxes': { 'stockChartAxis': { 'stockChartStripLines': 'stockChartStripLine' } }, 'stockChartRows': 'stockChartRow', 'stockChartAnnotations': 'stockChartAnnotation', 'stockChartSelectedDataIndexes': 'stockChartSelectedDataIndex', 'stockChartPeriods': 'stockChartPeriod', 'stockEvents': 'stockEvent', 'stockChartIndicators': 'stockChartIndicator' };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

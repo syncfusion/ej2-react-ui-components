@@ -13,7 +13,7 @@ class DropDownListComponent extends DropDownList {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -38,7 +38,7 @@ class ComboBoxComponent extends ComboBox {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -63,7 +63,7 @@ class AutoCompleteComponent extends AutoComplete {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -88,7 +88,7 @@ class MultiSelectComponent extends MultiSelect {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -113,7 +113,7 @@ class ListBoxComponent extends ListBox {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

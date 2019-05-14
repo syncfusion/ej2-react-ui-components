@@ -22,7 +22,7 @@ export class ComboBoxComponent extends ComboBox {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
-    private checkTemplate: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ComboBoxModel & DefaultHtmlAttributes| ComboBoxTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

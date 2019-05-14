@@ -31,7 +31,7 @@ export class ScheduleComponent extends Schedule {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'views': 'view', 'resources': 'resource', 'headerRows': 'headerRow'};
-    private checkTemplate: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ScheduleModel & DefaultHtmlAttributes| ScheduleTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

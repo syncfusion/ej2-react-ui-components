@@ -18,7 +18,7 @@ export class SymbolPaletteComponent extends SymbolPalette {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'palettes': 'palette'};
-    private checkTemplate: boolean = false;
+    private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SymbolPaletteModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

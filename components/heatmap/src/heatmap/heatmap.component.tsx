@@ -17,6 +17,7 @@ export class HeatMapComponent extends HeatMap {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
+    private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<HeatMapModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

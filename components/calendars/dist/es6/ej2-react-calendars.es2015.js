@@ -13,7 +13,7 @@ class CalendarComponent extends Calendar {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.checkTemplate = false;
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -38,7 +38,7 @@ class DatePickerComponent extends DatePicker {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.checkTemplate = false;
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -63,7 +63,7 @@ class TimePickerComponent extends TimePicker {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.checkTemplate = false;
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -109,7 +109,7 @@ class DateRangePickerComponent extends DateRangePicker {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'presets': 'preset' };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -134,7 +134,7 @@ class DateTimePickerComponent extends DateTimePicker {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.checkTemplate = false;
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

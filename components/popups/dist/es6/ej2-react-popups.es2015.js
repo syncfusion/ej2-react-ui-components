@@ -34,7 +34,7 @@ class DialogComponent extends Dialog {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'buttons': 'dialogButton' };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -59,7 +59,7 @@ class TooltipComponent extends Tooltip {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

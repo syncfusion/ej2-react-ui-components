@@ -32,22 +32,13 @@ class ComponentBase extends PureComponent {
         this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
-        var listName = ['textbox', 'input', 'maskedtextbox', 'numerictextbox', 'slider', 'button', 'calendar', 'datepicker', 'daterangepicker', 'datetimepicker', 'timepicker', 'check-box', 'radio-button', 'dropdown-btn', 'progress-btn', 'split-btn', 'contextmenu', 'sidebar', 'smithchart', 'sparkline'];
-        if (listName.indexOf(this.getModuleName()) === -1) {
-            this.cachedTimeOut = setTimeout(() => {
-                this.addClass();
-            });
-        }
-        else {
-            this.addClass();
-        }
-    }
-    addClass() {
-        let ele = findDOMNode(this);
-        if (ele) {
-            this.isAppendCalled = true;
-            this.appendTo(ele);
-        }
+        this.cachedTimeOut = setTimeout(() => {
+            let ele = findDOMNode(this);
+            if (ele) {
+                this.isAppendCalled = true;
+                this.appendTo(ele);
+            }
+        });
     }
     componentWillReceiveProps(nextProps) {
         if (!this.isAppendCalled) {

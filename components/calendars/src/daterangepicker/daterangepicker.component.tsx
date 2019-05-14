@@ -21,7 +21,7 @@ export class DateRangePickerComponent extends DateRangePicker {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'presets': 'preset'};
-    private checkTemplate: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DateRangePickerModel & DefaultHtmlAttributes| DateRangePickerTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

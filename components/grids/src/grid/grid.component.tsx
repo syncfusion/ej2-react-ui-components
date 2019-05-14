@@ -25,7 +25,7 @@ export class GridComponent extends Grid {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'columns': 'column', 'aggregates': {'aggregate': {'aggregateColumns': 'aggregateColumn'}}};
-    private checkTemplate: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<GridModel & DefaultHtmlAttributes| GridTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

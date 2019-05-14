@@ -19,7 +19,7 @@ export class PagerComponent extends Pager {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
-    private checkTemplate: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<PagerModel & DefaultHtmlAttributes| PagerTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

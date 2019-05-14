@@ -18,7 +18,7 @@ export class ToolbarComponent extends Toolbar {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'items': 'item'};
-    private checkTemplate: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ToolbarModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

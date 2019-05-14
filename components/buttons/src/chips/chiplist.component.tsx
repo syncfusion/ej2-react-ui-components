@@ -18,7 +18,7 @@ export class ChipListComponent extends ChipList {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'chips': 'chip'};
-    private checkTemplate: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ChipListModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

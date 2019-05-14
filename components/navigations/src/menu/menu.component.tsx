@@ -20,7 +20,7 @@ export class MenuComponent extends Menu {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'menuItems': 'menuItem'};
-    private checkTemplate: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<MenuModel & DefaultHtmlAttributes| MenuTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

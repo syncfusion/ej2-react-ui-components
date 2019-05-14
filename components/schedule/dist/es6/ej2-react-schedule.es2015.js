@@ -75,7 +75,7 @@ class ScheduleComponent extends Schedule {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'views': 'view', 'resources': 'resource', 'headerRows': 'headerRow' };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -100,7 +100,7 @@ class RecurrenceEditorComponent extends RecurrenceEditor {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.checkTemplate = false;
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
