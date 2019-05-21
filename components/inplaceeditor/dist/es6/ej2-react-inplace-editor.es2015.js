@@ -13,7 +13,7 @@ class InPlaceEditorComponent extends InPlaceEditor {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

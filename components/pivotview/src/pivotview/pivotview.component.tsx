@@ -19,6 +19,7 @@ export class PivotViewComponent extends PivotView {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<PivotViewModel & DefaultHtmlAttributes| PivotViewTypecast>;
     public forceUpdate: (callBack?: () => any) => void;

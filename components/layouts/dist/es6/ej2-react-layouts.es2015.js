@@ -34,6 +34,7 @@ class SplitterComponent extends Splitter {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'panes': 'pane' };
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -79,6 +80,7 @@ class DashboardLayoutComponent extends DashboardLayout {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.directivekeys = { 'panels': 'panel' };
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

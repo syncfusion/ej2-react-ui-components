@@ -13,7 +13,7 @@ class FileManagerComponent extends FileManager {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.checkTemplate = false;
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

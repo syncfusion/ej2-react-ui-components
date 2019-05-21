@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 17.1.47 (2019-05-14)
+
+### Pivot View
+
+#### Bug Fixes
+
+- #232925 - Grouping bar feature is now working fine with the combination of toolbar and pivot chart.
+
+#### New Features
+
+- #230489 – You can drill the pivot table headers based on the position.
+
+- #227370 - Now, you can hide the fields from the pivot table field list data source.
+
 ## 17.1.38 (2019-03-29)
 
 ### Pivot View

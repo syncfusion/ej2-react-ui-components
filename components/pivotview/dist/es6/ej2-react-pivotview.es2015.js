@@ -13,6 +13,7 @@ class PivotViewComponent extends PivotView {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
@@ -37,6 +38,7 @@ class PivotFieldListComponent extends PivotFieldList {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
+        this.immediateRender = true;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

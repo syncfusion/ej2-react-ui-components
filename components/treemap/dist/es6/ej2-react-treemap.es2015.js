@@ -33,7 +33,7 @@ class TreeMapComponent extends TreeMap {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'levels': 'level' };
-        this.checkTemplate = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

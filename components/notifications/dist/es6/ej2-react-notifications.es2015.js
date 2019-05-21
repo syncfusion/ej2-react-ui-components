@@ -14,13 +14,13 @@ import { Toast } from '@syncfusion/ej2-notifications';
  * </ToastComponent>
  * ```
  */
-class ButtonModelPropsDirective extends ComplexBase {
-}
-ButtonModelPropsDirective.moduleName = 'buttonModelProps';
 class ButtonModelPropDirective extends ComplexBase {
 }
-ButtonModelPropDirective.propertyName = 'buttons';
 ButtonModelPropDirective.moduleName = 'buttonModelProp';
+class ButtonModelPropsDirective extends ComplexBase {
+}
+ButtonModelPropsDirective.propertyName = 'buttons';
+ButtonModelPropsDirective.moduleName = 'buttonModelProps';
 
 /**
  * Represents the React Toast Component
@@ -33,7 +33,7 @@ class ToastComponent extends Toast {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
-        this.directivekeys = { 'buttonModelProp': 'buttonModelProps' };
+        this.directivekeys = { 'buttonModelProps': 'buttonModelProp' };
         this.immediateRender = false;
     }
     render() {
@@ -48,6 +48,6 @@ class ToastComponent extends Toast {
 }
 applyMixins(ToastComponent, [ComponentBase, PureComponent]);
 
-export { ButtonModelPropsDirective, ButtonModelPropDirective, ToastComponent };
+export { ButtonModelPropDirective, ButtonModelPropsDirective, ToastComponent };
 export * from '@syncfusion/ej2-notifications';
 //# sourceMappingURL=ej2-react-notifications.es2015.js.map

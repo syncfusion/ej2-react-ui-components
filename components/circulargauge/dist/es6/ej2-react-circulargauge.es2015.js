@@ -3,7 +3,7 @@ import { PureComponent, createElement } from 'react';
 import { CircularGauge } from '@syncfusion/ej2-circulargauge';
 
 /**
- * `Axis` directive represent a axes of the react circular gauge.
+ * `Axis` directive represent a axes of the react circular gauge
  * It must be contained in a CircularGauge component(`CircularGauge`).
  * ```tsx
  * <CircularGaugeComponent>

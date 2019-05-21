@@ -14,11 +14,11 @@ import { ButtonModelPropsModel } from '@syncfusion/ej2-notifications';
  * </ToastComponent>
  * ```
  */
-export class ButtonModelPropsDirective extends ComplexBase<ButtonModelPropsModel, ButtonModelPropsModel> {
-    public static moduleName: string = 'buttonModelProps';
+export class ButtonModelPropDirective extends ComplexBase<ButtonModelPropsModel, ButtonModelPropsModel> {
+    public static moduleName: string = 'buttonModelProp';
 }
 
-export class ButtonModelPropDirective extends ComplexBase<{}, {}> {
+export class ButtonModelPropsDirective extends ComplexBase<{}, {}> {
     public static propertyName: string = 'buttons';
-    public static moduleName: string = 'buttonModelProp';
+    public static moduleName: string = 'buttonModelProps';
 }
