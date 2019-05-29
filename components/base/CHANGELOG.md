@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.49 (2019-05-29)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved template rendering issue in splitter component in react.
+
 ## 17.1.38 (2019-03-29)
 
 ### Common

@@ -21,7 +21,7 @@ var __extends = (undefined && undefined.__extends) || (function () {
 var defaulthtmlkeys = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
-var delayUpdate = ['accordion', 'tab'];
+var delayUpdate = ['accordion', 'tab', 'splitter'];
 // tslint:disable
 var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     __extends(ComponentBase, _super);

@@ -27,7 +27,7 @@ interface Directive {
 const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
-const delayUpdate: string[] = ['accordion', 'tab'];
+const delayUpdate: string[] = ['accordion', 'tab', 'splitter'];
 
  // tslint:disable
 export class ComponentBase<P, S> extends React.PureComponent<P, S> {

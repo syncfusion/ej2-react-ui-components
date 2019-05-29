@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.49 (2019-05-29)
+
+### Pivot View
+
+#### New Features
+
+- #227467 - Now, null and undefined types data will not be included in aggregation. They will be displayed in the headers.
+
 ## 17.1.47 (2019-05-14)
 
 ### Pivot View

@@ -2,6 +2,36 @@
 
 ## [Unreleased]
 
+## 17.1.49 (2019-05-29)
+
+### TextBox
+
+#### New Features
+
+- #236816 - Provided method to `focusIn` and `focusOut`.
+
+### NumericTextBox
+
+#### New Features
+
+- #236816 - Provided method to `focusIn` and `focusOut`.
+
+### MaskedTextBox
+
+#### New Features
+
+- #236816 - Provided method to `focusIn` and `focusOut`.
+
+#### Bug Fixes
+
+- Now, MaskedTextBox renders properly after calling `refresh` method.
+
+### Uploader
+
+#### Bug Fixes
+
+- #235532 - Now, you can remove the uploaded files, while using the uploader within form.
+
 ## 17.1.44 (2019-05-07)
 
 ### MaskedTextBox

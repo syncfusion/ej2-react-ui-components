@@ -8,7 +8,7 @@ import { detach, extend, getTemplateEngine, getValue, isNullOrUndefined, setTemp
 const defaulthtmlkeys = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
-const delayUpdate = ['accordion', 'tab'];
+const delayUpdate = ['accordion', 'tab', 'splitter'];
 // tslint:disable
 class ComponentBase extends PureComponent {
     constructor() {
