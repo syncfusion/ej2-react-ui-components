@@ -32,13 +32,21 @@ class ComponentBase extends PureComponent {
         this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
-        this.cachedTimeOut = setTimeout(() => {
-            let ele = findDOMNode(this);
-            if (ele) {
-                this.isAppendCalled = true;
-                this.appendTo(ele);
-            }
-        });
+        if (this.props.immediateRender) {
+            this.renderComponent();
+        }
+        else {
+            this.cachedTimeOut = setTimeout(() => {
+                this.renderComponent();
+            });
+        }
+    }
+    renderComponent() {
+        let ele = findDOMNode(this);
+        if (ele) {
+            this.isAppendCalled = true;
+            this.appendTo(ele);
+        }
     }
     componentWillReceiveProps(nextProps) {
         if (!this.isAppendCalled) {
@@ -70,7 +78,7 @@ class ComponentBase extends PureComponent {
         if (dProps['children']) {
             delete dProps['children'];
         }
-        if (this.canDelayUpdate) {
+        if (this.canDelayUpdate || this.props.delayUpdate) {
             setTimeout(() => {
                 this.refreshProperties(dProps, nextProps);
             });

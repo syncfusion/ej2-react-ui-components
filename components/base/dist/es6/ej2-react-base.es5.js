@@ -49,13 +49,21 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
-        this.cachedTimeOut = setTimeout(function () {
-            var ele = findDOMNode(_this);
-            if (ele) {
-                _this.isAppendCalled = true;
-                _this.appendTo(ele);
-            }
-        });
+        if (this.props.immediateRender) {
+            this.renderComponent();
+        }
+        else {
+            this.cachedTimeOut = setTimeout(function () {
+                _this.renderComponent();
+            });
+        }
+    };
+    ComponentBase.prototype.renderComponent = function () {
+        var ele = findDOMNode(this);
+        if (ele) {
+            this.isAppendCalled = true;
+            this.appendTo(ele);
+        }
     };
     ComponentBase.prototype.componentWillReceiveProps = function (nextProps) {
         var _this = this;
@@ -89,7 +97,7 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         if (dProps['children']) {
             delete dProps['children'];
         }
-        if (this.canDelayUpdate) {
+        if (this.canDelayUpdate || this.props.delayUpdate) {
             setTimeout(function () {
                 _this.refreshProperties(dProps, nextProps);
             });

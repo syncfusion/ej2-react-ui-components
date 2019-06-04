@@ -30,4 +30,7 @@ export interface DefaultHtmlAttributes {
     onClick?: MouseEventHandler;
     onFocus?: FocusEventHandler;
     onBlur?: FocusEventHandler;
+    immediateRender?: boolean;
+    delayUpdate?: string;
+
 }

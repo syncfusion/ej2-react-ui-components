@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.50 (2019-06-04)
+
+### Common
+
+#### Bug Fixes
+
+- Provided option to prevent delay rendering of React components.
+
 ## 17.1.49 (2019-05-29)
 
 ### Common

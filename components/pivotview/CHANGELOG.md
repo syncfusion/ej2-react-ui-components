@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 17.1.49 (2019-05-29)
-
-### Pivot View
-
-#### New Features
-
-- #227467 - Now, null and undefined types data will not be included in aggregation. They will be displayed in the headers.
-
 ## 17.1.47 (2019-05-14)
 
 ### Pivot View
@@ -154,4 +146,12 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 17.1.49 (2019-05-29)
+
+### Pivot View
+
+#### New Features
+
+- #227467 - Now, null and undefined types data will not be included in aggregation. They will be displayed in the headers.
 

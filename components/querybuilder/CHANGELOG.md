@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.50 (2019-06-04)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Selected value not maintained properly for radiobutton field.
+
 ## 17.1.49 (2019-05-29)
 
 ### QueryBuilder
