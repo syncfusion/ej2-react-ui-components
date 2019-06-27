@@ -2,9 +2,26 @@
 
 ## [Unreleased]
 
+## 17.2.28-beta (2019-06-27)
+
+### Pivot Table
+
+#### Breaking Changes
+
+- The `dataSource` and `dataSource.data` properties has now been renamed to `dataSourceSettings` and `dataSourceSettings.dataSource` respectively.
+
+#### New Features
+
+- #229377 – The pivot chart which is bound with pivot table allows the user to drill down and drill up now individually.
+- #144382 – Unnecessary scroll bars have been removed from pivot table component.
+
+#### Bug Fixes
+
+- #144352 – The fields can be added dynamically for Pivot Chart control.
+
 ## 17.1.47 (2019-05-14)
 
-### Pivot View
+### Pivot Table
 
 #### Bug Fixes
 
@@ -18,7 +35,7 @@
 
 ## 17.1.38 (2019-03-29)
 
-### Pivot View
+### Pivot Table
 
 #### Bug Fixes
 
@@ -38,7 +55,7 @@
 
 ## 17.1.32-beta (2019-03-13)
 
-### Pivot View
+### Pivot Table
 
 #### Bug Fixes
 
@@ -149,9 +166,10 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 
 ## 17.1.49 (2019-05-29)
 
-### Pivot View
+### Pivot Table
 
 #### New Features
 
 - #227467 - Now, null and undefined types data will not be included in aggregation. They will be displayed in the headers.
+- #227370 - Now, you can hide the fields from the pivot table field list data source.
 

@@ -2,36 +2,7 @@
 
 ## [Unreleased]
 
-## 17.1.51 (2019-06-11)
-
-### Common
-
-#### Bug Fixes
-
-- Provided option to prevent delay rendering of React components.
-
-## 17.1.49 (2019-05-29)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved template rendering issue in splitter component in react.
-
-## 17.1.38 (2019-03-29)
-
-### Common
-
-#### New Features
-
-- Provided `react-final-form` support for Form components.
-- Provided complex template support in base.
-
-#### Bug Fixes
-
-- Resolved template rendering issue on state changes.
-
-## 17.1.32-beta (2019-03-13)
+## 17.2.28-beta (2019-06-27)
 
 ### Common
 

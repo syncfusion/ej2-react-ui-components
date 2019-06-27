@@ -5,8 +5,9 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 export interface TreeGridTypecast {
     toolbarTemplate?: string | Function | any;
-    rowTemplate?: string | Function | any;
     pagerTemplate?: string | Function | any;
+    rowTemplate?: string | Function | any;
+    detailTemplate?: string | Function | any;
     editSettingsTemplate?: string | Function | any;
 }
 /**

@@ -69,22 +69,23 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
         if((this.props as any).immediateRender){
-            this.renderComponent();
+            this.renderReactComponent();
         } else {
             this.cachedTimeOut = setTimeout(() => {
-                this.renderComponent();
+                this.renderReactComponent();
             });
         }
     }
     
-    private renderComponent(): void {
+    private renderReactComponent(): void {
         let ele: Element = ReactDOM.findDOMNode(this);
             if (ele) {
                 this.isAppendCalled = true;
                 this.appendTo(ele);
             }
     }
-   
+
+    // tslint:disable-next-line:no-any
     public componentWillReceiveProps(nextProps: any): void {
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
@@ -113,6 +114,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         if (dProps['children']) {
             delete dProps['children'];
         }
+         // tslint:disable-next-line:no-any
         if (this.canDelayUpdate || (this.props as any).delayUpdate) {
             setTimeout(() => {
                 this.refreshProperties(dProps, nextProps);
@@ -123,6 +125,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     }
     public refreshProperties(dProps: Object, nextProps: Object): void {
         if (Object.keys(dProps).length) {
+            // tslint:disable-next-line:no-any
             this.processComplexTemplate(dProps, (this as any));
             this.setProperties(dProps);
         }
@@ -145,7 +148,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         return this.htmlattributes;
     }
       /* tslint:disable:no-any */
-    public trigger(eventName: string, eventProp?: any): void {
+    public trigger(eventName: string, eventProp?: any, successHandler?: any): void {
       
         if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
@@ -160,7 +163,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             }
             let prevDetection: boolean = this.isProtectedOnChange;
             this.isProtectedOnChange = false;
-            this.modelObserver.notify(eventName, eventProp);
+            this.modelObserver.notify(eventName, eventProp, successHandler);
             this.isProtectedOnChange = prevDetection;
         }
     

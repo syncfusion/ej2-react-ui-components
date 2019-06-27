@@ -33,21 +33,22 @@ class ComponentBase extends PureComponent {
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
         if (this.props.immediateRender) {
-            this.renderComponent();
+            this.renderReactComponent();
         }
         else {
             this.cachedTimeOut = setTimeout(() => {
-                this.renderComponent();
+                this.renderReactComponent();
             });
         }
     }
-    renderComponent() {
+    renderReactComponent() {
         let ele = findDOMNode(this);
         if (ele) {
             this.isAppendCalled = true;
             this.appendTo(ele);
         }
     }
+    // tslint:disable-next-line:no-any
     componentWillReceiveProps(nextProps) {
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
@@ -78,6 +79,7 @@ class ComponentBase extends PureComponent {
         if (dProps['children']) {
             delete dProps['children'];
         }
+        // tslint:disable-next-line:no-any
         if (this.canDelayUpdate || this.props.delayUpdate) {
             setTimeout(() => {
                 this.refreshProperties(dProps, nextProps);
@@ -89,6 +91,7 @@ class ComponentBase extends PureComponent {
     }
     refreshProperties(dProps, nextProps) {
         if (Object.keys(dProps).length) {
+            // tslint:disable-next-line:no-any
             this.processComplexTemplate(dProps, this);
             this.setProperties(dProps);
         }
@@ -109,7 +112,7 @@ class ComponentBase extends PureComponent {
         return this.htmlattributes;
     }
     /* tslint:disable:no-any */
-    trigger(eventName, eventProp) {
+    trigger(eventName, eventProp, successHandler) {
         if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
                 if (this.props.onChange && eventProp.event) {
@@ -123,7 +126,7 @@ class ComponentBase extends PureComponent {
             }
             let prevDetection = this.isProtectedOnChange;
             this.isProtectedOnChange = false;
-            this.modelObserver.notify(eventName, eventProp);
+            this.modelObserver.notify(eventName, eventProp, successHandler);
             this.isProtectedOnChange = prevDetection;
         }
     }
