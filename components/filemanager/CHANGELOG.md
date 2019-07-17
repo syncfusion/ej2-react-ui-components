@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.2.35 (2019-07-17)
+
+### File Manager
+
+#### Bug Fixes
+
+- Issue with `empty folder icon alignment when persistence enabled` is fixed.
+
 ## 17.2.34 (2019-07-11)
 
 ### File Manager

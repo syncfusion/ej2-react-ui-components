@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 17.2.34 (2019-07-11)
-
-### LinearGauge
-
-#### Bug Fixes
-
-- `#I240632` - Linear gauge will not disappear when resize the browser window
-
-
 ## 17.2.28-beta (2019-06-27)
 
 ### LinearGauge
@@ -101,5 +92,14 @@ Linear Gauge component is used to visualize the numerical values of an axis in l
 - **Annotation** - Supports to add custom elements in the desired location of the gauge.
 - **User Interaction** - Supports interactive features like tooltip and pointer drag and drop.
 - **Animation** - Supports animation for the pointer.
+
+
+## 17.2.34 (2019-07-11)
+
+### LinearGauge
+
+#### Bug Fixes
+
+- `#I240632` - Linear gauge will not disappear when resize the browser window
 
 
