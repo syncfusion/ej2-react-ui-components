@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 17.2.36 (2019-07-24)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#241578` - Issue with “Checkbox selection is not updated properly in the popup list items when set filtering as false” has been resolved.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#F146110` - Now, Resolved the console error thrown when first character is type using `MinLength` property.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#F146110` - Now, Resolved the console error thrown when first character is type using `MinLength` property.
+
 ## 17.2.34 (2019-07-11)
 
 ### ComboBox

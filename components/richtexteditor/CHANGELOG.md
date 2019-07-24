@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.2.36 (2019-07-24)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#242377` - The issue, "alignment is not working while pasting content from notepad" has been resolved.
+
 ## 17.2.35 (2019-07-17)
 
 ### RichTextEditor
@@ -197,11 +205,11 @@
 #### New Features
 
 1. Image resize support has been provided.
-1. Insert table support has provided for HTML Editor which includes below sub features,
+2. Insert table support has provided for HTML Editor which includes below sub features,
 1. Create and modify the table, table rows and columns.
-1. Row and column resize.
-1. Quick toolbar interaction.
-1. Table header and custom styles.
+2. Row and column resize.
+3. Quick toolbar interaction.
+4. Table header and custom styles.
 
 #### Breaking Changes
 
