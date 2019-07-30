@@ -21,6 +21,14 @@ class LevelsDirective extends ComplexBase {
 LevelsDirective.propertyName = 'levels';
 LevelsDirective.moduleName = 'levels';
 
+class ColorMappingDirective extends ComplexBase {
+}
+ColorMappingDirective.moduleName = 'colorMapping';
+class ColorMappingsDirective extends ComplexBase {
+}
+ColorMappingsDirective.propertyName = 'colorMapping';
+ColorMappingsDirective.moduleName = 'colorMappings';
+
 /**
  * Represents react TreeMap Component
  * ```tsx
@@ -32,7 +40,7 @@ class TreeMapComponent extends TreeMap {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.directivekeys = { 'levels': 'level' };
+        this.directivekeys = { 'levels': { 'level': { 'colorMappings': 'colorMapping' } } };
         this.immediateRender = false;
     }
     render() {
@@ -47,7 +55,7 @@ class TreeMapComponent extends TreeMap {
 }
 applyMixins(TreeMapComponent, [ComponentBase, PureComponent]);
 
-export { LevelDirective, LevelsDirective, TreeMapComponent };
+export { LevelDirective, LevelsDirective, ColorMappingDirective, ColorMappingsDirective, TreeMapComponent };
 export * from '@syncfusion/ej2-treemap';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-treemap.es2015.js.map

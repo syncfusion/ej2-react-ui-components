@@ -20,7 +20,7 @@ export class TreeMapComponent extends TreeMap {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'levels': 'level'};
+    public directivekeys: { [key: string]: Object } = {'levels': {'level': {'colorMappings': 'colorMapping'}}};
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TreeMapModel & DefaultHtmlAttributes| TreeMapTypecast>;

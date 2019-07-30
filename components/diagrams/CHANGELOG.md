@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 17.2.39 (2019-07-30)
+
+### Diagram
+
+#### New Features
+
+- `#242645` - The issue  "Support to add node in lanes collection at runtime" is now resolved.
+
+#### Bug Fixes
+
+- `#243078` - The issue "Hidden layer is visible" is now resolved.
+- The issue "Context menu re-opens if you click a menu item quickly" is now working fine.
+
 ## 17.2.36 (2019-07-24)
 
 ### Diagram
