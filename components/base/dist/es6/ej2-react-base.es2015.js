@@ -160,7 +160,9 @@ class ComponentBase extends PureComponent {
                             delete directiveValue[key];
                         }
                         else {
-                            this.prevProperties = extend(this.prevProperties, directiveValue);
+                            let obj = {};
+                            obj[key] = directiveValue[key];
+                            this.prevProperties = extend(this.prevProperties, obj);
                         }
                     }
                 }

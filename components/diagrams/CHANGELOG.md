@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 17.2.40 (2019-08-06)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#243785` - The issue "Symbol palette first row expands twice on click" is now resolved.
+- `#243648` - The issue "Exception raised while adding UML class shapes at runtime" is now resolved.
+- `#146017` - The issue "Decorator is not aligned properly in palette when we set large stroke width for it" is now resolved.
+
 ## 17.2.39 (2019-07-30)
 
 ### Diagram

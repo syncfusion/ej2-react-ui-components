@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 17.2.39 (2019-07-30)
+## 17.2.40 (2019-08-06)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved the Multiple child directive property changes issues after initial render.
+
+## 17.2.28-beta (2019-06-27)
 
 ### Common
 

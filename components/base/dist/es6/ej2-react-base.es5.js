@@ -181,7 +181,9 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
                             delete directiveValue[key];
                         }
                         else {
-                            this.prevProperties = extend(this.prevProperties, directiveValue);
+                            var obj = {};
+                            obj[key] = directiveValue[key];
+                            this.prevProperties = extend(this.prevProperties, obj);
                         }
                     }
                 }

@@ -198,7 +198,9 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                         if (this.compareObjects(this.prevProperties[key], directiveValue[key])) {
                             delete directiveValue[key];
                         } else {
-                            this.prevProperties = extend(this.prevProperties, directiveValue);
+                             let obj: Object = {};
+                             obj[key] = directiveValue[key];
+                             this.prevProperties = extend(this.prevProperties, obj);
                         }
                     }
                 } else {
