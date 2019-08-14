@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.2.41 (2019-08-14)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#241514` - An issue with clone element not removing in DOM while invoke `refreshEvents` public method.
+
 ## 17.2.40 (2019-08-06)
 
 ### Schedule

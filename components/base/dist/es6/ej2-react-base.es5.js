@@ -30,9 +30,11 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         _this.attrKeys = [];
         _this.cachedTimeOut = 0;
         _this.isAppendCalled = false;
+        _this.isReact = true;
         return _this;
     }
     ComponentBase.prototype.componentWillMount = function () {
+        this.isReact = true;
         var propKeys = Object.keys(this.props);
         this.htmlattributes = {};
         this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);

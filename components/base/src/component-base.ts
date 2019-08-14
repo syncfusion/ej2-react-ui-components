@@ -48,11 +48,13 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private attrKeys: string[] = [];
     private cachedTimeOut: number = 0;
     private isAppendCalled: boolean = false;
+    private isReact: boolean = true;
     private modelObserver: any;
     private isDestroyed: boolean;
     private isProtectedOnChange: boolean;
     private canDelayUpdate: boolean;
     public componentWillMount(): void {
+        this.isReact = true;
         let propKeys: string[] = Object.keys(this.props);
         this.htmlattributes = {};
         this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);

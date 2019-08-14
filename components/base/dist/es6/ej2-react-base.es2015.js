@@ -16,8 +16,10 @@ class ComponentBase extends PureComponent {
         this.attrKeys = [];
         this.cachedTimeOut = 0;
         this.isAppendCalled = false;
+        this.isReact = true;
     }
     componentWillMount() {
+        this.isReact = true;
         let propKeys = Object.keys(this.props);
         this.htmlattributes = {};
         this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
