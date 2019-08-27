@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 17.2.47 (2019-08-27)
+
+### Sidebar
+
+#### Bug Fixes
+
+- Sidebar expand or collapse when scrolling in the landscape mode in chrome mobile browser is fixed.
+
+### Toolbar
+
+#### New Features
+
+- `enableItems` public method will now support number type.
+
+### Accordion
+
+#### Breaking Changes
+
+- The `expanded` event type changed from `ExpandEventArgs` to `ExpandedEventArgs`.
+
 ## 17.2.41 (2019-08-14)
 
 ### TreeView
