@@ -1,0 +1,57 @@
+{
+	"name": "@syncfusion/ej2-react-spreadsheet",
+	"version": "17.2.36",
+	"description": "Feature-rich JavaScript Spreadsheet (Excel) control with built-in support for selection, editing, formatting, importing and exporting to Excel for React",
+	"author": "Syncfusion Inc.",
+	"license": "SEE LICENSE IN license",
+	"keywords": [
+		"ej2",
+		"ej2-spreadsheet",
+		"syncfusion",
+		"web-components",
+		"typescript",
+		"javascript",
+		"spreadsheet",
+		"excel like spreadsheet",
+		"data",
+		"react",
+		"reactjs",
+		"react-spreadsheet",
+		"ej2-react-spreadsheet",
+		"react spreadsheet",
+		"react excel"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
+	},
+	"main": "./dist/ej2-react-spreadsheet.umd.min.js",
+	"module": "./index.js",
+	"es2015": "dist/es6/ej2-react-spreadsheet.es2015.js",
+	"readme": "ReadMe.md",
+	"dependencies": {
+		"@syncfusion/ej2-base": "*",
+		"@syncfusion/ej2-react-base": "*",
+		"@syncfusion/ej2-spreadsheet": "*"
+	},
+	"devDependencies": {
+		"awesome-typescript-loader": "^3.1.3",
+		"source-map-loader": "^0.2.1",
+		"@types/chai": "^3.4.28",
+		"@types/es6-promise": "0.0.28",
+		"@types/jasmine": "^2.2.29",
+		"@types/jasmine-ajax": "^3.1.27",
+		"@types/react": "^15.0.24",
+		"@types/react-dom": "^15.5.0",
+		"@types/requirejs": "^2.1.26",
+		"es6-promise": "^3.2.1",
+		"gulp": "^3.9.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-typescript": "^3.1.6",
+		"requirejs": "^2.3.3",
+		"typescript": "2.3.4"
+	},
+	"scripts": {
+		"build": "gulp build"
+	}
+}

@@ -2,13 +2,7 @@
 
 ## [Unreleased]
 
-## 17.2.47 (2019-08-27)
-
-### Sidebar
-
-#### Bug Fixes
-
-- Sidebar expand or collapse when scrolling in the landscape mode in chrome mobile browser is fixed.
+## 17.2.48-beta (2019-08-28)
 
 ### Toolbar
 
@@ -21,30 +15,6 @@
 #### Breaking Changes
 
 - The `expanded` event type changed from `ExpandEventArgs` to `ExpandedEventArgs`.
-
-## 17.2.41 (2019-08-14)
-
-### TreeView
-
-#### Bug Fixes
-
-- Issue with custom icon size changed while double clicking the tree node has been fixed.
-
-## 17.2.39 (2019-07-30)
-
-### TreeView
-
-#### Bug Fixes
-
-- #242589 - Issue with getting checked nodes value using `checkedNodes` property has been fixed.
-
-## 17.2.36 (2019-07-24)
-
-### Menu
-
-#### Bug Fixes
-
-- Issue with Submenu when the id contains special character.
 
 ## 17.2.34 (2019-07-11)
 
