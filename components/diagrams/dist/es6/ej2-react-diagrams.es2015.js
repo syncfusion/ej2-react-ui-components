@@ -22,6 +22,25 @@ LayersDirective.propertyName = 'layers';
 LayersDirective.moduleName = 'layers';
 
 /**
+ * `custormaps Directive` directive represent a connectors of the react diagram.
+ * It must be contained in a Diagram component(`DiagramComponent`).
+ * ```tsx
+ * <DiagramComponent>
+ * <CustormapsDirective>
+ * <CustormapDirective></CustormapDirective>
+ * </CustormapsDirective>
+ * </DiagramComponent>
+ * ```
+ */
+class CustomCursorDirective extends ComplexBase {
+}
+CustomCursorDirective.moduleName = 'customCursor';
+class CustomCursorsDirective extends ComplexBase {
+}
+CustomCursorsDirective.propertyName = 'customCursor';
+CustomCursorsDirective.moduleName = 'customCursors';
+
+/**
  * `ConnectorsDirective` directive represent a connectors of the react diagram.
  * It must be contained in a Diagram component(`DiagramComponent`).
  * ```tsx
@@ -142,7 +161,7 @@ class DiagramComponent extends Diagram {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.directivekeys = { 'layers': 'layer', 'connectors': { 'connector': { 'connectorAnnotations': 'connectorAnnotation' } }, 'nodes': { 'node': { 'nodeAnnotations': 'nodeAnnotation', 'ports': 'port' } } };
+        this.directivekeys = { 'layers': 'layer', 'customCursors': 'customCursor', 'connectors': { 'connector': { 'connectorAnnotations': 'connectorAnnotation' } }, 'nodes': { 'node': { 'nodeAnnotations': 'nodeAnnotation', 'ports': 'port' } } };
         this.immediateRender = true;
     }
     render() {
@@ -227,7 +246,7 @@ class OverviewComponent extends Overview {
 }
 applyMixins(OverviewComponent, [ComponentBase, PureComponent]);
 
-export { LayerDirective, LayersDirective, ConnectorDirective, ConnectorsDirective, ConnectorAnnotationDirective, ConnectorAnnotationsDirective, NodeDirective, NodesDirective, NodeAnnotationDirective, NodeAnnotationsDirective, PortDirective, PortsDirective, DiagramComponent, PaletteDirective, PalettesDirective, SymbolPaletteComponent, OverviewComponent };
+export { LayerDirective, LayersDirective, CustomCursorDirective, CustomCursorsDirective, ConnectorDirective, ConnectorsDirective, ConnectorAnnotationDirective, ConnectorAnnotationsDirective, NodeDirective, NodesDirective, NodeAnnotationDirective, NodeAnnotationsDirective, PortDirective, PortsDirective, DiagramComponent, PaletteDirective, PalettesDirective, SymbolPaletteComponent, OverviewComponent };
 export * from '@syncfusion/ej2-diagrams';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-diagrams.es2015.js.map

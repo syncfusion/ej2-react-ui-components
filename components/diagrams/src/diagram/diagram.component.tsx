@@ -17,7 +17,7 @@ export class DiagramComponent extends Diagram {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'layers': 'layer', 'connectors': {'connector': {'connectorAnnotations': 'connectorAnnotation'}}, 'nodes': {'node': {'nodeAnnotations': 'nodeAnnotation', 'ports': 'port'}}};
+    public directivekeys: { [key: string]: Object } = {'layers': 'layer', 'customCursors': 'customCursor', 'connectors': {'connector': {'connectorAnnotations': 'connectorAnnotation'}}, 'nodes': {'node': {'nodeAnnotations': 'nodeAnnotation', 'ports': 'port'}}};
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DiagramModel & DefaultHtmlAttributes>;

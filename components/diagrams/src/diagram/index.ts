@@ -1,4 +1,5 @@
 export * from './layers-directive';
+export * from './customcursor-directive';
 export * from './connectors-directive';
 export * from './connector-annotation-directive';
 export * from './nodes-directive';

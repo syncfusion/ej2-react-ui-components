@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.2.49 (2019-09-04)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#246626` - The issue "Hidden layered objects visible while changing the properties" is now resolved.
+- `#245915` - Now, the z-index of the HTML nodes works properly.
+
 ## 17.2.46 (2019-08-22)
 
 ### Diagram
