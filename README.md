@@ -23,7 +23,7 @@
  ### Stay current
  With our commitment to at least four major updates per year, you receive the most up-to-date functionality and new components in addition to monthly service packs and bug fixes. Custom patches are available as needed.
  ## Supported Frameworks
- The Essential JS 2 is also offered in following list of frameworks.
+ Along with React UI Framework, the Essential JS 2 is also offered in following list of frameworks.
  * [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-react-ui-components)
 * [Angular](https://www.syncfusion.com/angular-ui-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
 * [Vue.js](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
