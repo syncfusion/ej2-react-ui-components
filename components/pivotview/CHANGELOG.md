@@ -2,15 +2,26 @@
 
 ## [Unreleased]
 
-## 17.2.46 (2019-08-22)
+## 17.3.9-beta (2019-09-20)
 
 ### Pivot Table
 
+#### Bug Fixes
+
+- #244842 – Field list icon will be now placed inside the pivot table when field list option isn't included in toolbar.
+- The last column of the pivot table can be displayed in Excel exported page properly.
+
+- #244991 – Now tooltip shows correct information after re-ordering columns in pivot table.
+- #244557 – Sorting option can also be performed in grouping bar when defer layout update feature is enabled.
+
 #### New Features
 
-- `#F144352` – The `fieldListRefreshed` event has been introduced; it occurs on each UI operation performed in field list.
-- `#F144382` – Localization text for aggregation types has been included.
-- `#232925`, `#234552` - Number formatting can be applied through built-in UI.
+- #245423 – Provision provided to persist and reload the pivot report.
+- Provided SSAS OLAP data source support.
+
+- #245213 – Introduced an option to use spinner with custom template.
+- #245423 – Provision provided to persist and reload the pivot report.
+- Provided SSAS OLAP data source support.
 
 ## 17.2.28-beta (2019-06-27)
 

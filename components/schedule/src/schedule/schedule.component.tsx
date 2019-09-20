@@ -6,6 +6,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 export interface ScheduleTypecast {
     dateHeaderTemplate?: string | Function | any;
     cellTemplate?: string | Function | any;
+    cellHeaderTemplate?: string | Function | any;
     eventSettingsTooltipTemplate?: string | Function | any;
     eventSettingsTemplate?: string | Function | any;
     editorTemplate?: string | Function | any;

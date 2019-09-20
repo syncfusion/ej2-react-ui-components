@@ -176,6 +176,7 @@ class ComponentBase extends PureComponent {
         }
     }
     componentWillUnmount() {
+        clearTimeout(this.cachedTimeOut);
         this.destroy();
     }
     /* tslint:disable:no-any */

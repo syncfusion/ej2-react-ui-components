@@ -3,7 +3,10 @@ import { Accordion, AccordionModel } from '@syncfusion/ej2-navigations';
 import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/ej2-react-base';
 
 
-
+export interface AccordionTypecast {
+    headerTemplate?: string | Function | any;
+    itemTemplate?: string | Function | any;
+}
 /**
  * `AccordionComponent` represents the react Accordion Component.
  * ```ts
@@ -12,7 +15,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class AccordionComponent extends Accordion {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<AccordionModel & DefaultHtmlAttributes>;
+    & Readonly<AccordionModel & DefaultHtmlAttributes| AccordionTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -20,7 +23,7 @@ export class AccordionComponent extends Accordion {
     public directivekeys: { [key: string]: Object } = {'accordionItems': 'accordionItem'};
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<AccordionModel & DefaultHtmlAttributes>;
+     & Readonly<AccordionModel & DefaultHtmlAttributes| AccordionTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public isReactComponent: Object;

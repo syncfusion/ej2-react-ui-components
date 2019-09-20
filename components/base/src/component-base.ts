@@ -200,9 +200,9 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                         if (this.compareObjects(this.prevProperties[key], directiveValue[key])) {
                             delete directiveValue[key];
                         } else {
-                             let obj: Object = {};
-                             obj[key] = directiveValue[key];
-                             this.prevProperties = extend(this.prevProperties, obj);
+                            let obj: Object = {};
+                            obj[key] = directiveValue[key];
+                            this.prevProperties = extend(this.prevProperties, obj);
                         }
                     }
                 } else {
@@ -214,6 +214,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     }
 
     public componentWillUnmount(): void {
+        clearTimeout(this.cachedTimeOut);
         this.destroy();
     }
 

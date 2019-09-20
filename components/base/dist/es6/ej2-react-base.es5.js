@@ -197,6 +197,7 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         }
     };
     ComponentBase.prototype.componentWillUnmount = function () {
+        clearTimeout(this.cachedTimeOut);
         this.destroy();
     };
     /* tslint:disable:no-any */

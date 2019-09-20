@@ -3,6 +3,7 @@ import { ViewsModel } from '@syncfusion/ej2-schedule';
 
 export interface ViewsDirTypecast {
     dateHeaderTemplate?: string | Function | any;
+    cellHeaderTemplate?: string | Function | any;
     cellTemplate?: string | Function | any;
     eventTemplate?: string | Function | any;
     resourceHeaderTemplate?: string | Function | any;
