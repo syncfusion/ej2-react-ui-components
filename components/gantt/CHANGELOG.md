@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.3.14 (2019-10-03)
+
+### Gantt
+
+#### Bug Fixes
+
+- `F147755` - Chart part disappearing issue when splitter position value greater than control width has been fixed.
+
 ## 17.3.9-beta (2019-09-20)
 
 ### Gantt

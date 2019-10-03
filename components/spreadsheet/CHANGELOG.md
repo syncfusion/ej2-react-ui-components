@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 17.2.48-beta (2019-08-28)
+## 17.3.14 (2019-10-03)
+
+### Spreadsheet
+
+#### New Features
+
+- **Sorting:** Helps you to arrange the data to particular order in a selected range of cells.
+- **Resize:** Allows you to change the row height and column width. Auto fit the rows and columns based on its content.
+
+## 17.3.9-beta (2019-09-20)
 
 ### Spreadsheet
 
@@ -23,6 +32,4 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
-
-The Spreadsheet is an user interactive component to organize and analyse data in tabular format. It will load data by importing an excel file or from a data source, such as array of JSON objects, `OData web services`, or [`DataManager`](http://ej2.syncfusion.com/documentation/data?utm_source=npm&utm_campaign=spreadsheet) binding to a range. The populated data can be exported as Excel, PDF, and CSV formats.
 

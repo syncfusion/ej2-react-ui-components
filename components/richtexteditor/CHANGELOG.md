@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 17.3.14 (2019-10-03)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#249182` - The issue with localizing static texts of paste prompt dialog in the Rich Text Editor has been fixed.
+- `#249613` - The issue with pasting content from Microsoft Excel sheet that throws console error in the Rich Text Editor has been fixed.
+
+- `#246068` - The issue "older `react-scripts` package usage with upload image in `RichTextEditor` throws console error" has been fixed.
+
 ## 17.3.9-beta (2019-09-20)
 
 ### RichTextEditor
