@@ -1,0 +1,72 @@
+{
+	"name": "@syncfusion/ej2-react-buttons",
+	"version": "17.3.14",
+	"description": "A package of feature-rich Essential JS 2 components such as Button, CheckBox, RadioButton and Switch. for React",
+	"author": "Syncfusion Inc.",
+	"license": "SEE LICENSE IN license",
+	"keywords": [
+		"ej2",
+		"syncfusion",
+		"ej2-buttons",
+		"button",
+		"ej2 button",
+		"checkbox",
+		"ej2 checkbox",
+		"checkboxes",
+		"radio button",
+		"radiobutton",
+		"radiobuttons",
+		"ej2 radiobutton",
+		"switch",
+		"ej2 switch",
+		"primary button",
+		"flat button",
+		"round button",
+		"icon button",
+		"togglebutton",
+		"toggle button",
+		"form control",
+		"form controls",
+		"input",
+		"react",
+		"reactjs",
+		"ej2-react-buttons",
+		"react-button",
+		"react-checkbox",
+		"react-radiobutton",
+		"react-switch"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
+	},
+	"main": "./dist/ej2-react-buttons.umd.min.js",
+	"module": "./index.js",
+	"es2015": "dist/es6/ej2-react-buttons.es2015.js",
+	"readme": "ReadMe.md",
+	"dependencies": {
+		"@syncfusion/ej2-base": "*",
+		"@syncfusion/ej2-react-base": "*",
+		"@syncfusion/ej2-buttons": "*"
+	},
+	"devDependencies": {
+		"awesome-typescript-loader": "^3.1.3",
+		"source-map-loader": "^0.2.1",
+		"@types/chai": "^3.4.28",
+		"@types/es6-promise": "0.0.28",
+		"@types/jasmine": "^2.2.29",
+		"@types/jasmine-ajax": "^3.1.27",
+		"@types/react": "^15.0.24",
+		"@types/react-dom": "^15.5.0",
+		"@types/requirejs": "^2.1.26",
+		"es6-promise": "^3.2.1",
+		"gulp": "^3.9.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-typescript": "^3.1.6",
+		"requirejs": "^2.3.3",
+		"typescript": "2.3.4"
+	},
+	"scripts": {
+		"build": "gulp build"
+	}
+}
