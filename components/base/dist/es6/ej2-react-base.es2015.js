@@ -18,7 +18,13 @@ class ComponentBase extends PureComponent {
         this.isAppendCalled = false;
         this.isReact = true;
     }
-    componentWillMount() {
+    // Lifecycle methods are changed by React team and so we can deprecate this method and use
+    // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
+    // tslint:disable-next-line:no-any
+    /**
+     * @private
+     */
+    UNSAFE_componentWillMount() {
         this.isReact = true;
         let propKeys = Object.keys(this.props);
         this.htmlattributes = {};
@@ -34,6 +40,7 @@ class ComponentBase extends PureComponent {
         this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
+        // tslint:disable-next-line:no-any
         if (this.props.immediateRender) {
             this.renderReactComponent();
         }
@@ -50,8 +57,13 @@ class ComponentBase extends PureComponent {
             this.appendTo(ele);
         }
     }
+    // Lifecycle methods are changed by React team and so we can deprecate this method and use
+    // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops
     // tslint:disable-next-line:no-any
-    componentWillReceiveProps(nextProps) {
+    /**
+     * @private
+     */
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
             this.isAppendCalled = true;

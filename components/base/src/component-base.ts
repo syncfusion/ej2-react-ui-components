@@ -53,7 +53,13 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private isDestroyed: boolean;
     private isProtectedOnChange: boolean;
     private canDelayUpdate: boolean;
-    public componentWillMount(): void {
+    // Lifecycle methods are changed by React team and so we can deprecate this method and use
+    // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
+    // tslint:disable-next-line:no-any
+    /**
+     * @private
+     */
+    public UNSAFE_componentWillMount(): void {
         this.isReact = true;
         let propKeys: string[] = Object.keys(this.props);
         this.htmlattributes = {};
@@ -70,6 +76,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
+        // tslint:disable-next-line:no-any
         if((this.props as any).immediateRender){
             this.renderReactComponent();
         } else {
@@ -87,8 +94,13 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             }
     }
 
+    // Lifecycle methods are changed by React team and so we can deprecate this method and use
+    // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops
     // tslint:disable-next-line:no-any
-    public componentWillReceiveProps(nextProps: any): void {
+    /**
+     * @private
+     */
+    public UNSAFE_componentWillReceiveProps(nextProps: Object): void {
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
             this.isAppendCalled = true;

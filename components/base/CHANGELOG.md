@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 17.3.19 (2019-10-22)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved the React `Lifecycle` warnings in the console.
+
+## 17.3.16 (2019-10-09)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved the `delayUpdate` property type issue.
+
 ## 17.2.48-beta (2019-08-28)
 
 ### Common

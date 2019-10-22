@@ -31,6 +31,6 @@ export interface DefaultHtmlAttributes {
     onFocus?: FocusEventHandler;
     onBlur?: FocusEventHandler;
     immediateRender?: boolean;
-    delayUpdate?: string;
+    delayUpdate?: string | boolean;
 
 }

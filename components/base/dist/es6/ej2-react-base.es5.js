@@ -33,7 +33,13 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         _this.isReact = true;
         return _this;
     }
-    ComponentBase.prototype.componentWillMount = function () {
+    // Lifecycle methods are changed by React team and so we can deprecate this method and use
+    // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
+    // tslint:disable-next-line:no-any
+    /**
+     * @private
+     */
+    ComponentBase.prototype.UNSAFE_componentWillMount = function () {
         this.isReact = true;
         var propKeys = Object.keys(this.props);
         this.htmlattributes = {};
@@ -51,6 +57,7 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
+        // tslint:disable-next-line:no-any
         if (this.props.immediateRender) {
             this.renderReactComponent();
         }
@@ -67,8 +74,13 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             this.appendTo(ele);
         }
     };
+    // Lifecycle methods are changed by React team and so we can deprecate this method and use
+    // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops
     // tslint:disable-next-line:no-any
-    ComponentBase.prototype.componentWillReceiveProps = function (nextProps) {
+    /**
+     * @private
+     */
+    ComponentBase.prototype.UNSAFE_componentWillReceiveProps = function (nextProps) {
         var _this = this;
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
