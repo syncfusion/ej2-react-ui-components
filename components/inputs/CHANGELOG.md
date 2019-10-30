@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.3.21 (2019-10-30)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#251466` - Now, you can set width property in `em` unit.
+
 ## 17.3.16 (2019-10-09)
 
 ### TextBox
