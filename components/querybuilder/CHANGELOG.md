@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.3.27 (2019-11-12)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with changing 'number' type field is fixed.
+
 ## 17.3.26 (2019-11-05)
 
 ### QueryBuilder

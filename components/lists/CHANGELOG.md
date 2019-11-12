@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.3.27 (2019-11-12)
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with Drag and Drop in Empty area of List Box has been fixed
+
 ## 17.3.21 (2019-10-30)
 
 ### ListBox

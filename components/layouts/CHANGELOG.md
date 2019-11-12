@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 17.3.27 (2019-11-12)
+
+### Splitter
+
+#### Bug Fixes
+
+- `#253345` - The Console error thrown when navigating from splitter component to another page has been resolved.
+
+#### New Features
+
+- `#251791` - Provided the support to use DOM element as pane content by configuring the selector to the content of `paneSettings` property.
+
 ## 17.3.21 (2019-10-30)
 
 ### Splitter
