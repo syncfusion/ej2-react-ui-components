@@ -2,6 +2,32 @@
 
 ## [Unreleased]
 
+## 17.3.29 (2019-11-26)
+
+### AutoComplete
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+### ComboBox
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+### DropDownList
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+### MultiSelect
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
 ## 17.3.28 (2019-11-19)
 
 ### MultiSelect

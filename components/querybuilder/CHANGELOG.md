@@ -2,9 +2,13 @@
 
 ## [Unreleased]
 
-## 17.3.28 (2019-11-19)
+## 17.3.27 (2019-11-12)
 
 ### QueryBuilder
+
+#### New Features
+
+- Provided `NOT` operator support.
 
 #### Bug Fixes
 
