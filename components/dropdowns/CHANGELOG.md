@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.3.30 (2019-12-03)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#F147087` - script error "contains of undefined in ListBox" while rendering the ListBox and multi select in the same router page has been fixed.
+
 ## 17.3.29 (2019-11-26)
 
 ### AutoComplete
@@ -63,7 +71,6 @@
 #### Bug Fixes
 
 - `#F147087` - script error "class List of undefined" while grouping has been fixed.
-- `#F147087` - script error "contains of undefined in ListBox" while rendering the ListBox and multi select in the same router page has been fixed.
 - `#F147408` - Move To toolbar button not working when loading the list box using `remote data` has been resolved.
 - `#249771` - script error while performing the toolbar actions in dual ListBox with `data manager` in `EJ2 MVC` has been resolved
 

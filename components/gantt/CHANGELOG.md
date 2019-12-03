@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.3.30 (2019-12-03)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#253076` - Accessibility issues in Gantt has been fixed.
+
 ## 17.3.29 (2019-11-26)
 
 ### Gantt

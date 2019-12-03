@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.3.30 (2019-12-03)
+
+### Toast
+
+#### Bug Fixes
+
+`#F149339`, `#256583` - The issue with passing empty string value to cssClass API has been fixed.
+
 ## 17.3.27 (2019-11-12)
 
 ### Toast
