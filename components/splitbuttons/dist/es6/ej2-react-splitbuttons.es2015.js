@@ -1,6 +1,14 @@
+import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 import { PureComponent, createElement } from 'react';
 import { DropDownButton, ProgressButton, SplitButton } from '@syncfusion/ej2-splitbuttons';
-import { ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
+
+class DropDownButtonItemDirective extends ComplexBase {
+}
+DropDownButtonItemDirective.moduleName = 'dropDownButtonItem';
+class DropDownButtonItemsDirective extends ComplexBase {
+}
+DropDownButtonItemsDirective.propertyName = 'items';
+DropDownButtonItemsDirective.moduleName = 'dropDownButtonItems';
 
 /**
  * `DropDownButtonComponent` represents the react DropDownButton Component.
@@ -13,6 +21,7 @@ class DropDownButtonComponent extends DropDownButton {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.directivekeys = { 'dropDownButtonItems': 'dropDownButtonItem' };
         this.immediateRender = true;
     }
     render() {
@@ -27,6 +36,14 @@ class DropDownButtonComponent extends DropDownButton {
 }
 applyMixins(DropDownButtonComponent, [ComponentBase, PureComponent]);
 
+class SplitButtonItemDirective extends ComplexBase {
+}
+SplitButtonItemDirective.moduleName = 'splitButtonItem';
+class SplitButtonItemsDirective extends ComplexBase {
+}
+SplitButtonItemsDirective.propertyName = 'items';
+SplitButtonItemsDirective.moduleName = 'splitButtonItems';
+
 /**
  * `SplitButtonComponent` represents the react SplitButton Component.
  * ```ts
@@ -38,6 +55,7 @@ class SplitButtonComponent extends SplitButton {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
+        this.directivekeys = { 'splitButtonItems': 'splitButtonItem' };
         this.immediateRender = true;
     }
     render() {
@@ -77,6 +95,6 @@ class ProgressButtonComponent extends ProgressButton {
 }
 applyMixins(ProgressButtonComponent, [ComponentBase, PureComponent]);
 
-export { DropDownButtonComponent, SplitButtonComponent, ProgressButtonComponent };
+export { DropDownButtonItemDirective, DropDownButtonItemsDirective, DropDownButtonComponent, SplitButtonItemDirective, SplitButtonItemsDirective, SplitButtonComponent, ProgressButtonComponent };
 export * from '@syncfusion/ej2-splitbuttons';
 //# sourceMappingURL=ej2-react-splitbuttons.es2015.js.map

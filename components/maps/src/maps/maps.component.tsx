@@ -17,7 +17,7 @@ export class MapsComponent extends Maps {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'layers': {'layer': {'markers': 'marker', 'bubbles': {'bubble': {'colorMappings': 'colorMapping'}}, 'navigationLines': 'navigationLine'}}, 'annotations': 'annotation'};
+    public directivekeys: { [key: string]: Object } = {'layers': {'layer': {'initialShapeSelections': 'initialShapeSelection', 'markers': 'marker', 'bubbles': {'bubble': {'colorMappings': 'colorMapping'}}, 'navigationLines': 'navigationLine'}}, 'annotations': 'annotation'};
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<MapsModel & DefaultHtmlAttributes>;

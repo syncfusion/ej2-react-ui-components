@@ -1,26 +1,26 @@
 import * as React from 'react';
-import { DropDownButton, DropDownButtonModel } from '@syncfusion/ej2-splitbuttons';
+import { BulletChart, BulletChartModel } from '@syncfusion/ej2-charts';
 import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/ej2-react-base';
 
 
 
 /**
- * `DropDownButtonComponent` represents the react DropDownButton Component.
- * ```ts
- * <DropDownButtonComponent content='DropDownButton'></DropDownButtonComponent>
+ * Represents react BulletChart Component
+ * ```tsx
+ * <BulletChartComponent></BulletChartComponent>
  * ```
  */
-export class DropDownButtonComponent extends DropDownButton {
+export class BulletChartComponent extends BulletChart {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<DropDownButtonModel & DefaultHtmlAttributes>;
+    & Readonly<BulletChartModel & DefaultHtmlAttributes>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
-    public directivekeys: { [key: string]: Object } = {'dropDownButtonItems': 'dropDownButtonItem'};
+    private checkInjectedModules: boolean = true;
+    public directivekeys: { [key: string]: Object } = {'bulletRangeCollection': 'bulletRange'};
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<DropDownButtonModel & DefaultHtmlAttributes>;
+     & Readonly<BulletChartModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public isReactComponent: Object;
@@ -37,10 +37,10 @@ export class DropDownButtonComponent extends DropDownButton {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('button', this.getDefaultAttributes(), this.props.children);
+            return React.createElement('div', this.getDefaultAttributes(), this.props.children);
         }
 
     }
 }
 
-applyMixins(DropDownButtonComponent, [ComponentBase, React.PureComponent]);
+applyMixins(BulletChartComponent, [ComponentBase, React.PureComponent]);

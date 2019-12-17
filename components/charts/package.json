@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-charts",
-	"version": "17.3.30",
+	"version": "17.4.1",
 	"description": "Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -22,6 +22,7 @@
 		"sparkline",
 		"Sparkline ej2-smithchart",
 		"smithchart",
+		"bulletchart",
 		"syncfusion",
 		"react",
 		"reactjs",
@@ -34,7 +35,9 @@
 		"react-sparkline",
 		"ej2-react-sparkline",
 		"react-smithchart",
-		"ej2-react-smithchart"
+		"ej2-react-smithchart",
+		"react-bulletchart",
+		"ej2-react-bulletchart"
 	],
 	"repository": {
 		"type": "git",

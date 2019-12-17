@@ -22,6 +22,29 @@ LayersDirective.propertyName = 'layers';
 LayersDirective.moduleName = 'layers';
 
 /**
+ * `InitialShapeSelectionsDirective` directive represent a selection settings of the react maps.
+ * It must be contained in a Maps component(`MapsComponent`).
+ * ```tsx
+ * <MapsComponent>
+ * <LayersDirective>
+ * <LayerDirective>
+ * <initialShapeSelectionsDirective>
+ * <initialShapeSelectionDirective></initialShapeSelectionDirective>
+ * </initialShapeSelectionsDirective>
+ * </LayerDirective>
+ * </LayersDirective>
+ * </MapsComponent>
+ * ```
+ */
+class InitialShapeSelectionDirective extends ComplexBase {
+}
+InitialShapeSelectionDirective.moduleName = 'initialShapeSelection';
+class InitialShapeSelectionsDirective extends ComplexBase {
+}
+InitialShapeSelectionsDirective.propertyName = 'initialShapeSelection';
+InitialShapeSelectionsDirective.moduleName = 'initialShapeSelections';
+
+/**
  * `MarkerSettingsDirective` directive represent a marker settings of the react maps.
  * It must be contained in a Maps component(`MapsComponent`).
  * ```tsx
@@ -148,7 +171,7 @@ class MapsComponent extends Maps {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.directivekeys = { 'layers': { 'layer': { 'markers': 'marker', 'bubbles': { 'bubble': { 'colorMappings': 'colorMapping' } }, 'navigationLines': 'navigationLine' } }, 'annotations': 'annotation' };
+        this.directivekeys = { 'layers': { 'layer': { 'initialShapeSelections': 'initialShapeSelection', 'markers': 'marker', 'bubbles': { 'bubble': { 'colorMappings': 'colorMapping' } }, 'navigationLines': 'navigationLine' } }, 'annotations': 'annotation' };
         this.immediateRender = false;
     }
     render() {
@@ -163,7 +186,7 @@ class MapsComponent extends Maps {
 }
 applyMixins(MapsComponent, [ComponentBase, PureComponent]);
 
-export { LayerDirective, LayersDirective, MarkerDirective, MarkersDirective, BubbleDirective, BubblesDirective, ColorMappingDirective, ColorMappingsDirective, NavigationLineDirective, NavigationLinesDirective, AnnotationDirective, AnnotationsDirective, MapsComponent };
+export { LayerDirective, LayersDirective, InitialShapeSelectionDirective, InitialShapeSelectionsDirective, MarkerDirective, MarkersDirective, BubbleDirective, BubblesDirective, ColorMappingDirective, ColorMappingsDirective, NavigationLineDirective, NavigationLinesDirective, AnnotationDirective, AnnotationsDirective, MapsComponent };
 export * from '@syncfusion/ej2-maps';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-maps.es2015.js.map

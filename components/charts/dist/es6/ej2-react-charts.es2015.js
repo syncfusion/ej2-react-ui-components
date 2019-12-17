@@ -1,6 +1,6 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 import { PureComponent, createElement } from 'react';
-import { AccumulationChart, Chart, RangeNavigator, Smithchart, Sparkline, StockChart } from '@syncfusion/ej2-charts';
+import { AccumulationChart, BulletChart, Chart, RangeNavigator, Smithchart, Sparkline, StockChart } from '@syncfusion/ej2-charts';
 
 /**
  * `SeriesDirective` directive represent a series of the react chart.
@@ -684,7 +684,51 @@ class StockChartComponent extends StockChart {
 }
 applyMixins(StockChartComponent, [ComponentBase, PureComponent]);
 
-export { SeriesDirective, SeriesCollectionDirective, TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, AxisDirective, AxesDirective, StripLineDirective, StripLinesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, CategoryDirective, CategoriesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartStripLineDirective, StockChartStripLinesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockEventDirective, StockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent };
+/**
+ * `BulletRangeDirective` directive represent a ranges of the react BulletChart.
+ * ```tsx
+ * <BulletChartComponent>
+ * <BulletRangeCollectionDirective>
+ * <BulletRangeDirective></BulletRangeDirective>
+ * </BulletRangeCollectionDirective>
+ * </BulletChartComponent>
+ * ```
+ */
+class BulletRangeDirective extends ComplexBase {
+}
+BulletRangeDirective.moduleName = 'bulletRange';
+class BulletRangeCollectionDirective extends ComplexBase {
+}
+BulletRangeCollectionDirective.propertyName = 'ranges';
+BulletRangeCollectionDirective.moduleName = 'bulletRangeCollection';
+
+/**
+ * Represents react BulletChart Component
+ * ```tsx
+ * <BulletChartComponent></BulletChartComponent>
+ * ```
+ */
+class BulletChartComponent extends BulletChart {
+    constructor(props) {
+        super(props);
+        this.initRenderCalled = false;
+        this.checkInjectedModules = true;
+        this.directivekeys = { 'bulletRangeCollection': 'bulletRange' };
+        this.immediateRender = true;
+    }
+    render() {
+        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+            super.render();
+            this.initRenderCalled = true;
+        }
+        else {
+            return createElement('div', this.getDefaultAttributes(), this.props.children);
+        }
+    }
+}
+applyMixins(BulletChartComponent, [ComponentBase, PureComponent]);
+
+export { SeriesDirective, SeriesCollectionDirective, TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, AxisDirective, AxesDirective, StripLineDirective, StripLinesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, CategoryDirective, CategoriesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartStripLineDirective, StockChartStripLinesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockEventDirective, StockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent, BulletRangeDirective, BulletRangeCollectionDirective, BulletChartComponent };
 export * from '@syncfusion/ej2-charts';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-charts.es2015.js.map

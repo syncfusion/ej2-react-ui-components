@@ -63,6 +63,7 @@ applyMixins(SplitterComponent, [ComponentBase, PureComponent]);
 class PanelDirective extends ComplexBase {
 }
 PanelDirective.moduleName = 'panel';
+PanelDirective.complexTemplate = { 'panelsHeader': 'panels.header', 'panelsContent': 'panels.content' };
 class PanelsDirective extends ComplexBase {
 }
 PanelsDirective.propertyName = 'panels';
