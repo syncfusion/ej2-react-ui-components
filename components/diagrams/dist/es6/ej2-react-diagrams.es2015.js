@@ -162,7 +162,7 @@ class DiagramComponent extends Diagram {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'layers': 'layer', 'customCursors': 'customCursor', 'connectors': { 'connector': { 'connectorAnnotations': 'connectorAnnotation' } }, 'nodes': { 'node': { 'nodeAnnotations': 'nodeAnnotation', 'ports': 'port' } } };
-        this.immediateRender = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {

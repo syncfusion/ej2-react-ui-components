@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.41 (2020-01-07)
+
+### ListBox
+
+#### Bug Fixes
+
+- Provided `items` argument support for `beforeDrop` event.
+
 ## 17.4.40 (2019-12-24)
 
 ### ListBox

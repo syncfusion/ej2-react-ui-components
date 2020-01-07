@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 17.4.40 (2019-12-24)
+## 17.4.41 (2020-01-07)
 
 ### Common
 
@@ -10,7 +10,7 @@
 
 - Resolved the React `Lifecycle` warnings in the console.
 
-## 17.3.16 (2019-10-09)
+## 17.4.39 (2019-12-17)
 
 ### Common
 

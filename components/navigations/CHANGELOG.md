@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.41 (2020-01-07)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#258993` - Now, expand and collapse is working properly after enabling the ripple effect.
+
 ## 17.4.39 (2019-12-17)
 
 ### TreeView

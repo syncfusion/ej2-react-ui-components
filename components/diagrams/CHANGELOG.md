@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 17.4.41 (2020-01-07)
+
+### Diagram
+
+#### New Features
+
+- `#232055` - Support has been provided to Clip/Ellipsis the annotation when textWrapping as WrapWithOverflow in the diagram.
+- `#253884` - Template support for HTML node has been provided.
+- `#236612`, `#242275` - The support has been provided to get the In and Out edges from ports.
+
 ## 17.4.40 (2019-12-24)
 
 ### Diagram
