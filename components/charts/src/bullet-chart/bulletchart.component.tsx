@@ -3,7 +3,9 @@ import { BulletChart, BulletChartModel } from '@syncfusion/ej2-charts';
 import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/ej2-react-base';
 
 
-
+export interface BulletChartTypecast {
+    tooltipTemplate?: string | Function | any;
+}
 /**
  * Represents react BulletChart Component
  * ```tsx
@@ -12,15 +14,15 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class BulletChartComponent extends BulletChart {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<BulletChartModel & DefaultHtmlAttributes>;
+    & Readonly<BulletChartModel & DefaultHtmlAttributes| BulletChartTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'bulletRangeCollection': 'bulletRange'};
-    private immediateRender: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<BulletChartModel & DefaultHtmlAttributes>;
+     & Readonly<BulletChartModel & DefaultHtmlAttributes| BulletChartTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public isReactComponent: Object;

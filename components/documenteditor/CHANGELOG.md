@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 17.4.43 (2020-01-14)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#258087`, `#255070` - Grid columns are now preserved properly on export.
+- `#255070` - Page headers is now export properly when section break in table.
+- `#259583` - List level number for style paragraph is now export properly.
+- `#259153` - Table cell width and height is now copy properly.
+- `#258121` - Resolved warnings in bootstrap4 styles when run the application in Firefox.
+- `#249197` - Highlight colours are now exported properly.
+- `#260048`, `#256276` - Image files are now pasted properly.
+
 ## 17.4.41 (2020-01-07)
 
 ### Document Editor
@@ -79,7 +93,7 @@
 
 #### Bug Fixes
 
-- `#255913` - Bookmark is now insert properly in splitted paragraph.
+- `#255913`, `#257879` - Bookmark is now insert properly in splitted paragraph.
 - `#255736` , `#256106` , `#257011` - Context menu is now open in Firefox, Edge and Safari.
 - `#254998` - Character format is now apply properly for selected bookmark.
 - `#254997`, `#256764`, `#257106` , `#256764` - Paragraph format is now export properly if document contains selection.

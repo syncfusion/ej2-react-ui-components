@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.43 (2020-01-14)
+
+### In-place Editor
+
+#### New Features
+
+- `#255914` - Provided actual `text` field value display on initial load, when DropDown components are configured with the `fields` property.
+
 ## 17.4.40 (2019-12-24)
 
 ### In-place Editor

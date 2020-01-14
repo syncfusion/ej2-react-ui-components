@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## 17.4.43 (2020-01-14)
+
+- `#149393` - An issue with event rendering in Timeline mode with `timescale` property has been fixed.
+- `#150335` - An issue with draggable clone element position on scroll has been fixed.
+- `#256071` - An issue with `datepicker popup` not closing properly has been fixed.
+- `#258565` - An issue with drag-and-drop Flickering has been fixed.
+
 ## 17.4.41 (2020-01-07)
 
 ### Schedule
@@ -13,6 +20,7 @@
 - `#258735` - An issue with event rendering in Timeline mode with `startHour` property  has been fixed.
 - `#149868` - An issue with event resizing in Vertical mode with `startHour` property has been fixed.
 - `#257355` - An issue with displaying the clicked date's event details in Month Agenda view with read only mode has been fixed.
+- `#258455` - An issue with Accessibility has been fixed.
 
 ## 17.4.39 (2019-12-17)
 

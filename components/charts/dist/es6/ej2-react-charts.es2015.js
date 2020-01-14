@@ -714,7 +714,7 @@ class BulletChartComponent extends BulletChart {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.directivekeys = { 'bulletRangeCollection': 'bulletRange' };
-        this.immediateRender = true;
+        this.immediateRender = false;
     }
     render() {
         if ((this.element && !this.initRenderCalled) || this.refreshing) {
