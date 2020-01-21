@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 17.4.44 (2021-01-21)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#260635` - Sorted datasource not updated properly in ListBox has been fixed.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#258436` - Issue with "Duplicate value added in multiselect input while updating the value using setState method in the select event" has been resolved.
+
 ## 17.4.43 (2020-01-14)
 
 ### ListBox
