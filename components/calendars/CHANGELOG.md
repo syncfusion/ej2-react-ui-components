@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.46 (2020-01-30)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#260342` - Issue with "datepicker popup not closed while use `shift+tab`" has been resolved.
+
 ## 17.4.43 (2020-01-14)
 
 ### Calendar

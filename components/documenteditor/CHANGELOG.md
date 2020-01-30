@@ -2,7 +2,22 @@
 
 ## [Unreleased]
 
-## 17.4.44 (2021-01-21)
+## 17.4.46 (2020-01-30)
+
+### Document Editor
+
+#### Breaking Changes
+
+- Default value of `enableLocalPaste` is set to false. So, by default, the content will be pasted from the system clipboard.
+
+#### Bug Fixes
+
+- `#252868` - Resolved script error when resize row to next page.
+- `#259972` - Formatting is now applied properly for keep text only option in paste.
+- `#258191` - Table cell width are now updated properly.
+- `#260133`, `#261809` - Page scrolling issue is resolved when right click in MAC machine.
+
+## 17.4.43 (2020-01-14)
 
 ### Document Editor
 
