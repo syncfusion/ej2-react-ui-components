@@ -3,14 +3,14 @@ import { PureComponent, createElement } from 'react';
 import { Accordion, ContextMenu, Menu, Sidebar, Tab, Toolbar, TreeView } from '@syncfusion/ej2-navigations';
 
 /**
- * `ItemDirective` directive represent a item of the react Accordion.
- * It must be contained in a Accordion component(`Accordion`).
+ * `AccordionItemDirective` represent a item of the React Accordion.
+ * It must be contained in a Accordion component(`AccordionComponent`).
  * ```tsx
  * <AccordionComponent>
- * <AccordionItemsDirective>
- * <AccordionItemDirective  header='Header1'></AccordionItemDirective>
- * <AccordionItemDirective  header='Header2' content='Content2'></AccordionItemDirective>
- * <AccordionItemsDirective>
+ *   <AccordionItemsDirective>
+ *    <AccordionItemDirective  header='Header1'></AccordionItemDirective>
+ *    <AccordionItemDirective  header='Header2' content='Content2'></AccordionItemDirective>
+ *   <AccordionItemsDirective>
  * </AccordionComponent>
  * ```
  */
@@ -23,9 +23,9 @@ AccordionItemsDirective.propertyName = 'items';
 AccordionItemsDirective.moduleName = 'accordionItems';
 
 /**
- * `AccordionComponent` represents the react Accordion Component.
- * ```ts
- * <AccordionComponent ></AccordionComponent
+ * Represents the React Accordion Component.
+ * ```html
+ * <AccordionComponent></AccordionComponent
  * ```
  */
 class AccordionComponent extends Accordion {
@@ -49,14 +49,14 @@ class AccordionComponent extends Accordion {
 applyMixins(AccordionComponent, [ComponentBase, PureComponent]);
 
 /**
- * `ItemDirective` directive represent a item of the react Toolbar.
- * It must be contained in a Toolbar component(`Toolbar`).
+ * `ItemDirective` directive represent a item of the React Toolbar.
+ * It must be contained in a Toolbar component(`ToolbarComponent`).
  * ```tsx
  * <ToolbarComponent>
- * <ItemsDirective>
- * <ItemDirective text='Cut'></ItemDirective>
- * <ItemDirective text='Copy'></ItemDirective>
- * <ItemsDirective>
+ *   <ItemsDirective>
+ *    <ItemDirective text='Cut'></ItemDirective>
+ *    <ItemDirective text='Copy'></ItemDirective>
+ *   <ItemsDirective>
  * </ToolbarComponent>
  * ```
  */
@@ -69,9 +69,9 @@ ItemsDirective.propertyName = 'items';
 ItemsDirective.moduleName = 'items';
 
 /**
- * `ToolbarComponent` represents the react Toolbar Component.
- * ```ts
- * <ToolbarComponent overflowMode= 'Popup' ></ToolbarComponent
+ * Represents the React Toolbar Component.
+ * ```html
+ * <ToolbarComponent></ToolbarComponent
  * ```
  */
 class ToolbarComponent extends Toolbar {
@@ -121,10 +121,10 @@ class ContextMenuComponent extends ContextMenu {
 applyMixins(ContextMenuComponent, [ComponentBase, PureComponent]);
 
 /**
- * `TabItemDirective` directive represent a column of the react Tab.
+ * `TabItemDirective` represent a item of the React Tab.
  * It must be contained in a Tab component(`Tab`).
- * ```ts
- * <TabComponent
+ * ```tsx
+ * <TabComponent>
  *  <TabItemsDirective>
  *   <TabItemDirective header= { 'Header 1' } content= { 'Content 1' } />
  *   <TabItemDirective header= { 'Header 2' } content= { 'Content 2' } />
@@ -142,9 +142,9 @@ TabItemsDirective.propertyName = 'items';
 TabItemsDirective.moduleName = 'tabItems';
 
 /**
- * `TabComponent` represents the react Tab Component.
- * ```ts
- * <TabComponent overflowMode= 'Popup'></TabComponent>
+ * Represents the React Tab Component.
+ * ```html
+ * <TabComponent></TabComponent>
  * ```
  */
 class TabComponent extends Tab {

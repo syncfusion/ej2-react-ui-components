@@ -5,9 +5,9 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 /**
- * `ToolbarComponent` represents the react Toolbar Component.
- * ```ts
- * <ToolbarComponent overflowMode= 'Popup' ></ToolbarComponent
+ * Represents the React Toolbar Component.
+ * ```html
+ * <ToolbarComponent></ToolbarComponent
  * ```
  */
 export class ToolbarComponent extends Toolbar {

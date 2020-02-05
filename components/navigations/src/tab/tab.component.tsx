@@ -5,9 +5,9 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 /**
- * `TabComponent` represents the react Tab Component.
- * ```ts
- * <TabComponent overflowMode= 'Popup'></TabComponent>
+ * Represents the React Tab Component.
+ * ```html
+ * <TabComponent></TabComponent>
  * ```
  */
 export class TabComponent extends Tab {

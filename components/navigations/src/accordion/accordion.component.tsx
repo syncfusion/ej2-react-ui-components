@@ -8,9 +8,9 @@ export interface AccordionTypecast {
     itemTemplate?: string | Function | any;
 }
 /**
- * `AccordionComponent` represents the react Accordion Component.
- * ```ts
- * <AccordionComponent ></AccordionComponent
+ * Represents the React Accordion Component.
+ * ```html
+ * <AccordionComponent></AccordionComponent
  * ```
  */
 export class AccordionComponent extends Accordion {

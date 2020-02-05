@@ -6,14 +6,14 @@ export interface AccordionItemDirTypecast {
     content?: string | Function | any;
 }
 /**
- * `ItemDirective` directive represent a item of the react Accordion. 
- * It must be contained in a Accordion component(`Accordion`). 
+ * `AccordionItemDirective` represent a item of the React Accordion. 
+ * It must be contained in a Accordion component(`AccordionComponent`). 
  * ```tsx
  * <AccordionComponent> 
- * <AccordionItemsDirective>
- * <AccordionItemDirective  header='Header1'></AccordionItemDirective>
- * <AccordionItemDirective  header='Header2' content='Content2'></AccordionItemDirective>
- * <AccordionItemsDirective>
+ *   <AccordionItemsDirective>
+ *    <AccordionItemDirective  header='Header1'></AccordionItemDirective>
+ *    <AccordionItemDirective  header='Header2' content='Content2'></AccordionItemDirective>
+ *   <AccordionItemsDirective>
  * </AccordionComponent>
  * ```
  */

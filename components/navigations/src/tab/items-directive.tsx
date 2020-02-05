@@ -7,10 +7,10 @@ export interface TabItemDirTypecast {
     headerTemplate?: string | Function | any;
 }
 /**
- * `TabItemDirective` directive represent a column of the react Tab. 
+ * `TabItemDirective` represent a item of the React Tab. 
  * It must be contained in a Tab component(`Tab`). 
- * ```ts
- * <TabComponent 
+ * ```tsx
+ * <TabComponent>
  *  <TabItemsDirective>
  *   <TabItemDirective header= { 'Header 1' } content= { 'Content 1' } />
  *   <TabItemDirective header= { 'Header 2' } content= { 'Content 2' } />

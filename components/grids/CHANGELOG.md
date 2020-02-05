@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.4.47 (2020-02-05)
+
+### Grid
+
+#### Bug Fixes
+
+- `#261008` - Aggregate issue while batch adding in empty Grid has been resolved.
+- `#150685` - Persist selection behaviour issue has been fixed
+
 ## 17.4.46 (2020-01-30)
 
 ### Grid

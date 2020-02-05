@@ -5,14 +5,14 @@ export interface ItemDirTypecast {
     template?: string | Function | any;
 }
 /**
- * `ItemDirective` directive represent a item of the react Toolbar. 
- * It must be contained in a Toolbar component(`Toolbar`). 
+ * `ItemDirective` directive represent a item of the React Toolbar. 
+ * It must be contained in a Toolbar component(`ToolbarComponent`). 
  * ```tsx
  * <ToolbarComponent> 
- * <ItemsDirective>
- * <ItemDirective text='Cut'></ItemDirective>
- * <ItemDirective text='Copy'></ItemDirective>
- * <ItemsDirective>
+ *   <ItemsDirective>
+ *    <ItemDirective text='Cut'></ItemDirective>
+ *    <ItemDirective text='Copy'></ItemDirective>
+ *   <ItemsDirective>
  * </ToolbarComponent>
  * ```
  */

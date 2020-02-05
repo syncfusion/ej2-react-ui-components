@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.4.47 (2020-02-05)
+
+### PDF Viewer
+
+#### New Features
+
+- `258769` - Provided the option to suppress the error dialog in PDF Viewer.
+- `261269` - Provided the support to allow credential for XMLHttpRequest in PDF Viewer.
+
 ## 17.4.46 (2020-01-30)
 
 ### PDF Viewer
