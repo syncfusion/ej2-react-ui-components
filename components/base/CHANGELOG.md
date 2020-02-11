@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 17.4.47 (2020-02-05)
+## 17.4.49 (2020-02-11)
+
+### Common
+
+#### Bug Fixes
+
+- `#I262905` - Resolved adding multiple CSS Class name in element.
+
+## 17.4.41 (2020-01-07)
 
 ### Common
 

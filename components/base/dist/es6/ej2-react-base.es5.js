@@ -101,8 +101,16 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             }
             else if (this.attrKeys.indexOf(propkey) !== -1) {
                 if (isClassName) {
-                    this.element.classList.remove(this.props[propkey]);
-                    this.element.classList.add(dProps[propkey]);
+                    var delCheck = this.props[propkey];
+                    var delSplit = delCheck.split(" ");
+                    delSplit.forEach(function (delValue) {
+                        _this.element.classList.remove(delValue);
+                    });
+                    var addCheck = dProps[propkey];
+                    var addSplit = addCheck.split(" ");
+                    addSplit.forEach(function (addValue) {
+                        _this.element.classList.add(addValue);
+                    });
                 }
                 else if (propkey !== 'disabled') {
                     delete dProps[propkey];

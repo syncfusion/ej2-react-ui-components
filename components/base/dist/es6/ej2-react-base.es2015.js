@@ -82,8 +82,16 @@ class ComponentBase extends PureComponent {
             }
             else if (this.attrKeys.indexOf(propkey) !== -1) {
                 if (isClassName) {
-                    this.element.classList.remove(this.props[propkey]);
-                    this.element.classList.add(dProps[propkey]);
+                    let delCheck = this.props[propkey];
+                    let delSplit = delCheck.split(" ");
+                    delSplit.forEach((delValue) => {
+                        this.element.classList.remove(delValue);
+                    });
+                    let addCheck = dProps[propkey];
+                    let addSplit = addCheck.split(" ");
+                    addSplit.forEach((addValue) => {
+                        this.element.classList.add(addValue);
+                    });
                 }
                 else if (propkey !== 'disabled') {
                     delete dProps[propkey];
