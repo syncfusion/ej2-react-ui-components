@@ -5,6 +5,14 @@
 
 ## [Unreleased]
 
+## 1.0 (2020-02-18)
+
+### CircularGauge
+
+#### Bug Fixes
+
+- Axis labels are rendering properly now in the cross position.
+
 ## 17.4.41 (2020-01-07)
 
 ### CircularGauge

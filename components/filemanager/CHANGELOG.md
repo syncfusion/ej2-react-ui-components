@@ -2,13 +2,22 @@
 
 ## [Unreleased]
 
+## 1.0 (2020-02-18)
+
+### File Manager
+
+#### Bug Fixes
+
+- `#262675` - Provided the support to prevent the XSS attacks using the `enableHtmlSanitizer` property.
+- The issue with the given `name` column's width that is not applied in details view has been resolved.
+
 ## 17.4.44 (2021-01-21)
 
 ### File Manager
 
 #### Bug Fixes
 
-- Resolved the script error when navigate any folder after changing the toolbar settings dynamically in the file manager component. 
+- Resolved the script error when navigate any folder after changing the toolbar settings dynamically in the file manager component.
 
 ## 17.4.43 (2020-01-14)
 

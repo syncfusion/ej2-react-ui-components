@@ -2,7 +2,23 @@
 
 ## [Unreleased]
 
+## 1.0 (2020-02-18)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- File menu item select event not triggered issue fixed.
+
 ## 17.4.49 (2020-02-11)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- Integrated the separate styles for filtering.
+
+## 17.4.47 (2020-02-05)
 
 ### Spreadsheet
 
