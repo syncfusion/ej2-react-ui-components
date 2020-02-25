@@ -47,6 +47,6 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/CHANGELOG.md?utm_source=npm&utm_campaign=filemanager)
+Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/filemanager/CHANGELOG.md?utm_source=npm&utm_campaign=filemanager)
 
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

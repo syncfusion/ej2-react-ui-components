@@ -1,7 +1,6 @@
 export * from './series-directive';
 export * from './trendlines-directive';
 export * from './axes-directive';
-export * from './striplines-directive';
 export * from './rows-directive';
 export * from './annotations-directive';
 export * from './selecteddataindexes-directive';

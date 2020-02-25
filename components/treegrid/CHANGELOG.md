@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.49 (2020-02-11)
+
+### TreeGrid
+
+#### Bug Fixes
+
+- `#262583`- Row Drag and drop works fine for newly added records in self-referential data binding.
+
 ## 17.4.46 (2020-01-30)
 
 ### TreeGrid
@@ -93,4 +101,12 @@
 - Expanding and Collapsing records is working fine when `pageSizeMode` is set as `All`.
 - `expandAtLevel`, `collapseAtLevel`, `expandAll` and `collapseAll` methods are working fine when `pageSizeMode` is set as `All`.
 
+
+## 1.0 (2020-02-18)
+
+### TreeGrid
+
+#### Bug Fixes
+
+- `#263009`- Child Summary works fine with type checkbox column.
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.51 (2020-02-25)
+
+### File Manager
+
+#### New Features
+
+- `#263021` - Support has been provided to auto close the upload dialog after uploading all the selected files.
+
 ## 17.4.50 (2020-02-18)
 
 ### File Manager

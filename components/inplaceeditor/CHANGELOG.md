@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.50 (2020-02-18)
+
+### In-place Editor
+
+#### Bug Fixes
+
+- `#255914` - Provided the `textOption` property and setting the value to `Always` will display field value on initial load when DropDown components are configured with the `fields` property.
+
 ## 17.4.46 (2020-01-30)
 
 ### In-place Editor
