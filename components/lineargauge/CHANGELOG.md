@@ -11,6 +11,14 @@
 
 ## [Unreleased]
 
+## 17.4.55 (2020-03-10)
+
+### LinearGauge
+
+#### Bug Fixes
+
+- `#I266799` - The pointer value changed using the `valueChange` event is now updated properly.
+
 ## 17.4.50 (2020-02-18)
 
 ### LinearGauge

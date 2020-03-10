@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.55 (2020-03-10)
+
+### File Manager
+
+#### Bug Fixes
+
+- `#266091` - Now, the date modified column in the details view is globalized based on the locale value.
+
 ## 17.4.51 (2020-02-25)
 
 ### File Manager

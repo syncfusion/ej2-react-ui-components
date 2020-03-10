@@ -102,7 +102,7 @@
 - `expandAtLevel`, `collapseAtLevel`, `expandAll` and `collapseAll` methods are working fine when `pageSizeMode` is set as `All`.
 
 
-## 1.0 (2020-02-18)
+## 17.4.50 (2020-02-18)
 
 ### TreeGrid
 
