@@ -8,6 +8,7 @@ export interface KanbanTypecast {
     columnsTemplate?: string | Function | any;
     swimlaneSettingsTemplate?: string | Function | any;
     cardSettingsTemplate?: string | Function | any;
+    dialogSettingsTemplate?: string | Function | any;
 }
 /**
  * `KanbanComponent` represents the react Kanban.

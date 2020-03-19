@@ -2,23 +2,7 @@
 
 ## [Unreleased]
 
-## 17.4.55 (2020-03-10)
-
-### Common
-
-#### Bug Fixes
-
-- `#I262905` - Resolved adding multiple CSS Class name in element.
-
-## 17.4.41 (2020-01-07)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved the React `Lifecycle` warnings in the console.
-
-## 17.4.39 (2019-12-17)
+## 18.1.36-beta (2020-03-19)
 
 ### Common
 

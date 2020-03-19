@@ -11,13 +11,9 @@
 
 ## [Unreleased]
 
-## 17.4.55 (2020-03-10)
+## 18.1.36-beta (2020-03-19)
 
-### LinearGauge
-
-#### Bug Fixes
-
-- `#I266799` - The pointer value changed using the `valueChange` event is now updated properly.
+- Drag events for pointer drag will be triggered now.
 
 ## 17.4.50 (2020-02-18)
 

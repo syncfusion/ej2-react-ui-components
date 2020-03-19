@@ -13,13 +13,15 @@
 		"multiselect",
 		"combobox",
 		"select",
+		"dropdwontree",
 		"react",
 		"react-dropdowns",
 		"ej2-react-dropdown",
 		"react-dropdownlist",
 		"react-autocomplete",
 		"react-multiselect",
-		"react-combobox"
+		"react-combobox",
+		"react-dropdowntree"
 	],
 	"repository": {
 		"type": "git",

@@ -1,5 +1,5 @@
 import { PureComponent, createElement } from 'react';
-import { AutoComplete, ComboBox, DropDownList, ListBox, MultiSelect } from '@syncfusion/ej2-dropdowns';
+import { AutoComplete, ComboBox, DropDownList, DropDownTree, ListBox, MultiSelect } from '@syncfusion/ej2-dropdowns';
 import { ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
 /**
@@ -127,7 +127,32 @@ class ListBoxComponent extends ListBox {
 }
 applyMixins(ListBoxComponent, [ComponentBase, PureComponent]);
 
-export { DropDownListComponent, ComboBoxComponent, AutoCompleteComponent, MultiSelectComponent, ListBoxComponent };
+/**
+ *The DropDownTree component contains a list of predefined values from which you can choose a single or multiple values.
+ * ```
+ * <DropDownTreeComponent/>
+ * ```
+ */
+class DropDownTreeComponent extends DropDownTree {
+    constructor(props) {
+        super(props);
+        this.initRenderCalled = false;
+        this.checkInjectedModules = false;
+        this.immediateRender = false;
+    }
+    render() {
+        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+            super.render();
+            this.initRenderCalled = true;
+        }
+        else {
+            return createElement('input', this.getDefaultAttributes());
+        }
+    }
+}
+applyMixins(DropDownTreeComponent, [ComponentBase, PureComponent]);
+
+export { DropDownListComponent, ComboBoxComponent, AutoCompleteComponent, MultiSelectComponent, ListBoxComponent, DropDownTreeComponent };
 export * from '@syncfusion/ej2-dropdowns';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-dropdowns.es2015.js.map

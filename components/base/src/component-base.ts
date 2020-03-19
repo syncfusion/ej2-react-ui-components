@@ -29,7 +29,7 @@ const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
     'onClick', 'onFocus', 'onBlur'];
 const delayUpdate: string[] = ['accordion', 'tab', 'splitter'];
 
-// tslint:disable
+ // tslint:disable
 export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private setProperties: Function;
     private element: any;
@@ -48,6 +48,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private attrKeys: string[] = [];
     private cachedTimeOut: number = 0;
     private isAppendCalled: boolean = false;
+    private initRenderCalled: boolean = false;
     private isReact: boolean = true;
     private modelObserver: any;
     private isDestroyed: boolean;
@@ -77,7 +78,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
         // tslint:disable-next-line:no-any
-        if ((this.props as any).immediateRender) {
+        if((this.props as any).immediateRender){
             this.renderReactComponent();
         } else {
             this.cachedTimeOut = setTimeout(() => {
@@ -85,13 +86,13 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             });
         }
     }
-
+    
     private renderReactComponent(): void {
         let ele: Element = ReactDOM.findDOMNode(this);
-        if (ele) {
-            this.isAppendCalled = true;
-            this.appendTo(ele);
-        }
+            if (ele) {
+                this.isAppendCalled = true;
+                this.appendTo(ele);
+            }
     }
 
     // Lifecycle methods are changed by React team and so we can deprecate this method and use
@@ -101,6 +102,9 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
      * @private
      */
     public UNSAFE_componentWillReceiveProps(nextProps: Object): void {
+        if (!this.initRenderCalled) {
+            return;
+        }
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
             this.isAppendCalled = true;
@@ -118,16 +122,8 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                 delete dProps[propkey];
             } else if (this.attrKeys.indexOf(propkey) !== -1) {
                 if (isClassName) {
-                    let delCheck: string = this.props[propkey];
-                    let delSplit: string[] = delCheck.split(" ");
-                    delSplit.forEach((delValue: string) => {
-                        this.element.classList.remove(delValue);
-                    });
-                    let addCheck: string = dProps[propkey];
-                    let addSplit:string[] = addCheck.split(" ");
-                    addSplit.forEach((addValue: string) => {
-                        this.element.classList.add(addValue);
-                    });
+                    this.element.classList.remove(this.props[propkey]);
+                    this.element.classList.add(dProps[propkey]);
                 } else if (propkey !== 'disabled') {
                     delete dProps[propkey];
                 }
@@ -136,7 +132,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         if (dProps['children']) {
             delete dProps['children'];
         }
-        // tslint:disable-next-line:no-any
+         // tslint:disable-next-line:no-any
         if (this.canDelayUpdate || (this.props as any).delayUpdate) {
             setTimeout(() => {
                 this.refreshProperties(dProps, nextProps);
@@ -154,12 +150,12 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         this.refreshChild(false, nextProps);
     }
 
-    private processComplexTemplate(curObject: Object, context: { complexTemplate: Object }) {
+    private processComplexTemplate(curObject: Object, context: {complexTemplate: Object}){
         let compTemplate: Object = context.complexTemplate
-        if (compTemplate) {
-            for (let prop in compTemplate) {
+        if(compTemplate){
+            for(let  prop in compTemplate){
                 let PropVal: string = compTemplate[prop];
-                if (curObject[prop]) {
+                if(curObject[prop]){
                     setValue(PropVal, getValue(prop, curObject), curObject);
                 }
             }
@@ -169,9 +165,9 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     public getDefaultAttributes(): Object {
         return this.htmlattributes;
     }
-    /* tslint:disable:no-any */
+      /* tslint:disable:no-any */
     public trigger(eventName: string, eventProp?: any, successHandler?: any): void {
-
+      
         if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
                 if ((this.props as any).onChange && eventProp.event) {
@@ -188,7 +184,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             this.modelObserver.notify(eventName, eventProp, successHandler);
             this.isProtectedOnChange = prevDetection;
         }
-
+    
     }
     public compareObjects(oldProps: Object, newProps: Object) {
         return JSON.stringify(oldProps) === JSON.stringify(newProps);
@@ -286,10 +282,10 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             let field: string = this.getChildType(<any>child);
             if (field === key) {
                 if (accessProp || !(<Directive>prop).children) {
-                    // tslint:disable
+                     // tslint:disable
                     let cacheVal: Object = extend({}, prop, {}, true);
-                    // tslint:disable
-                    this.processComplexTemplate(cacheVal, (child as any).type);
+                     // tslint:disable
+                    this.processComplexTemplate(cacheVal, (child as any ).type);
                     ret.push(cacheVal);
                 } else {
                     let cachedValue: Object = this.validateChildren(
@@ -298,8 +294,8 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                     if (cachedValue['children']) {
                         delete cachedValue['children'];
                     }
-                    // tslint:disable
-                    this.processComplexTemplate(cachedValue, (child as any).type);
+                     // tslint:disable
+                    this.processComplexTemplate(cachedValue, (child as any ).type);
                     ret.push(cachedValue);
                 }
             }

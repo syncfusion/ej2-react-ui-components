@@ -5,15 +5,7 @@
 
 ## [Unreleased]
 
-## 17.4.50 (2020-02-18)
-
-### CircularGauge
-
-#### Bug Fixes
-
-- Axis labels are rendering properly now in the cross position.
-
-## 17.4.41 (2020-01-07)
+## 18.1.36-beta (2020-03-19)
 
 ### CircularGauge
 
@@ -45,6 +37,8 @@
 ### CircularGauge
 
 #### Bug Fixes
+
+- `#I238300` - The issue with animation in circular gauge and flickering has been resolved.
 
 - `#I238300` - The issue with animation in circular gauge and flickering has been resolved
 

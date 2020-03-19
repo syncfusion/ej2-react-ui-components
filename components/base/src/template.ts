@@ -10,18 +10,23 @@ export function compile(templateElement: any, helper?: Object):
     if (typeof templateElement === 'string') {
         return stringCompiler(templateElement, helper);
     } else {
-        return (data: any): any => {
-            let ele: Element = document.createElement('div');
-            document.body.appendChild(ele);
+        return (data: any, component: any): any => {
+
             let actTemplate: Function | Object = templateElement;
             let actData: Object = data;
             if (typeof actTemplate === 'object') {
                 actTemplate = templateElement.template;
                 actData = extend({}, data, templateElement.data || {});
             }
-            ReactDOM.render((actTemplate as Function)(actData), ele);
-            detach(ele);
-            return ele.children;
+            if (component && component.isReactHybrid) {
+                return [{ template: actTemplate, data: data }];
+            } else {
+                let ele: Element = document.createElement('div');
+                document.body.appendChild(ele);
+                ReactDOM.render((actTemplate as Function)(actData), ele);
+                detach(ele);
+                return ele.children;
+            }
         };
     }
 }
