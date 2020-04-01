@@ -2,13 +2,14 @@
 
 ## [Unreleased]
 
-## 18.1.36-beta (2020-03-19)
+## 18.1.42 (2020-04-01)
 
 ### Kanban
 
 #### New Features
 
 - **Priority Support**: The features enable to render the cards based on the priority value. So, user can easily drag and drop the cards to particular place.
+- **Dialog Editing**: The dialog editing support is used to perform CRUD actions such as add new card, edit or delete existing cards.
 
 undefinedThe Kanban component is an efficient way to visually depict work at various stages of a process using cards, columns, and swimlane.
 
@@ -19,6 +20,7 @@ undefinedThe Kanban component is an efficient way to visually depict work at var
 - **Toggle Columns**: The columns can be expanded and collapsed.
 - **WIP Validation**: Set a minimum and maximum number of cards in a column.
 - **Priority Support**: The features enable to render the cards based on the priority value. So, user can easily drag and drop the cards to particular place.
+- **Dialog Editing**: The dialog editing support is used to perform CRUD actions such as add new card, edit or delete existing cards.
 - **Drag and Drop**: Cards can be easily dragged and dropped from one column to another. You can also drag them from one swim lane to another.
 - **Stacked headers**: Additional column headers can be added in a stacked manner.
 - **Tooltip**: Display the card information with a default tooltip and templated tooltip.

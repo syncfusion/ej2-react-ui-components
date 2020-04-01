@@ -19,7 +19,7 @@ export class SpreadsheetComponent extends Spreadsheet {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'sheets': {'sheet': {'rows': {'row': {'cells': 'cell'}}, 'columns': 'column', 'rangeSettings': 'rangeSetting'}}, 'definedNames': 'definedName'};
+    public directivekeys: { [key: string]: Object } = {'sheets': {'sheet': {'rows': {'row': {'cells': 'cell'}}, 'columns': 'column', 'ranges': 'range'}}, 'definedNames': 'definedName'};
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SpreadsheetModel & DefaultHtmlAttributes| SpreadsheetTypecast>;

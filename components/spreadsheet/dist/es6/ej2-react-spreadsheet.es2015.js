@@ -96,27 +96,27 @@ ColumnsDirective.propertyName = 'columns';
 ColumnsDirective.moduleName = 'columns';
 
 /**
- * `RangeSettingDirective` represent a range setting of the React Spreadsheet.
+ * `RangeDirective` represent a range of the React Spreadsheet.
  * It must be contained in a `SheetDirective`.
  * ```tsx
  * <SpreadsheetComponent>
  *   <SheetsDirective>
  *    <SheetDirective>
- *    <RangeSettingsDirective>
- *    <RangeSettingDirective dataSource={data}></RangeSettingDirective>
- *    </RangeSettingsDirective>
+ *    <RangesDirective>
+ *    <RangeDirective dataSource={data}></RangeDirective>
+ *    </RangesDirective>
  *    </SheetDirective>
  *   </SheetsDirective>
  * </SpreadsheetComponent>
  * ```
  */
-class RangeSettingDirective extends ComplexBase {
+class RangeDirective extends ComplexBase {
 }
-RangeSettingDirective.moduleName = 'rangeSetting';
-class RangeSettingsDirective extends ComplexBase {
+RangeDirective.moduleName = 'range';
+class RangesDirective extends ComplexBase {
 }
-RangeSettingsDirective.propertyName = 'rangeSettings';
-RangeSettingsDirective.moduleName = 'rangeSettings';
+RangesDirective.propertyName = 'range';
+RangesDirective.moduleName = 'ranges';
 
 /**
  * `DefinedNameDirective` represent a defined name of the React Spreadsheet.
@@ -149,7 +149,7 @@ class SpreadsheetComponent extends Spreadsheet {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.directivekeys = { 'sheets': { 'sheet': { 'rows': { 'row': { 'cells': 'cell' } }, 'columns': 'column', 'rangeSettings': 'rangeSetting' } }, 'definedNames': 'definedName' };
+        this.directivekeys = { 'sheets': { 'sheet': { 'rows': { 'row': { 'cells': 'cell' } }, 'columns': 'column', 'ranges': 'range' } }, 'definedNames': 'definedName' };
         this.immediateRender = false;
     }
     render() {
@@ -164,7 +164,7 @@ class SpreadsheetComponent extends Spreadsheet {
 }
 applyMixins(SpreadsheetComponent, [ComponentBase, PureComponent]);
 
-export { SheetDirective, SheetsDirective, RowDirective, RowsDirective, CellDirective, CellsDirective, ColumnDirective, ColumnsDirective, RangeSettingDirective, RangeSettingsDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent };
+export { SheetDirective, SheetsDirective, RowDirective, RowsDirective, CellDirective, CellsDirective, ColumnDirective, ColumnsDirective, RangeDirective, RangesDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent };
 export * from '@syncfusion/ej2-spreadsheet';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-spreadsheet.es2015.js.map
