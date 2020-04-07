@@ -22,6 +22,6 @@ export class RangeDirective extends ComplexBase<RangeModel, RangeModel> {
 }
 
 export class RangesDirective extends ComplexBase<{}, {}> {
-    public static propertyName: string = 'range';
+    public static propertyName: string = 'ranges';
     public static moduleName: string = 'ranges';
 }

@@ -115,7 +115,7 @@ class RangeDirective extends ComplexBase {
 RangeDirective.moduleName = 'range';
 class RangesDirective extends ComplexBase {
 }
-RangesDirective.propertyName = 'range';
+RangesDirective.propertyName = 'ranges';
 RangesDirective.moduleName = 'ranges';
 
 /**
