@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 18.1.44 (2020-04-14)
+
+### PDF Viewer
+
+#### New Features
+
+- `#263306` - Provided the support for Meter Calibration ratio in PDF Viewer.
+- `#271053` - Provided the support to enable and disable the multiline annotations in overlapping collections.
+
+#### Bug Fixes
+
+- `#271180` - Free Text Annotation and annotation label text position updated properly in downloaded rotational documents.
+- `#F153036` - Now, Annotation toolbar separator shown properly when hiding some annotation toolbar items.
+
 ## 18.1.43 (2020-04-07)
 
 ### PDF Viewer
