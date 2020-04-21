@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 18.1.45 (2020-04-21)
+
+### PDF Viewer
+
+#### New Features
+
+- `#267283` - Provided the support to identify the imported annotation and drawn annotation
+- `#268736` - Exposed the text search events in PDF Viewer.
+- `#258786` - Exposed the signature Select event in PDF Viewer.
+
+#### Bug Fixes
+
+- `#272053` - The annotation bounds value is now preserved properly in annotation events.
+- `#269001` - Improved the page rendering behaviour in PDF Viewer.
+
 ## 18.1.44 (2020-04-14)
 
 ### PDF Viewer

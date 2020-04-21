@@ -2,14 +2,24 @@
 
 ## [Unreleased]
 
+## 18.1.45 (2020-04-21)
+
+### Chart
+
+#### Bug Fixes
+
+- `#271540` - Chart zooming maintained while switch chart type from column to polar issue fixed.
+- `#270524` - chart is broken when use `dir="rtl"` to the body tag issue fixed.
+- `#270548` - While enabling scrollbar half of marker gets hidden issue fixed.
+- `#271515` - Column chart is now working fine with column width is zero.
+
 ## 18.1.44 (2020-04-14)
 
 ### Chart
 
 #### Bug Fixes
 
-- `#269131` - Y Axis labels overlapped with the grid lines issue has been fixed.
-- `#268698` - Legend click event argument null issue has been fixed.
+- `#255275` - While disabling some series console error occurs issue has been fixed.
 
 ### Accumulation chart
 
