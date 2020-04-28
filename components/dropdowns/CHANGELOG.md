@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 18.1.46 (2020-04-28)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- The issue with `The Dropdown Tree placeholder hides while opening the popup, when enabling the checkbox support` has been fixed.
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with 'enabled' properly when listbox have toolbar option has been fixed.
+- Issue with Filter element when the scrolling has enabled in listbox.
+
 ## 18.1.43 (2020-04-07)
 
 ### ListBox
