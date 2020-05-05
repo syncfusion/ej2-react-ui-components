@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 18.1.48 (2020-05-05)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#273796` - Issue with clear icon misalignment in the material outline has been resolved.
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with drag and drop in empty listbox has been fixed.
+
 ## 18.1.46 (2020-04-28)
 
 ### Dropdown Tree

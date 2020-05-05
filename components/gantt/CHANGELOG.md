@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.48 (2020-05-05)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#273422` - Date mismatch for parent and child record gets resolved.
+
 ## 18.1.46 (2020-04-28)
 
 ### Gantt
