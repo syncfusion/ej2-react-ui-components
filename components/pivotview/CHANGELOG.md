@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.52 (2020-05-13)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#267962` - The parcel issue in the pivot table component has now been resolved.
+
 ## 18.1.44 (2020-04-14)
 
 ### Pivot Table

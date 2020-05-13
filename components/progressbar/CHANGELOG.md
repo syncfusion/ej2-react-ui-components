@@ -2,14 +2,22 @@
 
 ## [Unreleased]
 
-## 18.1.48 (2020-05-05)
+## 18.1.52 (2020-05-13)
+
+### ProgressBar
+
+#### Bug Fixes
+
+- Progress bar label not render at end of the progress has been fixed.
+
+undefinedThe progress bar provides a customizable visual to indicate the progress of a task with different shape such as rectangle and circle.
+
+## 18.1.42 (2020-04-01)
 
 ### ProgressBar
 
 ProgressBar control is used to visualize the changing status of an extended operation such as a download, file transfer, or installation. All Progress bar elements are rendered by using Scalable Vector Graphics (SVG).
 
-
-The progress bar provides a customizable visual to indicate the progress of a task with different shape such as rectangle and circle.
 
 ### Key features
 
