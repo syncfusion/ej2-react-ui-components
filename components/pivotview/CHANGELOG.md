@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.1.52 (2020-05-13)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#267962` - The parcel issue in the pivot table component has now been resolved.
-
 ## 18.1.44 (2020-04-14)
 
 ### Pivot Table
@@ -261,6 +253,14 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 18.1.52 (2020-05-13)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#267962` - The parcel issue in the pivot table component has now been resolved.
 
 ## 17.1.49 (2019-05-29)
 
