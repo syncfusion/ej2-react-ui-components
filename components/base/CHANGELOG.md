@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 18.1.54 (2020-05-26)
+
+### Common
+
+- `#276826` Resolved the peer dependency warnings with React version.
+
 ## 18.1.36-beta (2020-03-19)
 
 ### Common

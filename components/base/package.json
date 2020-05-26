@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-base",
-	"version": "18.1.36",
+	"version": "18.1.52",
 	"description": "A common package of Essential JS 2 React base, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -24,8 +24,8 @@
 	"module": "./index.js",
 	"readme": "ReadMe.md",
 	"peerDependencies": {
-		"react": "15.5.4 - 16.10.2",
-		"react-dom": "15.5.4 - 16.10.2"
+		"react": "15.5.4 - 16.13.1",
+		"react-dom": "15.5.4 - 16.13.1"
 	},
 	"dependencies": {
 		"@syncfusion/ej2-base": "*"

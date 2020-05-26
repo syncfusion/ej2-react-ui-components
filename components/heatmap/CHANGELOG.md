@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.54 (2020-05-26)
+
+### HeatMap
+
+#### Bug Fixes
+
+- `#277945` - Legend label cropping issue has been fixed.
+
 ## 18.1.52 (2020-05-13)
 
 ### HeatMap
