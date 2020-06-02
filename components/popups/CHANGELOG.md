@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.55 (2020-06-02)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#268838`, `#154237` - Resolved the parent dialog button click action is not working while rendering the dialog within an Dialog.
+
 ## 18.1.53 (2020-05-19)
 
 ### Tooltip

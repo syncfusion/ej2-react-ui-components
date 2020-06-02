@@ -2,19 +2,45 @@
 
 ## [Unreleased]
 
-## 18.1.54 (2020-05-26)
+## 18.1.55 (2020-06-02)
+
+### Menu
+
+#### Bug Fixes
+
+- Issue with Menu closing when collision occurred.
 
 ### Accordion
 
 #### Bug Fixes
 
 - `#275090` - An issue with Ripple effect when destroy and rendered nested accordions has been fixed.
+- `#273054` - An issue with cross side scripting validation has been fixed.
+- `#275509` - An issue with `addItem` public method when passing multiple items has been fixed.
+
+### Tab
+
+#### Bug Fixes
+
+- `#273054` - An issue with cross side scripting validation has been fixed.
 
 ### Toolbar
 
 #### Bug Fixes
 
 - `#275422` - An issue with toolbar scrolling is not working properly after perform window resize has been fixed.
+
+### TreeView
+
+#### Bug Fixes
+
+- `#276986` - Now, the previous state will be restored in the TreeView when the CRUD operation is failed at the server side.
+
+### Sidebar
+
+#### Bug Fixes
+
+- `#272991` - The issue with "Unable to use the same target for more than one Sidebar component" has been resolved.
 
 ## 18.1.54 (2020-05-26)
 
