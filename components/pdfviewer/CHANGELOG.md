@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.56 (2020-06-09)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#273237` - Now, Annotation comments are locked properly when locked the annotations.
+
 ## 18.1.55 (2020-06-02)
 
 ### PDF Viewer

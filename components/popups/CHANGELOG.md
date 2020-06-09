@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.56 (2020-06-09)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#154807` - Tooltip not opening more than once when target specified has been resolved.
+
 ## 18.1.55 (2020-06-02)
 
 ### Dialog
