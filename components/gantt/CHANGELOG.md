@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.57 (2020-06-16)
+
+### Gantt
+
+#### New Features
+
+- `#278724` - Provided support for hiding ID column in dependency tab.
+
 ## 18.1.55 (2020-06-02)
 
 ### Gantt
