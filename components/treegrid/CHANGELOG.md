@@ -2,12 +2,21 @@
 
 ## [Unreleased]
 
+## 18.1.59 (2020-06-23)
+
+### TreeGrid
+
+#### Bug Fixes
+
+- `#F154641` - Initial set of record rendered properly while using virtual scroll.
+
 ## 18.1.57 (2020-06-16)
 
 ### TreeGrid
 
 #### Bug Fixes
 
+- `#279109` - Checkbox checked properly for child records in remote data.
 - `#277364`, `#279732` - Checkbox with `allowRowDragAndDrop` property rendered properly after editing and cancelling in cell edit mode.
 
 ## 18.1.56 (2020-06-09)
