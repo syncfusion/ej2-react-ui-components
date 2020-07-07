@@ -66,6 +66,7 @@ class ComponentBase extends PureComponent {
      */
     UNSAFE_componentWillReceiveProps(nextProps) {
         if (!this.initRenderCalled) {
+            this.updateProperties(nextProps, true);
             return;
         }
         if (!this.isAppendCalled) {
@@ -73,6 +74,12 @@ class ComponentBase extends PureComponent {
             this.isAppendCalled = true;
             this.appendTo(findDOMNode(this));
         }
+        this.updateProperties(nextProps);
+    }
+    /**
+     * @private
+     */
+    updateProperties(nextProps, silent) {
         let dProps = extend({}, nextProps);
         let keys = Object.keys(nextProps);
         for (let propkey of keys) {
@@ -98,22 +105,24 @@ class ComponentBase extends PureComponent {
             delete dProps['children'];
         }
         // tslint:disable-next-line:no-any
-        if (this.canDelayUpdate || this.props.delayUpdate) {
+        if (this.initRenderCalled && (this.canDelayUpdate || this.props.delayUpdate)) {
             setTimeout(() => {
-                this.refreshProperties(dProps, nextProps);
+                this.refreshProperties(dProps, nextProps, silent);
             });
         }
         else {
-            this.refreshProperties(dProps, nextProps);
+            this.refreshProperties(dProps, nextProps, silent);
         }
     }
-    refreshProperties(dProps, nextProps) {
+    refreshProperties(dProps, nextProps, silent) {
         if (Object.keys(dProps).length) {
-            // tslint:disable-next-line:no-any
-            this.processComplexTemplate(dProps, this);
-            this.setProperties(dProps);
+            if (!silent) {
+                // tslint:disable-next-line:no-any
+                this.processComplexTemplate(dProps, this);
+            }
+            this.setProperties(dProps, silent);
         }
-        this.refreshChild(false, nextProps);
+        this.refreshChild(silent, nextProps);
     }
     processComplexTemplate(curObject, context) {
         let compTemplate = context.complexTemplate;
@@ -193,7 +202,10 @@ class ComponentBase extends PureComponent {
     }
     componentWillUnmount() {
         clearTimeout(this.cachedTimeOut);
-        this.destroy();
+        // tslint:disable-next-line:no-any
+        if (this.initRenderCalled) {
+            this.destroy();
+        }
     }
     /* tslint:disable:no-any */
     validateChildren(childCache, mapper, props) {

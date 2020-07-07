@@ -2,16 +2,7 @@
 
 ## [Unreleased]
 
-## 18.1.59 (2020-06-23)
-
-### PDF Viewer
-
-#### Bug Fixes
-
-- `#279448` - Special character are preserved properly when downloading the document in PDF Viewer.
-- `#279187` - Now, Ajax Request Headers value are set properly in unload request.
-
-## 18.1.56 (2020-06-09)
+## 18.2.44 (2020-07-07)
 
 ### PDF Viewer
 

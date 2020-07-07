@@ -82,8 +82,8 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
      * @private
      */
     ComponentBase.prototype.UNSAFE_componentWillReceiveProps = function (nextProps) {
-        var _this = this;
         if (!this.initRenderCalled) {
+            this.updateProperties(nextProps, true);
             return;
         }
         if (!this.isAppendCalled) {
@@ -91,6 +91,13 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             this.isAppendCalled = true;
             this.appendTo(findDOMNode(this));
         }
+        this.updateProperties(nextProps);
+    };
+    /**
+     * @private
+     */
+    ComponentBase.prototype.updateProperties = function (nextProps, silent) {
+        var _this = this;
         var dProps = extend({}, nextProps);
         var keys = Object.keys(nextProps);
         for (var _i = 0, keys_1 = keys; _i < keys_1.length; _i++) {
@@ -117,22 +124,24 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             delete dProps['children'];
         }
         // tslint:disable-next-line:no-any
-        if (this.canDelayUpdate || this.props.delayUpdate) {
+        if (this.initRenderCalled && (this.canDelayUpdate || this.props.delayUpdate)) {
             setTimeout(function () {
-                _this.refreshProperties(dProps, nextProps);
+                _this.refreshProperties(dProps, nextProps, silent);
             });
         }
         else {
-            this.refreshProperties(dProps, nextProps);
+            this.refreshProperties(dProps, nextProps, silent);
         }
     };
-    ComponentBase.prototype.refreshProperties = function (dProps, nextProps) {
+    ComponentBase.prototype.refreshProperties = function (dProps, nextProps, silent) {
         if (Object.keys(dProps).length) {
-            // tslint:disable-next-line:no-any
-            this.processComplexTemplate(dProps, this);
-            this.setProperties(dProps);
+            if (!silent) {
+                // tslint:disable-next-line:no-any
+                this.processComplexTemplate(dProps, this);
+            }
+            this.setProperties(dProps, silent);
         }
-        this.refreshChild(false, nextProps);
+        this.refreshChild(silent, nextProps);
     };
     ComponentBase.prototype.processComplexTemplate = function (curObject, context) {
         var compTemplate = context.complexTemplate;
@@ -214,7 +223,10 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     };
     ComponentBase.prototype.componentWillUnmount = function () {
         clearTimeout(this.cachedTimeOut);
-        this.destroy();
+        // tslint:disable-next-line:no-any
+        if (this.initRenderCalled) {
+            this.destroy();
+        }
     };
     /* tslint:disable:no-any */
     ComponentBase.prototype.validateChildren = function (childCache, mapper, props) {

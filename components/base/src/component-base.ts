@@ -103,6 +103,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
      */
     public UNSAFE_componentWillReceiveProps(nextProps: Object): void {
         if (!this.initRenderCalled) {
+            this.updateProperties(nextProps, true);
             return;
         }
         if (!this.isAppendCalled) {
@@ -110,6 +111,12 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             this.isAppendCalled = true;
             this.appendTo(ReactDOM.findDOMNode(this));
         }
+        this.updateProperties(nextProps);
+    }
+    /**
+     * @private
+     */
+    private updateProperties(nextProps:Object, silent?: boolean): void {
         let dProps: Object = extend({}, nextProps);
         let keys: string[] = Object.keys(nextProps);
         for (let propkey of keys) {
@@ -133,21 +140,23 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             delete dProps['children'];
         }
          // tslint:disable-next-line:no-any
-        if (this.canDelayUpdate || (this.props as any).delayUpdate) {
+        if (this.initRenderCalled && (this.canDelayUpdate || (this.props as any).delayUpdate)) {
             setTimeout(() => {
-                this.refreshProperties(dProps, nextProps);
+                this.refreshProperties(dProps, nextProps, silent);
             })
         } else {
-            this.refreshProperties(dProps, nextProps);
+            this.refreshProperties(dProps, nextProps, silent);
         }
     }
-    public refreshProperties(dProps: Object, nextProps: Object): void {
+    public refreshProperties(dProps: Object, nextProps: Object, silent?: boolean): void {
         if (Object.keys(dProps).length) {
-            // tslint:disable-next-line:no-any
-            this.processComplexTemplate(dProps, (this as any));
-            this.setProperties(dProps);
+            if(!silent){
+                 // tslint:disable-next-line:no-any
+                this.processComplexTemplate(dProps, (this as any));
+            }
+            this.setProperties(dProps, silent);
         }
-        this.refreshChild(false, nextProps);
+        this.refreshChild(silent, nextProps);
     }
 
     private processComplexTemplate(curObject: Object, context: {complexTemplate: Object}){
@@ -231,7 +240,11 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
 
     public componentWillUnmount(): void {
         clearTimeout(this.cachedTimeOut);
-        this.destroy();
+        // tslint:disable-next-line:no-any
+        if (this.initRenderCalled ) {
+            this.destroy();    
+        }
+        
     }
 
     /* tslint:disable:no-any */

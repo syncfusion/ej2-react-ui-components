@@ -2,19 +2,14 @@
 
 ## [Unreleased]
 
-## 18.1.59 (2020-06-23)
-
-### Common
-
-- `#276826` Resolved the peer dependency warnings with React version.
-
-## 18.1.36-beta (2020-03-19)
+## 18.2.44 (2020-07-07)
 
 ### Common
 
 #### Bug Fixes
 
 - Resolved the `delayUpdate` property type issue.
+- `I276587` - Resolved property updating issue in functional components.
 
 ## 17.2.48-beta (2019-08-28)
 

@@ -1,7 +1,9 @@
 import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { ColumnsModel } from '@syncfusion/ej2-querybuilder';
 
-
+export interface ColumnsDirTypecast {
+    ruleTemplate?: string | Function | any;
+}
 /**
  * `ColumnDirective` represent a column of the react QueryBuilder. 
  * It must be contained in a QueryBuilder component(`GridComponent`). 
@@ -14,7 +16,7 @@ import { ColumnsModel } from '@syncfusion/ej2-querybuilder';
  * </QueryBuilderComponent>
  * ```
  */
-export class ColumnDirective extends ComplexBase<ColumnsModel, ColumnsModel> {
+export class ColumnDirective extends ComplexBase<ColumnsModel| ColumnsDirTypecast, ColumnsModel| ColumnsDirTypecast> {
     public static moduleName: string = 'column';
 }
 

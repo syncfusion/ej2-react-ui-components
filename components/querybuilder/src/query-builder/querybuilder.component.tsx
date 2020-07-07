@@ -18,7 +18,7 @@ export class QueryBuilderComponent extends QueryBuilder {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'columns': 'column'};
-    private immediateRender: boolean = true;
+    private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<QueryBuilderModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;

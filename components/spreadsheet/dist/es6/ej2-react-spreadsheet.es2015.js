@@ -119,6 +119,29 @@ RangesDirective.propertyName = 'ranges';
 RangesDirective.moduleName = 'ranges';
 
 /**
+ * `ConditionalFormatDirective` represent a conditionalformat of the React Spreadsheet.
+ * It must be contained in a `SheetDirective`.
+ * ```tsx
+ * <SpreadsheetComponent>
+ *   <SheetsDirective>
+ *    <SheetDirective>
+ *    <ConditionalFormatsDirective>
+ *    <ConditionalFormatDirective dataSource={data}></ConditionalFormatDirective>
+ *    </ConditionalFormatsDirective>
+ *    </SheetDirective>
+ *   </SheetsDirective>
+ * </SpreadsheetComponent>
+ * ```
+ */
+class ConditionalFormatDirective extends ComplexBase {
+}
+ConditionalFormatDirective.moduleName = 'conditionalFormat';
+class ConditionalFormatsDirective extends ComplexBase {
+}
+ConditionalFormatsDirective.propertyName = 'conditionalFormats';
+ConditionalFormatsDirective.moduleName = 'conditionalFormats';
+
+/**
  * `DefinedNameDirective` represent a defined name of the React Spreadsheet.
  * It must be contained in a Spreadsheet component(`SpreadsheetComponent`).
  * ```tsx
@@ -149,7 +172,7 @@ class SpreadsheetComponent extends Spreadsheet {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.directivekeys = { 'sheets': { 'sheet': { 'rows': { 'row': { 'cells': 'cell' } }, 'columns': 'column', 'ranges': 'range' } }, 'definedNames': 'definedName' };
+        this.directivekeys = { 'sheets': { 'sheet': { 'rows': { 'row': { 'cells': 'cell' } }, 'columns': 'column', 'ranges': 'range', 'conditionalFormats': 'conditionalFormat' } }, 'definedNames': 'definedName' };
         this.immediateRender = false;
     }
     render() {
@@ -164,7 +187,7 @@ class SpreadsheetComponent extends Spreadsheet {
 }
 applyMixins(SpreadsheetComponent, [ComponentBase, PureComponent]);
 
-export { SheetDirective, SheetsDirective, RowDirective, RowsDirective, CellDirective, CellsDirective, ColumnDirective, ColumnsDirective, RangeDirective, RangesDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent };
+export { SheetDirective, SheetsDirective, RowDirective, RowsDirective, CellDirective, CellsDirective, ColumnDirective, ColumnsDirective, RangeDirective, RangesDirective, ConditionalFormatDirective, ConditionalFormatsDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent };
 export * from '@syncfusion/ej2-spreadsheet';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-spreadsheet.es2015.js.map

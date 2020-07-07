@@ -6,6 +6,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 export interface DiagramTypecast {
     annotationTemplate?: string | Function | any;
     nodeTemplate?: string | Function | any;
+    userHandleTemplate?: string | Function | any;
 }
 /**
  * Represents react Diagram Component

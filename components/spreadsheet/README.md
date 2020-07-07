@@ -54,6 +54,9 @@ Spreadsheet component is also offered in following list of frameworks.
 - **Show/Hide:** Provides the option to show/hide the rows, columns and sheets.
 - **Insert/delete:** Provides the option to insert/delete the rows, columns and sheets.
 - **Merge cells:** Provides option to can combine two or more cells located in the same row or column into a single cell.
+- **Conditional formatting:** Provides option to format a cell or range of cells based on the conditions applied.
+- **Clear:** Provides option to clear the content, formats, and hyperlinks applied to a cell or range of cells in a spreadsheet.
+- **Aggregates:** Provides option to check the sum, average, and count for the selected cells or range in the sheet tab.
 - **RTL** - Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization** - Provides inherent support to localize the UI.
 - **Accessibility** - Provides with built-in accessibility support which helps to access all the spreadsheet component features through the keyboard, screen readers, or other assistive technology devices.
