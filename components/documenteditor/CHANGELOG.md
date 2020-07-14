@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 18.2.45 (2020-07-14)
+
+### Document Editor
+
+#### New Features
+
+- Added API to delete bookmark.
+
+#### Bug Fixes
+
+- `#283180` - Resolved font family no records found issue.
+- `#282303` - Paste dropdown now hides when creating or opening new document.
+- `#280951` - Table content renders properly now for table with merged cells.
+- `#280973` - Resolved script while getting bookmarks from selection.
+
 ## 18.2.44 (2020-07-07)
 
 ### Document Editor
