@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.2.47 (2020-07-28)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#282556` - An issue with resizing the events has been fixed.
+- `#284373` - An issue with adding multiple CSS classes to `cssClass` property has been fixed.
+
 ## 18.2.46 (2020-07-21)
 
 ### Schedule
