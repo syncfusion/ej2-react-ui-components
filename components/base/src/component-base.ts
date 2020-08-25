@@ -3,7 +3,7 @@
  */
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { extend, isNullOrUndefined, setValue, getValue } from '@syncfusion/ej2-base';
+import { extend, isNullOrUndefined, setValue, getValue, isObject } from '@syncfusion/ej2-base';
 /**
  * Interface for processing directives
  */
@@ -24,12 +24,21 @@ interface Directive {
 }
 
 
+interface Changes {
+    index?: number;
+    value?: Object;
+    key?: string;
+}
+interface ObjectValidator {
+    status?: boolean;
+    changedProperties?: Changes[];
+}
 const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
 const delayUpdate: string[] = ['accordion', 'tab', 'splitter'];
 
- // tslint:disable
+// tslint:disable
 export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private setProperties: Function;
     private element: any;
@@ -78,7 +87,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
         // tslint:disable-next-line:no-any
-        if((this.props as any).immediateRender){
+        if ((this.props as any).immediateRender) {
             this.renderReactComponent();
         } else {
             this.cachedTimeOut = setTimeout(() => {
@@ -86,13 +95,13 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             });
         }
     }
-    
+
     private renderReactComponent(): void {
         let ele: Element = ReactDOM.findDOMNode(this);
-            if (ele) {
-                this.isAppendCalled = true;
-                this.appendTo(ele);
-            }
+        if (ele) {
+            this.isAppendCalled = true;
+            this.appendTo(ele);
+        }
     }
 
     // Lifecycle methods are changed by React team and so we can deprecate this method and use
@@ -116,7 +125,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     /**
      * @private
      */
-    private updateProperties(nextProps:Object, silent?: boolean): void {
+    private updateProperties(nextProps: Object, silent?: boolean): void {
         let dProps: Object = extend({}, nextProps);
         let keys: string[] = Object.keys(nextProps);
         for (let propkey of keys) {
@@ -139,7 +148,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         if (dProps['children']) {
             delete dProps['children'];
         }
-         // tslint:disable-next-line:no-any
+        // tslint:disable-next-line:no-any
         if (this.initRenderCalled && (this.canDelayUpdate || (this.props as any).delayUpdate)) {
             setTimeout(() => {
                 this.refreshProperties(dProps, nextProps, silent);
@@ -150,8 +159,8 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     }
     public refreshProperties(dProps: Object, nextProps: Object, silent?: boolean): void {
         if (Object.keys(dProps).length) {
-            if(!silent){
-                 // tslint:disable-next-line:no-any
+            if (!silent) {
+                // tslint:disable-next-line:no-any
                 this.processComplexTemplate(dProps, (this as any));
             }
             this.setProperties(dProps, silent);
@@ -159,12 +168,12 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         this.refreshChild(silent, nextProps);
     }
 
-    private processComplexTemplate(curObject: Object, context: {complexTemplate: Object}){
+    private processComplexTemplate(curObject: Object, context: { complexTemplate: Object }) {
         let compTemplate: Object = context.complexTemplate
-        if(compTemplate){
-            for(let  prop in compTemplate){
+        if (compTemplate) {
+            for (let prop in compTemplate) {
                 let PropVal: string = compTemplate[prop];
-                if(curObject[prop]){
+                if (curObject[prop]) {
                     setValue(PropVal, getValue(prop, curObject), curObject);
                 }
             }
@@ -174,9 +183,9 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     public getDefaultAttributes(): Object {
         return this.htmlattributes;
     }
-      /* tslint:disable:no-any */
+    /* tslint:disable:no-any */
     public trigger(eventName: string, eventProp?: any, successHandler?: any): void {
-      
+
         if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
                 if ((this.props as any).onChange && eventProp.event) {
@@ -193,10 +202,67 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             this.modelObserver.notify(eventName, eventProp, successHandler);
             this.isProtectedOnChange = prevDetection;
         }
-    
+
     }
-    public compareObjects(oldProps: Object, newProps: Object) {
-        return JSON.stringify(oldProps) === JSON.stringify(newProps);
+    private compareValues(value1: any, value2: any): boolean {
+        let typeVal: string = typeof value1;
+        let typeVal2: string = typeof value2;
+        if (typeVal === typeVal2) {
+            if (value1.constructor !== value2.constructor) {
+                return false;
+            }
+            if (value1 === value2) {
+                return true;
+            }
+            if (value1 instanceof Date ||
+                value1 instanceof RegExp ||
+                value1 instanceof String ||
+                value1 instanceof Number ||
+                typeVal === 'function'
+            ) {
+                return value1.tostring === value2.tostring;
+            }
+            if (isObject(value1) || Array.isArray(value1)) {
+                let tempVal: Object[] = value1;
+                let tempVal2: Object[] = value2;
+                if (isObject(tempVal)) {
+                    tempVal = [value1];
+                    tempVal2 = [value2];
+                }
+                return this.compareObjects(tempVal, tempVal2).status;
+            }
+        }
+        return false;
+    }
+    public compareObjects(oldProps: any, newProps: any, propName?: string): ObjectValidator {
+        let status: boolean;
+        let lenSimilarity: boolean = (oldProps.length === newProps.length);
+        let diffArray: Changes[] = [];
+        if (lenSimilarity) {
+            for (let i = 0, len = newProps.length; i < len; i++) {
+                let curObj: { [key: string]: Object } = {};
+                let oldProp: { [key: string]: Object } = oldProps[i];
+                let newProp: { [key: string]: Object } = newProps[i];
+                let keys: string[] = Object.keys(newProp);
+                for (let key of keys) {
+                    let oldValue = oldProp[key];
+                    let newValue = newProp[key];
+                    if (!oldProp.hasOwnProperty(key) || !this.compareValues(newValue, oldValue)) {
+                        if (!propName) {
+                            return { status: false };
+                        }
+                        status = false;
+                        curObj[key] = newValue;
+                    }
+                }
+                if (Object.keys(curObj).length) {
+                    diffArray.push({ index: i, value: curObj, key: propName });
+                }
+            }
+        } else {
+            status = false;
+        }
+        return { status: status, changedProperties: diffArray };
     }
     private refreshChild(silent: boolean, props?: Object): void {
         if (this.checkInjectedModules) {
@@ -210,9 +276,10 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             this.injectedModules = prevModule;
         }
         if (this.directivekeys) {
+            let changedProps: Changes[] = [];
             let directiveValue: { [key: string]: Object } = <{ [key: string]: Object }>this.validateChildren(
                 {}, this.directivekeys, (<{ children: React.ReactNode }>(props || this.props)));
-            if (directiveValue) {
+            if (directiveValue && Object.keys(directiveValue).length) {
                 if (!silent && this.skipRefresh) {
                     for (let fields of this.skipRefresh) {
                         delete directiveValue[fields];
@@ -222,9 +289,16 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                     var dKeys = Object.keys(this.prevProperties);
                     for (var i = 0; i < dKeys.length; i++) {
                         var key = dKeys[i];
-                        if (this.compareObjects(this.prevProperties[key], directiveValue[key])) {
+                        if (!directiveValue.hasOwnProperty(key)) {
+                            continue;
+                        }
+                        let compareOutput = this.compareObjects(this.prevProperties[key], directiveValue[key], key);
+                        if (compareOutput.status) {
                             delete directiveValue[key];
                         } else {
+                            if (compareOutput.changedProperties.length) {
+                                changedProps = changedProps.concat(compareOutput.changedProperties);
+                            }
                             let obj: Object = {};
                             obj[key] = directiveValue[key];
                             this.prevProperties = extend(this.prevProperties, obj);
@@ -233,7 +307,18 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                 } else {
                     this.prevProperties = extend({}, directiveValue, {}, true);
                 }
-                this.setProperties(directiveValue, silent);
+                if (changedProps.length) {
+                    for (let changes of changedProps) {
+                        let propInstance: any = getValue(changes.key + '.' + changes.index, this);
+                        if (propInstance && propInstance.setProperties) {
+                            propInstance.setProperties(changes.value);
+                        } else {
+                            extend(propInstance, changes.value);
+                        }
+                    }
+                } else {
+                    this.setProperties(directiveValue, silent);
+                }
             }
         }
     }
@@ -241,10 +326,10 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     public componentWillUnmount(): void {
         clearTimeout(this.cachedTimeOut);
         // tslint:disable-next-line:no-any
-        if (this.initRenderCalled ) {
-            this.destroy();    
+        if (this.initRenderCalled) {
+            this.destroy();
         }
-        
+
     }
 
     /* tslint:disable:no-any */
@@ -295,10 +380,10 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             let field: string = this.getChildType(<any>child);
             if (field === key) {
                 if (accessProp || !(<Directive>prop).children) {
-                     // tslint:disable
+                    // tslint:disable
                     let cacheVal: Object = extend({}, prop, {}, true);
-                     // tslint:disable
-                    this.processComplexTemplate(cacheVal, (child as any ).type);
+                    // tslint:disable
+                    this.processComplexTemplate(cacheVal, (child as any).type);
                     ret.push(cacheVal);
                 } else {
                     let cachedValue: Object = this.validateChildren(
@@ -307,8 +392,8 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                     if (cachedValue['children']) {
                         delete cachedValue['children'];
                     }
-                     // tslint:disable
-                    this.processComplexTemplate(cachedValue, (child as any ).type);
+                    // tslint:disable
+                    this.processComplexTemplate(cachedValue, (child as any).type);
                     ret.push(cachedValue);
                 }
             }

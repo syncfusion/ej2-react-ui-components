@@ -1,6 +1,6 @@
 import { Children, PureComponent, createElement } from 'react';
 import { findDOMNode, render } from 'react-dom';
-import { detach, extend, getTemplateEngine, getValue, isNullOrUndefined, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
+import { detach, extend, getTemplateEngine, getValue, isNullOrUndefined, isObject, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
 
 /**
  * React Component Base
@@ -157,8 +157,65 @@ class ComponentBase extends PureComponent {
             this.isProtectedOnChange = prevDetection;
         }
     }
-    compareObjects(oldProps, newProps) {
-        return JSON.stringify(oldProps) === JSON.stringify(newProps);
+    compareValues(value1, value2) {
+        let typeVal = typeof value1;
+        let typeVal2 = typeof value2;
+        if (typeVal === typeVal2) {
+            if (value1.constructor !== value2.constructor) {
+                return false;
+            }
+            if (value1 === value2) {
+                return true;
+            }
+            if (value1 instanceof Date ||
+                value1 instanceof RegExp ||
+                value1 instanceof String ||
+                value1 instanceof Number ||
+                typeVal === 'function') {
+                return value1.tostring === value2.tostring;
+            }
+            if (isObject(value1) || Array.isArray(value1)) {
+                let tempVal = value1;
+                let tempVal2 = value2;
+                if (isObject(tempVal)) {
+                    tempVal = [value1];
+                    tempVal2 = [value2];
+                }
+                return this.compareObjects(tempVal, tempVal2).status;
+            }
+        }
+        return false;
+    }
+    compareObjects(oldProps, newProps, propName) {
+        let status;
+        let lenSimilarity = (oldProps.length === newProps.length);
+        let diffArray = [];
+        if (lenSimilarity) {
+            for (let i = 0, len = newProps.length; i < len; i++) {
+                let curObj = {};
+                let oldProp = oldProps[i];
+                let newProp = newProps[i];
+                let keys = Object.keys(newProp);
+                for (let key of keys) {
+                    let oldValue = oldProp[key];
+                    let newValue = newProp[key];
+                    if (!oldProp.hasOwnProperty(key) || !this.compareValues(newValue, oldValue)) {
+                        if (!propName) {
+                            return { status: false };
+                        }
+                        status = false;
+                        curObj[key] = newValue;
+                    }
+                }
+                if (Object.keys(curObj).length) {
+                    diffArray.push({ index: i, value: curObj, key: propName });
+                }
+            }
+        }
+        else {
+            status = false;
+        }
+        return { status: status, changedProperties: diffArray };
     }
     refreshChild(silent, props) {
         if (this.checkInjectedModules) {
@@ -172,8 +229,9 @@ class ComponentBase extends PureComponent {
             this.injectedModules = prevModule;
         }
         if (this.directivekeys) {
+            let changedProps = [];
             let directiveValue = this.validateChildren({}, this.directivekeys, (props || this.props));
-            if (directiveValue) {
+            if (directiveValue && Object.keys(directiveValue).length) {
                 if (!silent && this.skipRefresh) {
                     for (let fields of this.skipRefresh) {
                         delete directiveValue[fields];
@@ -183,10 +241,17 @@ class ComponentBase extends PureComponent {
                     var dKeys = Object.keys(this.prevProperties);
                     for (var i = 0; i < dKeys.length; i++) {
                         var key = dKeys[i];
-                        if (this.compareObjects(this.prevProperties[key], directiveValue[key])) {
+                        if (!directiveValue.hasOwnProperty(key)) {
+                            continue;
+                        }
+                        let compareOutput = this.compareObjects(this.prevProperties[key], directiveValue[key], key);
+                        if (compareOutput.status) {
                             delete directiveValue[key];
                         }
                         else {
+                            if (compareOutput.changedProperties.length) {
+                                changedProps = changedProps.concat(compareOutput.changedProperties);
+                            }
                             let obj = {};
                             obj[key] = directiveValue[key];
                             this.prevProperties = extend(this.prevProperties, obj);
@@ -196,7 +261,20 @@ class ComponentBase extends PureComponent {
                 else {
                     this.prevProperties = extend({}, directiveValue, {}, true);
                 }
-                this.setProperties(directiveValue, silent);
+                if (changedProps.length) {
+                    for (let changes of changedProps) {
+                        let propInstance = getValue(changes.key + '.' + changes.index, this);
+                        if (propInstance && propInstance.setProperties) {
+                            propInstance.setProperties(changes.value);
+                        }
+                        else {
+                            extend(propInstance, changes.value);
+                        }
+                    }
+                }
+                else {
+                    this.setProperties(directiveValue, silent);
+                }
             }
         }
     }

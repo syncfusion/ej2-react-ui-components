@@ -1,6 +1,6 @@
 import { Children, PureComponent, createElement } from 'react';
 import { findDOMNode, render } from 'react-dom';
-import { detach, extend, getTemplateEngine, getValue, isNullOrUndefined, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
+import { detach, extend, getTemplateEngine, getValue, isNullOrUndefined, isObject, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
 
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -176,8 +176,66 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             this.isProtectedOnChange = prevDetection;
         }
     };
-    ComponentBase.prototype.compareObjects = function (oldProps, newProps) {
-        return JSON.stringify(oldProps) === JSON.stringify(newProps);
+    ComponentBase.prototype.compareValues = function (value1, value2) {
+        var typeVal = typeof value1;
+        var typeVal2 = typeof value2;
+        if (typeVal === typeVal2) {
+            if (value1.constructor !== value2.constructor) {
+                return false;
+            }
+            if (value1 === value2) {
+                return true;
+            }
+            if (value1 instanceof Date ||
+                value1 instanceof RegExp ||
+                value1 instanceof String ||
+                value1 instanceof Number ||
+                typeVal === 'function') {
+                return value1.tostring === value2.tostring;
+            }
+            if (isObject(value1) || Array.isArray(value1)) {
+                var tempVal = value1;
+                var tempVal2 = value2;
+                if (isObject(tempVal)) {
+                    tempVal = [value1];
+                    tempVal2 = [value2];
+                }
+                return this.compareObjects(tempVal, tempVal2).status;
+            }
+        }
+        return false;
+    };
+    ComponentBase.prototype.compareObjects = function (oldProps, newProps, propName) {
+        var status;
+        var lenSimilarity = (oldProps.length === newProps.length);
+        var diffArray = [];
+        if (lenSimilarity) {
+            for (var i = 0, len = newProps.length; i < len; i++) {
+                var curObj = {};
+                var oldProp = oldProps[i];
+                var newProp = newProps[i];
+                var keys = Object.keys(newProp);
+                for (var _i = 0, keys_2 = keys; _i < keys_2.length; _i++) {
+                    var key = keys_2[_i];
+                    var oldValue = oldProp[key];
+                    var newValue = newProp[key];
+                    if (!oldProp.hasOwnProperty(key) || !this.compareValues(newValue, oldValue)) {
+                        if (!propName) {
+                            return { status: false };
+                        }
+                        status = false;
+                        curObj[key] = newValue;
+                    }
+                }
+                if (Object.keys(curObj).length) {
+                    diffArray.push({ index: i, value: curObj, key: propName });
+                }
+            }
+        }
+        else {
+            status = false;
+        }
+        return { status: status, changedProperties: diffArray };
     };
     ComponentBase.prototype.refreshChild = function (silent, props) {
         if (this.checkInjectedModules) {
@@ -192,8 +250,9 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             this.injectedModules = prevModule;
         }
         if (this.directivekeys) {
+            var changedProps = [];
             var directiveValue = this.validateChildren({}, this.directivekeys, (props || this.props));
-            if (directiveValue) {
+            if (directiveValue && Object.keys(directiveValue).length) {
                 if (!silent && this.skipRefresh) {
                     for (var _a = 0, _b = this.skipRefresh; _a < _b.length; _a++) {
                         var fields = _b[_a];
@@ -204,10 +263,17 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
                     var dKeys = Object.keys(this.prevProperties);
                     for (var i = 0; i < dKeys.length; i++) {
                         var key = dKeys[i];
-                        if (this.compareObjects(this.prevProperties[key], directiveValue[key])) {
+                        if (!directiveValue.hasOwnProperty(key)) {
+                            continue;
+                        }
+                        var compareOutput = this.compareObjects(this.prevProperties[key], directiveValue[key], key);
+                        if (compareOutput.status) {
                             delete directiveValue[key];
                         }
                         else {
+                            if (compareOutput.changedProperties.length) {
+                                changedProps = changedProps.concat(compareOutput.changedProperties);
+                            }
                             var obj = {};
                             obj[key] = directiveValue[key];
                             this.prevProperties = extend(this.prevProperties, obj);
@@ -217,7 +283,21 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
                 else {
                     this.prevProperties = extend({}, directiveValue, {}, true);
                 }
-                this.setProperties(directiveValue, silent);
+                if (changedProps.length) {
+                    for (var _c = 0, changedProps_1 = changedProps; _c < changedProps_1.length; _c++) {
+                        var changes = changedProps_1[_c];
+                        var propInstance = getValue(changes.key + '.' + changes.index, this);
+                        if (propInstance && propInstance.setProperties) {
+                            propInstance.setProperties(changes.value);
+                        }
+                        else {
+                            extend(propInstance, changes.value);
+                        }
+                    }
+                }
+                else {
+                    this.setProperties(directiveValue, silent);
+                }
             }
         }
     };

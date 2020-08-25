@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.55 (2020-08-25)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved the component re render due to  collection value changes on `React` state change.
+
 ## 18.2.44 (2020-07-07)
 
 ### Common
