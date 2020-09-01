@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.2.56 (2020-09-01)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#280780` - Issue with "days span shows wrong range when provide the start and end date with time" has been resolved.
+
+
 ## 18.2.44 (2020-07-07)
 
 ### DatePicker
@@ -217,7 +226,6 @@
 #### Bug Fixes
 
 - #239623 - Now, TimePicker popup closed properly in Edge/IE browsers when place more number of DateTimePicker in single page.
-
 - `#240491` - Now, you can change the today button visibility dynamically along with min and max datetime.
 
 ## 17.2.28-beta (2019-06-27)
@@ -237,7 +245,6 @@
 #### Bug Fixes
 
 - #231616, #234495 - In mobile device, DatePicker popup displays in the center of the viewport.
-
 - #238455 – Now, change event argument `isInteracted` return as true when edit the date value using keyboard.
 
 ### DateRangePicker
@@ -295,7 +302,6 @@
 ### DatePicker
 
 - #143352 - Now, the DatePicker fires input's blur when click outside without select the date from calendar popup.
-
 - #233877 - Now, you can enter the same date value after form reset.
 
 ### DateTimePicker
@@ -317,7 +323,6 @@
 #### Bug Fixes
 
 - #231875 - Now, you can enable the clear button dynamically after disabled the control.
-
 - #F143747 - Now, you can set min and max value as null dynamically.
 
 ### DateTimePicker
@@ -337,7 +342,6 @@
 #### Bug Fixes
 
 - #231596, #232441 - Issue with clear button not shown when disable the `allowEdit` property has been fixed.
-
 - #231003 - Issue with different icon size in bootstrap theme has been fixed.
 
 ## 17.1.32-beta (2019-03-13)
@@ -347,7 +351,6 @@
 #### Bug Fixes
 
 - Issue with clear button not shown when disable the `allowEdit` property has been fixed.
-
 - In iOS device, keyboard is not closed when clicking on the date picker button issue has been fixed.
 
 ### DateRangePicker
@@ -355,7 +358,6 @@
 #### New Features
 
 - Now, you can move to a particular date without UI interaction using `NavigateTo` method.
-
 - Provided option to set the start and depth level view of the calendar.
 
 ### DateTimePicker
@@ -385,7 +387,6 @@
 #### Bug Fixes
 
 - Issue with, “DateRangePicker not restoring the initial value on form reset” has been fixed.
-
 - Now year values are shown in the selected range of decade view.
 
 ### DateTimePicker
@@ -643,7 +644,6 @@
 #### Bug Fixes
 
 - Added `AppendTo` argument in the open event to  specifies which node to be appended on the pop-up element.
-
 - Fixed the validation issue in mobile devices.
 
 ### DateRangePicker
@@ -651,7 +651,6 @@
 #### Bug Fixes
 
 - The Value can be obtained in the code-behind, while posting the selected value from the DateRangePicker control.
-
 - Now, the entire properties of pop-up element of DateRangePicker can be customized in the `open` event.
 
 ## 16.2.47 (2018-08-07)
@@ -661,7 +660,6 @@
 #### Bug Fixes
 
 - Now the `firstDayOfWeek` property will be updated based on the culture specific. Also, to get the firstday related information, then it is mandatory to load the `weekData.json` file from the `CLDR` data.
-
 - Angular form rest for the invalid value in the textbox issue has been fixed.
 
 ### DatePicker
@@ -751,8 +749,7 @@
 #### Breaking Changes
 
 - Newly added `ColorPicker` component in input package requires `SplitButton` dependency, So now it's mandatory to include the `ej2-splitbuttons.umd.min.js` in system.js configuration if your using system.js module loader.
-Update the `system.js` configuration while going with this version and above.
-
+- Update the `system.js` configuration while going with this version and above.
 - Today button will act as a primary button in high contrast, bootstrap and fabric themes.
 
 #### New Features
@@ -792,7 +789,6 @@ Update the `system.js` configuration while going with this version and above.
 #### New Features
 
 - `DrillDown` support has been provided for DateRangePicker component that allows to quick navigate back and forth from month and year views to select a range easier.
-
 - `Value` property support has been provided for DateRangePicker component to set a date range.
 
 ## 16.1.42 (2018-05-15)
@@ -818,7 +814,6 @@ Update the `system.js` configuration while going with this version and above.
 #### Bug Fixes
 
 - `focusIn` and `focusOut` methods has been included.
-
 - `focus` and `blur` events has been included.
 
 ## 16.1.34 (2018-04-10)
@@ -850,7 +845,6 @@ Update the `system.js` configuration while going with this version and above.
 #### Bug Fixes
 
 - Focus and blur events triggers multiple times in DateTimePicker control has been fixed.
-
 - DateTimePicker throws script error while clicking today button in IE browser has been fixed.
 
 #### Breaking Changes
@@ -898,9 +892,7 @@ Update the `system.js` configuration while going with this version and above.
 #### Breaking Changes
 
 - Changed the Angular component selector, component name prefix with `ejs` e.g: `ejs-calendar`.
-
 - Event arguments and it's parameter values are same.
-
 - Popup open in read-only mode issue has been fixed.
 
 #### New Features
@@ -912,9 +904,7 @@ Update the `system.js` configuration while going with this version and above.
 #### New Features
 
 - DateRangePicker rendered based on the screen resolution.
-
 - `DateTime` support has been provided for DateRangePicker.
-
 - Input type `date` has been handled in DateRangePicker.
 
 ### DatePicker
@@ -922,13 +912,11 @@ Update the `system.js` configuration while going with this version and above.
 #### Breaking Changes
 
 - Pascal casing change to `start` and `depth` property values (`Month`, `Year`, `Decade`).
-
 - Focus the input when select the value from the DatePicker popup.
 
 #### New Features
 
 - `Today` button support has been provided for DatePicker.
-
 - Input type `date` has been handled in DatePicker.
 
 ### TimePicker
@@ -940,9 +928,7 @@ Update the `system.js` configuration while going with this version and above.
 #### New Features
 
 - Added `itemRender` support for the TimePicker which allows to customize each time values in a popup list.
-
 - Input type `time` has been handled in TimePicker.
-
 - Added `scrollTo` support for the TimePicker which is used to set the scroll position to the given time value when no value is selected in the popup list or the given value is not present in the popup list.
 
 ### Calendar
@@ -959,14 +945,11 @@ Update the `system.js` configuration while going with this version and above.
 
 DateTimePicker component for selecting or entering a date and time with options for disabling dates, restricting selection and showing custom events.
 
+
 - **Range Restriction** – Allows to select a date and time within a specified range.
-
 - **Format** – Formatting the value displayed in a textbox.
-
 - **Customization** – Allows to customize each day and time cell of the Calendar and time popup list.
-
 - **Strict Mode** -  Allows to enter the only valid date and time in a textbox.
-
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DateTimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
 ## 15.4.26-preview (2018-01-23)
@@ -1053,12 +1036,10 @@ DateTimePicker component for selecting or entering a date and time with options 
 
 Calendar interface for selecting dates with options for disabling dates, restricting selection and showing custom events.
 
+
 - **Range Restriction** - Allows to select a date within a specified date range.
-
 - **Start and Depth View** - Allows to change the initial view and navigation depth of the Calendar.
-
 - **Customization** - Allows to customize the each day cell of the calendar.
-
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the Calendar component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### DatePicker
@@ -1066,16 +1047,12 @@ Calendar interface for selecting dates with options for disabling dates, restric
 DatePicker component for selecting or entering a date with options for disabling dates,
 restricting selection and showing custom events.
 
+
 - **Range Restriction** - Allows to select a date within a specified date range.
-
 - **Format** - Formatting the value displayed in a textbox.
-
 - **Start and Depth View** - Allows to change the initial view and navigation depth of the Calendar.
-
 - **Customization** - Allows to customize the each day cell of the calendar.
-
 - **StrictMode** - Allows to entering the only valid date in a textbox.
-
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DatePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### DateRangePicker
@@ -1083,30 +1060,24 @@ restricting selection and showing custom events.
 DateRangePicker component that allows user to select the date range from the calendar
 or entering the range through the input element.
 
+
 - **Presets** - Allows to define the customized predefined set of ranges.
-
 - **Day Span** - Select the data span between the ranges to avoid excess or less date selection.
-
 - **Range Restriction** - Control the date range selection within a specified range.
-
 - **Format** - Formatting the value displayed in a textbox.
-
 - **Customization** - Allows to customize the each day cell of the calendar.
-
 - **StrictMode** - Allows to entering the only valid date in a textbox.
-
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DateRangePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### TimePicker
 
 TimePicker component is the pre-filled dropdown list with the time values 12/24 hours format, that allows to select a time from the list.
 
+
 - **Range Restriction** - Allows to select a time within a specified time range.
-
 - **Format** - Formatting the value displayed in a textbox.
-
 - **Step** - Provides the option to increment/decrement time value in a popup list.
-
 - **StrictMode** - Allows to entering the only valid time in a textbox.
-
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
+
+
