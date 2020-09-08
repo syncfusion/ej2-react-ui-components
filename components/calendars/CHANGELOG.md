@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 18.2.56 (2020-09-01)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#280780` - Issue with "days span shows wrong range when provide the start and end date with time" has been resolved.
-
-
 ## 18.2.44 (2020-07-07)
 
 ### DatePicker
@@ -1079,5 +1070,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **Step** - Provides the option to increment/decrement time value in a popup list.
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
+
+
+## 18.2.56 (2020-09-01)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#280780` - Issue with "days span shows wrong range when provide the start and end date with time" has been resolved.
 
 

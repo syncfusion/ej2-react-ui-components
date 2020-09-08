@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.57 (2020-09-08)
+
+### File Manager
+
+#### Bug Fixes
+
+- `#288598` - Now, the file details will be sent correctly to the server side while using the rootAliasName property.
+
 ## 18.2.56 (2020-09-01)
 
 ### File Manager

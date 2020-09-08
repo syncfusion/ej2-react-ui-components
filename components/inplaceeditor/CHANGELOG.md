@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.2.56 (2020-09-01)
+## 18.2.57 (2020-09-08)
+
+### In-place Editor
+
+#### New Features
+
+- `#288860` - Provided the new events `submitClick` and `cancelClick` that triggers when clicking the In-place editor submit and cancel buttons.
+
+## 18.2.54 (2020-08-18)
 
 ### In-place Editor
 
