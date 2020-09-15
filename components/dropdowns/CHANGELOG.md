@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.58 (2020-09-15)
+
+### ListBox
+
+#### Bug Fixes
+
+- 'moveAll' is not working after applied grouping has been fixed.
+
 ## 18.2.54 (2020-08-18)
 
 ### Dropdown Tree
