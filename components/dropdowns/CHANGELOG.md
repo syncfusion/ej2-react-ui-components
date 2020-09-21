@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.59 (2020-09-21)
+
+### ListBox
+
+#### Bug Fixes
+
+- compatibility issues with EJ1 has been fixed.
+
 ## 18.2.58 (2020-09-15)
 
 ### ListBox

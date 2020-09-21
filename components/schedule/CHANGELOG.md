@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.2.58 (2020-09-15)
+## 18.2.59 (2020-09-21)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#292250` - An issue with accessibility related navigations from one resource to another resource events support has been added.
+
+## 18.2.57 (2020-09-08)
 
 ### Schedule
 

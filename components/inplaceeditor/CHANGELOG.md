@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 18.2.58 (2020-09-15)
+## 18.2.59 (2020-09-21)
+
+### In-place Editor
+
+#### Bug Fixes
+
+`#289326` - The issue with "Script error is thrown when configuring more than two validation rules in the In-place editor" has been resolved.
+
+
+## 18.2.57 (2020-09-08)
 
 ### In-place Editor
 
