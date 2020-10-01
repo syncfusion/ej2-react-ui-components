@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { Toast } from '@syncfusion/ej2-notifications';
 
 /**
@@ -35,18 +35,19 @@ class ToastComponent extends Toast {
         this.checkInjectedModules = false;
         this.directivekeys = { 'buttonModelProps': 'buttonModelProp' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(ToastComponent, [ComponentBase, PureComponent]);
+applyMixins(ToastComponent, [ComponentBase, Component]);
 
 export { ButtonModelPropDirective, ButtonModelPropsDirective, ToastComponent };
 export * from '@syncfusion/ej2-notifications';

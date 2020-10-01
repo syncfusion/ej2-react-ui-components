@@ -25,6 +25,7 @@ export class UploaderComponent extends Uploader {
      & Readonly<UploaderModel & DefaultHtmlAttributes| UploaderTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -35,14 +36,14 @@ export class UploaderComponent extends Uploader {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('input', this.getDefaultAttributes());
+            return React.createElement((React as any).Fragment, null,[].concat(React.createElement("input", this.getDefaultAttributes()),this.portals));
         }
 
     }
 }
 
-applyMixins(UploaderComponent, [ComponentBase, React.PureComponent]);
+applyMixins(UploaderComponent, [ComponentBase, React.Component]);

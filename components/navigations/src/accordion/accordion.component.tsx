@@ -26,6 +26,7 @@ export class AccordionComponent extends Accordion {
      & Readonly<AccordionModel & DefaultHtmlAttributes| AccordionTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -36,14 +37,14 @@ export class AccordionComponent extends Accordion {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('div', this.getDefaultAttributes(), this.props.children);
+            return React.createElement('div', this.getDefaultAttributes(),[].concat(this.props.children,this.portals));
         }
 
     }
 }
 
-applyMixins(AccordionComponent, [ComponentBase, React.PureComponent]);
+applyMixins(AccordionComponent, [ComponentBase, React.Component]);

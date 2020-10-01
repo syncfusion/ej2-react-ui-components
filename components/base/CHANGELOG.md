@@ -2,22 +2,13 @@
 
 ## [Unreleased]
 
-## 18.2.59 (2020-09-21)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved the component re render due to  collection value changes on `React` state change.
-
-## 18.2.44 (2020-07-07)
+## 18.3.35 (2020-10-01)
 
 ### Common
 
 #### Bug Fixes
 
 - Resolved the `delayUpdate` property type issue.
-- `I276587` - Resolved property updating issue in functional components.
 
 ## 17.2.48-beta (2019-08-28)
 

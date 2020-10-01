@@ -1,4 +1,4 @@
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { InPlaceEditor } from '@syncfusion/ej2-inplace-editor';
 import { ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
@@ -14,18 +14,19 @@ class InPlaceEditorComponent extends InPlaceEditor {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(InPlaceEditorComponent, [ComponentBase, PureComponent]);
+applyMixins(InPlaceEditorComponent, [ComponentBase, Component]);
 
 export { InPlaceEditorComponent };
 export * from '@syncfusion/ej2-inplace-editor';

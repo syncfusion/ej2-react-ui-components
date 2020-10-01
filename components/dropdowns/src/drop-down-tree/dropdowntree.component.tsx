@@ -26,6 +26,7 @@ export class DropDownTreeComponent extends DropDownTree {
      & Readonly<DropDownTreeModel & DefaultHtmlAttributes| DropDownTreeTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -36,14 +37,14 @@ export class DropDownTreeComponent extends DropDownTree {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('input', this.getDefaultAttributes());
+            return React.createElement((React as any).Fragment, null,[].concat(React.createElement("input", this.getDefaultAttributes()),this.portals));
         }
 
     }
 }
 
-applyMixins(DropDownTreeComponent, [ComponentBase, React.PureComponent]);
+applyMixins(DropDownTreeComponent, [ComponentBase, React.Component]);

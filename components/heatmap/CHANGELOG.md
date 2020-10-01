@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.2.59 (2020-09-21)
+## 18.3.35 (2020-10-01)
+
+### Heatmap
+
+#### Bug Fixes
+
+- `287830` - The issue with using setState in the HeatMap has been resolved.
+
+## 18.2.57 (2020-09-08)
 
 ### Heatmap
 

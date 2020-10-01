@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { Spreadsheet } from '@syncfusion/ej2-spreadsheet';
 
 /**
@@ -71,6 +71,14 @@ class CellsDirective extends ComplexBase {
 }
 CellsDirective.propertyName = 'cells';
 CellsDirective.moduleName = 'cells';
+
+class ImageDirective extends ComplexBase {
+}
+ImageDirective.moduleName = 'image';
+class ImagesDirective extends ComplexBase {
+}
+ImagesDirective.propertyName = 'image';
+ImagesDirective.moduleName = 'images';
 
 /**
  * `ColumnDirective` represent a column of the React Spreadsheet.
@@ -172,22 +180,23 @@ class SpreadsheetComponent extends Spreadsheet {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.directivekeys = { 'sheets': { 'sheet': { 'rows': { 'row': { 'cells': 'cell' } }, 'columns': 'column', 'ranges': 'range', 'conditionalFormats': 'conditionalFormat' } }, 'definedNames': 'definedName' };
+        this.directivekeys = { 'sheets': { 'sheet': { 'rows': { 'row': { 'cells': { 'cell': { 'images': 'image' } } } }, 'columns': 'column', 'ranges': 'range', 'conditionalFormats': 'conditionalFormat' } }, 'definedNames': 'definedName' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(SpreadsheetComponent, [ComponentBase, PureComponent]);
+applyMixins(SpreadsheetComponent, [ComponentBase, Component]);
 
-export { SheetDirective, SheetsDirective, RowDirective, RowsDirective, CellDirective, CellsDirective, ColumnDirective, ColumnsDirective, RangeDirective, RangesDirective, ConditionalFormatDirective, ConditionalFormatsDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent };
+export { SheetDirective, SheetsDirective, RowDirective, RowsDirective, CellDirective, CellsDirective, ImageDirective, ImagesDirective, ColumnDirective, ColumnsDirective, RangeDirective, RangesDirective, ConditionalFormatDirective, ConditionalFormatsDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent };
 export * from '@syncfusion/ej2-spreadsheet';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-spreadsheet.es2015.js.map

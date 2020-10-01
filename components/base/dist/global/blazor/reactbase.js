@@ -31,45 +31,26 @@ var ComponentBase = /** @class */ (function (_super) {
         _this.cachedTimeOut = 0;
         _this.isAppendCalled = false;
         _this.initRenderCalled = false;
+        _this.isReactForeceUpdate = false;
         _this.isReact = true;
         return _this;
     }
     // Lifecycle methods are changed by React team and so we can deprecate this method and use
     // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
     // tslint:disable-next-line:no-any
-    /**
-     * @private
-     */
-    ComponentBase.prototype.UNSAFE_componentWillMount = function () {
-        this.isReact = true;
-        var propKeys = Object.keys(this.props);
-        this.htmlattributes = {};
-        this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
-        for (var _i = 0, propKeys_1 = propKeys; _i < propKeys_1.length; _i++) {
-            var prop = propKeys_1[_i];
-            if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1) {
-                this.htmlattributes[prop] = this.props[prop];
-            }
-        }
-    };
     ComponentBase.prototype.componentDidMount = function () {
-        var _this = this;
         this.refreshChild(true);
         this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
         // tslint:disable-next-line:no-any
-        if (this.props.immediateRender) {
-            this.renderReactComponent();
-        }
-        else {
-            this.cachedTimeOut = setTimeout(function () {
-                _this.renderReactComponent();
-            });
+        this.renderReactComponent();
+        if (this.portals && this.portals.length) {
+            this.renderReactTemplates();
         }
     };
     ComponentBase.prototype.renderReactComponent = function () {
-        var ele = ReactDOM.findDOMNode(this);
+        var ele = this.reactElement;
         if (ele) {
             this.isAppendCalled = true;
             this.appendTo(ele);
@@ -81,17 +62,18 @@ var ComponentBase = /** @class */ (function (_super) {
     /**
      * @private
      */
-    ComponentBase.prototype.UNSAFE_componentWillReceiveProps = function (nextProps) {
+    ComponentBase.prototype.shouldComponentUpdate = function (nextProps) {
         if (!this.initRenderCalled) {
             this.updateProperties(nextProps, true);
-            return;
+            return true;
         }
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
             this.isAppendCalled = true;
-            this.appendTo(ReactDOM.findDOMNode(this));
+            this.appendTo(this.reactElement);
         }
         this.updateProperties(nextProps);
+        return true;
     };
     /**
      * @private
@@ -103,11 +85,14 @@ var ComponentBase = /** @class */ (function (_super) {
         for (var _i = 0, keys_1 = keys; _i < keys_1.length; _i++) {
             var propkey = keys_1[_i];
             var isClassName = propkey === 'className';
+            if (propkey === 'children') {
+                continue;
+            }
             if (!isClassName && !sf.base.isNullOrUndefined(this.htmlattributes[propkey]) &&
                 this.htmlattributes[propkey] !== dProps[propkey]) {
                 this.htmlattributes[propkey] = dProps[propkey];
             }
-            if (this.props[propkey] === nextProps[propkey]) {
+            if (this.compareValues(this.props[propkey], nextProps[propkey])) {
                 delete dProps[propkey];
             }
             else if (this.attrKeys.indexOf(propkey) !== -1) {
@@ -155,10 +140,28 @@ var ComponentBase = /** @class */ (function (_super) {
         }
     };
     ComponentBase.prototype.getDefaultAttributes = function () {
+        var _this = this;
+        this.isReact = true;
+        var propKeys = Object.keys(this.props);
+        this.htmlattributes = {};
+        this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
+        for (var _i = 0, propKeys_1 = propKeys; _i < propKeys_1.length; _i++) {
+            var prop = propKeys_1[_i];
+            if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1) {
+                this.htmlattributes[prop] = this.props[prop];
+            }
+        }
+        if (!this.htmlattributes.ref) {
+            /* tslint:disable:no-any */
+            this.htmlattributes.ref = function (ele) {
+                _this.reactElement = ele;
+            };
+        }
         return this.htmlattributes;
     };
     /* tslint:disable:no-any */
     ComponentBase.prototype.trigger = function (eventName, eventProp, successHandler) {
+        var _this = this;
         if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
                 if (this.props.onChange && eventProp.event) {
@@ -172,7 +175,14 @@ var ComponentBase = /** @class */ (function (_super) {
             }
             var prevDetection = this.isProtectedOnChange;
             this.isProtectedOnChange = false;
-            this.modelObserver.notify(eventName, eventProp, successHandler);
+            if (eventName === 'created') {
+                setTimeout(function () {
+                    _this.modelObserver.notify(eventName, eventProp, successHandler);
+                });
+            }
+            else {
+                this.modelObserver.notify(eventName, eventProp, successHandler);
+            }
             this.isProtectedOnChange = prevDetection;
         }
     };
@@ -180,11 +190,11 @@ var ComponentBase = /** @class */ (function (_super) {
         var typeVal = typeof value1;
         var typeVal2 = typeof value2;
         if (typeVal === typeVal2) {
-            if (value1.constructor !== value2.constructor) {
-                return false;
-            }
             if (value1 === value2) {
                 return true;
+            }
+            if (value1.constructor !== value2.constructor) {
+                return false;
             }
             if (value1 instanceof Date ||
                 value1 instanceof RegExp ||
@@ -206,7 +216,7 @@ var ComponentBase = /** @class */ (function (_super) {
         return false;
     };
     ComponentBase.prototype.compareObjects = function (oldProps, newProps, propName) {
-        var status;
+        var status = true;
         var lenSimilarity = (oldProps.length === newProps.length);
         var diffArray = [];
         if (lenSimilarity) {
@@ -308,6 +318,46 @@ var ComponentBase = /** @class */ (function (_super) {
             this.destroy();
         }
     };
+    ComponentBase.prototype.renderReactTemplates = function () {
+        this.isReactForeceUpdate = true;
+        this.forceUpdate();
+        this.isReactForeceUpdate = false;
+    };
+    
+    // tslint:disable:no-any 
+    ComponentBase.prototype.clearTemplate = function (templateNames, index) {
+        var _this = this;
+        var tempPortal = [];
+        if (templateNames && templateNames.length) {
+            Array.prototype.forEach.call(templateNames, function (propName) {
+                var indexCount = 0;
+                var propIndexCount = 0;
+                _this.portals.forEach(function (portal) {
+                    if (portal.propName === propName) {
+                        tempPortal.push(propIndexCount);
+                        propIndexCount++;
+                    }
+                });
+                if (index && _this.portals[tempPortal[index[indexCount]]].propName == propName) {
+                    _this.portals.splice(index, 1);
+                    indexCount++;
+                }
+                else {
+                    for (var i = 0; i < _this.portals.length; i++) {
+                        if (_this.portals[i].propName == propName) {
+                            _this.portals.splice(i, 1);
+                            i--;
+                        }
+                    }
+                }
+            });
+        }
+        else {
+            this.portals = [];
+        }
+        this.renderReactTemplates();
+    };
+    
     /* tslint:disable:no-any */
     ComponentBase.prototype.validateChildren = function (childCache, mapper, props) {
         var flag = false;
@@ -388,297 +438,7 @@ var ComponentBase = /** @class */ (function (_super) {
         return [];
     };
     return ComponentBase;
-}(React.PureComponent));
-
-/* tslint:enable:no-any */
-
-var __extends$1 = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-/**
- * React Component Base
- */
-// tslint:disable
-var ComponentBaseHybrid = /** @class */ (function (_super) {
-    __extends$1(ComponentBaseHybrid, _super);
-    function ComponentBaseHybrid() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.attrKeys = [];
-        _this.cachedTimeOut = 0;
-        _this.isAppendCalled = false;
-        _this.isReact = true;
-        return _this;
-    }
-    // Lifecycle methods are changed by React team and so we can deprecate this method and use
-    // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
-    // tslint:disable-next-line:no-any
-    /**
-     * @private
-     */
-    ComponentBaseHybrid.prototype.UNSAFE_componentWillMount = function () {
-        this.isReact = true;
-    };
-    /* tslint:disable:no-any */
-    ComponentBaseHybrid.prototype.generateReactElements = function (ele) {
-        var childrens = ele.children;
-        if (childrens && childrens.length) {
-            var childObject = [];
-            for (var i = 0, length_1 = childrens.length; i < length_1; i++) {
-                var child = childrens[i];
-                if (typeof (child) === 'string') {
-                    childObject.push(child);
-                }
-                else {
-                    if (!child.tagName) {
-                        if (child.template) {
-                            childObject.push(React.createElement(child.template, child.data || {}));
-                        }
-                    }
-                    else {
-                        childObject.push(this.generateReactElements(child));
-                    }
-                }
-            }
-            return React.createElement(ele.tagName, ele.attributes, childObject);
-        }
-        else {
-            return React.createElement(ele.tagName, ele.attributes);
-        }
-    };
-    ComponentBaseHybrid.prototype.componentDidMount = function () {
-        if (this.mount) {
-            this.mount();
-        }
-    };
-    ComponentBaseHybrid.prototype.componentDidUpdate = function () {
-        this.currentContext(this.currentContext.calls, this.currentContext.args);
-    };
-    // Lifecycle methods are changed by React team and so we can deprecate this method and use
-    // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops
-    // tslint:disable-next-line:no-any
-    /**
-     * @private
-     */
-    ComponentBaseHybrid.prototype.UNSAFE_componentWillReceiveProps = function (nextProps) {
-        var _this = this;
-        if (!this.isAppendCalled) {
-            clearTimeout(this.cachedTimeOut);
-            this.isAppendCalled = true;
-            this.appendTo(ReactDOM.findDOMNode(this));
-        }
-        var dProps = sf.base.extend({}, nextProps);
-        var keys = Object.keys(nextProps);
-        for (var _i = 0, keys_1 = keys; _i < keys_1.length; _i++) {
-            var propkey = keys_1[_i];
-            var isClassName = propkey === 'className';
-            if (!isClassName && !sf.base.isNullOrUndefined(this.htmlattributes[propkey]) &&
-                this.htmlattributes[propkey] !== dProps[propkey]) {
-                this.htmlattributes[propkey] = dProps[propkey];
-            }
-            if (this.props[propkey] === nextProps[propkey]) {
-                delete dProps[propkey];
-            }
-            else if (this.attrKeys.indexOf(propkey) !== -1) {
-                if (isClassName) {
-                    this.element.classList.remove(this.props[propkey]);
-                    this.element.classList.add(dProps[propkey]);
-                }
-                else if (propkey !== 'disabled') {
-                    delete dProps[propkey];
-                }
-            }
-        }
-        if (dProps['children']) {
-            delete dProps['children'];
-        }
-        // tslint:disable-next-line:no-any
-        if (this.canDelayUpdate || this.props.delayUpdate) {
-            setTimeout(function () {
-                _this.refreshProperties(dProps, nextProps);
-            });
-        }
-        else {
-            this.refreshProperties(dProps, nextProps);
-        }
-    };
-    ComponentBaseHybrid.prototype.refreshProperties = function (dProps, nextProps) {
-        if (Object.keys(dProps).length) {
-            // tslint:disable-next-line:no-any
-            this.processComplexTemplate(dProps, this);
-            this.setProperties(dProps);
-        }
-        this.refreshChild(false, nextProps);
-    };
-    ComponentBaseHybrid.prototype.processComplexTemplate = function (curObject, context) {
-        var compTemplate = context.complexTemplate;
-        if (compTemplate) {
-            for (var prop in compTemplate) {
-                var PropVal = compTemplate[prop];
-                if (curObject[prop]) {
-                    sf.base.setValue(PropVal, sf.base.getValue(prop, curObject), curObject);
-                }
-            }
-        }
-    };
-    /* tslint:disable:no-any */
-    ComponentBaseHybrid.prototype.trigger = function (eventName, eventProp, successHandler) {
-        if (this.isDestroyed !== true) {
-            if ((eventName === 'change' || eventName === 'input')) {
-                if (this.props.onChange && eventProp.event) {
-                    this.props.onChange.call(undefined, {
-                        syntheticEvent: eventProp.event,
-                        nativeEvent: { text: eventProp.value },
-                        value: eventProp.value,
-                        target: this
-                    });
-                }
-            }
-            var prevDetection = this.isProtectedOnChange;
-            this.isProtectedOnChange = false;
-            this.modelObserver.notify(eventName, eventProp, successHandler);
-            this.isProtectedOnChange = prevDetection;
-        }
-    };
-    ComponentBaseHybrid.prototype.compareObjects = function (oldProps, newProps) {
-        return JSON.stringify(oldProps) === JSON.stringify(newProps);
-    };
-    ComponentBaseHybrid.prototype.refreshChild = function (silent, props) {
-        if (this.checkInjectedModules) {
-            var prevModule = this.getInjectedModules() || [];
-            var curModule = this.getInjectedServices() || [];
-            for (var _i = 0, curModule_1 = curModule; _i < curModule_1.length; _i++) {
-                var mod = curModule_1[_i];
-                if (prevModule.indexOf(mod) === -1) {
-                    prevModule.push(mod);
-                }
-            }
-            this.injectedModules = prevModule;
-        }
-        if (this.directivekeys) {
-            var directiveValue = this.validateChildren({}, this.directivekeys, (props || this.props));
-            if (directiveValue) {
-                if (!silent && this.skipRefresh) {
-                    for (var _a = 0, _b = this.skipRefresh; _a < _b.length; _a++) {
-                        var fields = _b[_a];
-                        delete directiveValue[fields];
-                    }
-                }
-                if (this.prevProperties) {
-                    var dKeys = Object.keys(this.prevProperties);
-                    for (var i = 0; i < dKeys.length; i++) {
-                        var key = dKeys[i];
-                        if (this.compareObjects(this.prevProperties[key], directiveValue[key])) {
-                            delete directiveValue[key];
-                        }
-                        else {
-                            var obj = {};
-                            obj[key] = directiveValue[key];
-                            this.prevProperties = sf.base.extend(this.prevProperties, obj);
-                        }
-                    }
-                }
-                else {
-                    this.prevProperties = sf.base.extend({}, directiveValue, {}, true);
-                }
-                this.setProperties(directiveValue, silent);
-            }
-        }
-    };
-    ComponentBaseHybrid.prototype.componentWillUnmount = function () {
-        clearTimeout(this.cachedTimeOut);
-        this.destroy();
-    };
-    /* tslint:disable:no-any */
-    ComponentBaseHybrid.prototype.validateChildren = function (childCache, mapper, props) {
-        var flag = false;
-        var childs = React.Children.toArray(props.children);
-        for (var _i = 0, childs_1 = childs; _i < childs_1.length; _i++) {
-            var child = childs_1[_i];
-            var ifield = this.getChildType(child);
-            var key = mapper[ifield];
-            if (ifield && mapper) {
-                // tslint:disable
-                var childProps = this.getChildProps(React.Children.toArray(child.props.children), key);
-                if (childProps.length) {
-                    flag = true;
-                    // tslint:disable
-                    childCache[child.type.propertyName || ifield] = childProps;
-                }
-            }
-        }
-        if (flag) {
-            return childCache;
-        }
-        return null;
-    };
-    // tslint:disable:no-any
-    ComponentBaseHybrid.prototype.getChildType = function (child) {
-        if (child.type && child.type.isDirective) {
-            return child.type.moduleName || '';
-        }
-        return '';
-    };
-    ComponentBaseHybrid.prototype.getChildProps = function (subChild, matcher) {
-        var ret = [];
-        for (var _i = 0, subChild_1 = subChild; _i < subChild_1.length; _i++) {
-            var child = subChild_1[_i];
-            var accessProp = false;
-            var key = void 0;
-            if (typeof matcher === 'string') {
-                accessProp = true;
-                key = matcher;
-            }
-            else {
-                key = Object.keys(matcher)[0];
-            }
-            var prop = child.props;
-            // tslint:disable-next-line:no-any
-            var field = this.getChildType(child);
-            if (field === key) {
-                if (accessProp || !prop.children) {
-                    // tslint:disable
-                    var cacheVal = sf.base.extend({}, prop, {}, true);
-                    // tslint:disable
-                    this.processComplexTemplate(cacheVal, child.type);
-                    ret.push(cacheVal);
-                }
-                else {
-                    var cachedValue = this.validateChildren(sf.base.extend({}, prop), matcher[key], prop) || prop;
-                    if (cachedValue['children']) {
-                        delete cachedValue['children'];
-                    }
-                    // tslint:disable
-                    this.processComplexTemplate(cachedValue, child.type);
-                    ret.push(cachedValue);
-                }
-            }
-        }
-        return ret;
-    };
-    // tslint:disable:no-any
-    ComponentBaseHybrid.prototype.getInjectedServices = function () {
-        var childs = React.Children.toArray(this.props.children);
-        for (var _i = 0, childs_2 = childs; _i < childs_2.length; _i++) {
-            var child = childs_2[_i];
-            /* tslint:disable:no-any */
-            if (child.type.isService) {
-                return child.props.services;
-            }
-        }
-        return [];
-    };
-    return ComponentBaseHybrid;
-}(React.PureComponent));
+}(React.Component));
 
 /* tslint:enable:no-any */
 
@@ -687,12 +447,14 @@ function applyMixins(derivedClass, baseClass) {
     // tslint:disable:typedef
     baseClass.forEach(function (baseClass) {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(function (name) {
-            derivedClass.prototype[name] = baseClass.prototype[name];
+            if (name !== 'isMounted' && name !== 'replaceState') {
+                derivedClass.prototype[name] = baseClass.prototype[name];
+            }
         });
     });
 }
 
-var __extends$2 = (undefined && undefined.__extends) || (function () {
+var __extends$1 = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -709,7 +471,7 @@ var __extends$2 = (undefined && undefined.__extends) || (function () {
  * Directory base
  */
 var ComplexBase = /** @class */ (function (_super) {
-    __extends$2(ComplexBase, _super);
+    __extends$1(ComplexBase, _super);
     function ComplexBase() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -720,7 +482,7 @@ var ComplexBase = /** @class */ (function (_super) {
     return ComplexBase;
 }(React.PureComponent));
 
-var __extends$3 = (undefined && undefined.__extends) || (function () {
+var __extends$2 = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -737,7 +499,7 @@ var __extends$3 = (undefined && undefined.__extends) || (function () {
  * Dependency injection
  */
 var Inject = /** @class */ (function (_super) {
-    __extends$3(Inject, _super);
+    __extends$2(Inject, _super);
     function Inject() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -759,22 +521,33 @@ function compile(templateElement, helper) {
         return stringCompiler(templateElement, helper);
     }
     else {
-        return function (data, component) {
+        return function (data, component, prop, element) {
             var actTemplate = templateElement;
             var actData = data;
             if (typeof actTemplate === 'object') {
                 actTemplate = templateElement.template;
                 actData = sf.base.extend({}, data, templateElement.data || {});
             }
-            if (component && component.isReactHybrid) {
-                return [{ template: actTemplate, data: data }];
+            var cEle;
+            if (element) {
+                cEle = element;
             }
             else {
-                var ele = document.createElement('div');
-                document.body.appendChild(ele);
-                ReactDOM.render(actTemplate(actData), ele);
-                sf.base.detach(ele);
-                return ele.children;
+                cEle = document.createElement('div');
+            }
+            var rele = React.createElement(actTemplate, actData);
+            var portal = ReactDOM.createPortal(rele, cEle);
+            portal.propName = prop;
+            if (!component.portals) {
+                component.portals = [portal];
+            }
+            else {
+                component.portals.push(portal);
+            }
+            // ReactDOM.render((actTemplate as Function)(actData), ele);
+            // detach(ele);
+            if (!element) {
+                return [cEle];
             }
         };
     }
@@ -786,7 +559,6 @@ sf.base.setTemplateEngine({ compile: compile });
  */
 
 exports.ComponentBase = ComponentBase;
-exports.ComponentBaseHybrid = ComponentBaseHybrid;
 exports.applyMixins = applyMixins;
 exports.ComplexBase = ComplexBase;
 exports.Inject = Inject;
@@ -795,7 +567,5 @@ exports.compile = compile;
 return exports;
 
 });
-sfBlazor.libs.push("reactbase")
-sfBlazor.loadDependencies(["react","reactdom","base"], () => {
+
     sf.reactbase = sf.reactbase({});
-});

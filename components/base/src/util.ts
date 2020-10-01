@@ -7,7 +7,9 @@ export function applyMixins(derivedClass: any, baseClass: any[]): void {
     // tslint:disable:typedef
     baseClass.forEach(baseClass  => {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(name => {
-            derivedClass.prototype[name] = baseClass.prototype[name];
+            if (name !== 'isMounted' && name !== 'replaceState') {
+                derivedClass.prototype[name] = baseClass.prototype[name];
+            }
         });
     });
 }

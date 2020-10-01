@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { Maps } from '@syncfusion/ej2-maps';
 
 /**
@@ -173,18 +173,19 @@ class MapsComponent extends Maps {
         this.checkInjectedModules = true;
         this.directivekeys = { 'layers': { 'layer': { 'initialShapeSelections': 'initialShapeSelection', 'markers': 'marker', 'bubbles': { 'bubble': { 'colorMappings': 'colorMapping' } }, 'navigationLines': 'navigationLine' } }, 'annotations': 'annotation' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(MapsComponent, [ComponentBase, PureComponent]);
+applyMixins(MapsComponent, [ComponentBase, Component]);
 
 export { LayerDirective, LayersDirective, InitialShapeSelectionDirective, InitialShapeSelectionsDirective, MarkerDirective, MarkersDirective, BubbleDirective, BubblesDirective, ColorMappingDirective, ColorMappingsDirective, NavigationLineDirective, NavigationLinesDirective, AnnotationDirective, AnnotationsDirective, MapsComponent };
 export * from '@syncfusion/ej2-maps';

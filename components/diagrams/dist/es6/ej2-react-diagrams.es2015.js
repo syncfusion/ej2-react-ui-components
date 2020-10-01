@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { Diagram, Overview, SymbolPalette } from '@syncfusion/ej2-diagrams';
 
 /**
@@ -60,6 +60,30 @@ ConnectorsDirective.propertyName = 'connectors';
 ConnectorsDirective.moduleName = 'connectors';
 
 /**
+ * `Connector` directive represent a annotation of the react Diagram.
+ * It must be contained in a Diagram component(`DiagramComponent`).
+ * ```tsx
+ * <DiagramComponent>
+ * <ConnectorsDirective>
+ * <ConnectorDirective>
+ * <ConnectorFixedUserHandlesDirective>
+ * <ConnectorFixedUserHandleDirective>
+ * </ConnectorFixedUserHandleDirective>
+ * </ConnectorFixedUserHandlesDirective>
+ * </ConnectorDirective>
+ * </ConnectorsDirective>
+ * </DiagramComponent>
+ * ```
+ */
+class ConnectorFixedUserHandleDirective extends ComplexBase {
+}
+ConnectorFixedUserHandleDirective.moduleName = 'connectorFixedUserHandle';
+class ConnectorFixedUserHandlesDirective extends ComplexBase {
+}
+ConnectorFixedUserHandlesDirective.propertyName = 'fixedUserHandles';
+ConnectorFixedUserHandlesDirective.moduleName = 'connectorFixedUserHandles';
+
+/**
  * `Annotation` directive represent a annotation of the react Diagram.
  * It must be contained in a Diagram component(`DiagramComponent`).
  * ```tsx
@@ -101,6 +125,30 @@ class NodesDirective extends ComplexBase {
 }
 NodesDirective.propertyName = 'nodes';
 NodesDirective.moduleName = 'nodes';
+
+/**
+ * `Node` directive represent a annotation of the react Diagram.
+ * It must be contained in a Diagram component(`DiagramComponent`).
+ * ```tsx
+ * <DiagramComponent>
+ * <NodesDirective>
+ * <NodeDirective>
+ * <NodeFixedUserHandlesDirective>
+ * <NodeFixedUserHandleDirective>
+ * </NodeFixedUserHandleDirective>
+ * </NodeFixedUserHandlesDirective>
+ * </NodeDirective>
+ * </NodesDirective>
+ * </DiagramComponent>
+ * ```
+ */
+class NodeFixedUserHandleDirective extends ComplexBase {
+}
+NodeFixedUserHandleDirective.moduleName = 'nodeFixedUserHandle';
+class NodeFixedUserHandlesDirective extends ComplexBase {
+}
+NodeFixedUserHandlesDirective.propertyName = 'fixedUserHandles';
+NodeFixedUserHandlesDirective.moduleName = 'nodeFixedUserHandles';
 
 /**
  * `Node` directive represent a annotation of the react Diagram.
@@ -161,20 +209,21 @@ class DiagramComponent extends Diagram {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.directivekeys = { 'layers': 'layer', 'customCursors': 'customCursor', 'connectors': { 'connector': { 'connectorAnnotations': 'connectorAnnotation' } }, 'nodes': { 'node': { 'nodeAnnotations': 'nodeAnnotation', 'ports': 'port' } } };
+        this.directivekeys = { 'layers': 'layer', 'customCursors': 'customCursor', 'connectors': { 'connector': { 'connectorFixedUserHandles': 'connectorFixedUserHandle', 'connectorAnnotations': 'connectorAnnotation' } }, 'nodes': { 'node': { 'nodeFixedUserHandles': 'nodeFixedUserHandle', 'nodeAnnotations': 'nodeAnnotation', 'ports': 'port' } } };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(DiagramComponent, [ComponentBase, PureComponent]);
+applyMixins(DiagramComponent, [ComponentBase, Component]);
 
 /**
  * `Palette` directive represent a axis palette of the react SymbolPalette.
@@ -208,18 +257,19 @@ class SymbolPaletteComponent extends SymbolPalette {
         this.checkInjectedModules = true;
         this.directivekeys = { 'palettes': 'palette' };
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(SymbolPaletteComponent, [ComponentBase, PureComponent]);
+applyMixins(SymbolPaletteComponent, [ComponentBase, Component]);
 
 /**
  * Represents react Overview Component
@@ -233,20 +283,21 @@ class OverviewComponent extends Overview {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(OverviewComponent, [ComponentBase, PureComponent]);
+applyMixins(OverviewComponent, [ComponentBase, Component]);
 
-export { LayerDirective, LayersDirective, CustomCursorDirective, CustomCursorsDirective, ConnectorDirective, ConnectorsDirective, ConnectorAnnotationDirective, ConnectorAnnotationsDirective, NodeDirective, NodesDirective, NodeAnnotationDirective, NodeAnnotationsDirective, PortDirective, PortsDirective, DiagramComponent, PaletteDirective, PalettesDirective, SymbolPaletteComponent, OverviewComponent };
+export { LayerDirective, LayersDirective, CustomCursorDirective, CustomCursorsDirective, ConnectorDirective, ConnectorsDirective, ConnectorFixedUserHandleDirective, ConnectorFixedUserHandlesDirective, ConnectorAnnotationDirective, ConnectorAnnotationsDirective, NodeDirective, NodesDirective, NodeFixedUserHandleDirective, NodeFixedUserHandlesDirective, NodeAnnotationDirective, NodeAnnotationsDirective, PortDirective, PortsDirective, DiagramComponent, PaletteDirective, PalettesDirective, SymbolPaletteComponent, OverviewComponent };
 export * from '@syncfusion/ej2-diagrams';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-diagrams.es2015.js.map

@@ -21,12 +21,13 @@ export class DiagramComponent extends Diagram {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'layers': 'layer', 'customCursors': 'customCursor', 'connectors': {'connector': {'connectorAnnotations': 'connectorAnnotation'}}, 'nodes': {'node': {'nodeAnnotations': 'nodeAnnotation', 'ports': 'port'}}};
+    public directivekeys: { [key: string]: Object } = {'layers': 'layer', 'customCursors': 'customCursor', 'connectors': {'connector': {'connectorFixedUserHandles': 'connectorFixedUserHandle', 'connectorAnnotations': 'connectorAnnotation'}}, 'nodes': {'node': {'nodeFixedUserHandles': 'nodeFixedUserHandle', 'nodeAnnotations': 'nodeAnnotation', 'ports': 'port'}}};
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DiagramModel & DefaultHtmlAttributes| DiagramTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -37,14 +38,14 @@ export class DiagramComponent extends Diagram {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('div', this.getDefaultAttributes(), this.props.children);
+            return React.createElement('div', this.getDefaultAttributes(),[].concat(this.props.children,this.portals));
         }
 
     }
 }
 
-applyMixins(DiagramComponent, [ComponentBase, React.PureComponent]);
+applyMixins(DiagramComponent, [ComponentBase, React.Component]);

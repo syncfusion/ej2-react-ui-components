@@ -27,6 +27,7 @@ export class MultiSelectComponent extends MultiSelect {
      & Readonly<MultiSelectModel & DefaultHtmlAttributes| MultiSelectTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -37,14 +38,14 @@ export class MultiSelectComponent extends MultiSelect {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('input', this.getDefaultAttributes());
+            return React.createElement((React as any).Fragment, null,[].concat(React.createElement("input", this.getDefaultAttributes()),this.portals));
         }
 
     }
 }
 
-applyMixins(MultiSelectComponent, [ComponentBase, React.PureComponent]);
+applyMixins(MultiSelectComponent, [ComponentBase, React.Component]);

@@ -2,7 +2,6 @@
  * React Component Base
  */
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { extend, isNullOrUndefined, setValue, getValue, isObject } from '@syncfusion/ej2-base';
 /**
  * Interface for processing directives
@@ -37,9 +36,10 @@ const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
 const delayUpdate: string[] = ['accordion', 'tab', 'splitter'];
+let reactUid: number = 0;
 
 // tslint:disable
-export class ComponentBase<P, S> extends React.PureComponent<P, S> {
+export class ComponentBase<P, S> extends React.Component<P, S> {
     private setProperties: Function;
     private element: any;
     private appendTo: Function;
@@ -58,28 +58,19 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     private cachedTimeOut: number = 0;
     private isAppendCalled: boolean = false;
     private initRenderCalled: boolean = false;
+    private isReactForeceUpdate: boolean = false;
     private isReact: boolean = true;
     private modelObserver: any;
     private isDestroyed: boolean;
     private isProtectedOnChange: boolean;
     private canDelayUpdate: boolean;
+    private reactElement: HTMLElement;
+    public portals:any;
     // Lifecycle methods are changed by React team and so we can deprecate this method and use
     // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
     // tslint:disable-next-line:no-any
-    /**
-     * @private
-     */
-    public UNSAFE_componentWillMount(): void {
-        this.isReact = true;
-        let propKeys: string[] = Object.keys(this.props);
-        this.htmlattributes = {};
-        this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
-        for (let prop of propKeys) {
-            if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1) {
-                this.htmlattributes[prop] = (<{ [key: string]: Object }>this.props)[prop];
-            }
-        }
-    }
+   
+   
 
     public componentDidMount(): void {
         this.refreshChild(true);
@@ -87,17 +78,14 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
         // tslint:disable-next-line:no-any
-        if ((this.props as any).immediateRender) {
-            this.renderReactComponent();
-        } else {
-            this.cachedTimeOut = setTimeout(() => {
-                this.renderReactComponent();
-            });
+        this.renderReactComponent();
+        if (this.portals && this.portals.length) {
+            this.renderReactTemplates();
         }
     }
 
     private renderReactComponent(): void {
-        let ele: Element = ReactDOM.findDOMNode(this);
+        let ele: Element = this.reactElement;
         if (ele) {
             this.isAppendCalled = true;
             this.appendTo(ele);
@@ -110,17 +98,18 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     /**
      * @private
      */
-    public UNSAFE_componentWillReceiveProps(nextProps: Object): void {
+    public shouldComponentUpdate(nextProps: Object): boolean {
         if (!this.initRenderCalled) {
             this.updateProperties(nextProps, true);
-            return;
+            return true;
         }
         if (!this.isAppendCalled) {
             clearTimeout(this.cachedTimeOut);
             this.isAppendCalled = true;
-            this.appendTo(ReactDOM.findDOMNode(this));
+            this.appendTo(this.reactElement);
         }
         this.updateProperties(nextProps);
+        return true
     }
     /**
      * @private
@@ -130,11 +119,14 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         let keys: string[] = Object.keys(nextProps);
         for (let propkey of keys) {
             let isClassName: boolean = propkey === 'className';
+            if(propkey === 'children'){
+                continue;
+            }
             if (!isClassName && !isNullOrUndefined(this.htmlattributes[propkey]) &&
                 this.htmlattributes[propkey] !== dProps[propkey]) {
                 this.htmlattributes[propkey] = dProps[propkey]
             }
-            if (this.props[propkey] === nextProps[propkey]) {
+            if (this.compareValues(this.props[propkey], nextProps[propkey])) {
                 delete dProps[propkey];
             } else if (this.attrKeys.indexOf(propkey) !== -1) {
                 if (isClassName) {
@@ -181,6 +173,21 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
     }
 
     public getDefaultAttributes(): Object {
+        this.isReact = true;
+        let propKeys: string[] = Object.keys(this.props);
+        this.htmlattributes = {};
+        this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
+        for (let prop of propKeys) {
+            if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1) {
+                this.htmlattributes[prop] = (<{ [key: string]: Object }>this.props)[prop];
+            }
+        }
+        if(!this.htmlattributes.ref) {
+              /* tslint:disable:no-any */
+            this.htmlattributes.ref = (ele: any ) => {
+                this.reactElement = ele;
+            };
+        }
         return this.htmlattributes;
     }
     /* tslint:disable:no-any */
@@ -199,7 +206,13 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
             }
             let prevDetection: boolean = this.isProtectedOnChange;
             this.isProtectedOnChange = false;
+            if(eventName === 'created') {
+                setTimeout(()=>{
+                    this.modelObserver.notify(eventName, eventProp, successHandler);
+                })
+            } else {
             this.modelObserver.notify(eventName, eventProp, successHandler);
+            }
             this.isProtectedOnChange = prevDetection;
         }
 
@@ -208,11 +221,11 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         let typeVal: string = typeof value1;
         let typeVal2: string = typeof value2;
         if (typeVal === typeVal2) {
-            if (value1.constructor !== value2.constructor) {
-                return false;
-            }
             if (value1 === value2) {
                 return true;
+            }
+            if (value1.constructor !== value2.constructor) {
+                return false;
             }
             if (value1 instanceof Date ||
                 value1 instanceof RegExp ||
@@ -235,7 +248,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
         return false;
     }
     public compareObjects(oldProps: any, newProps: any, propName?: string): ObjectValidator {
-        let status: boolean;
+        let status: boolean = true;
         let lenSimilarity: boolean = (oldProps.length === newProps.length);
         let diffArray: Changes[] = [];
         if (lenSimilarity) {
@@ -253,7 +266,7 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
                         }
                         status = false;
                         curObj[key] = newValue;
-                    }
+                    } 
                 }
                 if (Object.keys(curObj).length) {
                     diffArray.push({ index: i, value: curObj, key: propName });
@@ -332,6 +345,41 @@ export class ComponentBase<P, S> extends React.PureComponent<P, S> {
 
     }
 
+    public renderReactTemplates (): void {
+        this.isReactForeceUpdate = true;
+        this.forceUpdate();
+        this.isReactForeceUpdate = false;
+    };
+// tslint:disable:no-any 
+    public clearTemplate(templateNames: string[], index?: any) {
+        var tempPortal: any = [];
+        if (templateNames && templateNames.length) {
+            Array.prototype.forEach.call(templateNames, (propName: string) => {
+                let indexCount: number = 0;
+                let propIndexCount: number = 0;
+                this.portals.forEach((portal: any) => {
+                    if (portal.propName === propName) {
+                        tempPortal.push(propIndexCount);
+                        propIndexCount++;
+                    }
+                });
+                if (index && this.portals[tempPortal[index[indexCount]]].propName == propName) {
+                    this.portals.splice(index, 1);
+                    indexCount++;
+                } else {
+                    for (var i = 0; i < this.portals.length; i++) {
+                        if (this.portals[i].propName == propName) {
+                            this.portals.splice(i, 1);
+                            i--;
+                        }
+                    }
+                }
+            });
+        } else {
+            this.portals = [];
+        }
+        this.renderReactTemplates();
+    };
     /* tslint:disable:no-any */
     private validateChildren(
         childCache: { [key: string]: Object },

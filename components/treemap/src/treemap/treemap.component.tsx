@@ -26,6 +26,7 @@ export class TreeMapComponent extends TreeMap {
      & Readonly<TreeMapModel & DefaultHtmlAttributes| TreeMapTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -36,14 +37,14 @@ export class TreeMapComponent extends TreeMap {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('div', this.getDefaultAttributes(), this.props.children);
+            return React.createElement('div', this.getDefaultAttributes(),[].concat(this.props.children,this.portals));
         }
 
     }
 }
 
-applyMixins(TreeMapComponent, [ComponentBase, React.PureComponent]);
+applyMixins(TreeMapComponent, [ComponentBase, React.Component]);

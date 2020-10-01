@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { LinearGauge } from '@syncfusion/ej2-lineargauge';
 
 /**
@@ -99,18 +99,19 @@ class LinearGaugeComponent extends LinearGauge {
         this.checkInjectedModules = true;
         this.directivekeys = { 'axes': { 'axis': { 'ranges': 'range', 'pointers': 'pointer' } }, 'annotations': 'annotation' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(LinearGaugeComponent, [ComponentBase, PureComponent]);
+applyMixins(LinearGaugeComponent, [ComponentBase, Component]);
 
 export { AxisDirective, AxesDirective, RangeDirective, RangesDirective, PointerDirective, PointersDirective, AnnotationDirective, AnnotationsDirective, LinearGaugeComponent };
 export * from '@syncfusion/ej2-lineargauge';

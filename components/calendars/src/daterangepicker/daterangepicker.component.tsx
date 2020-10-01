@@ -26,6 +26,7 @@ export class DateRangePickerComponent extends DateRangePicker {
      & Readonly<DateRangePickerModel & DefaultHtmlAttributes| DateRangePickerTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -36,14 +37,14 @@ export class DateRangePickerComponent extends DateRangePicker {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('input', this.getDefaultAttributes());
+            return React.createElement((React as any).Fragment, null,[].concat(React.createElement("input", this.getDefaultAttributes()),this.portals));
         }
 
     }
 }
 
-applyMixins(DateRangePickerComponent, [ComponentBase, React.PureComponent]);
+applyMixins(DateRangePickerComponent, [ComponentBase, React.Component]);

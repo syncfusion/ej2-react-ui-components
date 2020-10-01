@@ -42,7 +42,7 @@ class Sample extends React.PureComponent<{ content?: string ,name?:string,disabl
                 <InnerFieldDirective name='snm1' status='processed1'></InnerFieldDirective>
             </InnerFieldsDirective>
         </FieldDirective>
-            <FieldDirective name='snm1' status='processed1' headerText='string'></FieldDirective>></FieldsDirective></ReactStyler1 ></div>
+            <FieldDirective name='snm1' status='processed1' headerText='string'></FieldDirective></FieldsDirective></ReactStyler1 ></div>
     }
 }
 
@@ -58,7 +58,7 @@ class Sample1 extends React.PureComponent<{ content?: string,name?:string }, { c
                 <InnerFieldDirective name='snm1' status='processed1'></InnerFieldDirective>
             </InnerFieldsDirective>
         </FieldDirective>
-            <FieldDirective name='snm1' status='processed1'></FieldDirective>></FieldsDirective></ReactStyler2 >
+            <FieldDirective name='snm1' status='processed1'></FieldDirective></FieldsDirective></ReactStyler2 >
     }
 }
 /**
@@ -66,7 +66,8 @@ class Sample1 extends React.PureComponent<{ content?: string,name?:string }, { c
  */
 let instance: any = new ComponentBase();
 function templateFunction(prop:any){
-    return (<div>
+    return (
+    <div>
         {prop.test}
     </div>);
 }
@@ -119,14 +120,14 @@ describe('test', () => {
     });
     describe('Directive child processed properly ', () => {
         beforeEach((done: Function) => {
-            result = ReactDom.render(<ReactStyler1 template="<div>${test}</div>"><FieldsDirective><FieldDirective name='snm' status='processed'
+            result = ReactDom.render(<ReactStyler1 template={templateFunction}><FieldsDirective><FieldDirective name='snm' status='processed'
              template={templateFunction}>
                 <InnerFieldsDirective>
                     <InnerFieldDirective name='snm' status='processed'></InnerFieldDirective>
                     <InnerFieldDirective name='snm1' status='processed1'></InnerFieldDirective>
                 </InnerFieldsDirective>
             </FieldDirective>
-                <FieldDirective name='snm1' status='processed1'></FieldDirective>></FieldsDirective></ReactStyler1>, ele);
+                <FieldDirective name='snm1' status='processed1'></FieldDirective></FieldsDirective></ReactStyler1>, ele);
                 setTimeout(()=>{
                     done();
                 },10)
@@ -136,7 +137,7 @@ describe('test', () => {
             expect(result.fields[0].name).toBe('snm');
         });
         it('check template value string template',()=>{
-            expect(result.val[0].innerHTML).toBe('access');
+            expect(result.val.innerHTML).toContain('access');
         });
         it('Check second level directive value', () => {
             expect(result.fields[0].innerFields.length).toBe(2);
@@ -153,7 +154,7 @@ describe('test', () => {
         result = ReactDom.render(<ReactStyler template={templateFunction}><FieldsDirective><FieldDirective name='snm' status='processed' />
             <FieldDirective name='snm' status='processed'></FieldDirective></FieldsDirective></ReactStyler>, ele);
        setTimeout( ()=>{
-        expect(result.val[0].innerHTML).toBe('access');
+        expect(result.val.innerHTML).toContain('access');
         done();
        },10);
     });

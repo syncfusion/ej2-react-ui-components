@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { QueryBuilder } from '@syncfusion/ej2-querybuilder';
 
 /**
@@ -35,18 +35,19 @@ class QueryBuilderComponent extends QueryBuilder {
         this.checkInjectedModules = false;
         this.directivekeys = { 'columns': 'column' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(QueryBuilderComponent, [ComponentBase, PureComponent]);
+applyMixins(QueryBuilderComponent, [ComponentBase, Component]);
 
 export { ColumnDirective, ColumnsDirective, QueryBuilderComponent };
 export * from '@syncfusion/ej2-querybuilder';

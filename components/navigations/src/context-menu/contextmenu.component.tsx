@@ -23,6 +23,7 @@ export class ContextMenuComponent extends ContextMenu {
      & Readonly<ContextMenuModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -33,14 +34,14 @@ export class ContextMenuComponent extends ContextMenu {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('ul', this.getDefaultAttributes(), this.props.children);
+            return React.createElement('ul', this.getDefaultAttributes(),[].concat(this.props.children,this.portals));
         }
 
     }
 }
 
-applyMixins(ContextMenuComponent, [ComponentBase, React.PureComponent]);
+applyMixins(ContextMenuComponent, [ComponentBase, React.Component]);

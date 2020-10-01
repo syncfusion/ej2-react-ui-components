@@ -1,4 +1,4 @@
-import { PureComponent, createElement } from 'react';
+import { Component, Fragment, createElement } from 'react';
 import { ColorPicker, MaskedTextBox, NumericTextBox, Slider, TextBox, Uploader } from '@syncfusion/ej2-inputs';
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
@@ -14,18 +14,19 @@ class TextBoxComponent extends TextBox {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(TextBoxComponent, [ComponentBase, PureComponent]);
+applyMixins(TextBoxComponent, [ComponentBase, Component]);
 
 /**
  * Represents the React NumericTextBox Component
@@ -39,18 +40,19 @@ class NumericTextBoxComponent extends NumericTextBox {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(NumericTextBoxComponent, [ComponentBase, PureComponent]);
+applyMixins(NumericTextBoxComponent, [ComponentBase, Component]);
 
 /**
  * Represents the React MaskedTextBox Component
@@ -65,18 +67,19 @@ class MaskedTextBoxComponent extends MaskedTextBox {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(MaskedTextBoxComponent, [ComponentBase, PureComponent]);
+applyMixins(MaskedTextBoxComponent, [ComponentBase, Component]);
 
 /**
  * Represents the React Slider Component
@@ -91,18 +94,19 @@ class SliderComponent extends Slider {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(SliderComponent, [ComponentBase, PureComponent]);
+applyMixins(SliderComponent, [ComponentBase, Component]);
 
 /**
  * `FilesDirective` represent a file of the react uploader.
@@ -137,18 +141,19 @@ class UploaderComponent extends Uploader {
         this.checkInjectedModules = false;
         this.directivekeys = { 'files': 'uploadedFiles' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(UploaderComponent, [ComponentBase, PureComponent]);
+applyMixins(UploaderComponent, [ComponentBase, Component]);
 
 /**
  * Represents the React ColorPicker Component
@@ -162,18 +167,19 @@ class ColorPickerComponent extends ColorPicker {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(ColorPickerComponent, [ComponentBase, PureComponent]);
+applyMixins(ColorPickerComponent, [ComponentBase, Component]);
 
 export { TextBoxComponent, NumericTextBoxComponent, MaskedTextBoxComponent, SliderComponent, UploadedFilesDirective, FilesDirective, UploaderComponent, ColorPickerComponent };
 export * from '@syncfusion/ej2-inputs';

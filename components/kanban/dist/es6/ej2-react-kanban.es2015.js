@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { Kanban } from '@syncfusion/ej2-kanban';
 
 /**
@@ -55,18 +55,19 @@ class KanbanComponent extends Kanban {
         this.checkInjectedModules = true;
         this.directivekeys = { 'columns': 'column', 'stackedHeaders': 'stackedHeader' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(KanbanComponent, [ComponentBase, PureComponent]);
+applyMixins(KanbanComponent, [ComponentBase, Component]);
 
 export { ColumnDirective, ColumnsDirective, StackedHeaderDirective, StackedHeadersDirective, KanbanComponent };
 export * from '@syncfusion/ej2-kanban';

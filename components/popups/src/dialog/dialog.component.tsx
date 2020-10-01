@@ -27,6 +27,7 @@ export class DialogComponent extends Dialog {
      & Readonly<DialogModel & DefaultHtmlAttributes| DialogTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -37,14 +38,14 @@ export class DialogComponent extends Dialog {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('div', this.getDefaultAttributes(), this.props.children);
+            return React.createElement('div', this.getDefaultAttributes(),[].concat(this.props.children,this.portals));
         }
 
     }
 }
 
-applyMixins(DialogComponent, [ComponentBase, React.PureComponent]);
+applyMixins(DialogComponent, [ComponentBase, React.Component]);

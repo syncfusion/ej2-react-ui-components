@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { CircularGauge } from '@syncfusion/ej2-circulargauge';
 
 /**
@@ -103,18 +103,19 @@ class CircularGaugeComponent extends CircularGauge {
         this.checkInjectedModules = true;
         this.directivekeys = { 'axes': { 'axis': { 'annotations': 'annotation', 'ranges': 'range', 'pointers': 'pointer' } } };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(CircularGaugeComponent, [ComponentBase, PureComponent]);
+applyMixins(CircularGaugeComponent, [ComponentBase, Component]);
 
 export { AxisDirective, AxesDirective, AnnotationDirective, AnnotationsDirective, RangeDirective, RangesDirective, PointerDirective, PointersDirective, CircularGaugeComponent };
 export * from '@syncfusion/ej2-circulargauge';

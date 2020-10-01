@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { Accordion, ContextMenu, Menu, Sidebar, Tab, Toolbar, TreeView } from '@syncfusion/ej2-navigations';
 
 /**
@@ -35,18 +35,19 @@ class AccordionComponent extends Accordion {
         this.checkInjectedModules = false;
         this.directivekeys = { 'accordionItems': 'accordionItem' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(AccordionComponent, [ComponentBase, PureComponent]);
+applyMixins(AccordionComponent, [ComponentBase, Component]);
 
 /**
  * `ItemDirective` directive represent a item of the React Toolbar.
@@ -81,18 +82,19 @@ class ToolbarComponent extends Toolbar {
         this.checkInjectedModules = false;
         this.directivekeys = { 'items': 'item' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(ToolbarComponent, [ComponentBase, PureComponent]);
+applyMixins(ToolbarComponent, [ComponentBase, Component]);
 
 /**
  * `ContextMenuComponent` represents the react ContextMenu Component.
@@ -107,18 +109,19 @@ class ContextMenuComponent extends ContextMenu {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('ul', this.getDefaultAttributes(), this.props.children);
+            return createElement('ul', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(ContextMenuComponent, [ComponentBase, PureComponent]);
+applyMixins(ContextMenuComponent, [ComponentBase, Component]);
 
 /**
  * `TabItemDirective` represent a item of the React Tab.
@@ -154,18 +157,19 @@ class TabComponent extends Tab {
         this.checkInjectedModules = false;
         this.directivekeys = { 'tabItems': 'tabItem' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(TabComponent, [ComponentBase, PureComponent]);
+applyMixins(TabComponent, [ComponentBase, Component]);
 
 /**
  * `TreeViewComponent` represents the react TreeView Component.
@@ -179,18 +183,19 @@ class TreeViewComponent extends TreeView {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(TreeViewComponent, [ComponentBase, PureComponent]);
+applyMixins(TreeViewComponent, [ComponentBase, Component]);
 
 /**
  * `SidebarComponent` represents the Essential JS 2 React Sidebar Component.
@@ -204,18 +209,19 @@ class SidebarComponent extends Sidebar {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(SidebarComponent, [ComponentBase, PureComponent]);
+applyMixins(SidebarComponent, [ComponentBase, Component]);
 
 class MenuItemDirective extends ComplexBase {
 }
@@ -238,18 +244,19 @@ class MenuComponent extends Menu {
         this.checkInjectedModules = false;
         this.directivekeys = { 'menuItems': 'menuItem' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('ul', this.getDefaultAttributes(), this.props.children);
+            return createElement('ul', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(MenuComponent, [ComponentBase, PureComponent]);
+applyMixins(MenuComponent, [ComponentBase, Component]);
 
 export { AccordionItemDirective, AccordionItemsDirective, AccordionComponent, ItemDirective, ItemsDirective, ToolbarComponent, ContextMenuComponent, TabItemDirective, TabItemsDirective, TabComponent, TreeViewComponent, SidebarComponent, MenuItemDirective, MenuItemsDirective, MenuComponent };
 export * from '@syncfusion/ej2-navigations';

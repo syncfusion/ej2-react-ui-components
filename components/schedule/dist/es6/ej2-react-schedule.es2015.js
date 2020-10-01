@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { RecurrenceEditor, Schedule } from '@syncfusion/ej2-schedule';
 
 /**
@@ -76,18 +76,19 @@ class ScheduleComponent extends Schedule {
         this.checkInjectedModules = true;
         this.directivekeys = { 'views': 'view', 'resources': 'resource', 'headerRows': 'headerRow' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(ScheduleComponent, [ComponentBase, PureComponent]);
+applyMixins(ScheduleComponent, [ComponentBase, Component]);
 
 /**
  * `RecurrenceEditorComponent` represents the react RecurrenceEditor.
@@ -101,18 +102,19 @@ class RecurrenceEditorComponent extends RecurrenceEditor {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(RecurrenceEditorComponent, [ComponentBase, PureComponent]);
+applyMixins(RecurrenceEditorComponent, [ComponentBase, Component]);
 
 export { ViewDirective, ViewsDirective, ResourceDirective, ResourcesDirective, HeaderRowDirective, HeaderRowsDirective, ScheduleComponent, RecurrenceEditorComponent };
 export * from '@syncfusion/ej2-schedule';

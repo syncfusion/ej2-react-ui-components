@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { Grid, Pager } from '@syncfusion/ej2-grids';
 
 /**
@@ -89,18 +89,19 @@ class GridComponent extends Grid {
         this.checkInjectedModules = true;
         this.directivekeys = { 'columns': 'column', 'aggregates': { 'aggregate': { 'aggregateColumns': 'aggregateColumn' } } };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(GridComponent, [ComponentBase, PureComponent]);
+applyMixins(GridComponent, [ComponentBase, Component]);
 
 /**
  * `PagerComponent` represents the react Pager.
@@ -114,18 +115,19 @@ class PagerComponent extends Pager {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(PagerComponent, [ComponentBase, PureComponent]);
+applyMixins(PagerComponent, [ComponentBase, Component]);
 
 export { ColumnDirective, ColumnsDirective, AggregateDirective, AggregatesDirective, AggregateColumnDirective, AggregateColumnsDirective, GridComponent, PagerComponent };
 export * from '@syncfusion/ej2-grids';

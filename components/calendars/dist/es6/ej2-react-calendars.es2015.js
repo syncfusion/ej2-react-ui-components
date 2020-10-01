@@ -1,4 +1,4 @@
-import { PureComponent, createElement } from 'react';
+import { Component, Fragment, createElement } from 'react';
 import { Calendar, DatePicker, DateRangePicker, DateTimePicker, TimePicker } from '@syncfusion/ej2-calendars';
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
@@ -14,18 +14,19 @@ class CalendarComponent extends Calendar {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(CalendarComponent, [ComponentBase, PureComponent]);
+applyMixins(CalendarComponent, [ComponentBase, Component]);
 
 /**
  * Represents the Essential JS 2 React DatePicker Component.
@@ -39,18 +40,19 @@ class DatePickerComponent extends DatePicker {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(DatePickerComponent, [ComponentBase, PureComponent]);
+applyMixins(DatePickerComponent, [ComponentBase, Component]);
 
 /**
  * Represents the Essential JS 2 React TimePicker Component.
@@ -64,18 +66,19 @@ class TimePickerComponent extends TimePicker {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(TimePickerComponent, [ComponentBase, PureComponent]);
+applyMixins(TimePickerComponent, [ComponentBase, Component]);
 
 /**
  * `PresetsDirective` represent a presets of the react daterangepicker.
@@ -110,18 +113,19 @@ class DateRangePickerComponent extends DateRangePicker {
         this.checkInjectedModules = false;
         this.directivekeys = { 'presets': 'preset' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(DateRangePickerComponent, [ComponentBase, PureComponent]);
+applyMixins(DateRangePickerComponent, [ComponentBase, Component]);
 
 /**
  * Represents the Essential JS 2 React DateTimePicker Component.
@@ -135,18 +139,19 @@ class DateTimePickerComponent extends DateTimePicker {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(DateTimePickerComponent, [ComponentBase, PureComponent]);
+applyMixins(DateTimePickerComponent, [ComponentBase, Component]);
 
 export { CalendarComponent, DatePickerComponent, TimePickerComponent, PresetDirective, PresetsDirective, DateRangePickerComponent, DateTimePickerComponent };
 export * from '@syncfusion/ej2-calendars';

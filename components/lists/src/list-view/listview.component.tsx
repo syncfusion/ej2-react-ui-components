@@ -26,6 +26,7 @@ export class ListViewComponent extends ListView {
      & Readonly<ListViewModel & DefaultHtmlAttributes| ListViewTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -36,14 +37,14 @@ export class ListViewComponent extends ListView {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('div', this.getDefaultAttributes(), this.props.children);
+            return React.createElement('div', this.getDefaultAttributes(),[].concat(this.props.children,this.portals));
         }
 
     }
 }
 
-applyMixins(ListViewComponent, [ComponentBase, React.PureComponent]);
+applyMixins(ListViewComponent, [ComponentBase, React.Component]);

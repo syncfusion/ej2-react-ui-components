@@ -1,4 +1,4 @@
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { PivotFieldList, PivotView } from '@syncfusion/ej2-pivotview';
 import { ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
@@ -14,18 +14,19 @@ class PivotViewComponent extends PivotView {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(PivotViewComponent, [ComponentBase, PureComponent]);
+applyMixins(PivotViewComponent, [ComponentBase, Component]);
 
 /**
  * `PivotFieldListComponent` represents the react PivotFieldList.
@@ -39,18 +40,19 @@ class PivotFieldListComponent extends PivotFieldList {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(PivotFieldListComponent, [ComponentBase, PureComponent]);
+applyMixins(PivotFieldListComponent, [ComponentBase, Component]);
 
 export { PivotViewComponent, PivotFieldListComponent };
 export * from '@syncfusion/ej2-pivotview';

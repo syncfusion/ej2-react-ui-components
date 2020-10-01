@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { AccumulationChart, BulletChart, Chart, RangeNavigator, Smithchart, Sparkline, StockChart } from '@syncfusion/ej2-charts';
 
 /**
@@ -269,18 +269,19 @@ class ChartComponent extends Chart {
         this.checkInjectedModules = true;
         this.directivekeys = { 'seriesCollection': { 'series': { 'trendlines': 'trendline', 'segments': 'segment' } }, 'axes': { 'axis': { 'stripLines': 'stripLine', 'multiLevelLabels': { 'multiLevelLabel': { 'categories': 'category' } } } }, 'rows': 'row', 'columns': 'column', 'annotations': 'annotation', 'selectedDataIndexes': 'selectedDataIndex', 'indicators': 'indicator' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(ChartComponent, [ComponentBase, PureComponent]);
+applyMixins(ChartComponent, [ComponentBase, Component]);
 
 /**
  * `AccumulationSeriesDirective` directive represent a series of the react AccumulationChart.
@@ -334,18 +335,19 @@ class AccumulationChartComponent extends AccumulationChart {
         this.checkInjectedModules = true;
         this.directivekeys = { 'accumulationSeriesCollection': 'accumulationSeries', 'accumulationAnnotations': 'accumulationAnnotation' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(AccumulationChartComponent, [ComponentBase, PureComponent]);
+applyMixins(AccumulationChartComponent, [ComponentBase, Component]);
 
 /**
  * `rangenavigatorSeriesDirective` directive represent a series of the react AccumulationChart.
@@ -379,18 +381,19 @@ class RangeNavigatorComponent extends RangeNavigator {
         this.checkInjectedModules = true;
         this.directivekeys = { 'rangenavigatorSeriesCollection': 'rangenavigatorSeries' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(RangeNavigatorComponent, [ComponentBase, PureComponent]);
+applyMixins(RangeNavigatorComponent, [ComponentBase, Component]);
 
 class RangeBandSettingDirective extends ComplexBase {
 }
@@ -413,18 +416,19 @@ class SparklineComponent extends Sparkline {
         this.checkInjectedModules = true;
         this.directivekeys = { 'rangeBandSettings': 'rangeBandSetting' };
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(SparklineComponent, [ComponentBase, PureComponent]);
+applyMixins(SparklineComponent, [ComponentBase, Component]);
 
 class SmithchartSeriesDirective extends ComplexBase {
 }
@@ -447,18 +451,19 @@ class SmithchartComponent extends Smithchart {
         this.checkInjectedModules = true;
         this.directivekeys = { 'smithchartSeriesCollection': 'smithchartSeries' };
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(SmithchartComponent, [ComponentBase, PureComponent]);
+applyMixins(SmithchartComponent, [ComponentBase, Component]);
 
 /**
  * `SeriesDirective` directive represent a series of the react chart.
@@ -648,18 +653,19 @@ class StockChartComponent extends StockChart {
         this.checkInjectedModules = true;
         this.directivekeys = { 'stockChartSeriesCollection': { 'stockChartSeries': { 'stockChartTrendlines': 'stockChartTrendline' } }, 'stockChartAxes': 'stockChartAxis', 'stockChartRows': 'stockChartRow', 'stockChartAnnotations': 'stockChartAnnotation', 'stockChartSelectedDataIndexes': 'stockChartSelectedDataIndex', 'stockChartPeriods': 'stockChartPeriod', 'stockEvents': 'stockEvent', 'stockChartIndicators': 'stockChartIndicator' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(StockChartComponent, [ComponentBase, PureComponent]);
+applyMixins(StockChartComponent, [ComponentBase, Component]);
 
 /**
  * `BulletRangeDirective` directive represent a ranges of the react BulletChart.
@@ -692,18 +698,19 @@ class BulletChartComponent extends BulletChart {
         this.checkInjectedModules = true;
         this.directivekeys = { 'bulletRangeCollection': 'bulletRange' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(BulletChartComponent, [ComponentBase, PureComponent]);
+applyMixins(BulletChartComponent, [ComponentBase, Component]);
 
 export { SeriesDirective, SeriesCollectionDirective, TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, AxisDirective, AxesDirective, StripLineDirective, StripLinesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, CategoryDirective, CategoriesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockEventDirective, StockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent, BulletRangeDirective, BulletRangeCollectionDirective, BulletChartComponent };
 export * from '@syncfusion/ej2-charts';

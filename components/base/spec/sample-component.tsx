@@ -90,7 +90,12 @@ export class Styler extends Component<HTMLElement> implements INotifyPropertyCha
         this.element.innerHTML = this.content;
         if(this.template) {
             let compiledString: Function = compile(this.template);
-            this.val = compiledString({test:'access'});
+            let ele: HTMLElement = document.createElement('div');
+            //this.element.appendChild(ele);
+            //document.body.appendChild(ele);
+            this.val = ele;
+          //  debugger;
+            ele.appendChild(compiledString({test:'access'}, this,'template')[0]);
         }
         this.trigger('change',{event:{},value:'snm'});
     }
@@ -107,6 +112,7 @@ export class Styler extends Component<HTMLElement> implements INotifyPropertyCha
 export class ReactStyler extends Styler {
     public state: any;
     public setState: any;
+    private portals: React.ReactElement[] = [];
     public  initRenderCalled: boolean = false;
     public checkInjectedModules: boolean =  true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> & Readonly<StylerModel &
@@ -129,7 +135,10 @@ export class ReactStyler extends Styler {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('button', this.getDefaultAttributes(), this.props.children);
+            return (
+                React.createElement("button", this.getDefaultAttributes(),React.createElement((React as any).Fragment, null,[].concat(this.portals, this.props.children)),
+                )
+            );
         }
     }
 }
