@@ -1,4 +1,4 @@
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { DocumentEditor, DocumentEditorContainer } from '@syncfusion/ej2-documenteditor';
 import { ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
@@ -14,18 +14,19 @@ class DocumentEditorComponent extends DocumentEditor {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(DocumentEditorComponent, [ComponentBase, PureComponent]);
+applyMixins(DocumentEditorComponent, [ComponentBase, Component]);
 
 /**
  * Represents react Document Editor Container
@@ -39,18 +40,19 @@ class DocumentEditorContainerComponent extends DocumentEditorContainer {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(DocumentEditorContainerComponent, [ComponentBase, PureComponent]);
+applyMixins(DocumentEditorContainerComponent, [ComponentBase, Component]);
 
 export { DocumentEditorComponent, DocumentEditorContainerComponent };
 export * from '@syncfusion/ej2-documenteditor';

@@ -1,4 +1,4 @@
-import { PureComponent, createElement } from 'react';
+import { Component, Fragment, createElement } from 'react';
 import { Button, CheckBox, ChipList, RadioButton, Switch } from '@syncfusion/ej2-buttons';
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
@@ -14,18 +14,19 @@ class ButtonComponent extends Button {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('button', this.getDefaultAttributes(), this.props.children);
+            return createElement('button', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(ButtonComponent, [ComponentBase, PureComponent]);
+applyMixins(ButtonComponent, [ComponentBase, Component]);
 
 /**
  * Represents the react CheckBox Component.
@@ -39,18 +40,19 @@ class CheckBoxComponent extends CheckBox {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(CheckBoxComponent, [ComponentBase, PureComponent]);
+applyMixins(CheckBoxComponent, [ComponentBase, Component]);
 
 /**
  * Represents the react RadioButton Component.
@@ -64,18 +66,19 @@ class RadioButtonComponent extends RadioButton {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(RadioButtonComponent, [ComponentBase, PureComponent]);
+applyMixins(RadioButtonComponent, [ComponentBase, Component]);
 
 /**
  * Represents the react Switch Component.
@@ -89,18 +92,19 @@ class SwitchComponent extends Switch {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
-applyMixins(SwitchComponent, [ComponentBase, PureComponent]);
+applyMixins(SwitchComponent, [ComponentBase, Component]);
 
 /**
  * `ChipDirective` directive represent a chip of the React ChipList.
@@ -134,18 +138,19 @@ class ChipListComponent extends ChipList {
         this.checkInjectedModules = false;
         this.directivekeys = { 'chips': 'chip' };
         this.immediateRender = false;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(ChipListComponent, [ComponentBase, PureComponent]);
+applyMixins(ChipListComponent, [ComponentBase, Component]);
 
 export { ButtonComponent, CheckBoxComponent, RadioButtonComponent, SwitchComponent, ChipDirective, ChipsDirective, ChipListComponent };
 export * from '@syncfusion/ej2-buttons';

@@ -224,7 +224,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             if (value1 === value2) {
                 return true;
             }
-            if (value1.constructor !== value2.constructor) {
+            if ((!isNullOrUndefined(value1) && value1.constructor) !== (!isNullOrUndefined(value2) && value2.constructor)) {
                 return false;
             }
             if (value1 instanceof Date ||

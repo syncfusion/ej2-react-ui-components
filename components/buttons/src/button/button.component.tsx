@@ -22,6 +22,7 @@ export class ButtonComponent extends Button {
      & Readonly<ButtonModel & DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
+    public portals: any = [];
     public isReactComponent: Object;
     public refs: {
         [key: string]: React.ReactInstance
@@ -32,14 +33,14 @@ export class ButtonComponent extends Button {
     }
 
     public render(): any {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('button', this.getDefaultAttributes(), this.props.children);
+            return React.createElement('button', this.getDefaultAttributes(),[].concat(this.props.children,this.portals));
         }
 
     }
 }
 
-applyMixins(ButtonComponent, [ComponentBase, React.PureComponent]);
+applyMixins(ButtonComponent, [ComponentBase, React.Component]);

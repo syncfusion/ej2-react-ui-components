@@ -1,4 +1,4 @@
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { BarcodeGenerator, DataMatrixGenerator, QRCodeGenerator } from '@syncfusion/ej2-barcode-generator';
 import { ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
@@ -14,18 +14,19 @@ class BarcodeGeneratorComponent extends BarcodeGenerator {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(BarcodeGeneratorComponent, [ComponentBase, PureComponent]);
+applyMixins(BarcodeGeneratorComponent, [ComponentBase, Component]);
 
 /**
  * Represents react QRCode Component
@@ -39,18 +40,19 @@ class QRCodeGeneratorComponent extends QRCodeGenerator {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(QRCodeGeneratorComponent, [ComponentBase, PureComponent]);
+applyMixins(QRCodeGeneratorComponent, [ComponentBase, Component]);
 
 /**
  * Represents react DataMatrix Component
@@ -64,18 +66,19 @@ class DataMatrixGeneratorComponent extends DataMatrixGenerator {
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('div', this.getDefaultAttributes(), this.props.children);
+            return createElement('div', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(DataMatrixGeneratorComponent, [ComponentBase, PureComponent]);
+applyMixins(DataMatrixGeneratorComponent, [ComponentBase, Component]);
 
 export { BarcodeGeneratorComponent, QRCodeGeneratorComponent, DataMatrixGeneratorComponent };
 export * from '@syncfusion/ej2-barcode-generator';

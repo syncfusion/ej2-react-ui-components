@@ -193,7 +193,7 @@ var ComponentBase = /** @class */ (function (_super) {
             if (value1 === value2) {
                 return true;
             }
-            if (value1.constructor !== value2.constructor) {
+            if ((!sf.base.isNullOrUndefined(value1) && value1.constructor) !== (!sf.base.isNullOrUndefined(value2) && value2.constructor)) {
                 return false;
             }
             if (value1 instanceof Date ||

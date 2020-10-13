@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 18.3.40 (2020-10-13)
+
+### Pivot Table
+
+#### New Features
+
+- `#F156978` - Provided additional cell information for cell template event.
+
+#### Bug Fixes
+
+- `#292237` - The number formatting is now also applied to the "0" value.
+
 ## 18.2.56 (2020-09-01)
 
 ### Pivot Table

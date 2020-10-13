@@ -1,5 +1,5 @@
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
-import { PureComponent, createElement } from 'react';
+import { Component, createElement } from 'react';
 import { DropDownButton, ProgressButton, SplitButton } from '@syncfusion/ej2-splitbuttons';
 
 class DropDownButtonItemDirective extends ComplexBase {
@@ -23,18 +23,19 @@ class DropDownButtonComponent extends DropDownButton {
         this.checkInjectedModules = false;
         this.directivekeys = { 'dropDownButtonItems': 'dropDownButtonItem' };
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('button', this.getDefaultAttributes(), this.props.children);
+            return createElement('button', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(DropDownButtonComponent, [ComponentBase, PureComponent]);
+applyMixins(DropDownButtonComponent, [ComponentBase, Component]);
 
 class SplitButtonItemDirective extends ComplexBase {
 }
@@ -57,18 +58,19 @@ class SplitButtonComponent extends SplitButton {
         this.checkInjectedModules = false;
         this.directivekeys = { 'splitButtonItems': 'splitButtonItem' };
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('button', this.getDefaultAttributes(), this.props.children);
+            return createElement('button', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(SplitButtonComponent, [ComponentBase, PureComponent]);
+applyMixins(SplitButtonComponent, [ComponentBase, Component]);
 
 /**
  * `ProgressButtonComponent` represents the react ProgressButton Component.
@@ -82,18 +84,19 @@ class ProgressButtonComponent extends ProgressButton {
         this.initRenderCalled = false;
         this.checkInjectedModules = false;
         this.immediateRender = true;
+        this.portals = [];
     }
     render() {
-        if ((this.element && !this.initRenderCalled) || this.refreshing) {
+        if (((this.element && !this.initRenderCalled) || this.refreshing) && !this.isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
         }
         else {
-            return createElement('button', this.getDefaultAttributes(), this.props.children);
+            return createElement('button', this.getDefaultAttributes(), [].concat(this.props.children, this.portals));
         }
     }
 }
-applyMixins(ProgressButtonComponent, [ComponentBase, PureComponent]);
+applyMixins(ProgressButtonComponent, [ComponentBase, Component]);
 
 export { DropDownButtonItemDirective, DropDownButtonItemsDirective, DropDownButtonComponent, SplitButtonItemDirective, SplitButtonItemsDirective, SplitButtonComponent, ProgressButtonComponent };
 export * from '@syncfusion/ej2-splitbuttons';
