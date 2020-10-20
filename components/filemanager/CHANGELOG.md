@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.3.42 (2020-10-20)
+
+### File Manager
+
+#### Bug Fixes
+
+- `#288436` - The issue with "The error dialog appears when copy and paste the folder with the same name" has been resolved.
+
 ## 18.2.57 (2020-09-08)
 
 ### File Manager
