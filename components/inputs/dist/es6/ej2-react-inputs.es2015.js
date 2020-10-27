@@ -22,7 +22,7 @@ class TextBoxComponent extends TextBox {
             this.initRenderCalled = true;
         }
         else {
-            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
+            return createElement('input', this.getDefaultAttributes());
         }
     }
 }
@@ -48,7 +48,7 @@ class NumericTextBoxComponent extends NumericTextBox {
             this.initRenderCalled = true;
         }
         else {
-            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
+            return createElement('input', this.getDefaultAttributes());
         }
     }
 }
@@ -75,7 +75,7 @@ class MaskedTextBoxComponent extends MaskedTextBox {
             this.initRenderCalled = true;
         }
         else {
-            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
+            return createElement('input', this.getDefaultAttributes());
         }
     }
 }
@@ -175,7 +175,7 @@ class ColorPickerComponent extends ColorPicker {
             this.initRenderCalled = true;
         }
         else {
-            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
+            return createElement('input', this.getDefaultAttributes());
         }
     }
 }
