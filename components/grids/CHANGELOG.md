@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 18.3.47 (2020-11-05)
+
+### Grid
+
+#### Bug Fixes
+
+- `#292035` - Resolved Touch functionality is not working with draggable.
+- `#298662` - Grid drag and drop issue has been fixed in IE11 browser.
+- `#10632` - provided the custom text support in pager instance.
+- `#159184` - Script error throws while exporting grid component with aggregates issue has been fixed.
+
 ## 18.3.44 (2020-10-27)
 
 ### Grid
@@ -52,6 +63,18 @@
 
 - `#279959, #278895` - Provided lazy load grouping support.
 - `#252918` - Provided immutable mode and methods support.
+
+## 18.2.59 (2020-09-21)
+
+### Grid
+
+#### Bug Fixes
+
+- `#283675` - Excel custom filtered value issue has been resolved.
+- `#291032` - String column Change event issue has been fixed.
+- `#291960` - resize handler height issue with auto wrap has been fixed.
+- `#293441` - Improved the Checkbox filter module with keyboard navigation.
+- `#287676` - Mouse position issue when row dragged, has been fixed.
 
 ## 18.2.58 (2020-09-15)
 

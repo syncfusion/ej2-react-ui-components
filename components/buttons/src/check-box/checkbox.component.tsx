@@ -37,7 +37,7 @@ export class CheckBoxComponent extends CheckBox {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement((React as any).Fragment, null,[].concat(React.createElement("input", this.getDefaultAttributes()),this.portals));
+            return React.createElement('input', this.getDefaultAttributes());
         }
 
     }

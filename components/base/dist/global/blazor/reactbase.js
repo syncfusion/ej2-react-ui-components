@@ -201,7 +201,7 @@ var ComponentBase = /** @class */ (function (_super) {
                 value1 instanceof String ||
                 value1 instanceof Number ||
                 typeVal === 'function') {
-                return value1.tostring === value2.tostring;
+                return value1.toString() === value2.toString();
             }
             if (sf.base.isObject(value1) || Array.isArray(value1)) {
                 var tempVal = value1;

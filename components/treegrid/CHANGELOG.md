@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.3.47 (2020-11-05)
+
+### TreeGrid
+
+#### Bug Fixes
+
+- `#F159016` - Expand / Collapse works properly, when we use template column as treecolumn
+- `#299693` - Template in tree column works fine.
+
 ## 18.3.44 (2020-10-27)
 
 ### TreeGrid

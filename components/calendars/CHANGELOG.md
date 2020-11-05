@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 18.3.47 (2020-11-05)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#297995` - Issue with "script error throws while rendering the component" has been resolved.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#F158355` - Issue with "script error throws while rendering the component" has been resolved.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#299456` - Issue with "script error throws while rendering the component" has been resolved.
+
 ## 18.3.40 (2020-10-13)
 
 ### DateRangePicker

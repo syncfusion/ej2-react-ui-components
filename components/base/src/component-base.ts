@@ -233,7 +233,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 value1 instanceof Number ||
                 typeVal === 'function'
             ) {
-                return value1.tostring === value2.tostring;
+                return value1.toString() === value2.toString()
             }
             if (isObject(value1) || Array.isArray(value1)) {
                 let tempVal: Object[] = value1;
