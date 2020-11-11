@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 18.3.47 (2020-11-05)
+## 18.3.48 (2020-11-11)
 
 ### Schedule
 
 #### Bug Fixes
 
-- `#299079` - An issue with Custom editor window throws script error has been fixed.
+- `#299517` - An issue with the `displayName` property not working in the Agenda view and the `MonthAgenda` view has been fixed.
 
 ## 18.3.44 (2020-10-27)
 
@@ -851,4 +851,12 @@ Schedule is an event calendar which facilitates user with the common Outlook-cal
 - **Localization** - All the static text and date content can be localized to any desired language. Also, it can be displayed with appropriate time mode and date-format as per the localized language.
 - **RTL** - Supports displaying the component to display in the direction from right to left.
 
+
+## 18.3.47 (2020-11-05)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#299079` - An issue with Custom editor window throws script error has been fixed.
 

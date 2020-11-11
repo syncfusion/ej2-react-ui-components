@@ -143,12 +143,16 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         var _this = this;
         this.isReact = true;
         var propKeys = Object.keys(this.props);
-        this.htmlattributes = {};
+        if (!this.htmlattributes) {
+            this.htmlattributes = {};
+        }
         this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
         for (var _i = 0, propKeys_1 = propKeys; _i < propKeys_1.length; _i++) {
             var prop = propKeys_1[_i];
             if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1) {
-                this.htmlattributes[prop] = this.props[prop];
+                if (this.htmlattributes[prop] !== this.props[prop]) {
+                    this.htmlattributes[prop] = this.props[prop];
+                }
             }
         }
         if (!this.htmlattributes.ref) {
@@ -156,6 +160,13 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
             this.htmlattributes.ref = function (ele) {
                 _this.reactElement = ele;
             };
+            var keycompoentns = ['autocomplete', 'combobox', 'dropdownlist', 'dropdowntree', 'multiselect',
+                'listbox', 'colorpicker', 'numerictextbox', 'textbox',
+                'uploader', 'maskedtextbox', 'slider', 'datepicker', 'datetimepicker', 'daterangepicker', 'timepicker'];
+            if (keycompoentns.indexOf(this.getModuleName()) !== -1) {
+                this.htmlattributes.key = '' + ComponentBase.reactUid;
+                ComponentBase.reactUid++;
+            }
         }
         return this.htmlattributes;
     };
@@ -437,6 +448,10 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
         }
         return [];
     };
+    /**
+     * @private
+     */
+    ComponentBase.reactUid = 1;
     return ComponentBase;
 }(Component));
 

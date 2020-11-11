@@ -40,6 +40,10 @@ let reactUid: number = 0;
 
 // tslint:disable
 export class ComponentBase<P, S> extends React.Component<P, S> {
+    /**
+     * @private
+     */
+    public static reactUid: number = 1;
     private setProperties: Function;
     private element: any;
     private appendTo: Function;
@@ -175,11 +179,15 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     public getDefaultAttributes(): Object {
         this.isReact = true;
         let propKeys: string[] = Object.keys(this.props);
-        this.htmlattributes = {};
+        if(!this.htmlattributes) {
+            this.htmlattributes = {};    
+        }
         this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
         for (let prop of propKeys) {
             if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1) {
-                this.htmlattributes[prop] = (<{ [key: string]: Object }>this.props)[prop];
+                if( this.htmlattributes[prop] !== (<{ [key: string]: Object }>this.props)[prop]) {
+                    this.htmlattributes[prop] = (<{ [key: string]: Object }>this.props)[prop];    
+                }
             }
         }
         if(!this.htmlattributes.ref) {
@@ -187,6 +195,14 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             this.htmlattributes.ref = (ele: any ) => {
                 this.reactElement = ele;
             };
+         let keycompoentns: string[] = ['autocomplete', 'combobox', 'dropdownlist', 'dropdowntree', 'multiselect',
+             'listbox', 'colorpicker', 'numerictextbox', 'textbox',
+             'uploader', 'maskedtextbox', 'slider','datepicker','datetimepicker','daterangepicker','timepicker'];
+         if (keycompoentns.indexOf(this.getModuleName()) !== -1) {
+                this.htmlattributes.key = '' + ComponentBase.reactUid;
+                ComponentBase.reactUid++;
+             }
+
         }
         return this.htmlattributes;
     }
@@ -233,7 +249,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 value1 instanceof Number ||
                 typeVal === 'function'
             ) {
-                return value1.toString() === value2.toString()
+                return value1.toString() === value2.toString();
             }
             if (isObject(value1) || Array.isArray(value1)) {
                 let tempVal: Object[] = value1;

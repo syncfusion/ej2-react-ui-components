@@ -125,11 +125,15 @@ class ComponentBase extends Component {
     getDefaultAttributes() {
         this.isReact = true;
         let propKeys = Object.keys(this.props);
-        this.htmlattributes = {};
+        if (!this.htmlattributes) {
+            this.htmlattributes = {};
+        }
         this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
         for (let prop of propKeys) {
             if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1) {
-                this.htmlattributes[prop] = this.props[prop];
+                if (this.htmlattributes[prop] !== this.props[prop]) {
+                    this.htmlattributes[prop] = this.props[prop];
+                }
             }
         }
         if (!this.htmlattributes.ref) {
@@ -137,6 +141,13 @@ class ComponentBase extends Component {
             this.htmlattributes.ref = (ele) => {
                 this.reactElement = ele;
             };
+            let keycompoentns = ['autocomplete', 'combobox', 'dropdownlist', 'dropdowntree', 'multiselect',
+                'listbox', 'colorpicker', 'numerictextbox', 'textbox',
+                'uploader', 'maskedtextbox', 'slider', 'datepicker', 'datetimepicker', 'daterangepicker', 'timepicker'];
+            if (keycompoentns.indexOf(this.getModuleName()) !== -1) {
+                this.htmlattributes.key = '' + ComponentBase.reactUid;
+                ComponentBase.reactUid++;
+            }
         }
         return this.htmlattributes;
     }
@@ -410,6 +421,10 @@ class ComponentBase extends Component {
         return [];
     }
 }
+/**
+ * @private
+ */
+ComponentBase.reactUid = 1;
 /* tslint:enable:no-any */
 
 // tslint:disable-next-line:no-any

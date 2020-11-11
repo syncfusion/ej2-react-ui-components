@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.3.48 (2020-11-11)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved the key warning in the input components.
+
 ## 18.3.35 (2020-10-01)
 
 ### Common
