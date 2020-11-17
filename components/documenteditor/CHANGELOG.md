@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.3.50 (2020-11-17)
+
+### Document Editor
+
+#### Bug Fixes
+
+- Strike through button now toggles properly.
+- `#297703` - Resolved issue on exporting a RTL document.
+
 ## 18.3.48 (2020-11-11)
 
 ### Document Editor

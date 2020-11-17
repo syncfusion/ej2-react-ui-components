@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 18.3.50 (2020-11-17)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved the state value not updated in the callback function issue.
+- Provide compatibility support for React version 17.
+- Resolved the unexpected script error on state change at `componentDidMount` hook.
+
 ## 18.3.48 (2020-11-11)
 
 ### Common

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.3.50 (2020-11-17)
+
+### Grid
+
+#### Bug Fixes
+
+- `#158208` - Grid `pageSize` 'All' translated issue has been fixed.
+
 ## 18.3.48 (2020-11-11)
 
 ### Grid

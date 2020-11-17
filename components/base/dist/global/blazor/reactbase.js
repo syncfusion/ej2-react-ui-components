@@ -188,7 +188,9 @@ var ComponentBase = /** @class */ (function (_super) {
             this.isProtectedOnChange = false;
             if (eventName === 'created') {
                 setTimeout(function () {
-                    _this.modelObserver.notify(eventName, eventProp, successHandler);
+                    if (!_this.isDestroyed) {
+                        _this.modelObserver.notify(eventName, eventProp, successHandler);
+                    }
                 });
             }
             else {
@@ -210,8 +212,7 @@ var ComponentBase = /** @class */ (function (_super) {
             if (value1 instanceof Date ||
                 value1 instanceof RegExp ||
                 value1 instanceof String ||
-                value1 instanceof Number ||
-                typeVal === 'function') {
+                value1 instanceof Number) {
                 return value1.toString() === value2.toString();
             }
             if (sf.base.isObject(value1) || Array.isArray(value1)) {

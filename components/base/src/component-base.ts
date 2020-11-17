@@ -224,7 +224,10 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             this.isProtectedOnChange = false;
             if(eventName === 'created') {
                 setTimeout(()=>{
-                    this.modelObserver.notify(eventName, eventProp, successHandler);
+                    if(!this.isDestroyed) {
+                        this.modelObserver.notify(eventName, eventProp, successHandler);    
+                    }
+                    
                 })
             } else {
             this.modelObserver.notify(eventName, eventProp, successHandler);
@@ -246,8 +249,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             if (value1 instanceof Date ||
                 value1 instanceof RegExp ||
                 value1 instanceof String ||
-                value1 instanceof Number ||
-                typeVal === 'function'
+                value1 instanceof Number
             ) {
                 return value1.toString() === value2.toString();
             }
