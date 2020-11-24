@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 18.3.51 (2020-11-24)
+
+### Grid
+
+#### Bug Fixes
+
+- `#302178` - Grid does not destroyed issue has been resolved.
+- `#301357`,`#302019` - frozen Grid layout issue when change the empty datasource has been fixed.
+
+- `#297043` - React state change value is not reflected inside the Grid column template issue has been fixed.
+
 ## 18.3.50 (2020-11-17)
 
 ### Grid
