@@ -330,14 +330,20 @@ var ComponentBase = /** @class */ (function (_super) {
             this.destroy();
         }
     };
-    ComponentBase.prototype.renderReactTemplates = function () {
+    // tslint:disable:no-any 
+    ComponentBase.prototype.renderReactTemplates = function (callback) {
         this.isReactForeceUpdate = true;
-        this.forceUpdate();
+        if (callback) {
+            this.forceUpdate(callback);
+        }
+        else {
+            this.forceUpdate();
+        }
         this.isReactForeceUpdate = false;
     };
     
     // tslint:disable:no-any 
-    ComponentBase.prototype.clearTemplate = function (templateNames, index) {
+    ComponentBase.prototype.clearTemplate = function (templateNames, index, callback) {
         var _this = this;
         var tempPortal = [];
         if (templateNames && templateNames.length) {
@@ -367,7 +373,7 @@ var ComponentBase = /** @class */ (function (_super) {
         else {
             this.portals = [];
         }
-        this.renderReactTemplates();
+        this.renderReactTemplates(callback);
     };
     
     /* tslint:disable:no-any */

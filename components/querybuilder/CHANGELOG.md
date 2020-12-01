@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.3.52 (2020-12-01)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with Date Picker with null value is fixed.
+
 ## 18.3.51 (2020-11-24)
 
 ### QueryBuilder

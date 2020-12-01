@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.3.51 (2020-11-24)
+## 18.3.52 (2020-12-01)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved template refresh issue on `clearTemplate`.
+
+## 18.3.50 (2020-11-17)
 
 ### Common
 

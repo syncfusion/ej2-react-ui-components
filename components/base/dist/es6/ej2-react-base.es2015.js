@@ -306,14 +306,20 @@ class ComponentBase extends Component {
             this.destroy();
         }
     }
-    renderReactTemplates() {
+    // tslint:disable:no-any 
+    renderReactTemplates(callback) {
         this.isReactForeceUpdate = true;
-        this.forceUpdate();
+        if (callback) {
+            this.forceUpdate(callback);
+        }
+        else {
+            this.forceUpdate();
+        }
         this.isReactForeceUpdate = false;
     }
     ;
     // tslint:disable:no-any 
-    clearTemplate(templateNames, index) {
+    clearTemplate(templateNames, index, callback) {
         var tempPortal = [];
         if (templateNames && templateNames.length) {
             Array.prototype.forEach.call(templateNames, (propName) => {
@@ -342,7 +348,7 @@ class ComponentBase extends Component {
         else {
             this.portals = [];
         }
-        this.renderReactTemplates();
+        this.renderReactTemplates(callback);
     }
     ;
     /* tslint:disable:no-any */

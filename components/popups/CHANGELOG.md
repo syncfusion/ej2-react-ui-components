@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.3.51 (2020-11-24)
+## 18.3.52 (2020-12-01)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#302310` - The issue with "The modal dialog position is not working properly with scrollable content in the IE11 browser" has been resolved.
+
+## 18.3.50 (2020-11-17)
 
 ### Tooltip
 

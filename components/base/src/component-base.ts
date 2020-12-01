@@ -227,7 +227,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                     if(!this.isDestroyed) {
                         this.modelObserver.notify(eventName, eventProp, successHandler);    
                     }
-                    
                 })
             } else {
             this.modelObserver.notify(eventName, eventProp, successHandler);
@@ -362,14 +361,19 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
 
     }
-
-    public renderReactTemplates (): void {
+// tslint:disable:no-any 
+    public renderReactTemplates (callback?: any): void {
         this.isReactForeceUpdate = true;
-        this.forceUpdate();
+        if(callback){
+            this.forceUpdate(callback);
+        } else {
+            this.forceUpdate();    
+        }
+        
         this.isReactForeceUpdate = false;
     };
 // tslint:disable:no-any 
-    public clearTemplate(templateNames: string[], index?: any) {
+    public clearTemplate(templateNames: string[], index?: any, callback?: any) {
         var tempPortal: any = [];
         if (templateNames && templateNames.length) {
             Array.prototype.forEach.call(templateNames, (propName: string) => {
@@ -396,7 +400,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         } else {
             this.portals = [];
         }
-        this.renderReactTemplates();
+        this.renderReactTemplates(callback);
     };
     /* tslint:disable:no-any */
     private validateChildren(
