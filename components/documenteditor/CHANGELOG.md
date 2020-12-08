@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.3.53 (2020-12-08)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `305508` - Resolved page unresponsive error while selecting field.
+- `302470` - Chart series color now applied properly.
+
 ## 18.3.52 (2020-12-01)
 
 ### Document Editor
