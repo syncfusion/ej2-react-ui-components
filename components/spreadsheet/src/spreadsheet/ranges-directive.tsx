@@ -1,7 +1,9 @@
 import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { RangeModel } from '@syncfusion/ej2-spreadsheet';
 
-
+export interface RangeDirTypecast {
+    template?: string | Function | any;
+}
 /**
  * `RangeDirective` represent a range of the React Spreadsheet.
  * It must be contained in a `SheetDirective`.
@@ -17,7 +19,7 @@ import { RangeModel } from '@syncfusion/ej2-spreadsheet';
  * </SpreadsheetComponent>
  * ```
  */
-export class RangeDirective extends ComplexBase<RangeModel, RangeModel> {
+export class RangeDirective extends ComplexBase<RangeModel| RangeDirTypecast, RangeModel| RangeDirTypecast> {
     public static moduleName: string = 'range';
 }
 

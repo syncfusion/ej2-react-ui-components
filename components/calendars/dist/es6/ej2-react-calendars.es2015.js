@@ -48,7 +48,7 @@ class DatePickerComponent extends DatePicker {
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
@@ -74,7 +74,7 @@ class TimePickerComponent extends TimePicker {
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
@@ -147,7 +147,7 @@ class DateTimePickerComponent extends DateTimePicker {
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }

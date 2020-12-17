@@ -80,6 +80,14 @@ class ImagesDirective extends ComplexBase {
 ImagesDirective.propertyName = 'image';
 ImagesDirective.moduleName = 'images';
 
+class ChartDirective extends ComplexBase {
+}
+ChartDirective.moduleName = 'chart';
+class ChartsDirective extends ComplexBase {
+}
+ChartsDirective.propertyName = 'chart';
+ChartsDirective.moduleName = 'charts';
+
 /**
  * `ColumnDirective` represent a column of the React Spreadsheet.
  * It must be contained in a `SheetDirective`.
@@ -180,7 +188,7 @@ class SpreadsheetComponent extends Spreadsheet {
         super(props);
         this.initRenderCalled = false;
         this.checkInjectedModules = true;
-        this.directivekeys = { 'sheets': { 'sheet': { 'rows': { 'row': { 'cells': { 'cell': { 'images': 'image' } } } }, 'columns': 'column', 'ranges': 'range', 'conditionalFormats': 'conditionalFormat' } }, 'definedNames': 'definedName' };
+        this.directivekeys = { 'sheets': { 'sheet': { 'rows': { 'row': { 'cells': { 'cell': { 'images': 'image', 'charts': 'chart' } } } }, 'columns': 'column', 'ranges': 'range', 'conditionalFormats': 'conditionalFormat' } }, 'definedNames': 'definedName' };
         this.immediateRender = false;
         this.portals = [];
     }
@@ -196,7 +204,7 @@ class SpreadsheetComponent extends Spreadsheet {
 }
 applyMixins(SpreadsheetComponent, [ComponentBase, Component]);
 
-export { SheetDirective, SheetsDirective, RowDirective, RowsDirective, CellDirective, CellsDirective, ImageDirective, ImagesDirective, ColumnDirective, ColumnsDirective, RangeDirective, RangesDirective, ConditionalFormatDirective, ConditionalFormatsDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent };
+export { SheetDirective, SheetsDirective, RowDirective, RowsDirective, CellDirective, CellsDirective, ImageDirective, ImagesDirective, ChartDirective, ChartsDirective, ColumnDirective, ColumnsDirective, RangeDirective, RangesDirective, ConditionalFormatDirective, ConditionalFormatsDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent };
 export * from '@syncfusion/ej2-spreadsheet';
 export { Inject } from '@syncfusion/ej2-react-base';
 //# sourceMappingURL=ej2-react-spreadsheet.es2015.js.map

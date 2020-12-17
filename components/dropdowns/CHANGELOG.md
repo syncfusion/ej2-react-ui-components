@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 18.3.53 (2020-12-08)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#301242` - Issue with "count template is updated with wrong count value when disable the clear icon" has been resolved.
-- `#304600` - Issue with "SelectAll checkbox is not displayed while changing the data source dynamically" has been resolved.
-
 ## 18.3.52 (2020-12-01)
 
 ### DropDownList
@@ -1582,4 +1573,13 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.3.53 (2020-12-08)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#301242` - Issue with "count template is updated with wrong count value when disable the clear icon" has been resolved.
+- `#304600` - Issue with "SelectAll checkbox is not displayed while changing the data source dynamically" has been resolved.
 

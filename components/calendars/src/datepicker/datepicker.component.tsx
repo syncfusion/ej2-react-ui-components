@@ -37,7 +37,7 @@ export class DatePickerComponent extends DatePicker {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('input', this.getDefaultAttributes());
+            return React.createElement((React as any).Fragment, null,[].concat(React.createElement("input", this.getDefaultAttributes()),this.portals));
         }
 
     }

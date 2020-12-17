@@ -14,7 +14,7 @@
 
 #### Bug Fixes
 
-- `301355` - The balloon marker will now select properly with `initialMarkerSelection`.
+- `#301355` - The balloon marker will now select properly with `initialMarkerSelection`.
 
 ## 18.3.44 (2020-10-27)
 

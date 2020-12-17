@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 18.3.53 (2020-12-08)
+## 18.4.30 (2020-12-17)
 
 ### Dialog
 
-#### Bug Fixes
+#### New Features
 
-- `#302310` - The issue with "The modal dialog position is not working properly with scrollable content in the IE11 browser" has been resolved.
+- `#274382`, `#282351` - Provided the support to resize the dialog in all directions from all the edges and borders.
 
 ## 18.3.50 (2020-11-17)
 
