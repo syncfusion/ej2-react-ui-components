@@ -9,6 +9,7 @@ const defaulthtmlkeys = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
 const delayUpdate = ['accordion', 'tab', 'splitter'];
+const isColEName = new RegExp('\]');
 // tslint:disable
 class ComponentBase extends Component {
     constructor() {
@@ -153,6 +154,18 @@ class ComponentBase extends Component {
     }
     /* tslint:disable:no-any */
     trigger(eventName, eventProp, successHandler) {
+        if (isColEName.test(eventName)) {
+            let handler = getValue(eventName, this);
+            if (handler) {
+                handler.call(this, eventProp);
+                if (successHandler) {
+                    successHandler.call(this, eventProp);
+                }
+            }
+            else if (successHandler) {
+                successHandler.call(this, eventProp);
+            }
+        }
         if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
                 if (this.props.onChange && eventProp.event) {

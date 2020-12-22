@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 18.4.31 (2020-12-22)
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with 'drag and drop' has been fixed.
+- Issue with toolbar option has been fixed.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#242307` - Issue with "filter event is not triggered when clear the value using clear icon " has been resolved.
+
 ## 18.3.52 (2020-12-01)
 
 ### DropDownList

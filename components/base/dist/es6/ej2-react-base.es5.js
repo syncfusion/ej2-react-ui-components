@@ -22,6 +22,7 @@ var defaulthtmlkeys = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
 var delayUpdate = ['accordion', 'tab', 'splitter'];
+var isColEName = new RegExp('\]');
 // tslint:disable
 var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     __extends(ComponentBase, _super);
@@ -173,6 +174,18 @@ var ComponentBase = /** @__PURE__ @class */ (function (_super) {
     /* tslint:disable:no-any */
     ComponentBase.prototype.trigger = function (eventName, eventProp, successHandler) {
         var _this = this;
+        if (isColEName.test(eventName)) {
+            var handler = getValue(eventName, this);
+            if (handler) {
+                handler.call(this, eventProp);
+                if (successHandler) {
+                    successHandler.call(this, eventProp);
+                }
+            }
+            else if (successHandler) {
+                successHandler.call(this, eventProp);
+            }
+        }
         if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
                 if (this.props.onChange && eventProp.event) {

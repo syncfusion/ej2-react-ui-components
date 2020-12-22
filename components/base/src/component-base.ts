@@ -37,6 +37,7 @@ const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
     'onClick', 'onFocus', 'onBlur'];
 const delayUpdate: string[] = ['accordion', 'tab', 'splitter'];
 let reactUid: number = 0;
+const isColEName: RegExp = new RegExp('\]');
 
 // tslint:disable
 export class ComponentBase<P, S> extends React.Component<P, S> {
@@ -208,7 +209,18 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     }
     /* tslint:disable:no-any */
     public trigger(eventName: string, eventProp?: any, successHandler?: any): void {
-
+        if (isColEName.test(eventName)) {
+            let handler: Function = getValue(eventName, this);
+            if (handler) {
+                handler.call(this, eventProp);
+                if (successHandler) {
+                    successHandler.call(this, eventProp);
+                }
+            }
+            else if (successHandler) {
+                successHandler.call(this, eventProp);
+            }
+        }
         if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
                 if ((this.props as any).onChange && eventProp.event) {

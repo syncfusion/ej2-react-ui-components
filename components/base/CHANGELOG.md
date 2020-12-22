@@ -2,31 +2,13 @@
 
 ## [Unreleased]
 
-## 18.4.30 (2020-12-17)
+## 18.4.31 (2020-12-22)
 
 ### Common
 
 #### Bug Fixes
 
-- Resolved template refresh issue on `clearTemplate`.
-
-## 18.3.50 (2020-11-17)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved the state value not updated in the callback function issue.
-- Provide compatibility support for React version 17.
-- Resolved the unexpected script error on state change at `componentDidMount` hook.
-
-## 18.3.48 (2020-11-11)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved the key warning in the input components.
+- `F159890` - Resolved the Click event not working for individual item.
 
 ## 18.3.35 (2020-10-01)
 

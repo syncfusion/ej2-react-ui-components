@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.4.31 (2020-12-22)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+`#I296802` - Provided proper error support and if formula issue fixed.
+
+
 ## 18.4.30 (2020-12-17)
 
 ### Spreadsheet

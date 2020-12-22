@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.4.31 (2020-12-22)
+
+### Pivot Table
+
+#### Bug Fixes
+
+-`#298296` - Columns are now properly stretched when resizing the browser.
+
+
 ## 18.4.30 (2020-12-17)
 
 ### Pivot Table
