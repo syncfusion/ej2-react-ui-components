@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 18.4.32 (2020-12-29)
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#308003` - Issue with 'highlight search is not working while rendering component along with `iconCss` property' has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#304837` - Issue with "value property is not updated properly while rendering dropdown with select tag and list has empty string as field value" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#306780` - Issue with "Input element value clears on changing the datasource dynamically" has been resolved.
+
 ## 18.4.31 (2020-12-22)
 
 ### ListBox

@@ -1,6 +1,6 @@
 import { Children, Component, PureComponent, createElement } from 'react';
-import { extend, getTemplateEngine, getValue, isNullOrUndefined, isObject, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
-import { createPortal } from 'react-dom';
+import { detach, extend, getTemplateEngine, getValue, isNullOrUndefined, isObject, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
+import { createPortal, render } from 'react-dom';
 
 /**
  * React Component Base
@@ -504,17 +504,23 @@ function compile(templateElement, helper) {
             else {
                 cEle = document.createElement('div');
             }
-            let rele = createElement(actTemplate, actData);
-            let portal = createPortal(rele, cEle);
-            portal.propName = prop;
-            if (!component.portals) {
-                component.portals = [portal];
+            if (component && component.isLegacyTemplate) {
+                render(actTemplate(actData), cEle);
+                if (!element) {
+                    detach(cEle);
+                }
             }
             else {
-                component.portals.push(portal);
+                let rele = createElement(actTemplate, actData);
+                let portal = createPortal(rele, cEle);
+                portal.propName = prop;
+                if (!component.portals) {
+                    component.portals = [portal];
+                }
+                else {
+                    component.portals.push(portal);
+                }
             }
-            // ReactDOM.render((actTemplate as Function)(actData), ele);
-            // detach(ele);
             if (!element) {
                 return [cEle];
             }

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.32 (2020-12-29)
+
+### Common
+
+#### Bug Fixes
+
+- `I304812` - Resolved template rendering issue in Child component.
+
 ## 18.4.31 (2020-12-22)
 
 ### Common

@@ -570,17 +570,23 @@ function compile(templateElement, helper) {
             else {
                 cEle = document.createElement('div');
             }
-            var rele = React.createElement(actTemplate, actData);
-            var portal = ReactDOM.createPortal(rele, cEle);
-            portal.propName = prop;
-            if (!component.portals) {
-                component.portals = [portal];
+            if (component && component.isLegacyTemplate) {
+                ReactDOM.render(actTemplate(actData), cEle);
+                if (!element) {
+                    sf.base.detach(cEle);
+                }
             }
             else {
-                component.portals.push(portal);
+                var rele = React.createElement(actTemplate, actData);
+                var portal = ReactDOM.createPortal(rele, cEle);
+                portal.propName = prop;
+                if (!component.portals) {
+                    component.portals = [portal];
+                }
+                else {
+                    component.portals.push(portal);
+                }
             }
-            // ReactDOM.render((actTemplate as Function)(actData), ele);
-            // detach(ele);
             if (!element) {
                 return [cEle];
             }

@@ -24,16 +24,22 @@ export function compile(templateElement: any, helper?: Object):
             } else {
                 cEle = document.createElement('div');
             }
-            let rele: any = React.createElement(actTemplate, actData);
-            let portal: any = (ReactDOM as any).createPortal(rele, cEle);
-            portal.propName = prop;
-            if (!component.portals) {
-                component.portals = [portal];
+            if (component && component.isLegacyTemplate) {
+                ReactDOM.render((actTemplate as Function)(actData), cEle);
+                if (!element) {
+                   detach(cEle);
+                }
             } else {
-                component.portals.push(portal);
+                let rele: any = React.createElement(actTemplate, actData);
+                let portal: any = (ReactDOM as any).createPortal(rele, cEle);
+                portal.propName = prop;
+                if (!component.portals) {
+                    component.portals = [portal];
+                } else {
+                    component.portals.push(portal);
+                }
             }
-            // ReactDOM.render((actTemplate as Function)(actData), ele);
-            // detach(ele);
+
             if (!element) {
                 return [cEle];
             }
