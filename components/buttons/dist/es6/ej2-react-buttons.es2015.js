@@ -1,4 +1,4 @@
-import { Component, createElement } from 'react';
+import { Component, Fragment, createElement } from 'react';
 import { Button, CheckBox, ChipList, RadioButton, Switch } from '@syncfusion/ej2-buttons';
 import { ComplexBase, ComponentBase, applyMixins } from '@syncfusion/ej2-react-base';
 
@@ -48,7 +48,7 @@ class CheckBoxComponent extends CheckBox {
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
@@ -74,7 +74,7 @@ class RadioButtonComponent extends RadioButton {
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
@@ -100,7 +100,7 @@ class SwitchComponent extends Switch {
             this.initRenderCalled = true;
         }
         else {
-            return createElement('input', this.getDefaultAttributes());
+            return createElement(Fragment, null, [].concat(createElement("input", this.getDefaultAttributes()), this.portals));
         }
     }
 }
