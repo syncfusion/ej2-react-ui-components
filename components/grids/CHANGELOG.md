@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 18.4.34 (2021-01-12)
+
+### Grid
+
+#### Bug Fixes
+
+- `#309059` - The horizontal scroll bar is not displayed while using Frozen column issue has been fixed.
+- `#308465` - Filtering Foreign key column issue has been fixed.
+- `#309205` - Script error while using Excel Filter issue has been resolved.
+- `#160945` - Rendering wrong page records issue after deleting with Group has been fixed.
+
 ## 18.4.33 (2021-01-05)
 
 ### Grid
@@ -14,6 +25,7 @@
 - `#306162` - Pager dropdown overlap issue has been resolved.
 - `#307973` - The `isInteracted` property issue in row deselect events has been fixed.
 - `#160548` - Frozen grid duplicate template rendering issue has been fixed.
+- `#296093` - Grouping with `virtualization` hide column issue has been fixed.
 
 - `#304812` - React child grid templates not rendering issue has been fixed.
 - `#308615` - the react grid throws script error cannot set property `innerHTML` of undefined using templates issue has been fixed.
@@ -38,7 +50,6 @@
 
 - `#303869` - Event argument type issue has been fixed.
 - `#160246` - Sorting column not removed while changing `groupSettings` issue has been resolved.
-- `#296093` - Grouping with `virtualization` hide column issue has been fixed.
 - `#301282` - Export `aggregations` misalignment while using the custom datasource, issue has been fixed.
 - `#305619` - Export `aggregations` misalignment while using the stacked header, issue has been fixed.
 - `#306030` - Filtering numeric column by pressing `Enter Key` is not working, has been fixed.
