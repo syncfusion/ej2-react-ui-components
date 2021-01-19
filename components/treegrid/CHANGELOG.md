@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.35 (2021-01-19)
+
+### TreeGrid
+
+#### Bug Fixes
+
+- `#309151` - `childMapping` property is properly generated in hierarchy dataSource.
+
 ## 18.4.34 (2021-01-12)
 
 ### TreeGrid

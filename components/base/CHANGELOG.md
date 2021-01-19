@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.35 (2021-01-19)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved typing issue on using `onChange` event.
+
 ## 18.4.34 (2021-01-12)
 
 ### Common

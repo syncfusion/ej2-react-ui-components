@@ -34,5 +34,7 @@ export interface DefaultHtmlAttributes {
     onBlur?: FocusEventHandler;
     immediateRender?: boolean;
     delayUpdate?: string | boolean;
+    // tslint:disable-next-line:no-any
+    onChange?: any;
 
 }

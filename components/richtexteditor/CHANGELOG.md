@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.35 (2021-01-19)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#310679` - The issue with "Script error occurs when press the escape key if the quick toolbar module not injected" has been resolved.
+
 ## 18.4.34 (2021-01-12)
 
 ### RichTextEditor
