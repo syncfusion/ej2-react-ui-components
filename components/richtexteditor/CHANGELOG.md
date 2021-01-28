@@ -2,13 +2,14 @@
 
 ## [Unreleased]
 
-## 18.4.35 (2021-01-19)
+## 18.4.39 (2021-01-28)
 
 ### RichTextEditor
 
 #### Bug Fixes
 
-- `#310679` - The issue with "Script error occurs when press the escape key if the quick toolbar module not injected" has been resolved.
+- `#296208` - Resolved the issue with the Placeholder blinks when pressing the enter key in the editor.
+- `#310044` - The issue with the resize grip alignment when the toolbar is disabled state has been resolved.
 
 ## 18.4.34 (2021-01-12)
 
@@ -676,4 +677,12 @@ The rich text editor component is WYSIWYG ("what you see is what you get") edito
 - Contains undo/redo manager.
 - Creates bulleted and numbered lists.
 
+
+## 18.4.35 (2021-01-19)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#310679` - The issue with "Script error occurs when press the escape key if the quick toolbar module not injected" has been resolved.
 

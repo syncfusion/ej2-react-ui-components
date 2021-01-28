@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.39 (2021-01-28)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#309780` - Issue with "`aria-labelledby` attribute is not added to the textarea element when render component with multiline" has been resolved.
+
 ## 18.4.32 (2020-12-29)
 
 ### ColorPicker
