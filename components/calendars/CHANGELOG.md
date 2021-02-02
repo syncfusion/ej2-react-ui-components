@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.41 (2021-02-02)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#299892` - Issue with "Null reference exception throws while destroying the component" has been resolved.
+
 ## 18.4.34 (2021-01-12)
 
 ### DateTimePicker

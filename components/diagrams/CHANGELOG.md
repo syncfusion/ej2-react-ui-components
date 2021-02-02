@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 18.4.41 (2021-02-02)
+
+### Diagram
+
+#### Bug Fixes
+
+#### New Features
+
+- `#285393` - Support to avoid connector overlapping with complex hierarchical layout has been added.
+
 ## 18.4.39 (2021-01-28)
 
 ### Diagram

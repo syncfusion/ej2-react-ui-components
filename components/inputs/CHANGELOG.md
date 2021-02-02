@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.4.39 (2021-01-28)
-
-### TextBox
-
-#### Bug Fixes
-
-- `#309780` - Issue with "`aria-labelledby` attribute is not added to the textarea element when render component with multiline" has been resolved.
-
 ## 18.4.32 (2020-12-29)
 
 ### ColorPicker
@@ -1094,4 +1086,12 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 18.4.39 (2021-01-28)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#309780` - Issue with "`aria-labelledby` attribute is not added to the textarea element when render component with multiline" has been resolved.
 

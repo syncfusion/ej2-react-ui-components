@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.4.39 (2021-01-28)
+## 18.4.41 (2021-02-02)
+
+### Common
+
+#### Bug Fixes
+
+- Handled the destroy and event actions to prevent console errors.
+
+## 18.4.35 (2021-01-19)
 
 ### Common
 

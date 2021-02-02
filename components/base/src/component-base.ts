@@ -209,6 +209,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     }
     /* tslint:disable:no-any */
     public trigger(eventName: string, eventProp?: any, successHandler?: any): void {
+       if (this.isDestroyed !== true && this.modelObserver) {    
         if (isColEName.test(eventName)) {
             let handler: Function = getValue(eventName, this);
             if (handler) {
@@ -221,7 +222,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 successHandler.call(this, eventProp);
             }
         }
-        if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
                 if ((this.props as any).onChange && eventProp.event) {
                     (this.props as any).onChange.call(undefined, {
@@ -368,7 +368,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     public componentWillUnmount(): void {
         clearTimeout(this.cachedTimeOut);
         // tslint:disable-next-line:no-any
-        if (this.initRenderCalled) {
+        if (this.initRenderCalled && this.isAppendCalled && this.element && document.body.contains(this.element) && !this.isDestroyed) {
             this.destroy();
         }
 

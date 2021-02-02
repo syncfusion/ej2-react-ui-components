@@ -174,19 +174,19 @@ var ComponentBase = /** @class */ (function (_super) {
     /* tslint:disable:no-any */
     ComponentBase.prototype.trigger = function (eventName, eventProp, successHandler) {
         var _this = this;
-        if (isColEName.test(eventName)) {
-            var handler = sf.base.getValue(eventName, this);
-            if (handler) {
-                handler.call(this, eventProp);
-                if (successHandler) {
+        if (this.isDestroyed !== true && this.modelObserver) {
+            if (isColEName.test(eventName)) {
+                var handler = sf.base.getValue(eventName, this);
+                if (handler) {
+                    handler.call(this, eventProp);
+                    if (successHandler) {
+                        successHandler.call(this, eventProp);
+                    }
+                }
+                else if (successHandler) {
                     successHandler.call(this, eventProp);
                 }
             }
-            else if (successHandler) {
-                successHandler.call(this, eventProp);
-            }
-        }
-        if (this.isDestroyed !== true) {
             if ((eventName === 'change' || eventName === 'input')) {
                 if (this.props.onChange && eventProp.event) {
                     this.props.onChange.call(undefined, {
@@ -339,7 +339,7 @@ var ComponentBase = /** @class */ (function (_super) {
     ComponentBase.prototype.componentWillUnmount = function () {
         clearTimeout(this.cachedTimeOut);
         // tslint:disable-next-line:no-any
-        if (this.initRenderCalled) {
+        if (this.initRenderCalled && this.isAppendCalled && this.element && document.body.contains(this.element) && !this.isDestroyed) {
             this.destroy();
         }
     };

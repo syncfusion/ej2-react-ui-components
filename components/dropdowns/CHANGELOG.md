@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.41 (2021-02-02)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#299892` - Issue with "Null reference exception throws while destroying the component" has been resolved.
+
 ## 18.4.35 (2021-01-19)
 
 ### DropDownList
