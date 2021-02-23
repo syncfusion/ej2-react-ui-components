@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-inputs)](https://www.npmjs.com/package/@syncfusion/ej2-react-inputs)
+
 # ej2-react-inputs
 
 A package of Syncfusion React UI Components (Essential JS 2) Input textbox components. It comes with a collection of form components which is useful to get different input values from the users such as text, numbers, patterns, color and file inputs.

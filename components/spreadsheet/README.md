@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-spreadsheet)](https://www.npmjs.com/package/@syncfusion/ej2-react-spreadsheet)
+
 # ej2-react-spreadsheet
 
 The Spreadsheet is an user interactive component to organize and analyze data in tabular format with configuration options for customization. It will load data by importing an excel file or from a data source, such as RESTful JSON data services and local JavaScript object array binding. The populated data can be exported as Excel with xlsx, xls and csv formats.

@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-kanban)](https://www.npmjs.com/package/@syncfusion/ej2-react-kanban)
+
 # ej2-react-kanban
 
 The Kanban Board component is an efficient way to visualize workflow at each stage along its path to completion. The control supports necessary features to design task scheduling applications. The key features are swimlanes, customizable cards, binding from local and remote data sources, columns mapping, stacked headers, WIP validation, templating, responsiveness, filtering, and editing.

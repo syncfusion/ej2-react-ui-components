@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-popups)](https://www.npmjs.com/package/@syncfusion/ej2-react-popups)
+
 # ej2-react-popups
 
 The popup components such as dialog and tooltip are used to display information in a popup to users. The dialog component provides modal/non-modal (modeless), built-in buttons, positioning, animation, draggable, and template features and helps to create alert, prompt, and confirmation dialogs easily. The tooltip component is used to display a popup that contains some information or message when you hover, click, focus, or touch an element. The information displayed in the tooltip can include simple text, images, hyperlinks, or custom templates.

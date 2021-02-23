@@ -2,13 +2,17 @@
 
 ## [Unreleased]
 
-## 18.4.41 (2021-02-02)
+## 18.4.44 (2021-02-23)
 
 ### Pivot Table
 
 #### Bug Fixes
 
 - `#298311` - CSS issue of calculated field dialog in dark theme has been fixed.
+
+- `#308212` - Now the date formatting will not be cleared when dynamically applying number formatting.
+- `#310208` - Now the last column's cell values are not truncated.
+- `#308576` - Now it is only possible to drag the pivot buttons within its parent control.
 
 ## 18.4.39 (2021-01-28)
 

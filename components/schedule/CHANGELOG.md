@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 18.4.44 (2021-02-23)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#I314589` - An issue with week number not shown properly in timeline views has been fixed.
+
+## 18.4.42 (2021-02-09)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#I312058` - An issue with Appointments not rendered in vertical timeline year view issue has been fixed.
+- `#I310882` - An issue with daily recurring event not able to create for 24 hours has been fixed.
+
 ## 18.4.41 (2021-02-02)
 
 ### Schedule
@@ -13,6 +30,7 @@
 #### Bug Fixes
 
 - `#I309044` - An issue with year view months rendered incorrectly issue has been fixed.
+- `#I312201` - An issue with Scheduler throws script error from Current time indicator has been fixed.
 
 ## 18.4.35 (2021-01-19)
 

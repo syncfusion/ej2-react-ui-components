@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-grids)](https://www.npmjs.com/package/@syncfusion/ej2-react-grids)
+
 # ej2-react-grids
 
 The Grid component is used to display and manipulate tabular data with configuration options to control the way the data is presented and manipulated. It will pull data from a data source, such as array of JSON objects, `OData web services`, or [`DataManager`](http://ej2.syncfusion.com/react/documentation/data/?utm_source=npm&utm_campaign=grid) binding data fields to columns. Also displaying a column header to identify the field with support for grouped records.

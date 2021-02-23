@@ -2,13 +2,21 @@
 
 ## [Unreleased]
 
-## 18.4.41 (2021-02-02)
+## 18.4.44 (2021-02-23)
 
-### ComboBox
+### MultiSelect
+
+#### New Features
+
+- `#283275`, `#289148`, `#296652` - Now, selection and deselection performance is improved while providing the large data to the component.
+
+## 18.4.43 (2021-02-16)
+
+### Dropdown Tree
 
 #### Bug Fixes
 
-- `#299892` - Issue with "Null reference exception throws while destroying the component" has been resolved.
+- `#310244` - The issue on changing the `treeSettings.autoCheck` property dynamically in the `Box` mode has been resolved in the Dropdown Tree component.
 
 ## 18.4.35 (2021-01-19)
 
@@ -1632,6 +1640,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.4.41 (2021-02-02)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#299892` - Issue with "Null reference exception throws while destroying the component" has been resolved.
 
 ## 18.3.53 (2020-12-08)
 

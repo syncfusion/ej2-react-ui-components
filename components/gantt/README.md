@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-gantt)](https://www.npmjs.com/package/@syncfusion/ej2-react-gantt)
+
 # ej2-react-gantt
 
 The Gantt component is designed to visualize and edit the project schedule, and track the project progress. It helps to organize and schedule the projects and also you can update the project schedule through interactions like editing, dragging and resizing.

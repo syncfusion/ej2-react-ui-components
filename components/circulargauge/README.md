@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-circulargauge)](https://www.npmjs.com/package/@syncfusion/ej2-react-circulargauge)
+
 # ej2-react-circulargauge
 
 The circular gauge control is ideal to visualize numeric values over a circular scale. All the circular gauge elements are rendered using Scalable Vector Graphics (SVG).

@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.4.41 (2021-02-02)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#299892` - Issue with "Null reference exception throws while destroying the component" has been resolved.
-
 ## 18.4.34 (2021-01-12)
 
 ### DateTimePicker
@@ -1135,6 +1127,22 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.4.42 (2021-02-09)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#309404` - Issue with "popup is closed while updating the value on dynamically" has been resolved.
+
+## 18.4.41 (2021-02-02)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#299892` - Issue with "Null reference exception throws while destroying the component" has been resolved.
 
 ## 18.3.47 (2020-11-05)
 

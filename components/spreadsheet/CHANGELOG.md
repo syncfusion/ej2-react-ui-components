@@ -2,6 +2,39 @@
 
 ## [Unreleased]
 
+## 18.4.44 (2021-02-23)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- The `getData` method is not working when range is passed without sheet name issue fixed.
+
+## 18.4.43 (2021-02-16)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+`#F161227` - Prevented deleting range which contains lock cells.
+`#F162534` - Issue on editing a cell that depend on other cell after addition of date using Plus (+) operator issue fixed.
+`#313009` - Delete rows and columns using `delete` method issues resolved.
+`#313000` - The `insertSheet` method will now prevent the sheet with duplicate name from inserting.
+`#I312853` - Provided the actionBegin and actionComplete event for sheet rename action in spreadsheet
+
+
+## 18.4.42 (2021-02-09)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- External paste for cell style is not working properly when spreadsheet has common style issue has been fixed.
+- Ribbon items are not updated during external paste issue has been fixed.
+- External paste is not working for `strikethrough` style issue has been fixed.
+- Wrap with Resize, text align issue fixed.
+- Formula range with more than AA issue fixed.
+
 ## 18.4.41 (2021-02-02)
 
 ### Spreadsheet

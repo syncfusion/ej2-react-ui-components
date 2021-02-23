@@ -2,6 +2,47 @@
 
 ## [Unreleased]
 
+## 18.4.44 (2021-02-23)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#313564`, `#314479` - Bookmark co ordinates were now updated properly.
+- `#162017` - Restart page number behaviour was implemented also for page break now.
+- `#310874` - Table with merged cells were exported properly now.
+- `#162017` - Page number was now updated properly based on page index.
+- `#313821` - Table column were now layout properly.
+- `#311371` - While deleting the bookmark extra spaces between the text were now removed properly.
+
+## 18.4.43 (2021-02-16)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#160804`, `#160805` - Line space was now considered properly on exporting.
+- `#161513` - Properties pane was now disabled while enabling restrict editing.
+- `#311371` - While deleting a text extra spaces between the text were now removed properly.
+- `#311884` - Document with table was imported properly now.
+- `#310754` - Hebrew text was now layout properly with spaces and numbers renders properly.
+- Resolved performance lagging issue while editing.
+
+## 18.4.42 (2021-02-09)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#311518` - Vertical scrollbar was now updated properly on container resize.
+- `#161047` - Document with tab stop was now exported properly.
+- `#310258` - All the contents were preserved on pasting now.
+- `#307321`, `#309396` - Line shape was now rendered properly.
+- `#307321`, `#313943` - Tab stops were now rendered properly.
+- `#311296` - Odd headers were added to all odd pages now.
+- `#307321`, `#313948` - Straight connectors were now rendered properly.
+- `#309565` - When enable track changes is false changes tab is hide in review pane now.
+
 ## 18.4.41 (2021-02-02)
 
 ### Document Editor
@@ -16,6 +57,7 @@
 - `#309565` - When enable comment is false comment tab is hide in review pane now.
 - `#307321` - Table with no cell border now rendered properly.
 - `#307860` - While pasting no extra paragraph was added now.
+- `#311336` - Text was now updated properly on undo without overlap.
 
 ## 18.4.35 (2021-01-19)
 

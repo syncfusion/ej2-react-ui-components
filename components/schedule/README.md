@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-schedule)](https://www.npmjs.com/package/@syncfusion/ej2-react-schedule)
+
 # ej2-react-schedule
 
 The [schedule](https://github.com/syncfusion/ej2-react-ui-components) component is an event calendar that facilitates almost all the basic Outlook and Google Calendar features, allowing the user to plan and manage appointments and time efficiently. It receives data from a variety of data sources, such as an array of JSON objects, OData web services, RESTful or WCF services, and [`DataManager`](https://ej2.syncfusion.com/react/documentation/data/) with built-in load on demand support to reduce the data transfer and load time. Also, it is availed with the multiple resources support that allots an unique individual space for more than one resources on the same calendar.

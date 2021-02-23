@@ -3,6 +3,7 @@ import { ColumnsModel } from '@syncfusion/ej2-querybuilder';
 
 export interface ColumnsDirTypecast {
     ruleTemplate?: string | Function | any;
+    template?: string | Function | any;
 }
 /**
  * `ColumnDirective` represent a column of the react QueryBuilder. 
