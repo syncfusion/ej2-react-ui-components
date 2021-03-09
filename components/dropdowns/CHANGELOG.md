@@ -2,13 +2,14 @@
 
 ## [Unreleased]
 
-## 18.4.46 (2021-03-02)
+## 18.4.47 (2021-03-09)
 
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#316915` - Issue with "deselecting the selected items is not working when provide the data source with integer value" has been resolved.
+`#317598` - Issue with "selected values are not posted properly while clicking on the select all option with predefined value" has been resolved.
+
 
 ## 18.4.44 (2021-02-23)
 
@@ -1648,6 +1649,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.4.46 (2021-03-02)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#316915` - Issue with "deselecting the selected items is not working when provide the data source with integer value" has been resolved.
 
 ## 18.4.41 (2021-02-02)
 

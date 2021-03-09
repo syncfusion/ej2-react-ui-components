@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.47 (2021-03-09)
+
+### Form Validator
+
+#### Bug Fixes
+
+- `#315294` - Now, you can use the complex name attribute to add the validation rules.
+
 ## 18.4.44 (2021-02-23)
 
 ### TextBox
