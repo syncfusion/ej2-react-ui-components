@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.48 (2021-03-16)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#309809` - The issue with “The Table resize icon disappears when resizing the table and holding the icon for few seconds” has been resolved.
+
 ## 18.4.47 (2021-03-09)
 
 ### RichTextEditor

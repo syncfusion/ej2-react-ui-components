@@ -2,9 +2,20 @@
 
 ## [Unreleased]
 
+## 18.4.48 (2021-03-16)
+
+### Grid
+
+#### Bug Fixes
+
+- `#315782` - Virtualization with grouping issue has been fixed.
+- `#19156` - Scroll is prevented with infinite scroll's cache mode issue has been fixed.
+
 ## 18.4.47 (2021-03-09)
 
 ### Grid
+
+#### Bug Fixes
 
 - `#315085` - Script error with custom format in server side exporting has been fixed.
 - `#22476` - `getRowIndexByPrimarykey` method returns incorrect index with complex data has been fixed.
@@ -14,8 +25,6 @@
 - `#311142` - Provided the support for custom datasource in excel filter.
 - `#314870` - Checkbox Filter true/false locale text issue has been resolved.
 - `#315677` - Horizontal scroll bar is hide while filtering the column with frozen columns issue has been fixed.
-
-#### Bug Fixes
 
 - `#317557` - Key property getting `undefined` value in `groupFooterTemplate` issue has been fixed.
 
