@@ -2,13 +2,16 @@
 
 ## [Unreleased]
 
-## 18.4.48 (2021-03-16)
+## 18.4.49 (2021-03-23)
 
 ### RichTextEditor
 
 #### Bug Fixes
 
-- `#309809` - The issue with “The Table resize icon disappears when resizing the table and holding the icon for few seconds” has been resolved.
+- `#318815`- The issue with "Resize grip of the image freezes, after resizing for the first time" has been resolved.
+- `#317508`- The issue with "Resize icon of an image is not positioned properly, when height is set to the Rich Text Editor" has been resolved.
+
+- `#316449` - The issue with “Warning occurs when using the ‘executeCommand’ public method with ‘insertHorizontalRule’” has been resolved.
 
 ## 18.4.47 (2021-03-09)
 
@@ -722,6 +725,14 @@ The rich text editor component is WYSIWYG ("what you see is what you get") edito
 - Contains undo/redo manager.
 - Creates bulleted and numbered lists.
 
+
+## 18.4.48 (2021-03-16)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#309809` - The issue with “The Table resize icon disappears when resizing the table and holding the icon for few seconds” has been resolved.
 
 ## 18.4.35 (2021-01-19)
 
