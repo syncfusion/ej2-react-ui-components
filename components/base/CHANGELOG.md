@@ -2,54 +2,6 @@
 
 ## [Unreleased]
 
-## 18.4.49 (2021-03-23)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved warning while using `Radio-button` component.
-
-## 18.4.41 (2021-02-02)
-
-### Common
-
-#### Bug Fixes
-
-- Handled the destroy and event actions to prevent console errors.
-
-## 18.4.35 (2021-01-19)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved typing issue on using `onChange` event.
-
-## 18.4.34 (2021-01-12)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved warning while using checkbox component.
-
-## 18.4.32 (2020-12-29)
-
-### Common
-
-#### Bug Fixes
-
-- `I304812` - Resolved template rendering issue in Child component.
-
-## 18.4.31 (2020-12-22)
-
-### Common
-
-#### Bug Fixes
-
-- `F159890` - Resolved the Click event not working for individual item.
-
 ## 18.3.35 (2020-10-01)
 
 ### Common

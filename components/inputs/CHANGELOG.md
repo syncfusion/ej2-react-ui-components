@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.4.49 (2021-03-23)
+## 19.1.54 (2021-03-30)
+
+### MaskedTextBox
+
+#### New Features
+
+- `#284609` - Now, the cursor will position based on the value present in the input element while focusing the component.
+
+## 18.4.47 (2021-03-09)
 
 ### Form Validator
 

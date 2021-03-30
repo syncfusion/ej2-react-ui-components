@@ -5,6 +5,14 @@
 
 ## [Unreleased]
 
+## 19.1.54 (2021-03-30)
+
+### CircularGauge
+
+#### New Features
+
+- `#290958` - When `startValue` and `endValue`properties are not set, the linear gradient will follow the circular path in the ranges.
+
 ## 18.4.35 (2021-01-19)
 
 ### CircularGauge
@@ -97,6 +105,8 @@
 ### CircularGauge
 
 #### Bug Fixes
+
+- `#I238300` - The issue with animation in circular gauge and flickering has been resolved.
 
 - `#I238300` - The issue with animation in circular gauge and flickering has been resolved
 

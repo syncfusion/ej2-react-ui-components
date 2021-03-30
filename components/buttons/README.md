@@ -1,5 +1,3 @@
-[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-buttons)](https://www.npmjs.com/package/@syncfusion/ej2-react-buttons)
-
 # ej2-react-buttons
 
 A package of Syncfusion React UI Components (Essential JS 2) Button, CheckBox, RadioButton and Switch.

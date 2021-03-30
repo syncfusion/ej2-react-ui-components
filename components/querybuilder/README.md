@@ -1,5 +1,3 @@
-[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-querybuilder)](https://www.npmjs.com/package/@syncfusion/ej2-react-querybuilder)
-
 # ej2-react-querybuilder
 
 A package of Syncfusion React UI Components (Essential JS 2) QueryBuilder.

@@ -1,5 +1,3 @@
-[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-diagrams)](https://www.npmjs.com/package/@syncfusion/ej2-react-diagrams)
-
 # ej2-react-diagrams
 
 The diagram component visually represents information. It is also used to create diagrams like flow charts, organizational charts, mind maps, and BPMN either through code or a visual interface.

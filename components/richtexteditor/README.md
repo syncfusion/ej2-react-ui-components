@@ -1,5 +1,3 @@
-[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-richtexteditor)](https://www.npmjs.com/package/@syncfusion/ej2-react-richtexteditor)
-
 # ej2-react-richtexteditor
 
 The rich text editor component is a HTML and markdown editor that provides best user experience for creating and updating the content.

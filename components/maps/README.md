@@ -1,5 +1,3 @@
-[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-react-maps)](https://www.npmjs.com/package/@syncfusion/ej2-react-maps)
-
 # ej2-react-maps
 
 The maps control is used to visualize the geographical data and represent the statistical data of a particular geographical area on earth with user interactivity, and provides various customizing options. 

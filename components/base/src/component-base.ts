@@ -368,7 +368,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     public componentWillUnmount(): void {
         clearTimeout(this.cachedTimeOut);
         // tslint:disable-next-line:no-any
-        if (this.initRenderCalled && this.isAppendCalled && this.element && document.body.contains(this.element) && !this.isDestroyed) {
+        if (this.initRenderCalled && this.isAppendCalled && this.element && (this.getModuleName() !== "dropdowntree") ? document.body.contains(this.element) : true && !this.isDestroyed) {
             this.destroy();
         }
 

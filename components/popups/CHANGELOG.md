@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.4.44 (2021-02-23)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#315130` - The issue with, "Provide support to prevent default focus in the 'OnOverlayClick' event" has been resolved
-
 ## 18.4.43 (2021-02-16)
 
 ### Tooltip
@@ -26,12 +18,6 @@
 #### Bug Fixes
 
 - `#298848` - The issue with "The `openDelay` property is not effective in the Tooltip while enabling the `mouseTrail` property" has been resolved.
-
-### Dialog
-
-#### Bug Fixes
-
-- `#299892` - Handled null exception cases for the elements in dialog.
 
 ## 18.4.30 (2020-12-17)
 

@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.4.49 (2021-03-23)
-
-### Barcode
-
-#### Bug Fixes
-
-- `#316606` - "UPC-A does not render some code value" issue has been fixed.
-
 ## 18.4.30 (2020-12-17)
 
 ### Barcode

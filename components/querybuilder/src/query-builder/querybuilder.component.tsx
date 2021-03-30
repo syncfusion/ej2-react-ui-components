@@ -3,7 +3,9 @@ import { QueryBuilder, QueryBuilderModel } from '@syncfusion/ej2-querybuilder';
 import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/ej2-react-base';
 
 
-
+export interface QueryBuilderTypecast {
+    headerTemplate?: string | Function | any;
+}
 /**
  * Represents the React QueryBuilder Component
  * ```html
@@ -12,7 +14,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class QueryBuilderComponent extends QueryBuilder {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<QueryBuilderModel & DefaultHtmlAttributes>;
+    & Readonly<QueryBuilderModel & DefaultHtmlAttributes| QueryBuilderTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -20,7 +22,7 @@ export class QueryBuilderComponent extends QueryBuilder {
     public directivekeys: { [key: string]: Object } = {'columns': 'column'};
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<QueryBuilderModel & DefaultHtmlAttributes>;
+     & Readonly<QueryBuilderModel & DefaultHtmlAttributes| QueryBuilderTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

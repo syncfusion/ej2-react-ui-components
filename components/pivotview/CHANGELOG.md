@@ -2,18 +2,28 @@
 
 ## [Unreleased]
 
-## 18.4.46 (2021-03-02)
+## 19.1.54 (2021-03-30)
+
+### Pivot Table
+
+#### Breaking Changes
+
+- The `chartSettings.enableMultiAxis` property is deprecated and will no longer to be used. Use `chartSettings.enableMultipleAxis` to achieve the same.
+
+#### New Features
+
+- `#294982`,`#F157008` - In addition to existing aggregation types, a median type has been included.
+- `#293740`,`#294851`,`#295251`,`#310709`,`#F158140` - Multiple values (i.e. measures) can now be displayed in a single axis.
+- Hyperlink can now be set based on caption of measure field.
+- `#316689` - Data from the data manager can now be retrieved using a custom query.
+
+## 18.4.46
 
 ### Pivot Table
 
 #### Bug Fixes
 
 - Border alignment issue in "Grouping Bar" UI has been fixed.
-
-- `#310208` - The issue "Columns are shrink randonly" has been fixed.
-- `#308576` - The "Field Mapping" feature now works on all of its properties.
-- `#313362`,`#314555` - The issue in "Auto column resizing" feature has been fixed.
-- `#313362` - The aggregation type "PercentageOfParentTotal" can now be formatted.
 
 ## 18.4.30 (2020-12-17)
 
@@ -321,6 +331,17 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 18.4.46 (2021-03-02)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#310208` - The issue "Columns are shrink randonly" has been fixed.
+- `#308576` - The "Field Mapping" feature now works on all of its properties.
+- `#313362`,`#314555` - The issue in "Auto column resizing" feature has been fixed.
+- `#313362` - The aggregation type "PercentageOfParentTotal" can now be formatted.
 
 ## 18.1.52 (2020-05-13)
 
