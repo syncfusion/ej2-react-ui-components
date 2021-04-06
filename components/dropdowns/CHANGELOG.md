@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.55 (2021-04-06)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#F163516` - Issue with "`itemData` returns as null in the removed event argument when provide the integer data and remove the selected custom value" has been resolved.
+
 ## 18.4.47 (2021-03-09)
 
 ### MultiSelect

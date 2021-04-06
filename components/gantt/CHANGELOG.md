@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.55 (2021-04-06)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#320882` - Issue on expand/collapse icon in `Resource view` has been fixed.
+
 ## 19.1.54 (2021-03-30)
 
 ### Gantt
