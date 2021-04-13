@@ -2,13 +2,24 @@
 
 ## [Unreleased]
 
-## 19.1.55 (2021-04-06)
+## 19.1.56 (2021-04-13)
 
-### MultiSelect
+### ListBox
 
 #### Bug Fixes
 
-- `#F163516` - Issue with "`itemData` returns as null in the removed event argument when provide the integer data and remove the selected custom value" has been resolved.
+- `#316046` - Action complete event not triggered when sort order property is given issue is fixed.
+- `#311323` - DataSource missing while filtering is applied issue has been resolved.
+- `#163935` - Previous index is wrong in drag and drop event has been fixed.
+
+## 19.1.54 (2021-03-30)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+`#317088` - The issue with "The popup is not opened for the second time in the Dropdown Tree component when it is rendered inside the Dialog" has been resolved.
+
 
 ## 18.4.47 (2021-03-09)
 
@@ -1657,6 +1668,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.1.55 (2021-04-06)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#F163516` - Issue with "`itemData` returns as null in the removed event argument when provide the integer data and remove the selected custom value" has been resolved.
 
 ## 18.4.46 (2021-03-02)
 

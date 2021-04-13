@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.56 (2021-04-13)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#320979` - Provided support to update data source dynamically with `collapseAllParentTasks` and `enableMultiTaskbar` enabled mode.
+
 ## 19.1.55 (2021-04-06)
 
 ### Gantt
