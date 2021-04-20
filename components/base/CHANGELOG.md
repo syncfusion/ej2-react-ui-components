@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.1.57 (2021-04-20)
+
+### Common
+
+#### Bug Fixes
+
+- `I321145` - Resolved the issue with Data binding not working properly while changing values in complex array.
+
+- `F164536` - Resolved the Peer dependency warning issue.
+
 ## 18.3.35 (2020-10-01)
 
 ### Common

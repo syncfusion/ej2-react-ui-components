@@ -286,16 +286,26 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 let oldProp: { [key: string]: Object } = oldProps[i];
                 let newProp: { [key: string]: Object } = newProps[i];
                 let keys: string[] = Object.keys(newProp);
-                for (let key of keys) {
-                    let oldValue = oldProp[key];
-                    let newValue = newProp[key];
-                    if (!oldProp.hasOwnProperty(key) || !this.compareValues(newValue, oldValue)) {
+                if (keys.length !== 0) {
+                    for (let key of keys) {
+                        let oldValue = oldProp[key];
+                        let newValue = newProp[key];
+                        if (!oldProp.hasOwnProperty(key) || !this.compareValues(newValue, oldValue)) {
+                            if (!propName) {
+                                return { status: false };
+                            }
+                            status = false;
+                            curObj[key] = newValue;
+                        } 
+                    }
+                }
+                else {
+                    if (!this.compareValues(newProp, oldProp)) {
                         if (!propName) {
                             return { status: false };
                         }
                         status = false;
-                        curObj[key] = newValue;
-                    } 
+                    }
                 }
                 if (Object.keys(curObj).length) {
                     diffArray.push({ index: i, value: curObj, key: propName });

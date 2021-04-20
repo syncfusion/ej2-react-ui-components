@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 19.1.57 (2021-04-20)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I323673` - Paging issue while deleting records in last page has been fixed.
+- `#I321175` - Previous filter value is reappearing on the excel filter input issue has been fixed.
+- `#I323060` - Excel custom filter issue has been fixed.
+- `#I322391` - Provided the support for `rtl` in menu filter in dropdown component.
+- `#I321693` - `RowDeselected` event data property issue has been resolved.
+- `#I321908` - Throws script error while dragging page number index in Grid is fixed.
+
 ## 19.1.56 (2021-04-13)
 
 ### Grid

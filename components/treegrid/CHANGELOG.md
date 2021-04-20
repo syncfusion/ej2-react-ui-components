@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.57 (2021-04-20)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I317066` - Right-clicking on the bottom rows in the current view works fine with Virtualization.
+
 ## 19.1.56 (2021-04-13)
 
 ### Tree Grid
