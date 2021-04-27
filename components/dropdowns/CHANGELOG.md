@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.57 (2021-04-20)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#311323` - Issue with 'No Records Found' text occurred twice has been resolved.
+
 ## 19.1.56 (2021-04-13)
 
 ### ListBox

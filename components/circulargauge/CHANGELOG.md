@@ -5,7 +5,15 @@
 
 ## [Unreleased]
 
-## 19.1.57 (2021-04-20)
+## 19.1.58 (2021-04-27)
+
+### CircularGauge
+
+#### Bug Fixes
+
+- `#324756` - If numeric content is set, the text style of the annotation content will now be applied correctly.
+
+## 19.1.55 (2021-04-06)
 
 ### CircularGauge
 
