@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.1.59 (2021-05-04)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#325250` - Progress updated properly in manual scheduling.
+- `#324644` - Issue on adding records, when Gantt view is changed has been fixed.
+- `#325627` - Editing works fine after when holiday is set dynamically.
+
 ## 19.1.58 (2021-04-27)
 
 ### Gantt
@@ -11,13 +21,6 @@
 - `#324141` - Issue in tooltip rendering position has been fixed.
 - `#320979` - Issue on changing data source and timeline settings on same time has been fixed.
 - `F163357` - Duplicating issue when a task is dropped below an unassigned resource in the resource view has been fixed.
-
-## 19.1.57 (2021-04-20)
-
-### Gantt
-
-#### Bug Fixes
-
 - `F164497` - Issue in editing end date of a task has been fixed.
 
 ## 19.1.56 (2021-04-13)

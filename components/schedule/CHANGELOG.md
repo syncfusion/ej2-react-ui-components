@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.1.59 (2021-05-04)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#FB23548` - An issue with Keyboard Interaction with Virtual Scrolling has been fixed.
+- `#I323778` - An issue with Scheduler Accessibility has been fixed.
+
 ## 19.1.58 (2021-04-27)
 
 ### Schedule
@@ -13,6 +22,7 @@
 - `#FB23906, #FB23902` - An issue with "Scheduler causing focus loss for text inputs in Android device" has been fixed.
 - `#FB23931` - An issue with "Scheduler stealing focus on window resize" has been fixed.
 - `#I313715` - An issue with script error throws while resizing the scheduler events has been fixed.
+- `#FB24226` - An issue with the scheduler alert message when drag the event in series has been fixed.
 
 ## 19.1.57 (2021-04-20)
 
@@ -34,6 +44,7 @@
 - `#I319812` - An issue with the appointment is not created properly in Timeline Year view has been fixed.
 - `#I320915` - An issue with Scheduler events height is not rendered properly in the DST timezone has been fixed.
 - `#FB23548` - An issue with Keyboard Interaction with Virtual Scrolling has been fixed.
+- `F159057` - An issue with the appointment was not shown correctly in the UI in `TimelineMonth` view has been fixed.
 
 ## 19.1.55 (2021-04-06)
 
