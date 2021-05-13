@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 19.1.63 (2021-05-13)
+
+### Gantt
+
+#### New Features
+
+- `#264444, #296315` - Provided support for managing date with different time zones.
+- `#317529, #320843` - Provide support to cancel the merging of split tasks using client-side event.
+- `#307881`, `#309475`, `#325067` - Improved performance while scrolling, when predecessors are mapped.
+
+- `#325067` - Improved performance while scrolling, when predecessors are mapped.
+
+#### Bug Fixes
+
+- `#326155` - Issue in splitting task using public method has been fixed.
+- `#325948` - Issue in adding new task with empty string has been fixed.
+- `#325585` - Issue while defining columns and dynamically changing the view type has been fixed.
+
 ## 19.1.59 (2021-05-04)
 
 ### Gantt
@@ -21,6 +39,14 @@
 - `#324141` - Issue in tooltip rendering position has been fixed.
 - `#320979` - Issue on changing data source and timeline settings on same time has been fixed.
 - `F163357` - Duplicating issue when a task is dropped below an unassigned resource in the resource view has been fixed.
+- `F164497` - Issue in editing end date of a task has been fixed.
+
+## 19.1.57 (2021-04-20)
+
+### Gantt
+
+#### Bug Fixes
+
 - `F164497` - Issue in editing end date of a task has been fixed.
 
 ## 19.1.56 (2021-04-13)
