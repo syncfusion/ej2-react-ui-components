@@ -8,6 +8,28 @@
 
 #### Bug Fixes
 
+- `#328528` - Histogram is rendering properly when the `binInterval` value is 0.
+
+### Stock Chart
+
+#### Bug Fixes
+
+- `#F165171` - Tooltip for column in stock chart is working properly now.
+
+## 19.1.64 (2021-05-19)
+
+### Chart
+
+#### Bug Fixes
+
+- `#326473` - Print is now working properly with strip line dash array.
+
+## 19.1.63 (2021-05-13)
+
+### Chart
+
+#### Bug Fixes
+
 - `#325456` - Highlight and selection issue has been fixed for multiple charts.
 - `#F165060` - Accumulation chart with data label is now rendering properly inside the dashboard layout.
 

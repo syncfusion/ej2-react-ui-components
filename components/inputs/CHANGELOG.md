@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.66 (2021-06-01)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I328584` - Issue with "console error throws while incrementing and decrementing the value by touching the spin buttons" has been resolved.
+
 ## 19.1.59 (2021-05-04)
 
 ### Range Slider

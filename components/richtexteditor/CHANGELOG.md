@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 19.1.66 (2021-06-01)
+
+### RichTextEditor
+
+#### New Features
+
+- `#I275771`, `#I275873` - Provided `beforePasteCleanUp` and `afterPasteCleanUp` events for customizing pasted content in the Rich Text Editor.
+
+#### Bug Fixes
+
+- `#I327566` - The issue with "Image resizing is not working properly when `resizeByPercent` is set true" has been resolved.
+- `#I327676` - The issue with "Custom toolbar icons not disabled/enabled on various scenarios" has been resolved.
+- `#I327536` - The issue with "Pasting content from outlook doesn't work properly after the first time"  has been resolved.
+- `#I327087` - The issue with "Clicking backspace of the letter next to the image delete the image"  has been resolved.
+
 ## 19.1.65 (2021-05-25)
 
 ### RichTextEditor
@@ -14,15 +29,6 @@
 - `#I328008` - The issue with "Two scrollbars are enabled when the source view is enabled" has been resolved.
 
 ## 19.1.64 (2021-05-19)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I326887`- The issue with "Bold and other formats not working inside the table when the cell in empty" has been resolved.
-- `#I324041`- The issue with "When strong is applied more than one time for an element, `un-bold` doesn't remove all the bold tags" has been resolved.
-
-## 19.1.63 (2021-05-13)
 
 ### RichTextEditor
 
