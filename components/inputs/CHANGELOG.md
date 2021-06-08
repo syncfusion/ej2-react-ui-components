@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.1.66 (2021-06-01)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I328584` - Issue with "console error throws while incrementing and decrementing the value by touching the spin buttons" has been resolved.
-
 ## 19.1.59 (2021-05-04)
 
 ### Range Slider
@@ -1146,6 +1138,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 19.1.66 (2021-06-01)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I328584` - Issue with "console error throws while incrementing and decrementing the value by touching the spin buttons" has been resolved.
 
 ## 18.4.39 (2021-01-28)
 

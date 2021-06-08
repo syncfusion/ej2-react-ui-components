@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.67 (2021-06-08)
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#F165830` -  An issue with Toolbar template when state of component changed in functional based components has been fixed.
+
 ## 19.1.66 (2021-06-01)
 
 ### Menu

@@ -1,6 +1,6 @@
 # ej2-react-richtexteditor
 
-The rich text editor component is a HTML and markdown editor that provides best user experience for creating and updating the content.
+The [React Rich Text Editor](https://www.syncfusion.com/react-ui-components/react-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) component is a HTML and markdown editor that provides best user experience for creating and updating the content.
 
 ![](../../ReadMe_Images/RTE.GIF)
 
@@ -20,49 +20,48 @@ npm install @syncfusion/ej2-react-richtexteditor
 
 ## 2. Components included
 
-* [GettingStarted](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started.html)
-* [View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/tools.html)
-* [Product Page](https://www.syncfusion.com/products/react/rich-text-editor)
+* [GettingStarted](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/material/rich-text-editor/tools.html)
+* [Product Page](https://www.syncfusion.com/react-ui-components/react-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
 
 ## 3. Supported frameworks
-These components are available in following list of 
-1.  [TypeScript](https://ej2.syncfusion.com/demos/#/material/rich-text-editor/tools.html)
-2.	[Angular](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/tools)
-3.	[Vue.js](https://ej2.syncfusion.com/vue/demos/#/material/rich-text-editor/tools.html)
-4.	[ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/Overview#/material)
-5.	[ASP.NET MVC](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/Overview#/material)
-6.	[JavaScript (ES5)](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/tools.html)
+Rich text editor component also supports the following frameworks:
+1.  [TypeScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+2.	[Angular Rich Text Editor](https://www.syncfusion.com/angular-ui-components/angular-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+3.	[Vue Rich Text Editor](https://www.syncfusion.com/vue-ui-components/vue-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+4.	[ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+5.	[ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
 
 ## 4. Use-case samples / Showcase samples
 
-* HTML editor ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/tools))
-* Blog posting ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/blog-posting))
-* Markdown editor ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/markdown-editor))
-* Inline edit ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/inline))
+* [React HTML editor Demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/material/rich-text-editor/tools)
+* [Blog posting Demo in React](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/material/rich-text-editor/blog-posting)
+* [React Markdown editor Demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/material/rich-text-editor/markdown-editor)
+* [Inline edit Demo in React](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/material/rich-text-editor/inline)
 
 ## 5. Key features
 
-* [Mode](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/iframe): Provides &lt;IFRAME&gt; and &lt;DIV&gt; mode.
-* [Markdown](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/markdown-editor-preview): Handles markdown editing.
-* [Module](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started#module-injection): Contains a modular library to load the necessary functionality on demand.
-* [Toolbar](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/types): Provides a fully customizable toolbar.
-* [Editing](https://ej2.syncfusion.com/react/documentation/rich-text-editor/miscellaneous#code-view): HTML view to edit the source directly for developers.
-* [Third-party Integration](https://ej2.syncfusion.com/react/documentation/rich-text-editor/third-party-integration): Integrates third-party library.
-* [Preview](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/markdown-editor-preview): Preview the modified content before saving it.
-* [Tools](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar#toolbar-items): Handles images, hyperlinks, uploads, and more.
-* [Undo and Redo](https://ej2.syncfusion.com/react/documentation/rich-text-editor/miscellaneous#undoredo-manager): Contains undo/redo manager.
+* [Mode](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/material/rich-text-editor/iframe): Provides &lt;IFRAME&gt; and &lt;DIV&gt; mode.
+* [Markdown](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/material/rich-text-editor/markdown-editor-preview): Handles markdown editing.
+* [Module](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#module-injection): Contains a modular library to load the necessary functionality on demand.
+* [Toolbar](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/material/rich-text-editor/types): Provides a fully customizable toolbar.
+* [Editing](https://ej2.syncfusion.com/react/documentation/rich-text-editor/miscellaneous/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/rich-text-editor/#code-view): HTML view to edit the source directly for developers.
+* [Third-party Integration](https://ej2.syncfusion.com/react/documentation/rich-text-editor/third-party-integration/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm): Integrates third-party library.
+* [Preview](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/material/rich-text-editor/markdown-editor-preview): Preview the modified content before saving it.
+* [Tools](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#toolbar-items): Handles images, hyperlinks, uploads, and more.
+* [Undo and Redo](https://ej2.syncfusion.com/react/documentation/rich-text-editor/miscellaneous/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#undoredo-manager): Contains undo/redo manager.
 
 ## 6. Support
 
 Product support can be obtained through the following mediums:
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=richtexteditor) support system or [Community forum.](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=richtexteditor)
-* New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new).
+* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) support system or [Community forum.](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm).
 * Ask your query in Stack Overflow with tag ‘syncfusion’, ‘ej2’.
  
 ## 7. License 
-Check the license details [here](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_campaign=dropdown)
+Check the license details [here](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
 
 ## 8. Change log 
- Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/richtexteditor/CHANGELOG.md)
+ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/richtexteditor/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
 
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

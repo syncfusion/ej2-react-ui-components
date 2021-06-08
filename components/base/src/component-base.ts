@@ -71,6 +71,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     private canDelayUpdate: boolean;
     private reactElement: HTMLElement;
     public portals:any;
+    protected value: any;
     // Lifecycle methods are changed by React team and so we can deprecate this method and use
     // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
     // tslint:disable-next-line:no-any
@@ -180,6 +181,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     public getDefaultAttributes(): Object {
         this.isReact = true;
         let propKeys: string[] = Object.keys(this.props);
+        if (this.getModuleName() === "autocomplete" || "drpdownlist") {
+            this.value = (<{ [key: string]: Object }>this.props)["value"];
+        }
         if(!this.htmlattributes) {
             this.htmlattributes = {};    
         }

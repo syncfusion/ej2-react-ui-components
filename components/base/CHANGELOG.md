@@ -2,7 +2,13 @@
 
 ## [Unreleased]
 
-## 19.1.66 (2021-06-01)
+## 19.1.67 (2021-06-08)
+
+### Common
+
+- `F164392` - Resolved the issue with Value is not updated if we update the state in `useEffect()` hook for `Dropdownlist`.
+
+## 19.1.65 (2021-05-25)
 
 ### Common
 
