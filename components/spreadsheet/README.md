@@ -1,6 +1,6 @@
 # ej2-react-spreadsheet
 
-The Spreadsheet is an user interactive component to organize and analyze data in tabular format with configuration options for customization. It will load data by importing an excel file or from a data source, such as RESTful JSON data services and local JavaScript object array binding. The populated data can be exported as Excel with xlsx, xls and csv formats.
+The [React Spreadsheet](https://www.syncfusion.com/react-ui-components/react-spreadsheet?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm) is an user interactive component to organize and analyze data in tabular format with configuration options for customization. It will load data by importing an excel file or from a data source, such as RESTful JSON data services and local JavaScript object array binding. The populated data can be exported as Excel with xlsx, xls and csv formats.
 
 ![Spreadsheet](https://ej2.syncfusion.com/products/images/spreadsheet/readme.gif)
 
@@ -18,19 +18,19 @@ npm install @syncfusion/ej2-react-spreadsheet
 
 ## Resources
 
-* [Getting Started](https://ej2.syncfusion.com/react/documentation/spreadsheet/getting-started?lang=typescript&utm_source=npm&utm_campaign=spreadsheet)
-* [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=spreadsheet#/material/spreadsheet/default)
-* [Product Page](https://www.syncfusion.com/react-ui-components/react-spreadsheet)
+* [Product Page](https://www.syncfusion.com/react-ui-components/react-spreadsheet?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm)
+* [Getting Started](https://ej2.syncfusion.com/react/documentation/spreadsheet/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm)
+* [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm#/material/spreadsheet/default)
 
 ## Supported Frameworks
 
 Spreadsheet component is also offered in following list of frameworks.
 
-1. [Angular](https://github.com/syncfusion/ej2-angular-ui-components/tree/master/components/spreadsheet)
-2. [Javascript (ES5)](https://www.syncfusion.com/javascript-ui-controls/js-spreadsheet)
-3. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components/tree/master/components/spreadsheet)
-4. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/spreadsheet)
-5. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/spreadsheet)
+1. [Angular Spreadsheet](https://www.syncfusion.com/angular-ui-components/angular-spreadsheet?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm)
+2. [Javascript Spreadsheet](https://www.syncfusion.com/javascript-ui-controls/js-spreadsheet?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm)
+3. [VueJS Spreadsheet](https://www.syncfusion.com/vue-ui-components/vue-spreadsheet?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm)
+4. [ASP.NET Core Spreadsheet](https://www.syncfusion.com/aspnet-core-ui-controls/spreadsheet?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm)
+5. [ASP.NET MVC Spreadsheet](https://www.syncfusion.com/aspnet-mvc-ui-controls/spreadsheet?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm)
 
 ## Key Features
 
@@ -72,16 +72,16 @@ Spreadsheet component is also offered in following list of frameworks.
 
 Product support is available for through following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=spreadsheet) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=spreadsheet).
-* New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new).
+* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm).
 * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-javascript-ui-controls/blob/master/license?utm_source=npm&utm_campaign=spreadsheet).
+Check the license detail [here](https://github.com/syncfusion/ej2-javascript-ui-controls/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/spreadsheet/CHANGELOG.md?utm_source=npm&utm_campaign=spreadsheet)
+Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/spreadsheet/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=react-spreadsheet-npm)
 
 &copy; Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

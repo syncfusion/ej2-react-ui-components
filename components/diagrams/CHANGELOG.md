@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.69 (2021-06-15)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I329576` - The issue While changing the connector flip property the connector's segment path is not updated correctly issue has been fixed.
+
 ## 19.1.67 (2021-06-08)
 
 ### Diagram

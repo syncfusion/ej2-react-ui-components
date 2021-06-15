@@ -43,10 +43,10 @@ Following list of components are available in the package.
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=slider#/material/slider/default)
   * [Product Page](https://www.syncfusion.com/react-ui-components/slider/?utm_source=npm&utm_campaign=slider)
 
-* **Uploader** - The uploader component is an extended version of the HTML5 upload control which is used to upload images, documents, and other files to a server.
-  * [Getting Started](https://ej2.syncfusion.com/react/documentation/uploader/getting-started/?utm_source=npm&utm_campaign=upload)
-  * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=uploader#/material/uploader/default)
-  * [Product Page](https://www.syncfusion.com/react-ui-components/uploader/?utm_source=npm&utm_campaign=uploader)
+* **Uploader** - The [React File Upload](https://www.syncfusion.com/react-ui-components/react-file-upload?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm) component is an extended version of the HTML5 upload control which is used to upload images, documents, and other files to a server.
+  * [Product Page](https://www.syncfusion.com/react-ui-components/react-file-upload/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm)
+  * [Getting Started](https://ej2.syncfusion.com/react/documentation/uploader/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm)
+  * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/default)
 
 ## Supported frameworks
 
@@ -104,12 +104,12 @@ Input component is also offered in following list of frameworks.
 - [**Keyboard Interaction**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=slider#/material/slider/api) - The Slider can be intractable through the keyboard.
 
 ### 6. Upload
-- [**Chunk Upload**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=uploader#/material/uploader/chunk-upload) – used to upload large files as chunks
-- [**Drag-and-drop**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=uploader#/material/uploader/drop-area) – drag the files and drop into component to upload them.
-- [**Template**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=uploader#/material/uploader/custom-template) – the file list and buttons can be customize using template
-- [**Validation**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=uploader#/material/uploader/validation) – validate extension and size of upload file
-- [**Auto Upload**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=uploader#/material/uploader/default) – Process the file to upload without interaction.
-- [**Preload Files**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=uploader#/material/uploader/preloadfiles) – View and manipulate previously uploaded files
+- [**Chunk Upload**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/chunk-upload) – used to upload large files as chunks
+- [**Drag-and-drop**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/custom-drop-area) – drag the files and drop into component to upload them.
+- [**Template**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/custom-file-list) – the file list and buttons can be customize using template
+- [**Validation**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/file-validation) – validate extension and size of upload file
+- [**Auto Upload**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/default) – Process the file to upload without interaction.
+- [**Preload Files**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/preload-files) – View and manipulate previously uploaded files
 
 ## Support
 

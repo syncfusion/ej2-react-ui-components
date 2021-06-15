@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.69 (2021-06-15)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#F166223` - Issue with "`NoRecordsTemplate` is not rendered with provided template" has been resolved.
+
 ## 19.1.65 (2021-05-25)
 
 ### DropDownList

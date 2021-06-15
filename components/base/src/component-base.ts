@@ -72,6 +72,8 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     private reactElement: HTMLElement;
     public portals:any;
     protected value: any;
+    protected columns: any;
+    
     // Lifecycle methods are changed by React team and so we can deprecate this method and use
     // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
     // tslint:disable-next-line:no-any
@@ -181,7 +183,8 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     public getDefaultAttributes(): Object {
         this.isReact = true;
         let propKeys: string[] = Object.keys(this.props);
-        if (this.getModuleName() === "autocomplete" || "drpdownlist") {
+        let stringValue: string[] = ["autocomplete", "dropdownlist", "combobox"];
+        if ((stringValue.indexOf(this.getModuleName()) !== -1) && (!isNullOrUndefined(this.props["value"]))) {
             this.value = (<{ [key: string]: Object }>this.props)["value"];
         }
         if(!this.htmlattributes) {
@@ -294,6 +297,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                     for (let key of keys) {
                         let oldValue = oldProp[key];
                         let newValue = newProp[key];
+                        if (this.getModuleName()=== 'grid' && key === 'field') {
+                            curObj[key] = newValue;
+                        }
                         if (!oldProp.hasOwnProperty(key) || !this.compareValues(newValue, oldValue)) {
                             if (!propName) {
                                 return { status: false };
@@ -362,14 +368,34 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                     this.prevProperties = extend({}, directiveValue, {}, true);
                 }
                 if (changedProps.length) {
-                    for (let changes of changedProps) {
-                        let propInstance: any = getValue(changes.key + '.' + changes.index, this);
-                        if (propInstance && propInstance.setProperties) {
-                            propInstance.setProperties(changes.value);
-                        } else {
-                            extend(propInstance, changes.value);
+                    if (this.getModuleName() === 'grid' && key === 'columns') {
+                        for (var _c1 = 0, allColumns = this.columns; _c1 < allColumns.length; _c1++) {
+                            let compareField1: any = getValue('field', allColumns[_c1]);
+                            let compareField2: any = getValue(_c1 + '.value.field', changedProps);
+                            if (compareField1 === compareField2) {
+                                var propInstance: any = getValue(changedProps[_c1].key + '.' + changedProps[_c1].index, this);
+                                if (propInstance && propInstance.setProperties) {
+                                    propInstance.setProperties(changedProps[_c1].value);
+                                }
+                                else {
+                                    extend(propInstance, changedProps[_c1].value);
+                                }
+                            }
                         }
                     }
+                    else {
+                        for (let changes of changedProps) {
+                            let propInstance: any = getValue(changes.key + '.' + changes.index, this);
+                            if (propInstance && propInstance.setProperties) {
+                                propInstance.setProperties(changes.value);
+                            }
+                            else {
+                                extend(propInstance, changes.value);
+                            }
+                            
+                        }
+                    }
+                    
                 } else {
                     this.setProperties(directiveValue, silent);
                 }

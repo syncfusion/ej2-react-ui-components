@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 19.1.69 (2021-06-15)
+
+### Common
+
+- `I324905` - Resolved the issue with `editTemplate` methods are reassigned to other columns while reordering and applying `setState`.
+
 ## 19.1.67 (2021-06-08)
 
 ### Common
