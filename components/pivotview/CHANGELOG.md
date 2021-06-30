@@ -2,107 +2,18 @@
 
 ## [Unreleased]
 
-## 19.1.69 (2021-06-15)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#328394` - Unwanted post request won't be called in server side engine.
-- Filter status of the pivot buttons is now properly updated when defer layout update.
-
-#### New Features
-
-- `#326739` - Zoom factor can now be set in the pivot chart programmatically.
-
-## 19.1.67 (2021-06-08)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#326766` - The column headers can now be scrolled using the mouse wheel.
-- `#F165788` - The flickering issue that occurred when the component is refreshed has been fixed.
-- `#330494`, `#330440`, `#330347`, `#329726`, `#330697`, `#330714` - The issue "Column headers are hidden" that occurred in latest version of Chrome browser has been fixed.
-
-#### New Features
-
-- `#327931` - "Headers and Footers" can now be set in engine exporting.
-- `#325956` - The dependent components of the pivot table can now be localized.
-- `#326340`, `#326432` - Introduced an event to customize the multi-level labels.
-- `#326356` - The font of data labels in the pivot chart can now be customized.
-
-## 19.1.65 (2021-05-25)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#327239` - The issue on excluding fields has been fixed.
-- `#326340` - The font style of the pivot chart tooltip can now be customized.
-- `#325094` - The number formatting can now be applied in the drill-through grid.
-
-## 19.1.59 (2021-05-04)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#325971`,`#325981` - The toolbar options are now working in the server-side engine.
-
-## 19.1.58 (2021-04-27)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#316510` - The pivot table is now scrollable in mobile devices when virtual scrolling is enabled.
-- `#322256` - The pivot chart's title can now be dynamically updated.
-
-## 19.1.57 (2021-04-20)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#323557` - The color picker in the conditional formatting dialog now supports language translation.
-
-## 19.1.56 (2021-04-13)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#318017`,`#318625` - Export customization set in the `beforeExport` event is now working.
-- `#320952` - Members with special characters are now accepted by the member editor.
-- `#F163080` - Even if the fields have special characters, calculated fields can now be created.
-
-#### New Features
-
-- `#321444` - Date/time values in the editing dialog can now be edited using the date/time picker.
-
-## 19.1.54 (2021-03-30)
-
-### Pivot Table
-
-#### Breaking Changes
-
-- The `chartSettings.enableMultiAxis` property is deprecated and will no longer to be used. Use `chartSettings.enableMultipleAxis` to achieve the same.
-
-#### New Features
-
-- `#294982`,`#F157008` - In addition to existing aggregation types, a median type has been included.
-- `#293740`,`#294851`,`#295251`,`#310709`,`#F158140` - Multiple values (i.e. measures) can now be displayed in a single axis.
-- Hyperlink can now be set based on caption of measure field.
-- `#316689` - Data from the data manager can now be retrieved using a custom query.
-
-## 18.4.46
+## 19.2.44 (2021-06-30)
 
 ### Pivot Table
 
 #### Bug Fixes
 
 - Border alignment issue in "Grouping Bar" UI has been fixed.
+
+- `#310208` - The issue "Columns are shrink randonly" has been fixed.
+- `#308576` - The "Field Mapping" feature now works on all of its properties.
+- `#313362`,`#314555` - The issue in "Auto column resizing" feature has been fixed.
+- `#313362` - The aggregation type "PercentageOfParentTotal" can now be formatted.
 
 ## 18.4.30 (2020-12-17)
 
@@ -410,17 +321,6 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
-
-## 18.4.46 (2021-03-02)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#310208` - The issue "Columns are shrink randonly" has been fixed.
-- `#308576` - The "Field Mapping" feature now works on all of its properties.
-- `#313362`,`#314555` - The issue in "Auto column resizing" feature has been fixed.
-- `#313362` - The aggregation type "PercentageOfParentTotal" can now be formatted.
 
 ## 18.1.52 (2020-05-13)
 

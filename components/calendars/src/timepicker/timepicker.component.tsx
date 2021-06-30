@@ -16,7 +16,7 @@ export class TimePickerComponent extends TimePicker {
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
+    private checkInjectedModules: boolean = true;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TimePickerModel & DefaultHtmlAttributes>;

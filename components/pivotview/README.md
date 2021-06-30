@@ -1,6 +1,6 @@
 # ej2-react-pivotview
 
-The [React Pivot Table](https://www.syncfusion.com/react-ui-components/react-pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm) is a multi-dimensional data visualization component built on top of the relational data sources. The pivot report can be managed dynamically at runtime along with other capabilities like aggregation, filtering and sorting (field and value based).
+The pivot grid is a multi-dimensional data visualization component built on top of the relational data sources. The pivot report can be managed dynamically at runtime along with other capabilities like aggregation, filtering and sorting (field and value based).
 
 ![Pivot Grid](https://ej2.syncfusion.com/products/typescript/pivotview/readme.gif)
 
@@ -17,45 +17,45 @@ npm install @syncfusion/ej2-react-pivotview
 
 ## Resources
 
-* [Getting Started](https://ej2.syncfusion.com/react/documentation/pivotview/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm)
-* [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm#/material/pivot-view/default)
-* [Product Page](https://www.syncfusion.com/react-ui-components/react-pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm)
+* [Getting Started](https://ej2.syncfusion.com/react/documentation/pivotview/getting-started.html)
+* [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=pivot-grid#/material/pivot-view/default.html)
+* [Product Page](https://www.syncfusion.com/react-ui-components/pivot-table)
 
 ## Supported Frameworks
 
 Pivot Grid component is also offered in following list of frameworks.
 
-1. [Angular](https://www.syncfusion.com/angular-ui-components/angular-pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm)
-2. [Vue](https://www.syncfusion.com/vue-ui-components/vue-pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm)
-3. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm)
-4. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm)
-5. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/js-pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm)
+1. [Angular](https://www.syncfusion.com/angular-ui-components/pivot-table)
+2. [VueJS](https://www.syncfusion.com/vue-ui-components/pivot-table)
+3. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table)
+4. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table)
+5. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/pivot-table)
 
 ## Key Features
 
-* [**Data Sources**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm#/material/pivot-view/local) - Binds the component with an array of JavaScript objects.
-* [**Filtering**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm#/material/pivot-view/filtering) - Allows user to view only specific/desired records in the component.
-* [**Sorting**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm#/material/pivot-view/sorting) - Both member and value sorting are supported. It’s allows user to order fields and values (column) either in ascending or descending order respectively.
-* [**Field List & Grouping Bar**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm#/material/pivot-view/grouping-bar) - Supports UI interaction at runtime to dynamically change the report along with sorting, filtering and remove options.
-* [**Aggregation**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm#/material/pivot-view/aggregation) - Provides built in aggregation types like sum, average, min, max and count.
-* [**Calculated Field**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm#/material/pivot-view/calculated-field) - Users can add new value field(s) to the report dynamically using this option.
+* [**Data Sources**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=pivot-grid#/material/pivot-view/local) - Binds the component with an array of JavaScript objects.
+* [**Filtering**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=pivot-grid#/material/pivot-view/filtering) - Allows user to view only specific/desired records in the component.
+* [**Sorting**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=pivot-grid#/material/pivot-view/sorting) - Both member and value sorting are supported. It’s allows user to order fields and values (column) either in ascending or descending order respectively.
+* [**Field List & Grouping Bar**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=pivot-grid#/material/pivot-view/grouping-bar) - Supports UI interaction at runtime to dynamically change the report along with sorting, filtering and remove options.
+* [**Aggregation**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=pivot-grid#/material/pivot-view/aggregation) - Provides built in aggregation types like sum, average, min, max and count.
+* [**Calculated Field**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=pivot-grid#/material/pivot-view/calculated-field) - Users can add new value field(s) to the report dynamically using this option.
 * **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
-* [**Exporting**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm#/material/pivot-view/exporting) - Provides the option to exporting records to Excel, CSV and PDF formats.
+* [**Exporting**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=pivot-grid#/material/pivot-view/exporting) - Provides the option to exporting records to Excel, CSV and PDF formats.
 
 ## Support
 
 Product support is available for through following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm).
+* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=pivot-grid) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=pivot-grid).
+* New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new).
 * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm).
+Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_campaign=pivot-grid).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/pivotview/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=react-pivot-table-npm)
+Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/pivotview/CHANGELOG.md?utm_source=npm&utm_campaign=pivot-grid)
 
 &copy; Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.2.44 (2021-06-30)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I331088, #F146332` -  An issue with tab item content template changing dynamically has been fixed.
+
+
 ## 19.1.69 (2021-06-15)
 
 ### Tab
@@ -10,16 +19,13 @@
 
 - `#I330332` - An issue with the tab `aria-selected` attribute not properly updated has been fixed.
 
-- `#I331088, #F146332` -  An issue with tab item content template changing dynamically has been fixed.
-
-
 ## 19.1.67 (2021-06-08)
 
 ### Toolbar
 
 #### Bug Fixes
 
-- `#F165830` -  An issue with Toolbar template when state of component changed in functional based components has been fixed.
+- `#F165830` - An issue with Toolbar template when state of component changed in functional based components has been fixed.
 
 ## 19.1.66 (2021-06-01)
 

@@ -2,13 +2,21 @@
 
 ## [Unreleased]
 
+## 19.2.44 (2021-06-30)
+
+### Kanban
+
+#### New Features
+
+- `#293618` - Provided support for swimlane frozen rows while scrolling the Kanban content.
+
 ## 19.1.67 (2021-06-08)
 
 ### Kanban
 
 #### Bug Fixes
 
-- `#F165595` - The issue with "Card data changed even when the editing is canceled in the `dialog(card editing)`" has been resolved.
+- `#F165595` - The issue with "Card data changed even when the editing cancel in the `dialog(card editing)`" has been resolved.
 
 ## 19.1.66 (2021-06-01)
 
@@ -38,7 +46,7 @@
 
 #### Bug Fixes
 
-- `#I324923` - The issue with "Kanban content color not changed, when using the material-dark theme" has been resolved.
+- `#I324923` - The issue with "Kanban content colour not changed, when using the material-dark theme" has been resolved.
 - `#F160742` - The issue with "Script error thrown when drag and drop operation performed when swimlane `keyField` as non-existing field" has been resolved.
 - `#322742` - The issue with "Unable to drag and drop the card when `WebApiAdaptor` used on Kanban" has been resolved.
 

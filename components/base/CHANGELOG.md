@@ -2,17 +2,13 @@
 
 ## [Unreleased]
 
-## 19.1.69 (2021-06-15)
-
-### Common
-
-- `I324905` - Resolved the issue with `editTemplate` methods are reassigned to other columns while reordering and applying `setState`.
-
 ## 19.1.67 (2021-06-08)
 
 ### Common
 
 - `F164392` - Resolved the issue with Value is not updated if we update the state in `useEffect()` hook for `Dropdownlist`.
+
+- `I324905` - Resolved the issue with `editTemplate` methods are reassigned to other columns while reordering and applying `setState`.
 
 ## 19.1.65 (2021-05-25)
 

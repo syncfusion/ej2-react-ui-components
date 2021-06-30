@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.1.69 (2021-06-15)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#F166223` - Issue with "`NoRecordsTemplate` is not rendered with provided template" has been resolved.
-
 ## 19.1.65 (2021-05-25)
 
 ### DropDownList
@@ -1706,6 +1698,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.1.69 (2021-06-15)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#F166223` - Issue with "`NoRecordsTemplate` is not rendered with provided template" has been resolved.
 
 ## 19.1.55 (2021-04-06)
 
