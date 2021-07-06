@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 19.2.44 (2021-06-30)
+## 19.2.46 (2021-07-06)
 
 ### Kanban
 
-#### New Features
+#### Bug Fixes
 
-- `#293618` - Provided support for swimlane frozen rows while scrolling the Kanban content.
+- `#I332574` - The issue with "Column headers of the kanban is not updated, with the drag and drop actions" has been resolved.
 
 ## 19.1.67 (2021-06-08)
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.46 (2021-07-06)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I333679` - The issue with setRules method not works in header template has been fixed.
+
 ## 19.1.57 (2021-04-20)
 
 ### QueryBuilder

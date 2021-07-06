@@ -2,25 +2,33 @@
 
 ## [Unreleased]
 
+## 19.2.46 (2021-07-06)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I299892` - Issue with "null reference exception throws while changing the value using `useState`" has been resolved.
+
 ## 19.2.44 (2021-06-30)
 
 ### DatePicker
 
 #### New Features
 
-- `#245933` , `#F147808` -  Now, you can enable the masked input using `enableMask` property
+- `#I245933` , `#F147808` -  Now, you can enable the masked input using `enableMask` property.
 
 ### DateTimePicker
 
 #### New Features
 
-- `#299471` -  Now, you can enable the masked input using `enableMask` property
+- `#I299471` -  Now, you can enable the masked input using `enableMask` property.
 
 ### TimePicker
 
 #### New Features
 
-- Now, you can enable the masked input using `enableMask` property
+- Now, you can enable the masked input using `enableMask` property.
 
 ## 18.4.34 (2021-01-12)
 

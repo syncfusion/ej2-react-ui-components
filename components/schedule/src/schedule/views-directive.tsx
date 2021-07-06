@@ -3,9 +3,11 @@ import { ViewsModel } from '@syncfusion/ej2-schedule';
 
 export interface ViewsDirTypecast {
     dateHeaderTemplate?: string | Function | any;
+    dayHeaderTemplate?: string | Function | any;
     cellHeaderTemplate?: string | Function | any;
     cellTemplate?: string | Function | any;
     eventTemplate?: string | Function | any;
+    monthHeaderTemplate?: string | Function | any;
     resourceHeaderTemplate?: string | Function | any;
     timeScaleMinorSlotTemplate?: string | Function | any;
     timeScaleMajorSlotTemplate?: string | Function | any;

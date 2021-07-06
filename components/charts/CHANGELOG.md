@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.46 (2021-07-06)
+
+### Chart
+
+#### Bug Fixes
+
+- `#332577` - `StepArea` gets truncated while using canvas mode issue has been fixed.
+
 ## 19.2.44 (2021-06-30)
 
 ### Chart

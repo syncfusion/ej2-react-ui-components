@@ -5,11 +5,13 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 export interface ScheduleTypecast {
     dateHeaderTemplate?: string | Function | any;
+    dayHeaderTemplate?: string | Function | any;
     cellTemplate?: string | Function | any;
     cellHeaderTemplate?: string | Function | any;
     eventSettingsTooltipTemplate?: string | Function | any;
     eventSettingsTemplate?: string | Function | any;
     editorTemplate?: string | Function | any;
+    monthHeaderTemplate?: string | Function | any;
     timeScaleMinorSlotTemplate?: string | Function | any;
     timeScaleMajorSlotTemplate?: string | Function | any;
     resourceHeaderTemplate?: string | Function | any;
