@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.47 (2021-07-13)
+
+### Common
+
+#### Bug Fixes
+
+- Sortable drop event is not triggered while dropping to the "no record found" element.
+
 ## 19.1.65 (2021-05-25)
 
 ### Common

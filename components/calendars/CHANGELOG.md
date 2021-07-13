@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.2.46 (2021-07-06)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I299892` - Issue with "null reference exception throws while changing the value using `useState`" has been resolved.
-
 ## 19.2.44 (2021-06-30)
 
 ### DatePicker
@@ -1155,6 +1147,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.2.46 (2021-07-06)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I299892` - Issue with "null reference exception throws while changing the value using `useState`" has been resolved.
 
 ## 18.4.42 (2021-02-09)
 

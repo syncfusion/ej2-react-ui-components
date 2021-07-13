@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.47 (2021-07-13)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#F166554` - The problem with the selection that is not maintained in the card after performing CRUD operation has been fixed.
+
 ## 19.2.46 (2021-07-06)
 
 ### Kanban
