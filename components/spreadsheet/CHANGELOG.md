@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.2.48 (2021-07-20)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `I332804` - Cut / paste action in newly inserted column issues resolved.
+- `I333215` - Triggered `datasourceChanged` event once the `dataSource` property is changed.
+
 ## 19.2.47 (2021-07-13)
 
 ### Spreadsheet

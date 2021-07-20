@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.48 (2021-07-20)
+
+### Common
+
+#### Bug Fixes
+
+- `I331796` - Resolved the issue with Selected value removed when focus changed in `MultiSelect`.
+
 ## 19.1.67 (2021-06-08)
 
 ### Common

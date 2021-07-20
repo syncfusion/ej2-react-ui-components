@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.2.47 (2021-07-13)
+## 19.2.48 (2021-07-20)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#327131` - Now the number format issue for empty cells in excel exporting has been fixed.
+
+## 19.2.46 (2021-07-06)
 
 ### Pivot Table
 
