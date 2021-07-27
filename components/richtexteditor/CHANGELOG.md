@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.49 (2021-07-27)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I335580` - The issue with the Rich Text Editor toolbar status not updated, once the contents have been removed has been rectified.
+
 ## 19.2.48 (2021-07-20)
 
 ### RichTextEditor

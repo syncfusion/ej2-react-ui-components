@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.2.49 (2021-07-27)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I333305` - Resolved the script error while rendering tree grid inside a tab.
+- `#I335120` - Resolved duplicate records issue while drag and drop records between tree grids.
+
 ## 19.2.48 (2021-07-20)
 
 ### Tree Grid

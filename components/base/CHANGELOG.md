@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.49 (2021-07-27)
+
+### Common
+
+#### Bug Fixes
+
+- `I335035`, `I331116` - Resolved the issue with Updating data source of components using React `usestate` hook is not working.
+
 ## 19.2.48 (2021-07-20)
 
 ### Common

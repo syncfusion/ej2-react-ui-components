@@ -65,6 +65,7 @@
      private initRenderCalled: boolean = false;
      private isReactForeceUpdate: boolean = false;
      private isReact: boolean = true;
+     private isshouldComponentUpdateCalled: boolean = false;
      private modelObserver: any;
      private isDestroyed: boolean;
      private isProtectedOnChange: boolean;
@@ -89,7 +90,14 @@
              this.renderReactTemplates();
          }
      }
- 
+     
+     public componentDidUpdate(prev: object, state: any, snapshot: any): any {
+        if(!this.isshouldComponentUpdateCalled && this.initRenderCalled) {
+            this.isshouldComponentUpdateCalled = true;
+            this.refreshProperties(this.props, true);
+        }
+     }
+
      private renderReactComponent(): void {
          let ele: Element = this.reactElement;
          if (ele) {
@@ -105,6 +113,7 @@
       * @private
       */
      public shouldComponentUpdate(nextProps: Object): boolean {
+         this.isshouldComponentUpdateCalled = true
          if (!this.initRenderCalled) {
              this.updateProperties(nextProps, true);
              return true;

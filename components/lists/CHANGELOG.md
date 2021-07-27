@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 19.2.49 (2021-07-27)
+
+### Common
+
+#### Bug Fixes
+
+- Sortable helper element issue resolved in List Box.
+
+### ListView
+
+#### Bug Fixes
+
+- `#I335874` - The issue with "The additional new element is added in the template element of the List components" has been resolved.
+
 ## 19.2.48 (2021-07-20)
 
 ### ListView
