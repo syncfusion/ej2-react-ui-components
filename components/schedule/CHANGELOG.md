@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.51 (2021-08-03)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#F167351` - An issue with the scheduler quick popup closes when using multi-select in the popup content has been fixed.
+
 ## 19.2.49 (2021-07-27)
 
 ### Schedule

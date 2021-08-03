@@ -91,8 +91,8 @@
          }
      }
      
-     public componentDidUpdate(prev: object, state: any, snapshot: any): any {
-        if(!this.isshouldComponentUpdateCalled && this.initRenderCalled) {
+     public componentDidUpdate(): any {
+        if(!this.isshouldComponentUpdateCalled && this.initRenderCalled && !this.isReactForeceUpdate) {
             this.isshouldComponentUpdateCalled = true;
             this.refreshProperties(this.props, true);
         }

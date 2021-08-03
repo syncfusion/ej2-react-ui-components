@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.2.49 (2021-07-27)
+## 19.2.51 (2021-08-03)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I337055` - The issue with Tooltip not destroyed while applying reset after validation been fixed.
+
+## 19.2.46 (2021-07-06)
 
 ### QueryBuilder
 
