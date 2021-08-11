@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.2.55 (2021-08-11)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#I337487` - Now the field's caption can be changed dynamically using the value field settings dialog.
+- `#F167449` - Now the fields panel has been refreshed properly with toolbar UI.
+
 ## 19.2.51 (2021-08-03)
 
 ### Pivot Table

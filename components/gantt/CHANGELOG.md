@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.2.55 (2021-08-11)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#336211` - Issue with Virtual Scrolling in Firefox browse has been resolved.
+
+- `#336211` - Issue with Virtual Scrolling in Firefox browser has been resolved.
+
 ## 19.2.47 (2021-07-13)
 
 ### Gantt

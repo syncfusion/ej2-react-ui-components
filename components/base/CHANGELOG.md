@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.55 (2021-08-11)
+
+### Common
+
+#### Bug Fixes
+
+- `333080` - Resolved the issue with Grid `editTemplate` drop down data source is not updated while using `useState`.
+
 ## 19.2.49 (2021-07-27)
 
 ### Common

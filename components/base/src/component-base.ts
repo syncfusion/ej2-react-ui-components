@@ -305,6 +305,9 @@
                      for (let key of keys) {
                          let oldValue = oldProp[key];
                          let newValue = newProp[key];
+                         if (this.getModuleName()=== 'grid' && key === 'field') {
+                            curObj[key] = newValue;
+                        }
                          if (!oldProp.hasOwnProperty(key) || !this.compareValues(newValue, oldValue)) {
                              if (!propName) {
                                  return { status: false };

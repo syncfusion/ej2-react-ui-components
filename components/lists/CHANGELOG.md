@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.2.51 (2021-08-03)
+## 19.2.55 (2021-08-11)
+
+### ListView
+
+#### Bug Fixes
+
+- `#F167149` - The issue with "Multiple requests are made to the controller when using remote data source with template support in the ListView component" has been resolved.
+
+## 19.2.49 (2021-07-27)
 
 ### Common
 
