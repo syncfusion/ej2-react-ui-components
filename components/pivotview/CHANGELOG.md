@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.56 (2021-08-17)
+
+### Pivot Table
+
+#### New Features
+
+- `#284641`,`#326945`,`#327746`,`#329355` - Through grid settings event, the pivot table's columns can now fit the widest cell’s content without wrapping.
+
 ## 19.2.55 (2021-08-11)
 
 ### Pivot Table

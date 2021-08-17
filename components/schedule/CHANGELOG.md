@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.56 (2021-08-17)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#I334925` - An issue with the longer appointments in timeline year view UI has been resolved.
+
 ## 19.2.55 (2021-08-11)
 
 ### Schedule
