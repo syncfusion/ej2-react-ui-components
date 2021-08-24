@@ -11,6 +11,14 @@
 
 ## [Unreleased]
 
+## 19.2.57 (2021-08-24)
+
+### LinearGauge
+
+#### Bug Fixes
+
+- `#F168138` - When the axis' maximum and minimum values are the same, the axis will not be rendered.
+
 ## 18.3.47 (2020-11-05)
 
 ### LinearGauge

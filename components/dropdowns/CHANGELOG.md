@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.57 (2021-08-24)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I339171`, `#F165604` - Issue with "selected value is not updated to the react hook form controller" has been resolved.
+
 ## 19.2.55 (2021-08-11)
 
 ### ListBox

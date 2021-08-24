@@ -5,7 +5,15 @@
 
 ## [Unreleased]
 
-## 19.2.56 (2021-08-17)
+## 19.2.57 (2021-08-24)
+
+### CircularGauge
+
+#### Bug Fixes
+
+- `#F168138` - When the axis' maximum and minimum values are the same, the axis will not be rendered.
+
+## 19.2.49 (2021-07-27)
 
 ### CircularGauge
 
