@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.2.59 (2021-08-31)
+
+### Grid
+
+#### Bug Fixes
+
+- `#F167458` - `enablePersistence` was not maintained when routing to another page is resolved.
+- `#I339406` - Filtering array of values on date column by `filterByColum`, issue has been fixed.
+- `#F168110` - Filter operation is not cleared while clicking the clear button with immediate mode, issue has been fixed.
+
 ## 19.2.57 (2021-08-24)
 
 ### Grid

@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 19.2.57 (2021-08-24)
+## 19.2.59 (2021-08-31)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I337211` - The issue with "Styles are not properly removed from the body, when open and close the fullscreen `non-modal` dialog" has been resolved.
+- `#I339787` - The issue with "Dialog `overlay` element is not removed properly from the DOM" has been resolved.
+
+## 19.2.56 (2021-08-17)
 
 ### Tooltip
 

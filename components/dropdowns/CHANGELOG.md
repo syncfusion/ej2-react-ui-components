@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 19.2.57 (2021-08-24)
+## 19.2.59 (2021-08-31)
 
-### DropDownList
+### MultiSelect
 
 #### Bug Fixes
 
-- `#I339171`, `#F165604` - Issue with "selected value is not updated to the react hook form controller" has been resolved.
+- `#F166649` - Issue with "previously selected chip value is changed while selecting the custom value from popup" has been resolved.
 
 ## 19.2.55 (2021-08-11)
 
@@ -1788,6 +1788,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.2.57 (2021-08-24)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I339171`, `#F165604` - Issue with "selected value is not updated to the react hook form controller" has been resolved.
 
 ## 19.1.69 (2021-06-15)
 

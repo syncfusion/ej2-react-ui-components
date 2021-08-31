@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.2.57 (2021-08-24)
+## 19.2.59 (2021-08-31)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#F168235` -  Adding a new row as a child using context menu works fine.
+
+## 19.2.56 (2021-08-17)
 
 ### Tree Grid
 
