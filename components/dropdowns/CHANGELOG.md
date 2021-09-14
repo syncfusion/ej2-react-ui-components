@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 19.2.60 (2021-09-07)
+## 19.2.62 (2021-09-14)
 
-### MultiSelect
+### DropDownList
 
 #### Bug Fixes
 
-- `#F166649` - Issue with "previously selected chip value is changed while selecting the custom value from popup" has been resolved.
+- `#I341137` - Issue with "fixed grouping headers are not updated while scrolling the popup after set the grouping dynamically" has been resolved.
 
 ## 19.2.55 (2021-08-11)
 
@@ -1788,6 +1788,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.2.59 (2021-08-31)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#F166649` - Issue with "previously selected chip value is changed while selecting the custom value from popup" has been resolved.
 
 ## 19.2.57 (2021-08-24)
 

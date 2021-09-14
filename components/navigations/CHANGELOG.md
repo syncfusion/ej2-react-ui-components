@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.2.60 (2021-09-07)
+## 19.2.62 (2021-09-14)
+
+### Sidebar
+
+#### Bug Fixes
+
+- `#I341648` - The issue with "The resize event is not unwired after destroying the Sidebar component" has been resolved.
+
+## 19.2.59 (2021-08-31)
 
 ### Tab
 

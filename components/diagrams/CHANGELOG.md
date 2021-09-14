@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.62 (2021-09-14)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I341447` - The issue "The historyChange event is not triggered while rotate and move the node" has been fixed.
+
 ## 19.2.59 (2021-08-31)
 
 ### Diagram
