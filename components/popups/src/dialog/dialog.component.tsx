@@ -32,7 +32,6 @@ export class DialogComponent extends Dialog {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

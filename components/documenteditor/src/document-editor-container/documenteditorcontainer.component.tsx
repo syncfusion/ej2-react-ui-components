@@ -27,7 +27,6 @@ export class DocumentEditorContainerComponent extends DocumentEditorContainer {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

@@ -27,7 +27,6 @@ export class BarcodeGeneratorComponent extends BarcodeGenerator {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

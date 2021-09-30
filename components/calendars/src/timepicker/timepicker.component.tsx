@@ -27,7 +27,6 @@ export class TimePickerComponent extends TimePicker {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

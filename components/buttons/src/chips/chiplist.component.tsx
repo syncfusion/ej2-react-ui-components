@@ -28,7 +28,6 @@ export class ChipListComponent extends ChipList {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

@@ -28,7 +28,6 @@ export class SparklineComponent extends Sparkline {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

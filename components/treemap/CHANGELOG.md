@@ -11,22 +11,6 @@
 
 ## [Unreleased]
 
-## 19.2.62 (2021-09-14)
-
-### TreeMap
-
-#### Bug Fixes
-
-- TreeMap properly render in React when theme applied.
-
-## 19.2.47 (2021-07-13)
-
-### TreeMap
-
-#### Bug Fixes
-
-- `#I331257` - Labels will be displayed for all the leaf items in the TreeMap.
-
 ## 18.2.44 (2020-07-07)
 
 ### TreeMap
@@ -99,4 +83,8 @@ The TreeMap is used to displayed the hierarchical or multi-level data to visuali
 - **User-Interactions** - TreeMap supports the Drilldown, Tooltip, Highlight and Selection user interaction features.
 - **Print and Export** - TreeMap supports printing and exporting as different file types.
 
+
+## 18.1.36-beta (2020-03-19)
+
+- `#258211` - Support to customize the header of the treemap items is provided in the `itemRendering` and `itemClick` events.
 

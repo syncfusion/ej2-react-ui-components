@@ -28,7 +28,6 @@ export class DropDownButtonComponent extends DropDownButton {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

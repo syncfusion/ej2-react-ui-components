@@ -28,7 +28,6 @@ export class DashboardLayoutComponent extends DashboardLayout {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

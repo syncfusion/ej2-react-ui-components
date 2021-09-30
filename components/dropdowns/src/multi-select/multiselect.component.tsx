@@ -32,7 +32,6 @@ export class MultiSelectComponent extends MultiSelect {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

@@ -28,7 +28,6 @@ export class MapsComponent extends Maps {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

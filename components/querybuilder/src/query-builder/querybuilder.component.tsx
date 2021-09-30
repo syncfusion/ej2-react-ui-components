@@ -30,7 +30,6 @@ export class QueryBuilderComponent extends QueryBuilder {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

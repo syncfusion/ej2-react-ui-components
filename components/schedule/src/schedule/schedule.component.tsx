@@ -15,6 +15,7 @@ export interface ScheduleTypecast {
     timeScaleMinorSlotTemplate?: string | Function | any;
     timeScaleMajorSlotTemplate?: string | Function | any;
     resourceHeaderTemplate?: string | Function | any;
+    headerIndentTemplate?: string | Function | any;
     quickInfoTemplatesHeader?: string | Function | any;
     quickInfoTemplatesContent?: string | Function | any;
     quickInfoTemplatesFooter?: string | Function | any;
@@ -44,7 +45,6 @@ export class ScheduleComponent extends Schedule {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

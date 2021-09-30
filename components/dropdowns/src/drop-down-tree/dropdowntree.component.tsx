@@ -31,7 +31,6 @@ export class DropDownTreeComponent extends DropDownTree {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

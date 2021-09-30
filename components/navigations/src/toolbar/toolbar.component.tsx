@@ -28,7 +28,6 @@ export class ToolbarComponent extends Toolbar {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

@@ -30,7 +30,6 @@ export class BulletChartComponent extends BulletChart {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

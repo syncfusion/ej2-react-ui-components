@@ -27,7 +27,6 @@ export class DatePickerComponent extends DatePicker {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

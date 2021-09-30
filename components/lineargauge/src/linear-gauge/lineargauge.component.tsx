@@ -30,7 +30,6 @@ export class LinearGaugeComponent extends LinearGauge {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

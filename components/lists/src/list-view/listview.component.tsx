@@ -31,7 +31,6 @@ export class ListViewComponent extends ListView {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

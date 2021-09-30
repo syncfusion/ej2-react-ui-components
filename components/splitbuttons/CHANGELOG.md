@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.2.62 (2021-09-14)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- Issue with keyboard action has been resolved.
-
 ## 19.2.55 (2021-08-11)
 
 ### DropDownButton

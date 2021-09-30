@@ -31,7 +31,6 @@ export class TreeMapComponent extends TreeMap {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

@@ -27,7 +27,6 @@ export class HeatMapComponent extends HeatMap {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

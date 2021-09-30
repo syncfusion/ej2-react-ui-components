@@ -27,7 +27,6 @@ export class NumericTextBoxComponent extends NumericTextBox {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

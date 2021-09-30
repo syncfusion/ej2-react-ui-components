@@ -27,7 +27,6 @@ export class SwitchComponent extends Switch {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

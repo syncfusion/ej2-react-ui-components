@@ -27,7 +27,6 @@ export class TextBoxComponent extends TextBox {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

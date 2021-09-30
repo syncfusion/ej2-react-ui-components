@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 19.3.43 (2021-09-30)
+
+### Grid
+
+#### New Features
+
+- `#I284744`, `#I289234` - Provided keyboard navigation support for infinite scroll.
+- `#I314791`, `#I311562` - Provided group caption collapse support for infinite scroll.
+
+#### Breaking Changes
+
+- The `groupSettings.disablePageWiseAggregates` option will be enabled automatically when using aggregates and grouping in an infinite scroll.
+
 ## 19.2.62 (2021-09-14)
 
 ### Grid
@@ -13,8 +26,6 @@
 - `#I341127` - Excel filter sub menus does not open in mobile device is Fixed.
 - `#I340337` - Immutable mode doesn’t work for deep compare data issue has been fixed.
 - `#I336801` - Infinite scrolling with editing with checkbox selection issue has been fixed.
-
-- `#I340990` - Template column misplaced while editing a Grouped columns has been fixed.
 
 ## 19.2.60 (2021-09-07)
 

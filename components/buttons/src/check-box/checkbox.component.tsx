@@ -27,7 +27,6 @@ export class CheckBoxComponent extends CheckBox {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

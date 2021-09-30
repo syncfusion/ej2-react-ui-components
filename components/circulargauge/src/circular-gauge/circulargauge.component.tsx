@@ -30,7 +30,6 @@ export class CircularGaugeComponent extends CircularGauge {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

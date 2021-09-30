@@ -29,7 +29,6 @@ export class PagerComponent extends Pager {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

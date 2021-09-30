@@ -32,7 +32,6 @@ export class DiagramComponent extends Diagram {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

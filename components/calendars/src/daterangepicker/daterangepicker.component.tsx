@@ -31,7 +31,6 @@ export class DateRangePickerComponent extends DateRangePicker {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

@@ -35,7 +35,6 @@ export class GridComponent extends Grid {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

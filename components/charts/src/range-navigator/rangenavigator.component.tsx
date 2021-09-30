@@ -30,7 +30,6 @@ export class RangeNavigatorComponent extends RangeNavigator {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

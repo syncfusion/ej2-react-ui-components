@@ -27,7 +27,6 @@ export class RecurrenceEditorComponent extends RecurrenceEditor {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

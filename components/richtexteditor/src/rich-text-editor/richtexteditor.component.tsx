@@ -29,7 +29,6 @@ export class RichTextEditorComponent extends RichTextEditor {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

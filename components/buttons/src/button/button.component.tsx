@@ -27,7 +27,6 @@ export class ButtonComponent extends Button {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

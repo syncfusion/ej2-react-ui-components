@@ -27,7 +27,6 @@ export class CalendarComponent extends Calendar {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

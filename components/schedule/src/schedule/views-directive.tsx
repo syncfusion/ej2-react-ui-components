@@ -9,6 +9,7 @@ export interface ViewsDirTypecast {
     eventTemplate?: string | Function | any;
     monthHeaderTemplate?: string | Function | any;
     resourceHeaderTemplate?: string | Function | any;
+    headerIndentTemplate?: string | Function | any;
     timeScaleMinorSlotTemplate?: string | Function | any;
     timeScaleMajorSlotTemplate?: string | Function | any;
     groupHeaderTooltipTemplate?: string | Function | any;

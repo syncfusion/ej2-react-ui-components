@@ -30,7 +30,6 @@ export class AccumulationChartComponent extends AccumulationChart {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

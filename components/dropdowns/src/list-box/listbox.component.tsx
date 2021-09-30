@@ -29,7 +29,6 @@ export class ListBoxComponent extends ListBox {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

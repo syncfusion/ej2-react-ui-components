@@ -28,7 +28,6 @@ export class SymbolPaletteComponent extends SymbolPalette {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

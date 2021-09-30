@@ -27,7 +27,6 @@ export class OverviewComponent extends Overview {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

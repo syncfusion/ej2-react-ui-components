@@ -28,7 +28,6 @@ export class TabComponent extends Tab {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

@@ -27,7 +27,6 @@ export class DataMatrixGeneratorComponent extends DataMatrixGenerator {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

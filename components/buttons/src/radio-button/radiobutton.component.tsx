@@ -27,7 +27,6 @@ export class RadioButtonComponent extends RadioButton {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

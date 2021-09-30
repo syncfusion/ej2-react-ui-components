@@ -28,7 +28,6 @@ export class SplitterComponent extends Splitter {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

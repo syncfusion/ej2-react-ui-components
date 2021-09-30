@@ -27,7 +27,6 @@ export class ColorPickerComponent extends ColorPicker {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

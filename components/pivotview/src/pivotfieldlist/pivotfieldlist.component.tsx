@@ -27,7 +27,6 @@ export class PivotFieldListComponent extends PivotFieldList {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

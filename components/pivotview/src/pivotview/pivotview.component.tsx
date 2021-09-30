@@ -29,7 +29,6 @@ export class PivotViewComponent extends PivotView {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

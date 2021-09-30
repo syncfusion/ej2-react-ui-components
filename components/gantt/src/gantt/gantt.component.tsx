@@ -39,7 +39,6 @@ export class GanttComponent extends Gantt {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

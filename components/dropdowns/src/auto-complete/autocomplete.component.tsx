@@ -32,7 +32,6 @@ export class AutoCompleteComponent extends AutoComplete {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

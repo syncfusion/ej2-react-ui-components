@@ -2,13 +2,31 @@
 
 ## [Unreleased]
 
+## 19.3.43 (2021-09-30)
+
+### Gantt
+
+#### New Features
+
+- `#304621, #322659` - Provided percentage support for height and width of Gantt element.
+
 ## 19.2.62 (2021-09-14)
 
 ### Gantt
 
 #### Bug Fixes
 
+- `#340421` - In smaller resolution the splitter appeared in wrong position issue has been fixed.
+- `#341502` - Indicators disappear when datasource changed dynamically issue has been fixed.
+
+## 19.2.60 (2021-09-07)
+
+### Gantt
+
+#### Bug Fixes
+
 - `#340155` - Dialog closes when pressing insert key issue has been fixed.
+- `#333851` - Dynamically changing the holidays issue has been fixed.
 
 ## 19.2.59 (2021-08-31)
 
@@ -36,8 +54,6 @@
 - `#338587` - Issue in assigning empty data to datasource has been resolved.
 - `#335677` - Issue in `expandAtLevel` and `collapseAtLevel` method with virtual scrolling has been resolved.
 
-- `#338587` - Issue in assigning empty data to datasource has been resolved.
-
 ## 19.2.55 (2021-08-11)
 
 ### Gantt
@@ -45,8 +61,6 @@
 #### Bug Fixes
 
 - `#336211` - Issue with Virtual Scrolling in Firefox browse has been resolved.
-
-- `#336211` - Issue with Virtual Scrolling in Firefox browser has been resolved.
 
 ## 19.2.47 (2021-07-13)
 

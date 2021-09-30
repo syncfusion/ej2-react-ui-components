@@ -30,7 +30,6 @@ export class UploaderComponent extends Uploader {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

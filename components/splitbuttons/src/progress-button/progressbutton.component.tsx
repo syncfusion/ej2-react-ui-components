@@ -27,7 +27,6 @@ export class ProgressButtonComponent extends ProgressButton {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

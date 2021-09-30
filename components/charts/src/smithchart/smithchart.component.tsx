@@ -28,7 +28,6 @@ export class SmithchartComponent extends Smithchart {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

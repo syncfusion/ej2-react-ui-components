@@ -30,7 +30,6 @@ export class SpreadsheetComponent extends Spreadsheet {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

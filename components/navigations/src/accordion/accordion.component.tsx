@@ -31,7 +31,6 @@ export class AccordionComponent extends Accordion {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

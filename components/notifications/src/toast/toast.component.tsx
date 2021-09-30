@@ -32,7 +32,6 @@ export class ToastComponent extends Toast {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

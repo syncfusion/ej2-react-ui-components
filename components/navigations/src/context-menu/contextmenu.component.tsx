@@ -28,7 +28,6 @@ export class ContextMenuComponent extends ContextMenu {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

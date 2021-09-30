@@ -30,7 +30,6 @@ export class SliderComponent extends Slider {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

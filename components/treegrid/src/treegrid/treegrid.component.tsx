@@ -34,7 +34,6 @@ export class TreeGridComponent extends TreeGrid {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

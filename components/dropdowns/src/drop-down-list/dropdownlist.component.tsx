@@ -33,7 +33,6 @@ export class DropDownListComponent extends DropDownList {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

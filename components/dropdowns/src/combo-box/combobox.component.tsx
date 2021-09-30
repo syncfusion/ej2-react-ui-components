@@ -32,7 +32,6 @@ export class ComboBoxComponent extends ComboBox {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

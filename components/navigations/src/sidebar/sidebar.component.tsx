@@ -27,7 +27,6 @@ export class SidebarComponent extends Sidebar {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

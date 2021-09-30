@@ -29,7 +29,6 @@ export class TreeViewComponent extends TreeView {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

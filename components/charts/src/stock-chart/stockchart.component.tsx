@@ -30,7 +30,6 @@ export class StockChartComponent extends StockChart {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

@@ -34,7 +34,6 @@ export class KanbanComponent extends Kanban {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

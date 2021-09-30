@@ -29,7 +29,6 @@ export class InPlaceEditorComponent extends InPlaceEditor {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

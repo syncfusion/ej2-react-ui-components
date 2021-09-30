@@ -30,7 +30,6 @@ export class MenuComponent extends Menu {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }
