@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.44 (2021-10-05)
+
+### File Manager
+
+#### Bug Fixes
+
+- `#I340018` - The issue with "Script gets executed when new folder is created with HTML tags while using enableHtmlSanitizer property of FileManager component" has been resolved.
+
 ## 19.2.56 (2021-08-17)
 
 ### File Manager

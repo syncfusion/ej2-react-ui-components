@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.3.44 (2021-10-05)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I337722` - The issue "Connector Position not Updated Properly when rotating it with segments" has been fixed.
+- `#I341943` - The issue "BringIntoView API does not bring the large bounds into the screen viewport" has been fixed.
+
 ## 19.3.43 (2021-09-30)
 
 ### Diagram
@@ -16,6 +25,7 @@
 - `#I339619` - The issue "An exception occurs when save and load the swimlane with BPMN children" has been fixed.
 - `#I339487` - The issue "The connector drawing object does not snap to near by port" has been fixed.
 - `#I342173` - The issue "An exception occurs when clear the diagram using Clear API" has been fixed.
+- `#I341524` - The issue "The selection change event returns empty NewValue argument while selecting one of the multi-selected nodes" has been fixed.
 
 ## 19.2.56 (2021-08-17)
 

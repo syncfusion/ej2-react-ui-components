@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 19.3.44 (2021-10-05)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I338000` - The issue with `actionComplete` event triggered twice, when replacing the inserted image using QuickToolbar has been resolved.
+- `#I343188` - The issue with "Focusing a table cell that was recently inserted in the Rich Text Editor, the page scrolls to the end and the table loses its focus" has been resolved.
+- `#F168838` - The issue with "Image is not inserted in the editor, when using the `Turkish` language" has been resolved.
+
+#### New Features
+
+- `#I231505`, `#I230743`, `#I239381`, `#I261360`, `#I273955`, `#I300418`, `#I307752`, `#I312982` - Provided support to customize the tags appended when enter or shift + enter key is pressed using the property `enterKey` and `shiftEnterKey` in the Rich Text Editor.
+
 ## 19.3.43 (2021-09-30)
 
 ### RichTextEditor
@@ -9,8 +23,6 @@
 #### New Features
 
 - `#I231505`, `#I230743`, `#I239381`, `#I261360`, `#I273955`, `#I300418`, `#I307752`,`#I312982` - Provided support to customize the tags appended when enter or shift + enter key is pressed using the property `enterKey` and `shiftEnterKey` in the Rich Text Editor.
-
-- `#I231505`, `#I230743`, `#I239381`, `#I261360`, `#I273955`, `#I300418`, `#I307752`, `#I312982` - Provided support to customize the tags appended when enter or shift + enter key is pressed using the property `enterKey` and `shiftEnterKey` in the Rich Text Editor.
 
 #### Breaking Changes
 
@@ -38,7 +50,6 @@
 #### Bug Fixes
 
 - `#I332614` - Resolved the issue with table row and column are not resizable, when its position exceeds the height of the Rich Text Editor.
-- `#I338000` - The issue with `actionComplete` event triggered twice, when replacing the inserted image using QuickToolbar has been resolved.
 - `#I340075` - The issue with "Resizing the table columns not updated the table cells properly" has been resolved.
 
 ## 19.2.59 (2021-08-31)

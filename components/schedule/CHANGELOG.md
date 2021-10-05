@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.3.44 (2021-10-05)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#FB29036` - An issue with the `renderCell` event arguments as `resourceGroupCells` has been fixed in the timeline year view with resources.
+
+- `#F166305` - An issue with dynamically changed `minDate` and `maxDate` property in react scheduler has been fixed.
+
 ## 19.3.43 (2021-09-30)
 
 ### Schedule
@@ -21,8 +31,6 @@
 - `#F168358` - An issue with the "delete icon is not disabled in mobile mode" has been fixed.
 - `#I340332` - An issue with the events rendering performance in vertical views has been fixed.
 - `#I342489` - An issue with identify the clicked button on `popupClose` event has been fixed by providing `event` option on `PopupCloseEventArgs`.
-
-- `#F166305` - An issue with dynamically changed `minDate` and `maxDate` property in react scheduler has been fixed.
 
 ## 19.2.59 (2021-08-31)
 

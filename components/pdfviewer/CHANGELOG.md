@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.3.44 (2021-10-05)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#297147`, `#339056` - Now, the free text annotations with 90 and 270 rotated angle are rotated properly.
+- `#341677` - Now, the opacity is applied properly for the custom stamps.
+- `#341074` - Now, the search icon is visible to close the search dialog.
+
 ## 19.1.67 (2021-06-08)
 
 ### PDF Viewer

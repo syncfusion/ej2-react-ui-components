@@ -28,7 +28,6 @@ export class ProgressBarComponent extends ProgressBar {
     public refs: {
         [key: string]: React.ReactInstance
     };
-
     constructor(props: any) {
         super(props);
     }

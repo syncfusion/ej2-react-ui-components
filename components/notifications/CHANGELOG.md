@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.43 (2021-09-30)
+
+### Toast
+
+#### New Features
+
+- `#I329725`, `#F164851` - Provided the support to show the toast in any place using the toast utility function.
+
 ## 19.1.54 (2021-03-30)
 
 ### Toast
