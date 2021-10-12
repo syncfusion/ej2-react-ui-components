@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.45 (2021-10-12)
+
+### ListView
+
+#### Bug Fixes
+
+- `#F152660` - The issue with "ListView is not rendered while using both checkbox and template" has been resolved.
+
 ## 19.3.44 (2021-10-05)
 
 ### ListView

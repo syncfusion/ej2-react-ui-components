@@ -28,10 +28,10 @@ Following list of components are available in the package
 
 * Breadcrumb - Graphical user interface that helps to identify or highlight the current location within a hierarchical structure of websites. The aim is to make the user aware of their current position in a hierarchy of website links.
 
-* [Getting Started](https://ej2.syncfusion.com/react/documentation/breadcrumb/getting-started?lang=typescript&utm_source=npm&utm_campaign=breadcrumb)
-* [API References](https://ej2.syncfusion.com/react/documentation/api/breadcrumb?utm_source=npm&utm_campaign=breadcrumb)
-* [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=breadcrumb#/material/breadcrumb/default)
-* [Product Page](https://www.syncfusion.com/react-ui-components/react-breadcrumb)
+  * [Getting Started](https://ej2.syncfusion.com/react/documentation/breadcrumb/getting-started?lang=typescript&utm_source=npm&utm_campaign=breadcrumb)
+  * [API References](https://ej2.syncfusion.com/react/documentation/api/breadcrumb?utm_source=npm&utm_campaign=breadcrumb)
+  * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=breadcrumb#/material/breadcrumb/default)
+  * [Product Page](https://www.syncfusion.com/react-ui-components/react-breadcrumb)
 
 * ContextMenu - Graphical user interface that appears on the user right click/touch hold action. It has the support to provide nested level menu items.
 
@@ -104,10 +104,10 @@ Sidebar component is used in the following samples.
 
 ### Breadcrumb
 
-1. **Overflow Mode** - Used to limit the number of breadcrumb items to be displayed.
-2. **Icons** - Icons can be specified in Breadcrumb items.
-3. **Template** - Supports template for item and separator.
-4. **Bind To Location** - Supports items to be rendered based on the URL or current location.
+1. **Icons** - Icons can be specified in Breadcrumb items.
+2. **Template** - Supports template for item and separator.
+3. **Bind To Location** - Supports items to be rendered based on the URL or current location.
+4. **Overflow Mode** - Used to limit the number of breadcrumb items to be displayed.
 5. **Accessibility** - Provided with built-in accessibility support that helps to access all the Breadcrumb component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### ContextMenu

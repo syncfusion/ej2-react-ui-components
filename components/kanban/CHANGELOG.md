@@ -2,7 +2,23 @@
 
 ## [Unreleased]
 
+## 19.3.45 (2021-10-12)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#FB29010` - The issue with "`showItemCount` in swimlane row is not resetting to zero if no cards are present" has been resolved.
+
 ## 19.3.44 (2021-10-05)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#F169009` - The issue with "Script error thrown when enabling the `enablePersistence` property with remote data" has been resolved.
+
+## 19.3.43 (2021-09-30)
 
 ### Kanban
 

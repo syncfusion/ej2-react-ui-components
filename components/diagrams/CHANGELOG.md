@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.45 (2021-10-12)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I342681` - The issue "BPMN Task shape becomes ellipse shape when printing the diagram" has been fixed.
+
 ## 19.3.44 (2021-10-05)
 
 ### Diagram

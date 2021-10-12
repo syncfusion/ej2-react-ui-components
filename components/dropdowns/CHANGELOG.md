@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.45 (2021-10-12)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I343666` - Issue with "data list is not updated to the popup while changing the query property on dynamically with filtering mode" has been resolved.
+
 ## 19.3.44 (2021-10-05)
 
 ### Dropdown Tree
@@ -13,6 +21,7 @@
 #### Bug Fixes
 
 - `#I342360`, `#I342351` - The issue with "The Dropdown Tree component is not rendered when providing an id that starts with an integer type" has been resolved.
+- `I341114` - Issue with "When listbox is selected with checkbox, drag and drop is not working properly" has been resolved.
 
 ## 19.2.62 (2021-09-14)
 

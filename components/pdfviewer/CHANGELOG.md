@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.3.45 (2021-10-12)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#F169102` - Now, the download action is working properly after importing the provided customer document.
+- `#342951` - Now, the Bookmark navigation is working properly in mobile mode.
+- `#343011` - Now, the download action is working properly after adding the text markup annotation.
+
 ## 19.3.44 (2021-10-05)
 
 ### PDF Viewer

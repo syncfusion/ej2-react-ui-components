@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.44 (2021-10-05)
+## 19.3.45 (2021-10-12)
+
+### Breadcrumb
+
+#### Bug Fixes
+
+- Disabled item get tab focus when item's URL is specified issue has been resolved.
+
+## 19.3.43 (2021-09-30)
 
 ### Tab
 
