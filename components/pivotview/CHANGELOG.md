@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.3.46 (2021-10-19)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#I345297` - While clicking the value sorting icon, the "cellClick" event is now properly triggered.
+- `#I342886` - The "Calculated Field" feature in the pivot table now works properly in Angular production mode.
+
 ## 19.3.44 (2021-10-05)
 
 ### Pivot Table

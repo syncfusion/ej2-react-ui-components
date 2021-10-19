@@ -2,7 +2,24 @@
 
 ## [Unreleased]
 
+## 19.3.46 (2021-10-19)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I345054` - Chart with shared tooltip and huge data throws console error issue is fixed.
+
 ## 19.3.45 (2021-10-12)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I339050` - Resolved CSP issues in the chart while using inline styles.
+- Data point highlight is now properly working while enabling the tooltip.
+
+## 19.3.44 (2021-10-05)
 
 ### Chart
 

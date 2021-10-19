@@ -8,7 +8,15 @@
 
 ## [Unreleased]
 
-## 19.3.45 (2021-10-12)
+## 19.3.46 (2021-10-19)
+
+### Maps
+
+#### Bug Fixes
+
+- Script error will not be thrown when a shape is selected without binding the data source to the Maps.
+
+## 19.3.44 (2021-10-05)
 
 ### Maps
 

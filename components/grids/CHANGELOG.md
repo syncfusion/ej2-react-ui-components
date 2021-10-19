@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.3.46 (2021-10-19)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I343873` - Infinite Scroll spinner issue while loading next block is fixed.
+- `#I344229` - Script error while searching in the infinite scrolling enabled is resolved.
+- `#I344295` - Infinite scroll grid is duplicating the last row issue has been fixed.
+
 ## 19.3.45 (2021-10-12)
 
 ### Grid

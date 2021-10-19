@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.46 (2021-10-19)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#339329`, `#341199` - Now, the default context menu of browser will no longer be shown on selecting the text in mobile view.
+
 ## 19.3.45 (2021-10-12)
 
 ### PDF Viewer

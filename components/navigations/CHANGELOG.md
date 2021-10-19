@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.46 (2021-10-19)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I344626` - An issue with the tab header and content items are not updated on state change has been fixed.
+
 ## 19.3.45 (2021-10-12)
 
 ### Breadcrumb

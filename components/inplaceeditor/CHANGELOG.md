@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.46 (2021-10-19)
+
+### In-place Editor
+
+#### Bug Fixes
+
+- `#I341653` - The issue with "Window `resize` event listener is not removed properly" has been resolved.
+
 ## 19.2.51 (2021-08-03)
 
 ### In-place Editor
