@@ -2,7 +2,25 @@
 
 ## [Unreleased]
 
+## 19.3.47 (2021-10-26)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I342950` - The issue with "font-Family styles are not applied when changing dynamically" has been resolved.
+- `#I345842` - The issue with "Table cells with classes added initially are removed, when focusing on the table cells" has been resolved.
+
 ## 19.3.46 (2021-10-19)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I342605` - The `removeUrl` API configured controller action, now receives the image file data instead of the `src` attribute value, When removing an image from the editor.
+- `#I343769` - The issue with the link quick toolbar opened when placing the cursor at the first letter of the hyperlink word in the Rich Text Editor content has been resolved.
+
+## 19.3.45 (2021-10-12)
 
 ### RichTextEditor
 

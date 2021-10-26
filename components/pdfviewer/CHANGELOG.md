@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.47 (2021-10-26)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#344034` - The Script error will no longer be thrown if we select text markup annotation when text selection is disabled.
+
 ## 19.3.46 (2021-10-19)
 
 ### PDF Viewer

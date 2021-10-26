@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.3.47 (2021-10-26)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I342681` - The issue "BPMN Task shape becomes square shape when printing the diagram" has been fixed.
+- `#I345844` - The issue "An exception occurs when perform search in the symbol palette" has been fixed.
+
 ## 19.3.46 (2021-10-19)
 
 ### Diagram

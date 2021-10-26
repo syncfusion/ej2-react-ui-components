@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.3.47 (2021-10-26)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#I337087`, `#I344332` - Improved the suggestion construction logic for error words.
+- `#I338302` - Resolved the hanging issue when opening document with table.
+- `#I339240` - RTL list is now deleted properly.
+
 ## 19.3.46 (2021-10-19)
 
 ### Document Editor

@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 19.3.47 (2021-10-26)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#343991` - Additional parameters are not passed to `BatchUpdate` method when deleting the row issue has been fixed.
+- `#344100` - Issue in cancelling the drawing of predecessor line in `actionBegin` event has been fixed.
+- `#345841` - Issue on taskbar editing when timezone property set as `UTC` has been fixed.
+- `#341691` - Bring back browser default context menu in dialog editing has been fixed.
+
+- `#344100` - Issue in cancelling the drawing of predecessor line in `actionBegin` event has been fixed.
+
+#### Breaking Changes
+
+- Add and Edit dialog is now rendered as direct child to *body* element.
+
 ## 19.3.46 (2021-10-19)
 
 ### Gantt

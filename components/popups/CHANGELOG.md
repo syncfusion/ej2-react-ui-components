@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 19.3.47 (2021-10-26)
+
+### Tooltip
+
+- `#I341459` - The issue with "The Tooltip's pop-up position misaligns on window resize" has been resolved.
+
 ## 19.2.62 (2021-09-14)
 
 ### Dialog

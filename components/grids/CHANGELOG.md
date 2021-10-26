@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 19.3.47 (2021-10-26)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I345516` - Grid sort icon overlapping with column header text in `boostrap5` theme issue has been fixed.
+- `#I341348` - Provided the support for clearing all the Grid actions.
+- `#I344299` - Grid data is not loaded when using custom binding with `Infinitescrolling` is fixed.
+- `#F167378` - Throws scripts error while apply sorting in load event with `Infinitescrolling` is resolved.
+- `#I345190` - Date column filtering operator issue has been fixed.
+
 ## 19.3.46 (2021-10-19)
 
 ### Grid
@@ -11,6 +23,7 @@
 - `#I343873` - Infinite Scroll spinner issue while loading next block is fixed.
 - `#I344229` - Script error while searching in the infinite scrolling enabled is resolved.
 - `#I344295` - Infinite scroll grid is duplicating the last row issue has been fixed.
+- `#FB21743` - Grouping collapse is not working properly with Infinite scroll if it don't have aggregates issue has been fixed.
 
 ## 19.3.45 (2021-10-12)
 

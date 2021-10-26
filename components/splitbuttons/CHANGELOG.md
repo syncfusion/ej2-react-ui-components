@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 19.3.46 (2021-10-19)
+## 19.3.47 (2021-10-26)
 
 ### DropDownButton
 
 #### Bug Fixes
 
-- `createPopupOnClick` property scenario not handled properly in `DropDownButton` issue has been resolved.
+- `createPopupOnClick` property scenario not handled properly in `DropDownButton` has been resolved.
 
 ## 19.2.55 (2021-08-11)
 

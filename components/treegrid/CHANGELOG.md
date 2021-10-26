@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 19.3.47 (2021-10-26)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I343484` - Resolved deleting the record by using deleteRow and deleteRecord methods in cellSelection mode.
+- `#I345435` - Tree Column value shows properly when text wrap is enabled.
+- `#I343976` - Resolved top records hiding issue on random expand/collapse action when Virtualization enabled.
+- `#I342822` - Expand and collapse icon shown properly on re ordering column with `enablePersistence` property.
+
+- `#I345435` - Tree Column value shows properly when text wrap is enabled.
+
 ## 19.3.46 (2021-10-19)
 
 ### Tree Grid
