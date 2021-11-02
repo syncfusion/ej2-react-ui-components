@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.47 (2021-10-26)
+## 19.3.48 (2021-11-02)
+
+### ListBase
+
+#### Bug Fixes
+
+- `#I344581` - The issue with "ListView item is displayed as an anchor element when URL is present in data source" has been resolved.
+
+## 19.3.45 (2021-10-12)
 
 ### ListView
 

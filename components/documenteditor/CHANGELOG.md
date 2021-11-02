@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.3.48 (2021-11-02)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#I340276` - Resolved issue with entering custom date time value in form field.
+- `#I344605` - Resolved the context menu rendering issue for multiple instances of DocumentEditor in the same page.
+- `#I343106` - Resolved the table border rendering issue.
+
 ## 19.3.47 (2021-10-26)
 
 ### Document Editor
@@ -65,7 +75,7 @@
 - `#I339872` – Page number is footer is now updated properly.
 - `#I339576`, `#F168072` – Resolved the issue in applying page orientation with the section break.
 - `#I339027` – Resolved the script error in saving tracked content in header/footer.
-- `#I340532` – Html elements are nor properly disposed.
+- `#I340532` – Html elements are now properly disposed.
 - `#F168319` – Resolved the ViewChange event binding issue in Document Editor component
 - `#I340643`, `#I341375` – Resolved the history issue in comment operations
 - `#I341840` – Resolved the table rendering issue.

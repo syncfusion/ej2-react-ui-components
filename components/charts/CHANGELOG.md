@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.47 (2021-10-26)
+## 19.3.48 (2021-11-02)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I346066` - Pie chart datalabels are now rendering properly while disabling the legend dynamically.
+
+## 19.3.46 (2021-10-19)
 
 ### Chart
 

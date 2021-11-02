@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 19.3.48 (2021-11-02)
+
+### Schedule
+
+#### New Features
+
+- `#I224286`, `#I224730`, `#I316683`, `#I321325`, `#I331265`, `#I331820`, `#I338907`, `#I342102`, `#F169564`, `#F169824`, `#F169024` - Provided support to render the spanned events in the time slot region also based on the `spannedEventPlacement` option within the `eventSettings` property.
+
+#### Bug Fixes
+
+- `#F158202` - The `getCurrentViewEvents` method not returns current view events in Agenda view has been fixed.
+- `#I343356` - An issue while using two dynamic validation error message for the scheduler field has been fixed.
+- `#I345316` - An issue while saving an event dynamically using `saveEvent` method only with `timezone` property for the scheduler has been fixed.
+- `#F169453` - An issue with the horizontal scroll position in the timeline month, while dragging or resizing an event has been fixed.
+- `#I342117` - An issue with virtual scrolling down not happening issue in Agenda view mobile mode has been fixed.
+
 ## 19.3.46 (2021-10-19)
 
 ### Schedule

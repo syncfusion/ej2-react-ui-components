@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 19.3.48 (2021-11-02)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- While no fields are bound in the values axis, the empty pivot table is now properly displayed.
+- Even the value fields starts with the same unique name (fieldName), the Pivot Table values are now properly displayed.
+
+## 19.3.47 (2021-10-26)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#I345673` - Even the value fields starts with the same caption, the Pivot Table values are now properly displayed.
+
 ## 19.3.46 (2021-10-19)
 
 ### Pivot Table

@@ -2,12 +2,21 @@
 
 ## [Unreleased]
 
+## 19.3.48 (2021-11-02)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I342419` - Resolved performing add operation after calling refresh method.
+
 ## 19.3.47 (2021-10-26)
 
 ### Tree Grid
 
 #### Bug Fixes
 
+- `#F169151` - Resolved issue in drag and drop to Listbox component.
 - `#I343484` - Resolved deleting the record by using deleteRow and deleteRecord methods in cellSelection mode.
 - `#I345435` - Tree Column value shows properly when text wrap is enabled.
 - `#I343976` - Resolved top records hiding issue on random expand/collapse action when Virtualization enabled.

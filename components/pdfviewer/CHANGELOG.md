@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 19.3.48 (2021-11-02)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#344888`, `#F169870` - Now, signature dialog settings is working properly for the handwritten signature dialog.
+- `#346090`- Now, the primary toolbar should not hide if form designer toolbar is visible.
+- `#344897`, `#345574` - Now, the indicator text and required properties for signature fields settings are working properly.
+- `#344082`- Now, signature text annotation is rendered properly on loading the document.
+
 ## 19.3.47 (2021-10-26)
 
 ### PDF Viewer

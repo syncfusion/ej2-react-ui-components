@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 19.3.47 (2021-10-26)
+## 19.3.48 (2021-11-02)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `createPopupOnClick` property scenario not handled properly in `ColorPicker` has been resolved.
+- `I344127` - Issue with ColorPicker value not updated properly if opacity is set to false has been resolved.
+
+## 19.3.44 (2021-10-05)
 
 ### NumericTextBox
 
