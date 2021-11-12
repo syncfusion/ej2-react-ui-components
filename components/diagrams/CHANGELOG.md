@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.53 (2021-11-12)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I346110` - The issue "Text did not display on Connector line after adjusting the Bezier Connector" has been fixed.
+
 ## 19.3.48 (2021-11-02)
 
 ### Diagram

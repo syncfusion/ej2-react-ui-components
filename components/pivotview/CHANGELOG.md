@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 19.3.53 (2021-11-12)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- The Pivot Table can now be exported properly with static field list.
+
+#### New Features
+
+- `#I343343` - Provided support to render value totals alone when no field in row axis.
+
 ## 19.3.48 (2021-11-02)
 
 ### Pivot Table

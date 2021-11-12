@@ -8,6 +8,19 @@
 
 #### Bug Fixes
 
+- `I345577` - Selection misalignment occurs with the resized row issue resolved.
+- `I346629` - Selection misalignment while perform autofit to rows issue resolved.
+- `I346978`, `I346947` - Data loss after clear filtering issue resolved.
+- `I346943` - Copy / paste not working after clear filtering using ribbon issue resolved.
+- `I346921` - Cell selections are not proper after scrolling the filtered data issue resolved.
+- `I346267` - Last occurrence value not replaced while doing Replace all with workbook mode issue resolved.
+
+## 19.3.47 (2021-10-26)
+
+### Spreadsheet
+
+#### Bug Fixes
+
 - `I344194` - Filter menu opening delay with large data issue resolved.
 - `I344794` - Cell selection misalignment occurs when copy paste and resize the pasted cell issue resolved.
 - `F29392` - cell selection misalignment on loading Chinese words issue resolved.
@@ -18,6 +31,8 @@
 ## 19.3.46 (2021-10-19)
 
 ### Spreadsheet
+
+#### New Features
 
 - `I343108` - Provided support to update the border for inserted rows and columns, if the adjacent rows and columns contains same border value.
 

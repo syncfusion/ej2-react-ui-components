@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.3.53 (2021-11-12)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I346472`- Selection and highlight color is not proper when using pointColorMapping is fixed.
+- `#I346183` - StackingArea not rendering properly in huge data has been fixed.
+
 ## 19.3.48 (2021-11-02)
 
 ### Chart

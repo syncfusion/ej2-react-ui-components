@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.47 (2021-10-26)
+## 19.3.53 (2021-11-12)
+
+### DropDownButton
+
+#### Bug Fixes
+
+- Overflow issue in ColorPicker has been resolved.
+
+## 19.3.48 (2021-11-02)
 
 ### DropDownButton
 

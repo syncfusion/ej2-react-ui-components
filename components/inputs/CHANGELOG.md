@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.53 (2021-11-12)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- Overflow issue in ColorPicker has been resolved.
+
 ## 19.3.48 (2021-11-02)
 
 ### ColorPicker

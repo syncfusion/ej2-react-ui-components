@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.53 (2021-11-12)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#I345378` - The issue with "The interaction value is not updated properly in the select event while selecting via Select All checkbox" has been resolved.
+
 ## 19.3.48 (2021-11-02)
 
 ### Dropdown Tree
