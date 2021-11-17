@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.54 (2021-11-17)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I347014` - An issue with dynamic tab item navigation if scheduler is present on a page has been fixed.
+
 ## 19.3.46 (2021-10-19)
 
 ### Tab

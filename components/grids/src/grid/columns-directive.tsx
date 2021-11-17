@@ -1,7 +1,7 @@
 import { ComplexBase } from '@syncfusion/ej2-react-base';
-import { ColumnModel } from '@syncfusion/ej2-grids';
+import { GridColumnModel } from '@syncfusion/ej2-grids';
 
-export interface ColumnDirTypecast {
+export interface GridColumnDirTypecast {
     template?: string | Function | any;
     headerTemplate?: string | Function | any;
     commandsTemplate?: string | Function | any;
@@ -21,7 +21,7 @@ export interface ColumnDirTypecast {
  * </GridComponent>
  * ```
  */
-export class ColumnDirective extends ComplexBase<ColumnModel| ColumnDirTypecast, ColumnModel| ColumnDirTypecast> {
+export class ColumnDirective extends ComplexBase<GridColumnModel| GridColumnDirTypecast, GridColumnModel| GridColumnDirTypecast> {
     public static moduleName: string = 'column';
     public static complexTemplate: Object = {'filterItemTemplate': 'filter.itemTemplate'};
 }

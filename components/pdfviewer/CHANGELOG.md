@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## 19.3.54 (2021-11-17)
+
+- `#346152`- The script error will not be thrown for the document which contains link annotation.
+
 ## 19.3.48 (2021-11-02)
 
 ### PDF Viewer
