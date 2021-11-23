@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.54 (2021-11-17)
+## 19.3.55 (2021-11-23)
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#I343913` -  Issue with "exception throws while preventing the request to the server in the `actionBegin` event" has been resolved.
+
+## 19.3.53 (2021-11-12)
 
 ### Dropdown Tree
 

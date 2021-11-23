@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.54 (2021-11-17)
+## 19.3.55 (2021-11-23)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#I344836` - The issue with "Swimlane row is not created when kanban keyField has 0 value alone" has been resolved.
+
+## 19.3.46 (2021-10-19)
 
 ### Kanban
 

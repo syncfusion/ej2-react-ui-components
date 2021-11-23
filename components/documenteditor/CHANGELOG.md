@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.55 (2021-11-23)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `I345759`- Resolved the table border rendering issue.
+
 ## 19.3.54 (2021-11-17)
 
 ### Document Editor

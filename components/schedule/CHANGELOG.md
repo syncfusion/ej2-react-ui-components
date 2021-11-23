@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.55 (2021-11-23)
+
+### Schedule
+
+#### Bug Fixes
+
+- `#I347217` - An issue while using `getRecurrenceDates` method in the weekly rule option has been fixed.
+
 ## 19.3.53 (2021-11-12)
 
 ### Schedule

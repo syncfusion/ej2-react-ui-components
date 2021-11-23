@@ -2,7 +2,17 @@
 
 ## [Unreleased]
 
-## 19.3.54 (2021-11-17)
+## 19.3.55 (2021-11-23)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I346676` - The issue "Drag and drop item from Tree-View to Diagram doesn't behave correctly" has been fixed.
+- `#I347727` - The issue "RemovePalette API not working properly" has been fixed.
+- `#I348028` - The issue "SelectionChange newValue is null when deselecting one of multiple selected shapes" has been fixed.
+
+## 19.3.53 (2021-11-12)
 
 ### Diagram
 

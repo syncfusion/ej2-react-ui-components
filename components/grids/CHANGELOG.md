@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 19.3.55 (2021-11-23)
+
+### Grid
+
+#### Bug Fixes
+
+- `#F170201` - Passed `groupcaption` details in the `exportGroupCaption` event arguments.
+- `#I347287` - Maximum call stack issue occurs when checkbox columns set visible property as false for first column has been fixed.
+- `#I347439` - The last row bottom border issue in Frozen right part has been fixed.
+- `#I348589` - Changing grid height programmatically throws script error while scrolling issue has been fixed.
+
+- `#I339851` - React state value is not update for a custom component render in Grid `headerTemplate` issue has been fixed.
+
 ## 19.3.54 (2021-11-17)
 
 ### Grid

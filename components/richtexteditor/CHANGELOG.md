@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.54 (2021-11-17)
+## 19.3.55 (2021-11-23)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I347461` - The issue with "quickToolbar of image is not hidden, when we click on the popup and then press Esc to hide" has been resolved.
+
+## 19.3.53 (2021-11-12)
 
 ### RichTextEditor
 

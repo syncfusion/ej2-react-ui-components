@@ -2,13 +2,21 @@
 
 ## [Unreleased]
 
-## 19.3.54 (2021-11-17)
+## 19.3.55 (2021-11-23)
 
 ### File Manager
 
 #### Bug Fixes
 
-- `#I340018` - The issue with "Script gets executed when new folder is created with HTML tags while using enableHtmlSanitizer property of FileManager component" has been resolved.
+- `#I341862` - The issue with "`filterFiles` method throws script error in File Manager" has been resolved.
+
+## 19.3.44 (2021-10-05)
+
+### File Manager
+
+#### Bug Fixes
+
+- `#I340018` - The issue with "Script gets executed when new folder is created with HTML tags while using `enableHtmlSanitizer` property of File Manager component" has been resolved.
 
 ## 19.2.56 (2021-08-17)
 

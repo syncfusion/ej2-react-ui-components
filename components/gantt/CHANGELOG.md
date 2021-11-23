@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.54 (2021-11-17)
+## 19.3.55 (2021-11-23)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#347753` - Issue in `defaultedit` edit type has been fixed.
+
+## 19.3.53 (2021-11-12)
 
 ### Gantt
 

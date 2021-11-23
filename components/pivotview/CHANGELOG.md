@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.54 (2021-11-17)
+## 19.3.55 (2021-11-23)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- The pivot table can now be properly exported to an pdf file with two levels of columns.
+
+## 19.3.53 (2021-11-12)
 
 ### Pivot Table
 
