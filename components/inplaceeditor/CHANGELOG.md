@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 19.3.55 (2021-11-23)
+## 19.3.56 (2021-12-02)
+
+### In-place Editor
+
+#### Bug Fixes
+
+- `#I347382` - The issue with "'submitClick' event not triggered for 'enter' key action" has been resolved.
+- `#I347379` - The issue with "Editor closed when press enter key on multiline enabled textbox" has been resolved.
+
+## 19.3.46 (2021-10-19)
 
 ### In-place Editor
 

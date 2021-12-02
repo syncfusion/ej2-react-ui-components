@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 19.3.56 (2021-12-02)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I343860` - Issue with "list items are not read by the NVDA screen reader" has been resolved.
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#I342745` - The performance issue that occurred when selecting a node that was rendered with a huge data source has been resolved.
+
 ## 19.3.55 (2021-11-23)
 
 ### AutoComplete

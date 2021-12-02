@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.56 (2021-12-02)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I342745` - The performance issue that occurred when selecting a node that was rendered with a huge data source has been resolved.
+
 ## 19.3.54 (2021-11-17)
 
 ### Tab

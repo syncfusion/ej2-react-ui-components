@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 19.3.56 (2021-12-02)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `I347456` - Console error with 110% browser zoom in issue resolved.
+- `I347865` - AutoFill is not working for formula applied cell issue is resolved.
+- `I347272` - Performance issue while clear conditional formatting from entire sheet is resolved.
+- `I347003` - Loading data with filter the actionComplete event triggered twice issue is resolved.
+- `I347340` - Filter popup opening prevented while sheet is protected.
+
+## 19.3.55 (2021-11-23)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `I345828` - Toggle Button state not refreshed in ribbon while using clear format option issue resolved.
+
 ## 19.3.48 (2021-11-02)
 
 ### Spreadsheet
