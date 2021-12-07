@@ -12,6 +12,8 @@
 - `#348672` - The issue "Swimlane nodes helper position not updated properly" has been fixed.
 - `#F170298` - The issue "Template is not updated properly while render multiple diagram in same page" has been fixed.
 - `#347603` - The issue "HTML Nodes are not rendered in Overview" has been fixed.
+- `SF-356262` - The issue "Dragging and Drop node not working properly by enabling page settings" has been fixed.
+- `F170399` - The issue "Unable to cast exception occurs when clicking on the expand icon" has been fixed.
 
 ## 19.3.55 (2021-11-23)
 

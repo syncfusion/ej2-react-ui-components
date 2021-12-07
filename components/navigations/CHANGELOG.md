@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.57 (2021-12-07)
+
+### Sidebar
+
+#### Bug Fixes
+
+- `#I347551` - The issue with "The sidebar main content margin value changes when using Sidebar type as Over and dock support" has been fixed.
+
 ## 19.3.56 (2021-12-02)
 
 ### TreeView

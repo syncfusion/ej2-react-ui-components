@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 19.3.57 (2021-12-07)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I356983` - The issue with "Unwanted line is added in Rich Text Editor, when performing the drag and drop image upload" has been resolved.
+- `#I347461` - The issue with "When we have two images in the Rich Text Editor and you click on one and then the next one, the quickToolbar popup does not appear" has been resolved
+- `#I343770` - The issue with "Image is not deleted when press backspace and delete button" has been resolved.
+- `#I356969` - The issue with "Rich Text Editor Image quickToolbar popup is not hidden, if we cancel uploading with the popup being opened" has been resolved.
+- `#I346752` - The issue with "applying code format to the already applied code format content reverts to paragraph" has been resolved.
+- `#F170386` - The issue with "shift enter key is not working properly when `shiftEnterKey` is configured as `BR` in the safari browser" has been resolved.
+- `#I347313` - The issue with "previous line is removed when pressing enter key after shift enter key action" has been resolved.
+- `#I347461` - The issue with "image resize not working when an image is resized to the full Rich Text Editor size and trying to minimize the image by clicking on the bottom right resize icon" has been resolved.
+- `#I356989` - The issue with "image element not returned properly, while applying any alignments before image upload success is completed" has been resolved.
+- `#I348816` - The issue with "special characters are added in the Rich Text Editor when pasting the link" has been resolved.
+
 ## 19.3.55 (2021-11-23)
 
 ### RichTextEditor
@@ -9,7 +26,6 @@
 #### Bug Fixes
 
 - `#I347461` - The issue with "quickToolbar of image is not hidden, when we click on the popup and then press Esc to hide" has been resolved.
-- `#I346752` - The issue with "applying code format to the already applied code format content reverts to paragraph" has been resolved.
 
 ## 19.3.53 (2021-11-12)
 

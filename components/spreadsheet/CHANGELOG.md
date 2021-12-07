@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.57 (2021-12-07)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `I348582` - Shift selection on whole row makes viewport to scroll right issue has been resolved.
+
 ## 19.3.56 (2021-12-02)
 
 ### Spreadsheet
@@ -13,6 +21,8 @@
 - `I347272` - Performance issue while clear conditional formatting from entire sheet is resolved.
 - `I347003` - Loading data with filter the actionComplete event triggered twice issue is resolved.
 - `I347340` - Filter popup opening prevented while sheet is protected.
+- `I344793` - Getting #Spill while apply Unique formula for text format issue is resolved.
+- `F168772` - Sheet tab context-menu items disabled issue resolved.
 
 ## 19.3.55 (2021-11-23)
 

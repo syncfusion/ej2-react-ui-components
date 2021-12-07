@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.3.57 (2021-12-07)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#348627` - Gantt Chart timeline display issue with dates on which DST change happens has been fixed.
+
 ## 19.3.56 (2021-12-02)
 
 ### Gantt

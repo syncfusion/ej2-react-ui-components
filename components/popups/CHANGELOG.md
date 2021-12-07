@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.3.57 (2021-12-07)
+
+### Dialog
+
+#### New Features
+
+-`#I327060` - Provided the new method `getDimension` to get the current width and height of the dialog.
+
+
 ## 19.3.47 (2021-10-26)
 
 ### Tooltip

@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 19.3.56 (2021-12-02)
+## 19.3.55 (2021-11-23)
 
 ### Chart
 
@@ -10,6 +10,7 @@
 
 - Tooltip is now working fine in react library for mobile device.
 - `#I347059` - Data label is now rendering properly for stacking column.
+- `#F170296` - Datalabels are now removed for empty datasource on dynamic update.
 
 ## 19.3.54 (2021-11-17)
 
