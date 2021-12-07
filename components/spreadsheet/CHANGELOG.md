@@ -9,6 +9,9 @@
 #### Bug Fixes
 
 - `I348582` - Shift selection on whole row makes viewport to scroll right issue has been resolved.
+- `I347103` - Active cell value repeated for External paste issue is resolved.
+- `F168772` - Sheet tab context-menu items disabled issue resolved.
+- `I347888` - Insert/delete rows and columns on collaborative editing issues resolved.
 
 ## 19.3.56 (2021-12-02)
 
@@ -22,7 +25,7 @@
 - `I347003` - Loading data with filter the actionComplete event triggered twice issue is resolved.
 - `I347340` - Filter popup opening prevented while sheet is protected.
 - `I344793` - Getting #Spill while apply Unique formula for text format issue is resolved.
-- `F168772` - Sheet tab context-menu items disabled issue resolved.
+- `I347444` - getDisplayText returns active cell value issue is resolved.
 
 ## 19.3.55 (2021-11-23)
 
