@@ -33,6 +33,7 @@
      onFocus?: FocusEventHandler;
      onBlur?: FocusEventHandler;
      immediateRender?: boolean;
+     isLegacyTemplate?:boolean;
      delayUpdate?: string | boolean;
      // tslint:disable-next-line:no-any
      onChange?: any;

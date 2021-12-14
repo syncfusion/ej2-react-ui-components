@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 19.3.59 (2021-12-14)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `I348254` - Autofill not working for unlocked cells issue is resolved.
+- `I347720`, `I347861` - Copy and paste not working in Dialog popup issue resolved.
+- `I347428` - Value disappear while using comma in custom number format issue is resolved.
+- `I347444` - getDisplayText returns active cell value issue is resolved.
+- `I347677` - allowAutoFill API as false shows autofill icon issue is resolved.
+- `I348310`, `I349380`, `I347445` - Used range not updated while save and load the spreadsheet as JSON issue resolved.
+- `I347079` - While importing Filter applied excel file the spreadsheet appears with double header issue resolved.
+- `I347937` - Selection issue while load data with row height less than 4 pixel is resolved.
+
 ## 19.3.57 (2021-12-07)
 
 ### Spreadsheet
@@ -12,6 +27,8 @@
 - `I347103` - Active cell value repeated for External paste issue is resolved.
 - `F168772` - Sheet tab context-menu items disabled issue resolved.
 - `I347888` - Insert/delete rows and columns on collaborative editing issues resolved.
+- `I344793` - Getting #Spill while apply Unique formula for text format issue is resolved.
+- `I355103` - Gridlines are getting misaligned with row headers when resizing rows issue is fixed.
 
 ## 19.3.56 (2021-12-02)
 
@@ -24,8 +41,6 @@
 - `I347272` - Performance issue while clear conditional formatting from entire sheet is resolved.
 - `I347003` - Loading data with filter the actionComplete event triggered twice issue is resolved.
 - `I347340` - Filter popup opening prevented while sheet is protected.
-- `I344793` - Getting #Spill while apply Unique formula for text format issue is resolved.
-- `I347444` - getDisplayText returns active cell value issue is resolved.
 
 ## 19.3.55 (2021-11-23)
 

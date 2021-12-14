@@ -8,23 +8,23 @@
 
 #### Bug Fixes
 
-- `333080` - Resolved the issue with Grid `editTemplate` drop down data source is not updated while using `useState`.
+- Resolved the issue with `nodeClicked` event is not triggered while rendering Tree View inside `office-ui-fabric` Panel.
 
-## 19.2.49 (2021-07-27)
-
-### Common
-
-#### Bug Fixes
-
-- `I335035`, `I331116` - Resolved the issue with Updating data source of components using React `usestate` hook is not working.
-
-## 19.2.48 (2021-07-20)
+## 19.3.46 (2021-10-19)
 
 ### Common
 
 #### Bug Fixes
 
-- `I331796` - Resolved the issue with Selected value removed when focus changed in `MultiSelect`.
+- Resolved the issue with Custom toolbar buttons in rich text editor lead to a toolbar reset.
+
+## 19.3.45 (2021-10-12)
+
+### Common
+
+#### Bug Fixes
+
+- `F167610` - Resolved the issue with Console error occurs when using a value and `valueTemplate` together.
 
 ## 19.1.67 (2021-06-08)
 

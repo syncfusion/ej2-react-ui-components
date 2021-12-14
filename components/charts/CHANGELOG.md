@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.3.59 (2021-12-14)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I346999` - Data labels are now working properly while legend click.
+- `#I349146` - Range area and scatter series working fine on canvas mode.
+
 ## 19.3.55 (2021-11-23)
 
 ### Chart
