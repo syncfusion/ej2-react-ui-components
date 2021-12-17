@@ -2,7 +2,41 @@
 
 ## [Unreleased]
 
-## 19.3.59 (2021-12-14)
+## 19.4.38 (2021-12-17)
+
+### Tab
+
+#### New Features
+
+- `#I302394` - Provided support to maintain the active item in either tab header area or inside the popup.
+- `#F166169` - Provided support to identify the tab select event raised by user interaction or programmatic way.
+
+### TreeView
+
+#### New Features
+
+- `#FB27518` - Provided support to wrap the TreeView node text when its text content exceeds the TreeView node width.
+
+### Breadcrumb
+
+#### New Features
+
+- Provided new types of overflow mode and as follows:
+
+1. **Menu**: Shows the number of breadcrumb items that can be accommodated within the container space, and creates a sub menu with the remaining items.
+2. **Wrap**: Wraps the items on multiple lines when the Breadcrumb’s width exceeds the container space.
+3. **Scroll**: Shows an HTML scroll bar when the Breadcrumb’s width exceeds the container space.
+4. **None**: Shows all the items on a single line.
+
+
+5. Provided `cancel` support in `beforeItemRender` event.
+
+#### Breaking Changes
+
+- Provided `disabled` property in Breadcrumb and Breadcrumb's Item instead of using CSS class `e-disabled`.
+- Removed `width` property from Breadcrumb component, you can set `width` in the style attribute of CSS to breadcrumb's element or its parent element.
+
+## 19.3.57 (2021-12-07)
 
 ### Sidebar
 

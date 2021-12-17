@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 19.4.38 (2021-12-17)
+
+### Diagram
+
+#### Bug Fixes
+
+- `SF-356262` - The issue "Dragging and Drop node not working properly by enabling page settings" has been fixed.
+- `F170399` - The issue "Unable to cast exception occurs when clicking on the expand icon" has been fixed.
+- `#I337722` - The issue "Connector Position not Updated Properly when rotating it with segments" has been fixed.
+- `#I341943` - The issue "BringIntoView API does not bring the large bounds into the screen viewport" has been fixed.
+- `#I342681` - The issue "BPMN Task shape becomes ellipse shape when printing the diagram" has been fixed.
+- `#I342979` - The issue "While loading the JSON data with line routing causes exception in Angular" has been fixed.
+- `#I345844` - The issue "An exception occurs when perform search in the symbol palette" has been fixed.
+- `#F169922` - The issue "Need to provide support to set assistants based on datasource field in organizational chart" has been fixed.
+- `#I345570` - The issue "Nodes doesn't gets arranged in zindex order after grouping it" has been fixed.
+- `#I346110` - The issue "Text did not display on Connector line after adjusting the Bezier Connector" has been fixed.
+- `#I346676` - The issue "Drag and drop item from Tree-View to Diagram doesn't behave correctly" has been fixed.
+- `#I347727` - The issue "RemovePalette API not working properly" has been fixed.
+- `#I348028` - The issue "SelectionChange newValue is null when deselecting one of multiple selected shapes" has been fixed.
+
 ## 19.3.56 (2021-12-02)
 
 ### Diagram
@@ -12,8 +32,6 @@
 - `#348672` - The issue "Swimlane nodes helper position not updated properly" has been fixed.
 - `#F170298` - The issue "Template is not updated properly while render multiple diagram in same page" has been fixed.
 - `#347603` - The issue "HTML Nodes are not rendered in Overview" has been fixed.
-- `SF-356262` - The issue "Dragging and Drop node not working properly by enabling page settings" has been fixed.
-- `F170399` - The issue "Unable to cast exception occurs when clicking on the expand icon" has been fixed.
 
 ## 19.3.55 (2021-11-23)
 

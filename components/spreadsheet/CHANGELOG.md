@@ -2,53 +2,24 @@
 
 ## [Unreleased]
 
-## 19.3.59 (2021-12-14)
+## 19.4.38 (2021-12-17)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `I348254` - Autofill not working for unlocked cells issue is resolved.
-- `I347720`, `I347861` - Copy and paste not working in Dialog popup issue resolved.
-- `I347428` - Value disappear while using comma in custom number format issue is resolved.
-- `I347444` - getDisplayText returns active cell value issue is resolved.
-- `I347677` - allowAutoFill API as false shows autofill icon issue is resolved.
-- `I348310`, `I349380`, `I347445` - Used range not updated while save and load the spreadsheet as JSON issue resolved.
-- `I347079` - While importing Filter applied excel file the spreadsheet appears with double header issue resolved.
+- `SF-356190` - Not able to change the cell value using beforeCellSave event issue resolved.
+- `I346629` - Cell alignment issue while copy paste merged cell from Excel to Spreadsheet issue resolved.
+- `F169598` - Sorting issue with number formatted data is resolved.
+- `I351813` - Border missing for last merged cell while doing autofill issue has been resolved.
 - `I347937` - Selection issue while load data with row height less than 4 pixel is resolved.
-
-## 19.3.57 (2021-12-07)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `I348582` - Shift selection on whole row makes viewport to scroll right issue has been resolved.
-- `I347103` - Active cell value repeated for External paste issue is resolved.
-- `F168772` - Sheet tab context-menu items disabled issue resolved.
-- `I347888` - Insert/delete rows and columns on collaborative editing issues resolved.
-- `I344793` - Getting #Spill while apply Unique formula for text format issue is resolved.
-- `I355103` - Gridlines are getting misaligned with row headers when resizing rows issue is fixed.
-
-## 19.3.56 (2021-12-02)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `I347456` - Console error with 110% browser zoom in issue resolved.
-- `I347865` - AutoFill is not working for formula applied cell issue is resolved.
-- `I347272` - Performance issue while clear conditional formatting from entire sheet is resolved.
-- `I347003` - Loading data with filter the actionComplete event triggered twice issue is resolved.
-- `I347340` - Filter popup opening prevented while sheet is protected.
-
-## 19.3.55 (2021-11-23)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `I345828` - Toggle Button state not refreshed in ribbon while using clear format option issue resolved.
+- `I356364` - Script error while selecting autofill option after clicking the autofill icon issue resolved.
+- `I348734` - Copy/paste with conditional formatting not working issue resolved.
+- `I347888` - Insert/delete rows and columns are not working with collaborative editing issue resolved.
+- `I348334` - Cell misalignment while applying wrap on the pasted data issue resolved.
+- `I348741` - Conditional format highlighting and cell background color overlaps on wrapped cell issue resolved
+- `I343781` - Merge breaks on column copy/paste action issue resolved.
+- `I347103` - Copy and paste working incorrectly while copy data in backward direction issue resolved.
 
 ## 19.3.48 (2021-11-02)
 
@@ -75,6 +46,7 @@
 - `I345133` - Cell selection misalignment on wrap applied Japanese characters issue resolved.
 - `I345064` - Filtering issue on save and load JSON issue resolved.
 - `I345959` - Custom sort with zero not working issue resolved.
+- `I345577` - Selection misalignment occurs with the resized row issue resolved.
 
 ## 19.3.46 (2021-10-19)
 
@@ -152,6 +124,27 @@
 - `I342399` - Paste is not working with the find dialog issue resolved.
 
 - `I338652` - Script error while using the `useEffect` hook in react functional component issue resolved.
+
+## 19.3.56 (2021-12-02)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `I347456` - Console error with 110% browser zoom in issue resolved.
+- `I347865` - AutoFill is not working for formula applied cell issue is resolved.
+- `I347272` - Performance issue while clear conditional formatting from entire sheet is resolved.
+- `I347003` - Loading data with filter the actionComplete event triggered twice issue is resolved.
+- `I347340` - Filter popup opening prevented while sheet is protected.
+- `I344793` - Getting #Spill while apply Unique formula for text format issue is resolved.
+
+## 19.3.55 (2021-11-23)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `I345828` - Toggle Button state not refreshed in ribbon while using clear format option issue resolved.
 
 ## 19.2.62 (2021-09-14)
 

@@ -2,18 +2,19 @@
 
 ## [Unreleased]
 
-## 19.3.59 (2021-12-14)
+## 19.4.38 (2021-12-17)
 
-### Dialog
+### Tooltip
 
 #### New Features
 
--`#I327060` - Provided the new method `getDimension` to get the current width and height of the dialog.
-
+- `#322737` - The `container` property support has been provided which allows to place the tooltip's pop-up within any user preferred element.
 
 ## 19.3.47 (2021-10-26)
 
 ### Tooltip
+
+#### Bug Fixes
 
 - `#I341459` - The issue with "The Tooltip's pop-up position misaligns on window resize" has been resolved.
 

@@ -2,14 +2,18 @@
 
 ## [Unreleased]
 
-## 19.3.59 (2021-12-14)
+## 19.4.38 (2021-12-17)
 
 ### Chart
 
-#### Bug Fixes
+#### New Features
 
-- `#I346999` - Data labels are now working properly while legend click.
-- `#I349146` - Range area and scatter series working fine on canvas mode.
+- `#I271263`,`#I344376` - Provided grouping support for the column and bar chart based on categories.
+- `#F163374` - Provided color support to the highlighted point.
+- `#I342748` - Fixed width support have been provided for chart area.
+- `#I280225`, `#I340912` - Provided support to rotate y-axis labels to a given angle.
+- `#I345716` - Provided support to reverse the rendering order of the legend items in a chart.
+- Right to Left(RTL) feature added for all chart elements like legend, tooltip, data label, title, etc.
 
 ## 19.3.55 (2021-11-23)
 

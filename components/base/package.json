@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-base",
-	"version": "19.3.57",
+	"version": "19.2.49",
 	"description": "A common package of Essential JS 2 React base, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -24,15 +24,15 @@
 	"module": "./index.js",
 	"readme": "ReadMe.md",
 	"peerDependencies": {
-		"react": "15.5.4 - 16.13.1",
-		"react-dom": "15.5.4 - 16.13.1"
+		"react": "16.13.1 - 17.0.2",
+		"react-dom": "16.13.1 - 17.0.2"
 	},
 	"dependencies": {
 		"@syncfusion/ej2-base": "*"
 	},
 	"devDependencies": {
-		"react": "15.5.4 - 16.10.2",
-		"react-dom": "15.5.4 - 16.10.2",
+		"react": "16.13.1 - 17.10.2",
+		"react-dom": "16.13.1 - 17.10.2",
 		"@types/chai": "^3.4.28",
 		"@types/es6-promise": "0.0.28",
 		"@types/jasmine": "^2.2.29",
@@ -64,6 +64,5 @@
 	"scripts": {
 		"build": "gulp build",
 		"test": "gulp test"
-	},
-	"typings": "index.d.ts"
+	}
 }

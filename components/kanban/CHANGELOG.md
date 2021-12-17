@@ -2,31 +2,14 @@
 
 ## [Unreleased]
 
-## 19.3.55 (2021-11-23)
-
-### Kanban
-
-#### Bug Fixes
-
-- `#I344836` - The issue with "Swimlane row is not created when kanban keyField has 0 value alone" has been resolved.
-
-## 19.3.46 (2021-10-19)
-
-### Kanban
-
-#### Bug Fixes
-
-- `#I344836` - The issue with "Card's are not rendered, when Kanban KeyField has value as zero" has been resolved.
-- `F169010` - The issue with "The Kanban board refreshed before fetching data from the server" has been solved.
-- `F169408` - The exception raised "When dynamically adding new column, after deleting the columns from the Kanban" has been resolved.
-
-## 19.3.45 (2021-10-12)
+## 19.4.38 (2021-12-17)
 
 ### Kanban
 
 #### Bug Fixes
 
 - `#FB29010` - The issue with "`showItemCount` in swimlane row is not resetting to zero if no cards are present" has been resolved.
+- `#F169010` - The issue with "The Kanban board refreshed before fetching data from the server" has been solved.
 
 ## 19.3.44 (2021-10-05)
 

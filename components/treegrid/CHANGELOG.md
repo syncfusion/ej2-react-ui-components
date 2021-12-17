@@ -2,65 +2,19 @@
 
 ## [Unreleased]
 
-## 19.3.55 (2021-11-23)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I346283` - Resolved "No records to display" issue when scrolling using column Virtualization with sorting.
-- `#I347163` - Resolved checkbox selection is not working properly while using column Virtualization.
-- `#I346278, I346277` - Resolved White space issue when collapsing rows and scrolling down and adding the record using addRecord method in Virtualization.
-- `#F169974` - Resolved deleting parent and child using deleteRecord method.
-
-## 19.3.48 (2021-11-02)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I342419` - Resolved performing add operation after calling refresh method.
-
-## 19.3.47 (2021-10-26)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#F169151` - Resolved issue in drag and drop to Listbox component.
-- `#I343484` - Resolved deleting the record by using deleteRow and deleteRecord methods in cellSelection mode.
-- `#I345435` - Tree Column value shows properly when text wrap is enabled.
-- `#I343976` - Resolved top records hiding issue on random expand/collapse action when Virtualization enabled.
-- `#I342822` - Expand and collapse icon shown properly on re ordering column with `enablePersistence` property.
-
-- `#I345435` - Tree Column value shows properly when text wrap is enabled.
-
-## 19.3.46 (2021-10-19)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I343755` - Resolved record missing while using single root node with Virtualization and ExpandStateMapping enabled.
-- `#I335120` - Resolved Deleting child records and creation of duplicate records after row drag and drop performed.
-
-## 19.3.45 (2021-10-12)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I341871` - Resolved getCheckedRecords method doesn’t return collapsed records after filtering with Virtualization enabled.
-- `#I340839` - Resolved dragging and dropping creates duplicate rows  when setting initial sort for the newly added record.
-- `#I339818` - Resolved "No records to display" issue when we expand filtered parent record with Virtualization and collapseAll enabled.
-
-## 19.3.44 (2021-10-05)
+## 19.4.38 (2021-12-17)
 
 ### Tree Grid
 
 #### New Features
 
-- `#314841` - Provided support to freeze the columns on right, left or both sides.
+- Provided support for `expandByKey`, `collapseByKey` methods and improved `expantAtLevel`, `collapseAtLevel` methods for nested records in tree grid.
+- Provided Adaptive UI layout support for all devices.
+
+#### Bug Fixes
+
+- `#I348001`,`#I349046`,`#I349018` Throws script error while performing scroll on Virtualization enabled has been fixed.
+- `#F167694`  Resolved state changes not reflected for Treegrid column directive.
 
 ## 19.2.44 (2021-06-30)
 

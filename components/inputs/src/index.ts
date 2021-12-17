@@ -4,4 +4,5 @@ export * from './maskedtextbox';
 export * from './slider';
 export * from './uploader';
 export * from './color-picker';
+export * from './signature';
 export * from '@syncfusion/ej2-inputs';

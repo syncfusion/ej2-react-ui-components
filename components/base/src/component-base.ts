@@ -91,12 +91,10 @@
          }
      }
      
-     public componentDidUpdate(prev: Object): any {
+     public componentDidUpdate(): any {
         if(!this.isshouldComponentUpdateCalled && this.initRenderCalled && !this.isReactForeceUpdate) {
             this.isshouldComponentUpdateCalled = true;
-            if (prev !== this.props) {
-                this.refreshProperties(this.props, true);   
-            }
+            this.refreshProperties(this.props, true);
         }
      }
 
@@ -153,9 +151,6 @@
                      delete dProps[propkey];
                  }
              }
-             else if (propkey === 'value' && nextProps[propkey] === this[propkey]) {
-                delete dProps[propkey];
-            }
          }
          if (dProps['children']) {
              delete dProps['children'];
@@ -308,19 +303,12 @@
                  let keys: string[] = Object.keys(newProp);
                  if (keys.length !== 0) {
                      for (let key of keys) {
-                         let oldValue: any = oldProp[key];
-                         let newValue: any = newProp[key];
-                         if (key === 'items') {
-                            for(var _j=0; _j < newValue.length; _j++) {
-                                if (this.getModuleName() === 'richtexteditor' && typeof(newValue[_j]) === 'object') {
-                                    return {status: true};
-                                }
-                            }
-                        }
+                         let oldValue = oldProp[key];
+                         let newValue = newProp[key];
                          if (this.getModuleName()=== 'grid' && key === 'field') {
                             curObj[key] = newValue;
                         }
-                         if (!oldProp.hasOwnProperty(key) || !this.compareValues(oldValue, newValue)) {
+                         if (!oldProp.hasOwnProperty(key) || !this.compareValues(newValue, oldValue)) {
                              if (!propName) {
                                  return { status: false };
                              }

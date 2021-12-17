@@ -2,21 +2,13 @@
 
 ## [Unreleased]
 
-## 19.3.59 (2021-12-14)
+## 19.4.38 (2021-12-17)
 
 ### File Manager
 
-#### Bug Fixes
+#### New Features
 
-- `#I341862` - The issue with "`filterFiles` method throws script error in File Manager" has been resolved.
-
-## 19.3.44 (2021-10-05)
-
-### File Manager
-
-#### Bug Fixes
-
-- `#I340018` - The issue with "Script gets executed when new folder is created with HTML tags while using `enableHtmlSanitizer` property of File Manager component" has been resolved.
+- Provided support to customize the default search placeholder text of the File Manager.
 
 ## 19.2.56 (2021-08-17)
 

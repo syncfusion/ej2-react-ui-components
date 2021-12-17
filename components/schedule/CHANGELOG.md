@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 19.4.38 (2021-12-17)
+
+### Schedule
+
+#### New Features
+
+- `#I256450`, `#I256493`, `#I341525` - Provides support for flexible month view that starts from the beginning of the week the displayed date falls in. Also, users can set the number of weeks to be displayed in the Month view.
+- `#FB9963`, `#I331086` - Provided an option to customize the header names when the Scheduler is exported to Excel.
+- `#I276542`, `#F169844` - Provided support to set the minimum event duration for appointments to make the event subject easier to read.
+
+#### Bug Fixes
+
+- `#T357194` - An issue while slower the performance of the schedule, while drag and drop the event with `eventTemplate` has been fixed.
+- `#T353817` - An issue with all-day region scrolling issue only in the Mac device has been fixed.
+
 ## 19.3.55 (2021-11-23)
 
 ### Schedule
@@ -51,8 +66,6 @@
 - `#I339839` - An issue with the scheduler resize action is not working properly in timeline month has been fixed.
 - `#F168909` - The scheduler agenda view throws script error on multilevel resources grouping has been fixed.
 
-- `#F166305` - An issue with dynamically changed `minDate` and `maxDate` property in react scheduler has been fixed.
-
 ## 19.3.43 (2021-09-30)
 
 ### Schedule
@@ -73,14 +86,24 @@
 - `#I340332` - An issue with the events rendering performance in vertical views has been fixed.
 - `#I342489` - An issue with identify the clicked button on `popupClose` event has been fixed by providing `event` option on `PopupCloseEventArgs`.
 
+- `#F166305` - An issue with dynamically changed `minDate` and `maxDate` property in react scheduler has been fixed.
+
 ## 19.2.59 (2021-08-31)
 
 ### Schedule
+
+#### New Features
+
+- `#I242605`, `#F160122`, `#F165334` - Provided public method for Scheduler to refresh the Scheduler layout without re-render.
+- `#I314842`, `#I320731` - Provided public method for Scheduler to refresh the given templates.
 
 #### Bug Fixes
 
 - `#I339839` - An issue with the scheduler resize action is not working properly in timeline views has been fixed.
 - `#I338473` - An issue with the scheduler `showWeekend` property set to false appointments missing has been fixed.
+- `#I340348` - An issue with opening the editor window in RTL mode has been fixed.
+- `#I342117` - An issue with today button navigation in Agenda view has been fixed.
+- `#I340332` - An issue with the scheduler performance in Vertical views has been fixed.
 
 ## 19.2.56 (2021-08-17)
 
