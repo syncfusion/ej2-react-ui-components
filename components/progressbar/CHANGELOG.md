@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.4.53 (2022-02-22)
+
+### ProgressBar
+
+#### Bug Fixes
+
+- `#I365692` - Linear progress bar animation issue on dynamic update has been fixed.
+
 ## 19.1.54 (2021-03-30)
 
 ### ProgressBar

@@ -2,29 +2,46 @@
 
 ## [Unreleased]
 
+## 19.4.53 (2022-02-22)
+
+### Common
+
+#### Bug Fixes
+
+- `SF-366476` - Resolved the issue with React `Dialog` content does not update when changing state.
+
 ## 19.4.52 (2022-02-15)
 
 ### Common
 
 #### Bug Fixes
 
-- `333080` - Resolved the issue with Grid `editTemplate` drop down data source is not updated while using `useState`.
+- `I352651` - Styles not applied properly if it dynamically changed has been resolved.
 
-## 19.2.49 (2021-07-27)
-
-### Common
-
-#### Bug Fixes
-
-- `I335035`, `I331116` - Resolved the issue with Updating data source of components using React `usestate` hook is not working.
-
-## 19.2.48 (2021-07-20)
+## 19.4.47 (2022-01-25)
 
 ### Common
 
 #### Bug Fixes
 
-- `I331796` - Resolved the issue with Selected value removed when focus changed in `MultiSelect`.
+- `F167610` - Resolved the Console error occurs when using a value and `valueTemplate` together.
+
+## 19.4.43 (2022-01-18)
+
+### Common
+
+#### Bug Fixes
+
+- `I362528` - Resolved the peer dependency warning in higher React version
+
+## 19.4.42 (2022-01-11)
+
+### Common
+
+#### Bug Fixes
+
+- `I339589` - Resolved the `DropdownButton` issue with react component as target.
+- `F165505` - Resolved the issue with Focus lost in input component each time `onchange` invoked.
 
 ## 19.1.67 (2021-06-08)
 

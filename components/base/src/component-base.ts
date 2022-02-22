@@ -2,6 +2,7 @@
  * React Component Base
  */
  import * as React from 'react';
+ import * as ReactDOM from 'react-dom';
  import { extend, isNullOrUndefined, setValue, getValue, isObject } from '@syncfusion/ej2-base';
  /**
   * Interface for processing directives
@@ -74,6 +75,7 @@
      public portals:any;
      protected value: any;
      protected columns: any;
+     private clsName: boolean;
 
      // Lifecycle methods are changed by React team and so we can deprecate this method and use
      // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
@@ -91,10 +93,12 @@
          }
      }
      
-     public componentDidUpdate(): any {
+     public componentDidUpdate(prev: Object): any {
         if(!this.isshouldComponentUpdateCalled && this.initRenderCalled && !this.isReactForeceUpdate) {
             this.isshouldComponentUpdateCalled = true;
-            this.refreshProperties(this.props, true);
+            if (prev !== this.props) {
+                this.refreshProperties(this.props, true);   
+            }
         }
      }
 
@@ -145,12 +149,25 @@
                  delete dProps[propkey];
              } else if (this.attrKeys.indexOf(propkey) !== -1) {
                  if (isClassName) {
-                     this.element.classList.remove(this.props[propkey]);
-                     this.element.classList.add(dProps[propkey]);
+                     this.clsName = true;
+                     let propsClsName = this.props[propkey].split(' ');
+                     for (let i: number = 0; i < propsClsName.length; i++) {
+                        this.element.classList.remove(propsClsName[i]);
+                     }
+                     let dpropsClsName = dProps[propkey].split(' ');
+                     for (let j: number = 0; j < dpropsClsName.length; j++) {
+                        this.element.classList.add(dpropsClsName[j]);
+                     }
                  } else if (propkey !== 'disabled') {
                      delete dProps[propkey];
                  }
              }
+             else if (propkey === 'value' && nextProps[propkey] === this[propkey]) {
+                delete dProps[propkey];
+            }
+            else if ((propkey === 'valueTemplate' || propkey === 'itemTemplate') && nextProps[propkey].toString() === this[propkey].toString()) {
+                delete dProps[propkey];
+            }
          }
          if (dProps['children']) {
              delete dProps['children'];
@@ -218,6 +235,16 @@
                 ComponentBase.reactUid++;
              }
 
+        }
+         if (this.clsName) {
+            let clsList: string[] = this.element.classList;
+            let className: any =  this.htmlattributes['className'];
+            for(let i: number = 0; i < clsList.length; i++){
+                if ((className.indexOf(clsList[i]) == -1)){
+                    this.htmlattributes['className'] = this.htmlattributes['className'] + ' '+ clsList[i];
+                }  
+            }
+            this.clsName = false;
         }
         return this.htmlattributes;
     }
@@ -303,12 +330,19 @@
                  let keys: string[] = Object.keys(newProp);
                  if (keys.length !== 0) {
                      for (let key of keys) {
-                         let oldValue = oldProp[key];
-                         let newValue = newProp[key];
+                         let oldValue: any = oldProp[key];
+                         let newValue: any = newProp[key];
+                         if (key === 'items') {
+                            for(var _j=0; _j < newValue.length; _j++) {
+                                if (this.getModuleName() === 'richtexteditor' && typeof(newValue[_j]) === 'object') {
+                                    return {status: true};
+                                }
+                            }
+                        }
                          if (this.getModuleName()=== 'grid' && key === 'field') {
                             curObj[key] = newValue;
                         }
-                         if (!oldProp.hasOwnProperty(key) || !this.compareValues(newValue, oldValue)) {
+                         if (!oldProp.hasOwnProperty(key) || !this.compareValues(oldValue, newValue)) {
                              if (!propName) {
                                  return { status: false };
                              }
@@ -419,6 +453,12 @@
          }
  
      }
+
+    // tslint:disable:no-any
+    public appendReactElement (element: any, container: HTMLElement) {
+        ReactDOM.render((ReactDOM as any).createPortal(element, container), container);
+    };
+
  // tslint:disable:no-any 
      public renderReactTemplates (callback?: any): void {
          this.isReactForeceUpdate = true;
