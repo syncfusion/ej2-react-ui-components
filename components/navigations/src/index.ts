@@ -2,6 +2,7 @@ export * from './accordion';
 export * from './toolbar';
 export * from './context-menu';
 export * from './breadcrumb';
+export * from './carousel';
 export * from './tab';
 export * from './treeview';
 export * from './sidebar';

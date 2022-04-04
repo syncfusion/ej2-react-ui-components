@@ -2,29 +2,14 @@
 
 ## [Unreleased]
 
-## 19.4.56 (2022-03-15)
-
-### ListBase
-
-#### Bug Fixes
-
-- `#I344581` - The issue with "ListView item is displayed as an anchor element when URL is present in data source" has been resolved.
-
-## 19.3.45 (2021-10-12)
-
-### ListView
-
-#### Bug Fixes
-
-- `#F152660` - The issue with "ListView is not rendered while using both checkbox and template" has been resolved.
-
-## 19.3.44 (2021-10-05)
-
 ### ListView
 
 #### Bug Fixes
 
 - `#F168185` - The issue with "Sorting is not applied properly when entering different values in the text field of the ListView component" has been resolved.
+
+- `#F168185` -  Issue with "Sorting is not applied properly with different text field in ListView component" has been resolved.
+
 
 ## 19.2.55 (2021-08-11)
 
@@ -89,7 +74,6 @@
 #### Bug Fixes
 
 - `#304129`,`#304247` - The issue "ActionBegin event does not trigger before/after switching to new views in the nested ListView" has been fixed.
-
 - `#310143` - The script error with refreshItemHeight method in ListView component has been resolved.
 
 ## 18.3.53 (2020-12-08)
@@ -99,7 +83,6 @@
 #### Bug Fixes
 
 - `#302538` - The issue with "The space key is not accepted in input text while using inside of Listview Template" has been fixed.
-
 - `#305040` - `The template issue in ListView component when using AddItem method` has been resolved.
 
 ## 18.3.47 (2020-11-05)
@@ -124,7 +107,7 @@
 
 #### New Features
 
-- Provided support for rendering JsRender template in the ListView component.
+- Provided support for rendering JsRender template in the ListView component.
 
 #### Bug Fixes
 
@@ -152,25 +135,13 @@
 
 #### Bug Fixes
 
-- Issue with `Remote data with Virtualization feature` has been fixed.
-
-### ListView
-
-#### Bug Fixes
-
-- #276068 Issue with `Angular's ngTemplate with Virtualization being enabled` has been fixed.
+- The issue with `enabling the virtualization support in ListView component that throws script error in IE 11 browser` has been resolved.
 
 ### ListBase
 
 #### Bug Fixes
 
 - #276068 Issue with `grouping of list-item in header` has been fixed.
-
-### ListView
-
-#### Bug Fixes
-
-- The issue with `enabling the virtualization support in ListView component that throws script error in IE 11 browser` has been resolved.
 
 ## 17.4.40 (2019-12-24)
 
@@ -249,7 +220,6 @@
 #### Bug Fixes
 
 - Issue with duplicate entries on updating the data source while binding data using data manager has been fixed.
-
 - Now it is possible to perform key interactions with input list items displayed using custom templates.
 
 ## 16.4.44 (2018-12-24)
@@ -259,7 +229,6 @@
 #### Bug Fixes
 
 - Fixed multiple CSS class not added properly while using `template` property in `UI Virtualization`.
-
 - Fixed height calculation in `UI Virtualization` with sample level border inclusion.
 
 ## 16.3.33 (2018-11-20)
@@ -284,7 +253,7 @@
 
 #### Bug Fixes
 
-- Fixed issue with `imageUrl` property while using with `template` rendering.
+- Fixed issue with `imageUrl` property while using with `template` rendering.
 
 ## 16.3.25 (2018-10-15)
 
@@ -293,7 +262,6 @@
 #### Bug Fixes
 
 - Fixed remove selection of list items with `undefined` input using `selectItem` public method.
-
 - Fixed custom `cssClass` not removed properly while using `destroy` public method.
 
 ## 16.3.23 (2018-10-03)
@@ -357,11 +325,11 @@
 
 - The following API namings are renamed.
 
-| Existing API Name | New API Name    |
-| :-------------:   |:-------------:  |
-| unCheckAllItem    | uncheckAllItems |
-| unCheckItem       | uncheckItem     |
-| checkAllItem      | checkAllItems   |
+| Existing API Name | New API Name | 
+|:-:|:-:|
+| unCheckAllItem | uncheckAllItems | 
+| unCheckItem | uncheckItem | 
+| checkAllItem | checkAllItems | 
 
 ## 16.1.42 (2018-05-15)
 
@@ -489,12 +457,11 @@
 
 ListView component represent data in interactive hierarchical structure interface across different layouts or views, which also has features of data-binding, template and grouping.
 
+
 - **Data binding** - Supports data binding to display the list of items from the local or server-side data source.
-
 - **Grouping** - Provides support to group the logically related items under a category.
-
 - **Nested list** -  Displays a set of nested list items in different layout.
-
 - **Customizing templates** - Allows you to customize the list item, header and category group header.
-
 - **Accessibility** - Provides built-in accessibility support which helps to access all the ListView component features through the keyboard, on-screen readers, or other assistive technology devices.
+
+

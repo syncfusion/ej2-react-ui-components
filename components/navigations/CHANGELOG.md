@@ -2,13 +2,96 @@
 
 ## [Unreleased]
 
-## 19.4.56 (2022-03-15)
+### Carousel
+
+The Carousel component allows users to display images with content, links, etc., like a slide show. Typical uses of carousels include scrolling news headlines, featured articles on home pages, and image galleries.
+
+
+- **Rendering** - The Carousel component can be rendered based on the items collection and data binding.
+- **Animation** - Supports animation effects for moving previous/next item of Carousel.
+- **Template Support** - The Carousel component items and buttons can also be rendered with custom templates.
+- **Keyboard Support** - By default, the Carousel allows interaction with commands by using keyboard shortcuts.
+- **Accessibility** - The Carousel provides built-in compliance with the `WAI-ARIA` specifications and it is achieved through attributes.
+
+### Tab
+
+#### Bug Fixes
+
+- `SF-369202, #F173364` - An issue with another tab item content is rendered in newly added tab item content has been fixed.
+
+## 19.4.55 (2022-03-08)
+
+### Menu
+
+#### Bug Fixes
+
+- `#I368643` - Resolved theme related issue in menu component.
+
+### Tab
+
+#### Bug Fixes
+
+- `SF-369303` - An issue with hiding tab item dynamically with `visible` property not working has been fixed.
+
+## 19.4.53 (2022-02-22)
+
+### Sidebar
+
+#### Bug Fixes
+
+- `#I363057` - The issue with "The change event is triggered twice for the first change in Sidebar component" has been resolved.
+
+## 19.4.52 (2022-02-15)
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#SF-365188` - An issue with the toolbar item separator not being hidden in multi-row mode has been fixed.
+
+## 19.4.50 (2022-02-08)
+
+### Menu
+
+#### Bug Fixes
+
+- Issue with `setItem` method has been fixed.
+
+## 19.4.47 (2022-01-25)
+
+### Breadcrumb
+
+#### Bug Fixes
+
+- Issue with CSS validation has been fixed.
+
+### Tab
+
+#### Bug Fixes
+
+- `#SF-363121` - An issue with "script error occurred while adding a new tab item without content" has been fixed.
+
+## 19.4.41 (2022-01-04)
+
+### Menu
+
+#### Bug Fixes
+
+- Sub menu position alignment issue in menu has been resolved.
+
+### Tab
+
+#### Bug Fixes
+
+- `#SF-359072` - An issue with active tab selection is not highlight when render inside the `dialog` has been fixed.
+
+## 19.4.40 (2021-12-28)
 
 ### Context Menu
 
 #### Bug Fixes
 
-- `#I346314` - Issue with stopPropagation not works for context menu has been resolved.
+- `#I346314` - Issue with `stopPropagation` not works for context menu has been resolved.
 
 ## 19.4.38 (2021-12-17)
 

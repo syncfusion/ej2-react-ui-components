@@ -2,8 +2,6 @@
 
 ## [Unreleased]
 
-## 19.4.56 (2022-03-15)
-
 ### ProgressBar
 
 #### Bug Fixes

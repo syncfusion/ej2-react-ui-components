@@ -38,6 +38,11 @@ Following list of components are available in the package.
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=numerictextbox#/material/numerictextbox/default)
   * [Product Page](https://www.syncfusion.com/react-ui-components/numerictextbox/?utm_source=npm&utm_campaign=numerictextbox)
 
+* **Signature** - The Signature component allows user to draw smooth signatures as vector outline of strokes using variable width bezier curve interpolation. It allows to save signature as image.
+  * [Getting Started](https://ej2.syncfusion.com/documentation/signature/getting-started?lang=typescript&utm_source=npm&utm_campaign=signature)
+  * [View Online Demos](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_campaign=signature#/material/signature/default.html)
+  * [Product Page](https://www.syncfusion.com/javascript-ui-controls/signature/?utm_source=npm&utm_campaign=signature)
+
 * **Slider** - The slider component allows you to select a value or range of values between the min and max range.
   * [Getting Started](https://ej2.syncfusion.com/react/documentation/slider/getting-started/?utm_source=npm&utm_campaign=slider)
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=slider#/material/slider/default)
@@ -92,7 +97,15 @@ Input component is also offered in following list of frameworks.
 - [**Internationalization**](https://ej2.syncfusion.com/react/documentation/numerictextbox/globalization#internationalization/?utm_source=npm&utm_campaign=numerictextbox) - library provides support for formatting and parsing number using the official Unicode CLDR JSON data.
 - [**Localization**](https://ej2.syncfusion.com/react/documentation/numerictextbox/globalization#internationalization/?utm_source=npm&utm_campaign=numerictextbox#localization) - Supports to localize spin up and down buttons title for the tooltip to different cultures.
 
-### 5. Slider
+### 5. Signature
+- [**Customization**](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_campaign=slider#/material/signature/default.html) - Support various customization options like background color, background image, stroke color, stroke width, save with background, undo, redo, clear, readonly, and disabled.
+- [**Save**](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_campaign=slider#/material/signature/default.html) - Support to save the signature as image like PNG, JPEG, and SVG.
+- [**Load**](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_campaign=slider#/material/signature/default.html)
+- Support to load the signature as base64 url of the image.
+- [**Draw**](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_campaign=slider#/material/signature/default.html)
+- Support to draw the text with the different font family and font size.
+
+### 6. Slider
 - [**Types**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=slider#/material/slider/default) - Provided three types of Slider.
 - [**Orientation**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=slider#/material/slider/orientation) - Displays the Slider in horizontal or vertical direction.
 - [**Buttons**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=slider#/material/slider/tooltip) - Provided built-in support to render the buttons in both edges of the Slider.
@@ -103,7 +116,7 @@ Input component is also offered in following list of frameworks.
 - [**Accessibility**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=slider#/material/slider/default) - Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
 - [**Keyboard Interaction**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=slider#/material/slider/api) - The Slider can be intractable through the keyboard.
 
-### 6. Upload
+### 7. Upload
 - [**Chunk Upload**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/chunk-upload) – used to upload large files as chunks
 - [**Drag-and-drop**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/custom-drop-area) – drag the files and drop into component to upload them.
 - [**Template**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-upload-npm#/material/uploader/custom-file-list) – the file list and buttons can be customize using template

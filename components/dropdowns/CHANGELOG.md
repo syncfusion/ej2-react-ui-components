@@ -2,14 +2,13 @@
 
 ## [Unreleased]
 
-## 19.4.56 (2022-03-15)
-
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#I342476` - Issue with "ItemTemplate is not rendered properly when preselected item is cleared immediately after render" has been resolved.
-- `#I349117` - Issue with "checkbox is not rendered in the group header while rendering component with group checkbox and group template" has been resolved.
+- `#FB31100` - Issue with "popup is not opened while changing the `popupHeight` dynamically in the `beforeOpen` event" has been resolved.
+
+- `#I355272` - Issue with "wrong popup item get selected when popup has duplicate text with item template and change the text property dynamically" has been resolved.
 
 ## 19.3.56 (2021-12-02)
 
@@ -1873,6 +1872,15 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.4.38 (2021-12-17)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I342476` - Issue with "ItemTemplate is not rendered properly when preselected item is cleared immediately after render" has been resolved.
+- `#I349117` - Issue with "checkbox is not rendered in the group header while rendering component with group checkbox and group template" has been resolved.
 
 ## 19.2.59 (2021-08-31)
 

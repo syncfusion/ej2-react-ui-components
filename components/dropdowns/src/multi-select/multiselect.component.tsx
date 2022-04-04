@@ -8,6 +8,7 @@ export interface MultiSelectTypecast {
     headerTemplate?: string | Function | any;
     valueTemplate?: string | Function | any;
     itemTemplate?: string | Function | any;
+    groupTemplate?: string | Function | any;
 }
 /**
 * The MultiSelect allows the user to pick a values from the predefined list of values.
