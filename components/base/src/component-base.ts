@@ -2,7 +2,6 @@
  * React Component Base
  */
  import * as React from 'react';
- import * as ReactDOM from 'react-dom';
  import { extend, isNullOrUndefined, setValue, getValue, isObject } from '@syncfusion/ej2-base';
  /**
   * Interface for processing directives
@@ -153,11 +152,11 @@
                      let propsClsName = this.props[propkey].split(' ');
                      for (let i: number = 0; i < propsClsName.length; i++) {
                         this.element.classList.remove(propsClsName[i]);
-                     }
+                    }
                      let dpropsClsName = dProps[propkey].split(' ');
                      for (let j: number = 0; j < dpropsClsName.length; j++) {
                         this.element.classList.add(dpropsClsName[j]);
-                     }
+                    }
                  } else if (propkey !== 'disabled') {
                      delete dProps[propkey];
                  }
@@ -165,7 +164,10 @@
              else if (propkey === 'value' && nextProps[propkey] === this[propkey]) {
                 delete dProps[propkey];
             }
-            else if ((propkey === 'valueTemplate' || propkey === 'itemTemplate') && nextProps[propkey].toString() === this[propkey].toString()) {
+            else if ((propkey === 'valueTemplate' || propkey === 'itemTemplate' || propkey === 'headerTemplate') && nextProps[propkey].toString() === this[propkey].toString()) {
+                delete dProps[propkey];
+            }
+            else if(propkey === 'content' && typeof dProps[propkey] === 'function') {
                 delete dProps[propkey];
             }
          }
@@ -236,7 +238,7 @@
              }
 
         }
-         if (this.clsName) {
+        if (this.clsName) {
             let clsList: string[] = this.element.classList;
             let className: any =  this.htmlattributes['className'];
             for(let i: number = 0; i < clsList.length; i++){
@@ -453,12 +455,6 @@
          }
  
      }
-
-    // tslint:disable:no-any
-    public appendReactElement (element: any, container: HTMLElement) {
-        ReactDOM.render((ReactDOM as any).createPortal(element, container), container);
-    };
-
  // tslint:disable:no-any 
      public renderReactTemplates (callback?: any): void {
          this.isReactForeceUpdate = true;

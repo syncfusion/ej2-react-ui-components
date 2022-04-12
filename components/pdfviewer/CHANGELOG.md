@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 20.1.47 (2022-04-04)
+
 ### PDF Viewer
 
 #### New Features

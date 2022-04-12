@@ -2,45 +2,6 @@
 
 ## [Unreleased]
 
-### Common
-
-#### Bug Fixes
-
-- `SF-366476` - Resolved the issue with React `Dialog` content does not update when changing state.
-
-## 19.4.52 (2022-02-15)
-
-### Common
-
-#### Bug Fixes
-
-- `I352651` - Styles not applied properly if it dynamically changed has been resolved.
-
-## 19.4.47 (2022-01-25)
-
-### Common
-
-#### Bug Fixes
-
-- `F167610` - Resolved the Console error occurs when using a value and `valueTemplate` together.
-
-## 19.4.43 (2022-01-18)
-
-### Common
-
-#### Bug Fixes
-
-- `I362528` - Resolved the peer dependency warning in higher React version
-
-## 19.4.42 (2022-01-11)
-
-### Common
-
-#### Bug Fixes
-
-- `I339589` - Resolved the `DropdownButton` issue with react component as target.
-- `F165505` - Resolved the issue with Focus lost in input component each time `onchange` invoked.
-
 ## 19.1.67 (2021-06-08)
 
 ### Common

@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-base",
-	"version": "19.4.52",
+	"version": "20.1.47",
 	"description": "A common package of Essential JS 2 React base, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -23,6 +23,10 @@
 	"main": "./dist/ej2-react-base.umd.min.js",
 	"module": "./index.js",
 	"readme": "ReadMe.md",
+	"peerDependencies": {
+		"react": "15.5.4 - 16.13.1",
+		"react-dom": "15.5.4 - 16.13.1"
+	},
 	"dependencies": {
 		"@syncfusion/ej2-base": "*"
 	},
