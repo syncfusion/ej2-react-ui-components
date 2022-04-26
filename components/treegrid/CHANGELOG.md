@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.1.51 (2022-04-26)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I372618` - Resolved searching after scroll shows no records to display in case of Virtualization enabled.
+
 ## 20.1.48 (2022-04-12)
 
 ### Tree Grid
