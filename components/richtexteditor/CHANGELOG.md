@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 20.1.52 (2022-05-04)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I375434` - Now, pressing the enter key multiple times when the content is empty in the Rich Text Editor on the `Firefox` browser works properly.
+- `#I349917` - Now, the floating toolbar in the Rich Text Editor is displayed properly when rendered inside the modal dialog.
+- `#I376141` - Now, pressing enter key before the image with caption doesn't remove the image.
+- `#I373983, #I374234` - Now, the Rich Text Editor table resize works properly when placed inside the `Grid` component.
+
 ## 20.1.51 (2022-04-26)
 
 ### RichTextEditor
@@ -12,6 +23,7 @@
 - `#I373953` - Now, inserting the table after the list element with the image doesn't remove the image from the list.
 - `#I372489` - Now, resizing the images with equal height and width works properly.
 - `#F173394` - Now, the undo and redo keys work properly when pasting the content in the Rich Text Editor.
+- `#SF-367649` - Now, more space between the text and inserting a new link does not remove the space between the words.
 
 ## 20.1.50 (2022-04-19)
 
