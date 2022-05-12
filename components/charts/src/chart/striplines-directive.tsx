@@ -17,7 +17,7 @@ import { StripLineSettingsModel } from '@syncfusion/ej2-charts';
  * </ChartComponent>
  * ```
  */
-export class StripLineDirective extends ComplexBase<StripLineSettingsModel, StripLineSettingsModel> {
+export class StripLineDirective extends ComplexBase<StripLineSettingsModel & { children?: React.ReactNode }, StripLineSettingsModel> {
     public static moduleName: string = 'stripLine';
 }
 

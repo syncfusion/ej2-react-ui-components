@@ -16,7 +16,7 @@ export interface CarouselItemDirTypecast {
  * </CarouselComponent>
  * ```
  */
-export class CarouselItemDirective extends ComplexBase<CarouselItemModel| CarouselItemDirTypecast, CarouselItemModel| CarouselItemDirTypecast> {
+export class CarouselItemDirective extends ComplexBase<CarouselItemModel| CarouselItemDirTypecast & { children?: React.ReactNode }, CarouselItemModel| CarouselItemDirTypecast> {
     public static moduleName: string = 'carouselItem';
 }
 

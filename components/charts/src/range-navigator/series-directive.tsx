@@ -13,7 +13,7 @@ import { RangeNavigatorSeriesModel } from '@syncfusion/ej2-charts';
  * </RangenavigatorChartComponent>
  * ```
  */
-export class RangenavigatorSeriesDirective extends ComplexBase<RangeNavigatorSeriesModel, RangeNavigatorSeriesModel> {
+export class RangenavigatorSeriesDirective extends ComplexBase<RangeNavigatorSeriesModel & { children?: React.ReactNode }, RangeNavigatorSeriesModel> {
     public static moduleName: string = 'rangenavigatorSeries';
 }
 

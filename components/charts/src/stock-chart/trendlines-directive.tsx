@@ -17,7 +17,7 @@ import { StockChartTrendlineModel } from '@syncfusion/ej2-charts';
  * </StockChartComponent>
  * ```
  */
-export class StockChartTrendlineDirective extends ComplexBase<StockChartTrendlineModel, StockChartTrendlineModel> {
+export class StockChartTrendlineDirective extends ComplexBase<StockChartTrendlineModel & { children?: React.ReactNode }, StockChartTrendlineModel> {
     public static moduleName: string = 'stockChartTrendline';
 }
 

@@ -2,6 +2,7 @@
  * React Component Base
  */
  import * as React from 'react';
+ import * as ReactDOM from 'react-dom';
  import { extend, isNullOrUndefined, setValue, getValue, isObject } from '@syncfusion/ej2-base';
  /**
   * Interface for processing directives
@@ -47,6 +48,7 @@
      public static reactUid: number = 1;
      private setProperties: Function;
      private element: any;
+     private mountingState:any = false;
      private appendTo: Function;
      private destroy: Function;
      private getModuleName: () => string;
@@ -68,6 +70,7 @@
      private isshouldComponentUpdateCalled: boolean = false;
      private modelObserver: any;
      private isDestroyed: boolean;
+     private isCreated: boolean = false;
      private isProtectedOnChange: boolean;
      private canDelayUpdate: boolean;
      private reactElement: HTMLElement;
@@ -88,7 +91,9 @@
          // tslint:disable-next-line:no-any
          this.renderReactComponent();
          if (this.portals && this.portals.length) {
+             this.mountingState = true;
              this.renderReactTemplates();
+             this.mountingState = false;
          }
      }
      
@@ -103,7 +108,7 @@
 
      private renderReactComponent(): void {
          let ele: Element = this.reactElement;
-         if (ele) {
+         if (ele && !this.isAppendCalled) {
              this.isAppendCalled = true;
              this.appendTo(ele);
          }
@@ -280,6 +285,7 @@
              this.isProtectedOnChange = false;
              if(eventName === 'created') {
                  setTimeout(()=>{
+                     this.isCreated = true;
                      if(!this.isDestroyed) {
                          this.modelObserver.notify(eventName, eventProp, successHandler);    
                      }
@@ -450,20 +456,37 @@
          clearTimeout(this.cachedTimeOut);
          var modulesName = ['dropdowntree', 'checkbox'];
          // tslint:disable-next-line:no-any
-         if (this.initRenderCalled && this.isAppendCalled && this.element && (!modulesName.indexOf(this.getModuleName())) ? document.body.contains(this.element) : true && !this.isDestroyed) {
+         if (this.initRenderCalled && this.isAppendCalled && this.element && ((!modulesName.indexOf(this.getModuleName())) ? document.body.contains(this.element) : true) && !this.isDestroyed && this.isCreated) {
              this.destroy();
          }
  
      }
- // tslint:disable:no-any 
+
+    // tslint:disable:no-any
+    public appendReactElement (element: any, container: HTMLElement) {
+        let portal: any = (ReactDOM as any).createPortal(element, container);
+        if (!this.portals) {
+            this.portals = [portal];
+        }
+        else {
+            this.portals.push(portal);
+        }
+    };
+    // tslint:disable:no-any 
+    public intForceUpdate (callback?: any): void {
+        let flush: any = getValue('flushSync',ReactDOM);
+        if (this.initRenderCalled && flush && !this.mountingState) {
+            flush(() => {
+                this.forceUpdate(callback);
+            });    
+        }  else {
+            this.forceUpdate(callback);
+        }
+    }
+ 
      public renderReactTemplates (callback?: any): void {
          this.isReactForeceUpdate = true;
-         if(callback){
-             this.forceUpdate(callback);
-         } else {
-             this.forceUpdate();    
-         }
-         
+         this.intForceUpdate(callback);
          this.isReactForeceUpdate = false;
      };
  // tslint:disable:no-any 

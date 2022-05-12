@@ -17,7 +17,7 @@ import { ChartSegmentModel } from '@syncfusion/ej2-charts';
  * </ChartComponent>
  * ```
  */
-export class SegmentDirective extends ComplexBase<ChartSegmentModel, ChartSegmentModel> {
+export class SegmentDirective extends ComplexBase<ChartSegmentModel & { children?: React.ReactNode }, ChartSegmentModel> {
     public static moduleName: string = 'segment';
 }
 

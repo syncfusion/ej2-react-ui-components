@@ -3,7 +3,7 @@ import { RangeBandSettingsModel } from '@syncfusion/ej2-charts';
 
 
 
-export class RangeBandSettingDirective extends ComplexBase<RangeBandSettingsModel, RangeBandSettingsModel> {
+export class RangeBandSettingDirective extends ComplexBase<RangeBandSettingsModel & { children?: React.ReactNode }, RangeBandSettingsModel> {
     public static moduleName: string = 'rangeBandSetting';
 }
 

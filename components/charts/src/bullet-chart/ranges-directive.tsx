@@ -12,7 +12,7 @@ import { RangeModel } from '@syncfusion/ej2-charts';
  * </BulletChartComponent>
  * ```
  */
-export class BulletRangeDirective extends ComplexBase<RangeModel, RangeModel> {
+export class BulletRangeDirective extends ComplexBase<RangeModel & { children?: React.ReactNode }, RangeModel> {
     public static moduleName: string = 'bulletRange';
 }
 

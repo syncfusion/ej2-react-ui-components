@@ -15,7 +15,7 @@ export interface ChartAnnotationSettingsDirTypecast {
  * </ChartComponent>
  * ```
  */
-export class AnnotationDirective extends ComplexBase<ChartAnnotationSettingsModel| ChartAnnotationSettingsDirTypecast, ChartAnnotationSettingsModel| ChartAnnotationSettingsDirTypecast> {
+export class AnnotationDirective extends ComplexBase<ChartAnnotationSettingsModel| ChartAnnotationSettingsDirTypecast & { children?: React.ReactNode }, ChartAnnotationSettingsModel| ChartAnnotationSettingsDirTypecast> {
     public static moduleName: string = 'annotation';
 }
 

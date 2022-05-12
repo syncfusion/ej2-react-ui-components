@@ -17,7 +17,7 @@ import { RangeModel } from '@syncfusion/ej2-circulargauge';
  * </CircularGaugeComponent>
  * ```
  */
-export class RangeDirective extends ComplexBase<RangeModel, RangeModel> {
+export class RangeDirective extends ComplexBase<RangeModel & { children?: React.ReactNode }, RangeModel> {
     public static moduleName: string = 'range';
 }
 

@@ -19,7 +19,7 @@ export interface PanelDirTypecast {
  * </DashBoardLayoutComponent>
  * ```
  */
-export class PanelDirective extends ComplexBase<PanelModel| PanelDirTypecast, PanelModel| PanelDirTypecast> {
+export class PanelDirective extends ComplexBase<PanelModel| PanelDirTypecast & { children?: React.ReactNode }, PanelModel| PanelDirTypecast> {
     public static moduleName: string = 'panel';
     public static complexTemplate: Object = {'panelsHeader': 'panels.header', 'panelsContent': 'panels.content'};
 }

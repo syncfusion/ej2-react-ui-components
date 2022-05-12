@@ -3,7 +3,7 @@ import { SmithchartSeriesModel } from '@syncfusion/ej2-charts';
 
 
 
-export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesModel, SmithchartSeriesModel> {
+export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesModel & { children?: React.ReactNode }, SmithchartSeriesModel> {
     public static moduleName: string = 'smithchartSeries';
 }
 

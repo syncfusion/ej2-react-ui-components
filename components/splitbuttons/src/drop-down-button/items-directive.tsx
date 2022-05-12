@@ -3,7 +3,7 @@ import { ItemModel } from '@syncfusion/ej2-splitbuttons';
 
 
 
-export class DropDownButtonItemDirective extends ComplexBase<ItemModel, ItemModel> {
+export class DropDownButtonItemDirective extends ComplexBase<ItemModel & { children?: React.ReactNode }, ItemModel> {
     public static moduleName: string = 'dropDownButtonItem';
 }
 

@@ -21,7 +21,7 @@ export interface ColumnDirTypecast {
  * </TreeGridComponent>
  * ```
  */
-export class ColumnDirective extends ComplexBase<ColumnModel| ColumnDirTypecast, ColumnModel| ColumnDirTypecast> {
+export class ColumnDirective extends ComplexBase<ColumnModel| ColumnDirTypecast & { children?: React.ReactNode }, ColumnModel| ColumnDirTypecast> {
     public static moduleName: string = 'column';
     public static complexTemplate: Object = {'filterItemTemplate': 'filter.itemTemplate'};
 }

@@ -13,7 +13,7 @@ import { LayerSettingsModel } from '@syncfusion/ej2-maps';
  * </MapsComponent>
  * ```
  */
-export class LayerDirective extends ComplexBase<LayerSettingsModel, LayerSettingsModel> {
+export class LayerDirective extends ComplexBase<LayerSettingsModel & { children?: React.ReactNode }, LayerSettingsModel> {
     public static moduleName: string = 'layer';
 }
 

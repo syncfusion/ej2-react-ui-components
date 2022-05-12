@@ -15,7 +15,7 @@ export interface SeriesDirTypecast {
  * </ChartComponent>
  * ```
  */
-export class SeriesDirective extends ComplexBase<SeriesModel| SeriesDirTypecast, SeriesModel| SeriesDirTypecast> {
+export class SeriesDirective extends ComplexBase<SeriesModel| SeriesDirTypecast & { children?: React.ReactNode }, SeriesModel| SeriesDirTypecast> {
     public static moduleName: string = 'series';
     public static complexTemplate: Object = {'dataLabelTemplate': 'dataLabel.template'};
 }

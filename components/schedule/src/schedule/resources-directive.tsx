@@ -14,7 +14,7 @@ import { ResourcesModel } from '@syncfusion/ej2-schedule';
  * </ScheduleComponent>
  * ```
  */
-export class ResourceDirective extends ComplexBase<ResourcesModel, ResourcesModel> {
+export class ResourceDirective extends ComplexBase<ResourcesModel & { children?: React.ReactNode }, ResourcesModel> {
     public static moduleName: string = 'resource';
 }
 

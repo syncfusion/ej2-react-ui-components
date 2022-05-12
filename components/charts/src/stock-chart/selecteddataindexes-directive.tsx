@@ -13,7 +13,7 @@ import { StockChartIndexesModel } from '@syncfusion/ej2-charts';
  * </ChartComponent>
  * ```
  */
-export class StockChartSelectedDataIndexDirective extends ComplexBase<StockChartIndexesModel, StockChartIndexesModel> {
+export class StockChartSelectedDataIndexDirective extends ComplexBase<StockChartIndexesModel & { children?: React.ReactNode }, StockChartIndexesModel> {
     public static moduleName: string = 'stockChartSelectedDataIndex';
 }
 

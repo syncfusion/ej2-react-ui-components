@@ -14,7 +14,7 @@ export interface ProgressAnnotationSettingsDirTypecast {
  * </progressbarComponent>
  * ```
  */
-export class ProgressBarAnnotationDirective extends ComplexBase<ProgressAnnotationSettingsModel| ProgressAnnotationSettingsDirTypecast, ProgressAnnotationSettingsModel| ProgressAnnotationSettingsDirTypecast> {
+export class ProgressBarAnnotationDirective extends ComplexBase<ProgressAnnotationSettingsModel| ProgressAnnotationSettingsDirTypecast & { children?: React.ReactNode }, ProgressAnnotationSettingsModel| ProgressAnnotationSettingsDirTypecast> {
     public static moduleName: string = 'progressBarAnnotation';
 }
 

@@ -15,7 +15,7 @@ export interface StockChartAnnotationSettingsDirTypecast {
  * </StockChartComponent>
  * ```
  */
-export class StockChartAnnotationDirective extends ComplexBase<StockChartAnnotationSettingsModel| StockChartAnnotationSettingsDirTypecast, StockChartAnnotationSettingsModel| StockChartAnnotationSettingsDirTypecast> {
+export class StockChartAnnotationDirective extends ComplexBase<StockChartAnnotationSettingsModel| StockChartAnnotationSettingsDirTypecast & { children?: React.ReactNode }, StockChartAnnotationSettingsModel| StockChartAnnotationSettingsDirTypecast> {
     public static moduleName: string = 'stockChartAnnotation';
 }
 

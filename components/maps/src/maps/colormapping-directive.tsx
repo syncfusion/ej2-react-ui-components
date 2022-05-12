@@ -19,7 +19,7 @@ import { ColorMappingSettingsModel } from '@syncfusion/ej2-maps';
  * </MapsComponent>
  * ```
  */
-export class ColorMappingDirective extends ComplexBase<ColorMappingSettingsModel, ColorMappingSettingsModel> {
+export class ColorMappingDirective extends ComplexBase<ColorMappingSettingsModel & { children?: React.ReactNode }, ColorMappingSettingsModel> {
     public static moduleName: string = 'colorMapping';
 }
 

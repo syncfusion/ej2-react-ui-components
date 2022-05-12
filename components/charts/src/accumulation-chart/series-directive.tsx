@@ -15,7 +15,7 @@ export interface AccumulationSeriesDirTypecast {
  * </AccumulationChartComponent>
  * ```
  */
-export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesModel| AccumulationSeriesDirTypecast, AccumulationSeriesModel| AccumulationSeriesDirTypecast> {
+export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesModel| AccumulationSeriesDirTypecast & { children?: React.ReactNode }, AccumulationSeriesModel| AccumulationSeriesDirTypecast> {
     public static moduleName: string = 'accumulationSeries';
     public static complexTemplate: Object = {'dataLabelTemplate': 'dataLabel.template'};
 }

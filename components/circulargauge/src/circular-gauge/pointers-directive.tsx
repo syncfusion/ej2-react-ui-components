@@ -17,7 +17,7 @@ import { PointerModel } from '@syncfusion/ej2-circulargauge';
  * </CircularGaugeComponent>
  * ```
  */
-export class PointerDirective extends ComplexBase<PointerModel, PointerModel> {
+export class PointerDirective extends ComplexBase<PointerModel & { children?: React.ReactNode }, PointerModel> {
     public static moduleName: string = 'pointer';
 }
 

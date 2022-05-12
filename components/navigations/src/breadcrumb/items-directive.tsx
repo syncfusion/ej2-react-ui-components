@@ -14,7 +14,7 @@ import { BreadcrumbItemModel } from '@syncfusion/ej2-navigations';
  * </BreadcrumbComponent>
  * ```
  */
-export class BreadcrumbItemDirective extends ComplexBase<BreadcrumbItemModel, BreadcrumbItemModel> {
+export class BreadcrumbItemDirective extends ComplexBase<BreadcrumbItemModel & { children?: React.ReactNode }, BreadcrumbItemModel> {
     public static moduleName: string = 'breadcrumbItem';
 }
 

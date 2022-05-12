@@ -21,7 +21,7 @@ export interface GridColumnDirTypecast {
  * </GridComponent>
  * ```
  */
-export class ColumnDirective extends ComplexBase<GridColumnModel| GridColumnDirTypecast, GridColumnModel| GridColumnDirTypecast> {
+export class ColumnDirective extends ComplexBase<GridColumnModel| GridColumnDirTypecast & { children?: React.ReactNode }, GridColumnModel| GridColumnDirTypecast> {
     public static moduleName: string = 'column';
     public static complexTemplate: Object = {'filterItemTemplate': 'filter.itemTemplate'};
 }

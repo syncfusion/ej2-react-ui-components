@@ -13,7 +13,7 @@ import { StockEventsSettingsModel } from '@syncfusion/ej2-charts';
  * </StockChartComponent>
  * ```
  */
-export class StockEventDirective extends ComplexBase<StockEventsSettingsModel, StockEventsSettingsModel> {
+export class StockEventDirective extends ComplexBase<StockEventsSettingsModel & { children?: React.ReactNode }, StockEventsSettingsModel> {
     public static moduleName: string = 'stockEvent';
 }
 

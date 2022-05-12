@@ -13,7 +13,7 @@ import { PaletteModel } from '@syncfusion/ej2-diagrams';
  * </SymbolPaletteComponent>
  * ```
  */
-export class PaletteDirective extends ComplexBase<PaletteModel, PaletteModel> {
+export class PaletteDirective extends ComplexBase<PaletteModel & { children?: React.ReactNode }, PaletteModel> {
     public static moduleName: string = 'palette';
 }
 

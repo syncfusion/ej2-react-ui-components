@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 20.1.55 (2022-05-12)
+
+### Common
+
+#### New Features
+
+- `#I376880`, `#I376902`, `#F174796` - Added support to work with React 18 version.
+
+#### Breaking Changes
+
+- `IsLegacyTemplate` option has been stopped from this release to support React 18 support.
+
+### Common
+
+#### Bug Fixes
+
+- `I339589` - Resolved the `DropdownButton` issue with react component as target.
+
 ## 19.1.67 (2021-06-08)
 
 ### Common

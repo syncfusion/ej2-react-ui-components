@@ -24,20 +24,13 @@
              } else {
                  cEle = document.createElement('div');
              }
-             if (component && component.isLegacyTemplate) {
-                 ReactDOM.render((actTemplate as Function)(actData), cEle);
-                 if (!element) {
-                    detach(cEle);
-                 }
+             let rele: any = React.createElement(actTemplate, actData);
+             let portal: any = (ReactDOM as any).createPortal(rele, cEle);
+             portal.propName = prop;
+             if (!component.portals) {
+                 component.portals = [portal];
              } else {
-                 let rele: any = React.createElement(actTemplate, actData);
-                 let portal: any = (ReactDOM as any).createPortal(rele, cEle);
-                 portal.propName = prop;
-                 if (!component.portals) {
-                     component.portals = [portal];
-                 } else {
-                     component.portals.push(portal);
-                 }
+                 component.portals.push(portal);
              }
  
              if (!element) {

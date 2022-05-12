@@ -18,7 +18,7 @@ export interface TabItemDirTypecast {
  * </TabComponent>
  * ```
  */
-export class TabItemDirective extends ComplexBase<TabItemModel| TabItemDirTypecast, TabItemModel| TabItemDirTypecast> {
+export class TabItemDirective extends ComplexBase<TabItemModel| TabItemDirTypecast & { children?: React.ReactNode }, TabItemModel| TabItemDirTypecast> {
     public static moduleName: string = 'tabItem';
     public static complexTemplate: Object = {'headerText': 'header.text'};
 }

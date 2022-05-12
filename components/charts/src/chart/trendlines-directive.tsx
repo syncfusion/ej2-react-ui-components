@@ -17,7 +17,7 @@ import { TrendlineModel } from '@syncfusion/ej2-charts';
  * </ChartComponent>
  * ```
  */
-export class TrendlineDirective extends ComplexBase<TrendlineModel, TrendlineModel> {
+export class TrendlineDirective extends ComplexBase<TrendlineModel & { children?: React.ReactNode }, TrendlineModel> {
     public static moduleName: string = 'trendline';
 }
 

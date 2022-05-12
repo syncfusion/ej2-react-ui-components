@@ -3,7 +3,7 @@ import { ItemModel } from '@syncfusion/ej2-splitbuttons';
 
 
 
-export class SplitButtonItemDirective extends ComplexBase<ItemModel, ItemModel> {
+export class SplitButtonItemDirective extends ComplexBase<ItemModel & { children?: React.ReactNode }, ItemModel> {
     public static moduleName: string = 'splitButtonItem';
 }
 

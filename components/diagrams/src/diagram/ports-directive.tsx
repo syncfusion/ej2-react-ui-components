@@ -18,7 +18,7 @@ import { PointPortModel } from '@syncfusion/ej2-diagrams';
  * </DiagramComponent>
  * ```
  */
-export class PortDirective extends ComplexBase<PointPortModel, PointPortModel> {
+export class PortDirective extends ComplexBase<PointPortModel & { children?: React.ReactNode }, PointPortModel> {
     public static moduleName: string = 'port';
 }
 

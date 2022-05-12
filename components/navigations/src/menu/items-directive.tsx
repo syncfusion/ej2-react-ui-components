@@ -3,7 +3,7 @@ import { MenuItemModel } from '@syncfusion/ej2-navigations';
 
 
 
-export class MenuItemDirective extends ComplexBase<MenuItemModel, MenuItemModel> {
+export class MenuItemDirective extends ComplexBase<MenuItemModel & { children?: React.ReactNode }, MenuItemModel> {
     public static moduleName: string = 'menuItem';
 }
 

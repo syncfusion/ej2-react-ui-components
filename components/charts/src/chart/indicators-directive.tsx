@@ -13,7 +13,7 @@ import { TechnicalIndicatorModel } from '@syncfusion/ej2-charts';
  * </ChartComponent>
  * ```
  */
-export class IndicatorDirective extends ComplexBase<TechnicalIndicatorModel, TechnicalIndicatorModel> {
+export class IndicatorDirective extends ComplexBase<TechnicalIndicatorModel & { children?: React.ReactNode }, TechnicalIndicatorModel> {
     public static moduleName: string = 'indicator';
 }
 

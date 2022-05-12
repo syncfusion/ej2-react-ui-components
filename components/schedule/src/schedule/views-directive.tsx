@@ -26,7 +26,7 @@ export interface ViewsDirTypecast {
  * </ScheduleComponent>
  * ```
  */
-export class ViewDirective extends ComplexBase<ViewsModel| ViewsDirTypecast, ViewsModel| ViewsDirTypecast> {
+export class ViewDirective extends ComplexBase<ViewsModel| ViewsDirTypecast & { children?: React.ReactNode }, ViewsModel| ViewsDirTypecast> {
     public static moduleName: string = 'view';
     public static complexTemplate: Object = {'timeScaleMinorSlotTemplate': 'timeScale.minorSlotTemplate', 'timeScaleMajorSlotTemplate': 'timeScale.majorSlotTemplate', 'groupHeaderTooltipTemplate': 'group.headerTooltipTemplate'};
 }

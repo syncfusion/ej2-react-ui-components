@@ -15,7 +15,7 @@ export interface AnnotationDirTypecast {
  * </LinearGaugeComponent>
  * ```
  */
-export class AnnotationDirective extends ComplexBase<AnnotationModel| AnnotationDirTypecast, AnnotationModel| AnnotationDirTypecast> {
+export class AnnotationDirective extends ComplexBase<AnnotationModel| AnnotationDirTypecast & { children?: React.ReactNode }, AnnotationModel| AnnotationDirTypecast> {
     public static moduleName: string = 'annotation';
 }
 

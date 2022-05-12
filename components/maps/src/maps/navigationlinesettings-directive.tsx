@@ -19,7 +19,7 @@ export interface NavigationLineSettingsDirTypecast {
  * </MapsComponent>
  * ```
  */
-export class NavigationLineDirective extends ComplexBase<NavigationLineSettingsModel| NavigationLineSettingsDirTypecast, NavigationLineSettingsModel| NavigationLineSettingsDirTypecast> {
+export class NavigationLineDirective extends ComplexBase<NavigationLineSettingsModel| NavigationLineSettingsDirTypecast & { children?: React.ReactNode }, NavigationLineSettingsModel| NavigationLineSettingsDirTypecast> {
     public static moduleName: string = 'navigationLine';
     public static complexTemplate: Object = {'tooltipSettingsTemplate': 'tooltipSettings.template'};
 }

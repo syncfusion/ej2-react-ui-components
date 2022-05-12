@@ -13,7 +13,7 @@ import { ColumnModel } from '@syncfusion/ej2-charts';
  * </ChartComponent>
  * ```
  */
-export class ColumnDirective extends ComplexBase<ColumnModel, ColumnModel> {
+export class ColumnDirective extends ComplexBase<ColumnModel & { children?: React.ReactNode }, ColumnModel> {
     public static moduleName: string = 'column';
 }
 

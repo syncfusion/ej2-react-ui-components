@@ -17,7 +17,7 @@ export interface AccordionItemDirTypecast {
  * </AccordionComponent>
  * ```
  */
-export class AccordionItemDirective extends ComplexBase<AccordionItemModel| AccordionItemDirTypecast, AccordionItemModel| AccordionItemDirTypecast> {
+export class AccordionItemDirective extends ComplexBase<AccordionItemModel| AccordionItemDirTypecast & { children?: React.ReactNode }, AccordionItemModel| AccordionItemDirTypecast> {
     public static moduleName: string = 'accordionItem';
 }
 

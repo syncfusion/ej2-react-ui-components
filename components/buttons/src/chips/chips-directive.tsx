@@ -14,7 +14,7 @@ export interface ChipDirTypecast {
  * </ChipListComponent>
  * ```
  */
-export class ChipDirective extends ComplexBase<ChipModel| ChipDirTypecast, ChipModel| ChipDirTypecast> {
+export class ChipDirective extends ComplexBase<ChipModel| ChipDirTypecast & { children?: React.ReactNode }, ChipModel| ChipDirTypecast> {
     public static moduleName: string = 'chip';
 }
 

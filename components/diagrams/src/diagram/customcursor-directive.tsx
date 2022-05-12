@@ -13,7 +13,7 @@ import { CustomCursorActionModel } from '@syncfusion/ej2-diagrams';
  * </DiagramComponent>
  * ```
  */
-export class CustomCursorDirective extends ComplexBase<CustomCursorActionModel, CustomCursorActionModel> {
+export class CustomCursorDirective extends ComplexBase<CustomCursorActionModel & { children?: React.ReactNode }, CustomCursorActionModel> {
     public static moduleName: string = 'customCursor';
 }
 

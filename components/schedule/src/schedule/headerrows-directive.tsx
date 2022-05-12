@@ -16,7 +16,7 @@ export interface HeaderRowsDirTypecast {
  * </ScheduleComponent>
  * ```
  */
-export class HeaderRowDirective extends ComplexBase<HeaderRowsModel| HeaderRowsDirTypecast, HeaderRowsModel| HeaderRowsDirTypecast> {
+export class HeaderRowDirective extends ComplexBase<HeaderRowsModel| HeaderRowsDirTypecast & { children?: React.ReactNode }, HeaderRowsModel| HeaderRowsDirTypecast> {
     public static moduleName: string = 'headerRow';
 }
 

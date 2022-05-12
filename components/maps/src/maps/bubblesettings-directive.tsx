@@ -19,7 +19,7 @@ export interface BubbleSettingsDirTypecast {
  * </MapsComponent>
  * ```
  */
-export class BubbleDirective extends ComplexBase<BubbleSettingsModel| BubbleSettingsDirTypecast, BubbleSettingsModel| BubbleSettingsDirTypecast> {
+export class BubbleDirective extends ComplexBase<BubbleSettingsModel| BubbleSettingsDirTypecast & { children?: React.ReactNode }, BubbleSettingsModel| BubbleSettingsDirTypecast> {
     public static moduleName: string = 'bubble';
     public static complexTemplate: Object = {'tooltipSettingsTemplate': 'tooltipSettings.template'};
 }

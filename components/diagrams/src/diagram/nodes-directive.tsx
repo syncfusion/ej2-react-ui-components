@@ -13,7 +13,7 @@ import { NodeModel } from '@syncfusion/ej2-diagrams';
  * </DiagramComponent>
  * ```
  */
-export class NodeDirective extends ComplexBase<NodeModel, NodeModel> {
+export class NodeDirective extends ComplexBase<NodeModel & { children?: React.ReactNode }, NodeModel> {
     public static moduleName: string = 'node';
 }
 

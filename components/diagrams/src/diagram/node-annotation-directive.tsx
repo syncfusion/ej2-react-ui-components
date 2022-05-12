@@ -18,7 +18,7 @@ import { ShapeAnnotationModel } from '@syncfusion/ej2-diagrams';
  * </DiagramComponent>
  * ```
  */
-export class NodeAnnotationDirective extends ComplexBase<ShapeAnnotationModel, ShapeAnnotationModel> {
+export class NodeAnnotationDirective extends ComplexBase<ShapeAnnotationModel & { children?: React.ReactNode }, ShapeAnnotationModel> {
     public static moduleName: string = 'nodeAnnotation';
 }
 

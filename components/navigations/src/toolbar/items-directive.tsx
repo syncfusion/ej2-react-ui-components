@@ -16,7 +16,7 @@ export interface ItemDirTypecast {
  * </ToolbarComponent>
  * ```
  */
-export class ItemDirective extends ComplexBase<ItemModel| ItemDirTypecast, ItemModel| ItemDirTypecast> {
+export class ItemDirective extends ComplexBase<ItemModel| ItemDirTypecast & { children?: React.ReactNode }, ItemModel| ItemDirTypecast> {
     public static moduleName: string = 'item';
 }
 

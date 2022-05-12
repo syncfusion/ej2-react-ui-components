@@ -22,7 +22,7 @@ import { MultiLevelCategoriesModel } from '@syncfusion/ej2-charts';
  * </ChartComponent>
  * ```
  */
-export class CategoryDirective extends ComplexBase<MultiLevelCategoriesModel, MultiLevelCategoriesModel> {
+export class CategoryDirective extends ComplexBase<MultiLevelCategoriesModel & { children?: React.ReactNode }, MultiLevelCategoriesModel> {
     public static moduleName: string = 'category';
 }
 

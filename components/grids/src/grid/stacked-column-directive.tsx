@@ -10,7 +10,7 @@ export interface StackedColumnDirTypecast {
     filterTemplate?: string | Function | any;
 }
 
-export class StackedColumnDirective extends ComplexBase<StackedColumnModel| StackedColumnDirTypecast, StackedColumnModel| StackedColumnDirTypecast> {
+export class StackedColumnDirective extends ComplexBase<StackedColumnModel| StackedColumnDirTypecast & { children?: React.ReactNode }, StackedColumnModel| StackedColumnDirTypecast> {
     public static moduleName: string = 'stackedColumn';
     public static complexTemplate: Object = {'filterItemTemplate': 'filter.itemTemplate'};
 }

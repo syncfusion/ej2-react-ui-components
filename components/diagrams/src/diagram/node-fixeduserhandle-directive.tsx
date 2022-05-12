@@ -18,7 +18,7 @@ import { NodeFixedUserHandleModel } from '@syncfusion/ej2-diagrams';
  * </DiagramComponent>
  * ```
  */
-export class NodeFixedUserHandleDirective extends ComplexBase<NodeFixedUserHandleModel, NodeFixedUserHandleModel> {
+export class NodeFixedUserHandleDirective extends ComplexBase<NodeFixedUserHandleModel & { children?: React.ReactNode }, NodeFixedUserHandleModel> {
     public static moduleName: string = 'nodeFixedUserHandle';
 }
 

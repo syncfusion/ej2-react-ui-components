@@ -16,7 +16,7 @@ export interface PanePropertiesDirTypecast {
  * </SplitterComponent>
  * ```
  */
-export class PaneDirective extends ComplexBase<PanePropertiesModel| PanePropertiesDirTypecast, PanePropertiesModel| PanePropertiesDirTypecast> {
+export class PaneDirective extends ComplexBase<PanePropertiesModel| PanePropertiesDirTypecast & { children?: React.ReactNode }, PanePropertiesModel| PanePropertiesDirTypecast> {
     public static moduleName: string = 'pane';
 }
 

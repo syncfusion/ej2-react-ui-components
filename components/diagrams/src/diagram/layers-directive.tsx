@@ -13,7 +13,7 @@ import { LayerModel } from '@syncfusion/ej2-diagrams';
  * </DiagramComponent>
  * ```
  */
-export class LayerDirective extends ComplexBase<LayerModel, LayerModel> {
+export class LayerDirective extends ComplexBase<LayerModel & { children?: React.ReactNode }, LayerModel> {
     public static moduleName: string = 'layer';
 }
 

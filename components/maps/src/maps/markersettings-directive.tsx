@@ -20,7 +20,7 @@ export interface MarkerSettingsDirTypecast {
  * </MapsComponent>
  * ```
  */
-export class MarkerDirective extends ComplexBase<MarkerSettingsModel| MarkerSettingsDirTypecast, MarkerSettingsModel| MarkerSettingsDirTypecast> {
+export class MarkerDirective extends ComplexBase<MarkerSettingsModel| MarkerSettingsDirTypecast & { children?: React.ReactNode }, MarkerSettingsModel| MarkerSettingsDirTypecast> {
     public static moduleName: string = 'marker';
     public static complexTemplate: Object = {'tooltipSettingsTemplate': 'tooltipSettings.template'};
 }

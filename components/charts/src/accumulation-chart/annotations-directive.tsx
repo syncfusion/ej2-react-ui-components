@@ -15,7 +15,7 @@ export interface AccumulationAnnotationSettingsDirTypecast {
  * </AccumulationChartComponent>
  * ```
  */
-export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnnotationSettingsModel| AccumulationAnnotationSettingsDirTypecast, AccumulationAnnotationSettingsModel| AccumulationAnnotationSettingsDirTypecast> {
+export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnnotationSettingsModel| AccumulationAnnotationSettingsDirTypecast & { children?: React.ReactNode }, AccumulationAnnotationSettingsModel| AccumulationAnnotationSettingsDirTypecast> {
     public static moduleName: string = 'accumulationAnnotation';
 }
 

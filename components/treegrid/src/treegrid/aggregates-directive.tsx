@@ -21,7 +21,7 @@ import { AggregateRowModel } from '@syncfusion/ej2-treegrid';
  * </TreeGridComponent>
  * ```
  */
-export class AggregateDirective extends ComplexBase<AggregateRowModel, AggregateRowModel> {
+export class AggregateDirective extends ComplexBase<AggregateRowModel & { children?: React.ReactNode }, AggregateRowModel> {
     public static moduleName: string = 'aggregate';
 }
 

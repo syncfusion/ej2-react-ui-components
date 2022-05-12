@@ -17,7 +17,7 @@ import { MultiLevelLabelsModel } from '@syncfusion/ej2-charts';
  * </ChartComponent>
  * ```
  */
-export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelsModel, MultiLevelLabelsModel> {
+export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelsModel & { children?: React.ReactNode }, MultiLevelLabelsModel> {
     public static moduleName: string = 'multiLevelLabel';
 }
 

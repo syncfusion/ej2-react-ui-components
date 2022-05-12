@@ -13,7 +13,7 @@ import { ConnectorModel } from '@syncfusion/ej2-diagrams';
  * </DiagramComponent>
  * ```
  */
-export class ConnectorDirective extends ComplexBase<ConnectorModel, ConnectorModel> {
+export class ConnectorDirective extends ComplexBase<ConnectorModel & { children?: React.ReactNode }, ConnectorModel> {
     public static moduleName: string = 'connector';
 }
 

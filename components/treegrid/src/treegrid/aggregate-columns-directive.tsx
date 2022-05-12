@@ -22,7 +22,7 @@ export interface AggregateColumnDirTypecast {
  * </TreeGridComponent>
  * ```
  */
-export class AggregateColumnDirective extends ComplexBase<AggregateColumnModel| AggregateColumnDirTypecast, AggregateColumnModel| AggregateColumnDirTypecast> {
+export class AggregateColumnDirective extends ComplexBase<AggregateColumnModel| AggregateColumnDirTypecast & { children?: React.ReactNode }, AggregateColumnModel| AggregateColumnDirTypecast> {
     public static moduleName: string = 'aggregateColumn';
 }
 

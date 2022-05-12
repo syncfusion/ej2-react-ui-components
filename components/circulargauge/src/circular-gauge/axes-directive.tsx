@@ -13,7 +13,7 @@ import { AxisModel } from '@syncfusion/ej2-circulargauge';
  * </CircularGaugeComponent>
  * ```
  */
-export class AxisDirective extends ComplexBase<AxisModel, AxisModel> {
+export class AxisDirective extends ComplexBase<AxisModel & { children?: React.ReactNode }, AxisModel> {
     public static moduleName: string = 'axis';
 }
 

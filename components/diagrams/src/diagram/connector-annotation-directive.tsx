@@ -18,7 +18,7 @@ import { PathAnnotationModel } from '@syncfusion/ej2-diagrams';
  * </DiagramComponent>
  * ```
  */
-export class ConnectorAnnotationDirective extends ComplexBase<PathAnnotationModel, PathAnnotationModel> {
+export class ConnectorAnnotationDirective extends ComplexBase<PathAnnotationModel & { children?: React.ReactNode }, PathAnnotationModel> {
     public static moduleName: string = 'connectorAnnotation';
 }
 

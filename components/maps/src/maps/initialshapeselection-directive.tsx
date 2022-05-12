@@ -17,7 +17,7 @@ import { InitialShapeSelectionSettingsModel } from '@syncfusion/ej2-maps';
  * </MapsComponent>
  * ```
  */
-export class InitialShapeSelectionDirective extends ComplexBase<InitialShapeSelectionSettingsModel, InitialShapeSelectionSettingsModel> {
+export class InitialShapeSelectionDirective extends ComplexBase<InitialShapeSelectionSettingsModel & { children?: React.ReactNode }, InitialShapeSelectionSettingsModel> {
     public static moduleName: string = 'initialShapeSelection';
 }
 

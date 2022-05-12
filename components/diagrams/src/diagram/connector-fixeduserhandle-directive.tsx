@@ -18,7 +18,7 @@ import { ConnectorFixedUserHandleModel } from '@syncfusion/ej2-diagrams';
  * </DiagramComponent>
  * ```
  */
-export class ConnectorFixedUserHandleDirective extends ComplexBase<ConnectorFixedUserHandleModel, ConnectorFixedUserHandleModel> {
+export class ConnectorFixedUserHandleDirective extends ComplexBase<ConnectorFixedUserHandleModel & { children?: React.ReactNode }, ConnectorFixedUserHandleModel> {
     public static moduleName: string = 'connectorFixedUserHandle';
 }
 

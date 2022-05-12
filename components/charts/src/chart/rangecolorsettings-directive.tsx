@@ -13,7 +13,7 @@ import { RangeColorSettingModel } from '@syncfusion/ej2-charts';
  * </ChartComponent>
  * ```
  */
-export class RangeColorSettingDirective extends ComplexBase<RangeColorSettingModel, RangeColorSettingModel> {
+export class RangeColorSettingDirective extends ComplexBase<RangeColorSettingModel & { children?: React.ReactNode }, RangeColorSettingModel> {
     public static moduleName: string = 'rangeColorSetting';
 }
 
