@@ -14,7 +14,7 @@ import { HolidayModel } from '@syncfusion/ej2-gantt';
  * </GanttComponent>
  * ```
  */
-export class HolidayDirective extends ComplexBase<HolidayModel, HolidayModel> {
+export class HolidayDirective extends ComplexBase<HolidayModel & { children?: React.ReactNode }, HolidayModel> {
     public static moduleName: string = 'holiday';
 }
 

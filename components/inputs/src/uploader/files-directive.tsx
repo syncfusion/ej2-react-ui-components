@@ -14,7 +14,7 @@ import { FilesPropModel } from '@syncfusion/ej2-inputs';
  * </UploaderComponent>
  * ```
  */
-export class UploadedFilesDirective extends ComplexBase<FilesPropModel, FilesPropModel> {
+export class UploadedFilesDirective extends ComplexBase<FilesPropModel & { children?: React.ReactNode }, FilesPropModel> {
     public static moduleName: string = 'uploadedFiles';
 }
 

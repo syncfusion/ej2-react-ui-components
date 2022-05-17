@@ -14,7 +14,7 @@ import { ButtonPropsModel } from '@syncfusion/ej2-popups';
  * </DialogComponent>
  * ```
  */
-export class DialogButtonDirective extends ComplexBase<ButtonPropsModel, ButtonPropsModel> {
+export class DialogButtonDirective extends ComplexBase<ButtonPropsModel & { children?: React.ReactNode }, ButtonPropsModel> {
     public static moduleName: string = 'dialogButton';
 }
 

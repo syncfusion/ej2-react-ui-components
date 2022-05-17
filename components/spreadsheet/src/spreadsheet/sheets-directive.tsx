@@ -14,7 +14,7 @@ import { SheetModel } from '@syncfusion/ej2-spreadsheet';
  * </SpreadsheetComponent>
  * ```
  */
-export class SheetDirective extends ComplexBase<SheetModel, SheetModel> {
+export class SheetDirective extends ComplexBase<SheetModel & { children?: React.ReactNode }, SheetModel> {
     public static moduleName: string = 'sheet';
 }
 

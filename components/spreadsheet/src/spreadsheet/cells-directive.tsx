@@ -21,7 +21,7 @@ import { CellModel } from '@syncfusion/ej2-spreadsheet';
  * </SpreadsheetComponent>
  * ```
  */
-export class CellDirective extends ComplexBase<CellModel, CellModel> {
+export class CellDirective extends ComplexBase<CellModel & { children?: React.ReactNode }, CellModel> {
     public static moduleName: string = 'cell';
 }
 

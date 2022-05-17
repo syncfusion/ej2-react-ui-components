@@ -2,17 +2,29 @@
 
 ## [Unreleased]
 
+## 20.1.56 (2022-05-17)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- The pivot table can now be sorted properly with date type headers.
+
+#### New Features
+
+- The pivot table now has support for adding custom classes via 'cssClass' property.
+
 ## 20.1.55 (2022-05-12)
 
 ### Pivot Table
 
-#### Bug fixes
+#### Bug Fixes
 
-- `#I363090` - The previous cell selection can now be maintained while restricting the current selection in the pivot table's column axis using the cell selecting event.
+- `#I363090` - The previous cell selection can now be maintained while restricting the current selection in the pivot table's column axis using the cell selection event.
 - `#I373754` - The pivot table can now be exported properly to Excel and CSV formats while using the virtual scrolling feature, with sub-totals hidden.
 - `#I374945` - The pivot chart will now refresh properly with the specified height when switching from adaptive to desktop mode.
 
-#### Features
+#### New Features
 
 - `#F174296` - Members of a specific field are now sorted based on user-defined order in the Pivot Table's row and column axes.
 

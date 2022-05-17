@@ -19,7 +19,7 @@ export interface RangeDirTypecast {
  * </SpreadsheetComponent>
  * ```
  */
-export class RangeDirective extends ComplexBase<RangeModel| RangeDirTypecast, RangeModel| RangeDirTypecast> {
+export class RangeDirective extends ComplexBase<RangeModel| RangeDirTypecast & { children?: React.ReactNode }, RangeModel| RangeDirTypecast> {
     public static moduleName: string = 'range';
 }
 

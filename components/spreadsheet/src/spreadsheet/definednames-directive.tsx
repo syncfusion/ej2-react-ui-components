@@ -14,7 +14,7 @@ import { DefineNameModel } from '@syncfusion/ej2-spreadsheet';
  * </SpreadsheetComponent>
  * ```
  */
-export class DefinedNameDirective extends ComplexBase<DefineNameModel, DefineNameModel> {
+export class DefinedNameDirective extends ComplexBase<DefineNameModel & { children?: React.ReactNode }, DefineNameModel> {
     public static moduleName: string = 'definedName';
 }
 

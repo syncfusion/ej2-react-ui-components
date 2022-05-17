@@ -14,7 +14,7 @@ import { EditDialogFieldSettingsModel } from '@syncfusion/ej2-gantt';
  * </GanttComponent>
  * ```
  */
-export class EditDialogFieldDirective extends ComplexBase<EditDialogFieldSettingsModel, EditDialogFieldSettingsModel> {
+export class EditDialogFieldDirective extends ComplexBase<EditDialogFieldSettingsModel & { children?: React.ReactNode }, EditDialogFieldSettingsModel> {
     public static moduleName: string = 'editDialogField';
 }
 

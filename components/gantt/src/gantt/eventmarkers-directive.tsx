@@ -13,7 +13,7 @@ import { EventMarkerModel } from '@syncfusion/ej2-gantt';
  * </GanttComponent>
  * ```
  */
-export class EventMarkerDirective extends ComplexBase<EventMarkerModel, EventMarkerModel> {
+export class EventMarkerDirective extends ComplexBase<EventMarkerModel & { children?: React.ReactNode }, EventMarkerModel> {
     public static moduleName: string = 'eventMarker';
 }
 

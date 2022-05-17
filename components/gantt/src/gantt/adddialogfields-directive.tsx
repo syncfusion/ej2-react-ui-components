@@ -14,7 +14,7 @@ import { AddDialogFieldSettingsModel } from '@syncfusion/ej2-gantt';
  * </GanttComponent>
  * ```
  */
-export class AddDialogFieldDirective extends ComplexBase<AddDialogFieldSettingsModel, AddDialogFieldSettingsModel> {
+export class AddDialogFieldDirective extends ComplexBase<AddDialogFieldSettingsModel & { children?: React.ReactNode }, AddDialogFieldSettingsModel> {
     public static moduleName: string = 'addDialogField';
 }
 

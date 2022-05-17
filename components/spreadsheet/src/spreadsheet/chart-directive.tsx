@@ -3,7 +3,7 @@ import { ChartModel } from '@syncfusion/ej2-spreadsheet';
 
 
 
-export class ChartDirective extends ComplexBase<ChartModel, ChartModel> {
+export class ChartDirective extends ComplexBase<ChartModel & { children?: React.ReactNode }, ChartModel> {
     public static moduleName: string = 'chart';
 }
 

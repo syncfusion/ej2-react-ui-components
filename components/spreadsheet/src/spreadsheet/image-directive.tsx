@@ -3,7 +3,7 @@ import { ImageModel } from '@syncfusion/ej2-spreadsheet';
 
 
 
-export class ImageDirective extends ComplexBase<ImageModel, ImageModel> {
+export class ImageDirective extends ComplexBase<ImageModel & { children?: React.ReactNode }, ImageModel> {
     public static moduleName: string = 'image';
 }
 

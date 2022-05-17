@@ -17,7 +17,7 @@ import { ConditionalFormatModel } from '@syncfusion/ej2-spreadsheet';
  * </SpreadsheetComponent>
  * ```
  */
-export class ConditionalFormatDirective extends ComplexBase<ConditionalFormatModel, ConditionalFormatModel> {
+export class ConditionalFormatDirective extends ComplexBase<ConditionalFormatModel & { children?: React.ReactNode }, ConditionalFormatModel> {
     public static moduleName: string = 'conditionalFormat';
 }
 

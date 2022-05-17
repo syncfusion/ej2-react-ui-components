@@ -17,7 +17,7 @@ export interface ColumnDirTypecast {
  * </GanttComponent>
  * ```
  */
-export class ColumnDirective extends ComplexBase<ColumnModel| ColumnDirTypecast, ColumnModel| ColumnDirTypecast> {
+export class ColumnDirective extends ComplexBase<ColumnModel| ColumnDirTypecast & { children?: React.ReactNode }, ColumnModel| ColumnDirTypecast> {
     public static moduleName: string = 'column';
 }
 

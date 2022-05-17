@@ -17,7 +17,7 @@ import { RowModel } from '@syncfusion/ej2-spreadsheet';
  * </SpreadsheetComponent>
  * ```
  */
-export class RowDirective extends ComplexBase<RowModel, RowModel> {
+export class RowDirective extends ComplexBase<RowModel & { children?: React.ReactNode }, RowModel> {
     public static moduleName: string = 'row';
 }
 

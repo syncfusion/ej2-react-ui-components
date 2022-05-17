@@ -14,7 +14,7 @@ import { DayWorkingTimeModel } from '@syncfusion/ej2-gantt';
  * </GanttComponent>
  * ```
  */
-export class DayWorkingTimeDirective extends ComplexBase<DayWorkingTimeModel, DayWorkingTimeModel> {
+export class DayWorkingTimeDirective extends ComplexBase<DayWorkingTimeModel & { children?: React.ReactNode }, DayWorkingTimeModel> {
     public static moduleName: string = 'dayWorkingTime';
 }
 
