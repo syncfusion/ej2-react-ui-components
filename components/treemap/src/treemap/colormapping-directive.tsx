@@ -3,7 +3,7 @@ import { ColorMappingModel } from '@syncfusion/ej2-treemap';
 
 
 
-export class ColorMappingDirective extends ComplexBase<ColorMappingModel, ColorMappingModel> {
+export class ColorMappingDirective extends ComplexBase<ColorMappingModel & { children?: React.ReactNode }, ColorMappingModel> {
     public static moduleName: string = 'colorMapping';
 }
 

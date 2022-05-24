@@ -431,6 +431,9 @@
                                      extend(propInstance, changedProps[_c1].value);
                                  }
                              }
+                             else {
+                                this.setProperties(directiveValue, silent);
+                             }
                          }
                      }
                      else {
@@ -475,7 +478,8 @@
     // tslint:disable:no-any 
     public intForceUpdate (callback?: any): void {
         let flush: any = getValue('flushSync',ReactDOM);
-        if (this.initRenderCalled && flush && !this.mountingState) {
+        let version: string = React.version.split('.')[0];
+        if (parseInt(version) >= 18 && this.initRenderCalled && flush && !this.mountingState) {
             flush(() => {
                 this.forceUpdate(callback);
             });    

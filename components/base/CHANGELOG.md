@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 20.1.56 (2022-05-17)
+## 20.1.57 (2022-05-24)
+
+### Common
+
+#### Bug Fixes
+
+- `#F173196` - The issue "`OnPropertyChange` is not triggered while the column length is not same" have been resolved.
+
+## 20.1.55 (2022-05-12)
 
 ### Common
 

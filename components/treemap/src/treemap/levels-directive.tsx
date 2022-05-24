@@ -15,7 +15,7 @@ export interface LevelSettingsDirTypecast {
  * </TreeMapComponent>
  * ```
  */
-export class LevelDirective extends ComplexBase<LevelSettingsModel| LevelSettingsDirTypecast, LevelSettingsModel| LevelSettingsDirTypecast> {
+export class LevelDirective extends ComplexBase<LevelSettingsModel| LevelSettingsDirTypecast & { children?: React.ReactNode }, LevelSettingsModel| LevelSettingsDirTypecast> {
     public static moduleName: string = 'level';
 }
 

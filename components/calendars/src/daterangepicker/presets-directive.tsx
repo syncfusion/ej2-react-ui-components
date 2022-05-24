@@ -14,7 +14,7 @@ import { PresetsModel } from '@syncfusion/ej2-calendars';
  * </DateRangePickerComponent>
  * ```
  */
-export class PresetDirective extends ComplexBase<PresetsModel, PresetsModel> {
+export class PresetDirective extends ComplexBase<PresetsModel & { children?: React.ReactNode }, PresetsModel> {
     public static moduleName: string = 'preset';
 }
 
