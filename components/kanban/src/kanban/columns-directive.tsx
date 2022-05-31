@@ -16,7 +16,7 @@ export interface ColumnsDirTypecast {
  * </KanbanComponent>
  * ```
  */
-export class ColumnDirective extends ComplexBase<ColumnsModel| ColumnsDirTypecast, ColumnsModel| ColumnsDirTypecast> {
+export class ColumnDirective extends ComplexBase<ColumnsModel| ColumnsDirTypecast & { children?: React.ReactNode }, ColumnsModel| ColumnsDirTypecast> {
     public static moduleName: string = 'column';
 }
 

@@ -14,7 +14,7 @@ import { StackedHeadersModel } from '@syncfusion/ej2-kanban';
  * </KanbanComponent>
  * ```
  */
-export class StackedHeaderDirective extends ComplexBase<StackedHeadersModel, StackedHeadersModel> {
+export class StackedHeaderDirective extends ComplexBase<StackedHeadersModel & { children?: React.ReactNode }, StackedHeadersModel> {
     public static moduleName: string = 'stackedHeader';
 }
 

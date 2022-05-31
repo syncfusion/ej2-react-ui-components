@@ -359,6 +359,9 @@
                          } 
                      }
                  }
+                 else if (newProp[i] === oldProp[i]) {
+                    status = true;
+                 }
                  else {
                      if (!propName) {
                          return { status: false };

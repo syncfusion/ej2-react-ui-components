@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.1.58 (2022-05-31)
+
+### Common
+
+#### Bug Fixes
+
+- `EJ2-59569` - Resolved the "Dashboard layout component crash while using cell spacing" issue in react component.
+
 ## 20.1.57 (2022-05-24)
 
 ### Common
