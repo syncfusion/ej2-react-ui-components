@@ -2,13 +2,21 @@
 
 ## [Unreleased]
 
+## 20.1.59 (2022-06-07)
+
+### Common
+
+#### Bug Fixes
+
+- `#I381890` - "Script error occurred while using the routing in React 18 sample," issue has been resolved.
+
 ## 20.1.58 (2022-05-31)
 
 ### Common
 
 #### Bug Fixes
 
-- `EJ2-59569` - Resolved the "Dashboard layout component crash while using cell spacing" issue in react component.
+- `#I366207` - Resolved the "Dashboard layout component crash while using cell spacing" issue in react component.
 
 ## 20.1.57 (2022-05-24)
 
@@ -34,27 +42,27 @@
 
 #### Bug Fixes
 
-- `I339589` - Resolved the `DropdownButton` issue with react component as target.
+- `#I339589` - Resolved the `DropdownButton` issue with react component as target.
 
 ## 19.1.67 (2021-06-08)
 
 ### Common
 
-- `F164392` - Resolved the issue with Value is not updated if we update the state in `useEffect()` hook for `Dropdownlist`.
+- `#F164392` - Resolved the issue with Value is not updated if we update the state in `useEffect()` hook for `Dropdownlist`.
 
-- `I324905` - Resolved the issue with `editTemplate` methods are reassigned to other columns while reordering and applying `setState`.
+- `#I324905` - Resolved the issue with `editTemplate` methods are reassigned to other columns while reordering and applying `setState`.
 
 ## 19.1.65 (2021-05-25)
 
 ### Common
 
-- `F165452` - Resolved the issue with destroy event while using toolbar template.
+- `#F165452` - Resolved the issue with destroy event while using toolbar template.
 
 ## 19.1.64 (2021-05-19)
 
 ### Common
 
-- `F165103` - Resolved the issue with Maximum call stack size exceeded" when updating state variable using `useEffect`.
+- `#F165103` - Resolved the issue with Maximum call stack size exceeded" when updating state variable using `useEffect`.
 
 ## 19.1.57 (2021-04-20)
 
@@ -62,9 +70,9 @@
 
 #### Bug Fixes
 
-- `I321145` - Resolved the issue with Data binding not working properly while changing values in complex array.
+- `#I321145` - Resolved the issue with Data binding not working properly while changing values in complex array.
 
-- `F164536` - Resolved the Peer dependency warning issue.
+- `#F164536` - Resolved the Peer dependency warning issue.
 
 ## 18.3.35 (2020-10-01)
 

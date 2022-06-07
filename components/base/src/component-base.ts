@@ -478,24 +478,16 @@
             this.portals.push(portal);
         }
     };
-    // tslint:disable:no-any 
-    public intForceUpdate (callback?: any): void {
-        let flush: any = getValue('flushSync',ReactDOM);
-        let version: string = React.version.split('.')[0];
-        if (parseInt(version) >= 18 && this.initRenderCalled && flush && !this.mountingState) {
-            flush(() => {
-                this.forceUpdate(callback);
-            });    
-        }  else {
+    // tslint:disable:no-any
+    public renderReactTemplates (callback?: any): void {
+        this.isReactForeceUpdate = true;
+        if (callback) {
             this.forceUpdate(callback);
+        } else {
+            this.forceUpdate();
         }
+        this.isReactForeceUpdate = false;
     }
- 
-     public renderReactTemplates (callback?: any): void {
-         this.isReactForeceUpdate = true;
-         this.intForceUpdate(callback);
-         this.isReactForeceUpdate = false;
-     };
  // tslint:disable:no-any 
      public clearTemplate(templateNames: string[], index?: any, callback?: any) {
          var tempPortal: any = [];

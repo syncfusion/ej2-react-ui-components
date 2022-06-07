@@ -1,5 +1,3 @@
-[![coverage](http://ej2.syncfusion.com/badges/ej2-react-base/coverage.svg)](http://ej2.syncfusion.com/badges/ej2-react-base)
-
 # ej2-react-base
 
 A common package of Essential JS 2 for React which contains base libraries, methods and class definitions.
