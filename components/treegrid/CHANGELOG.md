@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.1.60 (2022-06-14)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I379686` - Tree column template renders properly while on state change.
+
 ## 20.1.59 (2022-06-07)
 
 ### Tree Grid

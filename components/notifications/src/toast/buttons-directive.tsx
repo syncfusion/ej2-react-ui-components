@@ -14,7 +14,7 @@ import { ButtonModelPropsModel } from '@syncfusion/ej2-notifications';
  * </ToastComponent>
  * ```
  */
-export class ButtonModelPropDirective extends ComplexBase<ButtonModelPropsModel, ButtonModelPropsModel> {
+export class ButtonModelPropDirective extends ComplexBase<ButtonModelPropsModel & { children?: React.ReactNode }, ButtonModelPropsModel> {
     public static moduleName: string = 'buttonModelProp';
 }
 
