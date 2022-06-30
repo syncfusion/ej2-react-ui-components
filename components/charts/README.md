@@ -94,4 +94,30 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/charts/CHANGELOG.md)
 
+## Related Links
+
+[Learn More about React Charts](https://www.syncfusion.com/react-ui-controls/react-charts?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Documentation](https://ej2.syncfusion.com/angular/documentation/chart/getting-started/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Download Free Trial](https://www.syncfusion.com/downloads?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/line?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Community Forums](https://www.syncfusion.com/forums/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+
+## About Syncfusion Angular UI Components
+Syncfusion's [Angular UI Components](https://www.syncfusion.com/react-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples) library is the only suite that you will ever need to build an application since it contains over 70 high-performance, lightweight, modular, and responsive UI Components in a single package. In addition to Charts, we provide popular Angular Components such as [Angular DataGrid](https://www.syncfusion.com/react-ui-controls/react-grid), [Angular Scheduler](https://www.syncfusion.com/react-ui-controls/react-scheduler?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [Angular Diagram](https://www.syncfusion.com/react-ui-controls/react-diagram?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), and [Angular PDF Viewer](https://www.syncfusion.com/react-ui-controls/react-pdf-viewer?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples).
+
+## About Syncfusion
+
+Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 28000+ companies and more than 1 million users, including large financial institutions, Fortune 500 companies, and global IT consultancies.
+
+Today, we provide 1700+ controls and frameworks for web ([ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [ASP.NET WebForms](https://www.syncfusion.com/jquery/aspnet-webforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [JavaScript](https://www.syncfusion.com/react-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [Angular](https://www.syncfusion.com/react-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [React](https://www.syncfusion.com/react-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [Blazor](https://www.syncfusion.com/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [Vue](https://www.syncfusion.com/vue-ui-components?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), and [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)), mobile ([WinForms](https://www.syncfusion.com/WinForms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [JavaScript](https://www.syncfusion.com/react-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), and [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)), and desktop development ([Windows Forms](https://www.syncfusion.com/winforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [WPF](https://www.syncfusion.com/wpf-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [WinUI)](https://www.syncfusion.com/winui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [.NET MAUI](https://www.syncfusion.com/maui-controls), and [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)). We provide ready-to-deploy enterprise software for dashboards, reports, data integration, and big data processing. Many customers have saved millions in licensing fees by deploying our software.
+
+<hr style="height:0.3px;border:none;color:lightgrey;background-color:lightgrey;" />
+
+<p align="center">
+  <a href="mailto:sales@syncfusion.com?Subject=Syncfusion React Charts - Github Sample" target="_top">sales@syncfusion.com</a> | Toll Free: 1-888-9 DOTNET <br>
+</p>
+
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
