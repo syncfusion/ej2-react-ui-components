@@ -157,11 +157,11 @@
                      let propsClsName = this.props[propkey].split(' ');
                      for (let i: number = 0; i < propsClsName.length; i++) {
                         this.element.classList.remove(propsClsName[i]);
-                    }
+                     }
                      let dpropsClsName = dProps[propkey].split(' ');
                      for (let j: number = 0; j < dpropsClsName.length; j++) {
                         this.element.classList.add(dpropsClsName[j]);
-                    }
+                     }
                  } else if (propkey !== 'disabled') {
                      delete dProps[propkey];
                  }

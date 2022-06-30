@@ -2,7 +2,24 @@
 
 ## [Unreleased]
 
-## 20.1.60 (2022-06-14)
+## 20.2.36 (2022-06-30)
+
+### Common
+
+#### New Features
+
+- Provided the TypeScript 4.7 compatible support for the React components.
+
+- Provided option to register the license key by using the `npx` command. Follow these steps to register the license using the `npx` command:
+- - Install the Syncfusion packages from npm.
+- - Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file.
+- - Run the command `npx syncfusion-license activate` to register the license automatically.
+
+- `#I376821` - Provided support to compile the Sass files using [Dart Sass](https://sass-lang.com/dart-sass) instead of [node-sass](https://github.com/sass/node-sass). This change has been made since `node-sass` has been deprecated.
+
+- React sample browser is upgraded with React 18 version.
+
+## 20.1.59 (2022-06-07)
 
 ### Common
 
@@ -37,6 +54,62 @@
 #### Breaking Changes
 
 - `IsLegacyTemplate` option has been stopped from this release to support React 18 support.
+
+### Common
+
+#### Bug Fixes
+
+- `#I339589` - Resolved the `DropdownButton` issue with react component as target.
+
+## 19.4.56 (2022-03-15)
+
+### Common
+
+#### Bug Fixes
+
+- `#F165505` - Resolved the issue with Focus lost in input component each time `onchange` invoked.
+
+## 19.4.55 (2022-03-08)
+
+### Common
+
+#### Bug Fixes
+
+- `#I367058` - Resolved the script error when using `valueTemplate` and `headerTemplate` together in `Dropdownlist`.
+
+## 19.4.53 (2022-02-22)
+
+### Common
+
+#### Bug Fixes
+
+- `#I366476` - Resolved the issue with React `Dialog` content does not update when changing state.
+
+## 19.4.52 (2022-02-15)
+
+### Common
+
+#### Bug Fixes
+
+- `#I352651` - Styles not applied properly if it dynamically changed has been resolved.
+
+## 19.4.47 (2022-01-25)
+
+### Common
+
+#### Bug Fixes
+
+- `#F167610` - Resolved the Console error occurs when using a value and `valueTemplate` together.
+
+## 19.4.43 (2022-01-18)
+
+### Common
+
+#### Bug Fixes
+
+- `#I362528` - Resolved the peer dependency warning in higher React version
+
+## 19.4.42 (2022-01-11)
 
 ### Common
 

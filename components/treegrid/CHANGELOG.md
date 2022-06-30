@@ -2,67 +2,25 @@
 
 ## [Unreleased]
 
-## 20.1.60 (2022-06-14)
+## 20.2.36 (2022-06-30)
 
 ### Tree Grid
 
-#### Bug Fixes
+#### Bug fixes
 
-- `#I379686` - Tree column template renders properly while on state change.
+- `#I379907` - Resolved editing for the dropdown edit type column with state persistence enabled.
 
-## 20.1.59 (2022-06-07)
+#### Features
 
-### Tree Grid
+- `#I334966`, `#I373929`, `#I332693`, `#I342835`, `#F172606`, `#F171250`, `#F171248` - Provided row drag and drop support with virtualization feature enabled.
+- `#I367483` - Provided support for row indent and outdent functionality. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/bootstrap5/tree-grid/inline-editing).
 
-#### Bug Fixes
-
-- `#I376155` - Freeze direction works properly when enabled dynamically.
-
-## 20.1.56 (2022-05-17)
-
-### Tree Grid
+- `#I334966`, `#I373929`, `#I332693`, `#I342835`, `#F172606`, `#F171250`, `#F171248` - Provided row drag and drop support with virtualization feature enabled.
+- `#I367483` - Provided support for row indent and outdent functionality. Please find the demo link [here](https://ej2.syncfusion.com/react/demos/#/bootstrap5/treegrid/inline-editing).
 
 #### Bug Fixes
 
-- `#I376335` - Tree Grid locales are updated dynamically.
-
-## 20.1.52 (2022-05-04)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#F174245` - Checkbox column works properly with stacked header.
-
-## 20.1.51 (2022-04-26)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I372618` - Resolved searching after scroll shows no records to display in case of Virtualization enabled.
-
-## 20.1.48 (2022-04-12)
-
-### Tree Grid
-
-#### New Features
-
-- `#I362030` - Provided support to update the expand state mapping field value in dataSource as per the expand/collapse action.
-
-#### Bug Fixes
-
-- `#I369632` - Adding a record using addRecord method in Batch editing works fine.
-- `#I372623` - Resolved searched child record not shown when its parent record in collapsed state.
-- `#I361333` - Resolved performance issue in drag and drop.
-
-## 20.1.47 (2022-04-04)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I369691` - Indent / Outdent functionality can now be enabled without allowRowDragAndDrop property.
+- `#I379907` - Resolved editing for the dropdown edit type column with state persistence enabled.
 
 ## 19.2.44 (2021-06-30)
 

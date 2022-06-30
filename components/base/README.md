@@ -1,3 +1,5 @@
+[![coverage](http://ej2.syncfusion.com/badges/ej2-react-base/coverage.svg)](http://ej2.syncfusion.com/badges/ej2-react-base)
+
 # ej2-react-base
 
 A common package of Essential JS 2 for React which contains base libraries, methods and class definitions.
@@ -70,11 +72,11 @@ Product support is available for through following mediums.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-react-base/blob/master/license).
+Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license).
 
 ## Changelog
 
-Check the changelog [here](https://ej2.syncfusion.com/react/documentation/release-notes?utm_source=npm&utm_campaign=ej2-react-base)
+Check the changelog [here](https://ej2.syncfusion.com/react/documentation/release-notes/index?utm_source=npm&utm_campaign=ej2-react-base)
 
     © Copyright 2019 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.
