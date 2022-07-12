@@ -11,22 +11,6 @@
 
 ## [Unreleased]
 
-## 20.2.36 (2022-06-30)
-
-### TreeMap
-
-#### Bug Fixes
-
-- `#I380447` - Exceptions will no longer be thrown if the TreeMap's id name contains an underscore character.
-
-## 20.1.55 (2022-05-12)
-
-### TreeMap
-
-#### Bug Fixes
-
-- `#I377352` - The samples in the TreeMap sample browser can now be edited in the StackBlitz.
-
 ## 18.2.44 (2020-07-07)
 
 ### TreeMap

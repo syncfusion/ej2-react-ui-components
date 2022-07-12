@@ -8,16 +8,15 @@
 
 #### New Features
 
-- Provided the TypeScript 4.7 compatible support for the React components.
-
-- Provided option to register the license key by using the `npx` command. Follow these steps to register the license using the `npx` command:
-- - Install the Syncfusion packages from npm.
-- - Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file.
-- - Run the command `npx syncfusion-license activate` to register the license automatically.
-
-- `#I376821` - Provided support to compile the Sass files using [Dart Sass](https://sass-lang.com/dart-sass) instead of [node-sass](https://github.com/sass/node-sass). This change has been made since `node-sass` has been deprecated.
-
 - React sample browser is upgraded with React 18 version.
+- Provided the TypeScript 4.7 compatible support for the React components.
+- Provided the option to register the license key by using the `npx` command. Follow these steps to register the license using the `npx` command:
+
+| The `npx` command |
+|---|
+| Install the Syncfusion packages from `npm`. |
+| Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file. |
+| Run the command `npx syncfusion-license activate` to automatically register the license. |
 
 ## 20.1.59 (2022-06-07)
 
