@@ -97,16 +97,16 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 ## Related Links
 
 [Learn More about React Charts](https://www.syncfusion.com/react-ui-controls/react-charts?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
-[Documentation](https://ej2.syncfusion.com/angular/documentation/chart/getting-started/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Documentation](https://ej2.syncfusion.com/react/documentation/chart/getting-started/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
 [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
-[Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/line?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Online Demos](https://ej2.syncfusion.com/react/demos/#/bootstrap5/chart/line?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
 [Community Forums](https://www.syncfusion.com/forums/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
 [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
-[Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
-[Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Suggest a feature](https://www.syncfusion.com/feedback/react?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
+[Pricing](https://www.syncfusion.com/sales/products/react?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)<br/><br/>
 
-## About Syncfusion Angular UI Components
-Syncfusion's [Angular UI Components](https://www.syncfusion.com/react-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples) library is the only suite that you will ever need to build an application since it contains over 70 high-performance, lightweight, modular, and responsive UI Components in a single package. In addition to Charts, we provide popular Angular Components such as [Angular DataGrid](https://www.syncfusion.com/react-ui-controls/react-grid), [Angular Scheduler](https://www.syncfusion.com/react-ui-controls/react-scheduler?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [Angular Diagram](https://www.syncfusion.com/react-ui-controls/react-diagram?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), and [Angular PDF Viewer](https://www.syncfusion.com/react-ui-controls/react-pdf-viewer?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples).
+## About Syncfusion React UI Components
+Syncfusion's [React UI Components](https://www.syncfusion.com/react-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples) library is the only suite that you will ever need to build an application since it contains over 70 high-performance, lightweight, modular, and responsive UI Components in a single package. In addition to Charts, we provide popular React Components such as [React DataGrid](https://www.syncfusion.com/react-ui-controls/react-grid), [React Scheduler](https://www.syncfusion.com/react-ui-controls/react-scheduler?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), [React Diagram](https://www.syncfusion.com/react-ui-controls/react-diagram?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples), and [React PDF Viewer](https://www.syncfusion.com/react-ui-controls/react-pdf-viewer?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples).
 
 ## About Syncfusion
 
