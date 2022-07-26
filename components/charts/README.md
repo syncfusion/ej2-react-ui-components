@@ -17,18 +17,19 @@ npm install @syncfusion/ej2-react-charts
 ## Components included
 
 Following list of components are available in the package
-*	Chart - Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball. 
+*	[Chart](https://www.syncfusion.com/react-ui-components/charts/) - Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball. 
       *	[Getting Started](https://ej2.syncfusion.com/react/documentation/chart/)
       *	[View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/chart/line)
-      *	[Product Page](https://www.syncfusion.com/react-ui-components/charts/)
-*	Accumulation Chart - Built-in support for Pie, Doughnut, Pyramid and funnel series type, to show the proportions and percentages between the categories.
+*	[Accumulation Chart](https://www.syncfusion.com/react-ui-components/charts/) - Built-in support for Pie, Doughnut, Pyramid and funnel series type, to show the proportions and percentages between the categories.
       *	[Getting Started](https://ej2.syncfusion.com/react/documentation/accumulation-chart/getting-started.html)
       *	[View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/chart/default-pie)
-      *	[Product Page](https://www.syncfusion.com/react-ui-components/charts/)
-*	Range Navigator - Interface for selecting a small range from a large collection. It is commonly used in financial dashboards to filter a date range for data that needs to be visualized. 
+*	[Range Navigator](https://www.syncfusion.com/react-ui-components/range-selector/) - Interface for selecting a small range from a large collection. It is commonly used in financial dashboards to filter a date range for data that needs to be visualized. 
       *	[Getting Started](https://ej2.syncfusion.com/react/documentation/rangenavigator/getting-started.html)
       *	[View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/rangenavigator/default)
-      *	[Product Page](https://www.syncfusion.com/react-ui-components/range-selector/)
+* [Smith chart](https://www.syncfusion.com/react-ui-components/react-smith-chart?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)
+: Tool for visualize data of high frequency circuit applications. It contains two sets of circles to plot parameters of transmission lines.
+      *	[Getting started](https://ej2.syncfusion.com/react/documentation/smithchart/getting-started?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)
+      *	[View online demos](https://ej2.syncfusion.com/react/demos/#/material/smithchart/default.html?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples)
 
 ## Supported frameworks
  `Chart` components are available in following list of  
@@ -78,6 +79,13 @@ Following list of components are available in the package
    * [**Lightweight**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=chart#/material/rangenavigator/light-weight) - Supports light-weight Range navigator to load in mobile device.
    * [**Period Selector**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=chart#/material/rangenavigator/period-selector-candle) - Provides options to select the data over the custom period.
    * **Axis Types** - Supports multiple axis and series types to plot the data.
+
+### Smith chart
+   * [**Series**](https://ej2.syncfusion.com/react/documentation/smithchart/smithchart-series/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples) - Supports any number of series to display data points.
+   * [**Legend**](https://ej2.syncfusion.com/react/documentation/smithchart/smithchart-legend/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples) - Provides options to display additional information about the series.
+   * [**Marker and Data label**](https://ej2.syncfusion.com/react/documentation/smithchart/smithchart-marker/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples) - Provides options to display additional information about data points.
+   * [**Tooltip**](https://ej2.syncfusion.com/react/documentation/smithchart/smithchart-tooltip/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples) - Provides options to display additional information about data points on mouse hover.
+   * [**Print and Export**](https://ej2.syncfusion.com/react/documentation/smithchart/smithchart-print/?utm_source=github&utm_medium=listing&utm_campaign=react-charts-github-samples) - Provides support to print and export the rendered smith chart for future use.
 
 ## Support
    Product support is available for through following mediums.
