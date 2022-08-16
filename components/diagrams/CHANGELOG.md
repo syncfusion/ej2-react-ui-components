@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.2.44 (2022-08-16)
+
+### Diagram
+
+#### Bug fixes
+
+- `#I395331` - The undefined exception will no longer thrown while draw a SVG node.
+
 ## 20.2.40 (2022-07-26)
 
 ### Diagram
