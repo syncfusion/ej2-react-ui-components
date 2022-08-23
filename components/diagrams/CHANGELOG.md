@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 20.2.45 (2022-08-23)
+
+### Diagram
+
+#### Bug fixes
+
+- `#I396868` - Now bezier connector rendered properly while drag and drop from palette.
+- `#I397678` - Now, the connector is dropped properly inside the swimlane.
+- `#I397852` - Now, layers undefined exception will no longer thrown while save and load.
+
 ## 20.2.44 (2022-08-16)
 
 ### Diagram
