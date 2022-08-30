@@ -2,7 +2,13 @@
 
 ## [Unreleased]
 
-## 20.2.45 (2022-08-23)
+## 20.2.43 (2022-08-08)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I394878` - Issue with Date type Between value not render properly while using `setRulesFromSql` method has been fixed.
 
 ### QueryBuilder
 

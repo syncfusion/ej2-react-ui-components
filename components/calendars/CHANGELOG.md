@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.2.46 (2022-08-30)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I395559` - Issue with "change event triggers multiple times when we use `setState` in react" has been resolved.
+
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
