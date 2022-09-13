@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 20.2.48 (2022-09-06)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I399625` - Issue with "exception throws while importing the excel file with list validation" has been resolved.
-- `#I397313` - Issue with "additional border added to the ribbon tab while selecting the tab in the bootstrap5 theme" has been resolved.
-
 ## 20.2.46 (2022-08-30)
 
 ### Spreadsheet
@@ -1208,4 +1199,13 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.2.48 (2022-09-06)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I399625` - Issue with "exception throws while importing the excel file with list validation" has been resolved.
+- `#I397313` - Issue with "additional border added to the ribbon tab while selecting the tab in the bootstrap5 theme" has been resolved.
 
