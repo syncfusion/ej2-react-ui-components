@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.2.50 (2022-09-20)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#F176707` - The issue with "Facing an error while using `allowEditing` property with the React TreeView template support" has been resolved.
+
 ## 20.2.49 (2022-09-13)
 
 ### ContextMenu
