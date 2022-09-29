@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 20.3.47 (2022-09-29)
+
+### Common
+
+#### Bug Fixes
+
+- The issue with the "dynamic value changes of the workDays property (Array type) in the Scheduler component" has been resolved.
+- `#I398870` , `#I405154`, `#I406330` - The issue with the "React components are not mounting while using `useEffect` react hooks in the strict mode" has been resolved.
+
+#### New Features
+
+- `#I161617`, `#I346544` - Provided the React CDN file support for the `webpack` externals.
+
 ## 20.2.36 (2022-06-30)
 
 ### Common

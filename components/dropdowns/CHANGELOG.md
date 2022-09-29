@@ -2,61 +2,22 @@
 
 ## [Unreleased]
 
-## 20.2.44 (2022-08-16)
+## 20.3.47 (2022-09-29)
 
-### MultiSelect
+### Mention
 
-#### New Features
+- The `@Mention` component can be used to display a pop-up suggestion list whenever the designated mention key character is entered into a text box, rich text editor, or other editable element.
 
-- Provided event details in open and close event arguments in the multiselect component.
+**Key features**:
 
-### AutoComplete
 
-#### New Features
-
-- Provided event details in open and close event arguments in the autocomplete component.
-
-### ComboBox
-
-#### New Features
-
-- Provided event details in open and close event arguments in the combobox component.
-
-### DropDownList
-
-#### New Features
-
-- Provided event details in open and close event arguments in the dropdownlist component.
-
-#### Bug Fixes
-
-- `#FB36207` - The issue "Console error thrown when using DropDownList `footerTemplate` property in React" has been resolved.
-
-## 20.2.43 (2022-08-08)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I384240` - Issue with "`RemoveItems` not working properly after adding items with specific index" has been resolved.
-
-## 20.2.40 (2022-07-26)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#F175828` - Now, `customSelection` event is trigger when we render the component with `itemTemplate` and `allowFiltering`.
-
-## 20.2.39 (2022-07-19)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I386103` - Issue with "Datasource not update properly after clearing the filtering in the dual listbox" has been resolved.
-
-## 20.2.36 (2022-06-30)
+- **Data binding**: Binds the list of items from local and remote data sources such as JSON, OData, WCF, and RESTful web services.
+- **Grouping**: Groups the logically related items under a single or specific category.
+- **Filtering**: Filters the list items based on a character typed in the component.
+- **Sorting**: Sorts the list items in alphabetical order (either ascending or descending).
+- **Highlight search**: Highlights the typed text in the suggestion list.
+- **Templates**: Customize the list item, display value, no records, and spinner loading content.
+- **Accessibility**: Built-in accessibility support that helps to access all the Mention component features using the keyboard, on-screen readers, or other assistive technology devices.
 
 ### ListBox
 

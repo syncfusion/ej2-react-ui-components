@@ -63,7 +63,6 @@
 ### Splitter
 
 - Provided `enablePersistence` property to persists the component's state between page reloads.
-
 - Provided `enableReversePanes` property to reorder the splitter panes.
 
 ## 19.1.58 (2021-04-27)
@@ -89,7 +88,6 @@
 #### Bug Fixes
 
 - `#312164` - The issue with "Newly added dashboard panels hide while switch between mobile mode to normal mode" has been resolved.
-
 - `#310199` - The issue "Unable to resize when rendering multiple panels" has been resolved.
 
 ### Splitter
@@ -97,7 +95,6 @@
 #### Bug Fixes
 
 - `#315820, #313937, #316711` - The issue with "Console error occurs on resizing when the splitter is rendered" has been resolved.
-
 - `#F163365` - The issue with "When the first pane is collapsed, the size of the second pane is not properly set" has been resolved.
 
 ## 18.4.30 (2020-12-17)
@@ -107,7 +104,6 @@
 #### Bug Fixes
 
 - `F159402` - The issue with "The Syncfusion components are not rendered inside the Dashboard Layout while using the selector template" has been resolved.
-
 - `F159797` - Now, the Dashboard Layout component is also available in the Theme studio.
 
 ## 18.3.53 (2020-12-08)
@@ -149,9 +145,7 @@
 #### Bug Fixes
 
 - `#284795, #286988, #291408, #291630` - The issue with rendering panels when using angular template has been fixed.
-
 - `#282904` - The issue with the empty space while setting allowFloating as true has been resolved.
-
 - `#271335` - The support for rendering panels with their respective column size in the mobile view has been provided.
 
 ## 18.2.58 (2020-09-15)
@@ -168,7 +162,7 @@
 
 #### Bug Fixes
 
-- `#278405` - Issue with Dashboard element dimensions not updated properly based on the parent element dimensions has been resolved.
+- `#278405` - Issue with Dashboard element dimensions not updated properly based on the parent element dimensions has been resolved.
 
 ## 18.2.44 (2020-07-07)
 
@@ -176,7 +170,7 @@
 
 #### Bug Fixes
 
-- `#276817` - Panel content will now get persisted on page reload with persistence enabled.
+- `#276817` - Panel content will now get persisted on page reload with persistence enabled.
 
 ## 18.1.52 (2020-05-13)
 
@@ -184,14 +178,13 @@
 
 #### New Features
 
-- `#269881` - Provided support to restrict the dragging functionality of an individual panel by adding `e-drag-restrict` cssClass to the panel.
+- `#269881` - Provided support to restrict the dragging functionality of an individual panel by adding `e-drag-restrict` cssClass to the panel.
 
 ### Splitter
 
 #### Bug Fixes
 
 - `#273127` - Resolved the issue "Splitter resizing does not work as expected in the internet explorer browser".
-
 - `F153749` - Issue with "Splitter expand and collapse action doesn't work as expected after the pane resize" has been resolved.
 
 ## 18.1.48 (2020-05-05)
@@ -217,6 +210,7 @@
 #### Bug Fixes
 
 -`#272515`, `#F153399` - Resolved the issue with nested splitter resizing is not working properly.
+
 
 - Resolved the alignment issue with expand and collapse icons in the internet explorer browser.
 
@@ -289,7 +283,6 @@
 #### Bug Fixes
 
 - `#261757` - The issue, "cssClass not set into pane when you add the pane using the addPane method" has been resolved.
-
 - `#261829` - Keyboard interaction issue with input components has been resolved.
 
 ## 17.4.44 (2021-01-21)
@@ -313,9 +306,7 @@
 #### Bug Fixes
 
 - `#255853` - Resolved the issue "Splitter resizing does not work as expected if it has an iframe element".
-
 - `#259892` - Resolved the issue "Splitter pane is not properly resized when it has percentage pane size".
-
 - `#258254` - Resolved the issue with the public method `addPane` that does not work when rendered a single pane.
 
 ## 17.4.41 (2020-01-07)
@@ -336,11 +327,11 @@
 
 - Provided `Keyboard navigation support` for splitter. The available keyboard shortcuts are,
 
-    - `Up Arrow` - will move separator towards up in vertical splitter.
-    - `Down Arrow` - will move separator towards down in vertical splitter.
-    - `Right Arrow` - will move separator towards right in horizontal splitter.
-    - `Left Arrow` - will move separator towards left in horizontal splitter.
-    - `Enter key` - will toggle nearest collapsible pane of focused separator.
+- `Up Arrow` - will move separator towards up in vertical splitter.
+- `Down Arrow` - will move separator towards down in vertical splitter.
+- `Right Arrow` - will move separator towards right in horizontal splitter.
+- `Left Arrow` - will move separator towards left in horizontal splitter.
+- `Enter key` - will toggle nearest collapsible pane of focused separator.
 
 ## 17.4.40 (2019-12-24)
 
@@ -371,7 +362,6 @@
 #### Bug Fixes
 
 - `#I255141` -Resolved the issue with separator's visible state when collapsible the last pane .
-
 - `#252195` - The alignment issue with expand and collapse icons in the internet explorer browser has been resolved.
 
 ## 17.3.28 (2019-11-19)
@@ -395,11 +385,8 @@
 #### Bug Fixes
 
 - `#253345` - The Console error thrown when navigating from splitter component to another page has been resolved.
-
 - `#252410` - Resolved the issue with collapsing panes when set `collapsed` property as true in Splitter.
-
 - `#252410` - Issue with `Expand` public method not working in the splitter has been resolved.
-
 - `#252410` - Resolved the interaction issue with expand and collapse pane.
 
 ## 17.2.48-beta (2019-08-28)
@@ -409,13 +396,9 @@
 #### Bug Fixes
 
 - `#241183` - Issue with "show the expand and collapse arrow on hovering middle of split bar" has been resolved.
-
 - `#242579` - Resolved the issue with "Split-bar rendering while change orientation dynamically"
-
 - `#243003` - Resolved the issue with enabling expand and collapse arrow based on collapsible property.
-
 - `#243007` - The issue "Collapsing and expanding splitter control does not return to original state" has been resolved.
-
 - `#244847` - The issue "Split panes are not resized properly on window resizing" has been resolved.
 
 ## 17.1.51 (2019-06-11)
@@ -500,6 +483,7 @@
 
 The DashboardLayout is a grid structured layout control that helps create a dashboard with panels. Panels hold the UI components and allow resize, reorder, drag-n-drop, remove and add options. This allows users to easily place the components at the desired position within the grid layout.
 
+
 - **Drag and Drop**: Allows drag and drop of panels at the desired location within the dashboard.
 - **Resizing**: Support to resize the panels in any direction as per the requirement.
 - **Floating**: Floats the panels upward when the dragging option is enabled.
@@ -520,7 +504,6 @@ The DashboardLayout is a grid structured layout control that helps create a dash
 #### New Features
 
 - Provided option to configure the splitter and its pane properties such as size, min, max, resizable through data attributes (`data-`).
-
 - Included the public methods for add and remove splitter panes.
 
 ## 16.4.40-beta (2018-12-10)
@@ -528,6 +511,7 @@ The DashboardLayout is a grid structured layout control that helps create a dash
 ### Splitter
 
 The Splitter is the layout user interface (UI) which contains multiple resizable panes and separator bar.
+
 
 - **Resizable**: By default, all the panes configured with resizable.
 - **Orientation**: The panes can be oriented horizontally and vertically.
@@ -540,20 +524,21 @@ The Splitter is the layout user interface (UI) which contains multiple resizable
 
 Avatars are icons or figures representing a particular person, used in popular media formats like images, SVG, font icons, and letters.
 
-- **Types** - Provided 2 types of Avatar.
 
+- **Types** - Provided 2 types of Avatar.
 - **Sizes** - Supports different sizes to adapt the various application scenario.
 
 ### Card
 
 The Card is a small container in which user can show defined content in specific structure and it is a flexible and extensible. Card is a pure CSS component built with markup and style.
 
+
 The available key features are
 
+
 - **Header**: Header supports to include title, subtitle along with image.
-
 - **Images and Title**: Support to include images with customizable caption positions in it.
-
 - **Action Buttons**: Supports to add buttons within the card either in vertical or horizontal alignment.
-
 - **Horizontal Card**: Allows to align card elements horizontally and also allows to stack the content vertically within horizontal alignment.
+
+

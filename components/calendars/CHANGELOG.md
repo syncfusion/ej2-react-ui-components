@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 20.2.50 (2022-09-20)
-
-### Calendar
-
-#### Bug Fixes
-
-- `#I403191` - The issue "change event argument contains duplicate dates while using multiselection" has been resolved
-
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
@@ -1163,14 +1155,6 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
-
-## 20.2.46 (2022-08-30)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I395559` - Issue with "change event triggers multiple times when we use `setState` in react" has been resolved.
 
 ## 19.2.46 (2021-07-06)
 

@@ -289,7 +289,7 @@
                      if(!this.isDestroyed) {
                          this.modelObserver.notify(eventName, eventProp, successHandler);    
                      }
-                 })
+                 }, 10)
              } else {
              this.modelObserver.notify(eventName, eventProp, successHandler);
              }
@@ -359,7 +359,7 @@
                          } 
                      }
                  }
-                 else if (newProp[i] === oldProp[i]) {
+                 else if (newProps[i] === oldProps[i]) {
                     status = true;
                  }
                  else {

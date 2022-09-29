@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 20.2.50 (2022-09-20)
+## 20.3.47 (2022-09-29)
 
 ### DropDownButton
 
 #### New Features
 
-- `#I375776` - Provided the focusout event support to DropDownButton component.
+- `#I375776` - Provided the focusout event support to the DropDownButton component.
 
 ### DropDownButton
 

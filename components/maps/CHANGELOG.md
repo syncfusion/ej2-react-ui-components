@@ -1,12 +1,35 @@
 <!-- markdownlint-disable MD010 -->
 
+
 <!-- markdownlint-disable MD030 -->
 
+
 <!-- markdownlint-disable MD004 -->
+
 
 # Changelog
 
 ## [Unreleased]
+
+## 20.3.47 (2022-09-29)
+
+### Maps
+
+#### Breaking Changes
+
+- The `click` event is deprecated because it is triggered twice in the Angular application. The reason for this is that in Angular, the native `click` event is triggered first, followed by the `click` event available on Maps. To address this, we introduced a `onclick` event for the same functionality, which will now only trigger once.
+
+#### Bug Fixes
+
+- `#I404496` - Europe GeoJSON map will now render properly when legend is enabled.
+- `#F175229` - `offsetX` and `offsetY` properties are now available in the event arguments of `dataLabelRendering` event to customize the label position.
+
+#### New Features
+
+- Azure Maps can now be loaded and viewed through our Maps.
+
+- Azure Maps can now be loaded and viewed through our Maps.
+
 
 ## 20.2.43 (2022-08-08)
 
@@ -18,7 +41,7 @@
 
 #### Bug Fixes
 
-- `#I392653` - The `content` property in the event argument can now be used to customize the layer tooltip with format in the `tooltipRender` event.
+- `#I392653` - The `content` property in the event argument can now be used to customize the layer tooltip with format in the `tooltipRender` event.
 - `#F174180` - Maps will function properly when adding and removing layers via the `zoom` event.
 
 ## 20.2.38 (2022-07-12)
@@ -195,6 +218,7 @@
 
 `#291448` - A property `isShapeSelected` is exposed in the event arguments of the click event to specify whether the map shape is selected or not.
 
+
 #### Bug Fixes
 
 - `#F157226` - Marker clusters will now render properly when the markers are added dynamically to the maps.
@@ -233,17 +257,11 @@
 #### New Features
 
 - `#I244108`, `#I240060`, `#I247767`, `#I250088` - Provided support to zoom the maps initially, based on the marker’s location.
-
 - `#I248021` - Provided support to cluster and expand markers with the same latitude and longitude values.
-
 - `#I253516` - Provided clustering support for marker templates.
-
 - `#I255189` - Improved the `markerClusterClick` event to get the hidden cluster collection details.
-
 - `#I242130` - Provided support to select or deselect the shapes dynamically and on initial rendering.
-
 - `#I248172` - Provided support to show tooltip on tap/click.
-
 - `F146103`, `F147309` - Provided support to bind the shapes and colors to the markers from the data source.
 
 ## 17.3.21 (2019-10-30)
@@ -268,7 +286,7 @@
 
 #### New Features
 
-- The toggle option has been provided for legend. So, if you toggle the legend, the given color will be changed to the corresponding shape item.
+- The toggle option has been provided for legend. So, if you toggle the legend, the given color will be changed to the corresponding shape item.
 
 ## 17.2.41 (2019-08-14)
 
@@ -285,7 +303,7 @@
 
 #### Bug Fixes
 
-- `#I243271` - The issue with changing text in our component when the text argument is changed in the datalabelRendering event has been fixed.
+- `#I243271` - The issue with changing text in our component when the text argument is changed in the datalabelRendering event has been fixed.
 - `#I243499` - The issue with arrow option in the navigation line has been fixed.
 - `#I238404` - The issue with bubble color and size when using point type shape data has been fixed.
 
@@ -434,6 +452,7 @@
 
 The Maps control is used to visualize the geographical data. It is used to represent the statistical data of a particular geographical area on Earth, with user interactivity and provides various customizing options. All the map elements are rendered using Scalable Vector Graphics (SVG).
 
+
 - **Layers** - Map is maintained through layers and it can accommodate one or more layers.
 - **GeoJSON Data Input** - Supports GeoJSON data, which allows you to plot your own shapes in the maps.
 - **Map Providers** - Supports map providers such as Bing and OpenStreetMap that can be added to any layers.
@@ -445,3 +464,5 @@ The Maps control is used to visualize the geographical data. It is used to repre
 - **Navigation Lines** - Lines can be rendered between various points in map.
 - **Annotations** - Supports placing any HTML element on desired location in the map.
 - **User interaction** - Supports interactive features like zooming, panning, tooltip, highlight, selection and interactive legend.
+
+

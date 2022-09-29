@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-notifications",
-	"version": "20.2.45",
+	"version": "19.16.0",
 	"description": "A package of Essential JS 2 notification components such as Toast and Badge which used to notify important information to end-users. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -21,12 +21,19 @@
 		"circle badge",
 		"badge css",
 		"toast css",
-		"alart",
+		"alert",
+		"message",
+		"messages",
+		"skeleton",
+		"shimmer",
+		"ej2-skeleton",
 		"react",
 		"ej2-react-notifications",
 		"react-notifications",
 		"react-toast",
-		"react-toaster"
+		"react-toaster",
+		"react-message",
+		"react-skeleton"
 	],
 	"repository": {
 		"type": "git",

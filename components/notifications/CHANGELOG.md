@@ -2,6 +2,28 @@
 
 ## [Unreleased]
 
+## 20.3.47 (2022-09-29)
+
+### Message `Preview`
+
+The Message component has an option to display the messages with severity by differentiating icons and colors to denote the importance and context of the message to the end user. The following key features are available in the Message component.
+
+- **Severity** - Provides an option to display the message with distinctive icons and colors based on the severity type. The available severity types such as **Normal**, **Success**, **Info**, **Warning**, and **Error**.
+
+- **Variants** - Provides an option to display the message with predefined appearance variants. The available variants such as **Text**, **Outlined**, and **Filled**.
+
+- **Visibility** - Provides an option to show or hide the message.
+
+- **Template** - Provides an option to customize the content of the message.
+
+### Skeleton `Preview`
+
+The Skeleton is a placeholder that animates a shimmer effect to let users know that the page's content is currently loading. In other words, it simulates the layout of page content while loading the actual content.
+
+- **Rendering** - The Skeleton component can be rendered as Circle, Square, Text, and Rectangle shapes.
+
+- **Effects** - Supports wave, fade, and pulse shimmer effects.
+
 ## 20.1.61 (2022-06-21)
 
 ### Toast

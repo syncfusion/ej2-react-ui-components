@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-buttons",
-	"version": "20.2.46",
+	"version": "18.44.0",
 	"description": "A package of feature-rich Essential JS 2 components such as Button, CheckBox, RadioButton and Switch. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -28,13 +28,20 @@
 		"form control",
 		"form controls",
 		"input",
+		"fab",
+		"floating button",
+		"floating action button",
+		"speeddial",
+		"floating menu",
 		"react",
 		"reactjs",
 		"ej2-react-buttons",
 		"react-button",
 		"react-checkbox",
 		"react-radiobutton",
-		"react-switch"
+		"react-switch",
+		"react-fab",
+		"react-speeddial"
 	],
 	"repository": {
 		"type": "git",
