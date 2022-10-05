@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.3.48 (2022-10-05)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I405520` - The issue "forward button in end date calendar is not working in daterangepicker" has been resolved.
+
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
