@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
+## 20.3.49 (2022-10-11)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I405054` - Provided the custom context menu support for the swimlane phase.
+- `#I405669` - Now, BPMN text annotation node gets dragged properly while drag the swimlane.
+- `#I397116` - Now, the bezier annotation horizontal and vertical alignment is working properly.
+- `#I410634` - The null exception will no longer thrown while changing the overview id.
+
 ## 20.3.48 (2022-10-05)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I401143` - Now, HTML element gets rendered properly while drag and drop from one lane to other lane.
+- `#I393859` - Now, the nodes overlapping in linear arrangement of complex-hierarchical tree is resolved.
+
+## 20.3.47 (2022-09-29)
 
 ### Diagram
 

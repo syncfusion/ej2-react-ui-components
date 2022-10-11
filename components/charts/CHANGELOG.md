@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 20.3.49 (2022-10-11)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I383934` - Now shared tooltip is rendering properly for all points.
+
+### Sparkline
+
+#### Bug Fixes
+
+- `#F177692` - Sparkline component is not rendered in React Next app issue has been fixed.
+
 ## 20.3.48 (2022-10-05)
 
 ### Chart

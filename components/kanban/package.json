@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-kanban",
-	"version": "19.10.6",
+	"version": "20.3.47",
 	"description": "The Kanban board is an efficient way to visualize the workflow at each stage along its path to completion. The most important features available are Swim lane, filtering, and editing. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",

@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 20.3.48 (2022-10-05)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I407064` - Issue with "scientific format is not working properly while applying on number with decimal digits more than two" has been resolved.
-- `#I407671` - Issue with "selected date is not updated properly while choosing the value in the filter dialog" has been resolved.
-
 ## 20.3.47 (2022-09-29)
 
 ### Spreadsheet
@@ -1215,6 +1206,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.48 (2022-10-05)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I407064` - Issue with "scientific format is not working properly while applying on number with decimal digits more than two" has been resolved.
+- `#I407671` - Issue with "selected date is not updated properly while choosing the value in the filter dialog" has been resolved.
 
 ## 20.2.48 (2022-09-06)
 

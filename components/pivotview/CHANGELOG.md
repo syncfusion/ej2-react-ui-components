@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 20.3.49 (2022-10-11)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#I408669` - Number formatting is now applied properly to row and column headers in the pivot table.
+- `#I405681` - Pivot table cell values are now properly exported as PDF document based on the text align property.
+
 ## 20.3.47 (2022-09-29)
 
 ### Pivot Table
