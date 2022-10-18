@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.3.50 (2022-10-18)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I408664` - Issue with "rendering with empty cells while applying custom number format and its cell value as 0" has been resolved.
+
 ## 20.3.47 (2022-09-29)
 
 ### Spreadsheet

@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 20.3.50 (2022-10-18)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I409105` - Now, click event gets triggered properly when click at scrollbar position.
+- `#I410274` - Now, adding lane to the existing vertical swimlane is working properly.
+
 ## 20.3.49 (2022-10-11)
 
 ### Diagram

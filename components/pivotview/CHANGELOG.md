@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.3.50 (2022-10-18)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- The drillthrough feature now works properly with alphanumeric data.
+
 ## 20.3.49 (2022-10-11)
 
 ### Pivot Table

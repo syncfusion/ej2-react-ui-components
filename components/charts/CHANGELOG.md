@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 20.3.50 (2022-10-18)
+
+### Chart
+
+#### Bug Fixes
+
+- `#F178096` - Chart axis range is now calculated properly after zooming the chart.
+
+### Bullet Chart
+
+#### Bug Fixes
+
+- `#F177357` - Data label gets cropped in Bullet Chart has been fixed.
+
 ## 20.3.49 (2022-10-11)
 
 ### Chart
