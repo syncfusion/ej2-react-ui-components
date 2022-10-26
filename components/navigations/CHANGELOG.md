@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.3.52 (2022-10-26)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I411990` - An issue with tab content missing after `refreshActiveTab` method is triggered has been resolved.
+
 ## 20.3.50 (2022-10-18)
 
 ### ContextMenu

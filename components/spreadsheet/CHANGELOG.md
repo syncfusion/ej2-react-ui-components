@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 20.3.50 (2022-10-18)
+## 20.3.52 (2022-10-26)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I408664` - Issue with "rendering with empty cells while applying custom number format and its cell value as 0" has been resolved.
+- `#I411498` - Issue with "`DAYS` formula is not calculated properly while passing the argument date values in the string format" has been resolved.
 
 ## 20.3.47 (2022-09-29)
 
@@ -1214,6 +1214,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.50 (2022-10-18)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I408664` - Issue with "rendering with empty cells while applying custom number format and its cell value as 0" has been resolved.
 
 ## 20.3.48 (2022-10-05)
 
