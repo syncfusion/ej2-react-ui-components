@@ -2,13 +2,16 @@
 
 ## [Unreleased]
 
-## 20.3.56 (2022-11-08)
+## 20.3.57 (2022-11-15)
 
-### Tab
+### TreeView
 
 #### Bug Fixes
 
-- `#I411990` - An issue with tab content missing after `refreshActiveTab` method is triggered has been resolved.
+- `#I417236` - The accessibility issue mentioned in the TreeView component has been resolved.
+- `#I415849` - The issue with "Expand animation is not working for the dynamically added node on initial expanding in TreeView" has been resolved.
+
+- `#I415849` - The issue with "Expand animation is not working for the dynamically added node on initial expanding in TreeView" has been resolved.
 
 ## 20.3.50 (2022-10-18)
 
@@ -1786,6 +1789,14 @@ TreeView component is used to represent hierarchical data in a tree like structu
 - **Template** - Allows you to customize the nodes in TreeView.
 - **Accessibility** - Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 20.3.52 (2022-10-26)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I411990` - An issue with tab content missing after `refreshActiveTab` method is triggered has been resolved.
 
 ## 19.2.44 (2021-06-30)
 
