@@ -2,14 +2,13 @@
 
 ## [Unreleased]
 
-## 20.3.57 (2022-11-15)
+## 20.3.58 (2022-11-22)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I409382` - Issue with "`ignoreBlank` is not working properly while assigning `date` type to the cell" has been resolved.
-- `#I416351` - Issue with "page gets unresponsive while finding the text that is not available in the worksheet" has been resolved.
+- `#I419656` - Issue with "font families are not applied properly to the font family drop-down list items" has been resolved.
 
 ## 20.3.56 (2022-11-08)
 
@@ -1225,6 +1224,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.57 (2022-11-15)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I409382` - Issue with "`ignoreBlank` is not working properly while assigning `date` type to the cell" has been resolved.
+- `#I416351` - Issue with "page gets unresponsive while finding the text that is not available in the worksheet" has been resolved.
 
 ## 20.3.52 (2022-10-26)
 
