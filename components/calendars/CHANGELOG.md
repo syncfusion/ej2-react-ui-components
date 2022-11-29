@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.3.59 (2022-11-29)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#F178567` - The issue "Meridian value not converted from lower case into higher case" has been resolved.
+
 ## 20.3.50 (2022-10-18)
 
 ### Calendar
