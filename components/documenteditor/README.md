@@ -1,6 +1,6 @@
 # ej2-react-documenteditor
 
-The [React Document Editor](https://www.syncfusion.com/react-ui-components/react-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=react-word-processor-npm) component is used to create, edit, view, and print Word documents in web applications. All the user interactions and editing operations that run purely in the client-side provides much faster editing experience to the users.
+The [React Word Processor](https://www.syncfusion.com/react-ui-components/react-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=react-word-processor-npm) component is used to create, edit, view, and print Word documents in web applications. All the user interactions and editing operations that run purely in the client-side provides much faster editing experience to the users.
 
 ![Document Editor](https://ej2.syncfusion.com/products/images/documenteditor/readme.gif)
 
@@ -70,5 +70,7 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/documenteditor/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=react-word-processor-npm)
 
-
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+
+## About Syncfusion React UI Components
+Syncfusion [React components](https://www.syncfusion.com/react-ui-components/react-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=react-word-processor-npm) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI components in a single package. In addition to Word Processor, we provide popular React Components such as [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-word-processor-npm), [React Tree Grid](https://www.syncfusion.com/react-components/react-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-word-processor-npm), [React ListView](https://www.syncfusion.com/react-components/react-listview?utm_source=npm&utm_medium=listing&utm_campaign=react-word-processor-npm), [React Data Grid](https://www.syncfusion.com/react-components/react-data-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-word-processor-npm), and [React PDF Viewer](https://www.syncfusion.com/react-components/react-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=react-word-processor-npm).

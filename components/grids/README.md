@@ -27,7 +27,7 @@ npm install @syncfusion/ej2-react-grids
 Grid component is also offered in following list of frameworks.
 
 1. [Angular](https://www.syncfusion.com/angular-ui-components/angular-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm)
-2. [VueJS](https://www.syncfusion.com/vue-ui-components/vue-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm)
+2. [Vue](https://www.syncfusion.com/vue-ui-components/vue-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm)
 3. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/js-data-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm)
 4. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/grid?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm)
 5. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/grid?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm)
@@ -73,3 +73,6 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 Check the changelog [here]((https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/grids/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm)
 
 &copy; Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+
+## About Syncfusion React UI Components
+Syncfusion [React components](https://www.syncfusion.com/react-components/react-data-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI components in a single package. In addition to Data Grid, we provide popular React Components such as [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm), [React Tree Grid](https://www.syncfusion.com/react-components/react-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm), [React ListView](https://www.syncfusion.com/react-components/react-listview?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm), [React Diagram](https://www.syncfusion.com/react-components/react-diagram?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm), and [React PDF Viewer](https://www.syncfusion.com/react-components/react-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=react-data-grid-npm).
