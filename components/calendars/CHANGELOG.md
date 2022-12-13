@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 20.3.60 (2022-12-06)
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#F178567` - The issue "Meridian value not converted from lower case into higher case" has been resolved.
-
 ## 20.3.50 (2022-10-18)
 
 ### Calendar
@@ -1189,6 +1181,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.59 (2022-11-29)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#F178567` - The issue "Meridian value not converted from lower case into higher case" has been resolved.
 
 ## 20.3.49 (2022-10-11)
 

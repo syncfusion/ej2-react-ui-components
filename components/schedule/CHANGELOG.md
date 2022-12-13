@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.3.61 (2022-12-13)
+
+### Schedule
+
+#### Bug fixes
+
+- `#F178034` - An issue with event template is not applied in print window has been fixed.
+
 ## 20.3.58 (2022-11-22)
 
 ### Schedule
