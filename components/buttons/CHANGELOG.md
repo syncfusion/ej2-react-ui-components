@@ -2,65 +2,35 @@
 
 ## [Unreleased]
 
-## 20.3.58 (2022-11-22)
-
-### Checkbox
-
-#### Bug Fixes
-
-- The Issue with the checkbox label size in the Fluent theme has been fixed.
-
-## 20.3.57 (2022-11-15)
-
-### Chips
-
-#### Bug Fixes
-
-- `#293361` - When setting `enabled` value as `false` in Chip component then the disabled chip item get focused issue has been resolved.
-
-## 20.3.50 (2022-10-18)
-
-### Checkbox
-
-#### Bug Fixes
-
-- `#I382543` - The issue with "Checkbox value not update properly while using edit template of grid" has been resolved.
-
-## 20.3.49 (2022-10-11)
+## 20.3.47 (2022-09-29)
 
 ### Floating Action Button `Preview`
 
 The Floating Action Button (FAB) component performs the primary action that appears in front of all screen contents. It can be positioned in relation to a page or a target container.
 
+
 - **Rendering** - The FAB component can be rendered as Icon only, Icon with Label, Label only, or in a disabled state.
-
 - **Positioning** - Supports to place various built-in positions on the target element.
-
 - **Styles** - The appearance of the FAB can be customized using predefined styles.
-
 - **Accessibility** - The FAB provides built-in compliance with the `WAI-ARIA` specifications and it is achieved through attributes.
 
 ### Speed Dial `Preview`
 
 The Speed Dial component is an extension of the floating action button that displays a list of action buttons when clicked. It is useful when there is more than one primary action for the page.
 
+
 - **Rendering** - The Speed Dial component can be rendered in two display modes: Linear and Radial.
-
 - **Positioning** - Supports to place various built-in positions on the target element.
-
 - **Styles** - The appearance of the Speed Dial can be customized using predefined styles.
-
 - **Template Support** - The Speed Dial component action items and popup container can also be rendered with custom templates.
-
 - **Modal Support** - Supports showing a modal overlay behind the Speed Dial.
-
 - **Accessibility** - The Speed Dial provides built-in compliance with the `WAI-ARIA` specifications and it is achieved through attributes.
 
 ### Switch
 
 #### Bug Fixes
 
-- `#384387` - The issue with "Switch component click event trigger two times when we handling enable/disable dynamically" has been resolved.
+- `#I382543` - The issue with "Checkbox value not update properly while using edit template of grid" has been resolved.
 
 ### Checkbox
 
@@ -247,6 +217,7 @@ The Speed Dial component is an extension of the floating action button that disp
 
 The Chip control contains a small block of essential information that triggers an event on click action. It also contains the primary text, image, or both, and is mostly used in mails, contacts, or filter tags.
 
+
 - `Input chip` - Basic chip with delete icon that represents a person or entity and enables  removal of chips from the chip list collection.
 - `Choice chip` - Used to select a choice from the available options.
 - `Filter chip` - Used to select multiple choices from the available options.
@@ -265,6 +236,7 @@ The Chip control contains a small block of essential information that triggers a
 ### Chips
 
 The Chip control contains a small block of essential information that triggers an event on click action. It also contains the primary text, image, or both, and is mostly used in mails, contacts, or filter tags.
+
 
 - `Input chip` - Basic chip with delete icon that represents a person or entity and enables  removal of chips from the chip list collection.
 - `Choice chip` - Used to select a choice from the available options.
@@ -305,6 +277,7 @@ The Chip control contains a small block of essential information that triggers a
 
 Switch is a graphical user interface element that allows you to toggle between checked and unchecked states.
 
+
 - **Text** - Supports text.
 - **Sizes** - Provided with different sizes of Switch.
 
@@ -324,24 +297,27 @@ Switch is a graphical user interface element that allows you to toggle between c
 
 Pascal casing changes in Button Component.
 
-Enum Name | Old Property Value | New Property Value
------|-----|-----
-`IconPosition` | left | Left
-`IconPosition` | right | Right
+
+| Enum Name | Old Property Value | New Property Value | 
+|---|---|---|
+| `IconPosition` | left | Left | 
+| `IconPosition` | right | Right | 
 
 Pascal casing changes in CheckBox Component.
 
-Enum Name | Old Property Value | New Property Value
------|-----|-----
-`LabelPosition` | after | After
-`LabelPosition` | before | Before
+
+| Enum Name | Old Property Value | New Property Value | 
+|---|---|---|
+| `LabelPosition` | after | After | 
+| `LabelPosition` | before | Before | 
 
 Pascal casing changes in RadioButton Component.
 
-Enum Name | Old Property Value | New Property Value
------|-----|-----
-`RadioLabelPosition` | after | After
-`RadioLabelPosition` | before | Before
+
+| Enum Name | Old Property Value | New Property Value | 
+|---|---|---|
+| `RadioLabelPosition` | after | After | 
+| `RadioLabelPosition` | before | Before | 
 
 ## 15.4.30-preview (2018-02-14)
 
@@ -409,30 +385,28 @@ Enum Name | Old Property Value | New Property Value
 
 Button is a graphical user interface element that triggers an event on its click action.
 
+
 - **Types** - Provided with different types of Button.
-
 - **Predefined Styles** - Provided with predefined styles of Button.
-
 - **Sizes** - Provided with different sizes of Button.
-
 - **Icons** - Supports text and icon on the Button.
 
 ### CheckBox
 
 CheckBox is a graphical user interface element that allows to select one or more options from the choices.
 
+
 - **States** - Provided with different states of CheckBox.
-
 - **Label** - Supports label and its positioning.
-
 - **Sizes** - Provided with different sizes of CheckBox.
 
 ### RadioButton
 
 RadioButton is a graphical user interface element that allows to select one option from the choices.
 
+
 - **States** - Provided with different states of RadioButton.
-
 - **Label** - Supports label and its positioning.
-
 - **Sizes** - Provided with different sizes of RadioButton.
+
+

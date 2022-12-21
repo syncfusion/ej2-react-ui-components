@@ -1,19 +1,19 @@
 {
 	"name": "@syncfusion/ej2-react-richtexteditor",
-	"version": "20.3.60",
+	"version": "19.12.13",
 	"description": "Essential JS 2 RichTextEditor component for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"markdown editor",
-		"HTML5 rich text editor",
-		"wysiwyg",
-		"wysiwyg html editor",
-		"wysiwyg markdown editor",
-		"react rich text editor",
-		"react html editor",
-		"react markdown editor",
-		"react wysiwyg editor"
+		"rich-text-editor",
+		"markdown-editor",
+		"HTML5-rich-text-editor",
+		"wysiwyg-html-editor",
+		"wysiwyg-markdown-editor",
+		"react-rich-text-editor",
+		"react-html-editor",
+		"react-markdown-editor",
+		"react-wysiwyg-editor"
 	],
 	"repository": {
 		"type": "git",

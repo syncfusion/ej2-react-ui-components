@@ -1229,6 +1229,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
 
+## 20.3.61 (2022-12-13)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I423182` - Issue with "custom cell name is not shown while importing the excel file that contain defined custom cell name" has been resolved.
+
 ## 20.3.58 (2022-11-22)
 
 ### Spreadsheet

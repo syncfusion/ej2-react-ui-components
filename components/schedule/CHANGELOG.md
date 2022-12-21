@@ -2,9 +2,15 @@
 
 ## [Unreleased]
 
-## 20.3.61 (2022-12-13)
+## 20.4.38 (2022-12-21)
 
 ### Schedule
+
+#### New Features
+
+- `#I384604` - Provided custom workdays support when resources are grouped by date.
+- `#I394207` - Provided `closeTooltip` method to close the appointment tooltip programmatically.
+- `#I399939` - Provided `dateRangeTemplate` template to customize the header date range in scheduler.
 
 #### Bug fixes
 

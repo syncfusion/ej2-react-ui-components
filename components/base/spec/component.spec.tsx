@@ -34,7 +34,7 @@ class Sample extends React.PureComponent<{ content?: string ,name?:string,disabl
             <ReactStyler disabled={false}></ReactStyler>
             <button onClick={this.duplicateUpdte.bind(this)} id="dup-state">DuplicateUpdate</button>
             <button onClick={this.changeState.bind(this)} id="change-state">ChangeState</button>
-            <ReactStyler1 ref='ReactStyler1' id="snm" className={this.state.name} headerText = "string"
+            <ReactStyler1 ref='ReactStyler1' id="snm" className={this.state.name} headerText = "string" statelessTemplates={['content']}
              disabled={this.state.disabled} content={this.state.content}   onChange= {this.triggerChange} change={this.triggerChange}>
              <FieldsDirective><FieldDirective name={this.state.content} status='processed' headerText='string'>
             <InnerFieldsDirective>
@@ -52,7 +52,7 @@ class Sample1 extends React.PureComponent<{ content?: string,name?:string }, { c
         this.state = { content: 'initial',name:'snm' };
     }
     public render(): any {
-        return <ReactStyler2 ref='ReactStyler2'  content={this.state.content}><FieldsDirective><FieldDirective name={this.state.content} status='processed'>
+        return <ReactStyler2 ref='ReactStyler2'  content={this.state.content} statelessTemplates={['content']}><FieldsDirective><FieldDirective name={this.state.content} status='processed'>
             <InnerFieldsDirective>
                 <InnerFieldDirective name='snm' status='processed'></InnerFieldDirective>
                 <InnerFieldDirective name='snm1' status='processed1'></InnerFieldDirective>

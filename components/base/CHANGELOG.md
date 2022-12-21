@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 20.4.38 (2022-12-21)
+
+### Common
+
+#### New Features
+
+- `#I418318` - The option "to prevent the component from re-rendering while the state is being updated" has been provided.
+
+#### Bug Fixes
+
+- `#F174612` - The issue with the "React state change value is not reflected inside the `dialog` content template" has been resolved.
+
 ## 20.3.47 (2022-09-29)
 
 ### Common

@@ -11,6 +11,17 @@
 
 ## [Unreleased]
 
+## 20.4.38 (2022-12-21)
+
+### Maps
+
+#### New Features
+
+- When panning is performed, the image rendering in online map providers is now improved.
+
+- When panning is performed, the image rendering in online map providers is now improved.
+
+
 ## 20.3.56 (2022-11-08)
 
 ### Maps
@@ -46,9 +57,6 @@
 #### New Features
 
 - Azure Maps can now be loaded and viewed through our Maps.
-
-- Azure Maps can now be loaded and viewed through our Maps.
-
 
 ## 20.2.43 (2022-08-08)
 

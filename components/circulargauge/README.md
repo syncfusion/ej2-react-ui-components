@@ -1,65 +1,108 @@
-# ej2-react-circulargauge
+# React CircularGauge Component
 
-The circular gauge control is ideal to visualize numeric values over a circular scale. All the circular gauge elements are rendered using Scalable Vector Graphics (SVG).
+The [React Circular Gauge](https://www.syncfusion.com/react-components/react-circular-gauge?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm) component is ideal to visualize numeric values over a circular scale. All the circular gauge elements are rendered using Scalable Vector Graphics (SVG).
 
-![Circular Gauge](https://ej2.syncfusion.com/products/images/circulargauge/readme.gif)
+<p align="center">
+    <a href="https://ej2.syncfusion.com/react/documentation/circular-gauge/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm">Getting started</a> . 
+    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/bootstrap5/circular-gauge/default-functionalities">Online demos</a> . 
+    <a href="https://www.syncfusion.com/react-components/react-circular-gauge?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm">Learn more</a>
+</p>
 
-> Circular gauge is part of Syncfusion Essential JS 2 commercial program. License is available in two models Community and Paid. Please refer the license file for more information. License can be obtained by registering at [https://www.syncfusion.com/downloads/essential-js2](https://www.syncfusion.com/downloads/essential-js2?utm_source=npm&utm_campaign=circulargauge)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-circular-gauge.png" alt="React Circular Gauge Component">
+</p>
+
+<p align="center">
+Trusted by the world's leading companies
+  <a href="https://www.syncfusion.com">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+  </a>
+</p>
 
 ## Setup
 
-To install circular gauge and its dependent packages, use the following command
+### Create a React Application
 
-```sh
-npm install @syncfusion/ej2-circulargauge
+You can use [`create-react-app`](https://github.com/facebookincubator/create-react-app) to setup applications. To create React app use the following command.
+
+```bash
+npx create-react-app my-app --template typescript
+cd my-app
+npm start
 ```
 
-## Resources
+### Add Syncfusion Circular Gauge package
 
-* [Getting Started](https://ej2.syncfusion.com/react/documentation/circular-gauge/getting-started.html)
-* [View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/default)
-* [Product Page](https://www.syncfusion.com/products/react/circulargauge)
+All Syncfusion React packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the React Circular Gauge package, use the following command.
 
-## Supported Frameworks
+```sh
+npm install @syncfusion/ej2-react-circulargauge --save
+```
 
-Circular gauge component is also offered in following list of frameworks.
+### Add Circular Gauge Component
 
-1. [Angular](https://www.npmjs.com/package/@syncfusion/ej2-ng-circulargauge?utm_source=npm&utm_campaign=circulargauge)
-2. [React](https://www.npmjs.com/package/@syncfusion/ej2-react-circulargauge?utm_source=npm&utm_campaign=circulargauge)
-3. [Vue.js](https://www.npmjs.com/package/@syncfusion/ej2-vue-circulargauge?utm_source=npm&utm_campaign=circulargauge)
-4. [ASP.NET Core](https://aspdotnetcore.syncfusion.com/CircularGauge/Default#/material)
-5. [ASP.NET MVC](https://aspnetmvc.syncfusion.com/CircularGauge/DefaultFunctionalities#/material)
-6. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript/circulargauge)
+In the **src/App.tsx** file, use the following code snippet to render the Syncfusion React Circular Gauge component.
 
-## Use case samples
+```typescript
+import React from 'react';
+import { CircularGaugeComponent } from '@syncfusion/ej2-react-circulargauge';
 
-* Live update ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/sampledata))
-* Direction compass ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/direction))
+function App() {
+   return (<CircularGaugeComponent></CircularGaugeComponent>);
+}
+export default App;
+```
 
-## Key Features
+## Supported frameworks
 
-* [**Axes**](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/axes) - Axes is a collection of circular axis that can be used to indicate numeric values.
-* [**Ranges**](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/range) - Supports ranges to categorize the axis values. Any number of ranges can be added to the circular gauge.
-* [**Ticks and Labels**](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/labels) - Provides options to customize the ticks and labels of the gauges.
-* [**Pointers**](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/pointers) - Indicates the values on axis. Circular gauge supports three types of pointers: needle, range bar, and marker.
-* [**Annotation**](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/annotation) - Uses any custom HTML element as annotation and place it anywhere on the gauge.
-* [**Tooltip**](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/tooltip) - Provides information about the pointer values on mouse hover.
-* [**Pointer Drag**](https://ej2.syncfusion.com/react/demos/#/material/circulargauge/drag) - Provides support to place a pointer at the desired values by dragging it. 
+Circular Gauge component is also offered in the following list of frameworks.
+
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular.svg"  height="50" />](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+
+## Showcase samples
+
+* Live update - [Live Demo](https://ej2.syncfusion.com/react/demos/#/material/circular-gauge/data-sample)
+* Direction compass - [Live Demo](https://ej2.syncfusion.com/react/demos/#/material/circular-gauge/direction-compass)
+* Fitness Tracker - [Source](https://github.com/SyncfusionExamples/showcase-react-health-tracker-dashboard-demo), [Live Demo](https://ej2.syncfusion.com/showcase/react/fitness-tracker-app/)
+
+## Key features
+
+* [Arc Gauge/Radial Gauge](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-axes/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#angles-and-direction): The arc gauge or radial gauge helps in the visualization of numerical values of scales in a semi-circular or quarter-circular manner. It is possible to achieve this by changing the start and end angle values.
+* [Axes](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-axes/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Axes is a collection of circular axis that can be used to indicate numeric values.
+* [Ranges](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-ranges/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Supports ranges to categorize the axis values. Any number of ranges can be added to the circular gauge.
+* [Ticks and labels](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/material/circular-gauge/ticks-and-labels): Provides options to customize the ticks and labels of the gauges.
+* [Pointers](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-pointers/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Indicates the values on axis. Circular gauge supports three types of pointers: needle, range bar, and marker.
+* [Annotation](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-annotations/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Uses any custom HTML element as annotation and place it anywhere on the gauge.
+* [Legend](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-legend/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Summarizes the information from the ranges.
+* [Tooltip](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-user-interaction/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#tooltip-for-pointers): Provides information about the pointer and range values on hover.
+* [Pointer drag](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-user-interaction/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#pointer-drag): Provides support to place a pointer at the desired values by dragging it.
+* [Range drag](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/material/circular-gauge/pointer-ranges-drag): Provides support to extend the start or end of the range at the desired values by dragging it.
+* [Print and Export](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-print-and-export/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Prints or exports the rendered circular gauge to a desired format. Exporting supports four formats: PDF, PNG, JPEG and SVG.
+* [Templates](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/material/circular-gauge/tooltip): Templates can be used to create custom user experience in the tooltip of the circular gauge.
+* [Globalization](https://ej2.syncfusion.com/react/documentation/circular-gauge/internationalization/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Personalize the circular gauge component with different languages, as well as culture-specific number, date and time formatting.
+* [Accessibility](https://ej2.syncfusion.com/react/documentation/circular-gauge/accessibility/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Provides with built-in accessibility support which helps to access all the circular gauge component features through the keyboard, screen readers, or other assistive technology devices. 
 
 ## Support
 
-Product support is available for through following mediums.
+Product support is available through the following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=circulargauge) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=circulargauge).
-* New [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues).
-* Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
-
-## License
-
-Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/circulargauge/license?utm_source=npm&utm_campaign=circulargauge).
+* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
+* [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm)
+* [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues/new)
+* [Request feature or report bug](https://www.syncfusion.com/feedback/react?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm)
+* Live chat
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/circulargauge/CHANGELOG.md?utm_source=npm&utm_campaign=circulargauge)
+Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/circulargauge/CHANGELOG.md?utm_source=npm&utm_campaign=react-circulargauge-npm). Get minor improvements and bug fixes every week to stay up to date with frequent updates.
 
-© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+## License and copyright
+
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+
+> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+
+See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/circulargauge/license?utm_source=npm&utm_campaign=react-circulargauge-npm) for more info.
+
+&copyl Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

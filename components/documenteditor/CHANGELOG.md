@@ -2,101 +2,7 @@
 
 ## [Unreleased]
 
-## 20.3.60 (2022-12-06)
-
-### Document Editor
-
-#### Bug Fixes
-
-- `#I418719` - Resolved the issue with removing bookmark element.
-- `#I420043` - Table of content (TOC) is now updated properly.
-
-## 20.3.59 (2022-11-29)
-
-### Document Editor
-
-#### Bug Fixes
-
-- `#I417535` - The page number is not updated properly while inserting TOC.
-- `#I418000` , `#F178993` - Resolved the tab character width issue.
-
-## 20.3.58 (2022-11-22)
-
-### Document Editor
-
-#### Bug Fixes
-
-- `#I417708` - Comment with multiple paragraph is now exported properly.
-- `#I414849` - Textbox with no outline is now exported properly.
-- `#I419171` - Resolved the script error while discarding the unposted comment.
-- `#I417911` - Resolved the consecutive symbol selection issue while selecting text with white spaces.
-- `#I418127` - Image width and height is now resized to fit inside the page width.
-- `#I417899` - Table borders are now removed when border style set as none.
-- `#I417257` - Ordinal number format is now preserved properly in exported word document.
-- `#F178501` - Resolved document corruption issue due to insert revision not serialized properly.
-
-## 20.3.57 (2022-11-15)
-
-### Document Editor
-
-#### Bug Fixes
-
-- `#I415922` - Resolved the browser hanging issue while opening the document.
-- `#I415359` - Resolved the table layouting issue while resizing the table.
-- `#I414775` - Resolved the layouting issue while inserting page break.
-- `#I414224` - Table resizing is now working properly in header/footer.
-- `#I413303`, `#I417629` - Resolved the script error while opening the word document.
-- `#I413477` - Resolved the script error while deleting text with comment.
-- `#F178063` - Scrolling on bookmark navigation is now working similar to Microsoft Word.
-
-## 20.3.56 (2022-11-08)
-
-### Document Editor
-
-#### Bug Fixes
-
-- `#FB37929` - Resolved the exception while exporting the document with duplicate character style.
-- `#I412146` - Resolved the script error while opening the document.
-- `#I408099` - Resolved the list numbering issue.
-- `#I412284` - Table border is now rendering properly.
-- `#I413316` - Resolved the script error while deleting content of few pages.
-- `#I414066` - Resolved the script error while modifying locale key.
-- `#I412817` - Formatting is now applied properly in track changes protection mode.
-- `#I413284` - Strike through is now properly skipped for trailing space characters like Microsoft Word.
-- `#I412529` - Resolved the script error while opening html document with nested list.
-
-#### New Features
-
-- `#I297837`, `#I336116`, `#I342219`, `#I346980`, `#F164814`, `#F168911` - Improved the display of the RTL text in a bi-directional layout.
-
-## 20.3.52 (2022-10-26)
-
-### Document Editor
-
-#### Bug Fixes
-
-- `#I410179` - Cell background color is now rendering properly.
-- `#I411016` - List numbering is now rendered properly.
-- `#I411008` - Paragraph border is now rendering properly.
-- `#FB37770` - Resolved the script error while printing the document.
-- `#I409887` - Replacing text with bookmark is now working properly.
-
-## 20.3.50 (2022-10-18)
-
-### Document Editor
-
-#### Bug Fixes
-
-- `#I410296` - Tooltip for the show/hide properties button is now updated properly.
-- `#I407021` - Table properties are now reverted properly on undo/redo.
-- `#I408686` - Comments pane is now switching properly while adding comment.
-- `#I409821` - Resolved the next paragraph deletion issue while switching paste option.
-- `#I408431` - Resolved the script error while opening the document with track changes.
-- `#I409991` - Resolved the table layouting issue.
-- `#I407092` - Resolved the paragraph border rendering issue.
-- `#I410940` - Resolved the script error while merging cells in header/footer.
-
-## 20.3.49 (2022-10-11)
+## 20.4.38 (2022-12-21)
 
 ### Document Editor
 
@@ -1180,6 +1086,7 @@
 `#I323215` - Table is now layout properly after row delete.
 `#I322560` - Page content duplication issue is resolved.
 
+
 #### New Features
 
 - `#I324911` - Provided support for inserting non-breaking space character on Ctrl + Shift + Space key combination.
@@ -1300,7 +1207,7 @@
 - `#313943` - Tab character is now layout properly.
 - `#313821` - Fixed layouting issue in table with preferred width type as auto.
 - `#318786` - Resolved the document with footnote opening issue.
-Table column width is now updated properly.
+- Table column width is now updated properly.
 
 ## 19.1.54 (2021-03-30)
 
@@ -2114,52 +2021,52 @@ Table column width is now updated properly.
 - Default value of `enableLocalPaste` is set to false. So, by default, the content will be pasted from the system clipboard.
 - Some locale properties are renamed as below
 
-|Previous|Now|
-|----|----|
-|Linked(Paragraph and Character)|Linked Style|
-|Don't add space between the paragraphs of the same styles|Contextual Spacing|
-|The password don't match|Password Mismatch|
-|Exceptions (optional)|Exceptions Optional|
-|Select parts of the document and choose users who are allowed to freely edit them.|Select Part Of Document And User|
-|Yes, Start Enforcing Protection|Enforcing Protection|
-|This document is protected from unintentional editing. You may edit in this region.|Protected Document|
-|You may format text only with certain styles.|You may format text only with certain styles|
-|Type your comment hear|Type your comment here|
-|Added comments not posted. If you continue, that comment will be discarded.|Discard Comment|
-|Header & Footer|Header And Footer|
-|Different header and footer for odd and even pages.|Different header and footer for odd and even pages|
-|Different Odd & Even Pages|Different Odd And Even Pages|
-|Different header and footer for first page.|Different header and footer for first page|
-|Distance from top of the page to top of the header|Distance from top of the page to top of the header|
-|Distance from bottom of the page to bottom of the footer.|Distance from bottom of the page to bottom of the footer|
-|Insert / Delete|Insert Or Delete|
-|Number of heading or outline levels to be shown in table of contents.|Number of heading or outline levels to be shown in table of contents|
-|Show page numbers in table of contents.|Show page numbers in table of contents|
-|Right align page numbers in table of contents.|Right align page numbers in table of contents|
-|Use hyperlinks instead of page numbers.|Use hyperlinks instead of page numbers|
-|Bold (Ctrl+B)|Bold Tooltip|
-|Italic (Ctrl+I)|Italic Tooltip|
-|Underline (Ctrl+U)|Underline Tooltip|
-|Superscript (Ctrl+Shift++)|Superscript Tooltip|
-|Subscript (Ctrl+=)|Subscript Tooltip|
-|Align left (Ctrl+L)|Align left Tooltip|
-|Center (Ctrl+E)|Center Tooltip|
-|Align right (Ctrl+R)|Align right Tooltip|
-|Justify (Ctrl+J)|Justify Tooltip|
-|Create a new document.|Create a new document|
-|Open a document.|Open a document|
-|Undo the last operation (Ctrl+Z).|Undo Tooltip|
-|Redo the last operation (Ctrl+Y).|Redo Tooltip|
-|Insert inline picture from a file.|Insert inline picture from a file|
-|Create a link in your document for quick access to web pages and files (Ctrl+K).|Create Hyperlink|
-|Insert a bookmark in a specific place in this document.|Insert a bookmark in a specific place in this document|
-|Provide an overview of your document by adding a table of contents.|Provide an overview of your document by adding a table of contents|
-|Add or edit the header.|Add or edit the header|
-|Add or edit the footer.|Add or edit the footer|
-|Open the page setup dialog.|Open the page setup dialog|
-|Add page numbers.|Add page numbers|
-|Find text in the document (Ctrl+F).|Find Text|
-|The current page number in the document. Click or tap to navigate specific page.|Current Page Number|
+| Previous | Now | 
+|---|---|
+| Linked(Paragraph and Character) | Linked Style | 
+| Don't add space between the paragraphs of the same styles | Contextual Spacing | 
+| The password don't match | Password Mismatch | 
+| Exceptions (optional) | Exceptions Optional | 
+| Select parts of the document and choose users who are allowed to freely edit them. | Select Part Of Document And User | 
+| Yes, Start Enforcing Protection | Enforcing Protection | 
+| This document is protected from unintentional editing. You may edit in this region. | Protected Document | 
+| You may format text only with certain styles. | You may format text only with certain styles | 
+| Type your comment hear | Type your comment here | 
+| Added comments not posted. If you continue, that comment will be discarded. | Discard Comment | 
+| Header & Footer | Header And Footer | 
+| Different header and footer for odd and even pages. | Different header and footer for odd and even pages | 
+| Different Odd & Even Pages | Different Odd And Even Pages | 
+| Different header and footer for first page. | Different header and footer for first page | 
+| Distance from top of the page to top of the header | Distance from top of the page to top of the header | 
+| Distance from bottom of the page to bottom of the footer. | Distance from bottom of the page to bottom of the footer | 
+| Insert / Delete | Insert Or Delete | 
+| Number of heading or outline levels to be shown in table of contents. | Number of heading or outline levels to be shown in table of contents | 
+| Show page numbers in table of contents. | Show page numbers in table of contents | 
+| Right align page numbers in table of contents. | Right align page numbers in table of contents | 
+| Use hyperlinks instead of page numbers. | Use hyperlinks instead of page numbers | 
+| Bold (Ctrl+B) | Bold Tooltip | 
+| Italic (Ctrl+I) | Italic Tooltip | 
+| Underline (Ctrl+U) | Underline Tooltip | 
+| Superscript (Ctrl+Shift++) | Superscript Tooltip | 
+| Subscript (Ctrl+=) | Subscript Tooltip | 
+| Align left (Ctrl+L) | Align left Tooltip | 
+| Center (Ctrl+E) | Center Tooltip | 
+| Align right (Ctrl+R) | Align right Tooltip | 
+| Justify (Ctrl+J) | Justify Tooltip | 
+| Create a new document. | Create a new document | 
+| Open a document. | Open a document | 
+| Undo the last operation (Ctrl+Z). | Undo Tooltip | 
+| Redo the last operation (Ctrl+Y). | Redo Tooltip | 
+| Insert inline picture from a file. | Insert inline picture from a file | 
+| Create a link in your document for quick access to web pages and files (Ctrl+K). | Create Hyperlink | 
+| Insert a bookmark in a specific place in this document. | Insert a bookmark in a specific place in this document | 
+| Provide an overview of your document by adding a table of contents. | Provide an overview of your document by adding a table of contents | 
+| Add or edit the header. | Add or edit the header | 
+| Add or edit the footer. | Add or edit the footer | 
+| Open the page setup dialog. | Open the page setup dialog | 
+| Add page numbers. | Add page numbers | 
+| Find text in the document (Ctrl+F). | Find Text | 
+| The current page number in the document. Click or tap to navigate specific page. | Current Page Number | 
 
 #### New Features
 
@@ -2245,52 +2152,52 @@ Table column width is now updated properly.
 - Default value of `enableLocalPaste` is set to false. So, by default, the content will be pasted from the system clipboard.
 - Some locale properties are renamed as below
 
-|Previous|Now|
-|----|----|
-|Linked(Paragraph and Character)|Linked Style|
-|Don't add space between the paragraphs of the same styles|Contextual Spacing|
-|The password don't match|Password Mismatch|
-|Exceptions (optional)|Exceptions Optional|
-|Select parts of the document and choose users who are allowed to freely edit them.|Select Part Of Document And User|
-|Yes, Start Enforcing Protection|Enforcing Protection|
-|This document is protected from unintentional editing. You may edit in this region.|Protected Document|
-|You may format text only with certain styles.|You may format text only with certain styles|
-|Type your comment hear|Type your comment here|
-|Added comments not posted. If you continue, that comment will be discarded.|Discard Comment|
-|Header & Footer|Header And Footer|
-|Different header and footer for odd and even pages.|Different header and footer for odd and even pages|
-|Different Odd & Even Pages|Different Odd And Even Pages|
-|Different header and footer for first page.|Different header and footer for first page|
-|Distance from top of the page to top of the header|Distance from top of the page to top of the header|
-|Distance from bottom of the page to bottom of the footer.|Distance from bottom of the page to bottom of the footer|
-|Insert / Delete|Insert Or Delete|
-|Number of heading or outline levels to be shown in table of contents.|Number of heading or outline levels to be shown in table of contents|
-|Show page numbers in table of contents.|Show page numbers in table of contents|
-|Right align page numbers in table of contents.|Right align page numbers in table of contents|
-|Use hyperlinks instead of page numbers.|Use hyperlinks instead of page numbers|
-|Bold (Ctrl+B)|Bold Tooltip|
-|Italic (Ctrl+I)|Italic Tooltip|
-|Underline (Ctrl+U)|Underline Tooltip|
-|Superscript (Ctrl+Shift++)|Superscript Tooltip|
-|Subscript (Ctrl+=)|Subscript Tooltip|
-|Align left (Ctrl+L)|Align left Tooltip|
-|Center (Ctrl+E)|Center Tooltip|
-|Align right (Ctrl+R)|Align right Tooltip|
-|Justify (Ctrl+J)|Justify Tooltip|
-|Create a new document.|Create a new document|
-|Open a document.|Open a document|
-|Undo the last operation (Ctrl+Z).|Undo Tooltip|
-|Redo the last operation (Ctrl+Y).|Redo Tooltip|
-|Insert inline picture from a file.|Insert inline picture from a file|
-|Create a link in your document for quick access to web pages and files (Ctrl+K).|Create Hyperlink|
-|Insert a bookmark in a specific place in this document.|Insert a bookmark in a specific place in this document|
-|Provide an overview of your document by adding a table of contents.|Provide an overview of your document by adding a table of contents|
-|Add or edit the header.|Add or edit the header|
-|Add or edit the footer.|Add or edit the footer|
-|Open the page setup dialog.|Open the page setup dialog|
-|Add page numbers.|Add page numbers|
-|Find text in the document (Ctrl+F).|Find Text|
-|The current page number in the document. Click or tap to navigate specific page.|Current Page Number|
+| Previous | Now | 
+|---|---|
+| Linked(Paragraph and Character) | Linked Style | 
+| Don't add space between the paragraphs of the same styles | Contextual Spacing | 
+| The password don't match | Password Mismatch | 
+| Exceptions (optional) | Exceptions Optional | 
+| Select parts of the document and choose users who are allowed to freely edit them. | Select Part Of Document And User | 
+| Yes, Start Enforcing Protection | Enforcing Protection | 
+| This document is protected from unintentional editing. You may edit in this region. | Protected Document | 
+| You may format text only with certain styles. | You may format text only with certain styles | 
+| Type your comment hear | Type your comment here | 
+| Added comments not posted. If you continue, that comment will be discarded. | Discard Comment | 
+| Header & Footer | Header And Footer | 
+| Different header and footer for odd and even pages. | Different header and footer for odd and even pages | 
+| Different Odd & Even Pages | Different Odd And Even Pages | 
+| Different header and footer for first page. | Different header and footer for first page | 
+| Distance from top of the page to top of the header | Distance from top of the page to top of the header | 
+| Distance from bottom of the page to bottom of the footer. | Distance from bottom of the page to bottom of the footer | 
+| Insert / Delete | Insert Or Delete | 
+| Number of heading or outline levels to be shown in table of contents. | Number of heading or outline levels to be shown in table of contents | 
+| Show page numbers in table of contents. | Show page numbers in table of contents | 
+| Right align page numbers in table of contents. | Right align page numbers in table of contents | 
+| Use hyperlinks instead of page numbers. | Use hyperlinks instead of page numbers | 
+| Bold (Ctrl+B) | Bold Tooltip | 
+| Italic (Ctrl+I) | Italic Tooltip | 
+| Underline (Ctrl+U) | Underline Tooltip | 
+| Superscript (Ctrl+Shift++) | Superscript Tooltip | 
+| Subscript (Ctrl+=) | Subscript Tooltip | 
+| Align left (Ctrl+L) | Align left Tooltip | 
+| Center (Ctrl+E) | Center Tooltip | 
+| Align right (Ctrl+R) | Align right Tooltip | 
+| Justify (Ctrl+J) | Justify Tooltip | 
+| Create a new document. | Create a new document | 
+| Open a document. | Open a document | 
+| Undo the last operation (Ctrl+Z). | Undo Tooltip | 
+| Redo the last operation (Ctrl+Y). | Redo Tooltip | 
+| Insert inline picture from a file. | Insert inline picture from a file | 
+| Create a link in your document for quick access to web pages and files (Ctrl+K). | Create Hyperlink | 
+| Insert a bookmark in a specific place in this document. | Insert a bookmark in a specific place in this document | 
+| Provide an overview of your document by adding a table of contents. | Provide an overview of your document by adding a table of contents | 
+| Add or edit the header. | Add or edit the header | 
+| Add or edit the footer. | Add or edit the footer | 
+| Open the page setup dialog. | Open the page setup dialog | 
+| Add page numbers. | Add page numbers | 
+| Find text in the document (Ctrl+F). | Find Text | 
+| The current page number in the document. Click or tap to navigate specific page. | Current Page Number | 
 
 #### New Features
 
@@ -2489,52 +2396,52 @@ Table column width is now updated properly.
 
 - Some locale properties are renamed as below
 
-|Previous|Now|
-|----|----|
-|Linked(Paragraph and Character)|Linked Style|
-|Don't add space between the paragraphs of the same styles|Contextual Spacing|
-|The password don't match|Password Mismatch|
-|Exceptions (optional)|Exceptions Optional|
-|Select parts of the document and choose users who are allowed to freely edit them.|Select Part Of Document And User|
-|Yes, Start Enforcing Protection|Enforcing Protection|
-|This document is protected from unintentional editing. You may edit in this region.|Protected Document|
-|You may format text only with certain styles.|You may format text only with certain styles|
-|Type your comment hear|Type your comment here|
-|Added comments not posted. If you continue, that comment will be discarded.|Discard Comment|
-|Header & Footer|Header And Footer|
-|Different header and footer for odd and even pages.|Different header and footer for odd and even pages|
-|Different Odd & Even Pages|Different Odd And Even Pages|
-|Different header and footer for first page.|Different header and footer for first page|
-|Distance from top of the page to top of the header|Distance from top of the page to top of the header|
-|Distance from bottom of the page to bottom of the footer.|Distance from bottom of the page to bottom of the footer|
-|Insert / Delete|Insert Or Delete|
-|Number of heading or outline levels to be shown in table of contents.|Number of heading or outline levels to be shown in table of contents|
-|Show page numbers in table of contents.|Show page numbers in table of contents|
-|Right align page numbers in table of contents.|Right align page numbers in table of contents|
-|Use hyperlinks instead of page numbers.|Use hyperlinks instead of page numbers|
-|Bold (Ctrl+B)|Bold Tooltip|
-|Italic (Ctrl+I)|Italic Tooltip|
-|Underline (Ctrl+U)|Underline Tooltip|
-|Superscript (Ctrl+Shift++)|Superscript Tooltip|
-|Subscript (Ctrl+=)|Subscript Tooltip|
-|Align left (Ctrl+L)|Align left Tooltip|
-|Center (Ctrl+E)|Center Tooltip|
-|Align right (Ctrl+R)|Align right Tooltip|
-|Justify (Ctrl+J)|Justify Tooltip|
-|Create a new document.|Create a new document|
-|Open a document.|Open a document|
-|Undo the last operation (Ctrl+Z).|Undo Tooltip|
-|Redo the last operation (Ctrl+Y).|Redo Tooltip|
-|Insert inline picture from a file.|Insert inline picture from a file|
-|Create a link in your document for quick access to web pages and files (Ctrl+K).|Create Hyperlink|
-|Insert a bookmark in a specific place in this document.|Insert a bookmark in a specific place in this document|
-|Provide an overview of your document by adding a table of contents.|Provide an overview of your document by adding a table of contents|
-|Add or edit the header.|Add or edit the header|
-|Add or edit the footer.|Add or edit the footer|
-|Open the page setup dialog.|Open the page setup dialog|
-|Add page numbers.|Add page numbers|
-|Find text in the document (Ctrl+F).|Find Text|
-|The current page number in the document. Click or tap to navigate specific page.|Current Page Number|
+| Previous | Now | 
+|---|---|
+| Linked(Paragraph and Character) | Linked Style | 
+| Don't add space between the paragraphs of the same styles | Contextual Spacing | 
+| The password don't match | Password Mismatch | 
+| Exceptions (optional) | Exceptions Optional | 
+| Select parts of the document and choose users who are allowed to freely edit them. | Select Part Of Document And User | 
+| Yes, Start Enforcing Protection | Enforcing Protection | 
+| This document is protected from unintentional editing. You may edit in this region. | Protected Document | 
+| You may format text only with certain styles. | You may format text only with certain styles | 
+| Type your comment hear | Type your comment here | 
+| Added comments not posted. If you continue, that comment will be discarded. | Discard Comment | 
+| Header & Footer | Header And Footer | 
+| Different header and footer for odd and even pages. | Different header and footer for odd and even pages | 
+| Different Odd & Even Pages | Different Odd And Even Pages | 
+| Different header and footer for first page. | Different header and footer for first page | 
+| Distance from top of the page to top of the header | Distance from top of the page to top of the header | 
+| Distance from bottom of the page to bottom of the footer. | Distance from bottom of the page to bottom of the footer | 
+| Insert / Delete | Insert Or Delete | 
+| Number of heading or outline levels to be shown in table of contents. | Number of heading or outline levels to be shown in table of contents | 
+| Show page numbers in table of contents. | Show page numbers in table of contents | 
+| Right align page numbers in table of contents. | Right align page numbers in table of contents | 
+| Use hyperlinks instead of page numbers. | Use hyperlinks instead of page numbers | 
+| Bold (Ctrl+B) | Bold Tooltip | 
+| Italic (Ctrl+I) | Italic Tooltip | 
+| Underline (Ctrl+U) | Underline Tooltip | 
+| Superscript (Ctrl+Shift++) | Superscript Tooltip | 
+| Subscript (Ctrl+=) | Subscript Tooltip | 
+| Align left (Ctrl+L) | Align left Tooltip | 
+| Center (Ctrl+E) | Center Tooltip | 
+| Align right (Ctrl+R) | Align right Tooltip | 
+| Justify (Ctrl+J) | Justify Tooltip | 
+| Create a new document. | Create a new document | 
+| Open a document. | Open a document | 
+| Undo the last operation (Ctrl+Z). | Undo Tooltip | 
+| Redo the last operation (Ctrl+Y). | Redo Tooltip | 
+| Insert inline picture from a file. | Insert inline picture from a file | 
+| Create a link in your document for quick access to web pages and files (Ctrl+K). | Create Hyperlink | 
+| Insert a bookmark in a specific place in this document. | Insert a bookmark in a specific place in this document | 
+| Provide an overview of your document by adding a table of contents. | Provide an overview of your document by adding a table of contents | 
+| Add or edit the header. | Add or edit the header | 
+| Add or edit the footer. | Add or edit the footer | 
+| Open the page setup dialog. | Open the page setup dialog | 
+| Add page numbers. | Add page numbers | 
+| Find text in the document (Ctrl+F). | Find Text | 
+| The current page number in the document. Click or tap to navigate specific page. | Current Page Number | 
 
 #### Bug Fixes
 
@@ -3101,6 +3008,7 @@ Table column width is now updated properly.
 
 The Document Editor component is used to create, edit, view, and print Word documents in web applications. All the user interactions and editing operations that run purely in the client-side provides much faster editing experience to the users.
 
+
 - Opens the native `Syncfusion Document Text (*.sfdt)` format documents in the client-side.
 - Saves the documents in the client-side as `Syncfusion Document Text (*.sfdt)` and `Word document (*.docx)`.
 - Supports document elements like text, inline image, table, fields, bookmark, section, header, and footer.
@@ -3114,3 +3022,5 @@ The Document Editor component is used to create, edit, view, and print Word docu
 - Provides intuitive UI options like context menu, dialogs, and navigation pane.
 - Creates a lightweight Word viewer using module injection to view and prints Word documents.
 - Added `Syncfusion.EJ2.DocumentEditor` NuGet package that contains helper library for converting Word documents to `Syncfusion Document Text (*.sfdt)`. It supports .NET Standard 2.0 Framework.
+
+

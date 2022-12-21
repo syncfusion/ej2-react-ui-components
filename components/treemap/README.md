@@ -1,69 +1,124 @@
-# ej2-react-treemap
+# React TreeMap Component
 
-The tree map control provides a simple and effective way to visualize flat or hierarchical data as clustered rectangles with a specific, weighted attribute determining the size of each rectangle.
+The [React TreeMap](https://www.syncfusion.com/react-components/react-treemap?utm_source=npm&utm_medium=listing&utm_campaign=react-treemap-npm) component provides a simple and effective way to visualize flat or hierarchical data as clustered rectangles with a specific, weighted attribute determining the size of each rectangle.
 
-![TreeMap] (https://ej2.syncfusion.com/products/images/treemap/readme.gif)
+<p align="center">
+    <a href="https://ej2.syncfusion.com/react/documentation/treemap/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-treemap-npm">Getting started</a> . 
+    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-treemap-npm#/bootstrap5/treemap/default">Online demos</a> . 
+    <a href="https://www.syncfusion.com/react-components/react-treemap?utm_source=npm&utm_medium=listing&utm_campaign=react-treemap-npm">Learn more</a>
+</p>
 
-> TreeMap is part of Syncfusion Essential JS 2 commercial program. License is available in two models Community and Paid. Please refer the license file for more information. License can be obtained by registering at [https://www.syncfusion.com/downloads/essential-js2](https://www.syncfusion.com/downloads/essential-js2?utm_source=npm&utm_campaign=treemap)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-treemap.png" alt="React TreeMap Component">
+</p>
+
+<p align="center">
+Trusted by the world's leading companies
+  <a href="https://www.syncfusion.com">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+  </a>
+</p>
 
 ## Setup
 
-To install TreeMap and its dependent packages, use the following command
+### Create a React Application
 
-```sh
-npm install @syncfusion/ej2-treemap
+You can use [`create-react-app`](https://github.com/facebookincubator/create-react-app) to setup applications. To create React app, use the following command.
+
+```bash
+npx create-react-app my-app --template typescript
+cd my-app
+npm start
 ```
 
-## Resources
+### Add Syncfusion TreeMap package
 
-* [Getting Started](https://ej2.syncfusion.com/react/documentation/treemap/getting-started.html)
-* [View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/treemap/default)
-* [Product Page](https://www.syncfusion.com/products/react/treemap)
+All Syncfusion React packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the React TreeMap package, use the following command.
 
-## Supported Frameworks
+```sh
+npm install @syncfusion/ej2-react-treemap --save
+```
 
-TreeMap component is also offered in following list of frameworks.
+### Add TreeMap Component
 
-1. [Angular](https://www.npmjs.com/package/@syncfusion/ej2-ng-treemap?utm_source=npm&utm_campaign=treemap)
-2. [React](https://www.npmjs.com/package/@syncfusion/ej2-react-treemap?utm_source=npm&utm_campaign=treemap)
-3. [Vue.js](https://www.npmjs.com/package/@syncfusion/ej2-vue-treemap?utm_source=npm&utm_campaign=treemap)
-4. [ASP.NET Core](https://aspdotnetcore.syncfusion.com/TreeMap/Default#/material)
-5. [ASP.NET MVC](https://aspnetmvc.syncfusion.com/TreeMap/Default#/material)
-6. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript/treemap)
+In the **src/App.tsx** file, use the following code snippet to render the Syncfusion React TreeMap component.
 
-## Use case samples
+```typescript
+import { React } from 'react';
+import { TreeMapComponent } from '@syncfusion/ej2-react-treemap';
+function App() {
+    let data: any = [
+    { State: 'Brazil', Count: 25 },
+    { State: 'Colombia', Count: 12 },
+    { State: 'Argentina', Count: 9 },
+    { State: 'Ecuador', Count: 7 },
+    { State: 'Chile', Count: 6 },
+    { State: 'Peru', Count: 3 },
+    { State: 'Venezuela', Count: 3 },
+    { State: 'Bolivia', Count: 2 },
+    { State: 'Paraguay', Count: 2 },
+    { State: 'Uruguay', Count: 2 },
+    { State: 'Falkland Islands',Count: 1 },
+    { State: 'French Guiana', Count:1 },
+    { State: 'Guyana', Count: 1 },
+    { State: 'Suriname', Count: 1 },
+  ];
+   return (<TreeMapComponent height='350px' dataSource={data} weightValuePath='Count'
+     leafItemSettings={{ labelPath: 'State' }}></TreeMapComponent>);
+}
+export default App;
+```
 
-* Olympic medal categories details ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/treemap/customization))
-* Countries population details ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/treemap/drilldown))
+## Supported frameworks
 
-## Key Features
+TreeMap component is also offered in the following list of frameworks.
 
-* [**Data sources**](https://ej2.syncfusion.com/react/demos/#/material/treemap/pie) - Binds the tree map component with an array of JSON objects or DataManager. Both the heirarcical and flat collection data sources are supported.
-* [**Levels**](https://ej2.syncfusion.com/react/demos/#/material/treemap/default) - Renders with any number of levels and items.
-* [**Layout**](https://ej2.syncfusion.com/react/demos/#/material/treemap/layout) - Supports four types of layouts: square, horizontal, vertical, and auto.
-* [**Drill-down**](https://ej2.syncfusion.com/react/demos/#/material/treemap/drilldown) - Provides drill-down option to have a closer look at the lower level of a hierarchy.
-* [**Data label**](https://ej2.syncfusion.com/react/demos/#/material/treemap/label) - Provides additional information about the nodes.
-* [**Label template**](https://ej2.syncfusion.com/react/demos/#/material/treemap/customization) - Uses any custom HTML element as data label for each node.
-* [**Color mapping**](https://ej2.syncfusion.com/react/demos/#/material/treemap/label) - Applies colors to the nodes based on various conditions. Tree map supports three types of color mapping: range, equal, and desaturation.
-* [**Legend**](https://ej2.syncfusion.com/react/demos/#/material/treemap/election) - Denotes the color mapping categories.
-* [**Selection and Highlight**](https://ej2.syncfusion.com/react/demos/#/material/treemap/selection) - Supports selecting or highlighting the nodes to bring center of attraction.
-* [**Tooltip**](https://ej2.syncfusion.com/react/demos/#/material/treemap/tooltip) - Provides additonal information about the nodes on mouse hover.
-* [**Print and Export**](https://ej2.syncfusion.com/react/demos/#/material/treemap/print) - Provides options to print and export the rendered tree map for future use.
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular.svg"  height="50" />](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+
+## Showcase samples
+
+* Olympic medal categories details - [Live Demo](https://ej2.syncfusion.com/react/demos/#/material/treemap/customization)
+* Countries population details - [Live Demo](https://ej2.syncfusion.com/react/demos/#/material/treemap/drilldown)
+* Fitness Tracker - [Source](https://github.com/SyncfusionExamples/showcase-react-health-tracker-dashboard-demo), [Live Demo](https://ej2.syncfusion.com/showcase/react/fitness-tracker-app/)
+
+## Key features
+
+* [Data sources](https://ej2.syncfusion.com/react/documentation/treemap/data-binding/?utm_source=npm&utm_campaign=react-treemap-npm): Binds the treemap component with an array of JSON objects or DataManager. Both hierarchical and flat collection data sources are supported.
+* [Levels](https://ej2.syncfusion.com/react/documentation/treemap/levels/?utm_source=npm&utm_campaign=react-treemap-npm): Renders with any number of levels and items.
+* [Layout](https://ej2.syncfusion.com/react/documentation/treemap/layout/?utm_source=npm&utm_campaign=react-treemap-npm): Supports four types of layouts: square, horizontal, vertical, and auto.
+* [Drill-down](https://ej2.syncfusion.com/react/documentation/treemap/drilldown/?utm_source=npm&utm_campaign=react-treemap-npm): Provides drill-down option to have a closer look at the lower level of a hierarchy.
+* [Data label](https://ej2.syncfusion.com/react/documentation/treemap/data-label/?utm_source=npm&utm_campaign=react-treemap-npm): Provides additional information about the nodes.
+* [Header template](https://ej2.syncfusion.com/react/documentation/treemap/levels/?utm_source=npm&utm_campaign=react-treemap-npm#header-template-and-position): Uses any custom HTML element to customize the header of each item.
+* [Label template](https://ej2.syncfusion.com/react/documentation/treemap/data-label/?utm_source=npm&utm_campaign=react-treemap-npm#template): Uses any custom HTML element to customize the data label for each node.
+* [Color mapping](https://ej2.syncfusion.com/react/documentation/treemap/color-mapping/?utm_source=npm&utm_campaign=react-treemap-npm): Applies colors to the nodes based on various conditions. Treemap supports three types of color mapping: range, equal, and desaturation.
+* [Legend](https://ej2.syncfusion.com/react/documentation/treemap/legend/?utm_source=npm&utm_campaign=react-treemap-npm): Provide useful information for conveying what the treemap showcases. 
+* [Selection and highlight](https://ej2.syncfusion.com/react/documentation/treemap/selection-and-highlight/?utm_source=npm&utm_campaign=react-treemap-npm): Support selecting or highlighting the nodes to bring center of attraction.
+* [Tooltip](https://ej2.syncfusion.com/react/documentation/treemap/tooltip/?utm_source=npm&utm_campaign=react-treemap-npm): Provides additional information about the node on hover.
+* [Print and Export](https://ej2.syncfusion.com/react/documentation/treemap/print-and-export/?utm_source=npm&utm_campaign=react-treemap-npm): Prints or exports the rendered treemap to a desired format. Exporting supports four formats: PDF, PNG, JPEG and SVG.
+* [Globalization](https://ej2.syncfusion.com/react/documentation/treemap/internationalization/?utm_source=npm&utm_medium=listing&utm_campaign=react-treemap-npm): Personalize the treemap component with different languages, as well as culture-specific number, date and time formatting.
+* [Accessibility](https://ej2.syncfusion.com/react/documentation/treemap/accessibility/?utm_source=npm&utm_medium=listing&utm_campaign=react-treemap-npm): Provides with built-in accessibility support which helps to access all the treemap component features through the keyboard, screen readers, or other assistive technology devices.
 
 ## Support
 
-Product support is available for through following mediums.
+Product support is available through the following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=treemap) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=treemap).
-* New [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues).
-* Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
-
-## License
-
-Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_campaign=treemap).
+* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
+* [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-treemap-npm)
+* [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues/new)
+* [Request feature or report bug](https://www.syncfusion.com/feedback/react?utm_source=npm&utm_medium=listing&utm_campaign=react-treemap-npm)
+* Live chat
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_campaign=treemap)
+Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/treemap/CHANGELOG.md?utm_source=npm&utm_campaign=react-treemap-npm). Get minor improvements and bug fixes every week to stay up to date with frequent updates.
 
-© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+## License and copyright
+
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+
+> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+
+See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_campaign=react-treemap-npm) for more info.
+
+&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

@@ -4,24 +4,22 @@
 
 ## 20.3.47 (2022-09-29)
 
-### Message `Preview`
+### Message
 
 The Message component has an option to display the messages with severity by differentiating icons and colors to denote the importance and context of the message to the end user. The following key features are available in the Message component.
 
+
 - **Severity** - Provides an option to display the message with distinctive icons and colors based on the severity type. The available severity types such as **Normal**, **Success**, **Info**, **Warning**, and **Error**.
-
 - **Variants** - Provides an option to display the message with predefined appearance variants. The available variants such as **Text**, **Outlined**, and **Filled**.
-
 - **Visibility** - Provides an option to show or hide the message.
-
 - **Template** - Provides an option to customize the content of the message.
 
 ### Skeleton `Preview`
 
 The Skeleton is a placeholder that animates a shimmer effect to let users know that the page's content is currently loading. In other words, it simulates the layout of page content while loading the actual content.
 
-- **Rendering** - The Skeleton component can be rendered as Circle, Square, Text, and Rectangle shapes.
 
+- **Rendering** - The Skeleton component can be rendered as Circle, Square, Text, and Rectangle shapes.
 - **Effects** - Supports wave, fade, and pulse shimmer effects.
 
 ## 20.1.61 (2022-06-21)
@@ -80,6 +78,7 @@ The Skeleton is a placeholder that animates a shimmer effect to let users know t
 
 `#F149339`, `#256583` - The issue with passing empty string value to cssClass API has been fixed.
 
+
 ## 17.3.27 (2019-11-12)
 
 ### Toast
@@ -123,24 +122,21 @@ The Skeleton is a placeholder that animates a shimmer effect to let users know t
 Badge can be used to alert users about new or unread messages, notifications, and additional information
 to the content. This can be used in conjunction with lists to represent each list’s timeline such as `new`, `old`, and `preview`.
 
+
 - **Types** - Provided 8 different types of Badges.
-
 - **Predefined Colours** - Provided 8 predefined situational colours of Badges.
-
 - **Position** - Supports 3 different positions, such as `default`, `top` and `bottom`.
 
 ### Toast
 
 The toast is a small container, in which user can show a single or multiple informative lines with actions.
 
+
 - **Position**: Enables to position the toast anywhere on the screen. It has a predefined set of positions and custom inputs for position based on the target.
-
 - **Autohide and TimeOut**: Toast can be expired based on the timeOut property; it hides toast automatically when reaches specific time without user interaction.
-
 - **Multi Toast**: Toasts can support to display multiple toasts with various time delay.
-
 - **Progress Bar**: Supports to visually indicate time lapse when the toast expires.
-
 - **Action Buttons**: Supports to add buttons in the toast for archiving any actions within the toast.
-
 - **Template**: User customized element can be defined for the toast using the template property.
+
+

@@ -1,73 +1,121 @@
-# ej2-react-maps
+# React Maps Component
 
-The maps control is used to visualize the geographical data and represent the statistical data of a particular geographical area on earth with user interactivity, and provides various customizing options. 
+The [React Maps](https://www.syncfusion.com/react-components/react-maps-library?utm_source=npm&utm_medium=listing&utm_campaign=react-maps-npm) component is used to visualize geographical data and represent statistical data of a specific geographical area on earth with user interactivity, and it provides a wide range of customization options.
 
-![Maps](https://ej2.syncfusion.com/products/images/maps/readme.gif)
+<p align="center">
+    <a href="https://ej2.syncfusion.com/react/documentation/maps/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-maps-npm">Getting started</a> . 
+    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-maps-npm#/bootstrap5/maps/default">Online demos</a> . 
+    <a href="https://www.syncfusion.com/react-components/react-maps-library?utm_source=npm&utm_medium=listing&utm_campaign=react-maps-npm">Learn more</a>
+</p>
 
-> Maps is part of Syncfusion Essential JS 2 commercial program. License is available in two models Community and Paid. Please refer the license file for more information. License can be obtained by registering at [https://www.syncfusion.com/downloads/essential-js2](https://www.syncfusion.com/downloads/essential-js2?utm_source=npm&utm_campaign=maps)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-map.png" alt="React Maps Component">
+</p>
+
+<p align="center">
+Trusted by the world's leading companies
+  <a href="https://www.syncfusion.com">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+  </a>
+</p>
 
 ## Setup
 
-To install Maps and its dependent packages, use the following command
+### Create a React Application
 
-```sh
-npm install @syncfusion/ej2-maps
+You can use [`create-react-app`](https://github.com/facebookincubator/create-react-app) to setup applications. To create React app, use the following command.
+
+```bash
+npx create-react-app my-app --template typescript
+cd my-app
+npm start
 ```
 
-## Resources
+### Add Syncfusion Maps package
 
-* [Getting Started](https://ej2.syncfusion.com/react/documentation/maps/getting-started.html)
-* [View Online Demos](https://ej2.syncfusion.com/react/demos/#/material/maps/default)
-* [Product Page](https://www.syncfusion.com/products/react/maps)
+All Syncfusion React packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the React Maps package, use the following command.
 
-## Supported Frameworks
+```sh
+npm install @syncfusion/ej2-react-maps --save
+```
 
-Maps component is also offered in following list of frameworks.
+### Add Maps Component
 
-1. [Angular](https://www.npmjs.com/package/@syncfusion/ej2-ng-maps?utm_source=npm&utm_campaign=maps)
-2. [React](https://www.npmjs.com/package/@syncfusion/ej2-react-maps?utm_source=npm&utm_campaign=maps)
-3. [Vue.js](https://www.npmjs.com/package/@syncfusion/ej2-vue-maps?utm_source=npm&utm_campaign=maps)
-4. [ASP.NET Core](https://aspdotnetcore.syncfusion.com/Maps/Default#/material)
-5. [ASP.NET MVC](https://aspnetmvc.syncfusion.com/Maps/Default#/material)
-6. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript/maps)
+In the **src/App.tsx** file, use the following code snippet to render the Syncfusion React Maps component.
 
-## Use case samples
+```typescript
+import React from 'react';
+import { MapsComponent, LayersDirective, LayerDirective } from '@syncfusion/ej2-react-maps';
+import { world_map } from 'world-map.ts';
 
-* Heat map ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/maps/heatmap))
-* Flight routes ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/maps/curved))
-* Bus seat booking ([Live Demo](https://ej2.syncfusion.com/react/demos/#/material/maps/seatbooking))
+function App() {
+   return (
+        <MapsComponent id="maps">
+            <LayersDirective>
+                <LayerDirective shapeData={world_map}></LayerDirective>
+            </LayersDirective>
+        </MapsComponent>
+    );
+}
 
-## Key Features
+export default App;
+```
 
-* [**Data sources**](https://ej2.syncfusion.com/react/demos/#/material/maps/default) - Binds the maps component with an array of JSON objects or DataManager.
-* [**Projection**](https://ej2.syncfusion.com/react/demos/#/material/maps/projection) - Maps can be rendered in eight types of projections.
-* [**Drill-down**](https://ej2.syncfusion.com/react/demos/#/material/maps/drilldown) - Provides drill-down option to have a closer look at the lower level of a hierarchy.
-* [**Marker**](https://ej2.syncfusion.com/react/demos/#/material/maps/marker) - Provides marker support to mark a specific place of interest in the map.
-* [**Data label**](https://ej2.syncfusion.com/react/demos/#/material/maps/label) - Provides additional information about the shapes.
-* [**Bubble**](https://ej2.syncfusion.com/react/demos/#/material/maps/bubble) - Represents the underlying data values of the shapes.
-* [**Navigation line**](https://ej2.syncfusion.com/react/demos/#/material/maps/navigationLine) - Denotes the path between two locations.
-* [**Color mapping**](https://ej2.syncfusion.com/react/demos/#/material/maps/label) - Applies colors to the shapes based on various conditions. Maps supports two types of color mapping: range color mapping and equal color mapping.
-* [**Legend**](https://ej2.syncfusion.com/react/demos/#/material/maps/legend) - Denotes the color mapping categories.
-* [**Annotation**](https://ej2.syncfusion.com/react/demos/#/material/maps/annotation) - Uses any custom HTML element as annotation and place it anywhere on the maps.
-* [**Selection and Highlight**](https://ej2.syncfusion.com/react/demos/#/material/maps/selection) - Supports selecting or highlighting the shapes to bring center of attraction.
-* [**Zooming and Panning**](https://ej2.syncfusion.com/react/demos/#/material/maps/zooming) - Allows to zoom in, out, and pan the map to show in-depth information.
-* [**Tooltip**](https://ej2.syncfusion.com/react/demos/#/material/maps/tooltip) - Provides additonal information about the shapes on mouse hover.
-* [**Print and Export**](https://ej2.syncfusion.com/react/demos/#/material/maps/print) - Provides options to print and export the rendered maps for future use.
+## Supported frameworks
+
+Maps component is also offered in the following list of frameworks.
+
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular.svg"  height="50" />](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+
+## Showcase samples
+
+* Heat map - [Live Demo](https://ej2.syncfusion.com/react/demos/#/material/maps/heatmap)
+* Flight routes - [Live Demo](https://ej2.syncfusion.com/react/demos/#/material/maps/curved)
+* Bus seat booking - [Live Demo](https://ej2.syncfusion.com/react/demos/#/material/maps/seat-booking)
+
+## Key features
+
+* [Data sources](https://ej2.syncfusion.com/react/documentation/maps/populate-data/?utm_source=npm&utm_campaign=react-maps-npm): Binds the maps control to an array of JSON objects containing GeoJSON data.
+* [Map providers](https://ej2.syncfusion.com/react/documentation/maps/providers/other-maps/?utm_source=npm&utm_campaign=react-maps-npm): Online map providers such as OpenStreetMap, Bing Maps and others can also be rendered.
+* [Layer](https://ej2.syncfusion.com/react/documentation/maps/layers/?utm_source=npm&utm_campaign=react-maps-npm): Layer represents the area which renders the map. Also, any number of layers can be added.
+* [Projection](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=react-maps-npm#/material/maps/projection): Maps can be rendered in eight different types of projections.
+* [Drill-down](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=react-maps-npm#/material/maps/drilldown): Provides drill-down option to have a closer look at the lower level of a hierarchy.
+* [Marker](https://ej2.syncfusion.com/react/documentation/maps/markers/?utm_source=npm&utm_campaign=react-maps-npm): Provides support to mark a specific place of interest in the map.
+* [Data label](https://ej2.syncfusion.com/react/documentation/maps/data-label/?utm_source=npm&utm_campaign=react-maps-npm): Provides additional information about the shapes in the form of text over the shapes.
+* [Bubble](https://ej2.syncfusion.com/react/documentation/maps/bubble/?utm_source=npm&utm_campaign=react-maps-npm): Represents visually the underlying data values of the shapes.
+* [Navigation line](https://ej2.syncfusion.com/react/documentation/maps/navigation-line/?utm_source=npm&utm_campaign=react-maps-npm): Denotes the path between two locations.
+* [Color mapping](https://ej2.syncfusion.com/react/documentation/maps/color-mapping/?utm_source=npm&utm_campaign=react-maps-npm): Applies colors to the shapes based on various conditions. Maps supports three types of color mapping: range color mapping, equal color mapping and desaturation color mapping.
+* [Legend](https://ej2.syncfusion.com/react/documentation/maps/legend/?utm_source=npm&utm_campaign=react-maps-npm): Summarizes the information from the layers, markers and bubbles.
+* [Annotation](https://ej2.syncfusion.com/react/documentation/maps/annotations/?utm_source=npm&utm_campaign=react-maps-npm): Uses any custom HTML element as annotation and place it anywhere on the maps.
+* [Selection and highlight](https://ej2.syncfusion.com/react/documentation/maps/user-interactions/?utm_source=npm&utm_campaign=react-maps-npm#selection): Supports selecting or highlighting shapes to bring center of attraction.
+* [Zooming and panning](https://ej2.syncfusion.com/react/documentation/maps/user-interactions/?utm_source=npm&utm_campaign=react-maps-npm#zooming): Allows to zoom in, zoom out, and pan the map to show in-depth information.
+* [Tooltip](https://ej2.syncfusion.com/react/documentation/maps/user-interactions/?utm_source=npm&utm_campaign=react-maps-npm#tooltip): Provides additonal information about the shapes on hover.
+* [Print and Export](https://ej2.syncfusion.com/react/documentation/maps/print/?utm_source=npm&utm_campaign=react-maps-npm): Prints or exports the rendered maps to a desired format. Exporting supports four formats: PDF, PNG, JPEG and SVG.
+* [Templates](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=react-maps-npm#/material/maps/marker-template): Templates can be used to create custom user experiences in the Maps.
+* [Globalization](https://ej2.syncfusion.com/react/documentation/maps/internationalization/?utm_source=npm&utm_campaign=react-maps-npm): Personalize the Maps component with different languages, as well as culture-specific number, date and time formatting.
+* [Accessibility](https://ej2.syncfusion.com/react/documentation/maps/accessibility/?utm_source=npm&utm_campaign=react-maps-npm): Provides with built-in accessibility support which helps to access all the Maps component features through the keyboard, screen readers, or other assistive technology devices.
 
 ## Support
 
-Product support is available for through following mediums.
+Product support is available through the following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=maps) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=maps).
-* New [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues).
-* Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
-
-## License
-
-Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_campaign=maps).
+* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
+* [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-maps-npm)
+* [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues/new)
+* [Request feature or report bug](https://www.syncfusion.com/feedback/react?utm_source=npm&utm_medium=listing&utm_campaign=react-maps-npm)
+* Live chat
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/maps/CHANGELOG.md?utm_source=npm&utm_campaign=maps)
+Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/maps/CHANGELOG.md?utm_source=npm&utm_campaign=maps). Get minor improvements and bug fixes every week to stay up to date with frequent updates.
 
-© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+## License and copyright
+
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+
+> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+
+See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/maps/license?utm_source=npm&utm_campaign=maps) for more info.
+
+&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

@@ -1,11 +1,11 @@
-# React Grid Component
+# React Data Grid Component
 
-The [React Data Grid](https://www.syncfusion.com/react-ui-components/react-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm) component is used to display and manipulate tabular data with configuration options to control the way the data is presented and manipulated. It will pull data from a data source, such as array of JSON objects, `OData web services`, or DataManager binding data fields to columns. Also displaying a column header to identify the field with support for grouped records.
+The [React Data Grid](https://www.syncfusion.com/react-ui-components/react-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm) component is a powerful and flexible tool for displaying and manipulating tabular data. React Data Grid component is its ability to bind to a wide range of data sources, including arrays of JSON objects, `OData web services`, and the Syncfusion [DataManager](https://ej2.syncfusion.com/react/documentation/data/data-binding/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm). This makes it easy to integrate the grid into your application and display data from a variety of sources. In addition to its data binding capabilities, the React Data Grid also offers support for features such as sorting, filtering, paging, grouping, editing, frozen rows and columns, virtualization, and more. These features allow you to easily manipulate and present large datasets in an efficient and user-friendly way.
 
 <p align="center">
-  <a href="https://ej2.syncfusion.com/react/documentation/grid/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm">Getting Started</a>.
-  <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/bootstrap5/grid/overview">Online demos</a>.
-  <a href="https://www.syncfusion.com/react-components/react-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm">Learn more</a>.
+  <a href="https://ej2.syncfusion.com/react/documentation/grid/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm">Getting Started</a> . 
+  <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/bootstrap5/grid/overview">Online demos</a> . 
+  <a href="https://www.syncfusion.com/react-components/react-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm">Learn more</a>
 </p>
 
 ![React Grid Component](https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-datagrid.png)
@@ -21,27 +21,17 @@ Trusted by the world's leading companies
 
 ### Create a React Application
 
-You can use [`create-react-app`](https://github.com/facebookincubator/create-react-app) to setup the applications.
-To install **create-react-app** run the following command.
+You can use [`create-react-app`](https://github.com/facebookincubator/create-react-app) to setup applications. To create React app use the following command.
 
 ```bash
-npm install -g create-react-app
-```
-
-To setup basic **React** sample, use following commands.
-
-```bash
-create-react-app quickstart --scripts-version=react-scripts-ts
-
-cd quickstart
-
-npm install
-
+npx create-react-app my-app --template typescript
+cd my-app
+npm start
 ```
 
 ### Adding Syncfusion Grid package
 
-All Syncfusion react packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry. To install react grid package, use the following command.
+All Syncfusion react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react grid package, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-react-grids --save
@@ -49,7 +39,7 @@ npm install @syncfusion/ej2-react-grids --save
 
 ### Adding CSS references for Grid
 
-Add CSS references needed for Grid in **src/App.css** from **../node_modules/@syncfusion** package folder.
+Add CSS references needed for a Grid in **src/App.css** from the **../node_modules/@syncfusion** package folder.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
@@ -63,9 +53,9 @@ Add CSS references needed for Grid in **src/App.css** from **../node_modules/@sy
 @import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
 ```
 
-### Add Grid Component
+### Add Grid component
 
-In **src/App.tsx** file, use the following code snippet to render the Syncfusion React Grid control and import **App.css** to apply styles to the grid:
+In the **src/App.tsx** file, use the following code snippet to render the Syncfusion React Grid component and import **App.css** to apply styles to the grid:
 
 ```typescript
 import { ColumnDirective, ColumnsDirective, GridComponent } from '@syncfusion/ej2-react-grids';
@@ -93,7 +83,7 @@ export default App;
 
 ## Supported frameworks
 
-Grid component is also offered in following list of frameworks.
+Grid component is also offered in the following list of frameworks.
 
 | [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular.svg"  height="50" />](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
 | :-----: | :-----: | :-----: | :-----: | :-----: |
@@ -104,31 +94,35 @@ Grid component is also offered in following list of frameworks.
 
 ## Key features
 
-* [Data sources](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/local-binding) - Bind the Grid component with an array of JSON objects or DataManager.
-* [Sorting and grouping](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/grouping) - Supports n levels of sorting and grouping.
-* [Filtering](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/filtering) - Offers filter UI such as filter bar, menu, excel and checkbox at each column to filter data.
-* [Paging](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/paging) - Provides the option to easily switch between pages using the pager bar.
-* [Editing](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=grid#/material/grid/normaledit) - provides the options for create, read, update, and delete operations.
-* Columns - The column definitions are used as the dataSource schema in the Grid. This plays a vital role in rendering column values in the required format.
-  * [Reordering](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/reorder) - Allows you to drag any column and drop it at any position in the Grid’s column header row, allowing columns to be repositioned.
-  * [Column chooser](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-chooser) - The column chooser provides a list of column names paired with check boxes that allow the visibility to be toggled on the fly.
-  * [Resizing](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-resizing) - Resizing allows changing column width on the fly by simply dragging the right corner of the column header.
-  * [Freeze](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/frozen-rows) - Columns and rows can be frozen to allow scrolling and comparing cell values.
-  * [Cell spanning](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-spanning) - Grid cells can be spanned based on the preferred criteria.
-  * [Foreign data source](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/foreign-key) - This provides the option to show values from external or lookup data sources in a column based on foreign key/value mapping.
-  * [Cell styling](https://ej2.syncfusion.com/react/documentation/grid/how-to/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#customize-column-styles) - Grid cell styles can be customized either by using CSS or programmatically.
-* [Selection](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/selection) - Rows or cells can be selected in the grid. One or more rows or cells can also be selected by holding Ctrl or Command, or programmatically.
-* [Templates](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-template) - Templates can be used to create custom user experiences in the grid.
-* [Aggregation](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/aggregate-default) - Provides the option to easily visualized the Aggregates for column values.
-* [Context menu](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/context-menu) -The context menu provides a list of actions to be performed in the grid. It appears when a cell, header, or the pager is right-clicked.
-* [Clipboard](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/clipboard) - Selected rows and cells can be copied from the grid
-* [Export](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/default-exporting) - Provides the options to Export the grid data to Excel, PDF, and CSV formats.
-* [RTL support](https://ej2.syncfusion.com/react/documentation/grid/global-local/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#right-to-left---rtl) - Provides a full-fledged right-to-left mode which aligns content in the Grid component from right to left.
-* [Localization](https://ej2.syncfusion.com/react/documentation/grid/global-local/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#localization)) - Provides inherent support to localize the UI.
+* [Data sources](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/local-binding): Bind data seamlessly with various local and remote data sources such as JSON, OData, WCF, and RESTful web services with the help of [DataManager](https://ej2.syncfusion.com/react/documentation/data/data-binding/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm).
+* [High performance](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/virtualization): Well thought out efforts, and focuses mainly on fast paced performance to load millions of records. Grid renders only the rows within the viewport, and loads additional data as the user scrolls vertically.
+* [Adaptive UI layout](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/adaptive-layout): UI is customized and redesigned for great views and usability on small screens. Filter, sort, search, and edit dialogs adaptive to the screen size and render row elements in a vertical direction.
+* [Sorting and grouping](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/grouping): Supporting N level of sorting and grouping can be useful for more complex data sets that have a deeper hierarchical structure or that need to be organized and analyzed in more detailed ways.
+* [Aggregation](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/aggregate-default): Easily visualize the aggregates for column values by calculating and displaying summary statistics such as sums, averages, counts, etc. By default, the aggregate value can be displayed in the footer, group footer, or group caption of the grid.
+* [Filtering](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/filtering): The filter UIs, including the filter bar, menu, excel, and checkbox, are available at each column to filter data.
+* [Paging](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/paging): Paging is used to view a segment of data from the assigned data source. It requests data on-demand when navigating to another page also allows to change the page size on the fly by using the page size dropdown in the pager. 
+* [Editing](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/normaledit): Grid supports create, read, update, and delete operations (CRUD). Also provides various edit modes such as inline, dialog, and batch edit (cell editing).
+* [Selection](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/selection): Select rows or cells either by using checkbox or by simply clicking them. Select more than one row or cell by holding Ctrl or Shift or Command, or simply dragging the pointer over the cells, or programmatically.
+* [Hierarchical binding](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/hierarchy): Allows you to display table data in a hierarchical structure, allowing you to visualize the relationships between parent and child records in a clear and organized way.
+* [Templates](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-template): Using templates, users can create custom UI. It provides various template options to create custom headers, custom cell contents, custom rows, detail rows, toolbars, and custom editors for edit action.
+* [Row drag and drop](https://ej2.syncfusion.com/vue/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/row-drag-and-drop.html): The Grid rows can be reordered while drag and drop the rows within the grid. Also allows to drop the dragged rows another Grid or custom component.
+* Columns: The column definitions are used as the dataSource schema in the Grid. This plays a vital role in rendering column values in the required format.
+  * [Reordering](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/reorder): Allows you to rearrange the columns in the grid by dragging and dropping them to a new position in the column header row.
+  * [Column chooser](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-chooser): It provides a list of column names paired with check boxes that allow the visibility to be toggled on the fly.
+  * [Resizing](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-resizing): Resizing allows changing column width on the fly by simply dragging the right corner of the column header.
+  * [Frozen rows and columns](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/frozen-rows): Provides the ability to freeze columns and rows to allow for easy scrolling and comparison of cell values. It also offers the option to freeze columns on either the left or right side, or on both sides, of the grid.
+  * [Cell spanning](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-spanning): Grid cells can be spanned across multiple columns or rows in a grid layout to create a larger cell that takes up more space in the grid.
+  * [Foreign key column binding](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/foreign-key): A column can display values from external or lookup data sources using foreign key/value mapping.
+* [Context menu](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/context-menu): The context menu provides a list of actions to be performed in the grid. It appears when a grid cell, header, or the pager is right-clicked.
+* [Clipboard](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/clipboard): Selected rows and cells can be copied from the grid without header using Ctrl + C or with header using Ctrl + Shift + H shortcut. This allows you to easily transfer data from the grid to other applications or documents as needed.
+* [Export to Excel and PDF](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/default-exporting): Provides the options to Export the grid data to Excel, PDF, and CSV formats.
+* [RTL support](https://ej2.syncfusion.com/react/documentation/grid/global-local/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#right-to-left---rtl): Provides a full-fledged right-to-left mode which aligns content in the Grid component from right to left.
+* [Accessibility](https://ej2.syncfusion.com/react/documentation/grid/accessibility/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#wai-aria): Designed to be accessible to users with disabilities, with features such as WAI-ARIA standard compliance and keyboard navigation to ensure that the grid can be effectively used with assistive technologies such as screen readers.
+* [Localization](https://ej2.syncfusion.com/react/documentation/grid/global-local/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#localization): The Localization library enables you to adapt the default text content of the grid to fit the language and cultural preferences of your target audience.
 
 ## Support
 
-Product support is available through following mediums.
+Product support is available through the following mediums.
 
 * [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
 * [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm)
@@ -142,7 +136,7 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI controls](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
