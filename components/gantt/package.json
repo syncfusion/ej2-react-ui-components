@@ -1,23 +1,15 @@
 {
 	"name": "@syncfusion/ej2-react-gantt",
-	"version": "20.15.5",
+	"version": "20.4.38",
 	"description": "Essential JS 2 Gantt Component for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"ej2-gantt",
-		"syncfusion",
-		"web-components",
-		"gantt-chart",
-		"gantt",
-		"project",
-		"timeline",
-		"tasks",
 		"react",
 		"reactjs",
 		"react-gantt",
-		"ej2-react-gantt"
+		"react-gantt-chart",
+		"JavaScript"
 	],
 	"repository": {
 		"type": "git",

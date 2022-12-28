@@ -1,15 +1,10 @@
 {
 	"name": "@syncfusion/ej2-react-pdfviewer",
-	"version": "20.3.67",
+	"version": "20.4.38",
 	"description": "Essential JS 2 PDF viewer Component for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"ej2-pdfviewer",
-		"syncfusion",
-		"pdf-viewer",
-		"typescript",
 		"react",
 		"reactjs",
 		"react-pdf-viewer",

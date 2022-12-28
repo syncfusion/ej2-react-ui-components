@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 20.4.40 (2022-12-28)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I423744` - Script error thrown when saving the data with Shimmer effect issue has been fixed.
+- `#I422501` - Header tooltip displays when the header text is wrapped and `clipMode` is set issue has been fixed.
+- `#I424277` - Ellipsis With Tooltip is now working fine with batch editing.
+- `#I421562`, `#I423051` - Unable to filter the menu with autocomplete when grouping is applied has been fixed.
+
+- `#I420594` - Autofit on template columns is not working in react 18 has been fixed.
+
 ## 20.4.38 (2022-12-21)
 
 ### Grid
@@ -13,14 +26,6 @@
 - Provided support to skip the focus in non-editable columns while pressing tab/shift-tab in batch edit.
 - Provided the lazy load group support for virtual scroll enabled grid.
 - Provided support to refresh the aggregate values with lazy load grouping.
-
-- `F26767` - Provided the Shimmer effect for grid while loading, refreshing and data processing.
-- Provided the lazy load group support for infinite scrolling enabled grid.
-- `I388050`, `I388052`, `I375590`, `I370773`, `I375590` - Grid features and icons have been enhanced to meet web accessibility standards and enabled localization support for aria-labels.
-
-#### Breaking Changes
-
-- `#I374913` - Prevented the group collapse action in infinite scrolling with cache mode by hiding the icons.
 
 ## 20.3.47 (2022-09-29)
 

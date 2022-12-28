@@ -5,10 +5,6 @@
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"Syncfusion",
-		"web-components",
-		"barcode",
 		"react",
 		"react-barcodes",
 		"ej2-react-barcodes"
