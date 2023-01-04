@@ -1,20 +1,10 @@
 {
 	"name": "@syncfusion/ej2-react-documenteditor",
-	"version": "19.45.0",
+	"version": "20.4.40",
 	"description": "Feature-rich document editor control with built-in support for context menu, options pane and dialogs. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"web-components",
-		"syncfusion",
-		"Javascript",
-		"TypeScript",
-		"js",
-		"documenteditor",
-		"document-editor",
-		"word-editor",
-		"ej2-documenteditor-container",
 		"react",
 		"react-documenteditor",
 		"ej2-react-documenteditor"

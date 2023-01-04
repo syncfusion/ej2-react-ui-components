@@ -2,6 +2,40 @@
 
 ## [Unreleased]
 
+## 20.4.42 (2023-01-04)
+
+### Mention
+
+#### Bug Fixes
+
+- `#I422992` - Now, the `cssClass` property works fine in the Mention component.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I423751` - The issue "MultiSelect height not being set properly in the tailwind theme" has been resolved.
+
+- `#I425054` - The issue "`GroupTemplate` does not work with remote data on multiselect" has been resolved.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#I425054` - The issue "`GroupTemplate` does not work with remote data on autocomplete" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I425054` - The issue "`GroupTemplate` does not work with remote data on combobox" has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I425054` - The issue "`GroupTemplate` does not work with remote data on dropdownlist" has been resolved.
+
 ## 20.4.40 (2022-12-28)
 
 ### Dropdown Tree
@@ -37,6 +71,12 @@
 #### Bug Fixes
 
 - `#I397894` - The issue "aria-label added on input element instead of wrapper element while adding the aria-label by using Html Attribute property" has been resolved.
+
+### MultiSelect
+
+#### New Features
+
+- `#I422390`, `#I423942` - Provide a support for updating the data source when using state in React.
 
 ## 20.3.47 (2022-09-29)
 
