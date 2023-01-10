@@ -2,18 +2,9 @@
 
 ## [Unreleased]
 
-## 20.4.42 (2023-01-04)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I424112` - The issue "console error occurring while using the retry method with chunk upload" has been resolved
-- `#I426485` - The issue "multiple classes cannot be added to the uploader component on a dynamic update" has been resolved.
-
 ## 20.4.38 (2022-12-21)
 
-### Rating `Preview`
+### Rating
 
 **Key features**:
 
@@ -1229,6 +1220,15 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 20.4.42 (2023-01-04)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I424112` - The issue "console error occurring while using the retry method with chunk upload" has been resolved
+- `#I426485` - The issue "multiple classes cannot be added to the uploader component on a dynamic update" has been resolved.
 
 ## 19.1.66 (2021-06-01)
 

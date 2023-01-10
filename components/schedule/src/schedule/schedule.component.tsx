@@ -5,6 +5,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 export interface ScheduleTypecast {
     dateHeaderTemplate?: string | Function | any;
+    dateRangeTemplate?: string | Function | any;
     dayHeaderTemplate?: string | Function | any;
     cellTemplate?: string | Function | any;
     cellHeaderTemplate?: string | Function | any;

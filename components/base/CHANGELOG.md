@@ -6,13 +6,19 @@
 
 ### Common
 
+#### Bug Fixes
+
+- `#F174612` - The issue with the "React state change value is not reflected inside the `dialog` content template" has been resolved.
+
 #### New Features
 
 - `#I418318` - The option "to prevent the component from re-rendering while the state is being updated" has been provided.
+- The new `Rating` component has been added to React.
+- The `AppBar`, `Floating Action Button (FAB)`, `Mention`, `Message` and `Speed Dial` components have been developed to meet industry standards and are now marked production-ready.
 
-#### Bug Fixes
+#### Breaking Changes
 
-- `#F174612` - The issue with the "React state change value is not reflected inside the `dialog` content template" has been resolved.
+- If you are using Syncfusion's React components without first registering a license, a license dialog will appear after a certain limit of usage, preventing further interaction in the application. Please make sure to register a valid license in order to continue using the Syncfusion React components without interruption.
 
 ## 20.3.47 (2022-09-29)
 

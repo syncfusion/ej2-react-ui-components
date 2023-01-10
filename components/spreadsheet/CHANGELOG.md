@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.43 (2023-01-10)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I418778` - Issue with "percentage and decimal custom number formats are not applied properly for decimal values" has been resolved.
+
 ## 20.4.40 (2022-12-28)
 
 ### Spreadsheet
