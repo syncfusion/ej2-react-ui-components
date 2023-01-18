@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.44 (2023-01-18)
+
+### Switch
+
+#### Bug Fixes
+
+- `#I427994` - Provided the `htmlAttributes` support to the switch component.
+
 ## 20.4.42 (2023-01-04)
 
 ### Checkbox

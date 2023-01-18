@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.44 (2023-01-18)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I427261` - The Dialog component now closes properly when the escape key is pressed while the Rich Text Editor toolbar is extended and the Image Dialog is open.
+
 ## 20.4.43 (2023-01-10)
 
 ### Dialog

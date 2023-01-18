@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 20.4.43 (2023-01-10)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I418778` - Issue with "percentage and decimal custom number formats are not applied properly for decimal values" has been resolved.
-
 ## 20.4.40 (2022-12-28)
 
 ### Spreadsheet
@@ -1247,6 +1239,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.4.43 (2023-01-10)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I418778` - Issue with "percentage and decimal custom number formats are not applied properly for decimal values" has been resolved.
 
 ## 20.3.61 (2022-12-13)
 

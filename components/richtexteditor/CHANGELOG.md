@@ -2,12 +2,22 @@
 
 ## [Unreleased]
 
+## 20.4.44 (2023-01-18)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#F179573` - Now, when typing in the Rich Text Editor the issue of letters appearing slowly has been resolved.
+- `#I417838` - Now, the `Underline` and `Strikethrough` toolbar styles applied properly when we modify the `font-size` in the editor.
+
 ## 20.4.43 (2023-01-10)
 
 ### RichTextEditor
 
 #### Bug Fixes
 
+- `#I423129` - Now, resolve the script error thrown after full screen and close the bootstrap modal dialog
 - `#I423129` - Now, the buttons for bold, italic, underline, and strikethrough are highlighted properly.
 - `#I426859` - Now, when the Rich Text Editor is included inside a Dashboard panel, no exception is raised.
 - `#I425631` - Now, with the `enterKey` configuration set to `BR` the script error is no longer raised while modifying values in the editor.
