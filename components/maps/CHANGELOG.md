@@ -11,6 +11,14 @@
 
 ## [Unreleased]
 
+## 20.4.44 (2023-01-18)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I426534` - When the destroy method is invoked, the resize event is now properly removed from the Maps control.
+
 ## 20.4.38 (2022-12-21)
 
 ### Maps
