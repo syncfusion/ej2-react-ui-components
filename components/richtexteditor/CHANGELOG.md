@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.49 (2023-02-07)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I419211` - Fixed issue where list content copied and pasted from MS Word was not properly aligned.
+
 ## 20.4.48 (2023-02-01)
 
 ### RichTextEditor

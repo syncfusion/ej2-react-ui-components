@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 20.4.49 (2023-02-07)
+
+### Accordion
+
+#### Bug Fixes
+
+- `#I430833` - An issue with accordion active item styles override the grid pager has been fixed.
+
+### Menu
+
+#### Bug Fixes
+
+- `#I425152` - The issue with "Menu item not render properly when we use ItemTemplate with custom menu items" has been resolved.
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#F179972`, `#F165830` - The issue with the "Toolbar template disappear when click the toolbar item" has been fixed.
+
 ## 20.4.48 (2023-02-01)
 
 ### Tab
@@ -9,12 +29,6 @@
 #### Bug Fixes
 
 - `#I427978` - Fixed an issue with cyclic navigation using arrow keys, where focus would shift to the first element after reaching the last element, and vice versa. Also, accessibility has been enhanced using the aria-label attributes.
-
-### Menu
-
-#### Bug Fixes
-
-- `#I425152` - The issue with "Menu item not render properly when we use ItemTemplate with custom menu items" has been resolved.
 
 ### Sidebar
 
