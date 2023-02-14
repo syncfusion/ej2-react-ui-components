@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 20.4.50 (2023-02-14)
+
+### SplitButton
+
+#### Bug Fixes
+
+- `#I434642` - Issue in Script error thrown when we add items in before open event with enable createPopupOnClick property has been resolved.
+
+### DropDownButton
+
+#### Bug Fixes
+
+- `#I436217` - Issue in dynamically change cssClass with "e-vertical" class in DropDownButton has been resolved.
+
 ## 20.4.48 (2023-02-01)
 
 ### DropDownButton

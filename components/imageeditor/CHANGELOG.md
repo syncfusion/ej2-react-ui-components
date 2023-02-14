@@ -9,6 +9,7 @@
 #### Bug Fixes
 
 - Issue with "Script error thrown while resizing control without toolbar" has been resolved.
+- Issue with "Script error thrown while cancelling freehand drawing" has been resolved.
 
 ## 20.4.40 (2022-12-28)
 

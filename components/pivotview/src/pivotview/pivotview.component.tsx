@@ -5,6 +5,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 export interface PivotViewTypecast {
     cellTemplate?: string | Function | any;
+    tooltipTemplate?: string | Function | any;
 }
 /**
  * `PivotViewComponent` represents the react PivotView.

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.50 (2023-02-14)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- The tooltip template will now work properly in the pivot table.
+
 ## 20.4.48 (2023-02-01)
 
 ### Pivot Table

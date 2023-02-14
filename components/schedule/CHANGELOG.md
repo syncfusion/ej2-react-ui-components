@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.50 (2023-02-14)
+
+### Schedule
+
+#### Bug fixes
+
+- `#437232` - An issue with scheduler component breaking in the `applyFormValidation` method has been fixed.
+
 ## 20.4.49 (2023-02-07)
 
 ### Schedule

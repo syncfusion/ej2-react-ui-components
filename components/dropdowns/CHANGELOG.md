@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.50 (2023-02-14)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I429804` - The issue "A console error occurred when using the state and clear buttons" has been resolved.
+
 ## 20.4.49 (2023-02-07)
 
 ### Dropdown Tree
