@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.51 (2023-02-21)
+
+### Image Editor
+
+#### Bug Fixes
+
+- Issue with "Custom slider losses focus in Image Editor toolbar" has been resolved.
+
 ## 20.4.49 (2023-02-07)
 
 ### Image Editor

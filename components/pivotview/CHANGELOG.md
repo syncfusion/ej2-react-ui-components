@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 20.4.50 (2023-02-14)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- The tooltip template will now work properly in the pivot table.
-
 ## 20.4.48 (2023-02-01)
 
 ### Pivot Table
@@ -782,6 +774,14 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 20.4.50 (2023-02-14)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- The tooltip template will now work properly in the pivot table.
 
 ## 18.1.52 (2020-05-13)
 

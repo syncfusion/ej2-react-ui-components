@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.51 (2023-02-21)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I428766` - Alignment issue in TreeView node without a sub-child in RTL mode has been resolved.
+
 ## 20.4.49 (2023-02-07)
 
 ### Accordion

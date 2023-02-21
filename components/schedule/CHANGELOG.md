@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 20.4.50 (2023-02-14)
+## 20.4.51 (2023-02-21)
 
 ### Schedule
 
 #### Bug fixes
 
-- `#437232` - An issue with scheduler component breaking in the `applyFormValidation` method has been fixed.
+- `#I438207` - An issue with `select` event not invoked on cell selection through keyboard navigation has been fixed.
 
 ## 20.4.49 (2023-02-07)
 
@@ -1647,6 +1647,14 @@ Schedule is an event calendar which facilitates user with the common Outlook-cal
 - **Localization** - All the static text and date content can be localized to any desired language. Also, it can be displayed with appropriate time mode and date-format as per the localized language.
 - **RTL** - Supports displaying the component to display in the direction from right to left.
 
+
+## 20.4.50 (2023-02-14)
+
+### Schedule
+
+#### Bug fixes
+
+- `#437232` - An issue with scheduler component breaking in the `applyFormValidation` method has been fixed.
 
 ## 18.3.47 (2020-11-05)
 

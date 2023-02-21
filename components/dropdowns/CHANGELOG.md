@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 20.4.50 (2023-02-14)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I429804` - The issue "A console error occurred when using the state and clear buttons" has been resolved.
-
 ## 20.4.49 (2023-02-07)
 
 ### Dropdown Tree
@@ -2009,6 +2001,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.4.50 (2023-02-14)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I429804` - The issue "A console error occurred when using the state and clear buttons" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 
