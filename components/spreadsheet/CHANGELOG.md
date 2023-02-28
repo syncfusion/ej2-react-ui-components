@@ -2,14 +2,15 @@
 
 ## [Unreleased]
 
-## 20.4.51 (2023-02-21)
+## 20.4.52 (2023-02-28)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I437185` - Issue with "auto date format deducting does not work properly while applying the format as `General` to a cell" has been resolved.
-- `#I434035` - Issue with "`Delete` key is not working properly on the `MAC machine` keyboard while trying to delete multiple cells" has been resolved.
+- `#I435982`, `#I434351` - Issue with "rendered cell template destroyed while updating the cell value using `updateCell` method" has been resolved.
+
+- `#I441245` - Issue with "Insert button is not changed to disabled state while removing the cell reference in the Insert link dialog" has been resolved.
 
 ## 20.4.50 (2023-02-14)
 
@@ -1277,6 +1278,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.4.51 (2023-02-21)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I437185` - Issue with "auto date format deducting does not work properly while applying the format as `General` to a cell" has been resolved.
+- `#I434035` - Issue with "`Delete` key is not working properly on the `MAC machine` keyboard while trying to delete multiple cells" has been resolved.
 
 ## 20.4.43 (2023-01-10)
 
