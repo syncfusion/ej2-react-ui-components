@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 20.4.53 (2023-03-07)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I436894` - Issue with "`computeExpression` method returns `#SPILL!` value while passing `UNIQUE` formula as argument to that method" has been resolved.
+- `#I442490` - Issue with "`HOUR/SECOND/MINUTE` formula returns wrong value when time is passed as string" has been resolved.
+
 ## 20.4.52 (2023-02-28)
 
 ### Spreadsheet

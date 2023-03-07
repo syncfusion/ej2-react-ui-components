@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 20.4.53 (2023-03-07)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#I429410` - The issue of facing a delay while unselecting large set of items using close icon in the Dropdown Tree component has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I439556`, `I442336` - The issue "Script error throws after clear the selected value using clear icon" has been resolved.
+
 ## 20.4.49 (2023-02-07)
 
 ### Dropdown Tree

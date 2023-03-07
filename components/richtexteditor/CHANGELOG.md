@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 20.4.53 (2023-03-07)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I440490` - Now, the inline toolbar will be shown while selecting text in the Rich Text Editor using the keyboard.
+- `#I440456` - Now, expanding the toolbar will work properly when the width of the Rich Text Editor is half the screen size.
+- `#I436678` - Now, the image is not duplicated when it is pasted into the Rich Text Editor and performing `shift+enter` key action.
+- `#I439501` - Now, when pasting the list content from MS Word, the subset formats and alignment are maintained properly.
+- `#I439501` - Now, pasting the content from MS Word with the `enterKey` configured as `BR` works properly.
+
 ## 20.4.52 (2023-02-28)
 
 ### RichTextEditor
@@ -13,6 +25,7 @@
 - `#I438653` - Now, the font size will be updated properly in the toolbar status when it is set dynamically.
 - `#I437138` - Now, the pasted content from word which contains images is inserted into Rich Text Editor.
 - `#I439308` - Now, dynamically rendering the Rich Text Editor inside the Sidebar works properly when scrolling.
+- `#I440456` - Now, the list is deleted properly when pressing the backspace key, and pressing the enter key works properly after deleting the list.
 
 ## 20.4.51 (2023-02-21)
 
