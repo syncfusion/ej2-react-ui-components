@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.54 (2023-03-14)
+
+### Common
+
+#### Bug Fixes
+
+- The issue with "the content of other tab items being automatically removed when the first tab item is removed" has been resolved.
+
 ## 20.4.38 (2022-12-21)
 
 ### Common

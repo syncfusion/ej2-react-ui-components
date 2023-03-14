@@ -2,14 +2,13 @@
 
 ## [Unreleased]
 
-## 20.4.53 (2023-03-07)
+## 20.4.54 (2023-03-14)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I436894` - Issue with "`computeExpression` method returns `#SPILL!` value while passing `UNIQUE` formula as argument to that method" has been resolved.
-- `#I442490` - Issue with "`HOUR/SECOND/MINUTE` formula returns wrong value when time is passed as string" has been resolved.
+- `#I444150` - Issue with "white space added to the sheets while changing the font size above `14px`" has been resolved.
 
 ## 20.4.52 (2023-02-28)
 
@@ -1287,6 +1286,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.4.53 (2023-03-07)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I436894` - Issue with "`computeExpression` method returns `#SPILL!` value while passing `UNIQUE` formula as argument to that method" has been resolved.
+- `#I442490` - Issue with "`HOUR/SECOND/MINUTE` formula returns wrong value when time is passed as string" has been resolved.
 
 ## 20.4.51 (2023-02-21)
 
