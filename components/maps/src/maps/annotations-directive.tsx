@@ -5,8 +5,7 @@ export interface AnnotationDirTypecast {
     content?: string | Function | any;
 }
 /**
- * `AnnotationsDirective` directive represent a annotation of the react maps. 
- * It must be contained in a Maps component(`MapsComponent`). 
+ * Represents the directive to define the annotations in the maps.
  * ```tsx
  * <MapsComponent>
  * <AnnotationsDirective>

@@ -20,6 +20,7 @@ export class AccumulationChartComponent extends AccumulationChart {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'accumulationSeriesCollection': 'accumulationSeries', 'accumulationAnnotations': 'accumulationAnnotation'};
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<AccumulationChartModel & DefaultHtmlAttributes| AccumulationChartTypecast>;

@@ -20,6 +20,7 @@ export class StockChartComponent extends StockChart {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'stockChartSeriesCollection': {'stockChartSeries': {'stockChartTrendlines': 'stockChartTrendline'}}, 'stockChartAxes': 'stockChartAxis', 'stockChartRows': 'stockChartRow', 'stockChartAnnotations': 'stockChartAnnotation', 'stockChartSelectedDataIndexes': 'stockChartSelectedDataIndex', 'stockChartPeriods': 'stockChartPeriod', 'stockEvents': 'stockEvent', 'stockChartIndicators': 'stockChartIndicator'};
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<StockChartModel & DefaultHtmlAttributes| StockChartTypecast>;

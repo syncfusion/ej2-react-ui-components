@@ -6,8 +6,7 @@ export interface MarkerSettingsDirTypecast {
     tooltipSettingsTemplate?: string | Function | any;
 }
 /**
- * `MarkerSettingsDirective` directive represent a marker settings of the react maps. 
- * It must be contained in a Maps component(`MapsComponent`). 
+ * Represents the directive to define the markers in the maps.
  * ```tsx
  * <MapsComponent>
  * <LayersDirective>

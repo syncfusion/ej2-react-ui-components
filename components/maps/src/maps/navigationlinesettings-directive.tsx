@@ -5,8 +5,7 @@ export interface NavigationLineSettingsDirTypecast {
     tooltipSettingsTemplate?: string | Function | any;
 }
 /**
- * `NavigationLinesDirective` directive represent a bubble settings of the react maps. 
- * It must be contained in a Maps component(`MapsComponent`). 
+ * Represents the directive to define the navigation lines in the maps.
  * ```tsx
  * <MapsComponent>
  * <LayersDirective>

@@ -17,6 +17,7 @@ export class OverviewComponent extends Overview {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<OverviewModel & DefaultHtmlAttributes>;

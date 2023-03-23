@@ -5,7 +5,8 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 /**
- * Represents react Maps Component
+ * Represents the React Maps component.
+ * It is ideal for rendering maps from GeoJSON data or other map providers like OpenStreetMap, Google Maps, Bing Maps, etc that has rich feature set that includes markers, labels, bubbles and much more. 
  * ```tsx
  * <MapsComponent></MapsComponent>
  * ```
@@ -18,6 +19,7 @@ export class MapsComponent extends Maps {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'layers': {'layer': {'initialShapeSelections': 'initialShapeSelection', 'markers': 'marker', 'bubbles': {'bubble': {'colorMappings': 'colorMapping'}}, 'navigationLines': 'navigationLine'}}, 'annotations': 'annotation'};
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<MapsModel & DefaultHtmlAttributes>;

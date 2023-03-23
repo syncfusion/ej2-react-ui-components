@@ -3,8 +3,7 @@ import { PointerModel } from '@syncfusion/ej2-lineargauge';
 
 
 /**
- * `Pointers` directive represent a pointers of the react linear gauge. 
- * It must be contained in a LinearGauge component(`LinearGauge`). 
+ * Represents the directive to render and customize the pointers in an axis of linear gauge.
  * ```tsx
  * <LinearGaugeComponent>
  * <AxesDirective>

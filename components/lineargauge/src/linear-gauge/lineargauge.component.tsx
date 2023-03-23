@@ -7,7 +7,7 @@ export interface LinearGaugeTypecast {
     tooltipTemplate?: string | Function | any;
 }
 /**
- * Represents react Linear Gauge Component
+ * Represents the React Linear Gauge Component. This tag is used to customize the properties of the linear gauge to visualize the data in linear scale.
  * ```tsx
  * <LinearGaugeComponent></LinearGaugeComponent>
  * ```
@@ -20,6 +20,7 @@ export class LinearGaugeComponent extends LinearGauge {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'axes': {'axis': {'ranges': 'range', 'pointers': 'pointer'}}, 'annotations': 'annotation'};
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<LinearGaugeModel & DefaultHtmlAttributes| LinearGaugeTypecast>;

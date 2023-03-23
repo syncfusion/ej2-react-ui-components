@@ -19,6 +19,7 @@ export class MessageComponent extends Message {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<MessageModel & DefaultHtmlAttributes| MessageTypecast>;

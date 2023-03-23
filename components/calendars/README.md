@@ -1,36 +1,24 @@
-# ej2-react-calendars
+# React Calendars Components
 
-The calendar package contains date and time components such as calendar, date picker, date range picker, date time picker, and time picker. These components come with options to disable dates, restrict selection, and show custom events. It also has documentation and support available under commercial and community licenses. Please visit [www.syncfusion.com](https://www.syncfusion.com/) to get started.
+The [React Calendars](https://www.syncfusion.com/react-components/react-calendar?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm) package contains date and time components such as calendar, date picker, date range picker, date time picker, and time picker. These components come with options to disable dates, restrict selection, and show custom events.
 
-<p align="center" style="width:400px; margin:0 auto;">
-  <img src="https://ej2.syncfusion.com/products/images/calendar/readme.gif" alt="Calendar components">
+## What's Included in the React Calendars Package
+
+The [React Calendars](https://www.syncfusion.com/react-components/react-calendar?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm) package includes the following list of components.
+
+### React Calendar
+
+The [React Calendar](https://www.syncfusion.com/react-components/react-calendar?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm) component is a graphical user interface component that displays a Gregorian or Islamic Calendar and allows selection of a date.
+
+<p align="center">
+  <a href="https://ej2.syncfusion.com/react/documentation/calendar/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/calendar/default">Online demos</a> .
+  <a href="https://www.syncfusion.com/react-components/react-calendar?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm">Learn more</a>
 </p>
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here  (https://www.syncfusion.com/account/manage-trials/start-trials).
-
-> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
-
-## Setup
-
-To install `Calendar` and its dependent packages, use the following command.
-
-```sh
-npm install @syncfusion/ej2-react-calendars
-```
-
-## Components
-
-List of components available in the package:
-
-* [Calendar](#calendar)
-* [DatePicker](#datepicker)
-* [TimePicker](#timepicker)
-* [DateTimePicker](#datetimepicker)
-* [DateRangePicker](#daterangepicker)
-
-### Calendar
-
-The `calendar` is a graphical user interface component that displays a Gregorian Calendar and allows selection of a date.
+<p align="center">
+<img alt="React Calendar Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-calendar.png">
+</p>
 
 #### Key features
 
@@ -44,34 +32,42 @@ The `calendar` is a graphical user interface component that displays a Gregorian
 * [Highlight weekends](https://ej2.syncfusion.com/react/documentation/calendar/customization#highlight-weekends) - The calendar supports to highlighting every weekend in a month.
 * [Globalization](https://ej2.syncfusion.com/react/documentation/calendar/globalization#globalization) - Supports globalization (internationalization and localization) to translate the names of months, days, and the today button text to any supported language.
 
-#### Resources
+### React DatePicker
 
-* [Getting started](https://ej2.syncfusion.com/react/documentation/calendar/getting-started?utm_source=npm&utm_campaign=calendar#getting-started)
-* [API reference](https://ej2.syncfusion.com/react/documentation/api/calendar?utm_source=npm&utm_campaign=calendar)
-* [View online demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=calendar#/material/calendar/default)
-* [Product page](https://www.syncfusion.com/products/react-ui-components/calendar)
+The [React DatePicker](https://www.syncfusion.com/react-components/react-datepicker?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm) component is a graphical user interface component that allows selection or entry of a date value.
 
-### DatePicker
+<p align="center">
+  <a href="https://ej2.syncfusion.com/react/documentation/datepicker/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/datepicker/default">Online demos</a> .
+  <a href="https://www.syncfusion.com/react-components/react-datepicker?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm">Learn more</a>
+</p>
 
-The `date picker` is a graphical user interface component that allows selection or entry of a date value.
+<p align="center">
+<img alt="React DatePicker Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-datepicker.png">
+</p>
 
 #### Key features
 
-The date picker is inherited from the calendar component. So, all the key features of calendar can be accessed in the date picker component. Additionally, it has some specific features such as `date format` and `strict mode`.
+* [Placeholders](https://ej2.syncfusion.com/react/documentation/datepicker/how-to/set-the-placeholder) - Placeholder is a hint text that is displayed in the DatePicker; it is used to indicate the format of the date that the user should enter, such as mm/dd/yyyy or dd/mm/yyyy.
+* [Mask date input](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/datepicker/input-mask) - The mask date input restricts the user from typing unwanted characters in the text input, allowing only eligible date format to be typed.
+* [Disabled date](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/datepicker/disabled) - To disable a specific date in the picker calendar and restrict it from being set or selected in the DatePicker.
+* [Date format](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/datepicker/date-format) - The DatePicker control’s input value can be custom formatted apart from the default culture’s specific date format.
+* [Incomplete date validation](https://ej2.syncfusion.com/react/documentation/datepicker/strict-mode?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm) - The strictMode is an act that allows entry only of valid dates within the specified min or max range in a text box.
+* [Globalization](https://ej2.syncfusion.com/react/documentation/datepicker/globalization?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm) - Support globalization (also known as internationalization and localization) to allow you to translate the names of months, days, and other text elements in the calendar to any supported language. This can be useful in cases where you want to display the calendar in a language other than the default language.
 
-* [Date format](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=datepicker#/material/datepicker/date-format) - The date picker control’s input value can be custom formatted apart from the default culture’s specific date format.
-* [Strict mode](https://ej2.syncfusion.com/react/documentation/datepicker/strict-mode?utm_source=npm&utm_campaign=datepicker) - The strictMode is an act that allows entry only of valid dates within the specified min or max range in a text box.
+### React TimePicker
 
-#### Resources
+The [React TimePicker](https://www?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm.syncfusion.com/react-components/react-timepicker) component is a simple and intuitive interface component that allows selection of a time value from the popup list or setting a desired time value.
 
-* [Getting started](https://ej2.syncfusion.com/react/documentation/datepicker/getting-started?utm_source=npm&utm_campaign=datepicker#getting-started)
-* [API reference](https://ej2.syncfusion.com/react/documentation/api/datepicker?utm_source=npm&utm_campaign=datepicker)
-* [View online demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=datepicker#/material/datepicker/default)
-* [Product page](https://www.syncfusion.com/products/react-ui-components/datepicker)
+<p align="center">
+  <a href="https://ej2.syncfusion.com/react/documentation/timepicker/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/timepicker/default">Online demos</a> .
+  <a href="https://www?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm.syncfusion.com/react-components/react-timepicker">Learn more</a>
+</p>
 
-### TimePicker
-
-`Time picker` is a simple and intuitive interface component that allows selection of a time value from the popup list or setting a desired time value.
+<p align="center">
+<img alt="React TimePicker Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-timepicker.png">
+</p>
 
 #### Key features
 
@@ -82,36 +78,42 @@ The date picker is inherited from the calendar component. So, all the key featur
 * [Time intervals](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/list-formatting) - Allows populating the time list with intervals between the times in the popup list to enable selection of proper time value.
 * [Customization](https://ej2.syncfusion.com/react/documentation/timepicker/how-to/css-customization/#css-customization) - The appearance of the time picker can be customized completely.
 * [Time list with duration](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/list-formatting) - Supports customization of the control’s popup list items with time duration.
+* [Mask time input](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/timepicker/input-mask) - The mask time input restricts the user from typing unwanted characters in the text input, allowing only eligible time format to be typed.
 * [Globalization](https://ej2.syncfusion.com/react/documentation/timepicker/globalization#globalization) - Supports globalization (internationalization and localization) to update time popup list values to match any specified culture.
 
-#### Resources
+### React DateTimePicker
 
-* [Getting started](https://ej2.syncfusion.com/react/documentation/timepicker/getting-started?utm_source=npm&utm_campaign=timepicker#getting-started)
-* [API reference](https://ej2.syncfusion.com/react/documentation/api/timepicker?utm_source=npm&utm_campaign=timepicker)
-* [View online demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/default)
-* [Product page](https://www.syncfusion.com/products/react-ui-components/timepicker)
+The [React DateTimePicker](https://www.syncfusion.com/react-components/react-datetime-picker?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm) component is a graphical user interface component that allows an end user to enter or select a date and time values from a pop-up calendar and time list pop-up.
 
-### DateTimePicker
+<p align="center">
+  <a href="https://ej2.syncfusion.com/react/documentation/datetimepicker/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/datetimepicker/default">Online demos</a> .
+  <a href="https://www.syncfusion.com/react-components/react-datetime-picker?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm">Learn more</a>
+</p>
 
-The `date time picker` is a graphical user interface component that allows an end user to enter or select a date and time values from a pop-up calendar and time list pop-up.
+<p align="center">
+<img alt="React DateTimePicker Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-datetimepicker.png">
+</p>
 
 #### Key features
 
-The date time picker is inherited from the date picker and time picker component. So, all the key features of the date picker and time picker component can be accessed in the date time picker component. Additionally, it has some specific features such as `Date time range` and `Date time format`, which are described below.
-
 * [DateTime range](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/date-time-range) - Restricts the entry or selection of values within a specific range of dates and times by using `min` and `max` properties.
 * [DateTime format](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/date-time-format) - The control’s input value can be custom formatted apart from the default culture’s specific date time format.
+* [Mask date time input](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/datetimepicker/input-mask) - The mask date time input restricts the user from typing unwanted characters in the text input, allowing only eligible date and time format to be typed.
 
-#### Resources
+### React DateRangePicker
 
-* [Getting started](https://ej2.syncfusion.com/react/documentation/datetimepicker/getting-started?utm_source=npm&utm_campaign=datetimepicker#getting-started)
-* [API reference](https://ej2.syncfusion.com/react/documentation/api/datetimepicker?utm_source=npm&utm_campaign=datetimepicker)
-* [View online demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/default)
-* [Product page](https://www.syncfusion.com/products/react-ui-components/datetimepicker)
+The [React DateRangePicker](https://www.syncfusion.com/react-components/react-daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm) component is a graphical user interface control that allows an end user to select start and end date values as a range from a calendar pop-up or by entering the value directly in the input element.
 
-### DateRangePicker
+<p align="center">
+  <a href="https://ej2.syncfusion.com/react/documentation/daterangepicker/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm#/bootstrap5/daterangepicker/default">Online demos</a> .
+  <a href="https://www.syncfusion.com/react-components/react-daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm">Learn more</a>
+</p>
 
-The `date range picker` is a graphical user interface control that allows an end user to select start and end date values as a range from a calendar pop-up or by entering the value directly in the input element.
+<p align="center">
+<img alt="React DateRangePicker Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-daterangepicker.png">
+</p>
 
 #### Key features
 
@@ -124,37 +126,48 @@ The `date range picker` is a graphical user interface control that allows an end
 * [Format](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/date-format) - The control’s input value can be custom formatted apart from the default culture’s specific date range format.
 * [Globalization](https://ej2.syncfusion.com/react/documentation/daterangepicker/globalization#globalization) - Supports globalization (internationalization and localization) to translate the names of months, days, and button text to any supported language.
 
-#### Resources
+<p align="center">
+Trusted by the world's leading companies
+  <a href="https://www.syncfusion.com/">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Syncfusion logo">
+  </a>
+</p>
 
-* [Getting started](https://ej2.syncfusion.com/react/documentation/daterangepicker/getting-started?utm_source=npm&utm_campaign=daterangepicker#getting-started)
-* [API reference](https://ej2.syncfusion.com/react/documentation/api/daterangepicker?utm_source=npm&utm_campaign=daterangepicker)
-* [View online demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/default)
-* [Product page](https://www.syncfusion.com/products/react-ui-components/daterangepicker)
+## Setup
 
-## Supported Frameworks
+To install `calendars` and its dependent packages, use the following command.
 
-Date time components are also offered in the following list of frameworks.
+```sh
+npm install @syncfusion/ej2-react-calendars
+```
 
-* [Angular](https://github.com/syncfusion/ej2-angular-ui-components/tree/master/components/calendars?utm_source=npm&utm_campaign=calendars)
-* [VueJS](https://github.com/syncfusion/ej2-vue-ui-components/tree/master/components/calendars?utm_source=npm&utm_campaign=calendarss)
-* [ASP.NET Core](https://www.syncfusion.com/products/aspnet-core-ui-controls/calendar)
-* [ASP.NET MVC](https://www.syncfusion.com/products/aspnet-mvc-ui-controls/calendar)
-* [JavaScript](https://www.syncfusion.com/products/javascript-ui-controls/calendar)
+## Supported frameworks
+
+Calendar components are also offered in the following list of frameworks.
+
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular.svg"  height="50" />](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
+| :-----: | :-----: | :-----: | :-----: | :-----: |
 
 ## Support
 
 Product support is available through the following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=calendar) support system or [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_campaign=calendar).
-* New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new).
-* Ask your queries in Stack Overflow with tag `syncfusion`, `ej2`, and so on.
-
-## License
-
-Check the license details [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license).
+* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
+* [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm)
+* [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues/new)
+* [Request feature or report bug](https://www.syncfusion.com/feedback/react?utm_source=npm&utm_medium=listing&utm_campaign=react-calendar-npm)
+* Live chat
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/calendars/CHANGELOG.md).
+Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/calendars/CHANGELOG.md). Get minor improvements and bug fixes every week to stay up to date with frequent updates.
 
-© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+## License and copyright
+
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+
+> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+
+See [LICNSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license) for more info.
+
+&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

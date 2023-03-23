@@ -3,8 +3,7 @@ import { RangeModel } from '@syncfusion/ej2-circulargauge';
 
 
 /**
- * `Ranges` directive represent a ranges of the react circular gauge. 
- * It must be contained in a CircularGauge component(`CircularGauge`). 
+ * Represents the directive to render and customize the ranges in an axis of circular gauge.
  * ```tsx
  * <CircularGaugeComponent>
  * <AxesDirective>

@@ -7,7 +7,7 @@ export interface CircularGaugeTypecast {
     tooltipTemplate?: string | Function | any;
 }
 /**
- * Represents react Circular Gauge Component
+ * Represents the React Circular Gauge component. This tag is used to customize the properties of the circular gauge to visualize the data in circular scale.
  * ```tsx
  * <CircularGaugeComponent></CircularGaugeComponent>
  * ```
@@ -20,6 +20,7 @@ export class CircularGaugeComponent extends CircularGauge {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'axes': {'axis': {'annotations': 'annotation', 'ranges': 'range', 'pointers': 'pointer'}}};
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<CircularGaugeModel & DefaultHtmlAttributes| CircularGaugeTypecast>;

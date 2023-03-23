@@ -14,32 +14,6 @@
 
 #### Bug Fixes
 
-- `#I436217` - Issue in dynamically change cssClass with "e-vertical" class in DropDownButton has been resolved.
-
-## 20.4.48 (2023-02-01)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- `#I428125` - DropDownButton items selection overlay getting darker for multiple clicking has been resolved.
-- `#I428636` - DropDownButton control throws errors when changing multiple properties together using setProperties method has been resolved.
-
-## 20.4.40 (2022-12-28)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- `#F31632` - Accessibility issue in DropDownButton has been resolved.
-- `#I422250` - Keyboard navigation not working properly when we set arguments cancel property as true in `beforeClose` event of DropDownButton has been resolved.
-
-## 20.4.38 (2022-12-21)
-
-### DropDownButton
-
-#### Bug Fixes
-
 - `#I388868` - Script error occurs while using `beforeOpen` event in DropDownButton issue has been resolved
 
 ## 19.4.40 (2021-12-28)

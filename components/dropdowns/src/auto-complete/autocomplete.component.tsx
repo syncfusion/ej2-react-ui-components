@@ -22,6 +22,7 @@ export class AutoCompleteComponent extends AutoComplete {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
+    private statelessTemplateProps: string[] = ["headerTemplate","itemTemplate"];
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<AutoCompleteModel & DefaultHtmlAttributes| AutoCompleteTypecast>;

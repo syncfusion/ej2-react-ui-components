@@ -2,39 +2,7 @@
 
 ## [Unreleased]
 
-## 20.4.53 (2023-03-07)
-
-### Checkbox
-
-#### Bug Fixes
-
-- `#I436942` - The issue with "Checkbox checked property is not updated properly at initial rendering" has been resolved.
-
-## 20.4.50 (2023-02-14)
-
-### RadioButton
-
-#### Bug Fixes
-
-- `#F40707` - Value change event triggered twice in Radio Button component has been fixed.
-
-## 20.4.49 (2023-02-07)
-
-### Switch
-
-#### Bug Fixes
-
-- `#I427994` - Provided aria-label and id `htmlAttributes` support to the switch component.
-
-## 20.4.44 (2023-01-18)
-
-### Switch
-
-#### Bug Fixes
-
-- `#I427994` - Provided the `htmlAttributes` support to the switch component.
-
-## 20.4.42 (2023-01-04)
+## 21.1.35 (2023-03-23)
 
 ### Checkbox
 
@@ -42,15 +10,28 @@
 
 - `#I427235` - The issue `cssClass` property not updated properly while string with a white space in the end of the property in checkbox has been fixed.
 
-### Chips
+### Chip
+
+#### New Features
+
+- `#I422263` - The Chip component now supports htmlAttributes, which enables users to add required attributes such as 'aria-label', 'title', 'class', and more to the Chip item.
+
+- `#I422263` - The Chip component now supports htmlAttributes, which enables users to add required attributes such as 'aria-label', 'title', 'class', and more to the Chip item.
+
+
+### RadioButton
 
 #### Bug Fixes
 
-- `#I422262` - Added the aria-disabled attribute to the disabled Chip items.
+- `#F40707` - Value change event triggered twice in Radio Button component has been fixed.
 
-## 20.4.40 (2022-12-28)
+### Switch
 
-## 20.3.47 (2022-09-29)
+#### Bug Fixes
+
+- `#I427994` - Provided the `htmlAttributes` support to the switch component.
+
+## 20.3.47 (2022-10-11)
 
 ### Floating Action Button `Preview`
 

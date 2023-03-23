@@ -141,8 +141,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     private updateProperties(nextProps: Object, silent?: boolean): void {
         let dProps: Object = extend({}, nextProps);
         let keys: string[] = Object.keys(nextProps);
-        let templateProps: string[] = ['valueTemplate', 'itemTemplate', 'headerTemplate', 'content'];
-        let statelessTemplates: string[] = !isNullOrUndefined(this.props['statelessTemplates']) ? this.props['statelessTemplates'] : templateProps;
+        // The statelessTemplates props value is taken from sample level property or default component property.
+        let statelessTemplates: string[] = !isNullOrUndefined(this.props['statelessTemplates']) ? this.props['statelessTemplates'] : 
+           (!isNullOrUndefined(this['statelessTemplateProps']) ? this['statelessTemplateProps'] : []);
         for (let propkey of keys) {
             let isClassName: boolean = propkey === 'className';
             if(propkey === 'children'){

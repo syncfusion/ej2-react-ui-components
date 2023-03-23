@@ -5,8 +5,7 @@ export interface BubbleSettingsDirTypecast {
     tooltipSettingsTemplate?: string | Function | any;
 }
 /**
- * `BubblesDirective` directive represent a bubble settings of the react maps. 
- * It must be contained in a Maps component(`MapsComponent`). 
+ * Represents the directive to define the bubbles in the maps.
  * ```tsx
  * <MapsComponent>
  * <LayersDirective>

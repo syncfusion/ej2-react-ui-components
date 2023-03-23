@@ -18,6 +18,7 @@ export class SparklineComponent extends Sparkline {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'rangeBandSettings': 'rangeBandSetting'};
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SparklineModel & DefaultHtmlAttributes>;

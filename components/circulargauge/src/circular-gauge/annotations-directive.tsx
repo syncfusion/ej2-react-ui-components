@@ -5,8 +5,7 @@ export interface AnnotationDirTypecast {
     content?: string | Function | any;
 }
 /**
- * `Annotations` directive represent a annotations of the react circular gauge. 
- * It must be contained in a CircularGauge component(`CircularGauge`). 
+ * Represents the directive to render and customize the annotations in an axis of circular gauge.
  * ```tsx
  * <CircularGaugeComponent>
  * <AxesDirective>

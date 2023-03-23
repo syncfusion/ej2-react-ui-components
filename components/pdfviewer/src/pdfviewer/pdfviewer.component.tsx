@@ -17,6 +17,7 @@ export class PdfViewerComponent extends PdfViewer {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<PdfViewerModel & DefaultHtmlAttributes>;

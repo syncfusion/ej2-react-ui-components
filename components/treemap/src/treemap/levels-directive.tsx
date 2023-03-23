@@ -5,8 +5,7 @@ export interface LevelSettingsDirTypecast {
     headerTemplate?: string | Function | any;
 }
 /**
- * `LevelsDirective` directive represent a levels of the react treemap. 
- * It must be contained in a TreeMap component(`TreeMapComponent`). 
+ * Represents the directive to configure and render level leaf items in the treemap. 
  * ```tsx
  * <TreeMapComponent>
  * <LevelsDirective>

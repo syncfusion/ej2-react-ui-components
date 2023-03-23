@@ -8,7 +8,7 @@ export interface TreeMapTypecast {
     leafItemSettingsLabelTemplate?: string | Function | any;
 }
 /**
- * Represents react TreeMap Component
+ * Represents the React TreeMap component. It is used to visualize both hierarchical and flat data.
  * ```tsx
  * <TreeMapComponent></TreeMapComponent>
  * ```
@@ -21,6 +21,7 @@ export class TreeMapComponent extends TreeMap {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'levels': {'level': {'colorMappings': 'colorMapping'}}};
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TreeMapModel & DefaultHtmlAttributes| TreeMapTypecast>;

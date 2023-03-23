@@ -3,8 +3,7 @@ import { AxisModel } from '@syncfusion/ej2-circulargauge';
 
 
 /**
- * `Axis` directive represent a axes of the react circular gauge 
- * It must be contained in a CircularGauge component(`CircularGauge`). 
+ * Represents the directive to render the axes in the Circular Gauge.
  * ```tsx
  * <CircularGaugeComponent>
  * <AxesDirective>

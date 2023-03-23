@@ -22,6 +22,7 @@ export class DialogComponent extends Dialog {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'buttons': 'dialogButton'};
+    private statelessTemplateProps: string[] = ["content"];
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DialogModel & DefaultHtmlAttributes| DialogTypecast>;

@@ -3,8 +3,7 @@ import { InitialShapeSelectionSettingsModel } from '@syncfusion/ej2-maps';
 
 
 /**
- * `InitialShapeSelectionsDirective` directive represent a selection settings of the react maps. 
- * It must be contained in a Maps component(`MapsComponent`). 
+ * Represents the directive to configure the selection of the shapes when the maps is initially rendered.
  * ```tsx
  * <MapsComponent>
  * <LayersDirective>

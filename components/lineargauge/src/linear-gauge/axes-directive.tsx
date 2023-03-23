@@ -3,8 +3,7 @@ import { AxisModel } from '@syncfusion/ej2-lineargauge';
 
 
 /**
- * `Axis` directive represent a axes of the react linear gauge. 
- * It must be contained in a LinearGauge component(`LinearGauge`). 
+ * Represents the directive to render the axes in the Linear Gauge.
  * ```tsx
  * <LinearGaugeComponent>
  * <AxesDirective>

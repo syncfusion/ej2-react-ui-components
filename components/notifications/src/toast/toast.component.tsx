@@ -22,6 +22,7 @@ export class ToastComponent extends Toast {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'buttonModelProps': 'buttonModelProp'};
+    private statelessTemplateProps: string[] = ["content"];
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ToastModel & DefaultHtmlAttributes| ToastTypecast>;

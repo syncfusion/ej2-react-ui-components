@@ -3,8 +3,7 @@ import { ColorMappingSettingsModel } from '@syncfusion/ej2-maps';
 
 
 /**
- * `ColorMappingDirective` directive to configure the color mapping of the react maps. 
- * It must be contained in a Maps component(`MapsComponent`). 
+ * Represents the directive to define the bubble color mapping in the maps.
  * ```tsx
  * <MapsComponent>
  * <LayersDirective>

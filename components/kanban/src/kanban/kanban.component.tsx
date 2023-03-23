@@ -24,6 +24,7 @@ export class KanbanComponent extends Kanban {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'columns': 'column', 'stackedHeaders': 'stackedHeader'};
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<KanbanModel & DefaultHtmlAttributes| KanbanTypecast>;

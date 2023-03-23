@@ -8,9 +8,9 @@ export interface PivotViewTypecast {
     tooltipTemplate?: string | Function | any;
 }
 /**
- * `PivotViewComponent` represents the react PivotView.
+ * `PivotViewComponent` represents the react Pivot Table.
  * ```tsx
- * <PivotViewComponent/>
+ * <PivotViewComponent></PivotViewComponent>
  * ```
  */
 export class PivotViewComponent extends PivotView {
@@ -20,6 +20,7 @@ export class PivotViewComponent extends PivotView {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<PivotViewModel & DefaultHtmlAttributes| PivotViewTypecast>;

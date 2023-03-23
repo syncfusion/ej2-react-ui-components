@@ -2,107 +2,7 @@
 
 ## [Unreleased]
 
-## 20.4.53 (2023-03-07)
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#I429410` - The issue of facing a delay while unselecting large set of items using close icon in the Dropdown Tree component has been resolved.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I439556`, `I442336` - The issue "Script error throws after clear the selected value using clear icon" has been resolved.
-
-## 20.4.49 (2023-02-07)
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#I429410` - The issue of Select All/Unselect All taking an excessive amount of time and causing browser crashes in a Dropdown Tree with a large data source has been resolved.
-
-## 20.4.48 (2023-02-01)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I429647` - Fixed an issue where a console error occurred while using the destroy method in the AutoComplete.
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#I412684` - Resolved the issue "No Records Found" message is not showing in  Dropdown Tree while updating null data dynamically.
-- `#I430152` - Facing a console error while setting empty data to the Dropdown Tree has been resolved.
-- `#I420146` - The Placeholder alignment issue while setting the Dropdown Tree component as form control is resolved
-
-### ListBox
-
-#### Bug Fixes
-
-- `#F38636` - Issue with "`selectItems` function doesn't work in listbox when values contain backslashes" has been resolved
-
-## 20.4.42 (2023-01-04)
-
-### Mention
-
-#### Bug Fixes
-
-- `#I422992` - Now, the `cssClass` property works fine in the Mention component.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I423751` - The issue "MultiSelect height not being set properly in the tailwind theme" has been resolved.
-
-- `#I425054` - The issue "`GroupTemplate` does not work with remote data on multiselect" has been resolved.
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `#I425054` - The issue "`GroupTemplate` does not work with remote data on autocomplete" has been resolved.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I425054` - The issue "`GroupTemplate` does not work with remote data on combobox" has been resolved.
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I425054` - The issue "`GroupTemplate` does not work with remote data on dropdownlist" has been resolved.
-
-## 20.4.40 (2022-12-28)
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#F178650` - Resolved the error after perform filtering in Dropdown Tree while updating data dynamically
-
-### ListBox
-
-#### Bug Fixes
-
-- `#F424252` - Issue with "Data source not update properly when we filtering and clicking move All button in listbox toolbar sample" has been resolved.
-- `#I423072` - Issue with "`actionBegin` event argument not passes the filtered item properly while filtering and clicking move All button in listbox toolbar sample" has been resolved.
-
-## 20.4.38 (2022-12-21)
-
-### Dropdown Tree
-
-#### New Features
-
-- `#I395558` - Provided enableHtmlSanitizer support for Dropdown Tree component.
-- `#F169154`, `#I424048` - Provided an option to prevent the parent node selection in the Dropdown Tree component.
+## 21.1.35 (2023-03-23)
 
 ### ListBox
 
@@ -116,11 +16,15 @@
 
 - `#I397894` - The issue "aria-label added on input element instead of wrapper element while adding the aria-label by using Html Attribute property" has been resolved.
 
-### MultiSelect
+### Mention
 
-#### New Features
+#### Bug Fixes
 
-- `#I422390`, `#I423942` - Provide a support for updating the data source when using state in React.
+- `#I440814` - The issue "Script error is thrown when we dynamically call the showPopup method and select the value" has been resolved.
+
+### Textbox
+
+- `#I446247`, `#I446478` - Fixed an issue where the Textbox component was not interacting after routing the page.
 
 ## 20.3.47 (2022-09-29)
 
@@ -2015,14 +1919,6 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
-
-## 20.4.50 (2023-02-14)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I429804` - The issue "A console error occurred when using the state and clear buttons" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 

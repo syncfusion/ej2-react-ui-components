@@ -2,63 +2,13 @@
 
 ## [Unreleased]
 
-## 20.4.54 (2023-03-14)
+## 21.1.35 (2023-03-23)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I444150` - Issue with "white space added to the sheets while changing the font size above `14px`" has been resolved.
-
-## 20.4.52 (2023-02-28)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I435982`, `#I434351` - Issue with "rendered cell template destroyed while updating the cell value using `updateCell` method" has been resolved.
-
-- `#I441245` - Issue with "Insert button is not changed to disabled state while removing the cell reference in the Insert link dialog" has been resolved.
-
-## 20.4.50 (2023-02-14)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I434077` - Issue with "after deleting rows beyond the rendered region, the edited cell value is not updated to the expected cell in finite mode" has been resolved.
-
-- `#I433494` - Issue with "typed values are not converted to the correct date and time" has been resolved.
-
-## 20.4.49 (2023-02-07)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I432121` - Issue with "editing cell data is not updated on the cell while scrolling the sheet before save the edited cell value" has been resolved.
-
-`#I431169` - Issue with "string with a time separator is incorrectly converted into a time or date value" has been resolved.
-
-
-## 20.4.48 (2023-02-01)
-
-### Spreadsheet
-
-#### New Features
-
-- `#F178912` - Now, you can specify the `orientation` type for PDF export.
-
-## 20.4.40 (2022-12-28)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I422232` - Issue with "`SUMIFS` formula is not working properly while providing as nested formula to the `SUM` formula" has been resolved.
-- `#F179330` - Issue with "custom function reference is removed from the control instance while calling the `refresh` method" has been resolved.
-
-- `#I425365`  - Issue with "parsing error occurs when custom function argument contains `q` alphabet" has been resolved.
+- `#I442501` - Issue with "`AVERAGEIF`,`SUMIF` and `SUMIFS` formulas return wrong result" has been resolved.
 
 ## 20.3.60 (2022-12-06)
 
@@ -1286,32 +1236,6 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
-
-## 20.4.53 (2023-03-07)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I436894` - Issue with "`computeExpression` method returns `#SPILL!` value while passing `UNIQUE` formula as argument to that method" has been resolved.
-- `#I442490` - Issue with "`HOUR/SECOND/MINUTE` formula returns wrong value when time is passed as string" has been resolved.
-
-## 20.4.51 (2023-02-21)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I437185` - Issue with "auto date format deducting does not work properly while applying the format as `General` to a cell" has been resolved.
-- `#I434035` - Issue with "`Delete` key is not working properly on the `MAC machine` keyboard while trying to delete multiple cells" has been resolved.
-
-## 20.4.43 (2023-01-10)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I418778` - Issue with "percentage and decimal custom number formats are not applied properly for decimal values" has been resolved.
 
 ## 20.3.61 (2022-12-13)
 

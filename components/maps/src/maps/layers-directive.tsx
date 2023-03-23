@@ -3,8 +3,7 @@ import { LayerSettingsModel } from '@syncfusion/ej2-maps';
 
 
 /**
- * `LayersDirective` directive represent a layers of the react maps. 
- * It must be contained in a Maps component(`MapsComponent`). 
+ * Represents the directive to define the layer of the maps.
  * ```tsx
  * <MapsComponent>
  * <LayersDirective>

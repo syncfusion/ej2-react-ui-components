@@ -23,6 +23,7 @@ export class DropDownListComponent extends DropDownList {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
+    private statelessTemplateProps: string[] = ["headerTemplate","valueTemplate","itemTemplate"];
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DropDownListModel & DefaultHtmlAttributes| DropDownListTypecast>;

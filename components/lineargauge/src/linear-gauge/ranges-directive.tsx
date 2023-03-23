@@ -3,8 +3,7 @@ import { RangeModel } from '@syncfusion/ej2-lineargauge';
 
 
 /**
- * `Ranges` directive represent a ranges of the react linear gauge. 
- * It must be contained in a LinearGauge component(`LinearGauge`). 
+ * Represents the directive to render and customize the ranges in an axis of linear gauge.
  * ```tsx
  * <LinearGaugeComponent>
  * <AxesDirective>

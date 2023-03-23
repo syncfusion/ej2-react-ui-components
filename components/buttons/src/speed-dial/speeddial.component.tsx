@@ -21,6 +21,7 @@ export class SpeedDialComponent extends SpeedDial {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'speedDialItems': 'speedDialItem'};
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SpeedDialModel & DefaultHtmlAttributes| SpeedDialTypecast>;

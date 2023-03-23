@@ -5,7 +5,8 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 /**
- * Represents react HeatMap Component
+ * Represents the React HeatMap component. 
+ * This is used to customize the properties of the heatmap in order to visualize two-dimensional data, with values represented by gradient or solid color variations.
  * ```tsx
  * <HeatMapComponent></HeatMapComponent>
  * ```
@@ -17,6 +18,7 @@ export class HeatMapComponent extends HeatMap {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
+    private statelessTemplateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<HeatMapModel & DefaultHtmlAttributes>;

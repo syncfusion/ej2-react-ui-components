@@ -5,8 +5,7 @@ export interface AnnotationDirTypecast {
     content?: string | Function | any;
 }
 /**
- * `Annotations` directive represent a annotations of the react linear gauge. 
- * It must be contained in a LinearGauge component(`LinearGauge`). 
+ * Represents the directive to render and customize the annotations in the linear gauge.
  * ```tsx
  * <LinearGaugeComponent>
  * <AnnotationsDirective>

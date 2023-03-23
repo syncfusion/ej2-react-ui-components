@@ -3,8 +3,7 @@ import { PointerModel } from '@syncfusion/ej2-circulargauge';
 
 
 /**
- * `Pointers` directive represent a pointers of the react circular gauge.
- * It must be contained in a CircularGauge component(`CircularGauge`). 
+ * Represents the directive to render and customize the pointers in an axis of circular gauge.
  * ```tsx
  * <CircularGaugeComponent>
  * <AxesDirective>
