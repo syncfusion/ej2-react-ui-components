@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 21.1.37 (2023-03-29)
+
+### Common
+
+#### Bug Fixes
+
+- `#I443045` - The issue with "Chart title is not updated on dynamic changes" has been resolved.
+- `#I433083` - The issue with "Accordion content template value is not updated while using state variable" has been resolved.
+
 ## 20.4.54 (2023-03-14)
 
 ### Common

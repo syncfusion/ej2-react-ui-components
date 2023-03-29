@@ -9,9 +9,8 @@
 The Ribbon provides a structured and easy-to-use user interface for users to access different features and functions through series of tabs, improving user experience and efficiency.
 
 
-The Ribbon is a structured layout to manage tools with tabs and groups. The Ribbon control supports buttons, split buttons, toggle buttons, file menu and multiple layouts.
+**Key features**
 
-#### Key features
 
 - **Built-in items** - Several built-in support items, such as buttons, checkboxes, drop-down buttons, split buttons, combo boxes, and color pickers that can be customized and used to execute specific actions.
 - **Modes** - Offers the classic mode that organizes items and groups in a traditional form, and simplified mode that organizes items and groups into a single row for improved usability and reduced clutter.

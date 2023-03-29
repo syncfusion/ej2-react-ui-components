@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 21.1.37 (2023-03-29)
+
+### Checkbox
+
+#### Bug Fixes
+
+- `#I436942` - The issue with "Validation rule not display properly when we use Checkbox within form validator" has been resolved.
+
+### Chip
+
+#### New Features
+
+- `#I422263` - The Chip component now supports htmlAttributes, which enables users to add required attributes such as 'aria-label', 'title', 'class', and more to the Chip item.
+
+
 ## 21.1.35 (2023-03-23)
 
 ### Checkbox
@@ -15,9 +30,6 @@
 #### New Features
 
 - `#I422263` - The Chip component now supports htmlAttributes, which enables users to add required attributes such as 'aria-label', 'title', 'class', and more to the Chip item.
-
-- `#I422263` - The Chip component now supports htmlAttributes, which enables users to add required attributes such as 'aria-label', 'title', 'class', and more to the Chip item.
-
 
 ### RadioButton
 

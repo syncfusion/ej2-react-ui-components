@@ -100,9 +100,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
 
     public componentDidUpdate(prev: Object): any {
         if(!this.isshouldComponentUpdateCalled && this.initRenderCalled && !this.isReactForeceUpdate) {
-            this.isshouldComponentUpdateCalled = true;
             if (prev !== this.props) {
-                this.refreshProperties(this.props, true);
+                this.isshouldComponentUpdateCalled = true;
+                this.refreshProperties(this.props, this.props);
             }
         }
     }
@@ -166,7 +166,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                     for (let j: number = 0; j < dpropsClsName.length; j++) {
                         this.element.classList.add(dpropsClsName[parseInt(j.toString(), 10)]);
                     }
-                } else if (propkey !== 'disabled') {
+                } else if (propkey !== 'disabled' && !(this as any).properties.hasOwnProperty(propkey)) {
                     delete dProps[`${propkey}`];
                 }
             }
