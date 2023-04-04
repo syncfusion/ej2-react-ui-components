@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.1.38 (2023-04-04)
+
+### Menu
+
+#### Bug Fixes
+
+- `#F181258` - The issue with "Input element is not editable when we placed inside the menu template" has been resolved.
+
 ## 21.1.37 (2023-03-29)
 
 ### TreeView
@@ -9,6 +17,12 @@
 #### Bug fixes
 
 - `#I449274` - Resolved the nodeSelected event not working properly issue on iPad.
+
+### Tab
+
+#### Bug fixes
+
+- `#F181409` - The Script error throw after removing the tab using header template has been resolved.
 
 ## 21.1.35 (2023-03-23)
 

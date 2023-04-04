@@ -25,6 +25,7 @@ export class CarouselComponent extends Carousel {
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'carouselItems': 'carouselItem'};
     private statelessTemplateProps: string[] = ["itemTemplate"];
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<CarouselModel & DefaultHtmlAttributes| CarouselTypecast>;

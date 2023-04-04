@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 21.1.37 (2023-03-29)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I446539` - Issue with "chart is not inserted properly and throws exception on exporting while selecting the range in reverse order" has been resolved.
-
 ## 20.3.60 (2022-12-06)
 
 ### Spreadsheet
@@ -1236,6 +1228,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 21.1.37 (2023-03-29)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I446539` - Issue with "chart is not inserted properly and throws exception on exporting while selecting the range in reverse order" has been resolved.
 
 ## 21.1.35 (2023-03-23)
 

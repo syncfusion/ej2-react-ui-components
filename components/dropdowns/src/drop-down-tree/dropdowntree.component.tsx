@@ -22,6 +22,7 @@ export class DropDownTreeComponent extends DropDownTree {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DropDownTreeModel & DefaultHtmlAttributes| DropDownTreeTypecast>;

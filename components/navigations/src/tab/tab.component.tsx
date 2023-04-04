@@ -19,6 +19,7 @@ export class TabComponent extends Tab {
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'tabItems': 'tabItem'};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TabModel & DefaultHtmlAttributes>;

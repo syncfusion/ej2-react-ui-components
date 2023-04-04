@@ -22,6 +22,7 @@ export class MentionComponent extends Mention {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     private statelessTemplateProps: string[] = ["itemTemplate"];
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<MentionModel & DefaultHtmlAttributes| MentionTypecast>;

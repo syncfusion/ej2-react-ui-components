@@ -21,6 +21,7 @@ export class UploaderComponent extends Uploader {
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'files': 'uploadedFiles'};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<UploaderModel & DefaultHtmlAttributes| UploaderTypecast>;

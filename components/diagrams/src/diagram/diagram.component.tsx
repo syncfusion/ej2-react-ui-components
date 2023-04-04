@@ -23,6 +23,7 @@ export class DiagramComponent extends Diagram {
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'layers': 'layer', 'customCursors': 'customCursor', 'connectors': {'connector': {'connectorFixedUserHandles': 'connectorFixedUserHandle', 'connectorAnnotations': 'connectorAnnotation'}}, 'nodes': {'node': {'nodeFixedUserHandles': 'nodeFixedUserHandle', 'nodeAnnotations': 'nodeAnnotation', 'ports': 'port'}}};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DiagramModel & DefaultHtmlAttributes| DiagramTypecast>;

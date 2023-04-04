@@ -22,6 +22,7 @@ export class BreadcrumbComponent extends Breadcrumb {
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'breadcrumbItems': 'breadcrumbItem'};
     private statelessTemplateProps: string[] = ["itemTemplate"];
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<BreadcrumbModel & DefaultHtmlAttributes| BreadcrumbTypecast>;

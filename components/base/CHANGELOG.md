@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.1.38 (2023-04-04)
+
+### Common
+
+#### Bug Fixes
+
+- `#I432022` - The issue with "Grid sends multiple requests if the `childGrid` has events" has been resolved.
+
 ## 21.1.37 (2023-03-29)
 
 ### Common

@@ -21,6 +21,7 @@ export class SpreadsheetComponent extends Spreadsheet {
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'sheets': {'sheet': {'rows': {'row': {'cells': {'cell': {'images': 'image', 'charts': 'chart'}}}}, 'columns': 'column', 'ranges': 'range', 'conditionalFormats': 'conditionalFormat'}}, 'definedNames': 'definedName'};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SpreadsheetModel & DefaultHtmlAttributes| SpreadsheetTypecast>;

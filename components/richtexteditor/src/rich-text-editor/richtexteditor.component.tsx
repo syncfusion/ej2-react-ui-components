@@ -20,6 +20,7 @@ export class RichTextEditorComponent extends RichTextEditor {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
     private statelessTemplateProps: string[] = ["valueTemplate"];
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<RichTextEditorModel & DefaultHtmlAttributes| RichTextEditorTypecast>;

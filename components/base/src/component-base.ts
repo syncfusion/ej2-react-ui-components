@@ -334,6 +334,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         let status: boolean = true;
         let lenSimilarity: boolean = (oldProps.length === newProps.length);
         let diffArray: Changes[] = [];
+        var templateProps = !isNullOrUndefined(this['templateProps']) ? this['templateProps'] : [];
         if (lenSimilarity) {
             for (let i = 0, len = newProps.length; i < len; i++) {
                 let curObj: { [key: string]: Object } = {};
@@ -354,7 +355,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                         if (this.getModuleName()=== 'grid' && key === 'field') {
                             curObj[`${key}`] = newValue;
                         }
-                        if (!oldProp.hasOwnProperty(key) || !this.compareValues(oldValue, newValue)) {
+                        if (!oldProp.hasOwnProperty(key) || !((templateProps.length > 0 && templateProps.indexOf(`${key}`) === -1 && typeof(newValue) === 'function') ? this.compareValues(oldValue.toString(), newValue.toString()) : this.compareValues(oldValue, newValue))) {
                             if (!propName) {
                                 return { status: false };
                             }
