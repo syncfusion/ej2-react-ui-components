@@ -21,6 +21,7 @@ export class CircularGaugeComponent extends CircularGauge {
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'axes': {'axis': {'annotations': 'annotation', 'ranges': 'range', 'pointers': 'pointer'}}};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<CircularGaugeModel & DefaultHtmlAttributes| CircularGaugeTypecast>;

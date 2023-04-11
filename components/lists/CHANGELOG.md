@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 21.1.39 (2023-04-11)
+
+### ListView
+
+#### Bug Fixes
+
+- `#I447633` - An issue with the primary button styles of the e-icons in the ListView component has been resolved.
+- `#I452079` - Resolved detached elements memory leak issue in the ListView component.
+
+- `#I447633` - An issue with the primary button styles of the e-icons in the ListView component has been resolved.
+
 ## 21.1.35 (2023-03-23)
 
 ### ListView

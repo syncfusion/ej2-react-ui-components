@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 21.1.39 (2023-04-11)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#F181131` - Issue with "No Record Found text disappears while hovering the drag item on list box without drop" has been resolved.
+- `#F181311` - Issue with "Scrolling is not working while drag and drop the list box with item Template" has been resolved.
+
 ## 21.1.38 (2023-04-04)
 
 ### Dropdown Tree

@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 21.1.39 (2023-04-11)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I450818` - Issue with "`IFERROR` formula does not return the specified error message when performing arithmetic operations on a string value" has been resolved.
+- `#I453353` - Issue with "`SMALL` function causes the spreadsheet to hang while referring to an empty cell in the range" has been resolved.
+
+## 21.1.38 (2023-04-04)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I447298` - Issue with "IF formula does not return the expected result while providing the argument with value as true or false" has been resolved.
+
 ## 20.3.60 (2022-12-06)
 
 ### Spreadsheet

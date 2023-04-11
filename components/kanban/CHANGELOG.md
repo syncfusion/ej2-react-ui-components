@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 21.1.39 (2023-04-11)
+
+### Kanban
+
+#### Bug Fixes
+
+`#F181441` - Resolved a issue, where a console error was thrown when dragging into the column header on the Kanban.
+
+
 ## 21.1.37 (2023-03-29)
 
 ### Kanban

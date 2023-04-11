@@ -21,6 +21,7 @@ export class BulletChartComponent extends BulletChart {
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'bulletRangeCollection': 'bulletRange'};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<BulletChartModel & DefaultHtmlAttributes| BulletChartTypecast>;

@@ -21,6 +21,7 @@ export class ChartComponent extends Chart {
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'seriesCollection': {'series': {'trendlines': 'trendline', 'segments': 'segment'}}, 'axes': {'axis': {'stripLines': 'stripLine', 'multiLevelLabels': {'multiLevelLabel': {'categories': 'category'}}}}, 'rows': 'row', 'columns': 'column', 'rangeColorSettings': 'rangeColorSetting', 'annotations': 'annotation', 'selectedDataIndexes': 'selectedDataIndex', 'indicators': 'indicator'};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ChartModel & DefaultHtmlAttributes| ChartTypecast>;
