@@ -2,14 +2,16 @@
 
 ## [Unreleased]
 
-## 21.1.39 (2023-04-11)
+## 21.1.41 (2023-04-18)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I450818` - Issue with "`IFERROR` formula does not return the specified error message when performing arithmetic operations on a string value" has been resolved.
-- `#I453353` - Issue with "`SMALL` function causes the spreadsheet to hang while referring to an empty cell in the range" has been resolved.
+- `#I452434` - Issue with "hyphen symbol converts into `NaN` when typing hyphen alone and saving the cell" has been resolved.
+
+- `#I453788`, `#I441245` - Issue with "insert button state in the insert hyperlink dialog is not properly updated when switching from a defined name header to sheet names " has been resolved.
+- `#I451113` - Issue with "spreadsheet shows the cell value as `NaN` when you drag the cells that have an exponential notation value" has been resolved.
 
 ## 21.1.38 (2023-04-04)
 
@@ -1245,6 +1247,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 21.1.39 (2023-04-11)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I450818` - Issue with "`IFERROR` formula does not return the specified error message when performing arithmetic operations on a string value" has been resolved.
+- `#I453353` - Issue with "`SMALL` function causes the spreadsheet to hang while referring to an empty cell in the range" has been resolved.
 
 ## 21.1.37 (2023-03-29)
 

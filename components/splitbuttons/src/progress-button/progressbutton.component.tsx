@@ -18,6 +18,7 @@ export class ProgressButtonComponent extends ProgressButton {
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<ProgressButtonModel & DefaultHtmlAttributes>;

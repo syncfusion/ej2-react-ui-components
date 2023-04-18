@@ -19,6 +19,7 @@ export class SplitButtonComponent extends SplitButton {
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'splitButtonItems': 'splitButtonItem'};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SplitButtonModel & DefaultHtmlAttributes>;

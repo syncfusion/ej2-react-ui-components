@@ -2,7 +2,17 @@
 
 ## [Unreleased]
 
-## 21.1.39 (2023-04-11)
+## 21.1.41 (2023-04-18)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#453318` - Issue with "Placeholder text not get displayed on initial render with strict mode true case of the datepicker component."
+
+- `#I447192` - The issue with "Exception is thrown when interacting with the datepicker component only when using the time zone extension" has been resolved.
+
+## 21.1.38 (2023-04-04)
 
 ### DatePicker
 

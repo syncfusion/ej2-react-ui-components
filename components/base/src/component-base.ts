@@ -506,7 +506,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                         propIndexCount++;
                     }
                 });
-                if (!isNullOrUndefined(index) && this.portals[tempPortal[`${index}`[parseInt(indexCount.toString(), 10)]]].propName === propName) {
+                if (!isNullOrUndefined(index) && this.portals[index as number] && this.portals[index as number].propName === propName) {
                     this.portals.splice(index, 1);
                     indexCount++;
                 } else {

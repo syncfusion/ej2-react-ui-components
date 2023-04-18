@@ -19,6 +19,7 @@ export class DashboardLayoutComponent extends DashboardLayout {
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'panels': 'panel'};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DashboardLayoutModel & DefaultHtmlAttributes>;

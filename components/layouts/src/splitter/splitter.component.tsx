@@ -19,6 +19,7 @@ export class SplitterComponent extends Splitter {
     private checkInjectedModules: boolean = false;
     public directivekeys: { [key: string]: Object } = {'panes': 'pane'};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SplitterModel & DefaultHtmlAttributes>;

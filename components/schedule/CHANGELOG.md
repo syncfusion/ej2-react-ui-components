@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 21.1.41 (2023-04-18)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I449384` - An issue with the numeric textbox inside the `editorTemplate` has been fixed.
+- `#I454841`, `#I455215` - An issue with the appointment subject, quick info popup subject, and description values doesn't show in HTML format has been fixed.
+
 ## 21.1.39 (2023-04-11)
 
 ### Schedule
@@ -10,6 +19,7 @@
 
 - `#I425939` - Schedule virtual scrolling appointment rendering performance improved.
 - `#F181250` - Schedule layout rendering performance improved with `timezone` property.
+- `#I328355`, `#I449137` - Provided support to bind methods in `JS` way for the Schedule events in the `print` method `printOptions`.
 
 ## 21.1.38 (2023-04-04)
 

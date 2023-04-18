@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.1.41 (2023-04-18)
+
+### Common
+
+#### Bug Fixes
+
+- `#I451955` - The issue with "Script error thrown after removing the first tab" has been resolved.
+
 ## 21.1.38 (2023-04-04)
 
 ### Common

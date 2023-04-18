@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.1.41 (2023-04-18)
+
+### Pivot Table
+
+#### Bug fixes
+
+- `#I454110` - Pivot Table now works properly when conditional formatting is applied without a measure.
+
 ## 21.1.39 (2023-04-11)
 
 ### Pivot Table
