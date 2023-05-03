@@ -13,7 +13,7 @@ Syncfusion provides a predefined [Word Processor server docker image](https://hu
 </p>
 
 <p align="center">
-![React Word Processor Component](https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-word-processor.png)
+  <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-word-processor.png" alt="React Word Processor Component">
 </p>
 
 <p align="center">
