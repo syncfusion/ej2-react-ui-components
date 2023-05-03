@@ -21,6 +21,7 @@ export class LinearGaugeComponent extends LinearGauge {
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'axes': {'axis': {'ranges': 'range', 'pointers': 'pointer'}}, 'annotations': 'annotation'};
     private statelessTemplateProps: string[] = null;
+    private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<LinearGaugeModel & DefaultHtmlAttributes| LinearGaugeTypecast>;
