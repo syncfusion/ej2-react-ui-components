@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.2.4 (2023-05-09)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I455410` - The issue of the textarea getting hidden when dynamically updating an attribute using HTML Attribute has been resolved.
+
 ## 21.1.38 (2023-04-04)
 
 ### Range Slider
