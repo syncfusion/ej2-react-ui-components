@@ -1222,6 +1222,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
 
+## 21.2.4 (2023-05-09)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I455410` - The issue of the textarea getting hidden when dynamically updating an attribute using HTML Attribute has been resolved.
+
 ## 19.1.66 (2021-06-01)
 
 ### NumericTextBox
