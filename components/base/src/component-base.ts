@@ -327,6 +327,14 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 }
                 return this.compareObjects(tempVal, tempVal2).status;
             }
+            if (value1.constructor &&
+                value1.constructor.name === value2.constructor.name &&
+                (value1.constructor.name === 'Query' ||
+                value1.constructor.name === 'DataManager')) {
+                if (JSON.stringify(value1) === JSON.stringify(value2)) {
+                    return true;
+                }
+            }
         }
         return false;
     }
@@ -372,6 +380,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                         return { status: false };
                     }
                     status = false;
+                }
+                if (this.getModuleName() === 'grid' && propName === 'columns' && !curObj['field']) {
+                    curObj['field'] = undefined;
                 }
                 if (Object.keys(curObj).length) {
                     diffArray.push({ index: i, value: curObj, key: propName });

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.2.6 (2023-05-23)
+
+### Common
+
+#### Bug Fixes
+
+- `#I432022` - The issue with "Grid component triggers multiple requests on state change if the column does not have field property" has been resolved.
+
 ## 21.1.41 (2023-04-18)
 
 ### Common
