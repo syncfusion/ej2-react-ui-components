@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 21.2.6 (2023-05-23)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I460888` - Issue with "Console error occurs when deleting files after data load" has been resolved.
+
+- `#I452946` - The issue of removed uploaded files when using templates and use State to set status has been resolved.
+
+### FormValidator
+
+#### Bug Fixes
+
+- `#I457392` - The issue of "an error message being displayed after selecting valid item from the list" has been resolved.
+
 ## 21.1.38 (2023-04-04)
 
 ### Range Slider
@@ -1221,6 +1237,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 21.2.4 (2023-05-09)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I455410` - The issue of the textarea getting hidden when dynamically updating an attribute using HTML Attribute has been resolved.
 
 ## 19.1.66 (2021-06-01)
 
