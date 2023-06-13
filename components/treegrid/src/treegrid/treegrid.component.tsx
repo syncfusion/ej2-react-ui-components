@@ -23,7 +23,7 @@ export class TreeGridComponent extends TreeGrid {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'columns': 'column', 'aggregates': {'aggregate': {'aggregateColumns': 'aggregateColumn'}}};
+    public directivekeys: { [key: string]: Object } = {'columns': {'column': {'stackedColumns': 'stackedColumn'}}, 'aggregates': {'aggregate': {'aggregateColumns': 'aggregateColumn'}}};
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = false;

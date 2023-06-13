@@ -11,6 +11,14 @@
 
 ## [Unreleased]
 
+## 21.2.10 (2023-06-13)
+
+### TreeMap
+
+#### Bug fixes
+
+- `#I469279` - The TreeMap component is now properly rendered when the web browser is resized.
+
 ## 18.2.44 (2020-07-07)
 
 ### TreeMap

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.2.10 (2023-06-13)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#I466814` - The Tooltip alignment issue when hovering over the last element has been resolved.
+
 ## 21.2.3 (2023-05-03)
 
 ### Tooltip
@@ -658,4 +666,12 @@ Dialog is a window that displays information to the user, and used to get the us
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 - **Keyboard Interaction** - The Dialog can be intractable through keyboard.
 
+
+## 21.2.4 (2023-05-09)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I453835` - The issue with "A console error occurred when using the position property in the dialog" has been resolved.
 

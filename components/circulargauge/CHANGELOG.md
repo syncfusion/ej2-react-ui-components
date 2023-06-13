@@ -5,6 +5,14 @@
 
 ## [Unreleased]
 
+## 21.2.10 (2023-06-13)
+
+### Circular Gauge
+
+#### Bug fixes
+
+- `#I469483` - The annotation is no longer removed when the pointer tooltip in the Circular Gauge component is removed.
+
 ## 21.1.35 (2023-03-23)
 
 ### Circular Gauge
