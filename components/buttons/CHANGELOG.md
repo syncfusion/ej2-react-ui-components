@@ -2,6 +2,39 @@
 
 ## [Unreleased]
 
+## 22.1.34 (2023-06-21)
+
+### Chip
+
+#### New Features
+
+- `#I422263` - Provided the htmlAttributes support for the Chip component.
+
+
+## 21.2.10 (2023-06-13)
+
+### RadioButton
+
+#### Bug Fixes
+
+- `#F182133` - The issue with "Correcting Ripple element is not destroyed properly while clicking on radio button component" has been resolved.
+
+## 21.2.6 (2023-05-23)
+
+### RadioButton
+
+#### Bug Fixes
+
+- `#I463728` - The issue with "Provide the boolean value support for radio button while using the v-model property in VUE platform" has been resolved.
+
+## 21.2.5 (2023-05-16)
+
+### RadioButton
+
+#### Bug Fixes
+
+- `#F182133` - The issue with "Ripple element is not destroyed properly while clicking on radio button component" has been resolved.
+
 ## 21.2.3 (2023-05-03)
 
 ### Switch
@@ -17,13 +50,6 @@
 #### Bug Fixes
 
 - `#I436942` - The issue with "Validation rule not display properly when we use Checkbox within form validator" has been resolved.
-
-### Chip
-
-#### New Features
-
-- `#I422263` - The Chip component now supports htmlAttributes, which enables users to add required attributes such as 'aria-label', 'title', 'class', and more to the Chip item.
-
 
 ## 21.1.35 (2023-03-23)
 

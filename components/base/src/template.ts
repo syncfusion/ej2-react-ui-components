@@ -5,11 +5,11 @@ import { setTemplateEngine, getTemplateEngine, detach, extend } from '@syncfusio
 import * as ReactDOM from 'react-dom';
 import * as React from 'react';
 /* eslint-disable @typescript-eslint/no-explicit-any */
-const stringCompiler: (template: string, helper?: object) => (data: Object | JSON) => string = getTemplateEngine();
+const stringCompiler: (template: string | Function, helper?: object) => (data: Object | JSON) => string = getTemplateEngine();
 // eslint-disable-next-line
 export function compile(templateElement: any, helper?: Object):
 (data: Object | JSON, component?: any, propName?: any, element?: any) => Object {
-    if (typeof templateElement === 'string') {
+    if (typeof templateElement === 'string' || (templateElement.prototype && templateElement.prototype.CSPTemplate && typeof templateElement === 'function')) {
         return stringCompiler(templateElement, helper);
     } else {
         return (data: any, component: any, prop: string, element: any): any => {
