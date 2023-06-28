@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+## 22.1.34 (2023-06-21)
+
+### Common
+
+#### New Features
+
+- Provided the TypeScript 5 compatible support for the React components.
+
+## 21.2.8 (2023-05-30)
+
+### Common
+
+#### Bug Fixes
+
+- `#I432022` - The issue with "Grid component triggers multiple requests on state change if the column has a field property as an empty string" has been resolved.
+
+## 21.2.6 (2023-05-23)
+
+### Common
+
+#### Bug Fixes
+
+- `#I432022` - The issue with "Grid component triggers multiple requests on state change if the column does not have field property" has been resolved.
+
 ## 21.1.41 (2023-04-18)
 
 ### Common

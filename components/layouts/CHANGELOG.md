@@ -2,6 +2,36 @@
 
 ## [Unreleased]
 
+## 22.1.36 (2023-06-28)
+
+### Dashboard Layout
+
+#### Bug Fixes
+
+- `#I474181` - The issue with Dashboard Layout component while setting panels in row 1 and none at row 0 has been resolved.
+
+## 21.2.9 (2023-06-06)
+
+### Dashboard Layout
+
+#### Bug Fixes
+
+- `#F182339` - Resolved the panel overlapping issue, when resize it after continuously performing drag and drop actions in Dashboard Layout component.
+
+### Splitter
+
+#### Bug Fixes
+
+- `#I463883` -  The issue of "updating the pane setting dynamically with the same value despite manually resizing the pane" has been resolved.
+
+## 21.2.6 (2023-05-23)
+
+### Splitter
+
+#### Bug Fixes
+
+- `#I451526` -  The issue with the "Pane resizing would not works properly" has been resolved.
+
 ## 20.4.48 (2023-02-01)
 
 ### Splitter
@@ -556,5 +586,21 @@ The available key features are
 - **Images and Title**: Support to include images with customizable caption positions in it.
 - **Action Buttons**: Supports to add buttons within the card either in vertical or horizontal alignment.
 - **Horizontal Card**: Allows to align card elements horizontally and also allows to stack the content vertically within horizontal alignment.
+
+
+## 21.1.36 (2023-06-28)
+
+### Dashboard Layout
+
+#### Bug Fixes
+
+- `#I474181` - The issue with Dashboard Layout component while setting panels in row 1 and none at row 0 has been resolved.
+
+### Splitter
+
+#### Bug Fixes
+
+- `#I469291` - The performance issue that occurred while dragging and hovering on the splitter bar has been resolved.
+- `#I469291` - The issue of content disappearing when resizing the pane has been resolved.
 
 
