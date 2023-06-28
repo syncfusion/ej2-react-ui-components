@@ -5,7 +5,7 @@
 
 ## [Unreleased]
 
-## 21.1.35 (2023-03-23)
+## 21.1.36 (2023-06-28)
 
 ### Circular Gauge
 
@@ -401,12 +401,4 @@ customized.
 - **Custom Label** - Supports the addition of custom label text in the required location of the gauge.
 - **User Interaction** - Supports interactive features like tooltip and pointer drag and drop.
 
-
-## 21.1.38 (2023-04-04)
-
-### Circular Gauge
-
-#### New Features
-
-- `#I416334` - The entire circular gauge, including the tooltip and legend, can now be rendered in the right-to-left (RTL) direction, which may be useful in some cultures.
 
