@@ -1,7 +1,7 @@
 import { ComplexBase } from '@syncfusion/ej2-react-base';
-import { ColumnModel } from '@syncfusion/ej2-treegrid';
+import { TreeGridColumnModel } from '@syncfusion/ej2-treegrid';
 
-export interface ColumnDirTypecast {
+export interface TreeGridColumnDirTypecast {
     template?: string | Function | any;
     headerTemplate?: string | Function | any;
     filterItemTemplate?: string | Function | any;
@@ -21,7 +21,7 @@ export interface ColumnDirTypecast {
  * </TreeGridComponent>
  * ```
  */
-export class ColumnDirective extends ComplexBase<ColumnModel| ColumnDirTypecast & { children?: React.ReactNode }, ColumnModel| ColumnDirTypecast> {
+export class ColumnDirective extends ComplexBase<TreeGridColumnModel| TreeGridColumnDirTypecast & { children?: React.ReactNode }, TreeGridColumnModel| TreeGridColumnDirTypecast> {
     public static moduleName: string = 'column';
     public static complexTemplate: Object = {'filterItemTemplate': 'filter.itemTemplate'};
 }
