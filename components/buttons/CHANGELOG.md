@@ -2,6 +2,50 @@
 
 ## [Unreleased]
 
+## 22.1.39 (2023-07-18)
+
+### Speed Dial
+
+#### Bug Fixes
+
+- `#I478092` - Enhanced the component's functionality, by introducing the `isPrimary` property to specify whether it is a primary button or not.
+
+## 22.1.38 (2023-07-11)
+
+### Switch
+
+#### Bug Fixes
+
+- `#I478637` - The issue with "Change event trigger twice for key down action of switch component" has been resolved.
+
+### Checkbox
+
+- Resolved checkbox wrapper width issue.
+
+## 21.2.10 (2023-06-13)
+
+### RadioButton
+
+#### Bug Fixes
+
+- `#F182133` - The issue with "Correcting Ripple element is not destroyed properly while clicking on radio button component" has been resolved.
+
+## 21.2.6 (2023-05-23)
+
+### RadioButton
+
+#### Bug Fixes
+
+- `#I463728` - The issue with "Provide the boolean value support for radio button while using the v-model property in VUE platform" has been resolved.
+
+## 21.2.5 (2023-05-16)
+
+### RadioButton
+
+#### Bug Fixes
+
+- `#F182133` - The issue with "Ripple element is not destroyed properly while clicking on radio button component" has been resolved.
+
 ## 21.2.3 (2023-05-03)
 
 ### Switch
@@ -17,13 +61,6 @@
 #### Bug Fixes
 
 - `#I436942` - The issue with "Validation rule not display properly when we use Checkbox within form validator" has been resolved.
-
-### Chip
-
-#### New Features
-
-- `#I422263` - The Chip component now supports htmlAttributes, which enables users to add required attributes such as 'aria-label', 'title', 'class', and more to the Chip item.
-
 
 ## 21.1.35 (2023-03-23)
 
@@ -457,5 +494,14 @@ RadioButton is a graphical user interface element that allows to select one opti
 - **States** - Provided with different states of RadioButton.
 - **Label** - Supports label and its positioning.
 - **Sizes** - Provided with different sizes of RadioButton.
+
+
+## 21.1.36 (2023-06-28)
+
+### Chip
+
+#### New Features
+
+- `#I422263` - Provided the htmlAttributes support for the Chip component.
 
 
