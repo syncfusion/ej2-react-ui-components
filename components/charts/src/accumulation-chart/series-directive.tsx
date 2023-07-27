@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { AccumulationSeriesModel } from '@syncfusion/ej2-charts';
 
 export interface AccumulationSeriesDirTypecast {
-    dataLabelTemplate?: string | Function | any;
+    dataLabel?: any;
 }
 /**
  * `AccumulationSeriesDirective` directive represent a series of the react AccumulationChart. 
@@ -17,7 +17,7 @@ export interface AccumulationSeriesDirTypecast {
  */
 export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesModel| AccumulationSeriesDirTypecast & { children?: React.ReactNode }, AccumulationSeriesModel| AccumulationSeriesDirTypecast> {
     public static moduleName: string = 'accumulationSeries';
-    public static complexTemplate: Object = {'dataLabelTemplate': 'dataLabel.template'};
+    public static complexTemplate: Object = {'dataLabel.template': 'dataLabel.template'};
 }
 
 export class AccumulationSeriesCollectionDirective extends ComplexBase<{}, {}> {

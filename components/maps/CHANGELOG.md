@@ -11,23 +11,15 @@
 
 ## [Unreleased]
 
-## 21.1.41 (2023-04-18)
-
-### Maps
-
-#### Bug fixes
-
-- `#I441762` - The position of the data labels will now be proper when the `geometryType` is set as **Normal**.
-
-## 21.1.38 (2023-04-04)
+## 22.2.5 (2023-07-27)
 
 ### Maps
 
 #### Bug Fixes
 
-- `#I425592` - The marker rendered in the custom map can now be dragged and dropped in the desired location based on the requirement.
+- `#I482286` - When the page containing the Maps, which is placed in the dashboard, is switched dynamically, script errors are no longer thrown.
 
-## 21.1.35 (2023-03-23)
+## 22.1.34 (2023-06-21)
 
 ### Maps
 

@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface StockChartTypecast {
-    tooltipTemplate?: string | Function | any;
+    tooltip?: any;
 }
 /**
  * Represents react Chart Component

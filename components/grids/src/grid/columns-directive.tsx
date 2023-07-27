@@ -5,7 +5,7 @@ export interface GridColumnDirTypecast {
     template?: string | Function | any;
     headerTemplate?: string | Function | any;
     commandsTemplate?: string | Function | any;
-    filterItemTemplate?: string | Function | any;
+    filter?: any;
     editTemplate?: string | Function | any;
     filterTemplate?: string | Function | any;
 }
@@ -23,7 +23,7 @@ export interface GridColumnDirTypecast {
  */
 export class ColumnDirective extends ComplexBase<GridColumnModel| GridColumnDirTypecast & { children?: React.ReactNode }, GridColumnModel| GridColumnDirTypecast> {
     public static moduleName: string = 'column';
-    public static complexTemplate: Object = {'filterItemTemplate': 'filter.itemTemplate'};
+    public static complexTemplate: Object = {'filter.itemTemplate': 'filter.itemTemplate'};
 }
 
 export class ColumnsDirective extends ComplexBase<{}, {}> {

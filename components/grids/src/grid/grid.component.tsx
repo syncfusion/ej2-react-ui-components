@@ -8,8 +8,8 @@ export interface GridTypecast {
     detailTemplate?: string | Function | any;
     toolbarTemplate?: string | Function | any;
     pagerTemplate?: string | Function | any;
-    editSettingsTemplate?: string | Function | any;
-    groupSettingsCaptionTemplate?: string | Function | any;
+    editSettings?: any;
+    groupSettings?: any;
 }
 /**
  * `GridComponent` represents the react Grid.

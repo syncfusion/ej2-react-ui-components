@@ -2,31 +2,25 @@
 
 ## [Unreleased]
 
-## 21.1.41 (2023-04-18)
+## 21.1.34 (2023-06-21)
 
 ### DatePicker
 
-#### Bug Fixes
+#### Features
 
-- `#453318` - Issue with "Placeholder text not get displayed on initial render with strict mode true case of the datepicker component."
+- Added support for full screen calendar in mobile mode with landscape and portrait orientations. Enable the feature by setting fullScreenMode property to true.
 
-- `#I447192` - The issue with "Exception is thrown when interacting with the datepicker component only when using the time zone extension" has been resolved.
+### DateRangePicker
 
-## 21.1.38 (2023-04-04)
+#### Features
 
-### DatePicker
-
-#### Bug Fixes
-
-- `#SF-446512` - Issue with "The mask placeholder not shown while bind with null value in ng-model" has been resolved.
-- `#SF-447843` - Issue with "after the form is reset, mask placeholder is not shown in the UI" has been resolved.
-- `#FB41541` - Resolved the issue where the change event was not triggering on the initial time when binding the component with strict mode.
+- Added support for full screen calendar in mobile mode with landscape and portrait orientations. Enable the feature by setting fullScreenMode property to true.
 
 ### DateTimePicker
 
-#### Bug Fixes
+#### Features
 
-- `#FB41541` - Resolved the issue where the change event was not triggering on the initial time when binding the component with strict mode.
+- Added support for full screen calendar in mobile mode with landscape and portrait orientations. Enable the feature by setting fullScreenMode property to true.
 
 ## 19.3.46 (2021-10-19)
 
@@ -1181,6 +1175,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 22.1.36 (2023-06-28)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#SF-472228` - Issue with "Entered text value not updated properly when focus out the DatePicker component" has been resolved.
 
 ## 19.2.46 (2021-07-06)
 

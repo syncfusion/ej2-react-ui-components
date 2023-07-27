@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface AccumulationChartTypecast {
-    tooltipTemplate?: string | Function | any;
+    tooltip?: any;
 }
 /**
  * Represents react AccumulationChart Component

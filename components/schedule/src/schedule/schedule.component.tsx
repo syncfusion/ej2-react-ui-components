@@ -9,18 +9,14 @@ export interface ScheduleTypecast {
     dayHeaderTemplate?: string | Function | any;
     cellTemplate?: string | Function | any;
     cellHeaderTemplate?: string | Function | any;
-    eventSettingsTooltipTemplate?: string | Function | any;
-    eventSettingsTemplate?: string | Function | any;
+    eventSettings?: any;
     editorTemplate?: string | Function | any;
     monthHeaderTemplate?: string | Function | any;
-    timeScaleMinorSlotTemplate?: string | Function | any;
-    timeScaleMajorSlotTemplate?: string | Function | any;
+    timeScale?: any;
     resourceHeaderTemplate?: string | Function | any;
     headerIndentTemplate?: string | Function | any;
-    quickInfoTemplatesHeader?: string | Function | any;
-    quickInfoTemplatesContent?: string | Function | any;
-    quickInfoTemplatesFooter?: string | Function | any;
-    groupHeaderTooltipTemplate?: string | Function | any;
+    quickInfoTemplates?: any;
+    group?: any;
 }
 /**
  * `ScheduleComponent` represents the react Schedule.

@@ -2,6 +2,39 @@
 
 ## [Unreleased]
 
+## 22.1.39 (2023-07-18)
+
+### File Manager
+
+#### Bug fixes
+
+- `#I472742` - The exception that occurred when using the File Manager download button multiple times in the Amazon File Provider has been resolved.
+
+## 22.1.38 (2023-07-11)
+
+### File Manager
+
+#### Bug fixes
+
+- `#I473871` - The issue with renaming folders or files in the Navigation Pane of the File Manager component has been resolved.
+
+## 22.1.34 (2023-06-21)
+
+### File Manager
+
+#### Features
+
+- Provided the `ShowItemCheckBoxes` property to control the visibility of checkboxes.
+
+## 21.2.5 (2023-05-16)
+
+### File Manager
+
+#### Bug fixes
+
+- `#I458668` - The issue, replace dialog shows when uploading the same file to different directories in File Manager with the SQL File Provider has been resolved.
+- `#I464322` - The issue with `fileOpen` event in the File Manager component has been resolved.
+
 ## 21.2.3 (2023-05-03)
 
 ### File Manager
@@ -420,11 +453,11 @@
 
 - The `beforeFileLoad` event’s `module` argument values have been changed as follows:
 
-|Argument Name|Old Value|New Value|
-|----|----|----|
-|module|navigationpane|NavigationPane|
-|module|Grid|DetailsView|
-|module|LargeIcon|LargeIconView|
+| Argument Name | Old Value | New Value | 
+|---|---|---|
+| module | navigationpane | NavigationPane | 
+| module | Grid | DetailsView | 
+| module | LargeIcon | LargeIconView | 
 
 ## 17.1.32-beta (2019-03-13)
 
@@ -432,9 +465,21 @@
 
 The `File Manager` is a graphical user interface component used to manage the file system. It enables the user to perform common file operations such as accessing, editing, uploading, downloading, and sorting files and folders. This component also allows easy navigation for browsing or selecting a file or folder from the file system.
 
+
 - **Different Views** - Provides detailed and large icon views.
 - **Context menu support** - Provides detailed and large icon views.
 - **Custom toolbar support** - Customize the toolbar to provide only necessary features.
 - **Multiple file selection** - Select multiple files simultaneously.
 - **Accessibility** - Features built-in accessibility support that makes all features accessible through keyboard interaction, screen readers, or other assistive technology devices.
 - **Localization** - Translate file names to any supported language.
+
+
+## 22.1.36 (2023-06-28)
+
+### File Manager
+
+#### Bug Fixes
+
+- `#I468614` - Provided the support to render the details view with functional template.
+
+

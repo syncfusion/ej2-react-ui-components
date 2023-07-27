@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface RangeNavigatorTypecast {
-    tooltipTemplate?: string | Function | any;
+    tooltip?: any;
 }
 /**
  * Represents react RangeNavigator Component

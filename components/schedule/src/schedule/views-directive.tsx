@@ -11,9 +11,8 @@ export interface ViewsDirTypecast {
     monthHeaderTemplate?: string | Function | any;
     resourceHeaderTemplate?: string | Function | any;
     headerIndentTemplate?: string | Function | any;
-    timeScaleMinorSlotTemplate?: string | Function | any;
-    timeScaleMajorSlotTemplate?: string | Function | any;
-    groupHeaderTooltipTemplate?: string | Function | any;
+    timeScale?: any;
+    group?: any;
 }
 /**
  * `ViewsDirective` represent a view of the react Schedule. 
@@ -29,7 +28,7 @@ export interface ViewsDirTypecast {
  */
 export class ViewDirective extends ComplexBase<ViewsModel| ViewsDirTypecast & { children?: React.ReactNode }, ViewsModel| ViewsDirTypecast> {
     public static moduleName: string = 'view';
-    public static complexTemplate: Object = {'timeScaleMinorSlotTemplate': 'timeScale.minorSlotTemplate', 'timeScaleMajorSlotTemplate': 'timeScale.majorSlotTemplate', 'groupHeaderTooltipTemplate': 'group.headerTooltipTemplate'};
+    public static complexTemplate: Object = {'timeScale.minorSlotTemplate': 'timeScale.minorSlotTemplate', 'timeScale.majorSlotTemplate': 'timeScale.majorSlotTemplate', 'group.headerTooltipTemplate': 'group.headerTooltipTemplate'};
 }
 
 export class ViewsDirective extends ComplexBase<{}, {}> {
