@@ -3,7 +3,7 @@ import { TabItemModel } from '@syncfusion/ej2-navigations';
 
 export interface TabItemDirTypecast {
     content?: string | Function | any;
-    headerText?: string | Function | any;
+    header?: any;
     headerTemplate?: string | Function | any;
 }
 /**
@@ -20,7 +20,7 @@ export interface TabItemDirTypecast {
  */
 export class TabItemDirective extends ComplexBase<TabItemModel| TabItemDirTypecast & { children?: React.ReactNode }, TabItemModel| TabItemDirTypecast> {
     public static moduleName: string = 'tabItem';
-    public static complexTemplate: Object = {'headerText': 'header.text'};
+    public static complexTemplate: Object = {'header.text': 'header.text'};
 }
 
 export class TabItemsDirective extends ComplexBase<{}, {}> {

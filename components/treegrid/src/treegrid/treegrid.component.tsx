@@ -8,7 +8,7 @@ export interface TreeGridTypecast {
     pagerTemplate?: string | Function | any;
     rowTemplate?: string | Function | any;
     detailTemplate?: string | Function | any;
-    editSettingsTemplate?: string | Function | any;
+    editSettings?: any;
 }
 /**
  * `TreeTreeGridComponent` represents the react TreeTreeGrid.

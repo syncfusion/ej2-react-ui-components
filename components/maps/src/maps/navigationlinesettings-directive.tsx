@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { NavigationLineSettingsModel } from '@syncfusion/ej2-maps';
 
 export interface NavigationLineSettingsDirTypecast {
-    tooltipSettingsTemplate?: string | Function | any;
+    tooltipSettings?: any;
 }
 /**
  * Represents the directive to define the navigation lines in the maps.
@@ -20,7 +20,7 @@ export interface NavigationLineSettingsDirTypecast {
  */
 export class NavigationLineDirective extends ComplexBase<NavigationLineSettingsModel| NavigationLineSettingsDirTypecast & { children?: React.ReactNode }, NavigationLineSettingsModel| NavigationLineSettingsDirTypecast> {
     public static moduleName: string = 'navigationLine';
-    public static complexTemplate: Object = {'tooltipSettingsTemplate': 'tooltipSettings.template'};
+    public static complexTemplate: Object = {'tooltipSettings.template': 'tooltipSettings.template'};
 }
 
 export class NavigationLinesDirective extends ComplexBase<{}, {}> {

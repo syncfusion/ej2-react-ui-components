@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 22.2.7 (2023-08-02)
+
+### Diagram
+
+#### New Feature
+
+- `#I464388` - load Event to notify diagram initial render is added.
+
+#### Bug Fixes
+
+-`#I477967`  - Now, symbol size does not change after dragging the symbols.
+
+
 ## 22.2.5 (2023-07-27)
 
 ### Diagram

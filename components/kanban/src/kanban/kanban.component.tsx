@@ -5,10 +5,10 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 export interface KanbanTypecast {
     tooltipTemplate?: string | Function | any;
-    columnsTemplate?: string | Function | any;
-    swimlaneSettingsTemplate?: string | Function | any;
-    cardSettingsTemplate?: string | Function | any;
-    dialogSettingsTemplate?: string | Function | any;
+    columns?: any;
+    swimlaneSettings?: any;
+    cardSettings?: any;
+    dialogSettings?: any;
 }
 /**
  * `KanbanComponent` represents the react Kanban.

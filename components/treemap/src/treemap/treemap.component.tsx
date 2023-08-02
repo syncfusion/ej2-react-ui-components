@@ -4,8 +4,8 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface TreeMapTypecast {
-    tooltipSettingsTemplate?: string | Function | any;
-    leafItemSettingsLabelTemplate?: string | Function | any;
+    tooltipSettings?: any;
+    leafItemSettings?: any;
 }
 /**
  * Represents the React TreeMap component. It is used to visualize both hierarchical and flat data.

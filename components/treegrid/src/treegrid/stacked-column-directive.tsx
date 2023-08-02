@@ -4,7 +4,7 @@ import { StackedColumnModel } from '@syncfusion/ej2-treegrid';
 export interface StackedColumnDirTypecast {
     template?: string | Function | any;
     headerTemplate?: string | Function | any;
-    filterItemTemplate?: string | Function | any;
+    filter?: any;
     filterTemplate?: string | Function | any;
     commandsTemplate?: string | Function | any;
     editTemplate?: string | Function | any;
@@ -12,7 +12,7 @@ export interface StackedColumnDirTypecast {
 
 export class StackedColumnDirective extends ComplexBase<StackedColumnModel| StackedColumnDirTypecast & { children?: React.ReactNode }, StackedColumnModel| StackedColumnDirTypecast> {
     public static moduleName: string = 'stackedColumn';
-    public static complexTemplate: Object = {'filterItemTemplate': 'filter.itemTemplate'};
+    public static complexTemplate: Object = {'filter.itemTemplate': 'filter.itemTemplate'};
 }
 
 export class StackedColumnsDirective extends ComplexBase<{}, {}> {

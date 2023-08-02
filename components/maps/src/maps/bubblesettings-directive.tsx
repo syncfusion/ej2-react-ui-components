@@ -2,7 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { BubbleSettingsModel } from '@syncfusion/ej2-maps';
 
 export interface BubbleSettingsDirTypecast {
-    tooltipSettingsTemplate?: string | Function | any;
+    tooltipSettings?: any;
 }
 /**
  * Represents the directive to define the bubbles in the maps.
@@ -20,7 +20,7 @@ export interface BubbleSettingsDirTypecast {
  */
 export class BubbleDirective extends ComplexBase<BubbleSettingsModel| BubbleSettingsDirTypecast & { children?: React.ReactNode }, BubbleSettingsModel| BubbleSettingsDirTypecast> {
     public static moduleName: string = 'bubble';
-    public static complexTemplate: Object = {'tooltipSettingsTemplate': 'tooltipSettings.template'};
+    public static complexTemplate: Object = {'tooltipSettings.template': 'tooltipSettings.template'};
 }
 
 export class BubblesDirective extends ComplexBase<{}, {}> {

@@ -4,8 +4,7 @@ import { PanelModel } from '@syncfusion/ej2-layouts';
 export interface PanelDirTypecast {
     header?: string | Function | any;
     content?: string | Function | any;
-    panelsHeader?: string | Function | any;
-    panelsContent?: string | Function | any;
+    panels?: any;
 }
 /**
  * `PanelsDirective` represent a presets of the react dashboardlayout. 
@@ -21,7 +20,7 @@ export interface PanelDirTypecast {
  */
 export class PanelDirective extends ComplexBase<PanelModel| PanelDirTypecast & { children?: React.ReactNode }, PanelModel| PanelDirTypecast> {
     public static moduleName: string = 'panel';
-    public static complexTemplate: Object = {'panelsHeader': 'panels.header', 'panelsContent': 'panels.content'};
+    public static complexTemplate: Object = {'panels.header': 'panels.header', 'panels.content': 'panels.content'};
 }
 
 export class PanelsDirective extends ComplexBase<{}, {}> {

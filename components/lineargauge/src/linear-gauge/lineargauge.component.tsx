@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface LinearGaugeTypecast {
-    tooltipTemplate?: string | Function | any;
+    tooltip?: any;
 }
 /**
  * Represents the React Linear Gauge Component. This tag is used to customize the properties of the linear gauge to visualize the data in linear scale.

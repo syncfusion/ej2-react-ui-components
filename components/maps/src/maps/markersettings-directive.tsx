@@ -3,7 +3,7 @@ import { MarkerSettingsModel } from '@syncfusion/ej2-maps';
 
 export interface MarkerSettingsDirTypecast {
     template?: string | Function | any;
-    tooltipSettingsTemplate?: string | Function | any;
+    tooltipSettings?: any;
 }
 /**
  * Represents the directive to define the markers in the maps.
@@ -21,7 +21,7 @@ export interface MarkerSettingsDirTypecast {
  */
 export class MarkerDirective extends ComplexBase<MarkerSettingsModel| MarkerSettingsDirTypecast & { children?: React.ReactNode }, MarkerSettingsModel| MarkerSettingsDirTypecast> {
     public static moduleName: string = 'marker';
-    public static complexTemplate: Object = {'tooltipSettingsTemplate': 'tooltipSettings.template'};
+    public static complexTemplate: Object = {'tooltipSettings.template': 'tooltipSettings.template'};
 }
 
 export class MarkersDirective extends ComplexBase<{}, {}> {

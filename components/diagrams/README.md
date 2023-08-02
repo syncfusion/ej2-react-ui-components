@@ -57,7 +57,7 @@ Add CSS references needed for a Diagram in **src/App.css** from the **../node_mo
 In the **src/App.tsx** file, use the following code snippet to render the Syncfusion React Diagram control and import **App.css** to apply styles to the diagram:
 
 ```typescript
-import { ConnectorModel, DiagramComponent, NodeModel } from "@syncfusion/ej2-react-diagrams";
+import { DiagramComponent } from "@syncfusion/ej2-react-diagrams";
 import * as React from 'react';
 import './App.css';
 
