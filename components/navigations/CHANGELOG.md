@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 22.2.8 (2023-08-08)
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#I486269` - An issue with Item directive template not updated dynamically has been fixed.
+
+### Tab
+
+#### Bug Fixes
+
+- `#I469335` - Provided `clearTemplates` API support to control template clearing while adding, updating, and deleting items.
+
 ## 22.2.7 (2023-08-02)
 
 ### Menu
