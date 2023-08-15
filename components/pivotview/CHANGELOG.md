@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.2.9 (2023-08-15)
+
+### Pivot Table
+
+#### Bug fixes
+
+- `I489341` - The toolbar menu items will now be properly displayed in the pivot table with the material dark theme.
+
 ## 22.2.8 (2023-08-08)
 
 ### Pivot Table

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.2.9 (2023-08-15)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I486181` - Fixed an issue where the DateRangePicker popup was not opening when there was not enough space in the window.
+
 ## 22.2.8 (2023-08-08)
 
 ### TimePicker

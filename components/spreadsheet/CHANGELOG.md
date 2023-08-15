@@ -1286,6 +1286,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
 
+## 22.2.8 (2023-08-08)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I481838` - Issue with "keypad is not opening on the iPad Safari browser when double tap on the cell" has been resolved.
+- `#I481967` - Issue with "first character is not updated when editing with an external keyboard on the iPad Safari browser" has been resolved.
+
 ## 21.1.39 (2023-04-11)
 
 ### Spreadsheet

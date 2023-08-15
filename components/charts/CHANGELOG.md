@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 22.2.9 (2023-08-15)
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- `#I486337` - Fixed an issue where the console error thrown when disabling the animation.
+- `#I486337` - Now the destroy method is properly working in accumulation chart.
+
+### Chart
+
+#### Bug Fixes
+
+- `#I487053` - Now, `startFromZero` is functioning correctly in stackingColumn.
+
 ## 22.2.8 (2023-08-08)
 
 ### Chart

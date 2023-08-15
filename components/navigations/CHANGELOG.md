@@ -2,20 +2,6 @@
 
 ## [Unreleased]
 
-## 22.2.8 (2023-08-08)
-
-### Toolbar
-
-#### Bug Fixes
-
-- `#I486269` - An issue with Item directive template not updated dynamically has been fixed.
-
-### Tab
-
-#### Bug Fixes
-
-- `#I469335` - Provided `clearTemplates` API support to control template clearing while adding, updating, and deleting items.
-
 ## 22.2.7 (2023-08-02)
 
 ### Menu
@@ -2167,6 +2153,20 @@ TreeView component is used to represent hierarchical data in a tree like structu
 - **Template** - Allows you to customize the nodes in TreeView.
 - **Accessibility** - Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 22.2.8 (2023-08-08)
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#I486269` - An issue with Item directive template not updated dynamically has been fixed.
+
+### Tab
+
+#### Bug Fixes
+
+- `#I469335` - Provided `clearTemplates` API support to control template clearing while adding, updating, and deleting items.
 
 ## 20.3.52 (2022-10-26)
 
