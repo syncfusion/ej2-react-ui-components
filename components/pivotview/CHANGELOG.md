@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.2.10 (2023-08-22)
+
+### Pivot Table
+
+#### Bug fixes
+
+- The issue with server side rendering in next.js has been resolved.
+
 ## 22.2.9 (2023-08-15)
 
 ### Pivot Table

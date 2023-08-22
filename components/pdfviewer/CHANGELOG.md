@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
+## 22.2.10 (2023-08-22)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I489048` - Now, the Unload API is properly called for the respective components when we use multiple components on a page. 
+- `#I489448` - Now, it is possible to add form fields after a few pages with edited properties.
+- `#I490199` - Now, the touch-based page scrolling is works as expected on simulated iOS/iPad devices.
+- The issue with server side rendering in next.js has been resolved.
+
 ## 22.2.9 (2023-08-15)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I487346` - The free text annotation is now visible during printing when the free text annotation settings is customised.
+- `#I489176` - Now, the line type annotations are drawn properly on mobile devices after zooming.
+
+## 22.2.8 (2023-08-08)
 
 ### PDF Viewer
 

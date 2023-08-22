@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 22.2.10 (2023-08-22)
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- `#I490028` - Fixed an issue where the `centerLabel` text was not being displayed in bold formatting.
+
+### Sparkline
+
+#### Bug Fixes
+
+- `#F45948` - Fixed issue with sparkline pie not displaying properly when having single point.
+- `#F45935` - Fixed an issue where the chart gets vanished when data updated after resizing the chart.
+
 ## 22.2.9 (2023-08-15)
 
 ### Accumulation chart

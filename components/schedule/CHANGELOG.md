@@ -2,18 +2,13 @@
 
 ## [Unreleased]
 
-## 22.2.8 (2023-08-08)
-
-### Schedule
-
-- `#I478902` - Performance issue in calculating scrollbar width has been fixed.
-
 ## 22.2.5 (2023-07-27)
 
 ### Schedule
 
 - `#I480473` - An issue with "Role not inside the required context" accessibility issue in the Schedule component's recurrence editor has been fixed.
 - `#I474091` - The issue of duplicate events being created after changing the recurrence of certain events has been fixed.
+- `#I478902` - Performance issue in calculating scrollbar width has been fixed.
 
 ## 22.1.38 (2023-07-11)
 
@@ -1787,6 +1782,14 @@ Schedule is an event calendar which facilitates user with the common Outlook-cal
 - **Localization** - All the static text and date content can be localized to any desired language. Also, it can be displayed with appropriate time mode and date-format as per the localized language.
 - **RTL** - Supports displaying the component to display in the direction from right to left.
 
+
+## 22.2.8 (2023-08-08)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I488677` - Reference exception thrown when rendering the schedule on nextjs has been fixed.
 
 ## 22.1.36 (2023-06-28)
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.2.10 (2023-08-22)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I489129` -  Fixed an issue where the Daterangepicker popup was not opening properly on iPad devices.
+
 ## 22.2.9 (2023-08-15)
 
 ### DateRangePicker
