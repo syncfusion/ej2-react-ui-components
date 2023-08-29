@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 22.2.11 (2023-08-29)
+
+### Carousel
+
+#### Bug Fixes
+
+- `#F46021` - The issue where the current item position within the Carousel could shift off-center upon window resizing has been fixed.
+
+### Breadcrumb
+
+#### Bug Fixes
+
+- `#I474929` - The issue with "CSP template not working in breadcrumb component" has been resolved.
+
+### Tab
+
+#### Bug Fixes
+
+- `#FB45909` - The issue where the active item indicator's width was inaccurately calculated during the initial rendering of the Tab while utilizing the `headerTemplate` has been fixed.
+
 ## 22.2.7 (2023-08-02)
 
 ### Menu

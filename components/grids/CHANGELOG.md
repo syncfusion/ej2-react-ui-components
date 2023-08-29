@@ -2,6 +2,27 @@
 
 ## [Unreleased]
 
+## 22.2.11 (2023-08-29)
+
+### Grid
+
+#### Bug fixes
+
+- `#I488479` - The problem of the incorrect right indent of the custom filter dialog in RTL mode has been resolved.
+- `#I486810` - Resolved the issue where tab key focus navigation during batch editing.
+- `#I480995` - The error that occurred when update an image using the `updateCell` method has been resolved.
+- `#I489532` - The issue with the locale in the custom filter dialog for the excel filter has been successfully resolved.
+
+## 22.2.10 (2023-08-22)
+
+### Grid
+
+#### Bug fixes
+
+- `#I486264` - JAWS screen reader doesn't read the grid cells properly when the pager is present has been fixed.
+- `#I490535` - Fixed the error in the script that occurred when cells were saved using a grid that had grouping and aggregate features.
+- `#I485527` - Unwanted horizontal auto-scrolling occurs when opening and closing the column chooser in column menu has been resolved.
+
 ## 22.2.9 (2023-08-15)
 
 ### Grid

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.2.11 (2023-08-29)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I493593` - Resolved the Script error thrown in `getRule` method of QueryBuilder while using change event.
+
 ## 22.2.9 (2023-08-15)
 
 ### QueryBuilder
