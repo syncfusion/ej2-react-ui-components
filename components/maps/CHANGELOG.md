@@ -11,6 +11,14 @@
 
 ## [Unreleased]
 
+## 22.2.12 (2023-09-05)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I493376` - The tooltip will now be displayed properly above the marker templates.
+
 ## 22.2.8 (2023-08-08)
 
 ### Maps

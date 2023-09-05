@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.2.12 (2023-09-05)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I496196` - Issue with "script error throws in the sheet tab disabled spreadsheet when importing the JSON data using `openFromJson` method" has been resolved.
+
 ## 22.1.37 (2023-07-04)
 
 ### Spreadsheet

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.2.12 (2023-09-05)
+
+### Grid
+
+#### Bug fixes
+
+- `#I490067` - Fixed the issue where all checkboxes should be checked when selecting a row and clicking the header checkbox.
+
 ## 22.2.11 (2023-08-29)
 
 ### Grid
@@ -12,6 +20,12 @@
 - `#I486810` - Resolved the issue where tab key focus navigation during batch editing.
 - `#I480995` - The error that occurred when update an image using the `updateCell` method has been resolved.
 - `#I489532` - The issue with the locale in the custom filter dialog for the excel filter has been successfully resolved.
+
+- `#I488479` - The problem of the incorrect right indent of the custom filter dialog in RTL mode has been resolved.
+- `#I486810` - Resolved the issue where tab key focus navigation during batch editing.
+- `#I480995` - The error that occurred when update an image using the `updateCell` method has been resolved.
+- `#I489532` - The issue with the locale in the custom filter dialog for the excel filter has been successfully resolved.
+- `#I490090` - Script error occurs when Dynamically changing edit mode as batch editing using react states and performing autofill has been resolved.
 
 ## 22.2.10 (2023-08-22)
 

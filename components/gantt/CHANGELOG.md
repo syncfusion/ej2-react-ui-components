@@ -2,18 +2,44 @@
 
 ## [Unreleased]
 
-## 22.2.11 (2023-08-29)
+## 22.2.12 (2023-09-05)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
+
+- `#I488557` - The project dates are not modified after changing the timeline.
+- `#I472635` - When pressing the insert key `newRowPosition` bottom row is not highlighted.
+- `#I489655` - Milestone is not converting back to taskbar when we have milestone property has been fixed.
+- `#I492520` - Critical path styling not getting cleared correctly issue has been fixed.
+- `#I492654` - When empty data source pdf export exception thrown issue has been fixed.
+- `#I485527` - Filter menu opening issue in column menu has been fixed.
+- `#I494859` - Gantt shrinks when we update the datasource issue has been fixed.
+
+- `#I488557` - The project dates are not modified after changing the timeline.
+- `#I472635` - When pressing the insert key `newRowPosition` bottom row is not highlighted.
+- `#I489655` - Milestone is not converting back to taskbar when we have milestone property has been fixed.
+- `#I492520` - Critical path styling not getting cleared correctly issue has been fixed.
+- `#I492654` - When empty data source pdf export exception thrown issue has been fixed.
+- `#I485527` - Filter menu opening issue in column menu has been fixed.
+
+## 22.2.11 (2023-08-29)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I485527` - Filter menu opening issue in column menu has been fixed.
+- `#I491313` - Multiple records were selected after using the context menu, adding the milestone position wrong issue has been fixed.
+- `#F183168` - Gantt Chart not refreshing after adding new item is fixed.
+- `#I491178` - Data modified in the server is not reflected in the rendered Gantt Chart is fixed.
 
 - `#I485527` - Filter menu opening issue in column menu has been fixed.
 - `#I491313` - Multiple records were selected after using the context menu, adding the milestone position wrong issue has been fixed.
 
 ## 22.2.10 (2023-08-22)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -25,7 +51,7 @@
 
 ## 22.2.9 (2023-08-15)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -45,7 +71,7 @@
 
 ## 22.2.8 (2023-08-08)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -58,7 +84,7 @@
 
 ## 22.2.7 (2023-08-02)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -85,7 +111,7 @@
 
 ## 22.2.5 (2023-07-27)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -104,7 +130,7 @@
 
 ## 22.1.39 (2023-07-18)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -112,7 +138,7 @@
 
 ## 22.1.38 (2023-07-11)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -128,7 +154,7 @@
 
 ## 22.1.37 (2023-07-04)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -144,7 +170,7 @@
 
 ## 22.1.36 (2023-06-28)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -159,7 +185,7 @@
 
 ## 22.1.34 (2023-06-21)
 
-### Gantt Chart
+### Gantt
 
 #### Features
 
@@ -172,7 +198,7 @@
 
 ## 21.2.10 (2023-06-13)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -186,7 +212,7 @@
 
 ## 21.2.9 (2023-06-06)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -217,7 +243,7 @@
 
 ## 21.2.8 (2023-05-30)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -237,7 +263,7 @@
 
 ## 21.2.6 (2023-05-23)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -249,7 +275,7 @@
 
 ## 21.2.5 (2023-05-16)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -265,7 +291,7 @@
 
 ## 21.2.4 (2023-05-09)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -280,7 +306,7 @@
 
 ## 21.2.3 (2023-05-03)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -294,7 +320,7 @@
 
 ## 21.1.41 (2023-04-18)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -314,7 +340,7 @@
 
 ## 21.1.38 (2023-04-04)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -329,7 +355,7 @@
 
 ## 21.1.37 (2023-03-29)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
@@ -343,7 +369,7 @@
 
 ## 21.1.35 (2023-03-23)
 
-### Gantt Chart
+### Gantt
 
 #### Features
 
@@ -1971,7 +1997,7 @@
 
 ## 21.1.36 (2023-06-28)
 
-### Gantt Chart
+### Gantt
 
 #### Bug Fixes
 
