@@ -1203,7 +1203,7 @@
  For any questions or assistance, you can:
 * Visit the [Syncfusion support portal](https://support.syncfusion.com/).
 * Post your queries on the [community forums](https://www.syncfusion.com/forums).
-* Renew your subscription by clicking [here](https://www.syncfusion.com/sales/products?utm_source=github&utm_medium=listing&utm_campaign=ej2-streamlit-components) or contacting our sales team at <salessupport@syncfusion.com>.
+* Renew your subscription by clicking [here](https://www.syncfusion.com/sales/products?utm_source=github&utm_medium=listing&utm_campaign=ej2-react-ui-components) or contacting our sales team at <salessupport@syncfusion.com>.
 * If you have specific feature requests or suggestions, please submit them through our [feedback portal](https://www.syncfusion.com/feedback/react).
  ## License
  For detailed information about the Syncfusion Essential Studio license and copyright, please refer to the [license](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license).
