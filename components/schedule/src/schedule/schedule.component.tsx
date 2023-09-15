@@ -11,6 +11,8 @@ export interface ScheduleTypecast {
     cellHeaderTemplate?: string | Function | any;
     eventSettings?: any;
     editorTemplate?: string | Function | any;
+    editorHeaderTemplate?: string | Function | any;
+    editorFooterTemplate?: string | Function | any;
     monthHeaderTemplate?: string | Function | any;
     timeScale?: any;
     resourceHeaderTemplate?: string | Function | any;

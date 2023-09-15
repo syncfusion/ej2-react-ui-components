@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 23.1.36 (2023-09-15)
+
+### HeatMap
+
+#### New Features
+
+- `#I450186` - HeatMap's axis labels can now include line break characters.
+- `#I287338` - Label templates can be displayed in place of cell labels to provide additional information.
+
 ## 22.2.10 (2023-08-22)
 
 ### HeatMap

@@ -2,23 +2,7 @@
 
 ## [Unreleased]
 
-## 22.2.8 (2023-08-08)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- `#I486201` - Issue in "DropDownButton Popup flickering issue while using the target property." has been resolved.
-
-## 22.1.37 (2023-07-04)
-
-### SplitButton
-
-#### Bug Fixes
-
-- `#I464857` - Issue in Script error When we selecting SplitButton using keyboard interaction has been resolved.
-
-## 22.1.34 (2023-06-21)
+## 23.1.36 (2023-09-15)
 
 ### DropDownButton
 

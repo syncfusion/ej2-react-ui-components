@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 23.1.36 (2023-09-15)
+
+### TreeView
+
+#### Bug fixes
+
+- `#I496955` - The expanded state not maintained while check the child node has been resolved.
+- `#I488527` - The issue with when holding the mouse left click to select the TreeView nodes has been resolved.
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#I493526` - An issue with scrollable not being created at the initial rendering of the Toolbar when rendering the items using templates has been fixed.
+
 ## 22.2.11 (2023-08-29)
 
 ### Carousel

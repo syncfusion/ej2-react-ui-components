@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.36 (2023-09-15)
+
+### Common
+
+#### Bug Fixes
+
+- `#I479747` - The issue with "sample browser level codes are present in React stack blitz samples" has been resolved.
+
 ## 22.2.5 (2023-07-27)
 
 ### Common
@@ -9,7 +17,6 @@
 #### Bug Fixes
 
 - `#F181035` - The issue with "the Schedule component throwing compilation issues while using the timeScale property in the TypeScript sample" has been resolved.
-- `#I479747` - The issue with "sample browser level codes are present in React stack blitz samples" has been resolved.
 
 ## 22.1.34 (2023-06-21)
 

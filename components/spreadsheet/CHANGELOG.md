@@ -2,21 +2,19 @@
 
 ## [Unreleased]
 
-## 22.2.12 (2023-09-05)
+## 23.1.36 (2023-09-15)
 
 ### Spreadsheet
+
+#### Features
+
+- `#339651` - Now, provided support for displaying the error alert dialog when an invalid formula is typed, or the wrong number of arguments is supplied to the formula.
+- `#369492` - Now, you can experience cut and paste actions in the Spreadsheet faster compared to earlier versions.
+- `#476502` - Now, you can experience smooth scrolling with multiple conditional formatting set in the Spreadsheet, which is faster compared to earlier versions.
 
 #### Bug fixes
 
-- `#I496196` - Issue with "script error throws in the sheet tab disabled spreadsheet when importing the JSON data using `openFromJson` method" has been resolved.
-
-## 22.1.37 (2023-07-04)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I472639` - Issue with "merged cells become mixed up with one another while scrolling over the frozen column applied sheet" has been resolved.
+- `#F184267` - Issue with "cell value is changed as a string on the custom percentage formatted cell when you type a value with the % symbol" has been resolved.
 
 ## 22.1.34 (2023-06-21)
 
@@ -1293,15 +1291,6 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
-
-## 22.2.8 (2023-08-08)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I481838` - Issue with "keypad is not opening on the iPad Safari browser when double tap on the cell" has been resolved.
-- `#I481967` - Issue with "first character is not updated when editing with an external keyboard on the iPad Safari browser" has been resolved.
 
 ## 21.1.39 (2023-04-11)
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.36 (2023-09-15)
+
+### Document Editor
+
+#### New Features
+
+- `#I471020` - Added support for table title and description.
+
 ## 22.2.12 (2023-09-05)
 
 ### Document Editor
@@ -152,12 +160,21 @@
 
 ### Document Editor
 
-#### New Features
+#### Bug Fixes
 
-- `#I397854`, `#I401771` - Added support for editing alternate text for images.
-- `#I370306`, `#I438565` - Added support for character spacing and scaling.
-- `#I273864`, `#I318326`, `#I325320`, `#I331615`, `#I339872`, `#F164047` - Added support for linking to the previous header/footer.
-- `#I445060`, `#I468741` - Added a property in the `selectionChanged` event arguments to identify whether the user has completed their selection.
+- `#I462679` - Resolved performance issue occurred when inserting Text.
+- `#F182725` - Resolved the table with border color below 1pt.
+- `#I470871` - Resolved the issue in displaying the page number in the header section.
+- `#I471871` - Resolved the drag & drop shape issue.
+- `#I464996` - Resolved the table formatting issue while undoing.
+- `#I466554` - Resolved the table unresponsive issue when backspacing.
+- `#I473944` - Resolved the font change when exporting a document in docx format.
+- `#I471205` - Resolved the issue occurred when loading a document.
+- `#FB44186` - Resolved the horizontal line appears issue in the page header.
+- `#F182850` - Resolved the issue in docx exporting.
+- `#I469096` - Resolved the loss of original text formatting while pasting.
+- `#I464759` - Resolved the issue in shape rendering.
+- `#I464934` - Resolved the issue in customize the page size after inserting next page break.
 
 ## 21.2.10 (2023-06-13)
 
@@ -3598,15 +3615,4 @@ The Document Editor component is used to create, edit, view, and print Word docu
 - Creates a lightweight Word viewer using module injection to view and prints Word documents.
 - Added `Syncfusion.EJ2.DocumentEditor` NuGet package that contains helper library for converting Word documents to `Syncfusion Document Text (*.sfdt)`. It supports .NET Standard 2.0 Framework.
 
-
-## 21.1.36 (2023-06-28)
-
-### Document Editor
-
-#### New Features
-
-- `#I397854`, `#I401771` - Added support for editing alternate text for images.
-- `#I370306`, `#I438565` - Added support for character spacing and scaling.
-- `#I273864`, `#I318326`, `#I325320`, `#I331615`, `#I339872`, `#F164047` - Added support for linking to the previous header/footer.
-- `#I445060`, `#I468741` - Added a property in the `selectionChanged` event arguments to identify whether the user has completed their selection.
 

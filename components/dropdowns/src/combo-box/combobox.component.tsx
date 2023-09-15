@@ -21,7 +21,7 @@ export class ComboBoxComponent extends ComboBox {
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
+    private checkInjectedModules: boolean = true;
     private statelessTemplateProps: string[] = ["headerTemplate","itemTemplate"];
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
