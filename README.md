@@ -1209,5 +1209,5 @@
  For detailed information about the Syncfusion Essential Studio license and copyright, please refer to the [license](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license).
  ## Changelog
  Check the changelog [here](https://ej2.syncfusion.com/react/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-react-ui-components)
-     © Copyright 2022 Syncfusion, Inc. All Rights Reserved.
+     © Copyright 2023 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.
