@@ -4,7 +4,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 
 export interface CircularGaugeTypecast {
-    tooltipTemplate?: string | Function | any;
+    tooltip?: any;
 }
 /**
  * Represents the React Circular Gauge component. This tag is used to customize the properties of the circular gauge to visualize the data in circular scale.

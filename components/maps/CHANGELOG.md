@@ -11,9 +11,13 @@
 
 ## [Unreleased]
 
-## 22.2.12 (2023-09-05)
+## 23.1.36 (2023-09-15)
 
 ### Maps
+
+#### New Features
+
+- An animated transition will now occur on the initial rendering of data labels and not during any dynamic updates.
 
 #### Bug Fixes
 

@@ -22,7 +22,7 @@ export class DropDownListComponent extends DropDownList {
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
+    private checkInjectedModules: boolean = true;
     private statelessTemplateProps: string[] = ["headerTemplate","valueTemplate","itemTemplate"];
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
