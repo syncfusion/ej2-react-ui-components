@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.38 (2023-09-26)
+
+### ProgressBar
+
+#### Bug Fixes
+
+- `#I501894` - Now, the linear progress bar label renders properly when the alignment is set to center.
+
 ## 21.1.37 (2023-03-29)
 
 ### ProgressBar

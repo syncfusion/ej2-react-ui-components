@@ -5,6 +5,14 @@
 
 ## [Unreleased]
 
+## 23.1.38 (2023-09-26)
+
+### CircularGauge
+
+#### New Features
+
+- When the `allowRangePreRender` property is set to **false**, the axis line will be rendered first.
+
 ## 23.1.36 (2023-09-15)
 
 ### Circular Gauge
