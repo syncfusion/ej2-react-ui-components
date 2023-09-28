@@ -11,6 +11,14 @@
 
 ## [Unreleased]
 
+## 23.1.38 (2023-09-26)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I497871` - After adding a marker using the `addMarker` method, marker locations will now be correct when zooming and panning is performed on the Maps.
+
 ## 23.1.36 (2023-09-15)
 
 ### Maps
