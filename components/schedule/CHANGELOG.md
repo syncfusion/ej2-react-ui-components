@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 23.1.39 (2023-10-04)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I503155` - Resolved an accessibility concern by including the necessary form labels in the Scheduler editor window.
+
+## 23.1.38 (2023-09-26)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I501151` - An issue where the `eventDoubleClick` event is not triggering has been fixed.
+
 ## 23.1.36 (2023-09-15)
 
 ### Schedule
