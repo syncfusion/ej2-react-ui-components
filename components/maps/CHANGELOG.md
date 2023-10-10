@@ -11,7 +11,15 @@
 
 ## [Unreleased]
 
-## 23.1.39 (2023-10-04)
+## 23.1.40 (2023-10-10)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I504008` - The zoom factor of the Maps will now be properly updated when the `zoomByPosition` method is called in the `zoom` event.
+
+## 23.1.38 (2023-09-26)
 
 ### Maps
 

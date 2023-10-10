@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.40 (2023-10-10)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I502310` - Now, the `value` argument in the `valueChange` event does not include the table resize helper element.
+
 ## 23.1.39 (2023-10-04)
 
 ### RichTextEditor

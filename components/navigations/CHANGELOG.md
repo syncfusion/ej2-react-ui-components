@@ -2,13 +2,21 @@
 
 ## [Unreleased]
 
-## 23.1.39 (2023-10-04)
+## 23.1.40 (2023-10-10)
 
-### Menu
+### Accordion
 
 #### Bug Fixes
 
-- `#F496214` - The issue with "Sub Menu can’t hide while using hideItems method of menu" has been resolved.
+- `#I506740` - An issue with the HTML element within the content of an Accordion item has been fixed.
+
+## 23.1.39 (2023-10-04)
+
+### ContextMenu
+
+#### Bug Fixes
+
+- The issue with "in mobile mode, script error occurred when context menu item is destroyed" has been resolved.
 
 ### Toolbar
 
