@@ -1300,6 +1300,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
 
+## 23.1.40 (2023-10-10)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I849431` - Issue with "exception throws while exporting as excel file after deleting the sheet with defined names" has been resolved.
+
 ## 21.1.39 (2023-04-11)
 
 ### Spreadsheet

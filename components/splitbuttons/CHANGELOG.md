@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.41 (2023-10-17)
+
+### DropDownButton
+
+#### Bug Fixes
+
+- `#I511002` - Issue in `Aria-label` accessibility issue in DropDownButton has been resolved
+
 ## 23.1.36 (2023-09-15)
 
 ### DropDownButton

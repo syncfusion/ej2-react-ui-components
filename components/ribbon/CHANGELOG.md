@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.41 (2023-10-17)
+
+### Ribbon
+
+#### Bug Fixes
+
+- Now, the issue with ribbon items overflow while dynamically updating their properties has been resolved.
+
 ## 23.1.38 (2023-09-26)
 
 ### Ribbon

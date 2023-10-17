@@ -2,19 +2,23 @@
 
 ## [Unreleased]
 
+## 23.1.41 (2023-10-17)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#I504910` - Resolve the script error issue when loading document in blazor.
+- `#I506290` - When performing edit operation and save the document it throws script error document is not saved.
+- `#I506225` - Resolve the issue of reply comments in the comment tab.
+- `#I506000` - Resolve script error issue while opening the attached document.
+
 ## 23.1.40 (2023-10-10)
 
 ### Document Editor
 
 #### Bug Fixes
 
-- `#I483749` - Resolved the table title and description preservation issue in server side save.
-- `#I504150` - Resolved the svg image issue.
-- `#I485502` - Resolved the URL image refresh issue while opening the exported document.
-- `#I505977` - Heading style destroyed when insert hyperlink.
-- `#I506107` - Resolved the issue, footnote content is disappeared when open saved sfdt.
-- `#I506619` - Resolved the exporting issue of attached sfdt.
-- `#I503945` - Script error occurred when tried to save the document using java server.
 - `#I483749` - Resolved the table title and description preservation issue in server side save.
 - `#I504150` - Resolved the svg image issue.
 - `#I485502` - Resolved the URL image refresh issue while opening the exported document.
