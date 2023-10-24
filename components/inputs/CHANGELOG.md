@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.42 (2023-10-24)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I505786` - Resolved issue with Sequential upload not working when drag and drop files multiple times.
+
 ## 23.1.38 (2023-09-26)
 
 ### Signature
