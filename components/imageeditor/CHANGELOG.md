@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.43 (2023-10-31)
+
+### ImageEditor
+
+#### Bug Fixes
+
+- Resolved the SVG type image not load through uploader toolbar button in image editor.
+
 ## 23.1.41 (2023-10-17)
 
 ### ImageEditor

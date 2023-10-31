@@ -2,13 +2,14 @@
 
 ## [Unreleased]
 
-## 23.1.42 (2023-10-24)
+## 23.1.43 (2023-10-31)
 
 ### Ribbon
 
-#### Bug Fixes
+#### Features
 
-- Now, the issue with ribbon items overflow while dynamically updating their properties has been resolved.
+`#I510343` - Provided custom HTML attributes support for the Ribbon items
+
 
 ## 23.1.38 (2023-09-26)
 
@@ -41,4 +42,12 @@ The Ribbon provides a structured and easy-to-use user interface for users to acc
 - **File menu** - A built-in menu that to add file related actions easily.
 - **Templates** - Customize ribbon items and the help pane content using templates.
 
+
+## 23.1.41 (2023-10-17)
+
+### Ribbon
+
+#### Bug Fixes
+
+- Now, the issue with ribbon items overflow while dynamically updating their properties has been resolved.
 

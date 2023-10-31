@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+## 23.1.43 (2023-10-31)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I511694` - Now, The script error is resolved when export the annotation as object after adding the handwritten signature.
+- `#I511005` - Now, the programmatically added stamp annotation is visible in the PDF Viewer.
+- `#I508032` - Now, the signature fields are not placed outside the page when placed between pages.
+- `#I508421` - Now, the redo operations on free text annotations is working properly.
+
+#### New Features
+
+- `#I504779` - Provided support to programmatically add and update the annotation subject property.
+
+## 23.1.42 (2023-10-24)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I509234` - Now, the multiline property is properly updated when the `updateformfields` API is called programmatically.
+- `#I509208` - Now, the script error no longer occurs when adding the signature event without injecting the form fields.
+
 ## 23.1.41 (2023-10-17)
 
 ### PDF Viewer

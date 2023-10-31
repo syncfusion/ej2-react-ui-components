@@ -244,6 +244,8 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             if (keycompoentns.indexOf(this.getModuleName()) !== -1) {
                 this.htmlattributes.key = '' + ComponentBase.reactUid;
                 ComponentBase.reactUid++;
+                if ((this as any).type && !this.htmlattributes['type']) this.htmlattributes['type'] = (this as any).multiline ? 'hidden' : (this as any).type;
+                if ((this as any).name && !this.htmlattributes['name']) this.htmlattributes['name'] = (this as any).name;
             }
 
         }
@@ -608,7 +610,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         let childs: React.ReactNode[] & Directive[] = (<React.ReactNode[] & Directive[]>React.Children.toArray(this.props.children));
         for (let child of childs) {
             /* tslint:disable:no-any */
-            if ((child as any).type.isService) {
+            if ((child as any).type && (child as any).type.isService) {
                 return (child as any).props.services;
             }
         }

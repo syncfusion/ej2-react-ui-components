@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 23.1.43 (2023-10-31)
+
+### Common
+
+#### Bug Fixes
+
+- `#I511754` - The issue with "Script error thrown when having empty space between component tags in React" has been resolved.
+
+- The issue with "The type attribute was removed from the input element in Next JS" has been resolved.
+
 ## 23.1.36 (2023-09-15)
 
 ### Common

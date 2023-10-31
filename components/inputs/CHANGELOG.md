@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 23.1.43 (2023-10-31)
+
+### FormValidator
+
+#### Bug Fixes
+
+- `#I508670` - Fixed a memory leak issue that occurred when navigating between pages.
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I512497` - Fixed an issue where the values of the textbox with the 'e-valid-input' class were persisting even after resetting the form.
+
+### Signature
+
+#### Bug Fixes
+
+- `#I510300` - Issue with "`isEmpty` method return wrong value in signature control" has been resolved.
+
 ## 23.1.42 (2023-10-24)
 
 ### Uploader

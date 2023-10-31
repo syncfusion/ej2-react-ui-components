@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 23.1.42 (2023-10-24)
+## 23.1.43 (2023-10-31)
+
+### DropDownButton
+
+#### Bug Fixes
+
+- `#I510977` - Provide the original event arguments support in the DropDownButton select event.
+
+## 23.1.41 (2023-10-17)
 
 ### DropDownButton
 
