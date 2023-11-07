@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 23.1.44 (2023-11-07)
+
+### Ribbon
+
+#### Bug Fixes
+
+`#I509963` - Now the issue with hide/disable method not working properly with the tab items that are not loaded in initial rendering has been resolved.
+
+
+`#I510661` - Now the script issue raised with the createPopupOnClick property enabled in the dropdown item overflow popup has been resolved.
+
+
 ## 23.1.43 (2023-10-31)
 
 ### Ribbon

@@ -11,6 +11,14 @@
 
 ## [Unreleased]
 
+## 23.1.44 (2023-11-07)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I511630` - The marker template defined as a method will now work properly in the Maps component.
+
 ## 23.1.42 (2023-10-24)
 
 ### Maps
