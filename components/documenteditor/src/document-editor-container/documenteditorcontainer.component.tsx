@@ -12,7 +12,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class DocumentEditorContainerComponent extends DocumentEditorContainer {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<DocumentEditorContainerModel & DefaultHtmlAttributes>;
+    & Readonly<DocumentEditorContainerModel | DefaultHtmlAttributes>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -21,7 +21,7 @@ export class DocumentEditorContainerComponent extends DocumentEditorContainer {
     private templateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<DocumentEditorContainerModel & DefaultHtmlAttributes>;
+     & Readonly<DocumentEditorContainerModel | DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

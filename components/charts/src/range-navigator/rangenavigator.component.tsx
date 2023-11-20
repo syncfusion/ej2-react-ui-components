@@ -14,7 +14,7 @@ export interface RangeNavigatorTypecast {
  */
 export class RangeNavigatorComponent extends RangeNavigator {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<RangeNavigatorModel & DefaultHtmlAttributes| RangeNavigatorTypecast>;
+    & Readonly<RangeNavigatorModel | DefaultHtmlAttributes| RangeNavigatorTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -24,7 +24,7 @@ export class RangeNavigatorComponent extends RangeNavigator {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<RangeNavigatorModel & DefaultHtmlAttributes| RangeNavigatorTypecast>;
+     & Readonly<RangeNavigatorModel | DefaultHtmlAttributes| RangeNavigatorTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

@@ -18,7 +18,7 @@ export interface GanttTypecast {
  */
 export class GanttComponent extends Gantt {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<GanttModel & DefaultHtmlAttributes| GanttTypecast>;
+    & Readonly<GanttModel | DefaultHtmlAttributes| GanttTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -28,7 +28,7 @@ export class GanttComponent extends Gantt {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<GanttModel & DefaultHtmlAttributes| GanttTypecast>;
+     & Readonly<GanttModel | DefaultHtmlAttributes| GanttTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

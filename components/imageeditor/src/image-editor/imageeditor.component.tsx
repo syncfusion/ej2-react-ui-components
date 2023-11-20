@@ -14,7 +14,7 @@ export interface ImageEditorTypecast {
  */
 export class ImageEditorComponent extends ImageEditor {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<ImageEditorModel & DefaultHtmlAttributes| ImageEditorTypecast>;
+    & Readonly<ImageEditorModel | DefaultHtmlAttributes| ImageEditorTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -23,7 +23,7 @@ export class ImageEditorComponent extends ImageEditor {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<ImageEditorModel & DefaultHtmlAttributes| ImageEditorTypecast>;
+     & Readonly<ImageEditorModel | DefaultHtmlAttributes| ImageEditorTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

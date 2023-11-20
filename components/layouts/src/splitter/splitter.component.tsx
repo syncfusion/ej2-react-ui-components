@@ -12,7 +12,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class SplitterComponent extends Splitter {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<SplitterModel & DefaultHtmlAttributes>;
+    & Readonly<SplitterModel | DefaultHtmlAttributes>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -22,7 +22,7 @@ export class SplitterComponent extends Splitter {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<SplitterModel & DefaultHtmlAttributes>;
+     & Readonly<SplitterModel | DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

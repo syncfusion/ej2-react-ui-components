@@ -14,7 +14,7 @@ export interface QueryBuilderTypecast {
  */
 export class QueryBuilderComponent extends QueryBuilder {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<QueryBuilderModel & DefaultHtmlAttributes| QueryBuilderTypecast>;
+    & Readonly<QueryBuilderModel | DefaultHtmlAttributes| QueryBuilderTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -24,7 +24,7 @@ export class QueryBuilderComponent extends QueryBuilder {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<QueryBuilderModel & DefaultHtmlAttributes| QueryBuilderTypecast>;
+     & Readonly<QueryBuilderModel | DefaultHtmlAttributes| QueryBuilderTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

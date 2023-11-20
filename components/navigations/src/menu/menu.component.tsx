@@ -14,7 +14,7 @@ export interface MenuTypecast {
  */
 export class MenuComponent extends Menu {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<MenuModel & DefaultHtmlAttributes| MenuTypecast>;
+    & Readonly<MenuModel | DefaultHtmlAttributes| MenuTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -24,7 +24,7 @@ export class MenuComponent extends Menu {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<MenuModel & DefaultHtmlAttributes| MenuTypecast>;
+     & Readonly<MenuModel | DefaultHtmlAttributes| MenuTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

@@ -2,12 +2,21 @@
 
 ## [Unreleased]
 
+## 23.2.4 (2023-11-20)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I515728` - Now, applying the underline format to the anchor element works properly in the Rich Text Editor.
+
 ## 23.1.44 (2023-11-07)
 
 ### RichTextEditor
 
 #### Bug Fixes
 
+- `#I509612` - Now, the `FontName` toolbar item's status will be updated as empty when the selected text contains multiple font family styles.
 - `#I514862` - Now, alternate text for images is properly displayed in the input element.
 - `#I514862` - Now, the XSS attack is prevented in the width and height inputs of the image resize dialog in the Rich Text Editor.
 - `#I517445` - Now, the text alignment and other styles are maintained when pressing the enter key in the Rich Text Editor.

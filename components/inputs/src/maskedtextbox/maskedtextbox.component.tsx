@@ -14,7 +14,7 @@ export interface MaskedTextBoxHtmlAttributes {
  */
 export class MaskedTextBoxComponent extends MaskedTextBox {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<MaskedTextBoxModel & DefaultHtmlAttributes & MaskedTextBoxHtmlAttributes>;
+    & Readonly<MaskedTextBoxModel | DefaultHtmlAttributes & MaskedTextBoxHtmlAttributes>;
     public setState: any;
     private controlAttributes: string[] = ['name'];
     private getDefaultAttributes: Function;
@@ -24,7 +24,7 @@ export class MaskedTextBoxComponent extends MaskedTextBox {
     private templateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<MaskedTextBoxModel & DefaultHtmlAttributes & MaskedTextBoxHtmlAttributes>;
+     & Readonly<MaskedTextBoxModel | DefaultHtmlAttributes & MaskedTextBoxHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

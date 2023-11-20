@@ -14,7 +14,7 @@ export interface PagerTypecast {
  */
 export class PagerComponent extends Pager {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<PagerModel & DefaultHtmlAttributes| PagerTypecast>;
+    & Readonly<PagerModel | DefaultHtmlAttributes| PagerTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -23,7 +23,7 @@ export class PagerComponent extends Pager {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<PagerModel & DefaultHtmlAttributes| PagerTypecast>;
+     & Readonly<PagerModel | DefaultHtmlAttributes| PagerTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

@@ -14,7 +14,7 @@ export interface ChartTypecast {
  */
 export class ChartComponent extends Chart {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<ChartModel & DefaultHtmlAttributes| ChartTypecast>;
+    & Readonly<ChartModel | DefaultHtmlAttributes| ChartTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -24,7 +24,7 @@ export class ChartComponent extends Chart {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<ChartModel & DefaultHtmlAttributes| ChartTypecast>;
+     & Readonly<ChartModel | DefaultHtmlAttributes| ChartTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

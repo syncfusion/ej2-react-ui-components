@@ -18,7 +18,7 @@ export interface DropDownListTypecast {
  */
 export class DropDownListComponent extends DropDownList {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<DropDownListModel & DefaultHtmlAttributes| DropDownListTypecast>;
+    & Readonly<DropDownListModel | DefaultHtmlAttributes| DropDownListTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -27,7 +27,7 @@ export class DropDownListComponent extends DropDownList {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<DropDownListModel & DefaultHtmlAttributes| DropDownListTypecast>;
+     & Readonly<DropDownListModel | DefaultHtmlAttributes| DropDownListTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

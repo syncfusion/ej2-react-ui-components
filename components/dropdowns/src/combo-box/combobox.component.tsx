@@ -17,7 +17,7 @@ export interface ComboBoxTypecast {
  */
 export class ComboBoxComponent extends ComboBox {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<ComboBoxModel & DefaultHtmlAttributes| ComboBoxTypecast>;
+    & Readonly<ComboBoxModel | DefaultHtmlAttributes| ComboBoxTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -26,7 +26,7 @@ export class ComboBoxComponent extends ComboBox {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<ComboBoxModel & DefaultHtmlAttributes| ComboBoxTypecast>;
+     & Readonly<ComboBoxModel | DefaultHtmlAttributes| ComboBoxTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

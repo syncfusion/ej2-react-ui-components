@@ -16,7 +16,7 @@ export interface DiagramTypecast {
  */
 export class DiagramComponent extends Diagram {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<DiagramModel & DefaultHtmlAttributes| DiagramTypecast>;
+    & Readonly<DiagramModel | DefaultHtmlAttributes| DiagramTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -26,7 +26,7 @@ export class DiagramComponent extends Diagram {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<DiagramModel & DefaultHtmlAttributes| DiagramTypecast>;
+     & Readonly<DiagramModel | DefaultHtmlAttributes| DiagramTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

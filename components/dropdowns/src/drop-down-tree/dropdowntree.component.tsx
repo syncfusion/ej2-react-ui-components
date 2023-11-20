@@ -16,7 +16,7 @@ export interface DropDownTreeTypecast {
  */
 export class DropDownTreeComponent extends DropDownTree {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<DropDownTreeModel & DefaultHtmlAttributes| DropDownTreeTypecast>;
+    & Readonly<DropDownTreeModel | DefaultHtmlAttributes| DropDownTreeTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -25,7 +25,7 @@ export class DropDownTreeComponent extends DropDownTree {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<DropDownTreeModel & DefaultHtmlAttributes| DropDownTreeTypecast>;
+     & Readonly<DropDownTreeModel | DefaultHtmlAttributes| DropDownTreeTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

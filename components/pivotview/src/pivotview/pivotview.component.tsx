@@ -15,7 +15,7 @@ export interface PivotViewTypecast {
  */
 export class PivotViewComponent extends PivotView {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<PivotViewModel & DefaultHtmlAttributes| PivotViewTypecast>;
+    & Readonly<PivotViewModel | DefaultHtmlAttributes| PivotViewTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -24,7 +24,7 @@ export class PivotViewComponent extends PivotView {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<PivotViewModel & DefaultHtmlAttributes| PivotViewTypecast>;
+     & Readonly<PivotViewModel | DefaultHtmlAttributes| PivotViewTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

@@ -28,7 +28,7 @@ export interface ScheduleTypecast {
  */
 export class ScheduleComponent extends Schedule {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<ScheduleModel & DefaultHtmlAttributes| ScheduleTypecast>;
+    & Readonly<ScheduleModel | DefaultHtmlAttributes| ScheduleTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -38,7 +38,7 @@ export class ScheduleComponent extends Schedule {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<ScheduleModel & DefaultHtmlAttributes| ScheduleTypecast>;
+     & Readonly<ScheduleModel | DefaultHtmlAttributes| ScheduleTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

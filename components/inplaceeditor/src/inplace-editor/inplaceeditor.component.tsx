@@ -14,7 +14,7 @@ export interface InPlaceEditorTypecast {
  */
 export class InPlaceEditorComponent extends InPlaceEditor {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<InPlaceEditorModel & DefaultHtmlAttributes| InPlaceEditorTypecast>;
+    & Readonly<InPlaceEditorModel | DefaultHtmlAttributes| InPlaceEditorTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -23,7 +23,7 @@ export class InPlaceEditorComponent extends InPlaceEditor {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<InPlaceEditorModel & DefaultHtmlAttributes| InPlaceEditorTypecast>;
+     & Readonly<InPlaceEditorModel | DefaultHtmlAttributes| InPlaceEditorTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

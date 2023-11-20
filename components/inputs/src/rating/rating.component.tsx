@@ -17,7 +17,7 @@ export interface RatingTypecast {
  */
 export class RatingComponent extends Rating {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<RatingModel & DefaultHtmlAttributes| RatingTypecast>;
+    & Readonly<RatingModel | DefaultHtmlAttributes| RatingTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -26,7 +26,7 @@ export class RatingComponent extends Rating {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<RatingModel & DefaultHtmlAttributes| RatingTypecast>;
+     & Readonly<RatingModel | DefaultHtmlAttributes| RatingTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

@@ -18,7 +18,7 @@ export interface KanbanTypecast {
  */
 export class KanbanComponent extends Kanban {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<KanbanModel & DefaultHtmlAttributes| KanbanTypecast>;
+    & Readonly<KanbanModel | DefaultHtmlAttributes| KanbanTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -28,7 +28,7 @@ export class KanbanComponent extends Kanban {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<KanbanModel & DefaultHtmlAttributes| KanbanTypecast>;
+     & Readonly<KanbanModel | DefaultHtmlAttributes| KanbanTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

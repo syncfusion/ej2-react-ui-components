@@ -3,7 +3,7 @@
  */
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { extend, isNullOrUndefined, setValue, getValue, isObject } from '@syncfusion/ej2-base';
+import { extend, isNullOrUndefined, setValue, getValue, isObject, onIntlChange } from '@syncfusion/ej2-base';
 /**
  * Interface for processing directives
  */
@@ -483,7 +483,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         if (this.initRenderCalled && this.isAppendCalled && this.element && ((!modulesName.indexOf(this.getModuleName())) ? document.body.contains(this.element) : true) && !this.isDestroyed && this.isCreated) {
             this.destroy();
         }
-
+        onIntlChange.offIntlEvents();
     }
 
     // tslint:disable:no-any

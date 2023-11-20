@@ -12,7 +12,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class ToolbarComponent extends Toolbar {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<ToolbarModel & DefaultHtmlAttributes>;
+    & Readonly<ToolbarModel | DefaultHtmlAttributes>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -22,7 +22,7 @@ export class ToolbarComponent extends Toolbar {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<ToolbarModel & DefaultHtmlAttributes>;
+     & Readonly<ToolbarModel | DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

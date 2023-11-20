@@ -12,7 +12,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class SplitButtonComponent extends SplitButton {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<SplitButtonModel & DefaultHtmlAttributes>;
+    & Readonly<SplitButtonModel | DefaultHtmlAttributes>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -22,7 +22,7 @@ export class SplitButtonComponent extends SplitButton {
     private templateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<SplitButtonModel & DefaultHtmlAttributes>;
+     & Readonly<SplitButtonModel | DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

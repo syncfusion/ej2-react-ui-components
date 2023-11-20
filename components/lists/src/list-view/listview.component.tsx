@@ -16,7 +16,7 @@ export interface ListViewTypecast {
  */
 export class ListViewComponent extends ListView {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<ListViewModel & DefaultHtmlAttributes| ListViewTypecast>;
+    & Readonly<ListViewModel | DefaultHtmlAttributes| ListViewTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -25,7 +25,7 @@ export class ListViewComponent extends ListView {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<ListViewModel & DefaultHtmlAttributes| ListViewTypecast>;
+     & Readonly<ListViewModel | DefaultHtmlAttributes| ListViewTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

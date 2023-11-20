@@ -13,7 +13,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class HeatMapComponent extends HeatMap {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<HeatMapModel & DefaultHtmlAttributes>;
+    & Readonly<HeatMapModel | DefaultHtmlAttributes>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -22,7 +22,7 @@ export class HeatMapComponent extends HeatMap {
     private templateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<HeatMapModel & DefaultHtmlAttributes>;
+     & Readonly<HeatMapModel | DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

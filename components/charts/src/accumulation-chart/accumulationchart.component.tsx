@@ -14,7 +14,7 @@ export interface AccumulationChartTypecast {
  */
 export class AccumulationChartComponent extends AccumulationChart {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<AccumulationChartModel & DefaultHtmlAttributes| AccumulationChartTypecast>;
+    & Readonly<AccumulationChartModel | DefaultHtmlAttributes| AccumulationChartTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -24,7 +24,7 @@ export class AccumulationChartComponent extends AccumulationChart {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<AccumulationChartModel & DefaultHtmlAttributes| AccumulationChartTypecast>;
+     & Readonly<AccumulationChartModel | DefaultHtmlAttributes| AccumulationChartTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

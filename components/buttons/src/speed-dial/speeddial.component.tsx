@@ -15,7 +15,7 @@ export interface SpeedDialTypecast {
  */
 export class SpeedDialComponent extends SpeedDial {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<SpeedDialModel & DefaultHtmlAttributes| SpeedDialTypecast>;
+    & Readonly<SpeedDialModel | DefaultHtmlAttributes| SpeedDialTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -25,7 +25,7 @@ export class SpeedDialComponent extends SpeedDial {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<SpeedDialModel & DefaultHtmlAttributes| SpeedDialTypecast>;
+     & Readonly<SpeedDialModel | DefaultHtmlAttributes| SpeedDialTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

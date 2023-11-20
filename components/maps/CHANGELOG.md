@@ -11,14 +11,6 @@
 
 ## [Unreleased]
 
-## 23.1.44 (2023-11-07)
-
-### Maps
-
-#### Bug Fixes
-
-- `#I511630` - The marker template defined as a method will now work properly in the Maps component.
-
 ## 23.1.42 (2023-10-24)
 
 ### Maps
@@ -561,4 +553,12 @@ The Maps control is used to visualize the geographical data. It is used to repre
 - **Annotations** - Supports placing any HTML element on desired location in the map.
 - **User interaction** - Supports interactive features like zooming, panning, tooltip, highlight, selection and interactive legend.
 
+
+## 23.1.44 (2023-11-07)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I511630` - The marker template defined as a method will now work properly in the Maps component.
 

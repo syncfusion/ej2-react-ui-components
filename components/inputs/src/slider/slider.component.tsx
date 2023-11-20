@@ -14,7 +14,7 @@ export interface SliderHtmlAttributes {
  */
 export class SliderComponent extends Slider {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<SliderModel & DefaultHtmlAttributes & SliderHtmlAttributes>;
+    & Readonly<SliderModel | DefaultHtmlAttributes & SliderHtmlAttributes>;
     public setState: any;
     private controlAttributes: string[] = ['name'];
     private getDefaultAttributes: Function;
@@ -24,7 +24,7 @@ export class SliderComponent extends Slider {
     private templateProps: string[] = null;
     private immediateRender: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<SliderModel & DefaultHtmlAttributes & SliderHtmlAttributes>;
+     & Readonly<SliderModel | DefaultHtmlAttributes & SliderHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

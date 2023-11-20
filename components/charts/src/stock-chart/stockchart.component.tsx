@@ -14,7 +14,7 @@ export interface StockChartTypecast {
  */
 export class StockChartComponent extends StockChart {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<StockChartModel & DefaultHtmlAttributes| StockChartTypecast>;
+    & Readonly<StockChartModel | DefaultHtmlAttributes| StockChartTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -24,7 +24,7 @@ export class StockChartComponent extends StockChart {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<StockChartModel & DefaultHtmlAttributes| StockChartTypecast>;
+     & Readonly<StockChartModel | DefaultHtmlAttributes| StockChartTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

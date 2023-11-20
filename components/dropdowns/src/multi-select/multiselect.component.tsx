@@ -18,7 +18,7 @@ export interface MultiSelectTypecast {
  */
 export class MultiSelectComponent extends MultiSelect {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<MultiSelectModel & DefaultHtmlAttributes| MultiSelectTypecast>;
+    & Readonly<MultiSelectModel | DefaultHtmlAttributes| MultiSelectTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -27,7 +27,7 @@ export class MultiSelectComponent extends MultiSelect {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<MultiSelectModel & DefaultHtmlAttributes| MultiSelectTypecast>;
+     & Readonly<MultiSelectModel | DefaultHtmlAttributes| MultiSelectTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

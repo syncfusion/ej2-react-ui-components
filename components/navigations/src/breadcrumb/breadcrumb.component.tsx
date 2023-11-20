@@ -15,7 +15,7 @@ export interface BreadcrumbTypecast {
  */
 export class BreadcrumbComponent extends Breadcrumb {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<BreadcrumbModel & DefaultHtmlAttributes| BreadcrumbTypecast>;
+    & Readonly<BreadcrumbModel | DefaultHtmlAttributes| BreadcrumbTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -25,7 +25,7 @@ export class BreadcrumbComponent extends Breadcrumb {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<BreadcrumbModel & DefaultHtmlAttributes| BreadcrumbTypecast>;
+     & Readonly<BreadcrumbModel | DefaultHtmlAttributes| BreadcrumbTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

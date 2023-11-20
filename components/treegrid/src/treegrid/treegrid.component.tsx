@@ -18,7 +18,7 @@ export interface TreeGridTypecast {
  */
 export class TreeGridComponent extends TreeGrid {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<TreeGridModel & DefaultHtmlAttributes| TreeGridTypecast>;
+    & Readonly<TreeGridModel | DefaultHtmlAttributes| TreeGridTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -28,7 +28,7 @@ export class TreeGridComponent extends TreeGrid {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<TreeGridModel & DefaultHtmlAttributes| TreeGridTypecast>;
+     & Readonly<TreeGridModel | DefaultHtmlAttributes| TreeGridTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

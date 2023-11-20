@@ -16,7 +16,7 @@ export interface ToastTypecast {
  */
 export class ToastComponent extends Toast {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<ToastModel & DefaultHtmlAttributes| ToastTypecast>;
+    & Readonly<ToastModel | DefaultHtmlAttributes| ToastTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -26,7 +26,7 @@ export class ToastComponent extends Toast {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<ToastModel & DefaultHtmlAttributes| ToastTypecast>;
+     & Readonly<ToastModel | DefaultHtmlAttributes| ToastTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

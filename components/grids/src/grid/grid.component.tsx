@@ -19,7 +19,7 @@ export interface GridTypecast {
  */
 export class GridComponent extends Grid {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<GridModel & DefaultHtmlAttributes| GridTypecast>;
+    & Readonly<GridModel | DefaultHtmlAttributes| GridTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -29,7 +29,7 @@ export class GridComponent extends Grid {
     private templateProps: string[] = ["template","headerTemplate","commandsTemplate","filter.itemTemplate","editTemplate","filterTemplate"];
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<GridModel & DefaultHtmlAttributes| GridTypecast>;
+     & Readonly<GridModel | DefaultHtmlAttributes| GridTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

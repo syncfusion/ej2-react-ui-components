@@ -15,7 +15,7 @@ export interface DateRangePickerTypecast {
  */
 export class DateRangePickerComponent extends DateRangePicker {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<DateRangePickerModel & DefaultHtmlAttributes| DateRangePickerTypecast>;
+    & Readonly<DateRangePickerModel | DefaultHtmlAttributes| DateRangePickerTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -25,7 +25,7 @@ export class DateRangePickerComponent extends DateRangePicker {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<DateRangePickerModel & DefaultHtmlAttributes| DateRangePickerTypecast>;
+     & Readonly<DateRangePickerModel | DefaultHtmlAttributes| DateRangePickerTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

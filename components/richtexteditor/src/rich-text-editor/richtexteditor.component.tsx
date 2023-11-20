@@ -14,7 +14,7 @@ export interface RichTextEditorTypecast {
  */
 export class RichTextEditorComponent extends RichTextEditor {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<RichTextEditorModel & DefaultHtmlAttributes| RichTextEditorTypecast>;
+    & Readonly<RichTextEditorModel | DefaultHtmlAttributes| RichTextEditorTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -23,7 +23,7 @@ export class RichTextEditorComponent extends RichTextEditor {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<RichTextEditorModel & DefaultHtmlAttributes| RichTextEditorTypecast>;
+     & Readonly<RichTextEditorModel | DefaultHtmlAttributes| RichTextEditorTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

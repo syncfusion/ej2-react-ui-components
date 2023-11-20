@@ -14,7 +14,7 @@ export interface ListBoxTypecast {
  */
 export class ListBoxComponent extends ListBox {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<ListBoxModel & DefaultHtmlAttributes| ListBoxTypecast>;
+    & Readonly<ListBoxModel | DefaultHtmlAttributes| ListBoxTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -23,7 +23,7 @@ export class ListBoxComponent extends ListBox {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<ListBoxModel & DefaultHtmlAttributes| ListBoxTypecast>;
+     & Readonly<ListBoxModel | DefaultHtmlAttributes| ListBoxTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

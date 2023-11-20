@@ -14,7 +14,7 @@ export interface TreeViewTypecast {
  */
 export class TreeViewComponent extends TreeView {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<TreeViewModel & DefaultHtmlAttributes| TreeViewTypecast>;
+    & Readonly<TreeViewModel | DefaultHtmlAttributes| TreeViewTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -23,7 +23,7 @@ export class TreeViewComponent extends TreeView {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<TreeViewModel & DefaultHtmlAttributes| TreeViewTypecast>;
+     & Readonly<TreeViewModel | DefaultHtmlAttributes| TreeViewTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

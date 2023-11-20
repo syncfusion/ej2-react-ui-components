@@ -15,7 +15,7 @@ export interface AccordionTypecast {
  */
 export class AccordionComponent extends Accordion {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<AccordionModel & DefaultHtmlAttributes| AccordionTypecast>;
+    & Readonly<AccordionModel | DefaultHtmlAttributes| AccordionTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -25,7 +25,7 @@ export class AccordionComponent extends Accordion {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<AccordionModel & DefaultHtmlAttributes| AccordionTypecast>;
+     & Readonly<AccordionModel | DefaultHtmlAttributes| AccordionTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

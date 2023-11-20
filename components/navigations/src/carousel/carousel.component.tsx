@@ -18,7 +18,7 @@ export interface CarouselTypecast {
  */
 export class CarouselComponent extends Carousel {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<CarouselModel & DefaultHtmlAttributes| CarouselTypecast>;
+    & Readonly<CarouselModel | DefaultHtmlAttributes| CarouselTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -28,7 +28,7 @@ export class CarouselComponent extends Carousel {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<CarouselModel & DefaultHtmlAttributes| CarouselTypecast>;
+     & Readonly<CarouselModel | DefaultHtmlAttributes| CarouselTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

@@ -14,7 +14,7 @@ export interface LinearGaugeTypecast {
  */
 export class LinearGaugeComponent extends LinearGauge {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<LinearGaugeModel & DefaultHtmlAttributes| LinearGaugeTypecast>;
+    & Readonly<LinearGaugeModel | DefaultHtmlAttributes| LinearGaugeTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -24,7 +24,7 @@ export class LinearGaugeComponent extends LinearGauge {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<LinearGaugeModel & DefaultHtmlAttributes| LinearGaugeTypecast>;
+     & Readonly<LinearGaugeModel | DefaultHtmlAttributes| LinearGaugeTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

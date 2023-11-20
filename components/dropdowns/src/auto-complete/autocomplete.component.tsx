@@ -17,7 +17,7 @@ export interface AutoCompleteTypecast {
  */
 export class AutoCompleteComponent extends AutoComplete {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<AutoCompleteModel & DefaultHtmlAttributes| AutoCompleteTypecast>;
+    & Readonly<AutoCompleteModel | DefaultHtmlAttributes| AutoCompleteTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -26,7 +26,7 @@ export class AutoCompleteComponent extends AutoComplete {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<AutoCompleteModel & DefaultHtmlAttributes| AutoCompleteTypecast>;
+     & Readonly<AutoCompleteModel | DefaultHtmlAttributes| AutoCompleteTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

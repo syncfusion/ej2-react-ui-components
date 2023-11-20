@@ -16,7 +16,7 @@ export interface DialogTypecast {
  */
 export class DialogComponent extends Dialog {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<DialogModel & DefaultHtmlAttributes| DialogTypecast>;
+    & Readonly<DialogModel | DefaultHtmlAttributes| DialogTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -26,7 +26,7 @@ export class DialogComponent extends Dialog {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<DialogModel & DefaultHtmlAttributes| DialogTypecast>;
+     & Readonly<DialogModel | DefaultHtmlAttributes| DialogTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

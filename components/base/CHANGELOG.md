@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 23.2.4 (2023-11-20)
+
+### Common
+
+#### Bug Fixes
+
+- The issue with "the compilation error occurring when utilizing the title property in the React Smith chart component" has been resolved.
+- The issue with "the internationalization event of the React component remains connected even after it has been destroyed" has been resolved.
+
 ## 23.1.43 (2023-10-31)
 
 ### Common

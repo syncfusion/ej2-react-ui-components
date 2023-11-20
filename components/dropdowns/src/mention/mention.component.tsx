@@ -16,7 +16,7 @@ export interface MentionTypecast {
  */
 export class MentionComponent extends Mention {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<MentionModel & DefaultHtmlAttributes| MentionTypecast>;
+    & Readonly<MentionModel | DefaultHtmlAttributes| MentionTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -25,7 +25,7 @@ export class MentionComponent extends Mention {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<MentionModel & DefaultHtmlAttributes| MentionTypecast>;
+     & Readonly<MentionModel | DefaultHtmlAttributes| MentionTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

@@ -14,7 +14,7 @@ export interface TooltipTypecast {
  */
 export class TooltipComponent extends Tooltip {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<TooltipModel & DefaultHtmlAttributes| TooltipTypecast>;
+    & Readonly<TooltipModel | DefaultHtmlAttributes| TooltipTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -23,7 +23,7 @@ export class TooltipComponent extends Tooltip {
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<TooltipModel & DefaultHtmlAttributes| TooltipTypecast>;
+     & Readonly<TooltipModel | DefaultHtmlAttributes| TooltipTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];
