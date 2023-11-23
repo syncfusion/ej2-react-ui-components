@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-layouts",
-	"version": "23.1.36",
+	"version": "23.2.4",
 	"description": "A package of Essential JS 2 layout pure CSS components such as card and avatar. The card is used as small container to show content in specific structure, whereas the avatars are icons, initials or figures representing particular person. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -30,7 +30,7 @@
 		"source-map-loader": "^0.2.1",
 		"@types/chai": "^3.4.28",
 		"@types/es6-promise": "0.0.28",
-		"@types/jasmine": "^2.2.29",
+		"@types/jasmine": "2.8.22",
 		"@types/jasmine-ajax": "^3.1.27",
 		"@types/react": "^15.0.24",
 		"@types/react-dom": "^15.5.0",

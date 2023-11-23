@@ -9,6 +9,7 @@
 #### Bug Fixes
 
 - `#I515728` - Now, applying the underline format to the anchor element works properly in the Rich Text Editor.
+- `#I503021` - Now, when using a custom dropdown button as a toolbar item to insert content using `insertHTML` in the Rich Text Editor, the cursor position is placed properly.
 
 ## 23.1.44 (2023-11-07)
 
