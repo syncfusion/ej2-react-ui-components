@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 23.2.6 (2023-11-28)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I515378` - Now, the toolbar status will be properly updated when the toolbar is enabled dynamically in the Rich Text Editor.
+- `#I512106` - Now, the quick toolbar will be destroyed without any script errors during page navigation.
+
+## 23.2.5 (2023-11-23)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I518641` - Now, clicking the full-screen toolbar item works properly without any script errors in the RichTextEditor.
+- `#I517381` - Now, the maximum row limit of the table is increased to `1000` from `50` in the Rich Text Editor.
+
 ## 23.2.4 (2023-11-20)
 
 ### RichTextEditor
