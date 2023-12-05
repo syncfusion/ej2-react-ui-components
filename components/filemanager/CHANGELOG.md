@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.2.6 (2023-11-28)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I519514` - The folder creation issue in the File Manager component navigation pane has been resolved.
+
 ## 23.2.4 (2023-11-20)
 
 ### FileManager

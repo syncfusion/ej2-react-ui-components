@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.2.7 (2023-12-05)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#524901` - The issue with the DatePicker component's navigation not working properly in month selection when using the "MMM" format has been resolved.
+
 ## 23.2.6 (2023-11-28)
 
 ### Calendar
