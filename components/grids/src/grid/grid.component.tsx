@@ -5,6 +5,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 export interface GridTypecast {
     rowTemplate?: string | Function | any;
+    emptyRecordTemplate?: string | Function | any;
     detailTemplate?: string | Function | any;
     toolbarTemplate?: string | Function | any;
     pagerTemplate?: string | Function | any;

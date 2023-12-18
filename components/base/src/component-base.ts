@@ -102,7 +102,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         if(!this.isshouldComponentUpdateCalled && this.initRenderCalled && !this.isReactForeceUpdate) {
             if (prev !== this.props) {
                 this.isshouldComponentUpdateCalled = true;
-                this.refreshProperties(this.props, this.props);
+                this.updateProperties(this.props, false, prev);
             }
         }
     }
@@ -138,11 +138,12 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     /**
      * @private
      */
-    private updateProperties(nextProps: Object, silent?: boolean): void {
+    private updateProperties(nextProps: Object, silent?: boolean, prev?: Object): void {
         let dProps: Object = extend({}, nextProps);
         let keys: string[] = Object.keys(nextProps);
+        let prevProps: Object = extend({}, prev || this.props);
         // The statelessTemplates props value is taken from sample level property or default component property.
-        let statelessTemplates: string[] = !isNullOrUndefined(this.props['statelessTemplates']) ? this.props['statelessTemplates'] : 
+        let statelessTemplates: string[] = !isNullOrUndefined(prevProps['statelessTemplates']) ? prevProps['statelessTemplates'] : 
            (!isNullOrUndefined(this['statelessTemplateProps']) ? this['statelessTemplateProps'] : []);
         for (let propkey of keys) {
             let isClassName: boolean = propkey === 'className';
@@ -153,12 +154,12 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 this.htmlattributes[`${propkey}`] !== dProps[`${propkey}`]) {
                 this.htmlattributes[`${propkey}`] = dProps[`${propkey}`];
             }
-            if (this.compareValues(this.props[`${propkey}`], nextProps[`${propkey}`])) {
+            if (this.compareValues(prevProps[`${propkey}`], nextProps[`${propkey}`])) {
                 delete dProps[`${propkey}`];
             } else if (this.attrKeys.indexOf(propkey) !== -1) {
                 if (isClassName) {
                     this.clsName = true;
-                    let propsClsName = this.props[`${propkey}`].split(' ');
+                    let propsClsName = prevProps[`${propkey}`].split(' ');
                     for (let i: number = 0; i < propsClsName.length; i++) {
                         this.element.classList.remove(propsClsName[parseInt(i.toString(), 10)]);
                     }
@@ -181,7 +182,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             delete dProps['children'];
         }
         // tslint:disable-next-line:no-any
-        if (this.initRenderCalled && (this.canDelayUpdate || (this.props as any).delayUpdate)) {
+        if (this.initRenderCalled && (this.canDelayUpdate || (prevProps as any).delayUpdate)) {
             setTimeout(() => {
                 this.refreshProperties(dProps, nextProps, silent);
             });
@@ -227,7 +228,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
         this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
         for (let prop of propKeys) {
-            if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1) {
+            if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1 || (Object.keys((this as any).properties).indexOf(`${prop}`) === -1 && prop.indexOf('children') === -1)) {
                 if( this.htmlattributes[`${prop}`] !== (<{ [key: string]: Object }>this.props)[`${prop}`]) {
                     this.htmlattributes[`${prop}`] = (<{ [key: string]: Object }>this.props)[`${prop}`];
                 }
@@ -240,7 +241,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             };
             let keycompoentns: string[] = ['autocomplete', 'combobox', 'dropdownlist', 'dropdowntree', 'multiselect',
                 'listbox', 'colorpicker', 'numerictextbox', 'textbox',
-                'uploader', 'maskedtextbox', 'slider','datepicker','datetimepicker','daterangepicker','timepicker','checkbox','switch','radio'];
+                'uploader', 'maskedtextbox', 'slider','datepicker','datetimepicker','daterangepicker','timepicker','checkbox','switch','radio', 'rating'];
             if (keycompoentns.indexOf(this.getModuleName()) !== -1) {
                 this.htmlattributes.key = '' + ComponentBase.reactUid;
                 ComponentBase.reactUid++;

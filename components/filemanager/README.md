@@ -1,6 +1,6 @@
-# React File Manager Component
+# React FileManager Component
 
-The [React File Manager](https://www.syncfusion.com/react-components/react-file-manager?utm_source=npm&utm_medium=listing&utm_campaign=react-file-manager-npm) component is a graphical user interface that allows users to manage their file system in an intuitive and efficient manner. With this component, you can easily access, edit, upload, download, and organize files and folders. It also offers a convenient way to browse and select items from the file system.
+The [React FileManager](https://www.syncfusion.com/react-components/react-file-manager?utm_source=npm&utm_medium=listing&utm_campaign=react-file-manager-npm) component is a graphical user interface that allows users to manage their file system in an intuitive and efficient manner. With this component, you can easily access, edit, upload, download, and organize files and folders. It also offers a convenient way to browse and select items from the file system.
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/react/documentation/file-manager/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-file-manager-npm">Getting Started</a> .
@@ -31,17 +31,17 @@ cd my-app
 npm start
 ```
 
-### Adding Syncfusion File Manager package
+### Adding Syncfusion FileManager package
 
-All Syncfusion react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react File Manager package, use the following command.
+All Syncfusion react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react FileManager package, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-react-filemanager --save
 ```
 
-### Adding CSS references for File Manager
+### Adding CSS references for FileManager
 
-Add CSS references needed for a File Manager in **src/App.css** from the **../node_modules/@syncfusion** package folder.
+Add CSS references needed for a FileManager in **src/App.css** from the **../node_modules/@syncfusion** package folder.
 
 ```css
 /* refer the styles from package folder */
@@ -57,9 +57,9 @@ Add CSS references needed for a File Manager in **src/App.css** from the **../no
 @import "../node_modules/@syncfusion/ej2-react-filemanager/styles/bootstrap5.css";
 ```
 
-### Add React File Manager component
+### Add React FileManager component
 
-In the **src/App.tsx** file, use the following code snippet to render the Syncfusion React File Manager component and import **App.css** to apply styles to the File Manager:
+In the **src/App.tsx** file, use the following code snippet to render the Syncfusion React FileManager component and import **App.css** to apply styles to the FileManager:
 
 ```typescript
 import { FileManagerComponent } from '@syncfusion/ej2-react-filemanager';
@@ -77,7 +77,7 @@ export default App;
 
 ## Supported frameworks
 
-The React File Manager component is also offered in the following list of frameworks.
+The React FileManager component is also offered in the following list of frameworks.
 
 | [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular.svg"  height="50" />](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
 | :-----: | :-----: | :-----: | :-----: | :-----: |

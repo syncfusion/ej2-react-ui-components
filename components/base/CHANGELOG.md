@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 24.1.41 (2023-12-18)
+
+### Common
+
+#### Bug Fixes
+
+- `#I517152` - The issue with "the component undergoes a re-render when the state variable is updated, even if it is not being utilized" has been resolved.
+- The React package size is minimised by removing redundant styles.
+
 ## 23.2.5 (2023-11-23)
 
 ### Common

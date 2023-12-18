@@ -2,36 +2,6 @@
 
 ## [Unreleased]
 
-## 23.2.7 (2023-12-05)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#524901` - The issue with the DatePicker component's navigation not working properly in month selection when using the "MMM" format has been resolved.
-
-## 23.2.6 (2023-11-28)
-
-### Calendar
-
-#### Bug Fixes
-
-- `#I521911` - Fixed an issue where an exception was occurring when changing the culture dynamically.
-
-## 23.1.41 (2023-10-17)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I506617` - Fixed issue where the previous and next icons were displaying incorrectly in the Fluent Theme.
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#I504425` - Fixed an issue where typing "pm" and then focusing out would convert the "pm" extension to "am". This issue has been resolved.
-
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker

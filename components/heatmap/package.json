@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-heatmap",
-	"version": "23.2.4",
+	"version": "18.14.11",
 	"description": "Feature rich data visulization control used to visualize the matrix data where the individual values are represented as colors for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -27,7 +27,7 @@
 		"source-map-loader": "^0.2.1",
 		"@types/chai": "^3.4.28",
 		"@types/es6-promise": "0.0.28",
-		"@types/jasmine": "^2.2.29",
+		"@types/jasmine": "2.8.22",
 		"@types/jasmine-ajax": "^3.1.27",
 		"@types/react": "^15.0.24",
 		"@types/react-dom": "^15.5.0",

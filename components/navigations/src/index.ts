@@ -8,5 +8,6 @@ export * from './treeview';
 export * from './sidebar';
 export * from './menu';
 export * from './appbar';
+export * from './stepper';
 export { Inject } from '@syncfusion/ej2-react-base';
 export * from '@syncfusion/ej2-navigations';

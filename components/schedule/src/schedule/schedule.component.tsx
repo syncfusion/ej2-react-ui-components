@@ -33,7 +33,7 @@ export class ScheduleComponent extends Schedule {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'views': 'view', 'resources': 'resource', 'headerRows': 'headerRow'};
+    public directivekeys: { [key: string]: Object } = {'views': 'view', 'resources': 'resource', 'headerRows': 'headerRow', 'toolbarItems': 'toolbarItem'};
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = false;

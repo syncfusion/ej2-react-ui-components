@@ -2,47 +2,19 @@
 
 ## [Unreleased]
 
-## 23.2.7 (2023-12-05)
-
-### Chip
-
-#### Bug Fixes
-
-- `#I525416` - The issue when updating the `chips` property when multiple chip component rendered in the page has been resolved.
-
-## 23.1.43 (2023-10-31)
+## 24.1.41 (2023-12-18)
 
 ### RadioButton
 
 #### Bug Fixes
 
-- `#F513731` - The issue with "`HtmlAttributes` property not working properly in RadioButton component" has been resolved.
-
-## 23.1.42 (2023-10-24)
+- `#F40707` - Value change event triggered twice in Radio Button component has been fixed.
 
 ### Button
 
 #### Bug Fixes
 
 - `#I512179` - The issue with "Duplicate Icon Span while using the `onPropertyChange` of button" has been resolved.
-
-## 23.1.41 (2023-10-17)
-
-### Checkbox
-
-#### Bug Fixes
-
-- `#I509029` - The issue with "`HtmlAttributes` property not working properly in checkBox component" has been resolved.
-
-## 23.1.39 (2023-10-04)
-
-### Checkbox
-
-#### Bug Fixes
-
-- `#I505814` - The issue with "Script error thrown in CheckBox While using the change event in React" has been resolved.
-
-## 23.1.36 (2023-09-15)
 
 ### Checkbox
 
@@ -64,12 +36,6 @@
 
 - `#I422263` - Provided the htmlAttributes support for the Chip component.
 
-
-### RadioButton
-
-#### Bug Fixes
-
-- `#F40707` - Value change event triggered twice in Radio Button component has been fixed.
 
 ## 19.2.47 (2021-07-13)
 
