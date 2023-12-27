@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.1.43 (2023-12-27)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I518537` - Now, the paste format prompt dialog appears properly when pasting the content into the Rich Text Editor.
+
 ## 24.1.41 (2023-12-18)
 
 ### RichTextEditor

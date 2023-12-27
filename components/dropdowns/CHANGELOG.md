@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 24.1.43 (2023-12-27)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#I520132` - Issue with "The listbox value was not updated properly while filtering the data source when we place within form" has been resolved.
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#I523994` - Resolved the issue where the NVDA Reader was not reading the list item when filtering is enabled.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#I528524` - Fixed an issue where the Change Event was not triggered when pressing the enter key after preventing the Popup from opening.
+
 ## 24.1.41 (2023-12-18)
 
 ### DropDownTree
