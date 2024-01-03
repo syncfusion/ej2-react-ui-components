@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.1.44 (2024-01-03)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I536115` - The issue of adding an unnecessary `<ul>` element under the large icons view while using `enableVirtualization` property in the FileManager component has been resolved.
+
 ## 24.1.43 (2023-12-27)
 
 ### FileManager
@@ -9,8 +17,7 @@
 #### Bug Fixes
 
 - `#I527570` - The issue with auto scroll during drag and drop operation in the FileManager component has been resolved.
-
-- `#I531559`, `#I529731` - The file selection issue for the duplicate folders with different parents in the navigation pane of File Manager has been resolved.
+- `#I531559`, `#I529731` - The file selection issue for the duplicate folders with different parents in the navigation pane of FileManager has been resolved.
 
 ## 24.1.41 (2023-12-18)
 
@@ -402,11 +409,11 @@
 
 - The `beforeFileLoad` event’s `module` argument values have been changed as follows:
 
-|Argument Name|Old Value|New Value|
-|----|----|----|
-|module|navigationpane|NavigationPane|
-|module|Grid|DetailsView|
-|module|LargeIcon|LargeIconView|
+| Argument Name | Old Value | New Value | 
+|---|---|---|
+| module | navigationpane | NavigationPane | 
+| module | Grid | DetailsView | 
+| module | LargeIcon | LargeIconView | 
 
 ## 17.1.32-beta (2019-03-13)
 
@@ -414,9 +421,12 @@
 
 The `FileManager` is a graphical user interface component used to manage the file system. It enables the user to perform common file operations such as accessing, editing, uploading, downloading, and sorting files and folders. This component also allows easy navigation for browsing or selecting a file or folder from the file system.
 
+
 - **Different Views** - Provides detailed and large icon views.
 - **Context menu support** - Provides detailed and large icon views.
 - **Custom toolbar support** - Customize the toolbar to provide only necessary features.
 - **Multiple file selection** - Select multiple files simultaneously.
 - **Accessibility** - Features built-in accessibility support that makes all features accessible through keyboard interaction, screen readers, or other assistive technology devices.
 - **Localization** - Translate file names to any supported language.
+
+

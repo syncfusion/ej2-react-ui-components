@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 24.1.43 (2023-12-27)
-
-### Kanban
-
-#### Bug Fixes
-
-- `#I525892` - Now, when using the column template in Kanban, the card count is updated properly.
-
 ## 24.1.41 (2023-12-18)
 
 ### Kanban
@@ -494,4 +486,12 @@ The Kanban component is an efficient way to visually depict work at various stag
 - **Localization**: All the static text content can be localized to any desired language.
 - **RTL**: Display the control contents from right to left.
 
+
+## 24.1.43 (2023-12-27)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#I525892` - Now, when using the column template in Kanban, the card count is updated properly.
 

@@ -2,16 +2,13 @@
 
 ## [Unreleased]
 
-## 24.1.43 (2023-12-27)
+## 24.1.44 (2024-01-03)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I861114` - Issue with "`SUMIF` formula returns wrong value when an alphanumeric cell value is present within the passed range" has been resolved.
-- `#I862629` - Issue with "`AVERAGEIF` formula returns wrong value when an alphanumeric cell value is present within the passed range" has been resolved.
-- `#I861483` - Issue with "script error occurs when performing a filtering action on an empty sheet" has been resolved.
-- `#I861530` - Issue with "border color palette popup does not close and causes a script error in mobile device" has been resolved.
+- `#I861504` - Issue with "sheet names are not displayed completely after adding multiple sheets and performing a swipe action on mobile devices" has been resolved.
 
 ## 24.1.41 (2023-12-18)
 
@@ -1319,6 +1316,17 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 24.1.43 (2023-12-27)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I861114` - Issue with "`SUMIF` formula returns wrong value when an alphanumeric cell value is present within the passed range" has been resolved.
+- `#I862629` - Issue with "`AVERAGEIF` formula returns wrong value when an alphanumeric cell value is present within the passed range" has been resolved.
+- `#I861483` - Issue with "script error occurs when performing a filtering action on an empty sheet" has been resolved.
+- `#I861530` - Issue with "border color palette popup does not close and causes a script error in mobile device" has been resolved.
 
 ## 21.1.39 (2023-04-11)
 
