@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.1.45 (2024-01-09)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#I525892` - Now, when using the column template in Kanban, the card count is updated properly.
+
 ## 24.1.41 (2023-12-18)
 
 ### Kanban

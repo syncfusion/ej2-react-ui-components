@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.1.45 (2024-01-09)
+
+### Switch
+
+#### Bug Fixes
+
+- `#I530742` - The issue with "Switch unintentionally changed when we touch the switch and drag vertically" has been resolved.
+
 ## 24.1.41 (2023-12-18)
 
 ### RadioButton

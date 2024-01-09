@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 24.1.44 (2024-01-03)
+## 24.1.45 (2024-01-09)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I861504` - Issue with "sheet names are not displayed completely after adding multiple sheets and performing a swipe action on mobile devices" has been resolved.
+- `#I863473` - Issue with "copying and pasting the cell reference value of a specific column, such as (AF,BF...), results in a `#REF` error" has been resolved.
 
 ## 24.1.41 (2023-12-18)
 
@@ -1316,6 +1316,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 24.1.44 (2024-01-03)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I861504` - Issue with "sheet names are not displayed completely after adding multiple sheets and performing a swipe action on mobile devices" has been resolved.
 
 ## 24.1.43 (2023-12-27)
 

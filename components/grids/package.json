@@ -1,31 +1,30 @@
 {
 	"name": "@syncfusion/ej2-react-grids",
-	"version": "24.1.43",
+	"version": "24.1.44",
 	"description": "Feature-rich JavaScript datagrid (datatable) control with built-in support for editing, filtering, grouping, paging, sorting, and exporting to Excel. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"react",
-		"reactjs",
-		"react-grids",
+		"ej2",
+		"syncfusion",
 		"ej2-react-grids"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
+		"url": "https://github.com/syncfusion/ej2-react-grids.git"
 	},
 	"main": "./dist/ej2-react-grids.umd.min.js",
 	"module": "./index.js",
 	"es2015": "dist/es6/ej2-react-grids.es2015.js",
 	"readme": "ReadMe.md",
 	"dependencies": {
+		"awesome-typescript-loader": "^3.1.3",
+		"source-map-loader": "^0.2.1",
 		"@syncfusion/ej2-base": "*",
 		"@syncfusion/ej2-react-base": "*",
 		"@syncfusion/ej2-grids": "*"
 	},
 	"devDependencies": {
-		"awesome-typescript-loader": "^3.1.3",
-		"source-map-loader": "^0.2.1",
 		"@types/chai": "^3.4.28",
 		"@types/es6-promise": "0.0.28",
 		"@types/jasmine": "2.8.22",

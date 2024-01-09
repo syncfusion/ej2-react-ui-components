@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 24.1.45 (2024-01-09)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I530808` - Progress width not rendered properly in split tasks issue has been fixed.
+- `#F185683` - Resources are not updating properly in `actionBegin`event issue has been fixed.
+- `#I532918` - Baseline width not rendered properly in PDF export issue has been fixed.
+- `#F532918` - Issue with remote data while performing CRUD operation in various Gantt chart versions has been fixed.
+
+- `#F185683` - Resources are not updating properly in `actionBegin` event issue has been fixed.
+- `#I532918` - Baseline width not rendered properly in PDF export issue has been fixed.
+
 ## 24.1.44 (2024-01-03)
 
 ### GanttChart
@@ -15,10 +29,6 @@
 
 
 ## 24.1.43 (2023-12-27)
-
-### GanttChart
-
-#### Bug Fixes
 
 - `#I527509` - Action begin event arguments not working properly issue has been fixed.
 - `#I517104` - Gantt component hangs whole page if timezone changed to UK(London) issue has been fixed.
