@@ -1,0 +1,63 @@
+{
+	"name": "@syncfusion/ej2-react-base",
+	"version": "24.1.46",
+	"description": "A common package of Essential JS 2 React base, methods and class definitions",
+	"author": "Syncfusion Inc.",
+	"license": "SEE LICENSE IN license",
+	"keywords": [
+		"ej2",
+		"syncfusion",
+		"web-components",
+		"react",
+		"react-base",
+		"syncfusion react",
+		"base",
+		"library",
+		"ej2-react-base"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
+	},
+	"homepage": "https://www.syncfusion.com/react-ui-components",
+	"main": "./dist/ej2-react-base.umd.min.js",
+	"module": "./index.js",
+	"readme": "ReadMe.md",
+	"dependencies": {
+		"@syncfusion/ej2-base": "*"
+	},
+	"devDependencies": {
+		"react": "15.5.4 - 16.10.2",
+		"react-dom": "15.5.4 - 16.10.2",
+		"@types/chai": "^3.4.28",
+		"@types/es6-promise": "0.0.28",
+		"@types/jasmine": "2.8.22",
+		"@types/jasmine-ajax": "^3.1.27",
+		"@types/react": "^15.0.24",
+		"@types/react-dom": "^15.5.0",
+		"@types/requirejs": "^2.1.26",
+		"es6-promise": "^3.2.1",
+		"gulp": "^3.9.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-typescript": "^3.1.6",
+		"requirejs": "^2.3.3",
+		"typescript": "2.3.4",
+		"canteen": "^1.0.5",
+		"jasmine-ajax": "^3.3.1",
+		"jasmine-core": "^2.6.1",
+		"karma": "^1.7.0",
+		"karma-chrome-launcher": "^2.2.0",
+		"karma-generic-preprocessor": "^1.1.0",
+		"karma-htmlfile-reporter": "^0.3.5",
+		"karma-jasmine": "^1.1.0",
+		"karma-jasmine-ajax": "^0.1.13",
+		"karma-requirejs": "^1.1.0",
+		"nedb": "^1.8.0",
+		"simple-odata-server": "^0.3.1"
+	},
+	"scripts": {
+		"build": "gulp build",
+		"test": "gulp test"
+	},
+	"typings": "index.d.ts"
+}
