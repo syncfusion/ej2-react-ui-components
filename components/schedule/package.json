@@ -5,28 +5,26 @@
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"react",
-		"reactjs",
-		"react-schedule",
-		"react-scheduler",
-		"ej2-react-scheduler"
+		"ej2",
+		"syncfusion",
+		"ej2-react-schedule"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-react-ui-components.git"
+		"url": "https://github.com/syncfusion/ej2-react-schedule.git"
 	},
 	"main": "./dist/ej2-react-schedule.umd.min.js",
 	"module": "./index.js",
 	"es2015": "dist/es6/ej2-react-schedule.es2015.js",
 	"readme": "ReadMe.md",
 	"dependencies": {
+		"awesome-typescript-loader": "^3.1.3",
+		"source-map-loader": "^0.2.1",
 		"@syncfusion/ej2-base": "*",
 		"@syncfusion/ej2-react-base": "*",
 		"@syncfusion/ej2-schedule": "*"
 	},
 	"devDependencies": {
-		"awesome-typescript-loader": "^3.1.3",
-		"source-map-loader": "^0.2.1",
 		"@types/chai": "^3.4.28",
 		"@types/es6-promise": "0.0.28",
 		"@types/jasmine": "2.8.22",

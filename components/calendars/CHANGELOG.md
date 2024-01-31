@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.3 (2024-01-31)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I541657` - Fixed an issue where the change event in the DateTimePicker was firing after the first time losing focus when milliseconds were included.
+
 ## 24.1.47 (2024-01-23)
 
 ### DateRangePicker
