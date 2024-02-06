@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 24.2.3 (2024-01-31)
-
-### Spreadsheet
-
-#### Features
-
-- `#I530805` - Provided draggable support for the find dialogue when rendering on the mobile device.
-- `#I517662` - Provided methods for programmatically selecting and deselecting the chart and image.
-
 ## 24.1.41 (2023-12-18)
 
 ### Spreadsheet
@@ -1317,6 +1308,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 24.2.3 (2024-01-31)
+
+### Spreadsheet
+
+#### Features
+
+- `#I530805` - Provided draggable support for the find dialogue when rendering on the mobile device.
+- `#I517662` - Provided methods for programmatically selecting and deselecting the chart and image.
 
 ## 24.1.47 (2024-01-23)
 

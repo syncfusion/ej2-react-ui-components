@@ -68,6 +68,26 @@ The [React Toast](https://www.syncfusion.com/react-components/react-toast?utm_so
 * [Action buttons](https://ej2.syncfusion.com/react/documentation/toast/action-buttons) - Supports to add buttons in the toast for archiving any actions within the toast.
 * [Template](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-notifications-npm#/bootstrap5/toast/templates) - User customized element can be defined for the toast using the template property.
 
+### React Skeleton
+
+The [React Skeleton](https://www.syncfusion.com/react-components/react-skeleton?utm_source=npm&utm_medium=listing&utm_campaign=react-notifications-npm) component is a placeholder that animates a shimmer effect to let users know that the page’s content is currently loading. It has several built-in features such as support for shapes, shimmer effect, and UI customization.
+
+<p align="center">
+    <a href="https://ej2.syncfusion.com/react/documentation/skeleton/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-notifications-npm">Getting Started</a> .
+    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-notifications-npm#/bootstrap5/skeleton/default">Online demos</a> .
+    <a href="https://www.syncfusion.com/react-components/react-skeleton?utm_source=npm&utm_medium=listing&utm_campaign=react-notifications-npm">Learn more</a>
+</p>
+
+<p align="center">
+<img alt="React Skeleton Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-skeleton.gif">
+</p>
+
+#### Key features
+
+* [Shapes](https://ej2.syncfusion.com/react/documentation/skeleton/shapes) - Provides various built-in shape variants to design the layout of the page.
+* [ShimmerEffect](https://ej2.syncfusion.com/react/documentation/skeleton/shimmer-effect) - Provides an option to display the skeleton with various animation effects.
+* [Styles](https://ej2.syncfusion.com/react/documentation/skeleton/styles) - Customize the style of a skeleton.
+
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://getbootstrap.com/">
@@ -116,4 +136,4 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 See [LICNESE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_campaign=notification) for more info.
 
-&copy; Copyright 2023 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

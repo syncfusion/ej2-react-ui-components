@@ -2,6 +2,25 @@
 
 ## [Unreleased]
 
+## 24.2.4 (2024-02-06)
+
+### ListBox
+
+-`#I528014`- Issue with 'change' event is triggered while filtering in Angular.
+
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#I545534` - Fixed an issue where the Popup Element was not being destroyed when rendering inside the In-place editor.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I534853` - Fixed an issue where a console exception occurred when typing a custom value in the input field.
+
 ## 24.1.47 (2024-01-23)
 
 ### ListBox
@@ -15,6 +34,7 @@
 #### Bug Fixes
 
 - `#I531844` - Fixed issue where custom value could not be added to combobox when dataSource is empty.
+- `#F49952` - Fixed an issue where the combobox change event was not being triggered when clear the value using backspace.
 
 ### MultiSelect
 
@@ -25,19 +45,17 @@
 
 ## 24.1.46 (2024-01-17)
 
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I541407` - The issue with the Dropdown Tree popup not closing when the preselected value is again selected has been resolved.
-
-- `#I536563` - The issue with the Dropdown Tree selection disappears after filtering has been resolved.
-
 ### MultiSelect
 
 #### Bug Fixes
 
 - `#I535771` - Fixed issue where Z-index was not being added to the popup element when initially opening the popup.
+
+### DropDownTree
+
+#### Bug Fixes
+
+- `#I536563` - The issue with the Dropdown Tree selection disappears after filtering has been resolved.
 
 ## 24.1.45 (2024-01-09)
 

@@ -84,6 +84,49 @@ The [React Switch](https://www.syncfusion.com/react-components/react-toggle-swit
 * [Text](https://ej2.syncfusion.com/react/documentation/switch/getting-started#set-text-on-switch) - Supports text.
 * [Sizes](https://ej2.syncfusion.com/react/documentation/switch/how-to#change-size) - Provided with different sizes of Switch.
 
+### React Floating Action Button
+
+The [React Floating Action Button](https://www.syncfusion.com/react-components/react-fab?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm) component performs the primary action that appears in front of all screen contents. It has several built-in features such as support for icons, predefined styles, positions, and UI customization.
+
+<p align="center">
+    <a href="https://ej2.syncfusion.com/react/documentation/floating-action-button/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm">Getting Started</a> .
+    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm#/bootstrap5/floating-action-button/overview">Online demos</a> .
+    <a href="https://www.syncfusion.com/react-components/react-fab?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm">Learn more</a>
+</p>
+
+<p align="center">
+<img alt="React Floating Action Button Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-fab.png">
+</p>
+
+#### Key features
+
+* [Icons](https://ej2.syncfusion.com/react/documentation/floating-action-button/icons) - Supports addition of both text and icon on the Button.
+* [Predefined styles](https://ej2.syncfusion.com/react/documentation/floating-action-button/styles) - Provided with predefined styles for the Floating Action Button.
+* [Positions](https://ej2.syncfusion.com/react/documentation/floating-action-button/positions) - Positioned anywhere on the target. If the target is not defined, then Floating Action Button is positioned based on the browser viewport.
+
+### React Speed Dial
+
+The [React Speed Dial](https://www.syncfusion.com/react-components/react-speed-dial?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm) component is an extension of the floating action button that displays a list of action buttons when clicked. It has several built-in features such as support for items, predefined styles, positions, and UI customization.
+
+<p align="center">
+    <a href="https://ej2.syncfusion.com/react/documentation/speed-dial/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm">Getting Started</a> .
+    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm#/bootstrap5/speed-dial/default">Online demos</a> .
+    <a href="https://www.syncfusion.com/react-components/react-speed-dial?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm">Learn more</a>
+</p>
+
+<p align="center">
+<img alt="React Speed Dial Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-speeddial.gif">
+</p>
+
+#### Key features
+
+* [Items](https://ej2.syncfusion.com/react/documentation/speed-dial/items) - Provides different items support for the Speed Dial.
+* [Predefined styles](https://ej2.syncfusion.com/react/documentation/speed-dial/styles) - Provided with predefined styles for the Speed Dial.
+* [Positions](https://ej2.syncfusion.com/react/documentation/speed-dial/positions) - Positioned anywhere on the target. If the target is not defined, then Speed Dial is positioned based on the browser viewport.
+* [Modes](https://ej2.syncfusion.com/react/documentation/speed-dial/display-modes) - Supports display of items in both linear and radial display modes.
+* [Modal](https://ej2.syncfusion.com/react/documentation/speed-dial/modal) - Adds an overlay to prevent the background interaction.
+* [Templates](https://ej2.syncfusion.com/react/documentation/speed-dial/template) - Customize Speed Dial items and the popup content using templates.
+
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com/">
@@ -132,4 +175,4 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license) for more info.
 
-&copy; Copyright 2023 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

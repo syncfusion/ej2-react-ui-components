@@ -11,6 +11,15 @@
 
 ## [Unreleased]
 
+## 24.2.4 (2024-02-06)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I545401`, `#I547542` - Markers will be rendered properly in the correct location when they are added dynamically by clicking over a custom shape map.
+- `#I545484` - Exceptions will no longer be thrown when the markers are dragged at the maximum zoom level.
+
 ## 24.1.47 (2024-01-23)
 
 ### Maps

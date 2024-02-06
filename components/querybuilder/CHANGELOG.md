@@ -16,6 +16,12 @@
 
 #### Bug Fixes
 
+- `#I534039` - Issue with `drop-down list popup` remains stick in the screen after close has been fixed.
+
+### QueryBuilder
+
+#### Bug Fixes
+
 - `#I534895` - Issue with `getValidRules` method of query builder returns improper rule for in operator has been fixed.
 
 ## 24.1.45 (2024-01-09)

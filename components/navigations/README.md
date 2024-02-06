@@ -226,6 +226,29 @@ The [React Menu](https://www.syncfusion.com/react-components/react-menu-bar?utm_
 * [Hamburger Menu](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-navigation-npm#/bootstrap5/menu/hamburger-mode) - Supports Hamburger Menu that provides an adaptive view.
 * [Accessibility](https://ej2.syncfusion.com/react/documentation/menu/accessibility) - Provided with built-in accessibility support that helps to access all the Menu component features through the keyboard, screen readers, or other assistive technology devices.
 
+### React Stepper
+
+The [React Stepper](https://www.syncfusion.com/react-components/react-stepper?utm_source=npm&utm_medium=listing&utm_campaign=react-navigation-npm) component enables users to navigate through a series of steps or stages in a process within a web application. Stepper displays a list of steps with the current step highlighted, allowing users to move between steps. It includes several built-in features, such as different step types, orientation, linear flow, label positions, and template customization.
+
+<p align="center">
+  <a href="https://ej2.syncfusion.com/react/documentation/stepper/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-navigation-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-navigation-npm#/bootstrap5/stepper/default">Online demos</a> .
+  <a href="https://www.syncfusion.com/react-components/react-stepper?utm_source=npm&utm_medium=listing&utm_campaign=react-navigation-npm">Learn more</a>
+</p>
+
+<p align="center">
+<img alt="React Stepper Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-stepper.png">
+</p>
+
+#### Key features
+
+* [Step Types](https://ej2.syncfusion.com/react/documentation/stepper/steptypes) - Display steps with indicators and labels, only indicators, or only labels.
+* [Orientation](https://ej2.syncfusion.com/react/documentation/stepper/orientations) - A layout to display steps in a horizontal or vertical orientation.
+* [Linear Flow](https://ej2.syncfusion.com/react/documentation/stepper/linear-flow) - Enable a step-by-step progression, completing one step before moving on to the next.
+* [Label Positioning](https://ej2.syncfusion.com/react/documentation/stepper/steptypes#label-positions) - Show the label at the top, bottom, left, or right.
+* [Tooltip](https://ej2.syncfusion.com/react/documentation/stepper/tooltip) - Show additional information when users hover over a step, such as a label or customized text.
+* [Templates](https://ej2.syncfusion.com/react/documentation/stepper/template) - Customize the default appearance and content of each step using templates.
+
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com/">

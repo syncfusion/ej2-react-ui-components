@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.4 (2024-02-06)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I546807` - Fixed issue where filtering was not working when navigating to another page when all records were collapsed.
+
 ## 24.1.46 (2024-01-17)
 
 ### Tree Grid
