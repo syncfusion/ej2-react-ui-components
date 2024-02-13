@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.5 (2024-02-13)
+
+### SplitButton
+
+#### Bug Fixes
+
+- `#I552152` - Issue in "Split button select event not triggered while using keyboard action" has been resolved.
+
 ## 24.1.46 (2024-01-17)
 
 ### DropDownButton
