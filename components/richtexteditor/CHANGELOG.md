@@ -9,6 +9,7 @@
 #### Bug Fixes
 
 - `#F183065` - Now, applying the mention by using the '&' keyword in the text editor is now properly working.
+- Now, the audio will be inserted properly in the Rich Text Editor `iframe` mode.
 
 ## 24.2.3 (2024-01-31)
 

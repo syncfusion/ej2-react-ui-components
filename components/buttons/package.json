@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-buttons",
-	"version": "24.2.3",
+	"version": "24.2.5",
 	"description": "A package of feature-rich Essential JS 2 components such as Button, CheckBox, RadioButton and Switch. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -18,8 +18,6 @@
 	"es2015": "dist/es6/ej2-react-buttons.es2015.js",
 	"readme": "ReadMe.md",
 	"dependencies": {
-		"awesome-typescript-loader": "^3.1.3",
-		"source-map-loader": "^0.2.1",
 		"@syncfusion/ej2-base": "*",
 		"@syncfusion/ej2-react-base": "*",
 		"@syncfusion/ej2-buttons": "*"
