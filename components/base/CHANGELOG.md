@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.7 (2024-02-20)
+
+### Common
+
+#### Bug Fixes
+
+- `#I545133` - The issue with "the class name of a component is removed from the element when the state is updated" has been resolved.
+
 ## 24.1.46 (2024-01-17)
 
 ### Common

@@ -259,7 +259,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                     this.htmlattributes['className'] = this.htmlattributes['className'] + ' '+ clsList[parseInt(i.toString(), 10)];
                 }
             }
-            this.clsName = false;
         }
         return this.htmlattributes;
     }

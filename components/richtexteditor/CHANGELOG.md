@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 24.2.7 (2024-02-20)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I552276` - Now, pasting the image after the link in the Rich Text Editor pastes the image outside the link.
+- `#I552815` - Now, override a text in the Rich Text Editor anywhere it works properly.
+- `#I553375` - Now, clicking the number or bullet list button in the Rich Text Editor allows the applied list to be reverted.
+- `#I553814` - Now, pressing the Enter key after pasting an image in the Rich Text Editor works properly.
+- `#I540536` - Now, The issue with the addition of previous format when typing after the backspace/delete action has been resolved.
+- `#I544943` - Now, pasting images along with content in different languages from MS Word in the Rich Text Editor works properly.
+- `#I552726` - Now, pressing the backspace key inside the list after pressing the `shift+enter` key with background color styles works properly.
+
 ## 24.2.4 (2024-02-06)
 
 ### RichTextEditor

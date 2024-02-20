@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 24.2.7 (2024-02-20)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I548671` - Dependency not working when id is alpha numeric issue has been fixed.
+- `#I552756` - A console error occurs when hovering over the Column menu options issue has been fixed.
+- `#I543787` - The timezone properties used in the sample taskbar not render properly issue has been fixed.
+- `#I550317` - Duration value getting string instead of number issue has been fixed.
+
+- `#I543787` - The timezone properties used in the sample taskbar not render properly issue has been fixed.
+- `#I548671` - Dependency not working when id is alpha numeric issue has been fixed.
+
 ## 24.2.5 (2024-02-13)
 
 ### GanttChart

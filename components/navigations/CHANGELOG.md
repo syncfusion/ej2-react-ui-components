@@ -10,6 +10,12 @@
 
 - `#I523951` - The issue with React's selection of a tab item using the select method, where all tab items were being underlined, has been resolved.
 
+### TreeView
+
+#### Bug fixes
+
+- `#I550140` - Resolved the accessibility issue with TreeView component when rendered with checkbox.
+
 ## 24.2.3 (2024-01-31)
 
 ### Menu

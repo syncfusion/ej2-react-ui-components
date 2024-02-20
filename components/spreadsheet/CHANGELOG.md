@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 24.2.7 (2024-02-20)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I867926` - Issue with "deleted chart reappeared after filtering action and reloading spreadsheet JSON data" has been resolved.
+- `#I869788` - Issue with "`findAll` method does not work properly when the mode is workbook and the workbook contains a single sheet" has been resolved.
+
 ## 24.2.4 (2024-02-06)
 
 ### Spreadsheet
@@ -1316,6 +1325,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 24.2.5 (2024-02-13)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I867999` - Issue with "out of range exception occurs when importing files with filters in the zeroth sheet index and active sheet index in other sheets" has been resolved.
+- `#I867999` - Issue with "an exception occurs when exporting a file with list type validation that contains empty string values" has been resolved.
 
 ## 24.2.3 (2024-01-31)
 
