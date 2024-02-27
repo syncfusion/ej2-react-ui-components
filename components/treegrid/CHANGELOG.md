@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.8 (2024-02-27)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#F50621` - Resolved an issue where a script error was being thrown when performing `ExpandAll` and `CollapseAll` actions in row template.
+
 ## 24.2.7 (2024-02-20)
 
 ### Tree Grid

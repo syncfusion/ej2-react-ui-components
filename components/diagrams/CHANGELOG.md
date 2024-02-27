@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.8 (2024-02-27)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I555649` - Now, the scaling of the BPMN symbols with description is properly rendered.
+
 ## 24.2.7 (2024-02-20)
 
 ### Diagram

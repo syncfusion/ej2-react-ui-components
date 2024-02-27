@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.8 (2024-02-27)
+
+### Image Editor
+
+#### Bug Fixes
+
+- `#I555243` - The issue with "Text area not applied while using GetImageData method" has been resolved.
+
 ## 24.2.5 (2024-02-13)
 
 ### Image Editor

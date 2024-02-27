@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 24.2.8 (2024-02-27)
+
+### ListView
+
+- `#I553202` - Included a new method `unselectItem` for deselecting the items instead of using `selectItem` method with empty arguments.
+
 ## 24.2.4 (2024-02-06)
 
 ### ListView

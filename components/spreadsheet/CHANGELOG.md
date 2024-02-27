@@ -2,14 +2,14 @@
 
 ## [Unreleased]
 
-## 24.2.7 (2024-02-20)
+## 24.2.8 (2024-02-27)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I867926` - Issue with "deleted chart reappeared after filtering action and reloading spreadsheet JSON data" has been resolved.
-- `#I869788` - Issue with "`findAll` method does not work properly when the mode is workbook and the workbook contains a single sheet" has been resolved.
+- `#I870021` - Issue with "`cellEditing` event is not triggered when you focus the cell and press the backspace key" has been resolved.
+- `#I870519` - Issue with "cell values are updated directly from the data source before being converted to formatted values" has been resolved.
 
 ## 24.2.4 (2024-02-06)
 
@@ -1325,6 +1325,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 24.2.7 (2024-02-20)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I867926` - Issue with "deleted chart reappeared after filtering action and reloading spreadsheet JSON data" has been resolved.
+- `#I869788` - Issue with "`findAll` method does not work properly when the mode is workbook and the workbook contains a single sheet" has been resolved.
 
 ## 24.2.5 (2024-02-13)
 

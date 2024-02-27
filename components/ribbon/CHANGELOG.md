@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.8 (2024-02-27)
+
+### Ribbon
+
+#### Bug Fixes
+
+- `#I555696` - Now the issue with tab animations not updated, while using the `tabAnimation` property has been resolved.
+
 ## 24.1.44 (2024-01-03)
 
 ### Ribbon

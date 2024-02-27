@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 24.2.8 (2024-02-27)
+
+### TreeView
+
+#### Bug fixes
+
+- `#I550140` - Resolved the accessibility issue with TreeView component when rendered with checkbox.
+- `#F186726` - Resolved the multi selection functionality issue in the TreeView component on Mac device.
+
 ## 24.2.4 (2024-02-06)
 
 ### Tab
@@ -9,12 +18,6 @@
 #### Bug fixes
 
 - `#I523951` - The issue with React's selection of a tab item using the select method, where all tab items were being underlined, has been resolved.
-
-### TreeView
-
-#### Bug fixes
-
-- `#I550140` - Resolved the accessibility issue with TreeView component when rendered with checkbox.
 
 ## 24.2.3 (2024-01-31)
 

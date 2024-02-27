@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 24.2.8 (2024-02-27)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I550956` - Now, the comments do not overlap when the author name has more characters.
+- `#I549538` - Now, the selected value and index of the dropdown are updated correctly for dropdown lists that are not selected.
+- `#I553949` - Now, the check box appearance is properly displayed on iOS devices.
+- `#I545417` - Now, dynamically show and hide the text search pane is working properly.
+
+- `#I550956` - Now, comments do not overlap when the author name has more characters.
+- `#I549538` - Now, the selected value and index of the dropdown are updated correctly for dropdown lists that are not selected.
+- `#I553949` - Now, the check box appearance is properly displayed on iOS devices.
+- `#I545417` - Now, dynamically show and hide the text search pane is working properly.
+
 ## 24.2.7 (2024-02-20)
 
 ### PDF Viewer
