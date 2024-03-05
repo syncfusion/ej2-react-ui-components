@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.9 (2024-03-05)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `#I526571` - Fixed the issue where Color Picker throws an error on mobile devices while createPopupOnClick is set to true has been resolved.
+
 ## 24.2.4 (2024-02-06)
 
 ### Uploader

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.9 (2024-03-05)
+
+### ProgressBar
+
+#### Bug Fixes
+
+- `#I558909` - The progress bar label now renders properly when setting the `textAlignment` as center.
+
 ## 24.2.5 (2024-02-13)
 
 ### ProgressBar

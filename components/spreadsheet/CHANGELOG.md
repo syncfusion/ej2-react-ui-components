@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 24.2.9 (2024-03-05)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I870831` - Issue with "formula calculation with defined name does not work as expected when adding the defined name using public method" has been resolved.
+
+- `#I870803` - Issue with "border on merged cells does not update properly after scrolling the sheet" has been resolved.
+
 ## 24.2.8 (2024-02-27)
 
 ### Spreadsheet

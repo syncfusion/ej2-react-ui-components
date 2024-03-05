@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.9 (2024-03-05)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I557035` - Now, the layers object gets cleared when we call clear method.
+
 ## 24.2.8 (2024-02-27)
 
 ### Diagram

@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 24.2.9 (2024-03-05)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I550863` - Now the script error doesn't show when all content is selected and pasted into the Rich Text Editor.
+- `#I555677` - Now the list format is working properly when press the backspace key in a list in RichTextEditor.
+- `#I558397` - Now the Emoji Picker popup is shown properly within the inline Rich Text Editor.
+
 ## 24.2.8 (2024-02-27)
 
 ### RichTextEditor

@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 24.2.9 (2024-03-05)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I557826` - Fixed an issue where preselected values in ComboBox were not working properly when Virtualization is enabled.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I560779` - Fixed an issue where the last filtered item was the only one displayed when filtering and selecting a value using the item template.
+
 ## 24.2.8 (2024-02-27)
 
 ### Mention

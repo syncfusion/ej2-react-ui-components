@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.9 (2024-03-05)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I547853` - Fixed an issue where the dialog was not draggable on mobile devices.
+
 ## 24.2.8 (2024-02-27)
 
 ### Dialog
