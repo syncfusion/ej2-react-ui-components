@@ -18,7 +18,7 @@ Trusted by the world's leading companies
     <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
   </a>
 </p>
-
+  
 ## Setup
 
 To install the Ribbon and its dependent packages, use the following command.
@@ -41,6 +41,9 @@ Ribbon component is also offered in the following list of frameworks.
 * [Tooltip](https://ej2.syncfusion.com/react/documentation/ribbon/tooltip): Provide additional information when a user hovers over a ribbon item, improving user experience and increasing the usability of the application.
 * [File menu](https://ej2.syncfusion.com/react/documentation/ribbon/filemenu): A built-in menu that to add file related actions easily.
 * [Backstage](https://ej2.syncfusion.com/react/documentation/ribbon/backstage): It is an extension of traditional file menu for displaying information, based on the user interactions with backstage options.
+* `Gallery`: In addition to the existing items, a new item gallery has been added to the Ribbon component which allows users to perform specific actions by displaying a collection of related items including icons, content, or images.
+* `Contextual Tabs`: It allows users to show ribbon tabs on demand when needed, by adding built-in and custom items to perform specific actions just like regular ribbon tabs.
+* `KeyTips`: It enables users to quickly access the tabs or ribbon items by using unique key tips (up to 3 characters), activated with `Alt + Windows/Command keys` and closed or navigated back with the `Esc` key.
 * [Templates](https://ej2.syncfusion.com/react/documentation/ribbon/help-pane-template): Customize ribbon items and the help pane content using templates.
 
 

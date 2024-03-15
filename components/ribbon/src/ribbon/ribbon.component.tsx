@@ -19,7 +19,7 @@ export class RibbonComponent extends Ribbon {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'ribbonTabs': {'ribbonTab': {'ribbonGroups': {'ribbonGroup': {'ribbonCollections': {'ribbonCollection': {'ribbonItems': 'ribbonItem'}}}}}}};
+    public directivekeys: { [key: string]: Object } = {'ribbonTabs': {'ribbonTab': {'ribbonGroups': {'ribbonGroup': {'ribbonCollections': {'ribbonCollection': {'ribbonItems': 'ribbonItem'}}}}}}, 'ribbonContextualTabs': {'ribbonContextualTab': {'ribbonTabs': {'ribbonTab': {'ribbonGroups': {'ribbonGroup': {'ribbonCollections': {'ribbonCollection': {'ribbonItems': 'ribbonItem'}}}}}}}}};
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = false;

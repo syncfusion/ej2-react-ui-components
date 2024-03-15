@@ -2,32 +2,20 @@
 
 ## [Unreleased]
 
-## 24.2.9 (2024-03-06)
+## 25.1.35 (2024-03-15)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I870831` - Issue with "formula calculation with defined name does not work as expected when adding the defined name using public method" has been resolved.
+- `#I549016` - Issue with "script error occurs when inserting multiple images into a single active cell and performing delete an action" has been resolved.
 
-- `#I870803` - Issue with "border on merged cells does not update properly after scrolling the sheet" has been resolved.
+- `#I559003` - Issue with "`select` event is not triggered after selecting the range and performing the autofill action" has been resolved.
 
-## 24.2.8 (2024-02-27)
+#### Features
 
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I870021` - Issue with "`cellEditing` event is not triggered when you focus the cell and press the backspace key" has been resolved.
-- `#I870519` - Issue with "cell values are updated directly from the data source before being converted to formatted values" has been resolved.
-
-## 24.2.4 (2024-02-06)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- Issue with "formula returns the wrong result when performing an arithmetic expression with a negative sign" has been resolved.
+- `#I369726` - Now, provided support for accepting the culture-based argument separator in the formula.
+- `#I369726` - Now, provided support to pass numeric values with culture-based decimal separators as arguments to the formulas.
 
 ## 24.1.41 (2023-12-18)
 
@@ -1335,77 +1323,6 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
-
-## 24.2.7 (2024-02-20)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I867926` - Issue with "deleted chart reappeared after filtering action and reloading spreadsheet JSON data" has been resolved.
-- `#I869788` - Issue with "`findAll` method does not work properly when the mode is workbook and the workbook contains a single sheet" has been resolved.
-
-## 24.2.5 (2024-02-13)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I867999` - Issue with "out of range exception occurs when importing files with filters in the zeroth sheet index and active sheet index in other sheets" has been resolved.
-- `#I867999` - Issue with "an exception occurs when exporting a file with list type validation that contains empty string values" has been resolved.
-
-## 24.2.3 (2024-01-31)
-
-### Spreadsheet
-
-#### Features
-
-- `#I530805` - Provided draggable support for the find dialogue when rendering on the mobile device.
-- `#I517662` - Provided methods for programmatically selecting and deselecting the chart and image.
-
-## 24.1.47 (2024-01-23)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I530807` - Issue with "position of the named range drop-down popup is incorrect on mobile devices" has been resolved.
-- `#I530834` - Issue with "on mobile devices, list validation drop-down popup appears in the wrong position on the list validation applied cell" has been resolved.
-
-## 24.1.46 (2024-01-17)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I534501` - Issue with "only the active sheet data is exported as Excel when you load multiple sheets using data source binding and perform the export action" has been resolved.
-
-## 24.1.45 (2024-01-09)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I863473` - Issue with "copying and pasting the cell reference value of a specific column, such as (AF,BF...), results in a `#REF` error" has been resolved.
-
-## 24.1.44 (2024-01-03)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I861504` - Issue with "sheet names are not displayed completely after adding multiple sheets and performing a swipe action on mobile devices" has been resolved.
-
-## 24.1.43 (2023-12-27)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I861114` - Issue with "`SUMIF` formula returns wrong value when an alphanumeric cell value is present within the passed range" has been resolved.
-- `#I862629` - Issue with "`AVERAGEIF` formula returns wrong value when an alphanumeric cell value is present within the passed range" has been resolved.
-- `#I861483` - Issue with "script error occurs when performing a filtering action on an empty sheet" has been resolved.
-- `#I861530` - Issue with "border color palette popup does not close and causes a script error in mobile device" has been resolved.
 
 ## 21.1.39 (2023-04-11)
 

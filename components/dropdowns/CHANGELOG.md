@@ -2,181 +2,23 @@
 
 ## [Unreleased]
 
-## 24.2.9 (2024-03-06)
+## 25.1.35 (2024-03-15)
 
 ### ComboBox
 
 #### Bug Fixes
 
-- `#I557826` - Fixed an issue where preselected values in ComboBox were not working properly when Virtualization is enabled.
+- `#I560957` - Resolved issue with "Combo Box not possible to update the datasource dynamically".
 
-### DropDownList
-
-#### Bug Fixes
-
-- `#I560779` - Fixed an issue where the last filtered item was the only one displayed when filtering and selecting a value using the item template.
-
-## 24.2.8 (2024-02-27)
-
-### Mention
+### Dropdown Tree
 
 #### Bug Fixes
 
-- `#I539496` - Fixed an issue where the mentioned value was not being updated to the target element when using mouse interaction.
+- `#I558972` - Issue with "focus from the first item when items are selected in the Dropdown Tree component" has been resolved.
 
-## 24.2.7 (2024-02-20)
+#### New Features
 
-### Mention
-
-#### Bug Fixes
-
--`#I556815`- Fixed an issue where console error that occurred when using `iframe` along with mention.
-
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I553564` - Fixed an issue where the Change Event was triggering multiple times when unCheck all items.
-
-## 24.2.6 (2024-02-15)
-
-### ListBox
-
-- `#I548014` - Issue with "Reduce the time taken to move records in a dual listbox when using moveTo/moveFrom toolbar click" has been resolved.
-
-### Mention
-
-#### Bug Fixes
-
--`#I528014`- Issue with 'change' event is triggered while filtering in Angular.
-
-
-- `#F186429` - Fixed an issue where the mention popup was not aligned properly when the mention target was set as `iframe`.
-
-## 24.2.5 (2024-02-13)
-
-### DropdownList
-
-#### Bug Fixes
-
-- `#F49655` - Fixed an issue where assigning null to a value, text and index property resulting in errors.
-- `#I546769` - Fixed an issue where the `isInteracted` property return false after selecting a value using focus out.
-
-## 24.2.4 (2024-02-06)
-
-### ListBox
-
--`#I528014`- Issue with 'change' event is triggered while filtering in Angular.
-
-
-### DropdownList
-
-#### Bug Fixes
-
-- `#I545534` - Fixed an issue where the Popup Element was not being destroyed when rendering inside the In-place editor.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I534853` - Fixed an issue where a console exception occurred when typing a custom value in the input field.
-
-## 24.1.47 (2024-01-23)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I514409` - Issue with "Filtering focus not removed in listbox while clearing and click anywhere" has been resolved.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I531844` - Fixed issue where custom value could not be added to combobox when dataSource is empty.
-- `#F49952` - Fixed an issue where the combobox change event was not being triggered when clear the value using backspace.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I865302` - Fixed the issue where the Multi select component would automatically scroll the dropdown when a selection was made, even when the allowFiltering option was enabled.
-- `#I865314` - The issue where the group header would shake (sticky header) while scrolling the items slowly has been fixed.
-
-## 24.1.46 (2024-01-17)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I535771` - Fixed issue where Z-index was not being added to the popup element when initially opening the popup.
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I536563` - The issue with the Dropdown Tree selection disappears after filtering has been resolved.
-
-## 24.1.45 (2024-01-09)
-
-### Mention
-
-#### Bug Fixes
-
-- `#I534515` - Fixed an issue where unable to add image caption in `RTE` using the Mention integration.
-- `#I530749` - Now, the Change event triggers properly with the mention list in Rich Text Editor.
-
-## 24.1.44 (2024-01-03)
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I536388` - The issue with the `selectAll` method in the Dropdown Tree component has been resolved.
-
-### DropdownList
-
-#### Bug Fixes
-
-- `#F49252` - Fixed the issue where the dropdown list width was not the same as the dropdown control.
-- `#I531994` - Fixed the issue where pressing the space key after focusing on a dropdown list would cause an unexpected page scroll.
-
-### Mention
-
-#### Bug Fixes
-
-- `#I530713` - Fixed issue where users were unable to access the popup after pressing Shift + Enter.
-- `#I8411` - Fixed an issue where list values were displayed immediately after typing instead of waiting the minimum length was reached.
-
-## 24.1.43 (2023-12-27)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I520132` - Issue with "The listbox value was not updated properly while filtering the data source when we place within form" has been resolved.
-- `#I522090` - Issue with "Keyboard action is not working properly in the ListBox filter" has been resolved.
-
-### DropdownList
-
-#### Bug Fixes
-
-- `#I523994` - Resolved the issue where the NVDA Reader was not reading the list item when filtering is enabled.
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `#I528524` - Fixed an issue where the Change Event was not triggered when pressing the enter key after preventing the Popup from opening.
-
-## 24.1.41 (2023-12-18)
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I522936` - The issue with the htmlAttributes field class value in the Dropdown Tree component has been resolved.
+- `#I322379`,`#I521440` - The Dropdown Tree component has been updated to render the popup in the DOM dynamically, significantly improving performance. If you need the popup to render during the initial load, you can set the 'destroyPopupOnHide' property to 'false'.
 
 ### ListBox
 
@@ -257,7 +99,7 @@
 
 - `#I343860` - Issue with "list items are not read by the NVDA screen reader" has been resolved.
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -273,7 +115,7 @@
 
 ## 19.3.53 (2021-11-12)
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -281,7 +123,7 @@
 
 ## 19.3.48 (2021-11-02)
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -289,7 +131,7 @@
 
 ## 19.3.47 (2021-10-26)
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -297,7 +139,7 @@
 
 ## 19.3.46 (2021-10-19)
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -314,7 +156,7 @@
 
 ## 19.3.44 (2021-10-05)
 
-### DropDownTree
+### Dropdown Tree
 
 #### New Features
 
@@ -353,7 +195,7 @@
 
 - `I335313` - Issue with "select element is displayed while rendering the component with floating label" has been resolved.
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -367,7 +209,7 @@
 
 - `#I336382` - The issue with getDataList not updated properly after removing the items has been fixed.
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -400,7 +242,7 @@
 
 - `#FB26670` - Issue with "`GroupTemplate` is not displayed while opening the popup at first time" has been resolved.
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -457,7 +299,7 @@
 
 ## 19.1.54 (2021-03-30)
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -483,7 +325,7 @@
 
 ## 18.4.43 (2021-02-16)
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -582,7 +424,7 @@
 
 ## 18.3.42 (2020-10-20)
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -620,7 +462,7 @@
 
 ## 18.2.54 (2020-08-18)
 
-### DropDownTree
+### Dropdown Tree
 
 #### Breaking Changes
 
@@ -640,7 +482,7 @@
 
 - `#285392` - Enable / disable list items based on unique value support provided.
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -703,7 +545,7 @@
 -`#273796` - Now, e-outline class is added to the filter input
 
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -723,7 +565,7 @@
 
 - `#273796` - Now, filtering works properly when paste the value in the input element.
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -763,7 +605,7 @@
 
 ## 18.1.46 (2020-04-28)
 
-### DropDownTree
+### Dropdown Tree
 
 #### Bug Fixes
 
@@ -794,7 +636,7 @@ The newly added `Dropdown Tree` component in dropdowns package requires `Navigat
 Update the system.js configuration while going with this version and above.
 
 
-### DropDownTree
+### Dropdown Tree
 
 The Dropdown Tree control allows you to select single or multiple values from hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, check boxes, templates, UI customization, accessibility, and preselected values. The available key features are
 

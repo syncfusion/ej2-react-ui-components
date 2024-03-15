@@ -7,7 +7,7 @@ export function applyMixins(derivedClass: any, baseClass: any[]): void {
     // tslint:disable:typedef
     baseClass.forEach(baseClass  => {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(name => {
-            if (name !== 'isMounted' && name !== 'replaceState') {
+            if (name !== 'isMounted' && name !== 'replaceState' && name !== 'render') {
                 derivedClass.prototype[`${name}`] = baseClass.prototype[`${name}`];
             }
         });
@@ -39,13 +39,13 @@ export interface DefaultHtmlAttributes {
     onChange?: any;
     /**
      * Specifies the array of the template names where the state value updates need to be ignored.
-     * 
+     *
      * ```html
      * <TreeViewComponent fields={fields} statelessTemplates={['nodeTemplate']} nodeTemplate={nodeTemplate} />
      * ```
-     * 
+     *
      * If the templates are defined in nested directives of the component, then pass the statelessTemplates property array value as "directiveTemplates" instead of the template names.
-     * 
+     *
      * ```html
      * <GridComponent  dataSource={siteCedarData} statelessTemplates={['directiveTemplates']}>
      *     <ColumnsDirective>
@@ -54,7 +54,7 @@ export interface DefaultHtmlAttributes {
      *     </ColumnsDirective>
      * </GridComponent>
      * ```
-     * 
+     *
      * This support will prevent the re-rendering of the component template during state updates.
      * It will increase the performance of the components if you prevent state updates for the templates that are not required.
      */

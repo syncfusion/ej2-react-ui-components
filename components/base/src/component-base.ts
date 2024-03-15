@@ -37,8 +37,7 @@ const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
     'readOnly', 'style', 'tabIndex', 'title', 'type', 'name',
     'onClick', 'onFocus', 'onBlur'];
 const delayUpdate: string[] = ['accordion', 'tab', 'splitter'];
-let reactUid: number = 0;
-const isColEName: RegExp = new RegExp('\]');
+const isColEName: RegExp = /\]/;
 
 // tslint:disable
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -108,7 +107,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     }
 
     private renderReactComponent(): void {
-        let ele: Element = this.reactElement;
+        const ele: Element = this.reactElement;
         if (ele && !this.isAppendCalled) {
             this.isAppendCalled = true;
             this.appendTo(ele);
@@ -119,6 +118,8 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops
     // tslint:disable-next-line:no-any
     /**
+     * @param {Object} nextProps - Specifies the property value.
+     * @returns {boolean} - Returns boolean value.
      * @private
      */
     public shouldComponentUpdate(nextProps: Object): boolean {
@@ -135,18 +136,16 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         this.updateProperties(nextProps);
         return true;
     }
-    /**
-     * @private
-     */
+
     private updateProperties(nextProps: Object, silent?: boolean, prev?: Object): void {
-        let dProps: Object = extend({}, nextProps);
-        let keys: string[] = Object.keys(nextProps);
-        let prevProps: Object = extend({}, prev || this.props);
+        const dProps: Object = extend({}, nextProps);
+        const keys: string[] = Object.keys(nextProps);
+        const prevProps: Object = extend({}, prev || this.props);
         // The statelessTemplates props value is taken from sample level property or default component property.
-        let statelessTemplates: string[] = !isNullOrUndefined(prevProps['statelessTemplates']) ? prevProps['statelessTemplates'] : 
-           (!isNullOrUndefined(this['statelessTemplateProps']) ? this['statelessTemplateProps'] : []);
-        for (let propkey of keys) {
-            let isClassName: boolean = propkey === 'className';
+        const statelessTemplates: string[] = !isNullOrUndefined(prevProps['statelessTemplates']) ? prevProps['statelessTemplates'] :
+            (!isNullOrUndefined(this['statelessTemplateProps']) ? this['statelessTemplateProps'] : []);
+        for (const propkey of keys) {
+            const isClassName: boolean = propkey === 'className';
             if(propkey === 'children'){
                 continue;
             }
@@ -159,15 +158,15 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             } else if (this.attrKeys.indexOf(propkey) !== -1) {
                 if (isClassName) {
                     this.clsName = true;
-                    let propsClsName = prevProps[`${propkey}`].split(' ');
+                    const propsClsName = prevProps[`${propkey}`].split(' ');
                     for (let i: number = 0; i < propsClsName.length; i++) {
                         this.element.classList.remove(propsClsName[parseInt(i.toString(), 10)]);
                     }
-                    let dpropsClsName = dProps[`${propkey}`].split(' ');
+                    const dpropsClsName = dProps[`${propkey}`].split(' ');
                     for (let j: number = 0; j < dpropsClsName.length; j++) {
                         this.element.classList.add(dpropsClsName[parseInt(j.toString(), 10)]);
                     }
-                } else if (propkey !== 'disabled' && !(this as any).properties.hasOwnProperty(propkey)) {
+                } else if (propkey !== 'disabled' && !Object.prototype.hasOwnProperty.call((this as any).properties, propkey)) {
                     delete dProps[`${propkey}`];
                 }
             }
@@ -191,7 +190,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
     }
     public refreshProperties(dProps: Object, nextProps: Object, silent?: boolean): void {
-        let statelessTemplates: string[] = !isNullOrUndefined(this.props['statelessTemplates']) ? this.props['statelessTemplates'] : [];
+        const statelessTemplates: string[] = !isNullOrUndefined(this.props['statelessTemplates']) ? this.props['statelessTemplates'] : [];
         if (Object.keys(dProps).length) {
             if (!silent) {
                 // tslint:disable-next-line:no-any
@@ -201,14 +200,15 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
         if (statelessTemplates.indexOf('directiveTemplates') === -1) {
             this.refreshChild(silent, nextProps);
-        }   
+        }
     }
 
     private processComplexTemplate(curObject: Object, context: { complexTemplate: Object }) {
-        let compTemplate: Object = context.complexTemplate;
+        const compTemplate: Object = context.complexTemplate;
         if (compTemplate) {
-            for (let prop in compTemplate) {
-                let PropVal: string = compTemplate[`${prop}`];
+            // eslint-disable-next-line
+            for (const prop in compTemplate) {
+                const PropVal: string = compTemplate[`${prop}`];
                 if (curObject[`${prop}`]) {
                     setValue(PropVal, getValue(prop, curObject), curObject);
                 }
@@ -218,9 +218,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
 
     public getDefaultAttributes(): Object {
         this.isReact = true;
-        let propKeys: string[] = Object.keys(this.props);
-        let stringValue: string[] = ['autocomplete', 'dropdownlist', 'combobox'];
-        let ignoreProps: string[] = ['children', 'statelessTemplates', 'immediateRender', 'isLegacyTemplate', 'delayUpdate'];
+        const propKeys: string[] = Object.keys(this.props);
+        //let stringValue: string[] = ['autocomplete', 'dropdownlist', 'combobox'];
+        const ignoreProps: string[] = ['children', 'statelessTemplates', 'immediateRender', 'isLegacyTemplate', 'delayUpdate'];
         // if ((stringValue.indexOf(this.getModuleName()) !== -1) && (!isNullOrUndefined(this.props["value"]))) {
         //     this.value = (<{ [key: string]: Object }>this.props)["value"];
         // }
@@ -228,7 +228,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             this.htmlattributes = {};
         }
         this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
-        for (let prop of propKeys) {
+        for (const prop of propKeys) {
             if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1 || (Object.keys((this as any).properties).indexOf(`${prop}`) === -1 && ignoreProps.indexOf(`${prop}`) === -1)) {
                 if( this.htmlattributes[`${prop}`] !== (<{ [key: string]: Object }>this.props)[`${prop}`]) {
                     this.htmlattributes[`${prop}`] = (<{ [key: string]: Object }>this.props)[`${prop}`];
@@ -240,20 +240,24 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             this.htmlattributes.ref = (ele: any ) => {
                 this.reactElement = ele;
             };
-            let keycompoentns: string[] = ['autocomplete', 'combobox', 'dropdownlist', 'dropdowntree', 'multiselect',
+            const keycompoentns: string[] = ['autocomplete', 'combobox', 'dropdownlist', 'dropdowntree', 'multiselect',
                 'listbox', 'colorpicker', 'numerictextbox', 'textbox',
                 'uploader', 'maskedtextbox', 'slider','datepicker','datetimepicker','daterangepicker','timepicker','checkbox','switch','radio', 'rating'];
             if (keycompoentns.indexOf(this.getModuleName()) !== -1) {
                 this.htmlattributes.key = '' + ComponentBase.reactUid;
                 ComponentBase.reactUid++;
-                if ((this as any).type && !this.htmlattributes['type']) this.htmlattributes['type'] = (this as any).multiline ? 'hidden' : (this as any).type;
-                if ((this as any).name && !this.htmlattributes['name']) this.htmlattributes['name'] = (this as any).name;
+                if ((this as any).type && !this.htmlattributes['type']) {
+                    this.htmlattributes['type'] = (this as any).multiline ? 'hidden' : (this as any).type;
+                }
+                if ((this as any).name && !this.htmlattributes['name']) {
+                    this.htmlattributes['name'] = (this as any).name;
+                }
             }
 
         }
         if (this.clsName) {
-            let clsList: string[] = this.element.classList;
-            let className: any =  this.htmlattributes['className'];
+            const clsList: string[] = this.element.classList;
+            const className: any =  this.htmlattributes['className'];
             for(let i: number = 0; i < clsList.length; i++){
                 if ((className.indexOf(clsList[parseInt(i.toString(), 10)]) === -1)){
                     this.htmlattributes['className'] = this.htmlattributes['className'] + ' '+ clsList[parseInt(i.toString(), 10)];
@@ -264,10 +268,11 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     }
 
     /* tslint:disable:no-any */
+    // eslint-disable-next-line
     public trigger(eventName: string, eventProp?: any, successHandler?: any): void {
         if (this.isDestroyed !== true && this.modelObserver) {
             if (isColEName.test(eventName)) {
-                let handler: Function = getValue(eventName, this);
+                const handler: Function = getValue(eventName, this);
                 if (handler) {
                     handler.call(this, eventProp);
                     if (successHandler) {
@@ -279,16 +284,16 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 }
             }
             if ((eventName === 'change' || eventName === 'input')) {
-                if ((this.props as any).onChange && eventProp.event) {
+                if ((this.props as any).onChange && (eventProp as any).event) {
                     (this.props as any).onChange.call(undefined, {
-                        syntheticEvent: eventProp.event,
-                        nativeEvent: { text: eventProp.value },
-                        value: eventProp.value,
+                        syntheticEvent: (eventProp as any).event,
+                        nativeEvent: { text: (eventProp as any).value },
+                        value: (eventProp as any).value,
                         target: this
                     });
                 }
             }
-            let prevDetection: boolean = this.isProtectedOnChange;
+            const prevDetection: boolean = this.isProtectedOnChange;
             this.isProtectedOnChange = false;
             if(eventName === 'created') {
                 setTimeout(()=>{
@@ -305,8 +310,8 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
 
     }
     private compareValues(value1: any, value2: any): boolean {
-        let typeVal: string = typeof value1;
-        let typeVal2: string = typeof value2;
+        const typeVal: string = typeof value1;
+        const typeVal2: string = typeof value2;
         if (typeVal === typeVal2) {
             if (value1 === value2) {
                 return true;
@@ -341,23 +346,24 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
         return false;
     }
+    // eslint-disable-next-line
     public compareObjects(oldProps: any, newProps: any, propName?: string): ObjectValidator {
         let status: boolean = true;
-        let lenSimilarity: boolean = (oldProps.length === newProps.length);
-        let diffArray: Changes[] = [];
-        var templateProps = !isNullOrUndefined(this['templateProps']) ? this['templateProps'] : [];
+        const lenSimilarity: boolean = (oldProps.length === newProps.length);
+        const diffArray: Changes[] = [];
+        const templateProps = !isNullOrUndefined(this['templateProps']) ? this['templateProps'] : [];
         if (lenSimilarity) {
             for (let i = 0, len = newProps.length; i < len; i++) {
-                let curObj: { [key: string]: Object } = {};
-                let oldProp: { [key: string]: Object } = oldProps[parseInt(i.toString(), 10)];
-                let newProp: { [key: string]: Object } = newProps[parseInt(i.toString(), 10)];
-                let keys: string[] = Object.keys(newProp);
+                const curObj: { [key: string]: Object } = {};
+                const oldProp: { [key: string]: Object } = oldProps[parseInt(i.toString(), 10)];
+                const newProp: { [key: string]: Object } = newProps[parseInt(i.toString(), 10)];
+                const keys: string[] = Object.keys(newProp);
                 if (keys.length !== 0) {
-                    for (let key of keys) {
-                        let oldValue: any = oldProp[`${key}`];
-                        let newValue: any = newProp[`${key}`];
+                    for (const key of keys) {
+                        const oldValue: any = oldProp[`${key}`];
+                        const newValue: any = newProp[`${key}`];
                         if (key === 'items') {
-                            for(var _j=0; _j < newValue.length; _j++) {
+                            for(let _j=0; _j < newValue.length; _j++) {
                                 if (this.getModuleName() === 'richtexteditor' && typeof(newValue[parseInt(_j.toString(), 10)]) === 'object') {
                                     return {status: true};
                                 }
@@ -366,7 +372,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                         if (this.getModuleName()=== 'grid' && key === 'field') {
                             curObj[`${key}`] = newValue;
                         }
-                        if (!oldProp.hasOwnProperty(key) || !((templateProps.length > 0 && templateProps.indexOf(`${key}`) === -1 && typeof(newValue) === 'function') ? this.compareValues(oldValue.toString(), newValue.toString()) : this.compareValues(oldValue, newValue))) {
+                        if (!Object.prototype.hasOwnProperty.call(oldProp, key) || !((templateProps.length > 0 && templateProps.indexOf(`${key}`) === -1 && typeof(newValue) === 'function') ? this.compareValues(oldValue.toString(), newValue.toString()) : this.compareValues(oldValue, newValue))) {
                             if (!propName) {
                                 return { status: false };
                             }
@@ -398,9 +404,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     }
     private refreshChild(silent: boolean, props?: Object): void {
         if (this.checkInjectedModules) {
-            let prevModule: Object[] = this.getInjectedModules() || [];
-            let curModule: Object[] = this.getInjectedServices() || [];
-            for (let mod of curModule) {
+            const prevModule: Object[] = this.getInjectedModules() || [];
+            const curModule: Object[] = this.getInjectedServices() || [];
+            for (const mod of curModule) {
                 if (prevModule.indexOf(mod) === -1) {
                     prevModule.push(mod);
                 }
@@ -408,30 +414,30 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             this.injectedModules = prevModule;
         }
         if (this.directivekeys) {
-            let changedProps: Changes[] = [];
-            let directiveValue: { [key: string]: Object } = <{ [key: string]: Object }>this.validateChildren(
+            let changedProps: Changes[] = []; let key = '';
+            const directiveValue: { [key: string]: Object } = <{ [key: string]: Object }>this.validateChildren(
                 {}, this.directivekeys, (<{ children: React.ReactNode }>(props || this.props)));
             if (directiveValue && Object.keys(directiveValue).length) {
                 if (!silent && this.skipRefresh) {
-                    for (let fields of this.skipRefresh) {
+                    for (const fields of this.skipRefresh) {
                         delete directiveValue[`${fields}`];
                     }
                 }
                 if (this.prevProperties) {
-                    var dKeys = Object.keys(this.prevProperties);
-                    for (var i = 0; i < dKeys.length; i++) {
-                        var key = dKeys[parseInt(i.toString(), 10)];
-                        if (!directiveValue.hasOwnProperty(key)) {
+                    const dKeys = Object.keys(this.prevProperties);
+                    for (let i = 0; i < dKeys.length; i++) {
+                        key = dKeys[parseInt(i.toString(), 10)];
+                        if (!Object.prototype.hasOwnProperty.call(directiveValue, key)) {
                             continue;
                         }
-                        let compareOutput = this.compareObjects(this.prevProperties[`${key}`], directiveValue[`${key}`], key);
+                        const compareOutput = this.compareObjects(this.prevProperties[`${key}`], directiveValue[`${key}`], key);
                         if (compareOutput.status) {
                             delete directiveValue[`${key}`];
                         } else {
                             if (compareOutput.changedProperties.length) {
                                 changedProps = changedProps.concat(compareOutput.changedProperties);
                             }
-                            let obj: Object = {};
+                            const obj: Object = {};
                             obj[`${key}`] = directiveValue[`${key}`];
                             this.prevProperties = extend(this.prevProperties, obj);
                         }
@@ -441,11 +447,11 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 }
                 if (changedProps.length) {
                     if (this.getModuleName() === 'grid' && key === 'columns') {
-                        for (var _c1 = 0, allColumns = this.columns; _c1 < allColumns.length; _c1++) {
-                            let compareField1: any = getValue('field', allColumns[parseInt(_c1.toString(), 10)]);
-                            let compareField2: any = getValue(_c1 + '.value.field', changedProps);
+                        for (let _c1 = 0, allColumns = this.columns; _c1 < allColumns.length; _c1++) {
+                            const compareField1: any = getValue('field', allColumns[parseInt(_c1.toString(), 10)]);
+                            const compareField2: any = getValue(_c1 + '.value.field', changedProps);
                             if (compareField1 === compareField2) {
-                                var propInstance: any = getValue(changedProps[parseInt(_c1.toString(), 10)].key + '.' + changedProps[parseInt(_c1.toString(), 10)].index, this);
+                                const propInstance: any = getValue(changedProps[parseInt(_c1.toString(), 10)].key + '.' + changedProps[parseInt(_c1.toString(), 10)].index, this);
                                 if (propInstance && propInstance.setProperties) {
                                     propInstance.setProperties(changedProps[parseInt(_c1.toString(), 10)].value);
                                 }
@@ -459,8 +465,8 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                         }
                     }
                     else {
-                        for (let changes of changedProps) {
-                            let propInstance: any = getValue(changes.key + '.' + changes.index, this);
+                        for (const changes of changedProps) {
+                            const propInstance: any = getValue(changes.key + '.' + changes.index, this);
                             if (propInstance && propInstance.setProperties) {
                                 propInstance.setProperties(changes.value);
                             }
@@ -479,17 +485,19 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
 
     public componentWillUnmount(): void {
         clearTimeout(this.cachedTimeOut);
-        var modulesName = ['dropdowntree', 'checkbox'];
+        const modulesName = ['dropdowntree', 'checkbox'];
+        const hasModule = ((!modulesName.indexOf(this.getModuleName())) ? document.body.contains(this.element) : true);
         // tslint:disable-next-line:no-any
-        if (this.initRenderCalled && this.isAppendCalled && this.element && ((!modulesName.indexOf(this.getModuleName())) ? document.body.contains(this.element) : true) && !this.isDestroyed && this.isCreated) {
+        if (this.initRenderCalled && this.isAppendCalled && this.element && hasModule && !this.isDestroyed && this.isCreated) {
             this.destroy();
         }
         onIntlChange.offIntlEvents();
     }
 
     // tslint:disable:no-any
-    public appendReactElement (element: any, container: HTMLElement) {
-        let portal: any = (ReactDOM as any).createPortal(element, container);
+    // eslint-disable-next-line
+    public appendReactElement (element: any, container: HTMLElement): void {
+        const portal: any = (ReactDOM as any).createPortal(element, container);
         if (!this.portals) {
             this.portals = [portal];
         }
@@ -498,6 +506,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
     }
     // tslint:disable:no-any
+    // eslint-disable-next-line
     public renderReactTemplates (callback?: any): void {
         this.isReactForeceUpdate = true;
         if (callback) {
@@ -508,11 +517,11 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         this.isReactForeceUpdate = false;
     }
     // tslint:disable:no-any
-    public clearTemplate(templateNames: string[], index?: any, callback?: any) {
-        var tempPortal: any = [];
+    // eslint-disable-next-line
+    public clearTemplate(templateNames: string[], index?: any, callback?: any): void {
+        const tempPortal: any = [];
         if (templateNames && templateNames.length) {
             Array.prototype.forEach.call(templateNames, (propName: string) => {
-                let indexCount: number = 0;
                 let propIndexCount: number = 0;
                 this.portals.forEach((portal: any) => {
                     if (portal.propName === propName) {
@@ -522,9 +531,8 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 });
                 if (!isNullOrUndefined(index) && this.portals[index as number] && this.portals[index as number].propName === propName) {
                     this.portals.splice(index, 1);
-                    indexCount++;
                 } else {
-                    for (var i = 0; i < this.portals.length; i++) {
+                    for (let i = 0; i < this.portals.length; i++) {
                         if (this.portals[parseInt(i.toString(), 10)].propName === propName) {
                             this.portals.splice(i, 1);
                             i--;
@@ -543,13 +551,13 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         mapper: { [key: string]: Object },
         props: { children: React.ReactNode }): Object {
         let flag: boolean = false;
-        let childs: React.ReactNode[] & Directive[] = (<React.ReactNode[] & Directive[]>React.Children.toArray(props.children));
-        for (let child of childs) {
-            let ifield: any = (this.getChildType(child as any) as any);
-            let key: string & { [key: string]: Object } = <string & { [key: string]: Object }>mapper[`${ifield}`];
+        const childs: React.ReactNode[] & Directive[] = (<React.ReactNode[] & Directive[]>React.Children.toArray(props.children));
+        for (const child of childs) {
+            const ifield: any = (this.getChildType(child as any) as any);
+            const key: string & { [key: string]: Object } = <string & { [key: string]: Object }>mapper[`${ifield}`];
             if (ifield && mapper) {
                 // tslint:disable
-                let childProps: object[] = this.getChildProps(React.Children.toArray((child as any).props.children), key);
+                const childProps: object[] = this.getChildProps(React.Children.toArray((child as any).props.children), key);
                 if (childProps.length) {
                     flag = true;
                     // tslint:disable
@@ -570,8 +578,8 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         return '';
     }
     public getChildProps(subChild: React.ReactNode[], matcher: { [key: string]: Object } & string): Object[] {
-        let ret: Object[] = [];
-        for (let child of subChild) {
+        const ret: Object[] = [];
+        for (const child of subChild) {
             let accessProp: boolean = false;
             let key: string;
             if (typeof matcher === 'string') {
@@ -580,18 +588,18 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             } else {
                 key = Object.keys(matcher)[0];
             }
-            let prop: Object = (child as Directive).props;
+            const prop: Object = (child as Directive).props;
             // tslint:disable-next-line:no-any
-            let field: string = this.getChildType(<any>child);
+            const field: string = this.getChildType(<any>child);
             if (field === key) {
                 if (accessProp || !(<Directive>prop).children) {
                     // tslint:disable
-                    let cacheVal: Object = extend({}, prop, {}, true);
+                    const cacheVal: Object = extend({}, prop, {}, true);
                     // tslint:disable
                     this.processComplexTemplate(cacheVal, (child as any).type);
                     ret.push(cacheVal);
                 } else {
-                    let cachedValue: Object = this.validateChildren(
+                    const cachedValue: Object = this.validateChildren(
                         <{ [key: string]: Object }>extend({}, prop), <{ [key: string]: Object }>matcher[`${key}`],
                         <{ children: React.ReactNode; }>prop) || prop;
                     if (cachedValue['children']) {
@@ -608,8 +616,8 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     }
     // tslint:disable:no-any
     public getInjectedServices(): Object[] {
-        let childs: React.ReactNode[] & Directive[] = (<React.ReactNode[] & Directive[]>React.Children.toArray(this.props.children));
-        for (let child of childs) {
+        const childs: React.ReactNode[] & Directive[] = (<React.ReactNode[] & Directive[]>React.Children.toArray(this.props.children));
+        for (const child of childs) {
             /* tslint:disable:no-any */
             if ((child as any).type && (child as any).type.isService) {
                 return (child as any).props.services;

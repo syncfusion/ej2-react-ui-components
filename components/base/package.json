@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-base",
-	"version": "24.2.7",
+	"version": "25.1.35",
 	"description": "A common package of Essential JS 2 React base, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -27,8 +27,7 @@
 		"@syncfusion/ej2-base": "*"
 	},
 	"devDependencies": {
-		"react": "15.5.4 - 16.10.2",
-		"react-dom": "15.5.4 - 16.10.2",
+		"@syncfusion/ej2-staging": "^1.0.1",
 		"@types/chai": "^3.4.28",
 		"@types/es6-promise": "0.0.28",
 		"@types/jasmine": "2.8.22",
@@ -36,6 +35,8 @@
 		"@types/react": "^15.0.24",
 		"@types/react-dom": "^15.5.0",
 		"@types/requirejs": "^2.1.26",
+		"react": "15.5.4 - 16.10.2",
+		"react-dom": "15.5.4 - 16.10.2",
 		"es6-promise": "^3.2.1",
 		"gulp": "^3.9.1",
 		"gulp-sass": "^3.1.0",

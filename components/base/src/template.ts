@@ -1,7 +1,7 @@
 /**
  * Template compiler for react
  */
-import { setTemplateEngine, getTemplateEngine, detach, extend } from '@syncfusion/ej2-base';
+import { setTemplateEngine, getTemplateEngine, extend } from '@syncfusion/ej2-base';
 import * as ReactDOM from 'react-dom';
 import * as React from 'react';
 /* eslint-disable @typescript-eslint/no-explicit-any */

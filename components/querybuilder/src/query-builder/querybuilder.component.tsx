@@ -18,7 +18,7 @@ export class QueryBuilderComponent extends QueryBuilder {
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
+    private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'columns': 'column'};
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;

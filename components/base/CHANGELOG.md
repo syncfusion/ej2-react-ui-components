@@ -2,21 +2,17 @@
 
 ## [Unreleased]
 
-## 24.2.7 (2024-02-20)
+## 25.1.35 (2024-03-15)
 
 ### Common
 
-#### Bug Fixes
+#### Breaking Changes
 
-- `#I545133` - The issue with "the class name of a component is removed from the element when the state is updated" has been resolved.
+- `#I549176` - The installation warnings triggered by outdated versions of external dependencies during the React packages installation have been addressed, and these dependencies have been removed. This modification improves the installation process, ensuring a more seamless experience without dependence on external dependencies.
 
-## 24.1.46 (2024-01-17)
+#### New Features
 
-### Common
-
-#### Bug Fixes
-
-- `#I537758`, `#I538396`, `#F184789` - The issue with "warning is thrown when using the `statelessTemplates` property in React components" has been resolved.
+- Provided compatible support with `Preact` for the React components.
 
 ## 24.1.41 (2023-12-18)
 

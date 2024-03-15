@@ -1,4 +1,5 @@
 export * from './textbox';
+export * from './textarea';
 export * from './numerictextbox';
 export * from './maskedtextbox';
 export * from './slider';

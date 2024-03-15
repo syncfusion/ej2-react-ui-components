@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 25.1.35 (2024-03-15)
+
+### Schedule
+
+#### New Features
+
+- `#I511506` - Provided support to prevent the reloading of appointment data source when resource data source changes dynamically by providing an additional boolean parameter `isEventDataRefresh` in the `setResourceCollections` method. To prevent reloading of the appointments you have to send the `isEventDataRefresh` parameter value as `false`.
+
+#### Bug fixes
+
+- `#I521475` - An issue with setting default values to the editor template inputs while opening the editor window through cell double click has been fixed.
+
 ## 24.2.8 (2024-02-27)
 
 ### Schedule
@@ -42,8 +54,6 @@
 - `#F185646` - An issue with page crashes when schedule appointment drag-drops over the calendar has been fixed.
 - `#F185139` - An issue related to events are positioned incorrectly when using `firstDayOfWeek` with different time slot intervals has been resolved.
 - `#FB47966` - An issue with timezone setting not working for all day events has been fixed.
-
-- `#I521475` - An issue with setting default values to the editor template inputs while opening the editor window through cell double click has been fixed.
 
 ## 23.2.4 (2023-11-20)
 

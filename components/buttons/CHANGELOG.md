@@ -2,39 +2,13 @@
 
 ## [Unreleased]
 
-## 24.2.7 (2024-02-20)
-
-### Button
-
-#### Bug Fixes
-
-- `#I551397` - The issue with "Tailwind theme when changing the primary text color in the button the text color is not changed" has been resolved.
-
-## 24.2.3 (2024-01-31)
-
-### Switch
-
-#### Bug Fixes
-
-- `#I547814` - The issue with "Script error thrown when using toggle in angular platform" has been resolved.
-
-## 24.1.46 (2024-01-17)
+## 25.1.35 (2024-03-15)
 
 ### Checkbox
 
 #### Bug Fixes
 
-- `#I535107` - Need to set `HtmlAttributes` Id in input element checkbox has been resolved.
-
-## 24.1.45 (2024-01-09)
-
-### Switch
-
-#### Bug Fixes
-
-- `#I530742` - The issue with "Switch unintentionally changed when we touch the switch and drag vertically" has been resolved.
-
-## 24.1.41 (2023-12-18)
+- `#I399484` - The issue with aria-checked accessibility issue in angular checkbox has been fixed.
 
 ### RadioButton
 
@@ -47,12 +21,6 @@
 #### Bug Fixes
 
 - `#I512179` - The issue with "Duplicate Icon Span while using the `onPropertyChange` of button" has been resolved.
-
-### Checkbox
-
-#### Bug Fixes
-
-- `#I399484` - The issue with aria-checked accessibility issue in angular checkbox has been fixed.
 
 ### Switch
 
