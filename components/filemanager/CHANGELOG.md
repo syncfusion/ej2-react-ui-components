@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.37 (2024-03-26)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I561123` - The issue with being unable to sort the header columns using keyboard interaction has been resolved.
+
 ## 25.1.35 (2024-03-15)
 
 ### FileManager

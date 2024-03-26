@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 25.1.37 (2024-03-26)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I552754` - Issue with "`findAll` method does not work properly when the value to find contains uppercase letters" has been resolved.
+- `#I568505` - Issue with "excel file does not open properly in virtualization mode when importing an excel file with the active sheet index value as a hidden sheet" has been resolved.
+
 ## 25.1.35 (2024-03-15)
 
 ### Spreadsheet

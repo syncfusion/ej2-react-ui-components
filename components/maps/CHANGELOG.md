@@ -11,6 +11,14 @@
 
 ## [Unreleased]
 
+## 25.1.37 (2024-03-26)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I566503` - The shape map in the sublayer is now properly synchronized with the tile images in the base layer when panning the Maps.
+
 ## 25.1.35 (2024-03-15)
 
 ### Maps

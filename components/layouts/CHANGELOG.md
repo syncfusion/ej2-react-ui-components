@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.37 (2024-03-26)
+
+### DashboardLayout
+
+#### Bug Fixes
+
+- `#I564184` - Resolved the issue with the dynamically added panel not being persisted when `enablePersistence` is enabled in the Dashboard Layout.
+
 ## 25.1.35 (2024-03-15)
 
 ### Timeline

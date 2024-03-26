@@ -1,12 +1,14 @@
 # ej2-react-layouts
 
-The layout package contains cards, avatars, splitter and Dashboard Layout components. 
+The layout package contains cards, avatars, splitter, timeline and Dashboard Layout components. 
 
 * The `card` is a small container in which user can show defined content in specific structure. 
 
 * The `avatars` are icons, initials or figures representing a particular person, used in popular media formats like images, SVG, font icons, and letters.
 
 * The `splitter` is container component which used to construct different layouts using multiple and nested panes.
+
+* The `timeline` is a tool for displaying chronological information effortlessly within your application. It offers a visually compelling and user-friendly experience for showcasing user activities, tracking progress, or narrating historical timelines.
 
 * The `DashboardLayout` is a grid structured layout component that helps to create a dashboard with panels. Panels hold the UI components and allow resize, reorder, drag-n-drop, remove and add options. This allows users to easily place the components at the desired position within the grid layout.
 
@@ -40,6 +42,10 @@ Following list of components are available in the package
   * [Getting Started](https://ej2.syncfusion.com/react/documentation/splitter/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm)
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/splitter/default)
 
+* [React Timeline](https://www.syncfusion.com/react-ui-components/react-timeline?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm) - Used to build timelines to showcases user activities, tracking progress, narrating historical timelines, and more.
+  * [Getting Started](https://ej2.syncfusion.com/react/documentation/timeline/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm)
+  * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/timeline/default)
+
 * [React Dashboard Layout](https://www.syncfusion.com/react-ui-components/react-dashboard-layout?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm) - Used to build dashboards with panels that holds the UI components and allow resize, reorder, drag-n-drop, remove and add options.
   * [Getting Started](https://ej2.syncfusion.com/react/documentation/dashboard-layout/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm)
   * [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/dashboard-layout/default)
@@ -68,6 +74,7 @@ These components are available in following list of:
 ## Key Features
 
 * Card
+
   * [Header](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/card/basic) - Header supports to include title, subtitle along with image.
 
   * [Images and Title](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/card/reveal) - Support to include images with customizable caption positions in it.
@@ -88,6 +95,7 @@ These components are available in following list of:
         * xlarge
 
 * Splitter
+
   * [Multiple Panes](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/splitter/default) - Provided an option to configure more than two panes.
 
   * [Resizable Panes](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/splitter/code-editor-layout) - Supports resizable to adjust its pane size dynamically.
@@ -97,6 +105,18 @@ These components are available in following list of:
   * [Integration](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/splitter/accordion-navigation-menu) - Other React UI components can be integrated within panes.
 
   * [Nested Panes](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/splitter/code-editor-layout) - Another splitter can be integrated within panes to create a complex layout.
+
+* Timeline
+
+  * [Orientation](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/timeline/api) - Display items in a horizontal or vertical orientation.
+
+  * [Opposite content](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/timeline/api) -  Display additional information opposite to the item content.
+  
+  * [Items alignment](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/timeline/api) - Items content and opposite content can be aligned - before, after, alternate, or alternate reverse.
+  
+  * [Reverse timeline](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/timeline/api) - Shows the timeline items in the reverse order.
+  
+  * [Templates](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-layout-npm#/material/timeline/template) - Customize the default appearance, including styling the dot item, templated content, and more.
 
 * Dashboard Layout
  

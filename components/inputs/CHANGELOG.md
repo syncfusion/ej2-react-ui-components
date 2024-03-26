@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.37 (2024-03-26)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#I561285` - Fixed an issue where focus was being added to the maskedtextbox when running in the Safari browser.
+
 ## 25.1.35 (2024-03-15)
 
 ### Signature
