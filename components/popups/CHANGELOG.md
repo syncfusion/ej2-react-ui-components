@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.38 (2024-04-02)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#14144` - Resolved issue where the input inside the dialog was not detached from memory after destroying the dialog.
+
 ## 21.1.35 (2023-03-23)
 
 ### Tooltip

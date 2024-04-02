@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.38 (2024-04-02)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I572635` - The problem where an extra plus icon appeared in the details view of the file manager component when in mobile mode has been resolved.
+
 ## 25.1.37 (2024-03-26)
 
 ### FileManager

@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 25.1.38 (2024-04-02)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I566539` - Console error occurs while saving custom data in add dialog box with validation rule issue has been fixed.
+- `#I553748` - Timeline dates validated wrongly after cell editing with timeline virtualization enabled issue has been fixed.
+- `#I565751` - The chart side does not refresh when any record is edited by cell editing issue has been fixed.
+
+- `#I566539` - Console error occurs while saving custom data in add dialog box with validation rule issue has been fixed.
+
 ## 25.1.37 (2024-03-26)
 
 ### GanttChart
@@ -23,7 +35,9 @@
 - `#I565439` - Work calculations are incorrect for parent task in project view issue has been fixed.
 - `#I553710`,`#I565824` - Weekends are not highlighted while `timlineVirtualization` is enabled issue has been fixed.
 - `#I565359` - When `allowEditing` is disabled in a resource view, a console error is thrown issue has been fixed.
+- `#I565427` - Dependency not validated for dynamically updating work week and holidays issue has been fixed.
 - `#I560166` - The context menu using "add child" for any task, dependency line validation is not working properly.
+- `#I566103` - Baseline not showing in multi taskbar view.
 
 - `#F186355` - Taskbar template not showing in resource view issue has been fixed.
 - `#I565418` - Start date defaulting to incorrect value when remove the start Date in add dialog.
@@ -35,6 +49,7 @@
 - `#I566632` - Duration calculations are incorrect in edit or add dialog in decimals issue has been fixed.
 - `#I565439` - Work calculations are incorrect for parent task in project view issue has been fixed.
 - `#I566539` - Console error occurs while saving data in add dialog box with validation rule issue has been fixed.
+- `#I565427` - Dependency not validated for dynamically updating work week and holidays issue has been fixed.
 - `#I560166` - The context menu using "add child" for any task, dependency line validation is not working properly.
 
 ## 25.1.35 (2024-03-15)

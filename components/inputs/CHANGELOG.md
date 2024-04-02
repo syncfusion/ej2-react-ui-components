@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
+## 25.1.38 (2024-04-02)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `#I571375` - Provided the original event arguments in the change and select events of the color picker.
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I567912` - Fixed issue with overflow style not being applied to the placeholder.
+
 ## 25.1.37 (2024-03-26)
+
+### Signature
+
+#### Bug Fixes
+
+- `#F187147` - Issue with "Signature Clear method returns BaseAddress as null" has been resolved.
 
 ### MaskedTextBox
 
