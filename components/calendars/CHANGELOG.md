@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.39 (2024-04-09)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I572932` - Resolved issue where users were unable to enter the date manually as it automatically moved focus to the next field when pressing a key.
+
 ## 25.1.37 (2024-03-26)
 
 ### DateTimePicker

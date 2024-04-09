@@ -2,6 +2,25 @@
 
 ## [Unreleased]
 
+## 25.1.39 (2024-04-09)
+
+### Grid
+
+#### Bug fixes
+
+- `#I568054` - Fixed script error that occurred when opening the filter menu using the column menu feature in adaptive layout grid.
+- `#I573131` - Fixed issue where the Column Chooser `OKButton` remained enabled even after individually unchecking all visible column checkboxes items.
+- `#I571994` - Updated the emit type for the `ContextMenuClick` event in the grid documentation.
+- `#FB52005` - Resolved issue where JAWS screen reader incorrectly read out pager elements when navigating to the first content cell from the header in a grid with paging enabled.
+- `#I570288` - Resolved misalignment of frozen columns in the grid when resizing to fit content width.
+
+- `#I568054` - Fixed script error that occurred when opening the filter menu using the column menu feature in adaptive layout grid.
+- `#I573131` - Fixed issue where the Column Chooser `OKButton` remained enabled even after individually unchecking all visible column checkboxes items.
+- `#I571994` - Updated the emit type for the `ContextMenuClick` event in the grid documentation.
+- `#FB52005` - Resolved issue where JAWS screen reader incorrectly read out pager elements when navigating to the first content cell from the header in a grid with paging enabled.
+- `#I570288` - Resolved misalignment of frozen columns in the grid when resizing to fit content width.
+- `#I566681` - Fixed the inability to retrieve the detail template element for customization on the `detailDataBound` event of grid in `React v18.0`.
+
 ## 25.1.38 (2024-04-02)
 
 ### Grid

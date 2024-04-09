@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 25.1.39 (2024-04-09)
+
+### Image Editor
+
+#### Bug Fixes
+
+- `#I564880` - The issue with "unable to restore the old image position after reopening the same image" has been resolved.
+- `#I575218` - The issue with "Image annotation not selected when we set the drawImage method with isSelected parameter as true." has been resolved.
+
 ## 25.1.38 (2024-04-02)
 
 ### Image Editor

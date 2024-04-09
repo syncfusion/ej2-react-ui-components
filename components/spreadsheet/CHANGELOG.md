@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 25.1.38 (2024-04-02)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I552754` - Issue with "`findAll` method does not work properly when the value to find contains uppercase letters" has been resolved.
-- `#I568505` - Issue with "excel file does not open properly in virtualization mode when importing an excel file with the active sheet index value as a hidden sheet" has been resolved.
-
 ## 25.1.35 (2024-03-15)
 
 ### Spreadsheet
@@ -1332,6 +1323,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 25.1.38 (2024-04-02)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I552754` - Issue with "`findAll` method does not work properly when the value to find contains uppercase letters" has been resolved.
+- `#I568505` - Issue with "excel file does not open properly in virtualization mode when importing an excel file with the active sheet index value as a hidden sheet" has been resolved.
 
 ## 21.1.39 (2023-04-11)
 

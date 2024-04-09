@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 25.1.38 (2024-04-02)
+## 25.1.39 (2024-04-09)
 
-### Dialog
+### Tooltip
 
 #### Bug Fixes
 
-- `#14144` - Resolved issue where the input inside the dialog was not detached from memory after destroying the dialog.
+- `#I570443` - The issue with the Tooltip component appearance while hovering using a tab key in the uploader sample has been resolved.
 
 ## 21.1.35 (2023-03-23)
 
@@ -635,4 +635,12 @@ Dialog is a window that displays information to the user, and used to get the us
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 - **Keyboard Interaction** - The Dialog can be intractable through keyboard.
 
+
+## 25.1.38 (2024-04-02)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#14144` - Resolved issue where the input inside the dialog was not detached from memory after destroying the dialog.
 
