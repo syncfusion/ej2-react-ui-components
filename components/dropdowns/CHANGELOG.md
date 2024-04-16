@@ -2,12 +2,28 @@
 
 ## [Unreleased]
 
-## 25.1.39 (2024-04-09)
+## 25.1.40 (2024-04-16)
 
 ### ListBox
 
 #### Bug Fixes
 
+- `#I565976` - Issue with "The getSortedList data not update correctly while removeItem method after drag and drop action in listbox" has been resolved.
+
+## 25.1.39 (2024-04-09)
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#I556993` - Resolved the issue in Autocomplete where the highlight selection was not removed after selecting a value from the dropdown when autofill was enabled.
+
+### ListBox
+
+#### Bug Fixes
+
+- `#I566450` - Issue with "When clicking moveAllTo toolbar, the disabled item is also moved to the listbox" has been resolved.
+- `#I575330` - Issue with "Script error thrown in listbox while drag and drop hover on textbox element" has been resolved.
 - `#I565976` - Issue with "The getSortedList and getDataList method datasource order is not proper while using addItems, removeItem method and change their position using drag and drop" has been resolved.
 
 ### DropDownTree

@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 25.1.40 (2024-04-16)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I574804` - Now, the title is wrapped properly when it exits the chart in wrap mode.
+- `#I573884` - Now, all legend items with the same value in point mode will render properly.
+
 ## 25.1.39 (2024-04-09)
 
 ### Chart

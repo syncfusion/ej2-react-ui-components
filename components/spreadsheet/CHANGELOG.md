@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.40 (2024-04-16)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I575050` - Issue with "chart model is not properly maintained during initial loading when the top and left positions are specified in the chart model" has been resolved.
+
 ## 25.1.35 (2024-03-15)
 
 ### Spreadsheet

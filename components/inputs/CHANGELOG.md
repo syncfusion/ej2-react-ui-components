@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.40 (2024-04-16)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I571768` - Resolved Console error that occurred when uploading a file with button click without showFileList.
+
 ## 25.1.38 (2024-04-02)
 
 ### ColorPicker

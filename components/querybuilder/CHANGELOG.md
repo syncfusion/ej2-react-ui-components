@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.40 (2024-04-16)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I578463` - Issue with popups height is not updated properly in QueryBuilder sub field has been fixed.
+
 ## 25.1.38 (2024-04-02)
 
 ### QueryBuilder

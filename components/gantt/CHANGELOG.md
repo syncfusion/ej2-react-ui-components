@@ -2,12 +2,27 @@
 
 ## [Unreleased]
 
+## 25.1.40 (2024-04-16)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I566632` - Duration calculations are incorrect in edit or add dialog in decimals issue has been fixed.
+- `#I577383` - Predecessor not validated properly for parent task issue has been fixed.
+- `#I574986` - Console error occurs while adding segments via dialog in Gantt issue has been fixed.
+- `#I570307` - Toolbar refresh script error throws in Gantt issue has been fixed.
+
+- `#I566632` - Duration calculations are incorrect in edit or add dialog in decimals issue has been fixed.
+- `#I570307` - Toolbar refresh script error throws in Gantt issue has been fixed.
+
 ## 25.1.39 (2024-04-09)
 
 ### GanttChart
 
 #### Bug fixes
 
+- `#I574841` - Console error occurs while opening dialog where fields and column are different.
 - `#I570307` - Toolbar refresh script error throws in Gantt issue has been fixed.
 - `#I568101` - The Gantt search toolbar item is not working in mobile mode issue has been fixed.
 - `#I566632` - Duration calculations are incorrect in edit or add dialog in decimals issue has been fixed.
@@ -15,6 +30,7 @@
 - `#I565427` - Dependency not validated for dynamically updating work week and holidays issue has been fixed.
 - `#I575577`,`#I575505`,`#I576464` - Console error occurred when dynamically changing the data source and other properties of the Gantt chart via button click has been fixed.
 
+- `#I574841` - Console error occurs while opening dialog where fields and column are different.
 - `#I570307` - Toolbar refresh script error throws in Gantt issue has been fixed.
 - `#I568101` - The Gantt search toolbar item is not working in mobile mode issue has been fixed.
 - `#I566632` - Duration calculations are incorrect in edit or add dialog in decimals issue has been fixed.
