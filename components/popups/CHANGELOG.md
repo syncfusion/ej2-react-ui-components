@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.41 (2024-04-23)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#577299` - Resolved Console error is occurring when navigating the page with dialog in react.
+
 ## 25.1.39 (2024-04-09)
 
 ### Tooltip

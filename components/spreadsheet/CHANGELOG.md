@@ -2,13 +2,17 @@
 
 ## [Unreleased]
 
-## 25.1.40 (2024-04-16)
+## 25.1.41 (2024-04-23)
 
 ### Spreadsheet
 
+#### Bug fixes
+
+- `#I573941` - Issue with "chart is not properly shown when the chart range is pointed to another sheet range while importing a file" has been resolved.
+
 #### Bug Fixes
 
-- `#I575050` - Issue with "chart model is not properly maintained during initial loading when the top and left positions are specified in the chart model" has been resolved.
+- `#I575749` - Issue with "file is not exported if it has a defined name with a reference to a sheet name that contains a comma" has been resolved.
 
 ## 25.1.35 (2024-03-15)
 
@@ -1331,6 +1335,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 25.1.40 (2024-04-16)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I575050` - Issue with "chart model is not properly maintained during initial loading when the top and left positions are specified in the chart model" has been resolved.
 
 ## 25.1.38 (2024-04-02)
 

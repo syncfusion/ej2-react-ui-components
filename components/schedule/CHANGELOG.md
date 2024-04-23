@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 25.1.41 (2024-04-23)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I569000` - The issue with the Timeslots show difference than the time scale on the day light saving start and end day has been resolved.
+- An issue with XSS vulnerability identified in the editor window has been fixed.
+
 ## 25.1.39 (2024-04-09)
 
 ### Schedule

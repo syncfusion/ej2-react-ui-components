@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 25.1.41 (2024-04-23)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I577538` - When resizing the chart, the maximum value does not change.
+- `#I578863` - Now the chart exports properly in portrait orientation.
+- `#I579386` - Now the legend renders properly using the add series method in canvas.
+- `#I577327` - Now the DateTimeCategory series is visible when clicking on the legend.
+
 ## 25.1.40 (2024-04-16)
 
 ### Chart

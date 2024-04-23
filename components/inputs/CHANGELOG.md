@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 25.1.40 (2024-04-16)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I571768` - Resolved Console error that occurred when uploading a file with button click without showFileList.
-
 ## 25.1.38 (2024-04-02)
 
 ### ColorPicker
@@ -1271,6 +1263,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 25.1.40 (2024-04-16)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I571768` - Resolved Console error that occurred when uploading a file with button click without showFileList.
 
 ## 19.1.66 (2021-06-01)
 

@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 25.1.41 (2024-04-23)
+
+### ListView
+
+#### Bug Fixes
+
+- `#FB52724` -  The issue with space bar toggle in Switch is not working within ListView component has been resolved.
+
+## 25.1.39 (2024-04-09)
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with "Script error thrown in list box while dragging hover on `svg` element" has been resolved.
+
 ## 25.1.35 (2024-03-15)
 
 ### ListBox
