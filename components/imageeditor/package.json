@@ -1,13 +1,15 @@
 {
 	"name": "@syncfusion/ej2-react-image-editor",
-	"version": "25.1.39",
+	"version": "25.1.40",
 	"description": "Essential JS 2 ImageEditor for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
-		"ej2-react-image-editor"
+		"react",
+		"reactjs",
+		"react image editor",
+		"react photo editor",
+		"react photo viewer"
 	],
 	"repository": {
 		"type": "git",

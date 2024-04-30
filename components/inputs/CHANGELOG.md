@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 25.1.42 (2024-04-30)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#F52893` - Fixed issue with pasting number values with a "-" in the NumericTextBox.
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I578934` - Resolved the issue where allowed extension was not properly working with preloaded files inside a form.
+
 ## 25.1.38 (2024-04-02)
 
 ### ColorPicker

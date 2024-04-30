@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 25.1.41 (2024-04-23)
+## 25.1.42 (2024-04-30)
+
+### Image Editor
+
+#### Bug Fixes
+
+- `#I584239` - The issue with "Add Image dropdown item not displayed while using custom toolbar property as annotate" has been resolved.
+
+## 25.1.40 (2024-04-16)
 
 ### Image Editor
 

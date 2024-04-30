@@ -5,9 +5,9 @@
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
-		"ej2-react-kanban"
+		"react",
+		"react-kanban",
+		"react-kanban-board"
 	],
 	"repository": {
 		"type": "git",

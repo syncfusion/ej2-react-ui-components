@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 25.1.41 (2024-04-23)
+## 25.1.42 (2024-04-30)
 
-### Dialog
+### Tooltip
 
 #### Bug Fixes
 
-- `#577299` - Resolved Console error is occurring when navigating the page with dialog in react.
+- `#I579519` - The issue with Tooltip position was improper while assigning margin top to the container has been resolved.
 
 ## 25.1.39 (2024-04-09)
 
@@ -643,6 +643,14 @@ Dialog is a window that displays information to the user, and used to get the us
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 - **Keyboard Interaction** - The Dialog can be intractable through keyboard.
 
+
+## 25.1.41 (2024-04-23)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#577299` - Resolved Console error is occurring when navigating the page with dialog in react.
 
 ## 25.1.38 (2024-04-02)
 

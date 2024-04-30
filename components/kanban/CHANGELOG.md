@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.42 (2024-04-30)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#I577841` - Now, the drag and drop of a card between the `swimlane` row works properly in the Kanban component.
+
 ## 25.1.35 (2024-03-15)
 
 ### Kanban

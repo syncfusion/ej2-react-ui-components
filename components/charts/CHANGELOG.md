@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 25.1.42 (2024-04-30)
+
+### Accumulation Chart
+
+#### Bug Fixes
+
+- `#I579773` - Now, the center label remains center even when adjusting the start and end angles.
+- `#I577505` - Now, the radius specified by the mapping will render properly in the accumulation chart.
+
 ## 25.1.41 (2024-04-23)
 
 ### Chart

@@ -1,13 +1,26 @@
 {
 	"name": "@syncfusion/ej2-react-popups",
-	"version": "25.1.39",
+	"version": "25.1.41",
 	"description": "A package of Essential JS 2 popup components such as Dialog and Tooltip that is used to display information or messages in separate pop-ups. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
-		"ej2-react-popups"
+		"react",
+		"react-dialog",
+		"react-tooltip",
+		"react-spinner",
+		"react-modal",
+		"react-alert",
+		"react-popup",
+		"react-loading-indicator",
+		"react-waiting-popup",
+		"react-loader",
+		"react-busy-indicator",
+		"react-waitingfor-loader",
+		"react-template-tooltip",
+		"react-positional-tooltip",
+		"react-ajax-tooltip",
+		"react-tooltip-component"
 	],
 	"repository": {
 		"type": "git",

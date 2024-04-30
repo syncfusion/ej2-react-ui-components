@@ -1,13 +1,18 @@
 {
 	"name": "@syncfusion/ej2-react-dropdowns",
-	"version": "25.1.40",
+	"version": "25.1.41",
 	"description": "Essential JS 2 DropDown Components for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
-		"ej2-react-dropdowns"
+		"react",
+		"react-dropdowns",
+		"ej2-react-dropdown",
+		"react-dropdownlist",
+		"react-autocomplete",
+		"react-multiselect",
+		"react-combobox",
+		"react-dropdowntree"
 	],
 	"repository": {
 		"type": "git",

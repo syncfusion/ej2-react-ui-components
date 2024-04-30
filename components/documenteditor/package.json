@@ -1,12 +1,12 @@
 {
 	"name": "@syncfusion/ej2-react-documenteditor",
-	"version": "25.1.40",
+	"version": "25.1.41",
 	"description": "Feature-rich document editor control with built-in support for context menu, options pane and dialogs. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
+		"react",
+		"react-documenteditor",
 		"ej2-react-documenteditor"
 	],
 	"repository": {
