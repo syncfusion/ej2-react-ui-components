@@ -20,8 +20,6 @@
 #### Bug Fixes
 
 - `#I577917` - Now, The tooltips are destroyed when the dialog with the editor is closed by a keyboard action.
-- `#I52134` - Now, the cursor position remains in the correct place when you use InsertHtml executeCommand to insert text into Rich Text Editor after the table.
-- `#I572493` - Now, added the new `requestType` property to the `imageUploadSuccess` event argument in Rich Text Editor.
 - `#I577198` - Now, inserting the table into the RichTextEditor works properly by using the toolbar insert table.
 
 ## 25.1.40 (2024-04-16)

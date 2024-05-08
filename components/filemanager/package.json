@@ -5,9 +5,17 @@
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
-		"ej2-react-filemanager"
+		"react",
+		"reactjs",
+		"react-filemanager",
+		"react-file organizer",
+		"react-file organizing tool",
+		"react-file picker",
+		"react-file viewer",
+		"react-file browser",
+		"react-file selector",
+		"react-directory viewer",
+		"JavaScript"
 	],
 	"repository": {
 		"type": "git",

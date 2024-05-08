@@ -8,6 +8,7 @@
 
 #### Bug Fixes
 
+- `#572526` - Now, Adding child to group node using addChildToGroup method is working properly.
 - `#I568786` - Overview now updates properly across all browser zoom levels and resolutions.
 
 ## 25.1.41 (2024-04-23)

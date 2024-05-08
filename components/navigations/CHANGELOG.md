@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.2.3 (2024-05-08)
+
+### Menu
+
+#### Bug Fixes
+
+- `#I582079` - The issue with "Context Menu position issue occurs when using multilevel submenus" has been resolved.
+
 ## 25.1.42 (2024-04-30)
 
 ### Menu

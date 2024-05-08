@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 25.1.42 (2024-04-30)
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#I572932` - Resolved issue where users were unable to enter the month manually as it automatically moved focus to the next field when pressing a key.
-
 ## 25.1.40 (2024-04-16)
 
 ### DatePicker
@@ -1179,6 +1171,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 25.1.42 (2024-04-30)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I572932` - Resolved issue where users were unable to enter the month manually as it automatically moved focus to the next field when pressing a key.
 
 ## 25.1.39 (2024-04-09)
 

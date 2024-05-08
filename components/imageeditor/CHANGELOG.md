@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.2.3 (2024-05-08)
+
+### Image Editor
+
+#### Bug Fixes
+
+- The issue with "dropdown button `popup` has empty space when using toolbar property in ImageEditor" has been resolved.
+
 ## 25.1.42 (2024-04-30)
 
 ### Image Editor
