@@ -1,12 +1,13 @@
 {
 	"name": "@syncfusion/ej2-react-circulargauge",
-	"version": "25.1.35",
+	"version": "25.2.3",
 	"description": "Essential JS 2 CircularGauge Components for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
+		"react",
+		"reactjs",
+		"react-circulargauge",
 		"ej2-react-circulargauge"
 	],
 	"repository": {

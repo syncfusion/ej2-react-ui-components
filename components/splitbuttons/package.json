@@ -1,13 +1,20 @@
 {
 	"name": "@syncfusion/ej2-react-splitbuttons",
-	"version": "25.1.38",
+	"version": "25.2.3",
 	"description": "A package of feature-rich Essential JS 2 components such as DropDownButton, SplitButton, ProgressButton and ButtonGroup. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
-		"ej2-react-splitbuttons"
+		"react",
+		"reactjs",
+		"ej2-react-splitbuttons",
+		"react-splitbutton",
+		"react-dropdownbutton",
+		"react progress button",
+		"react spin button",
+		"react progress",
+		"react progress indicator",
+		"react spinner"
 	],
 	"repository": {
 		"type": "git",

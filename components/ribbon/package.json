@@ -1,13 +1,14 @@
 {
 	"name": "@syncfusion/ej2-react-ribbon",
-	"version": "25.1.35",
+	"version": "25.2.3",
 	"description": "Essential JS 2 Component for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
-		"ej2-react-ribbon"
+		"react",
+		"reactjs",
+		"ej2-react-ribbon",
+		"react-ribbon"
 	],
 	"repository": {
 		"type": "git",

@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 25.2.4 (2024-05-14)
+
+### Pivot Table
+
+#### Bug fixes
+
+- `#I583180` - The member editor dialog will now be properly closed without any script errors when the cancel button is clicked.
+- `#F187973` - The pivot table will now be properly rendered while dynamically updating the data source with the grouping bar enabled.
+- `#I588151` - Value sorting will now work properly after disabling the "enableSorting" property with an OLAP data source.
+
 ## 25.1.42 (2024-04-30)
 
 ### Pivot Table
