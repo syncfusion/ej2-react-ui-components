@@ -2,6 +2,25 @@
 
 ## [Unreleased]
 
+## 25.2.5 (2024-05-21)
+
+### DropDownTree
+
+- `#I586376` - Trigger the "select" event instantly after the item selection in Dropdown Tree popup.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I188132` - Fixed an issue where the 'for' attribute was not being added to the label element of MultiSelect.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I583651` - Fixed the issue with the header remaining fixed on the page after scrolling while using dropdown with grouping on a scrollable page.
+- `#I583092` - Fixed an issue where the dropdownlist did not retrieve the proper index when dynamically updating the datasource with an index.
+
 ## 25.2.4 (2024-05-14)
 
 ### MultiSelect

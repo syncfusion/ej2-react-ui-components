@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 25.2.5 (2024-05-21)
+
+### Pivot Table
+
+#### Bug fixes
+
+- `#F187958` - After disabling the defer layout update via check box option, defer layout update elements will be properly rendered when refreshing the pivot table component.
+- `#F188052` - Empty string members will now be properly filtered when virtualization is enabled in the pivot table.
+
 ## 25.2.4 (2024-05-14)
 
 ### Pivot Table

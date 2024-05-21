@@ -2,22 +2,19 @@
 
 ## [Unreleased]
 
-## 25.2.4 (2024-05-14)
+## 25.2.5 (2024-05-21)
 
 ### GanttChart
 
 #### Bug fixes
 
-- `#I583075` - Duration is not calculated properly issue has been fixed.
-- `#I578781` - Delay in update of multiple dependency task issue has been fixed.
-- `#I574986` - Console error occurs while adding segments via dialog in Gantt issue has been fixed.
-- `#I585348` - Record gets disappeared when adding new record in last page issue has been fixed.
-- `#I565931` - Taskbar render outside the grid line and bottom tier misalign issue has been fixed.
-- `#F187977` - The script error caused by multiple resources assigned to a single task issue has been resolved.
-- `#I580459` - When Germany `timezone` use, alignment issue occurs in weekend highlight and taskbar issue has been fixed.
+- `#I586588` - Event markers are hidden behind the taskbar in PDF exported file issue has been fixed.
+- `#I586588` - Console error throws while merging two segments with duration of one day issue has been fixed.
+- `#I463798` - Parent date changes when Unscheduled task is added issue has been fixed.
+- `#I582983` - The issue about date miscalculation when dragging the taskbar with timeline virtualization has been fixed.
 
-- `#I583075` - Duration is not calculated properly issue has been fixed.
-- `#I565931` - Taskbar render outside the grid line and bottom tier misalign issue has been fixed.
+- `#I586588` - Event markers are hidden behind the taskbar in PDF exported file issue has been fixed.
+- `#I463798` - Parent date changes when Unscheduled task is added issue has been fixed.
 
 ## 25.2.3 (2024-05-08)
 
@@ -2414,6 +2411,15 @@
 - **Enriched UI** – Support for Material, bootstrap, fabric and high contrast themes along with other UI options like holidays support, vertical and horizontal grid lines support and so on.
 - **Localization** - Provides inherent support to localize the UI.
 
+
+## 25.2.4 (2024-05-14)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I583075` - Duration is not calculated properly issue has been fixed.
+- `#I565931` - Taskbar render outside the grid line and bottom tier misalign issue has been fixed.
 
 ## 21.1.36 (2023-06-28)
 

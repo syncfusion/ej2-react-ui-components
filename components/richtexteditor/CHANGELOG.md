@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 25.2.5 (2024-05-21)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I582303` - Now, the Tab key press on selected paragraph works properly in RichTextEditor.
+- `#F56019` - Now, pressing the enter key when the cursor is at the end of the empty list creates a new tag based on the `enterKey` property.
+- `#F186874` - Now, the background and font color popup's collision will function correctly upon initial click.
+
 ## 25.2.4 (2024-05-14)
 
 ### RichTextEditor
@@ -12,6 +22,9 @@
 - `#I581468` - Now, improved the alignment of the pasted images and table content from the new outlook.
 - `I566845` - Now, when pasting images from `FSNotes`, the image is uploaded properly to the server in the Rich Text Editor.
 - `I564770` - Now, the list type is applied properly to both the parent and the nest list while applying indents in the Rich Text Editor.
+- `#I583830` - Now, the `tab` key is working properly after inserting the mention list in the Rich Text Editor.
+- `#I562280` - Now, alignment and indentation work properly when the `enterKey` property is configured as `BR`.
+- `#I584679` - Now, when the Refresh method is working properly, RichTextEditor is properly refreshed in the initial rendering.
 
 ## 25.1.42 (2024-04-30)
 
@@ -78,7 +91,6 @@
 - `#I558265` - Now, when changing the formats using the toolbar in RichTextEditor, the cursor position is placed properly.
 - `#I564770` - Now, using indents on a numbered or bulleted list in RichTextEditor, it works properly.
 - `#I568007`, `#I568175` - Now, the Table Quick toolbar items are aligned properly in the Tailwind theme.
-- `#F186874` - Now, the background and font color popup's collision will function correctly upon initial click.
 
 ## 25.1.35 (2024-03-15)
 
