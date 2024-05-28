@@ -1344,6 +1344,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
 
+## 25.2.5 (2024-05-21)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I579732` - Issue with "cell selection is mismatched in the UI when deleting a column on the freeze pane applied sheet with finite mode enabled" has been resolved.
+- `#I587684` - Issue with "`ROUNDDOWN` function returns the wrong result when performing actions with decimal numbers" has been resolved.
+
 ## 25.1.40 (2024-04-16)
 
 ### Spreadsheet

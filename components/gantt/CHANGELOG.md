@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 25.2.6 (2024-05-28)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I587507` - Custom value task type does not render initially issue has been fixed.
+- `#I586668` - When the context menu is used to add a record task index position value changes issue has been fixed.
+- `#I591687` - Dependency value not get updated issue has been fixed.
+- `#I588524` - Custom value in segment not maintained issue has been fixed.
+- `#I586548` - Console error occurs when datasource updated dynamically issue has been fixed.
+- `#I582746` - Critical path of task connected dependent tasks have not changed to critical issue has been fixed.
+
+- `#I587507` - Custom value task type does not render initially issue has been fixed.
+- `#I591687` - Dependency value not get updated issue has been fixed.
+
 ## 25.2.5 (2024-05-21)
 
 ### GanttChart

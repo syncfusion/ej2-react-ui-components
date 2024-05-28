@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.2.6 (2024-05-28)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I590909` - Resolved the file selection issue when enabling the virtualization support in the File Manager component.
+
 ## 25.2.3 (2024-05-08)
 
 ### FileManager

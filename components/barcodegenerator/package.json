@@ -5,9 +5,9 @@
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
 	"keywords": [
-		"ej2",
-		"syncfusion",
-		"ej2-react-barcode-generator"
+		"react",
+		"react-barcodes",
+		"ej2-react-barcodes"
 	],
 	"repository": {
 		"type": "git",

@@ -242,7 +242,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             };
             const keycompoentns: string[] = ['autocomplete', 'combobox', 'dropdownlist', 'dropdowntree', 'multiselect',
                 'listbox', 'colorpicker', 'numerictextbox', 'textbox',
-                'uploader', 'maskedtextbox', 'slider','datepicker','datetimepicker','daterangepicker','timepicker','checkbox','switch','radio', 'rating'];
+                'uploader', 'maskedtextbox', 'slider','datepicker','datetimepicker','daterangepicker','timepicker','checkbox','switch','radio', 'rating', 'textarea'];
             if (keycompoentns.indexOf(this.getModuleName()) !== -1) {
                 this.htmlattributes.key = '' + ComponentBase.reactUid;
                 ComponentBase.reactUid++;

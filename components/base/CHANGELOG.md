@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.2.6 (2024-05-28)
+
+### Common
+
+#### Bug Fixes
+
+- `#I585057` - "Use the `defaultValue` or `value` props instead of setting children on `textarea`" warning has been resolved.
+
 ## 25.1.35 (2024-03-15)
 
 ### Common

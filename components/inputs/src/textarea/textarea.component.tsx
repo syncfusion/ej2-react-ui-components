@@ -38,7 +38,7 @@ export class TextAreaComponent extends TextArea {
             super.render();
             this.initRenderCalled = true;
         } else {
-            return React.createElement('textarea', this.getDefaultAttributes(),[].concat(this.props.children,this.portals));
+            return React.createElement((React as any).Fragment, null,[].concat(React.createElement("textarea", this.getDefaultAttributes()),this.portals));
         }
 
     }
