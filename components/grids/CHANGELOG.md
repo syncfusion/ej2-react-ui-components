@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.2.7 (2024-06-04)
+
+### Grid
+
+#### Bug fixes
+
+- `#I580162` - Resolved the issue where custom group aggregate function not working properly when using `disablePageWiseAggregates`.
+
 ## 25.2.6 (2024-05-28)
 
 ### Grid
