@@ -2,40 +2,23 @@
 
 ## [Unreleased]
 
-## 25.2.7 (2024-06-04)
+## 26.1.35 (2024-06-11)
 
 ### GanttChart
 
-#### Bug fixes
+#### Features
 
-- `#I588548` - Taskbar template not working with `enableMultitaskbar` feature issue has been fixed.- `#I590430` - Delete dependency button in context menu not showing for parent taskbar issue has been fixed.
-- `#I589264` - `updateRecordById` method not working properly when `enableImmutableMode` enabled issue has been fixed.
-- `#I590132` - Editing issue for the grid rendered inside a custom column issue has been fixed.
-- `#I587961` - Incorrect dependency value while using remote data issue has been fixed.
-- `#I586548` - Console error occurs when datasource updated dynamically issue has been fixed.
-- `#I565931` - Taskbar render outside the grid line and bottom tier misalign issue has been fixed.
-- `#I591024` - Dependency line is not shown on initial load and after edit in virtual mode issue has been fixed.
+- `#I272613`,`#I269665`,`#I247664`,`#F146782` - Provided [weekWorkingTime](https://ej2.syncfusion.com/documentation/api/gantt/#weekworkingtime) support, allowing you to define distinct work hours for different working days. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/material3/gantt/working-time-range.html).
+- `#I287282`, `#I298661`, `#I307272`, `#I313849`, `#I323459`, `#F185672`, - Provided [timelineTemplate](https://ej2.syncfusion.com/documentation/api/gantt/#timelineTemplate) support to render user defined HTML elements in timeline header. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/material3/gantt/timeline-template.html).
+- We have improved to handle the exception of errors made at Gantt component model binding and throws the error information in `actionFailure` event. Please find the documentation link [here](https://ej2.syncfusion.com/documentation/gantt/exception-handling).
 
-- `#I588548` - Taskbar template not working with `enableMultitaskbar` feature issue has been fixed.
-- `#I590430` - Delete dependency button in context menu not showing for parent taskbar issue has been fixed.
-- `#I587961` - Incorrect dependency value while using remote data issue has been fixed.
-- `#I565931` - Taskbar render outside the grid line and bottom tier misalign issue has been fixed.
-
-## 25.2.6 (2024-05-28)
-
-### GanttChart
+- `#I272613`,`#I269665`,`#I247664`,`#F146782` - Provided [weekWorkingTime](https://ej2.syncfusion.com/react/documentation/api/gantt/#weekworkingtime) support, allowing you to define distinct work hours for different working days. Please find the demo link [here](https://ej2.syncfusion.com/react/demos/#/material3/gantt/working-time-range).
+- `#I287282`, `#I298661`, `#I307272`, `#I313849`, `#I323459`, `#F185672`, - Provided [timelineTemplate](https://ej2.syncfusion.com/react/documentation/api/gantt/#timelineTemplate) support to render user defined HTML elements in timeline header. Please find the demo link [here](https://ej2.syncfusion.com/react/demos/#/material3/gantt/timeline-template).
+- We have improved to handle the exception of errors made at Gantt component model binding and throws the error information in `actionFailure` event. Please find the documentation link [here](https://ej2.syncfusion.com/react/documentation/gantt/exception-handling).
 
 #### Bug fixes
 
-- `#I587507` - Custom value task type does not render initially issue has been fixed.
-- `#I586668` - When the context menu is used to add a record task index position value changes issue has been fixed.
-- `#I591687` - Dependency value not get updated issue has been fixed.
-- `#I588524` - Custom value in segment not maintained issue has been fixed.
-- `#I586548` - Console error occurs when datasource updated dynamically issue has been fixed.
-- `#I582746` - Critical path of task connected dependent tasks have not changed to critical issue has been fixed.
-
-- `#I587507` - Custom value task type does not render initially issue has been fixed.
-- `#I591687` - Dependency value not get updated issue has been fixed.
+- `#I594908`,`#I594882`, `#I592404` - Incorrect validation of resource, work and duration utilization while mapping `taskType` issues has been fixed.
 
 ## 25.2.5 (2024-05-21)
 
@@ -143,7 +126,7 @@
 - `#I562492` - `actionBegin` arguments miss the last record while dragging issue has been fixed.
 - `#I556547` - Top and bottom tier shows null when using custom zooming level issue has been fixed.
 - `#I566539` - Console error occurs while saving data in add dialog box with validation rule issue has been
-- fixed.
+fixed.
 - `#I553748` - Timeline dates validated wrongly after cell editing with timeline virtualization enabled issue has been fixed.
 - `#I565439` - Work calculations are incorrect for parent task in project view issue has been fixed.
 - `#I553710`,`#I565824` - Weekends are not highlighted while `timlineVirtualization` is enabled issue has been fixed.
@@ -316,9 +299,7 @@
 
 `#I531670` - When adding record by method before saving, if the task ID is changed after taskbar hover exception thrown issue has been fixed.
 
-
 `#I531670` - When adding a record by method before saving, if the task ID is changed after taskbar hover exception thrown issue has been fixed.
-
 
 ## 24.1.43 (2023-12-27)
 
@@ -514,9 +495,7 @@
 - `#I461564`- No action is performed when we try to add task when the cell is in edited state issue has been fixed.
 - `#I486234` - Label gets hidden in Gantt Chart when task mode is manual issue has been fixed.
 
--`#I485657`- Misalignment happened in timeline while exporting `PDF` in Gantt has been fixed.
-
-- `#I485398` - console error occurs while using segment data issue has been fixed.
+-`#I485657`- Misalignment happened in timeline while exporting `PDF` in Gantt has been fixed.- `#I485398` - console error occurs while using segment data issue has been fixed.
 - `#I484079`- Vertical scroll and taskbar is not fully visible in yearly mode issue has been fixed.
 - `#I461564`- No action is performed when we try to add task when the cell is in edited state issue has been fixed.
 - `#I486234` -  Label gets hidden in Gantt Chart when task mode is manual issue has been fixed.
@@ -567,16 +546,12 @@
 
 #### Bug fixes
 
--`#I472635`-Using insert key highlights top row has been fixed.
-
-- `#I480002` - Can’t open task information in the context menu issue has been fixed.
+-`#I472635`-Using insert key highlights top row has been fixed.- `#I480002` - Can’t open task information in the context menu issue has been fixed.
 - `#I479988` - Ghosting bars left on screen after cancelling task bar drag.
 - `#I479961` - Milestone baseline moves along with the milestone issue has been fixed.
 - `#I481999` - Page refresh when using validation rules for column issue has been fixed.
 
--`#I472635`-Using insert key highlights top row has been fixed
-
-- `#I479988` - Ghosting bars left on screen after cancelling task bar drag.
+-`#I472635`-Using insert key highlights top row has been fixed- `#I479988` - Ghosting bars left on screen after cancelling task bar drag.
 - `#I479961` - Milestone baseline moves along with the milestone issue has been fixed.
 - `#I481999` - Page refresh when using validation rules for column issue has been fixed.
 
@@ -643,7 +618,6 @@
 
 -`#I43435` - Improved the user interface of taskbar resizing and moving actions in the Gantt Chart. Now, when users perform taskbar resizing or moving, a virtual element is displayed instead of updating the original taskbar element. This virtual element remains visible until the action is completed, providing users with a clear representation of the changes they are making. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/bootstrap5/gantt/editing.html).
 
-
 #### Breaking changes
 
 - Connector lines have been changed from elements to SVG elements for UI improvement. This change has been made to enhance the user interface and provide a more visually appealing and flexible way of displaying connector lines.
@@ -706,7 +680,7 @@
 - `#I462271` - Taskbar not rendered when we use taskbar template issue has been fixed.
 - `#I460869`- Issue in Resource view wont display resource name has been fixed
 - `#I461105` - Baseline dates rendered incorrectly in without `dayWorkingTime` issue has been fixed.
-- -`#I460869`- Issue in Resource view wont display resource name has been fixed.
+-`#I460869`- Issue in Resource view wont display resource name has been fixed.
 
 - `#I461800` - Console error while exporting pdf error has been fixed.
 - `#I464045` - Parent dependency renders though we set `allowParentDependency` as false issue has been fixed.
@@ -766,9 +740,7 @@
 - `#I451257` - No proper template for manual milestone parent.
 - `#I443041` - Gantt react performance rendering issue during initial load has been fixed.
 
--`#I451257`- No proper template for manual milestone parent.
-
-- `#I443041` - Gantt react performance rendering issue during initial load has been fixed.
+-`#I451257`- No proper template for manual milestone parent.- `#I443041` - Gantt react performance rendering issue during initial load has been fixed.
 
 ## 21.1.41 (2023-04-18)
 
@@ -779,16 +751,16 @@
 - `#I453787` - Duration not calculated properly in hour duration unit issue has been fixed.
 - `#I453745` - Modified records in `actionBegin` event has invalid records issue has been fixed.
 - `#I449552` - Child record rendered in incorrect dates during initial load issue has been fixed.
-- -`#I452233`- Parent Taskbar template not working properly in latest version.
-- -`#I449864`- Holiday label is not visible when we don't set height.
-- -`#I449674`- Cannot split task when the taskbar is rendered to one day.
+-`#I452233`- Parent Taskbar template not working properly in latest version.
+-`#I449864`- Holiday label is not visible when we don't set height.
+-`#I449674`- Cannot split task when the taskbar is rendered to one day.
 - `#I449757` - Taskbar width rendered incorrectly issue has been fixed.
 
 - `#I453787` - Duration not calculated properly in hour duration unit issue has been fixed.
 - `#I453745` - Modified records in `actionBegin` event has invalid records issue has been fixed.
 - `#I449552` - Child record rendered in incorrect dates during initial load issue has been fixed.
-- -`#I452233`- Parent Taskbar template not working properly in latest version.
-- -`#I449674`- Cannot split task when the taskbar is rendered to one day.
+-`#I452233`- Parent Taskbar template not working properly in latest version.
+-`#I449674`- Cannot split task when the taskbar is rendered to one day.
 
 ## 21.1.38 (2023-04-04)
 
@@ -799,11 +771,11 @@
 - `#I451243` - Unable to set zooming levels through `zoomingLevels` property issue has been fixed.
 - `#I447704` - Timeline tier is not changing dynamically issue has been fixed.
 - `I447465` - Incorrect progress value on parent task when child tasks have fractional duration issue has been fixed.
-- -`I447475`- End key is not working properly issue has been fixed.
-- -`#I447772` - Application freezing while changing holidays/weekend issue has been fixed.
+-`I447475`- End key is not working properly issue has been fixed.
+-`#I447772` - Application freezing while changing holidays/weekend issue has been fixed.
 
 - `I447465` - Incorrect progress value on parent task when child tasks have fractional duration issue has been fixed.
-- -`I447475`- End key is not working properly issue has been fixed.
+-`I447475`- End key is not working properly issue has been fixed.
 
 ## 21.1.37 (2023-03-29)
 
@@ -812,12 +784,11 @@
 #### Bug fixes
 
 - `#I432146` - Script error occurs while changing data source and resource simultaneously issue has been fixed.
-- -`I441276`- Outdent task is not in correct index of modified records in `actionComplete` event issue has been fixed.
-- -`I435254`, `I444942`- Taskbar not rendered in Pdf exported file when `timelineUnitSize` is initialized issue has been fixed.
+-`I441276`- Outdent task is not in correct index of modified records in `actionComplete` event issue has been fixed.
+-`I435254`, `I444942`- Taskbar not rendered in Pdf exported file when `timelineUnitSize` is initialized issue has been fixed.
 
 -`I441276`- Outdent task is not in correct index of modified records in `actionComplete` event issue has been fixed.
 -`I444942`- Taskbar not rendered in Pdf exported file when `timelineUnitSize` is initialized issue has been fixed.
-
 
 ## 21.1.35 (2023-03-23)
 
@@ -828,18 +799,18 @@
 - `#I419169` - Provided Taskbar drag and drop support for resource view in Gantt Chart. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/bootstrap5/gantt/resource-multi-taskbar.html).
 - `#I417330` - Provided support to disable parent predecessor by using `allowParentDependency` property. Please find the `API` link [here](https://ej2.syncfusion.com/documentation/api/gantt/#allowparentdependency).
 - `#I413261` - Restricted offset value update based on enabling or disabling the `API`. Please find the
-- `API` link [here](https://ej2.syncfusion.com/documentation/api/gantt/#updateoffsetontaskbaredit).
+`API` link [here](https://ej2.syncfusion.com/documentation/api/gantt/#updateoffsetontaskbaredit).
 - `#I420482` - Provided option to disable date validation at initial load based on enabling or disabling the `API`
-- By disabling this `API` we can improve load time performance by two time. Please find the
-- `API` link [here](https://ej2.syncfusion.com/documentation/api/gantt/#autocalculatedatescheduling).
+By disabling this `API` we can improve load time performance by two time. Please find the
+`API` link [here](https://ej2.syncfusion.com/documentation/api/gantt/#autocalculatedatescheduling).
 
 - `#I419169` - Provided Taskbar drag and drop support for resource view in Gantt Chart. Please find the demo link [here](https://ej2.syncfusion.com/react/demos/#/bootstrap5/gantt/resource-multi-taskbar).
 - `#I417330` - Provided support to disable parent predecessor by using `allowParentDependency` property. Please find the `API` link [here](https://ej2.syncfusion.com/react/documentation/api/gantt/#allowparentdependency).
 - `#I413261` - Restricted offset value update based on enabling or disabling the `API`. Please find the
-- `API` link [here](https://ej2.syncfusion.com/react/documentation/api/gantt/#updateoffsetontaskbaredit).
+`API` link [here](https://ej2.syncfusion.com/react/documentation/api/gantt/#updateoffsetontaskbaredit).
 - `#I420482` - Provided option to disable date validation at initial load based on enabling or disabling the `API`
-- By disabling this `API` we can improve load time performance by two time. Please find the
-- `API` link [here](https://ej2.syncfusion.com/react/documentation/api/gantt/#autocalculatedatescheduling).
+By disabling this `API` we can improve load time performance by two time. Please find the
+`API` link [here](https://ej2.syncfusion.com/react/documentation/api/gantt/#autocalculatedatescheduling).
 
 ## 20.4.54 (2023-03-14)
 
@@ -854,12 +825,10 @@
 -`I440310`- Script error throws when parent ID mapped issue has been fixed.
 -`I441047`- An exception is thrown when attempting to update `task fields` and `data source`.
 
-
 -`F180721`-  Script error occurs when critical path is enabled in virtualization mode issue has been fixed.
 -`F180854`- Successor task not updated when editing predecessor task issue has been fixed.
 -`I436189`- Two different payloads passed to put and post for a single add action issue has been fixed.
 -`I441047`- An exception is thrown when attempting to update `task fields` and `data source`.
-
 
 ## 20.4.53 (2023-03-07)
 
@@ -871,10 +840,8 @@
 -`I441394`- Gantt Column name doesn't change respect to changing of culture at runtime issue has been fixed.
 -`I437053`- Task label not updated correctly When dynamically updating data source issue has been fixed.
 
-
 -`I442012`- Pdf export padding property for column header is not working properly issue has been fixed.
 -`I441394`- Gantt Column name doesn't change respect to changing of culture at runtime issue has been fixed.
-
 
 ## 20.4.52 (2023-02-28)
 
@@ -889,11 +856,9 @@
 -`I394676`- Incorrect Date in milestone while on load and editing issue has been fixed.
 -`#I436476`- Gantt Task doesn't get updated after Batch Update issue is fixed.
 
-
 -`I426170`- Incorrect Start Date Update for Unscheduled Task When Editing Parent Start Date.
 -`I432910`- zoom in not disabled issue has been fixed.
 -`I431348`- Updating Day Working Time Property Dynamically in UTC Timezone Results in Invalid Dates.
-
 
 ## 20.4.51 (2023-02-21)
 
@@ -904,9 +869,7 @@
 -`I432910`- Export Issue with Predecessor Connectivity for Filtered Data.
 -`#I434098`- Script error occurs when updating resources dynamically without child mapping.
 
-
 -`I432910`- Export Issue with Predecessor Connectivity for Filtered Data.
-
 
 ## 20.4.50 (2023-02-14)
 
@@ -1231,6 +1194,7 @@
 - `#I388575` - Virtual scroll issue when collapsed and searched has been fixed
 
 - `#I380929` - Baseline end date issue for milestone with same baseline start and end date has been fixed.
+
 - `#388575` - Virtual scroll issue when collapsed and searched has been fixed
 
 ## 20.2.36 (2022-06-30)
@@ -2444,10 +2408,7 @@
 - **Filtering** – Offers filtering the Gantt content using column menu filtering along with toolbar search box.
 - **Customizable columns** – Customize the columns and add custom columns to Gantt chart at initialization through column property.
 - **Enriched UI** – Support for Material, bootstrap, fabric and high contrast themes along with other UI options like holidays support, vertical and horizontal grid lines support and so on.
-- **Localization** - Provides inherent support to localize the UI.
-
-
-## 25.2.4 (2024-05-14)
+- **Localization** - Provides inherent support to localize the UI.## 25.2.4 (2024-05-14)
 
 ### GanttChart
 

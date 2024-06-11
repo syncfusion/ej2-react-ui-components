@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 26.1.35 (2024-06-11)
+
+### TreeView
+
+#### Bug fixes
+
+- `#FB53017` - Resolved the issue where the drop action failed while dropping on a sibling element.
+- `#FB53024` - Resolved the issue where `position` value of nodeDragStop event returns improper value while change the `dropIndicator` value in `nodeDragging` event
+
 ## 25.2.6 (2024-05-28)
 
 ### TreeView
@@ -93,11 +102,11 @@
 
 ## 25.1.35 (2024-03-15)
 
-### ContextMenu
+### Menu
 
 #### Bug Fixes
 
-- `#I565323` - The issue with "Context menu closed while scroll within the sub menu of context menu.
+- `#F583262` - The issue with "script error thrown in Menu component when setting target and hamburger properties" has been resolved.
 
 ### Stepper
 
@@ -652,7 +661,6 @@
 
 The AppBar displays information and actions related to the current application screen. It is used to show branding, screen titles, navigation, and actions.
 
-
 - **Modes** - `Regular`, `Prominent`, and `Dense` modes that define the AppBar height.
 - **Content arrangement** - Spacer and separator options can be used to align the content based on the UI requirement with minimal effort.
 - **Color** - `Primary`, `Light`, `Dark`, and `Inherit` options to customize the AppBar color.
@@ -726,7 +734,6 @@ The AppBar displays information and actions related to the current application s
 
 **Previous**
 
-
 ```typescript
 
 const carouselObj: Carousel = new Carousel({
@@ -736,7 +743,6 @@ const carouselObj: Carousel = new Carousel({
 ```
 
 **Now**
-
 
 ```typescript
 
@@ -752,7 +758,6 @@ const carouselObj: Carousel = new Carousel({
 
 **Previous**
 
-
 ```tsx
 
 <CarouselComponent animation={{ customEffect: "parallax" }}></CarouselComponent>
@@ -760,7 +765,6 @@ const carouselObj: Carousel = new Carousel({
 ```
 
 **Now**
-
 
 ```tsx
 
@@ -852,7 +856,6 @@ const carouselObj: Carousel = new Carousel({
 ### Carousel
 
 The Carousel component allows users to display images with content, links, etc., like a slide show. Typical uses of carousels include scrolling news headlines, featured articles on home pages, and image galleries.
-
 
 - **Rendering** - The Carousel component can be rendered based on the items collection and data binding.
 - **Animation** - Supports animation effects for moving previous/next item of Carousel.
@@ -961,13 +964,12 @@ The Carousel component allows users to display images with content, links, etc.,
 
 - Provided new types of overflow mode and as follows:
 
-1. **Menu**: Shows the number of breadcrumb items that can be accommodated within the container space, and creates a sub menu with the remaining items.
-2. **Wrap**: Wraps the items on multiple lines when the Breadcrumb’s width exceeds the container space.
-3. **Scroll**: Shows an HTML scroll bar when the Breadcrumb’s width exceeds the container space.
-4. **None**: Shows all the items on a single line.
+  1. **Menu**: Shows the number of breadcrumb items that can be accommodated within the container space, and creates a sub menu with the remaining items.
+  2. **Wrap**: Wraps the items on multiple lines when the Breadcrumb’s width exceeds the container space.
+  3. **Scroll**: Shows an HTML scroll bar when the Breadcrumb’s width exceeds the container space.
+  4. **None**: Shows all the items on a single line.
 
-
-5. Provided `cancel` support in `beforeItemRender` event.
+- Provided `cancel` support in `beforeItemRender` event.
 
 #### Breaking Changes
 
@@ -1026,7 +1028,6 @@ The Carousel component allows users to display images with content, links, etc.,
 ### Breadcrumb
 
 Breadcrumb is a graphical user interface that helps to identify or highlight the current location within a hierarchical structure of websites. The aim is to make the user aware of their current position in a hierarchy of website links.
-
 
 - **Overflow Mode** - Used to limit the number of breadcrumb items to be displayed.
 - **Icons** - Icons can be specified in Breadcrumb items.
@@ -1195,11 +1196,11 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 
 - The following properties type was changed.
 
-| Property | Previous Type | Current Type | 
-|---|---|---|
-| Disabled | `anonymous` | `boolean` | 
-| Expanded | `anonymous` | `boolean` | 
-| Visible | `anonymous` | `boolean` | 
+| Property | Previous Type | Current Type                   |
+|----------|---------------|--------------------------------|
+| Disabled | `anonymous`      | `boolean` |
+| Expanded | `anonymous`      | `boolean` |
+| Visible | `anonymous`      | `boolean` |
 
 ## 18.4.47 (2021-03-09)
 
@@ -1458,12 +1459,15 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 #### New Features
 
 - `#253508` - Now, the `actionFailure` event triggers when failure occurs while performing the CRUD operations in TreeView remote data.
+
 - `#227878` - Provided an option to disable the TreeView component.
+
 - `#255907, #F146305` - Provided an option to enable the entire TreeView node as navigable.
 
 #### Breaking Changes
 
 - Using the remote data and performing CRUD operation in TreeView requires the controller part to handle the CRUD operation at server-side. But, it doesn’t require controller part while using the offline remote data.
+
 - `#227540` - Reverted the support for rendering TreeView data in single server request while disabling the loadOnDemand. But, this support can be achieved by specifying the offline as `true` in remote data.
 
 ### Tab
@@ -1594,7 +1598,9 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 #### Bug Fixes
 
 - #245474 - Improper rendering of other components inside the accordion content issue has been fixed.
+
 - Material dark theme issue has been resolved.
+
 - Accessing multiple cssClass property issue with accordion has been fixed.
 
 ### Tab
@@ -1690,6 +1696,7 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 #### Bug Fixes
 
 - #237136 - Issue with Parent Menu click in mobile mode.
+
 - #236458 - Issue with Menu Item hovering while a page contains multiple menus.
 
 ### Sidebar
@@ -1719,6 +1726,7 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 #### Bug Fixes
 
 - #235397 - The cancel parameter is exposed in tab selecting event.
+
 - #235274 - Incorrect selected content had been getting in tab selected event issue has been fixed.
 
 ## 17.1.47 (2019-05-14)
@@ -1741,7 +1749,7 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 
 #### Bug Fixes
 
-- #231019 - An issue with RTL mode of Toolbar scroller has not working in Firefox browser has been resolved.
+- #231019 - An issue with RTL mode of Toolbar scroller has not working in Firefox browser has been resolved.
 
 ### TreeView
 
@@ -1789,7 +1797,7 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 
 #### Bug Fixes
 
-- An issue with the expand action of Accordion when set to single mode, with the items being rendered using content template is fixed now.
+- An issue with the expand action of Accordion when set to single mode, with the items being rendered using content template is fixed now.
 
 ## 17.1.32-beta (2019-03-13)
 
@@ -1843,6 +1851,7 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 #### Breaking Changes
 
 - Sidebar with type `Auto` will always expand on initial rendering, irrespective of `enableDock` and `isOpen` properties.
+
 - When dynamically changing the type property of the Sidebar with invalid property value (For ex:`Pushs`), will reset the type of the Sidebar to its default type as `Auto`.
 
 ## 17.1.1-beta (2019-01-29)
@@ -1911,10 +1920,10 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 
 - Type changes done for the following property.
 
-| Property Name | Old Type | New Type | 
-|---|---|---|
-| `animationSettings` | AnimationSettings | AnimationSettingsModel | 
-| `fields` | FieldSettings | FieldSettingsModel | 
+Property Name | Old Type | New Type
+-----|-----|-----
+`animationSettings` | AnimationSettings | AnimationSettingsModel
+`fields` | FieldSettings | FieldSettingsModel
 
 ### TreeView
 
@@ -1990,11 +1999,14 @@ Breadcrumb is a graphical user interface that helps to identify or highlight the
 
 Menu is a graphical user interface that serves as navigation header for your application or site. Menu can be populated from a data source such as an array of JavaScript objects that can be either structured as hierarchical or self-referential data. The following key features are available in Menu component.
 
-
 - **Rendering** - Supports to render based on the items collection (array of JavaScript objects) and HTML elements.
+
 - **Separator** - Supports menu items grouping by using the Separator.
+
 - **Icons and Navigations** - Supports items to have Icons and Navigation URL's.
+
 - **Template and Multilevel Nesting** - Supports template and multilevel nesting in Menu.
+
 - **Accessibility** - Provided with built-in accessibility support that helps to access all the Menu component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### TreeView
@@ -2173,6 +2185,7 @@ Menu is a graphical user interface that serves as navigation header for your app
 #### Bug Fixes
 
 - Issue in TreeView while ‘cancel' the `nodeDragDrop` event is fixed.
+
 - Issue in TreeView drag and drop function, while adding ‘e-droppable’ class in the target element is fixed.
 
 ## 16.1.32 (2018-03-29)
@@ -2207,12 +2220,16 @@ Menu is a graphical user interface that serves as navigation header for your app
 
 The Sidebar is an expandable and collapsible component that typically acts as a side container to place primary or secondary content alongside the main content.
 
-
 - **Target** - The Sidebar can be initialized in any HTML element other than the body element.
+
 - **Types** – Supports Push, Over, Slide and Auto to expand or collapse the Sidebar.
+
 - **Position** – Allows to position the Sidebar in Left or Right direction.
+
 - **Auto close** - Allows to set the sidebar in an expanded or collapsed state only in certain resolutions.
+
 - **Dock** - By default, supports display of short notifications about the content on docked mode.
+
 - **Backdrop** – Specifies the whether to apply overlay options to main content when the Sidebar is in open state.
 
 ### Tab
@@ -2234,6 +2251,7 @@ The Sidebar is an expandable and collapsible component that typically acts as a 
 #### New Features
 
 - Added “getNode” method in TreeView to get the node's data based on given node element or it's ID.
+
 - Added “beginEdit” method in TreeView, to initiate the editing mode of the TreeView node through code.
 
 #### Breaking Changes
@@ -2293,8 +2311,11 @@ The Sidebar is an expandable and collapsible component that typically acts as a 
 #### Bug Fixes
 
 - Issue with changing separate items property has been fixed.
+
 - The Toolbar Popup and scrollable creation issue in non visible element is fixed.
+
 - Dynamic Items updating with toolbar alignment is fixed.
+
 - Removed unwanted space available in the Toolbar Popup mode initial time.
 
 ## 15.4.22-preview (2017-12-14)
@@ -2327,59 +2348,71 @@ The Sidebar is an expandable and collapsible component that typically acts as a 
 
 Accordion is a vertically collapsible content panel which is displaying panels, one or multiple at a time within the available space.
 
-
 - **Rendering** - Supports to render based on the items collection and HTML elements.
+
 - **Expand Mode** - Supports to define single or multiple expand mode for Accordion panels.
+
 - **Animation** - Supports animation effects for expanding/collapsing the panels.
+
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the Accordion component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### ContextMenu
 
 ContextMenu is a graphical user interface that appears on the user right click/touch hold action.
 
-
 - **Separator** - Supports menu items grouping by using the Separator.
+
 - **Icons and Navigations** - Supports items to have Icons and Navigation URL's.
+
 - **Template and Multilevel Nesting** - Supports template and multilevel nesting in ContextMenu.
+
 - **Accessibility** - Provided with built-in accessibility support that helps to access all the ContextMenu component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### Tab
 
 Tab is a content panel to show multiple contents in specific space one at a time.
 
-
 - **Rendering** - Supports to render based on the items collection and HTML elements.
+
 - **Adaptive** - Supports responsive rendering with scrollable Tabs and popup menu.
+
 - **Animation** - Supports animation effects for moving previous/next contents of the Tab.
+
 - **Customization** - Provides customization support for header with icons and orientation.
+
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the Tab component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### Toolbar
 
 Displays a group of command buttons arranged horizontally.
 
-
 - **Rendering** - Supports to render based on the items collection and HTML elements.
+
 - **Customization** - Supports to add buttons , separator & input components.
+
 - **Adaptive** - Supports responsive rendering with scrollable Toolbar and popup menu.
+
 - **Accessibility**- Provided with built-in accessibility support which helps to access all the Toolbar component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### TreeView
 
 TreeView component is used to represent hierarchical data in a tree like structure with advanced functions to edit, drag and drop, select with CheckBox and more. TreeView can be populated from a data source such as an array of JavaScript objects or from DataManager. The following key features are available in TreeView component.
 
-
 - **Data Binding** - Binds the TreeView component with an array of JavaScript objects or DataManager.
+
 - **CheckBox** - Allows you to select more than one node in TreeView without affecting the UI appearance.
+
 - **Drag and Drop** - Allows you to drag and drop any node in TreeView.
+
 - **Multi Selection** - Allows you to select more than one node in TreeView.
+
 - **Node Editing** - Allows you to change the text of a node in TreeView.
+
 - **Sorting** - Allows display of the TreeView nodes in an ascending or a descending order.
+
 - **Template** - Allows you to customize the nodes in TreeView.
-- **Accessibility** - Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.
 
-
-## 22.2.8 (2023-08-08)
+- **Accessibility** - Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.## 22.2.8 (2023-08-08)
 
 ### Toolbar
 
@@ -2408,5 +2441,3 @@ TreeView component is used to represent hierarchical data in a tree like structu
 #### Bug Fixes
 
 - `#I331088, #F146332` -  An issue with tab item content template changing dynamically has been fixed.
-
-

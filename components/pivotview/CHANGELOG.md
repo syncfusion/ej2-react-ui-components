@@ -2,76 +2,14 @@
 
 ## [Unreleased]
 
-## 25.2.6 (2024-05-28)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#I586835` - When measures have no values, the OLAP pivot table will now be rendered with the correct cell values when drilling down.
-- `#I585932` - Date grouping will now work properly when using remote data in a pivot table.
-
-## 25.2.5 (2024-05-21)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#F187958` - After disabling the defer layout update via check box option, defer layout update elements will be properly rendered when refreshing the pivot table component.
-- `#F188052` - Empty string members will now be properly filtered when virtualization is enabled in the pivot table.
-
-## 25.2.4 (2024-05-14)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#I583180` - The member editor dialog will now be properly closed without any script errors when the cancel button is clicked.
-- `#F187973` - The pivot table will now be properly rendered while dynamically updating the data source with the grouping bar enabled.
-- `#I588151` - Value sorting will now work properly after disabling the "enableSorting" property with an OLAP data source.
-
-## 25.1.42 (2024-04-30)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#I579456` - When the load report option is not displayed in the toolbar UI, report manipulation operations will now work properly.
-
-## 25.1.41 (2024-04-23)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#I496624` - Value sorting will now work properly in an OLAP pivot table with a single measure.
-- `#I547664` - Excel exporting will now work properly in the pivot table using the server-side engine.
-
-## 25.1.39 (2024-04-09)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#I572220` - The issue with persistence not working properly in the Pivot Table with remote data has been fixed.
-
-## 25.1.38 (2024-04-02)
+## 26.1.35 (2024-06-11)
 
 ### PivotTable
 
 #### Bug fixes
 
-- `#I572223` - The drill through popup will now open properly when double-clicking a value cell in the pivot table, with no console errors.
-
-## 25.1.37 (2024-03-26)
-
-### PivotTable
-
-#### Bug fixes
-
-- `#I562279`,`#I565475`,`#I566747` - The pivot table will now be properly displayed after engine export.
-- `#I566095` - The filter text will now be properly displayed in the OLAP Pivot Table's filter field button.
-- When you click the space key, the pivot field list node selection will work properly.
+- `#I581252` - Pivot Table will now be rendered properly within the parent container in Angular.
+- `#I591197` - Column header text will now be visible when using value sorting with autofit in the pivot table.
 
 ## 25.1.35 (2024-03-15)
 
@@ -164,20 +102,22 @@
 #### Breaking Changes
 
 - The skeleton (aka, HTML) of the pivot table has been restructured. Previously, the pivot table displayed frozen row headers and values data in a two-table manner. It has been simplified to one table. The appearance of the horizontal scrollbar has changed as the row headers were frozen using the CSS attributes. However, the pivot table's appearance will remain unchanged as the prior version.
+
 - Because the DOM structure of the pivot table has changed, the following classes included elements have been removed and can now be identified using the classes listed below.
+
 - The frozen and moveable header elements have now been identified within the `e-gridheader` element using the class names shown below.
 
-| Previous | Now | Description | 
+| Previous | Now | Description |
 |---|---|---|
-| `e-frozenheader > e-table > th.e-headercell` | `e-table > th.e-leftfreeze.e-headercell` | Element defining the frozen column header. | 
-| `e-movableheader > e-table > th.e-headercell` | `e-table > th.e-unfreeze.e-headercell` | Element defining the moveable column header. | 
+| `e-frozenheader > e-table > th.e-headercell` | `e-table > th.e-leftfreeze.e-headercell` | Element defining the frozen column header. |
+| `e-movableheader > e-table > th.e-headercell` | `e-table > th.e-unfreeze.e-headercell` | Element defining the moveable column header. |
 
 - The frozen and moveable content elements have now been identified within the `e-gridcontent` element using the class names shown below.
 
-| Previous | Now | Description | 
+| Previous | Now | Description |
 |---|---|---|
-| `e-frozencontent > e-table > th.e-rowcell` | `e-table > th.e-leftfreeze.e-rowcell` | Element defining the frozen content (aka, row headers). | 
-| `e-movablecontent > e-table > th.e-rowcell` | `e-table > th.e-unfreeze.e-rowcell` | Element defining the moveable content (aka, values). | 
+| `e-frozencontent > e-table > th.e-rowcell` | `e-table > th.e-leftfreeze.e-rowcell` | Element defining the frozen content (aka, row headers). |
+| `e-movablecontent > e-table > th.e-rowcell` | `e-table > th.e-unfreeze.e-rowcell` | Element defining the moveable content (aka, values). |
 
 ## 22.1.34 (2023-01-21)
 
@@ -192,9 +132,9 @@
 
 - The property type `PivotValues` has been changed from `IPivotValues` to `IAxisSet[][]`.
 
-| Property Name | Description | Previous Type | Current Type | 
+| Property Name | Description | Previous Type | Current Type |
 |---|---|---|---|
-| `pivotValues` | It holds the collection of cell information that has been populated from the engine on the basis of the given pivot report to render the component as table and chart. | `IPivotValues` | `IAxisSet[][]` | 
+| `pivotValues` | It holds the collection of cell information that has been populated from the engine on the basis of the given pivot report to render the component as table and chart. | `IPivotValues` | `IAxisSet[][]` |
 
 ## 20.4.38 (2022-12-21)
 
@@ -217,33 +157,31 @@
 
 - The `chartSettings.showMemberSeries` property is deprecated and will no longer to be used. Use `chartSettings.showPointColorByMembers` to achieve the same.
 
-| Previous | Now | 
-|---|---|
-| `showMemberSeries` | `showPointColorByMembers` | 
+Previous | Now |
+ ---  | ---  |
+`showMemberSeries` | `showPointColorByMembers`
 
 - The `chartExport` method parameters for the pivot table have now been changed.
 
 **Previous**
 
-
-| Parameter | Type | Description | 
-|---|---|---|
-| type | `ExportType` | Defines the export type. | 
-| fileName | string | Defines file name of export document. | 
-| orientation | `PdfPageOrientation` | Defines the page orientation on pdf export(0 for Portrait mode, 1 for Landscape mode). | 
-| width | number | Defines width of the export document. | 
-| height | number | Defines width of the export document. | 
+Parameter | Type | Description |
+ ---  | ---  | --- |
+type | `ExportType` | Defines the export type.
+fileName | string | Defines file name of export document.
+orientation | `PdfPageOrientation` | Defines the page orientation on pdf export(0 for Portrait mode, 1 for Landscape mode).
+width | number | Defines width of the export document.
+height | number | Defines width of the export document.
 
 **Now**
 
-
-| Parameter | Type | Description | 
-|---|---|---|
-| type | `ExportType` | Defines the export type. | 
-| `pdfExportProperties` | `PdfExportProperties` | Allows to define the chart's export properties such as file name, orientation, width and height. | 
-| `isMultipleExport` | boolean | Allows to export multiple tables and charts into a single PDF document. | 
-| `pdfDoc` | Object | Allows the export of an external PDF document along with current PDF document. | 
-| `isBlob` | boolean | Allows the PDF document to be saved as blob data. | 
+Parameter | Type | Description |
+ ---  | ---  | --- |
+type | `ExportType` | Defines the export type.
+`pdfExportProperties` | `PdfExportProperties` | Allows to define the chart's export properties such as file name, orientation, width and height.
+`isMultipleExport` | boolean | Allows to export multiple tables and charts into a single PDF document.
+`pdfDoc` | Object | Allows the export of an external PDF document along with current PDF document.
+`isBlob` | boolean | Allows the PDF document to be saved as blob data.
 
 ## 20.3.59 (2022-11-29)
 
@@ -252,7 +190,9 @@
 #### Bug Fixes
 
 - `#I405590` - The pivot table will now properly refresh while performing value sorting with the grouping bar and autofit enabled.
+
 - `#I420612` - The pivot table will now be rendered properly while switching between reports in the toolbar.
+
 - `#F420612` - The pivot table's alphanumeric sorting will now works properly.
 
 ## 20.3.57 (2022-11-15)
@@ -397,7 +337,7 @@
 
 #### New Features
 
-- `#F174296` - Members of a specific field are now sorted based on user-defined order in the Pivot Table's row and column axes.
+- `#F174296` - Members of a specific field are now sorted based on user-defined order in the Pivot Table's row and column axes.
 
 ## 20.1.48 (2022-04-12)
 
@@ -504,7 +444,7 @@
 
 ### Pivot Table
 
-#### Bug Fixes
+#### Bug Fixes
 
 - `#I340908` - In Firefox browser, the Pivot Table is now refreshed properly with virtual scrolling.
 
@@ -512,7 +452,7 @@
 
 ### Pivot Table
 
-#### Bug Fixes
+#### Bug Fixes
 
 - The Pivot Chart is now properly shown with the default value of the "zoomFactor" property.
 
@@ -520,7 +460,7 @@
 
 ### Pivot Table
 
-#### Bug Fixes
+#### Bug Fixes
 
 - `#I349396` - When the virtual scrolling feature is enabled, as well as when members are filtered, the Pivot Table can now be rendered properly.
 - `#I340539` - In Angular, the bundle size for Pivot Table has been reduced.
@@ -541,7 +481,7 @@
 
 ### Pivot Table
 
-#### Bug Fixes
+#### Bug Fixes
 
 - `#I345297` - While clicking the value sorting icon, the cell click event is now properly triggered.
 - `#I342886` - The "Calculated Field" feature in the pivot table now works properly in Angular production mode.
@@ -550,7 +490,7 @@
 
 ### Pivot Table
 
-#### Bug Fixes
+#### Bug Fixes
 
 - `#F168308` - The pivot table can now be rendered properly with custom number formats.
 - `#I339705` - When the virtual scrolling feature is used, the pivot table can now be rendered properly without an unnecessary horizontal scrollbar when the content does not require it.
@@ -577,8 +517,7 @@
 
 #### Bug Fixes
 
-- `#I337487` - Now the field's caption can be changed dynamically using the value field settings pop-up.
-- `#F167449` - Now the fields panel has been refreshed properly with toolbar UI.
+- `#I337487` - Now the field's caption can be changed dynamically using the value field settings pop-up.- `#F167449` - Now the fields panel has been refreshed properly with toolbar UI.
 
 ## 19.2.51 (2021-08-03)
 
@@ -692,7 +631,6 @@
 #### Breaking Changes
 
 The appearance of the pivot table component has been improved.
-
 
 #### New Features
 
@@ -918,7 +856,6 @@ The appearance of the pivot table component has been improved.
 
 The pivot grid is a multi-dimensional data visualization component built on top of the relational data sources. The pivot report can be managed dynamically at runtime along with other capabilities like aggregation, filtering and sorting (field and value based).
 
-
 - **Data Sources** - Binds the component with an array of JavaScript objects.
 - **Filtering** - Allows user to view only specific/desired records in the component.
 - **Sorting** - Both member and value sorting are supported. It’s allows user to order fields and values (column) either in ascending or descending order respectively.
@@ -926,10 +863,7 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Aggregation** - Provides built in aggregation types like sum, average, min, max and count.
 - **Calculated Field** - Users can add new value field(s) to the report dynamically using this option.
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
-- **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
-
-
-## 18.1.52 (2020-05-13)
+- **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.## 18.1.52 (2020-05-13)
 
 ### Pivot Table
 

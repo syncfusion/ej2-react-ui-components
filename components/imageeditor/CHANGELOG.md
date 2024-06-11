@@ -2,65 +2,15 @@
 
 ## [Unreleased]
 
-## 25.2.7 (2024-06-04)
+## 26.1.35 (2024-06-11)
 
 ### Image Editor
 
 #### Bug Fixes
 
-- `#I587459` - The issue with "Image size increased" has been resolved.
-
-## 25.2.3 (2024-05-08)
-
-### Image Editor
-
-#### Bug Fixes
-
-- The issue with "dropdown button `popup` has empty space when using toolbar property in ImageEditor" has been resolved.
-
-## 25.1.42 (2024-04-30)
-
-### Image Editor
-
-#### Bug Fixes
-
-- `#I584239` - The issue with "Add Image dropdown item not displayed while using custom toolbar property as annotate" has been resolved.
-
-## 25.1.40 (2024-04-16)
-
-### Image Editor
-
-#### Bug Fixes
-
-- The issue with "content and close icon not proper in alert dialog of the ImageEditor" has been resolved.
-
-## 25.1.39 (2024-04-09)
-
-### Image Editor
-
-#### Bug Fixes
-
-- `#I564880` - The issue with "unable to restore the old image position after reopening the same image" has been resolved.
-- `#I575218` - The issue with "Image annotation not selected when we set the drawImage method with isSelected parameter as true." has been resolved.
-
-## 25.1.38 (2024-04-02)
-
-### Image Editor
-
-#### Bug Fixes
-
-- `#I875625` - The issue with "need to add all default toolbar items in `API` link" has been resolved.
-
-## 25.1.37 (2024-03-26)
-
-### Image Editor
-
-#### Bug Fixes
-
-- `#I567703` - The issue with "Script error thrown in ProfilePicture ImageEditor sample on a mobile device" has been resolved.
 - `#I565340` - The issue with "Script error thrown when attempting to reopen a base64 URL using a custom toolbar in mobile mode" has been resolved.
+
 - `#I566745` - The issue with "FontSize is not updated properly while using the updateShape method" has been resolved.
-- `#I570160` - "Provide the option to change stroke color for annotations using the shapeChanging event at the beginning of the toolbar render" has been completed.
 
 ## 25.1.35 (2024-03-15)
 
@@ -75,6 +25,7 @@
 #### Features
 
 - Provided support for image straightening allows users to adjust an image by rotating it clockwise or counter clockwise. The rotating degree value should be within the range of -45 to +45 degrees for accurate straightening. Positive values indicate clockwise rotation, while negative values indicate counter clockwise rotation.
+
 - Provided support to add additional font families for text annotation.
 
 ## 24.1.41 (2023-12-18)
@@ -84,6 +35,7 @@
 #### Features
 
 - Provided support for image straightening allows users to adjust an image by rotating it clockwise or counter clockwise. The rotating degree value should be within the range of -45 to +45 degrees for accurate straightening. Positive values indicate clockwise rotation, while negative values indicate counter clockwise rotation.
+
 - Provided support to add additional font families for text annotation.
 
 ## 23.1.36 (2023-09-15)
@@ -111,6 +63,7 @@
 #### Bug Fixes
 
 - Issue with "toolbar" property has been resolved.
+
 - Issue with "Script error thrown while editing multiple text area" has been resolved.
 
 ## 22.2.9 (2023-08-15)
@@ -209,11 +162,11 @@
 
 #### Breaking Changes
 
-| Previous Enum Name | Modified Enum Name | 
-|---|---|
-| ImageFinetuneOptions | ImageFinetuneOption | 
-| ImageFilterOptions | ImageFilterOption | 
-| ImageEditorCommands | ImageEditorCommand | 
+|Previous Enum Name|Modified Enum Name|
+|-----------|-----------|
+|ImageFinetuneOptions|ImageFinetuneOption|
+|ImageFilterOptions|ImageFilterOption|
+|ImageEditorCommands|ImageEditorCommand|
 
 #### Bug Fixes
 
@@ -249,7 +202,6 @@
 
 The Image Editor control is a graphical user interface used for editing images. It provides built-in support for rotate, flip, zoom, and crop the images based on the selection. It also has support for inserting an annotations including rectangle, ellipse, line, text, and freehand drawings.
 
-
 - **Selection** - The selection region can be a `square` or `circle`, customized to various aspects ratios, and customized by dragging and resizing.
 - **Crop** - The image can be cropped based on the selection.
 - **Rotate** - The image can be rotated both clockwise and anticlockwise by 90 degrees.
@@ -260,11 +212,8 @@ The Image Editor control is a graphical user interface used for editing images. 
 - **Reset** - Revert all the edited states and load the original image.
 - **Save** - Save the edited image in JPEG, PNG, and SVG formats.
 - **Annotation** - `Text`, `rectangle`, `ellipse`, and `line` annotation shapes are supported.
-
-
 The Image Editor component is a graphical user interface used for editing images. It provides built-in support for rotate, flip, zoom, and crop the images based on the selection. It also has support for inserting an annotations including rectangle, ellipse, line, text, and freehand drawings.
 
-
 - **Selection** - The selection region can be a `square` or `circle`, customized to various aspects ratios, and customized by dragging and resizing.
 - **Crop** - The image can be cropped based on the selection.
 - **Rotate** - The image can be rotated both clockwise and anticlockwise by 90 degrees.
@@ -275,5 +224,3 @@ The Image Editor component is a graphical user interface used for editing images
 - **Reset** - Revert all the edited states and load the original image.
 - **Save** - Save the edited image in JPEG, PNG, and SVG formats.
 - **Annotation** - `Text`, `rectangle`, `ellipse`, and `line` annotation shapes are supported.
-
-

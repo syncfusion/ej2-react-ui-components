@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
 /**
  * React Component Base
  */
@@ -39,8 +40,6 @@ const defaulthtmlkeys: string[] = ['alt', 'className', 'disabled', 'form', 'id',
 const delayUpdate: string[] = ['accordion', 'tab', 'splitter'];
 const isColEName: RegExp = /\]/;
 
-// tslint:disable
-/* eslint-disable @typescript-eslint/no-explicit-any */
 export class ComponentBase<P, S> extends React.Component<P, S> {
     /**
      * @private
@@ -48,7 +47,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     public static reactUid: number = 1;
     private setProperties: Function;
     private element: any;
-    private mountingState:any = false;
+    private mountingState: any = false;
     private appendTo: Function;
     private destroy: Function;
     private getModuleName: () => string;
@@ -74,21 +73,19 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     private isProtectedOnChange: boolean;
     private canDelayUpdate: boolean;
     private reactElement: HTMLElement;
-    public portals:any;
+    public portals: any;
     protected value: any;
     protected columns: any;
     private clsName: boolean;
 
     // Lifecycle methods are changed by React team and so we can deprecate this method and use
     // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentWillMount
-    // tslint:disable-next-line:no-any
 
     public componentDidMount(): void {
         this.refreshChild(true);
         this.canDelayUpdate = delayUpdate.indexOf(this.getModuleName()) !== -1;
         // Used timeout to resolve template binding
         // Reference link: https://github.com/facebook/react/issues/10309#issuecomment-318433235
-        // tslint:disable-next-line:no-any
         this.renderReactComponent();
         if (this.portals && this.portals.length) {
             this.mountingState = true;
@@ -98,7 +95,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     }
 
     public componentDidUpdate(prev: Object): any {
-        if(!this.isshouldComponentUpdateCalled && this.initRenderCalled && !this.isReactForeceUpdate) {
+        if (!this.isshouldComponentUpdateCalled && this.initRenderCalled && !this.isReactForeceUpdate) {
             if (prev !== this.props) {
                 this.isshouldComponentUpdateCalled = true;
                 this.updateProperties(this.props, false, prev);
@@ -116,7 +113,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
 
     // Lifecycle methods are changed by React team and so we can deprecate this method and use
     // Reference link:https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops
-    // tslint:disable-next-line:no-any
     /**
      * @param {Object} nextProps - Specifies the property value.
      * @returns {boolean} - Returns boolean value.
@@ -146,7 +142,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             (!isNullOrUndefined(this['statelessTemplateProps']) ? this['statelessTemplateProps'] : []);
         for (const propkey of keys) {
             const isClassName: boolean = propkey === 'className';
-            if(propkey === 'children'){
+            if (propkey === 'children'){
                 continue;
             }
             if (!isClassName && !isNullOrUndefined(this.htmlattributes[`${propkey}`]) &&
@@ -158,11 +154,11 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             } else if (this.attrKeys.indexOf(propkey) !== -1) {
                 if (isClassName) {
                     this.clsName = true;
-                    const propsClsName = prevProps[`${propkey}`].split(' ');
+                    const propsClsName: string[] = prevProps[`${propkey}`].split(' ');
                     for (let i: number = 0; i < propsClsName.length; i++) {
                         this.element.classList.remove(propsClsName[parseInt(i.toString(), 10)]);
                     }
-                    const dpropsClsName = dProps[`${propkey}`].split(' ');
+                    const dpropsClsName: string[] = dProps[`${propkey}`].split(' ');
                     for (let j: number = 0; j < dpropsClsName.length; j++) {
                         this.element.classList.add(dpropsClsName[parseInt(j.toString(), 10)]);
                     }
@@ -180,7 +176,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         if (dProps['children']) {
             delete dProps['children'];
         }
-        // tslint:disable-next-line:no-any
         if (this.initRenderCalled && (this.canDelayUpdate || (prevProps as any).delayUpdate)) {
             setTimeout(() => {
                 this.refreshProperties(dProps, nextProps, silent);
@@ -193,7 +188,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         const statelessTemplates: string[] = !isNullOrUndefined(this.props['statelessTemplates']) ? this.props['statelessTemplates'] : [];
         if (Object.keys(dProps).length) {
             if (!silent) {
-                // tslint:disable-next-line:no-any
                 this.processComplexTemplate(dProps, (this as any));
             }
             this.setProperties(dProps, silent);
@@ -203,14 +197,15 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
     }
 
-    private processComplexTemplate(curObject: Object, context: { complexTemplate: Object }) {
+    private processComplexTemplate(curObject: Object, context: { complexTemplate: Object }): void {
         const compTemplate: Object = context.complexTemplate;
         if (compTemplate) {
-            // eslint-disable-next-line
             for (const prop in compTemplate) {
-                const PropVal: string = compTemplate[`${prop}`];
-                if (curObject[`${prop}`]) {
-                    setValue(PropVal, getValue(prop, curObject), curObject);
+                if (Object.prototype.hasOwnProperty.call(compTemplate, prop)) {
+                    const PropVal: string = compTemplate[`${prop}`];
+                    if (curObject[`${prop}`]) {
+                        setValue(PropVal, getValue(prop, curObject), curObject);
+                    }
                 }
             }
         }
@@ -224,25 +219,24 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         // if ((stringValue.indexOf(this.getModuleName()) !== -1) && (!isNullOrUndefined(this.props["value"]))) {
         //     this.value = (<{ [key: string]: Object }>this.props)["value"];
         // }
-        if(!this.htmlattributes) {
+        if (!this.htmlattributes) {
             this.htmlattributes = {};
         }
         this.attrKeys = defaulthtmlkeys.concat(this.controlAttributes || []);
         for (const prop of propKeys) {
             if (prop.indexOf('data-') !== -1 || prop.indexOf('aria-') !== -1 || this.attrKeys.indexOf(prop) !== -1 || (Object.keys((this as any).properties).indexOf(`${prop}`) === -1 && ignoreProps.indexOf(`${prop}`) === -1)) {
-                if( this.htmlattributes[`${prop}`] !== (<{ [key: string]: Object }>this.props)[`${prop}`]) {
+                if (this.htmlattributes[`${prop}`] !== (<{ [key: string]: Object }>this.props)[`${prop}`]) {
                     this.htmlattributes[`${prop}`] = (<{ [key: string]: Object }>this.props)[`${prop}`];
                 }
             }
         }
-        if(!this.htmlattributes.ref) {
-            /* tslint:disable:no-any */
+        if (!this.htmlattributes.ref) {
             this.htmlattributes.ref = (ele: any ) => {
                 this.reactElement = ele;
             };
             const keycompoentns: string[] = ['autocomplete', 'combobox', 'dropdownlist', 'dropdowntree', 'multiselect',
                 'listbox', 'colorpicker', 'numerictextbox', 'textbox',
-                'uploader', 'maskedtextbox', 'slider','datepicker','datetimepicker','daterangepicker','timepicker','checkbox','switch','radio', 'rating', 'textarea'];
+                'uploader', 'maskedtextbox', 'slider', 'datepicker', 'datetimepicker', 'daterangepicker', 'timepicker', 'checkbox', 'switch', 'radio', 'rating', 'textarea', 'multicolumncombobox'];
             if (keycompoentns.indexOf(this.getModuleName()) !== -1) {
                 this.htmlattributes.key = '' + ComponentBase.reactUid;
                 ComponentBase.reactUid++;
@@ -258,17 +252,15 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         if (this.clsName) {
             const clsList: string[] = this.element.classList;
             const className: any =  this.htmlattributes['className'];
-            for(let i: number = 0; i < clsList.length; i++){
+            for (let i: number = 0; i < clsList.length; i++){
                 if ((className.indexOf(clsList[parseInt(i.toString(), 10)]) === -1)){
-                    this.htmlattributes['className'] = this.htmlattributes['className'] + ' '+ clsList[parseInt(i.toString(), 10)];
+                    this.htmlattributes['className'] = this.htmlattributes['className'] + ' ' + clsList[parseInt(i.toString(), 10)];
                 }
             }
         }
         return this.htmlattributes;
     }
 
-    /* tslint:disable:no-any */
-    // eslint-disable-next-line
     public trigger(eventName: string, eventProp?: any, successHandler?: any): void {
         if (this.isDestroyed !== true && this.modelObserver) {
             if (isColEName.test(eventName)) {
@@ -295,10 +287,10 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             }
             const prevDetection: boolean = this.isProtectedOnChange;
             this.isProtectedOnChange = false;
-            if(eventName === 'created') {
-                setTimeout(()=>{
+            if (eventName === 'created') {
+                setTimeout(() => {
                     this.isCreated = true;
-                    if(!this.isDestroyed) {
+                    if (!this.isDestroyed) {
                         this.modelObserver.notify(eventName, eventProp, successHandler);
                     }
                 }, 10);
@@ -346,14 +338,13 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
         return false;
     }
-    // eslint-disable-next-line
     public compareObjects(oldProps: any, newProps: any, propName?: string): ObjectValidator {
         let status: boolean = true;
         const lenSimilarity: boolean = (oldProps.length === newProps.length);
         const diffArray: Changes[] = [];
-        const templateProps = !isNullOrUndefined(this['templateProps']) ? this['templateProps'] : [];
+        const templateProps: any = !isNullOrUndefined(this['templateProps']) ? this['templateProps'] : [];
         if (lenSimilarity) {
-            for (let i = 0, len = newProps.length; i < len; i++) {
+            for (let i: number = 0, len: number = newProps.length; i < len; i++) {
                 const curObj: { [key: string]: Object } = {};
                 const oldProp: { [key: string]: Object } = oldProps[parseInt(i.toString(), 10)];
                 const newProp: { [key: string]: Object } = newProps[parseInt(i.toString(), 10)];
@@ -363,13 +354,13 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                         const oldValue: any = oldProp[`${key}`];
                         const newValue: any = newProp[`${key}`];
                         if (key === 'items') {
-                            for(let _j=0; _j < newValue.length; _j++) {
+                            for (let _j: number = 0; _j < newValue.length; _j++) {
                                 if (this.getModuleName() === 'richtexteditor' && typeof(newValue[parseInt(_j.toString(), 10)]) === 'object') {
                                     return {status: true};
                                 }
                             }
                         }
-                        if (this.getModuleName()=== 'grid' && key === 'field') {
+                        if (this.getModuleName() === 'grid' && key === 'field') {
                             curObj[`${key}`] = newValue;
                         }
                         if (!Object.prototype.hasOwnProperty.call(oldProp, key) || !((templateProps.length > 0 && templateProps.indexOf(`${key}`) === -1 && typeof(newValue) === 'function') ? this.compareValues(oldValue.toString(), newValue.toString()) : this.compareValues(oldValue, newValue))) {
@@ -414,7 +405,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             this.injectedModules = prevModule;
         }
         if (this.directivekeys) {
-            let changedProps: Changes[] = []; let key = '';
+            let changedProps: Changes[] = []; let key: string = '';
             const directiveValue: { [key: string]: Object } = <{ [key: string]: Object }>this.validateChildren(
                 {}, this.directivekeys, (<{ children: React.ReactNode }>(props || this.props)));
             if (directiveValue && Object.keys(directiveValue).length) {
@@ -424,13 +415,13 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                     }
                 }
                 if (this.prevProperties) {
-                    const dKeys = Object.keys(this.prevProperties);
-                    for (let i = 0; i < dKeys.length; i++) {
+                    const dKeys: any = Object.keys(this.prevProperties);
+                    for (let i: number = 0; i < dKeys.length; i++) {
                         key = dKeys[parseInt(i.toString(), 10)];
                         if (!Object.prototype.hasOwnProperty.call(directiveValue, key)) {
                             continue;
                         }
-                        const compareOutput = this.compareObjects(this.prevProperties[`${key}`], directiveValue[`${key}`], key);
+                        const compareOutput: any = this.compareObjects(this.prevProperties[`${key}`], directiveValue[`${key}`], key);
                         if (compareOutput.status) {
                             delete directiveValue[`${key}`];
                         } else {
@@ -447,7 +438,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 }
                 if (changedProps.length) {
                     if (this.getModuleName() === 'grid' && key === 'columns') {
-                        for (let _c1 = 0, allColumns = this.columns; _c1 < allColumns.length; _c1++) {
+                        for (let _c1: number = 0, allColumns: any = this.columns; _c1 < allColumns.length; _c1++) {
                             const compareField1: any = getValue('field', allColumns[parseInt(_c1.toString(), 10)]);
                             const compareField2: any = getValue(_c1 + '.value.field', changedProps);
                             if (compareField1 === compareField2) {
@@ -485,17 +476,14 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
 
     public componentWillUnmount(): void {
         clearTimeout(this.cachedTimeOut);
-        const modulesName = ['dropdowntree', 'checkbox'];
-        const hasModule = ((!modulesName.indexOf(this.getModuleName())) ? document.body.contains(this.element) : true);
-        // tslint:disable-next-line:no-any
+        const modulesName: string[] = ['dropdowntree', 'checkbox'];
+        const hasModule: boolean = ((!modulesName.indexOf(this.getModuleName())) ? document.body.contains(this.element) : true);
         if (this.initRenderCalled && this.isAppendCalled && this.element && hasModule && !this.isDestroyed && this.isCreated) {
             this.destroy();
         }
         onIntlChange.offIntlEvents();
     }
 
-    // tslint:disable:no-any
-    // eslint-disable-next-line
     public appendReactElement (element: any, container: HTMLElement): void {
         const portal: any = (ReactDOM as any).createPortal(element, container);
         if (!this.portals) {
@@ -505,8 +493,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             this.portals.push(portal);
         }
     }
-    // tslint:disable:no-any
-    // eslint-disable-next-line
     public renderReactTemplates (callback?: any): void {
         this.isReactForeceUpdate = true;
         if (callback) {
@@ -516,8 +502,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
         this.isReactForeceUpdate = false;
     }
-    // tslint:disable:no-any
-    // eslint-disable-next-line
     public clearTemplate(templateNames: string[], index?: any, callback?: any): void {
         const tempPortal: any = [];
         if (templateNames && templateNames.length) {
@@ -532,7 +516,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 if (!isNullOrUndefined(index) && this.portals[index as number] && this.portals[index as number].propName === propName) {
                     this.portals.splice(index, 1);
                 } else {
-                    for (let i = 0; i < this.portals.length; i++) {
+                    for (let i: number = 0; i < this.portals.length; i++) {
                         if (this.portals[parseInt(i.toString(), 10)].propName === propName) {
                             this.portals.splice(i, 1);
                             i--;
@@ -545,7 +529,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
         this.renderReactTemplates(callback);
     }
-    /* tslint:disable:no-any */
     private validateChildren(
         childCache: { [key: string]: Object },
         mapper: { [key: string]: Object },
@@ -556,11 +539,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
             const ifield: any = (this.getChildType(child as any) as any);
             const key: string & { [key: string]: Object } = <string & { [key: string]: Object }>mapper[`${ifield}`];
             if (ifield && mapper) {
-                // tslint:disable
                 const childProps: object[] = this.getChildProps(React.Children.toArray((child as any).props.children), key);
                 if (childProps.length) {
                     flag = true;
-                    // tslint:disable
                     childCache[(child as any).type.propertyName || ifield] = childProps;
                 }
             }
@@ -570,7 +551,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         }
         return null;
     }
-    // tslint:disable:no-any
     private getChildType(child: any): string {
         if (child.type && child.type.isDirective) {
             return child.type.moduleName || '';
@@ -589,13 +569,10 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 key = Object.keys(matcher)[0];
             }
             const prop: Object = (child as Directive).props;
-            // tslint:disable-next-line:no-any
             const field: string = this.getChildType(<any>child);
             if (field === key) {
                 if (accessProp || !(<Directive>prop).children) {
-                    // tslint:disable
                     const cacheVal: Object = extend({}, prop, {}, true);
-                    // tslint:disable
                     this.processComplexTemplate(cacheVal, (child as any).type);
                     ret.push(cacheVal);
                 } else {
@@ -605,7 +582,6 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                     if (cachedValue['children']) {
                         delete cachedValue['children'];
                     }
-                    // tslint:disable
                     this.processComplexTemplate(cachedValue, (child as any).type);
                     ret.push(cachedValue);
                 }
@@ -614,11 +590,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
 
         return ret;
     }
-    // tslint:disable:no-any
     public getInjectedServices(): Object[] {
         const childs: React.ReactNode[] & Directive[] = (<React.ReactNode[] & Directive[]>React.Children.toArray(this.props.children));
         for (const child of childs) {
-            /* tslint:disable:no-any */
             if ((child as any).type && (child as any).type.isService) {
                 return (child as any).props.services;
             }
@@ -626,4 +600,3 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         return [];
     }
 }
-/* tslint:enable:no-any */

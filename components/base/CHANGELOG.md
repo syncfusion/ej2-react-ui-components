@@ -2,25 +2,21 @@
 
 ## [Unreleased]
 
-## 25.2.6 (2024-05-28)
-
-### Common
-
-#### Bug Fixes
-
-- `#I585057` - "Use the `defaultValue` or `value` props instead of setting children on `textarea`" warning has been resolved.
-
 ## 25.1.35 (2024-03-15)
 
 ### Common
 
+#### New Features
+
+- `#I412239` - Provided compatible support with `Preact` for the React components.
+
+#### Bug Fixes
+
+- `#I548467` - The issue with "the source code copy option is not working when selecting the text on the React platform" has been resolved.
+
 #### Breaking Changes
 
 - `#I549176` - The installation warnings triggered by outdated versions of external dependencies during the React packages installation have been addressed, and these dependencies have been removed. This modification improves the installation process, ensuring a more seamless experience without dependence on external dependencies.
-
-#### New Features
-
-- Provided compatible support with `Preact` for the React components.
 
 ## 24.1.41 (2023-12-18)
 

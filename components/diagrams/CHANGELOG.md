@@ -2,90 +2,7 @@
 
 ## [Unreleased]
 
-## 25.2.5 (2024-05-21)
-
-### Diagram
-
-#### Bug Fixes
-
-- `#I577994` - Now, After zooming and exporting the HTML content, the scroll Padding values are considered.
-- `#I586462` - Now, undo redo working properly after editing swimlane child node’s annotation.
-
-## 25.2.4 (2024-05-14)
-
-### Diagram
-
-#### Bug Fixes
-
-- `#I579409` - Now, the connectors updated properly in complex hierarchical tree while performing expand and collapse.
-- `#I582187` - Now, the order commands working properly when we set zIndex at initial rendering.
-- `#I585972` - Now, the overview rectangle updated properly while double clicking the overview canvas.
-- `#F186044` - Now, the fill color for phases applied properly while adding phases at runtime.
-- `#I52018` - Now, While SwimLane dragged from palette and deletion does not throw console exception.
-
-## 25.1.42 (2024-04-30)
-
-### Diagram
-
-#### Bug Fixes
-
-- `#572526` - Now, Adding child to group node using addChildToGroup method is working properly.
-- `#I568786` - Overview now updates properly across all browser zoom levels and resolutions.
-
-## 25.1.41 (2024-04-23)
-
-### Diagram
-
-#### Bug Fixes
-
-- `#FB52256` - Now, dropping child node inside the subprocess node within the swimlane is working properly.
-- `#FB52022` - Now, the swimlane highlighter rendered properly while dropping opposite orientation lane and the lane added to swimlane properly.
-- `#I573514` - Now, the connector annotation text updated properly while adjusting its end points dynamically.
-- `#FB52023` - Now, The Swimlane helper guides are shown at correct position with Zoom Changes.
-
-## 25.1.40 (2024-04-16)
-
-### Diagram
-
-#### Bug Fixes
-
-- `#FB51986` - Now, The Diagram is rendered with swimlane when passing element container as a second parameter.
-- `#FB52116` - Now, The user handle is not visible while dragging the node/connector.
-- `#I570099` - Now, Phase is selectable after deleting first phase without swimlane header.
-- `#I51986` - Now, aria-label value is added in text edit mode for annotation resolving accessibility error.
-- `#I561938` - Now, the connectors routed properly with shortest routing distance while using enable routing.
-- `#I568115` - Prevented overlapping of Nodes during collapse of multiple nodes with Layout Animation.
-- `#FB52027` - Now, the text edit for Bpmn text annotation working properly.
-
-## 25.1.39 (2024-04-09)
-
-### Diagram
-
-#### Bug Fixes
-
-- `#I570446` - Now, zoom in and zoom out works properly while setting canZoomOut as true.
-- `#I565099` - Now, the undo redo works properly for swimlane after cut and delete.
-
-## 25.1.38 (2024-04-02)
-
-### Diagram
-
-#### Bug Fixes
-
-- `#I562564` - Now, the connector connected properly to the node while moving the node to another layer.
-- `#F187022` - Now, Connection change event changed state is triggered for port change within same node.
-- `#I566420` - Now, the annotation aligns properly while setting text align as Justify with text overflow as Ellipsis.
-
-## 25.1.37 (2024-03-26)
-
-### Diagram
-
-#### Bug Fixes
-
-- `#I555965` - Now, the overview updated properly without any shadows while dragging html nodes.
-- `#I562959` - Now, drawing connector from group node port works properly.
-
-## 25.1.35 (2024-03-15)
+## 26.1.35 (2024-06-11)
 
 ### Diagram
 
@@ -1545,7 +1462,9 @@
 #### Bug Fixes
 
 - `#254194` - The issue "when resizing the text node, text content does not wraps with respect to node size" has been fixed.
+
 - `#253742` - The issue "children in the swimlane cannot be selected when resizing the lane, which is outside the view ports" has been fixed.
+
 - `F148797`,`F148792` - The issue with the Swimlane Header annotation styles that are unable to change has been fixed.
 
 ## 17.3.27 (2019-11-12)
@@ -1740,7 +1659,7 @@
 
 - #228504 – Support has been provided to customize the tooltip of the diagram.
 - #231402 – Support has been provided to show/hide segment thumb of the connector.
-- – An option has been added to set the icons and template in the diagram user handles.
+– An option has been added to set the icons and template in the diagram user handles.
 - #232055 - Text overflow support for annotation when wrapping is enabled for annotation has been added.
 
 #### Bug Fixes
@@ -1779,8 +1698,8 @@
 
 #### Bug Fixes
 
-- #237131 - The issue "Layout is messed up when diagram have disconnected nodes" has been resolved using complex hierarchical tree layout.
-- #237533 - The issue "min-height and min-width properties of node does not updated properly at run time" has been resolved.
+- #237131 - The issue "Layout is messed up when diagram have disconnected nodes" has been resolved using complex hierarchical tree layout.
+- #237533 - The issue "min-height and min-width properties of node does not updated properly at run time" has been resolved.
 
 ## 17.1.49 (2019-05-29)
 
@@ -1788,7 +1707,7 @@
 
 #### Breaking Changes
 
-- The `data` property is removed from the DataSource property of the diagram.
+- The `data` property is removed from the DataSource property of the diagram.
 
 ## 17.1.48 (2019-05-21)
 
@@ -1796,17 +1715,17 @@
 
 #### Breaking Changes
 
-- The `class` property in the UML Classifier shape is renamed properly as `classShape`.
-- The `interface` property in the UML Classifier shape is renamed properly as `interfaceShape`.
-- The `enumeration` property in the UML Classifier shape is renamed properly as `enumerationShape`.
+- The `class` property in the UML Classifier shape is renamed properly as `classShape`.
+- The `interface` property in the UML Classifier shape is renamed properly as `interfaceShape`.
+- The `enumeration` property in the UML Classifier shape is renamed properly as `enumerationShape`.
 
 #### Bug Fixes
 
-- #234537 - The BPMN shape style is now applied to the BPMN inner elements.
-- #235977 - The issue "User handles drawn multiple times while dragging a node from the palette" has been resolved.
-- #235742 - The issue with the oldValue of selectionChange is shown incorrect when mouse down on node has been resolved.
+- #234537 - The BPMN shape style is now applied to the BPMN inner elements.
+- #235977 - The issue "User handles drawn multiple times while dragging a node from the palette" has been resolved.
+- #235742 - The issue with the oldValue of selectionChange is shown incorrect when mouse down on node has been resolved.
 - #235794 - The `textEdit` event is now fired in Edge browser.
-- #236322 - The module property in the package.json has been updated.
+- #236322 - The module property in the package.json has been updated.
 
 ## 17.1.47 (2019-05-14)
 
@@ -1814,7 +1733,7 @@
 
 #### Breaking Changes
 
-- The `hyperLink` property in the Shape Annotation and Path annotation is renamed properly as `hyperlink`.
+- The `hyperLink` property in the Shape Annotation and Path annotation is renamed properly as `hyperlink`.
 
 #### Bug Fixes
 
@@ -1845,11 +1764,11 @@
 
 ### Diagram
 
-- #232371 - Drag and drop the nodes from symbol palette to the diagram will no longer work if the SymbolPalette "allowDrag" property set to false at runtime.
-- Now, the connector can be moved over the connection disabled node when drawing the connector using drawing tools.
-- #232226 - The issue "Annotation added multiple times in DOM if annotation's text overflow enabled and select the node" has been fixed.
-- #232343 - Diagram's selectionChange event is now triggered properly when selecting another node or unselect the selected node in less than 1 second after dragging the node.
-- Diagram's propertyChange event is now triggered properly when move the node using keyboard and undo/redo dragged node.
+- #232371 - Drag and drop the nodes from symbol palette to the diagram will no longer work if the SymbolPalette "allowDrag" property set to false at runtime.
+- Now, the connector can be moved over the connection disabled node when drawing the connector using drawing tools.
+- #232226 - The issue "Annotation added multiple times in DOM if annotation's text overflow enabled and select the node" has been fixed.
+- #232343 - Diagram's selectionChange event is now triggered properly when selecting another node or unselect the selected node in less than 1 second after dragging the node.
+- Diagram's propertyChange event is now triggered properly when move the node using keyboard and undo/redo dragged node.
 - #233008 - BPMN sequence connector does not move with stroke when its dependent node is moved issue is now fixed.
 
 ## 17.1.40 (2019-04-09)
@@ -1878,8 +1797,8 @@
 
 #### Bug Fixes
 
-- The "nodes distributed incorrectly" issue has been fixed.
-- The "duplicate SVG appears when node's SVG is changed" issue has been fixed.
+- The "nodes distributed incorrectly" issue has been fixed.
+- The "duplicate SVG appears when node's SVG is changed" issue has been fixed.
 - Drop event is now fixed when drag and drop other component is now working fine.
 - Diagram does not zoom based on the center point is now working fine.
 - Background color of the label and nodes will be black by default while updating dynamically is now working fine.
@@ -1946,8 +1865,8 @@
 
 #### Bug Fixes
 
-- Updating data source at runtime is now working properly even if you did not define layout for a diagram.
-- Now, you can modify the nodes and connectors styles at runtime.
+- Updating data source at runtime is now working properly even if you did not define layout for a diagram.
+- Now, you can modify the nodes and connectors styles at runtime.
 
 ## 16.4.47 (2019-01-16)
 
@@ -2075,7 +1994,6 @@
 
 The diagram component visually represents information. It is also used to create diagrams like flow charts, organizational charts, mind maps, and BPMN either through code or a visual interface.
 
-
 - **Nodes** - Nodes are used to host graphical objects (path or controls) that can be arranged and manipulated on a diagram page. Many predefined standard shapes are included. Custom shapes can also be created and added easily.
 - **Connectors** - The relationship between two nodes is represented using a connector.
 - **Labels** - Labels are used to annotate nodes and connectors.
@@ -2091,5 +2009,3 @@ The diagram component visually represents information. It is also used to create
 - **Gridlines** - Gridlines are the pattern of lines drawn behind diagram elements. It provides a visual guidance while dragging or arranging the objects on a diagram surface.
 - **Page Layout** - The drawing surface can be configured to page-like appearance using page size, orientation, and margins.
 - **Context Menu** - Frequently used commands can easily be mapped to the context menu.
-
-

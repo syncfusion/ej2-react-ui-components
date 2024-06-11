@@ -7,4 +7,5 @@ export * from './uploader';
 export * from './color-picker';
 export * from './signature';
 export * from './rating';
+export * from './otp-input';
 export * from '@syncfusion/ej2-inputs';

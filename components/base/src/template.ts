@@ -1,12 +1,22 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
 /**
  * Template compiler for react
  */
 import { setTemplateEngine, getTemplateEngine, extend } from '@syncfusion/ej2-base';
 import * as ReactDOM from 'react-dom';
 import * as React from 'react';
-/* eslint-disable @typescript-eslint/no-explicit-any */
+/**
+ * Compile the string value to DOM elements.
+ */
 const stringCompiler: (template: string | Function, helper?: object) => (data: Object | JSON) => string = getTemplateEngine();
-// eslint-disable-next-line
+/**
+ * Compile the template property to the DOM elements.
+ *
+ * @param {any} templateElement ?
+ * @param {Object} helper ?
+ * @returns {Function} ?
+ * @private
+ */
 export function compile(templateElement: any, helper?: Object):
 (data: Object | JSON, component?: any, propName?: any, element?: any) => Object {
     if (typeof templateElement === 'string' || (templateElement.prototype && templateElement.prototype.CSPTemplate && typeof templateElement === 'function')) {

@@ -2,57 +2,7 @@
 
 ## [Unreleased]
 
-## 25.2.6 (2024-05-28)
-
-### TextBox
-
-#### Bug Fixes
-
-- `#I587808` - Fixed an accessibility issue in the Multi Line textbox caused by the role attribute.
-
-## 25.1.42 (2024-04-30)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#F52893` - Fixed issue with pasting number values with a "-" in the NumericTextBox.
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I578934` - Resolved the issue where allowed extension was not properly working with preloaded files inside a form.
-
-## 25.1.38 (2024-04-02)
-
-### ColorPicker
-
-#### Bug Fixes
-
-- `#I571375` - Provided the original event arguments in the change and select events of the color picker.
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I567912` - Fixed issue with overflow style not being applied to the placeholder.
-
-## 25.1.37 (2024-03-26)
-
-### Signature
-
-#### Bug Fixes
-
-- `#F187147` - Issue with "Signature Clear method returns BaseAddress as null" has been resolved.
-
-### MaskedTextBox
-
-#### Bug Fixes
-
-- `#I561285` - Fixed an issue where focus was being added to the maskedtextbox when running in the Safari browser.
-
-## 25.1.35 (2024-03-15)
+## 26.1.35 (2024-06-11)
 
 ### Signature
 
@@ -65,6 +15,7 @@
 #### Bug Fixes
 
 - Facing exception when mode switching from color palette to color picker has been resolved.
+
 - Color picker value is not getting reset for transparent case.
 
 ## 20.4.38 (2022-12-21)
@@ -73,9 +24,7 @@
 
 **Key features**:
 
-
 The Rating component lets the user provide a star rating or view other people’s ratings on a numeric scale for any service provided, such as for movies, applications, or products.
-
 
 - **Precision** - Different precision modes to provide more accurate rating.
 - **Tooltip and Label** - Provide more expressive rating with tooltip and label.
@@ -88,14 +37,12 @@ The Rating component lets the user provide a star rating or view other people’
 
 The Signature control allows user to draw smooth signatures as vector outline of strokes using variable width Bézier curve interpolation. You can use your finger, pen, or mouse on a tablet, touchscreen, etc., to draw your own signature on this Signature control.
 
-
 - **Customization** - Support various customization options like background color, background image, stroke color, stroke width, save with background, undo, redo, clear, readonly, and disabled.
 - **Load** - Support to load the signature as base64.
 - **Draw** - Support to draw the text with the different font family and font size.
 - **Save** - Support to save the signature as image like PNG, JPEG, and SVG.
 
 The Signature component allows user to draw smooth signatures as vector outline of strokes using variable width Bézier curve interpolation. You can use your finger, pen, or mouse on a tablet, touchscreen, etc., to draw your own signature on this Signature component.
-
 
 - **Customization** - Support various customization options like background color, background image, stroke color, stroke width, save with background, undo, redo, clear, readonly, and disabled.
 - **Load** - Support to load the signature as base64.
@@ -230,6 +177,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - `#294975` - Issue with Slider's handle staying large in size when clicking out of the screen has been fixed.
+
 - `#296636` - Issue with "Tooltip with Slider is not working properly" has been fixed.
 
 ## 18.3.35 (2020-10-01)
@@ -261,7 +209,6 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 `282905` - Now, Cross-Site Scripting issues will no longer occurs for placeholder property.
-
 
 ## 18.1.56 (2020-06-09)
 
@@ -431,10 +378,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 
 #### Bug Fixes
 
-- `#248154` - Resolved input event is not fired when clear the value using clear button after dynamically change the textbox to enabled state.
-
-
-### Uploader
+- `#248154` - Resolved input event is not fired when clear the value using clear button after dynamically change the textbox to enabled state.### Uploader
 
 #### Bug Fixes
 
@@ -515,6 +459,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - `#F145967`, `#242158` - Resolved removing event restricted while the `args.cancel` is enabled.
+
 - Now, provided `postRawFile` argument to the `remove` method for post either file/file name to the server.
 
 ## 17.2.35 (2019-07-17)
@@ -542,6 +487,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - `#240368` - Now, you can get the updated previous value in the `input event` argument.
+
 - `#F145575` - Now, existing `cssClass` removed when change the `cssClass` dynamically.
 
 ## 17.2.34 (2019-07-11)
@@ -557,11 +503,13 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### New Features
 
 - `#226404`, `#F141814` - Provided `Material2 outline layout` for textbox.
+
 - `#226950` - Provided `Material2 filled layout` for textbox.
 
 #### Bug Fixes
 
 - Now, changed the bottom padding of input to meet the Material theme standard.
+
 - `#240368` - Now, you can get the updated previous value in the `input event` argument.
 
 ## 17.2.28-beta (2019-06-27)
@@ -575,6 +523,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - #238248 - Issue with "throws error while reset the form" has been resolved.
+
 - #235983 - Resolved the HTML5 standard issues in textbox control.
 
 ### NumericTextBox
@@ -638,6 +587,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - #230545 - Issue with inequality of Masked Textbox element value and argument value of input event while typing rapidly has been fixed.
+
 - #F144247 - Issue with "typed character update on the next position while typing the same digit" has been fixed.
 
 ## 17.1.41 (2019-04-16)
@@ -646,13 +596,13 @@ The Signature component allows user to draw smooth signatures as vector outline 
 
 #### Bug Fixes
 
-- #231530 - Now, `change` event trigger when click on clear button.
+- #231530 - Now, `change` event trigger when click on clear button.
 
 ### TextBox
 
 #### Bug Fixes
 
-- #231530 - Issue with event argument has null value when click on clear button has been fixed.
+- #231530 - Issue with event argument has null value when click on clear button has been fixed.
 
 ## 17.1.40 (2019-04-09)
 
@@ -711,6 +661,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - Issue with uploading the file within the form has been fixed.
+
 - Issue with updating the uploader buttons text in firefox lower versions has been fixed.
 
 ### Slider
@@ -753,6 +704,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - Now, input event will trigger after clear the textbox value using clear icon.
+
 - Now, the default value is set to the textbox while resetting the form.
 
 ### Slider
@@ -824,6 +776,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - The issue with `refresh` method of textbox has been fixed.
+
 - Resolved the issue with placeholder property has 'null' value in Edge browser.
 
 ## 16.4.46 (2019-01-08)
@@ -833,7 +786,9 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### New Features
 
 - Provided option to customize file upload's status message (label) which is sent from server on success and failure events.
+
 - Provided event which trigger before rendering each file item in a page that helps to customize its default UI structure.
+
 - Provided event to denote all the selected files has processed to upload successfully or failed to server.
 
 #### Bug Fixes
@@ -855,7 +810,9 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### New Features
 
 - Enabled sequential upload support to file upload component that upload the selected files one after the other to the server.
+
 - New event provided "chunkUploading" which trigger on every chunk to be upload in file upload.
+
 - Provided the option to get additional data back from a server to client on file upload.
 
 ### FormValidator
@@ -919,6 +876,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - Issue with entering the first character in masked text box when "floatLabelType" is set to "Never" has been fixed.
+
 - Always last MaskedTextBox component get focus on initial page load in IE browser, issue has been fixed.
 
 ## 16.3.24 (2018-10-09)
@@ -958,14 +916,19 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### New Features
 
 - Provided directory (folder) upload support that uploads all files of folder including sub-folder to server.
+
 - Provided paste to upload support that helps to uploads any images to a server on pasting images from clipboard.
 
 #### Bug Fixes
 
 - The files with the wrong extension cannot be uploaded when filtering the files by all files in the file dialog.
+
 - The `clearAll` method removes upload element’s value along with file list.
+
 - Resolved the issue with uploading a file while disable the `showFileList` API.
+
 - In synchronous upload, while removing a particular file from file list will clear all the files now since couldn't manipulate each file details in input file element.
+
 - Resolved the issue with adding the additional form data in IE browser.
 
 ### TextBox
@@ -977,6 +940,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - Resolved the issue with customizing the textbox background color with minimal CSS.
+
 - Resolved the issue with the floating label when choose the value using `autofill` option in chrome browser.
 
 ## 16.2.48 (2018-08-14)
@@ -993,6 +957,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - Resolved the issue with masked text box change event is triggered multiple times while changing the value dynamically.
+
 - Issue occurs while using chrome autofill functionality with masked text box component has been fixed.
 
 ## 16.2.47 (2018-08-07)
@@ -1002,6 +967,7 @@ The Signature component allows user to draw smooth signatures as vector outline 
 #### Bug Fixes
 
 - Issue with setting the background color for masked text box has been fixed.
+
 - Issue with adding name attribute in the input element while creating masked text box without name attribute has been resolved.
 
 ## 16.2.44 (2018-07-10)
@@ -1052,20 +1018,24 @@ The Signature component allows user to draw smooth signatures as vector outline 
 
 - The following API namings are renamed.
 
-| Existing API Name | New API Name | 
-|:-:|:-:|
-| readOnly | readonly | 
+| Existing API Name | New API Name    |
+| :-------------:   |:-------------:  |
+| readOnly          | readonly        |
 
 ### ColorPicker
 
 Color picker is a user interface that is used to select and adjust color values.
 
-
 - **Color specification**: Supports `Red Green Blue`, `Hue Saturation Value` and `Hex` codes.
+
 - **Mode**: Supports `Picker` and `Palette` mode.
+
 - **Inline**: Supports inline type rendering of color picker.
+
 - **Custom palettes**: Allows you to customize palettes and supports multiple palette groups rendering.
+
 - **Opacity**: Allows to set and change the `opacity` of the selected color.
+
 - **Accessibility**: Built-in accessibility features to access color picker using the keyboard, screen readers, or other assistive technology devices.
 
 ### Uploader
@@ -1109,7 +1079,7 @@ Color picker is a user interface that is used to select and adjust color values.
 #### Bug Fixes
 
 - While copying a text and hold the “Ctrl + v” on the MaskedTextBox with number mask, value is not updating properly
-- along with script error issue has been fixed.
+  along with script error issue has been fixed.
 
 ## 16.1.38 (2018-05-02)
 
@@ -1151,20 +1121,22 @@ Color picker is a user interface that is used to select and adjust color values.
 
 ### Uploader
 
-```
-The Uploader component is useful to upload images, documents, and other files to server.
-```
-
+    The Uploader component is useful to upload images, documents, and other files to server.
 The component is extended version of HTML5 upload with multiple file selection, auto upload,
 drag and drop, progress bar, preload files, and validation.
 
-
 - The available key features are
+
 - **Asynchronous Upload** - Allows you to upload the files with asynchronous way.
+
 - **Drag and Drop** - The files can be dragged from file explorer, and dropping into the drop area.
+
 - **Form Supports** - The selected or dropped files are received as a collection in a form action when the form is submitted.
+
 - **File Validation** - Validate the files based on file's size and type.
+
 - **Template** - Allows you to customize the default appearance of `Uploader`.
+
 - **Accessibility** - provides built-in accessibility support which helps to access all the  `Uploader` features through keyboard, on-screen readers, or other assistive technology devices.
 
 ### TextBox
@@ -1172,15 +1144,14 @@ drag and drop, progress bar, preload files, and validation.
 #### Bug Fixes
 
 - Fixed the input alignment issue in the window 8.1 edge browser.
+
 - Removed the additional spaces for error messages on the input.
 
 ### Slider
 
 The Slider component allows the user to select a value or range of values in-between the min and max range, by dragging the handle over the slider bar.
 
-
 There are three types of Slider:
-
 
 - `Default` - Shows a default slider to select a single value.
 - `MinRange` - Displays fill color from the start value to the current selected value.
@@ -1188,14 +1159,20 @@ There are three types of Slider:
 
 The available key features are
 
-
 - **Types**: Provided three types of Slider.
+
 - **Orientation**: Displays the Slider in horizontal or vertical direction.
+
 - **Buttons**: Provided built-in support to render the buttons in both edges of the Slider.
+
 - **Tooltip**: Displays a tooltip to show the currently selected value.
+
 - **Ticks**: Displays a scale with small and big ticks.
+
 - **Format**: Customize the slider values into various format.
+
 - **Accessibility**: Built-in compliance with the [`WAI-ARIA`](http://www.w3.org/WAI/PF/aria-practices/) specifications.
+
 - **Keyboard Interaction**: The Slider can be intractable through the keyboard.
 
 ## 15.4.29-preview (2018-02-07)
@@ -1205,8 +1182,11 @@ The available key features are
 #### Bug Fixes
 
 - While set floatLabelType property as "Never", the placeholder not shown issue has been fixed
+
 - While set floatLabelType property as "Auto", the value becomes "undefined" at two-way binding issue has been fixed
+
 - While setting escape sequence in mask format, value is not updated properly issue has been fixed
+
 - Cursor is not positioned properly while focusing the MaskedTextBox issue has been fixed
 
 ## 15.4.24-preview (2018-01-10)
@@ -1257,44 +1237,41 @@ The available key features are
 
 TextBox is an input element that allows to get input from the user. It allows the user to edit or display the text value.
 
-
 - **Groups** - Supports to group the icon element with the input
+
 - **Floating Label** - Added option to float label always, float label on focus, and disable floating support in the input element.
+
 - **Clear Button** - Provided option to show/hide clear button to reset the value in input element.
+
 - **Validation States** - Provided option to indicate success, error, and warning states.
 
 ### NumericTextBox
 
 NumericTextBox is used to get the number inputs from the user. The input values can be incremented or decremented by a predefined step value. The available key features are
 
-
 - **Range Validation** - allows to set the minimum and maximum range of values in the NumericTextBox.
+
 - **Number Formats** - supports the number display formatting with MSDN standard and custom number formats.
+
 - **Precision Of Numbers** - allows to restrict the number precision when enters the value.
+
 - **Keyboard Interaction** - allows users to interact with the NumericTextBox using the keyboard.
+
 - **Accessibility** - provides built-in accessibility support which helps to access all the NumericTextBox component features through keyboard, on-screen readers or other assistive technology devices.
+
 - **Internationalization** - library provides support for formatting and parsing number using the official Unicode CLDR JSON data.
+
 - **Localization** - Supports to localize spin up and down buttons title for the tooltip to different cultures.
 
 ### MaskedTextBox
 
 MaskedTextBox allows the user to enter the valid input only based on the provided mask. The available key features are
 
-
 - **Custom Characters** - allows you to use your own characters as the mask elements.
+
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
-- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
-
-## 25.1.40 (2024-04-16)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I571768` - Resolved Console error that occurred when uploading a file with button click without showFileList.
-
-## 19.1.66 (2021-06-01)
+- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 19.1.66 (2021-06-01)
 
 ### NumericTextBox
 

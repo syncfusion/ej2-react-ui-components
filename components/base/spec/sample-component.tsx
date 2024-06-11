@@ -112,7 +112,6 @@ export class Styler extends Component<HTMLElement> implements INotifyPropertyCha
 export class ReactStyler extends Styler {
     public state: any;
     public setState: any;
-    private portals: React.ReactElement[] = [];
     public  initRenderCalled: boolean = false;
     public checkInjectedModules: boolean =  true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> & Readonly<StylerModel &

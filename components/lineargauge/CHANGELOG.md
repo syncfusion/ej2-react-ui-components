@@ -1,23 +1,12 @@
 <!-- markdownlint-disable MD010 -->
 
-
 <!-- markdownlint-disable MD030 -->
 
-
 <!-- markdownlint-disable MD004 -->
-
 
 # Changelog
 
 ## [Unreleased]
-
-## 25.1.40 (2024-04-16)
-
-### LinearGauge
-
-#### Bug Fixes
-
-- `#I573933` - The tooltips will now be properly aligned with the axis line when the `offset` property is set in the axis line.
 
 ## 18.3.47 (2020-11-05)
 
@@ -123,11 +112,9 @@
 
 •    Added typing file for ES5 global scripts (dist/global/index.d.ts)
 
-
 #### Breaking Changes
 
 •    Modified the module bundle file name for ES6 bundling
-
 
 ## 15.4.17-preview (2017-11-13)
 
@@ -135,15 +122,11 @@
 
 Linear Gauge component is used to visualize the numerical values of an axis in linear manner. All linear gauge elements are rendered by using Scalable Vector Graphics (SVG).
 
-
 - **Pointers** - Supports to add multiple pointers to the gauge (Marker and Bar).
 - **Ranges** - Supports to highlight desired range values in the gauge axis.
 - **Annotation** - Supports to add custom elements in the desired location of the gauge.
 - **User Interaction** - Supports interactive features like tooltip and pointer drag and drop.
-- **Animation** - Supports animation for the pointer.
-
-
-## 17.4.47 (2020-02-05)
+- **Animation** - Supports animation for the pointer.## 17.4.47 (2020-02-05)
 
 ### LinearGauge
 
@@ -158,5 +141,3 @@ Linear Gauge component is used to visualize the numerical values of an axis in l
 #### Bug Fixes
 
 - `#I240632` - Linear gauge will not disappear when resize the browser window
-
-

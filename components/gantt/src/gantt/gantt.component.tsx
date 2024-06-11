@@ -5,6 +5,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 
 export interface GanttTypecast {
     parentTaskbarTemplate?: string | Function | any;
+    timelineTemplate?: string | Function | any;
     milestoneTemplate?: string | Function | any;
     taskbarTemplate?: string | Function | any;
     labelSettings?: any;
@@ -23,7 +24,7 @@ export class GanttComponent extends Gantt {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'columns': 'column', 'addDialogFields': 'addDialogField', 'editDialogFields': 'editDialogField', 'dayWorkingTimeCollection': 'dayWorkingTime', 'holidays': 'holiday', 'eventMarkers': 'eventMarker'};
+    public directivekeys: { [key: string]: Object } = {'columns': 'column', 'addDialogFields': 'addDialogField', 'editDialogFields': 'editDialogField', 'dayWorkingTimeCollection': 'dayWorkingTime', 'weekWorkingTimes': 'weekWorkingTime', 'holidays': 'holiday', 'eventMarkers': 'eventMarker'};
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = false;

@@ -2,6 +2,35 @@
 
 ## [Unreleased]
 
+## 26.1.35 (2024-06-11)
+
+### FileManager
+
+#### Features
+
+- `#FB10417` - Provided support for rendering flat data objects in FileManager component, removing the necessity for server requests and backend URL configuration. This enhancement also eliminating the need to define `ajaxSettings` while rendering the component.
+- Now, we have provided [closeDialog](https://ej2.syncfusion.com/documentation/api/file-manager/#closeDialog) method in FileManager to programmatically close the
+delete, rename, upload, create, details and other dialog popups.
+- Introduced new event support for actions performed within the FileManager component. These new events significantly expand your ability to tailor and enhance your interactions within the File Manager, providing you with more control and flexibility. Below, you will find the corresponding event names and event argument details.
+
+**Event Information**
+
+Event Name | Argument Name | Properties | Description
+ ---  | ---  | --- | ---
+[beforeDelete](https://ej2.syncfusion.com/documentation/api/file-manager/#beforedelete) | DeleteEventArgs | path, itemData, cancel. | This event is triggered before the deletion of a file or folder occurs. It can be utilized to prevent the deletion of specific files or folders. Any actions, such as displaying a spinner for deletion, can be implemented here.
+[delete](https://ej2.syncfusion.com/documentation/api/file-manager/#delete) | DeleteEventArgs | path, itemData, cancel. | This event is triggered after the file or folder is deleted successfully. The deleted file or folder details can be retrieved here. Additionally, custom elements' visibility can be managed here based on the application's use case.
+[beforeFolderCreate](https://ej2.syncfusion.com/documentation/api/file-manager/#beforefoldercreate) | FolderCreateEventArgs | path, folderName, parentFolder, cancel. | This event is triggered before a folder is created. It allows for the restriction of folder creation based on the application's use case.
+[folderCreate](https://ej2.syncfusion.com/documentation/api/file-manager/#foldercreate) | FolderCreateEventArgs | path, folderName, parentFolder, cancel. | This event is triggered when a folder is successfully created. It provides an opportunity to retrieve details about the newly created folder.
+[search](https://ej2.syncfusion.com/documentation/api/file-manager/#search) | SearchEventArgs | showHiddenItems, caseSensitive, searchText, path, cancel, searchResults. | This event is triggered when a search action occurs in the search bar of the File Manager component. It triggers each character entered in the input during the search process.
+[beforeRename](https://ej2.syncfusion.com/documentation/api/file-manager/#beforerename) | RenameEventArgs | path, itemData, newName, cancel. | This event is triggered when a file or folder is about to be renamed. It allows for the restriction of the rename action for specific folders or files by utilizing the cancel option.
+[rename](https://ej2.syncfusion.com/documentation/api/file-manager/#rename) | RenameEventArgs | path, itemData, newName, cancel. | This event is triggered when a file or folder is successfully renamed. It provides an opportunity to fetch details about the renamed file.
+[beforeMove](https://ej2.syncfusion.com/documentation/api/file-manager/#beforemove) | MoveEventArgs  | path, targetPath, targetData, itemData, isCopy, cancel. | This event is triggered when a file or folder begins to move from its current path through a copy/cut and paste action.
+[move](https://ej2.syncfusion.com/documentation/api/file-manager/#move) | MoveEventArgs | path, targetPath, targetData, itemData, isCopy, cancel. | This event is triggered when a file or folder is pasted into the destination path.
+
+#### Bug Fixes
+
+- `#I594282` - Resolved the fileOpen event issue in the File Manager component.
+
 ## 25.2.6 (2024-05-28)
 
 ### FileManager
@@ -59,7 +88,6 @@
 #### Features
 
 - Provided support in FileManager component to perform download operations via Fetch API request. Now FileManager component, will allow users to perform download operations using either the default form submit method or the latest Fetch API request with a Boolean property `useFormPost` in the `BeforeDownloadEventargs`. The default value of `useFormPost` is set to `true`, directing the FileManager component to utilize the form submit method by default for download operations.
-- `#I521053` - Custom sorting support is provided in the File Manager component. This feature will allow users to achieve windows natural sorting behaviour using `sortComparer` property. This is achieved by assigning the ‘sortComparer’ function exported from the utility file.
 
 ## 24.1.41 (2023-12-18)
 
@@ -451,11 +479,11 @@
 
 - The `beforeFileLoad` event’s `module` argument values have been changed as follows:
 
-| Argument Name | Old Value | New Value | 
-|---|---|---|
-| module | navigationpane | NavigationPane | 
-| module | Grid | DetailsView | 
-| module | LargeIcon | LargeIconView | 
+|Argument Name|Old Value|New Value|
+|----|----|----|
+|module|navigationpane|NavigationPane|
+|module|Grid|DetailsView|
+|module|LargeIcon|LargeIconView|
 
 ## 17.1.32-beta (2019-03-13)
 
@@ -463,12 +491,9 @@
 
 The `FileManager` is a graphical user interface component used to manage the file system. It enables the user to perform common file operations such as accessing, editing, uploading, downloading, and sorting files and folders. This component also allows easy navigation for browsing or selecting a file or folder from the file system.
 
-
 - **Different Views** - Provides detailed and large icon views.
 - **Context menu support** - Provides detailed and large icon views.
 - **Custom toolbar support** - Customize the toolbar to provide only necessary features.
 - **Multiple file selection** - Select multiple files simultaneously.
 - **Accessibility** - Features built-in accessibility support that makes all features accessible through keyboard interaction, screen readers, or other assistive technology devices.
 - **Localization** - Translate file names to any supported language.
-
-

@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+## 26.1.35 (2024-06-11)
+
+### Accumulation Chart
+
+#### Bug Fixes
+
+- `#I590334` - Now, the pie legend highlight works properly.
+- `#I590334` - Now, the legend highlight will work properly even disabling selection in the pie chart.
+
+### Chart
+
+#### Bug Fixes
+
+- `#I591823` - Now, the legend doesn't gets overlapped when resizing the pie chart to minimal size.
+
+#### Features
+
+- `#I539415` - Provided support for animations when adding, removing, or updating data for all chart types, ranging from line charts to financial charts.
+- `#I539415` - Provided smooth transition support for axis elements like gridlines, tick lines, and labels when data is updated in the chart.
+- `#I539415` - Provided smooth transition support for annotations when data is updated in the chart.
+- Improved the animation of stacking series when clicking on the legend.
+- Provided highlight support for chart series when clicking on the legend.
+- Users can now access point information based on the pointer coordinates during chart mouse events and use this information to add or remove points on the chart.
+
 ## 25.2.6 (2024-05-28)
 
 ### Chart
@@ -122,7 +146,6 @@
 ### 3DCircularChart
 
 The 3D Circular Chart provides a graphical representation of data in three dimensions, with each slice's size indicating its proportion relative to the entire dataset. Unlike traditional 2D charts, 3D charts add depth to visualization, providing a better understanding of data patterns.
-
 
 - **Series**: The 3D Circular Chart can plot pie and donut types.
 - **Data binding**: Bind the 3D Circular Chart component with an array of JSON objects or a data manager. In addition to chart series, data labels and tooltips can also be bound to the data.
@@ -277,7 +300,6 @@ The 3D Circular Chart provides a graphical representation of data in three dimen
 ### 3DChart
 
 A 3D chart is a graphical representation of data in three dimensions, showcasing relationships and trends among variables. Unlike traditional 2D charts, 3D charts add depth to the visualization, allowing for a more immersive and comprehensive understanding of data patterns.
-
 
 - **Series** - The 3D chart can plot over six chart types, including column, bar, stacking column, stacking bar, 100% stacked column, and 100% stacked bar.
 - **Data Binding** - Bind the 3D chart component with an array of JSON objects or a DataManager. In addition to chart series, data labels, and tooltips can also be bound to your data.
@@ -605,13 +627,13 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 - To differentiate between marker shapes in the `ChartShape` enumeration, the existing Cross shape has been replaced with Plus, while a new enumeration, Cross, has been added for the cross shape.
 - The font family for chart elements such as the title, axis labels, data labels, legend, tooltip, etc., has been changed based on the theme in the 2023 Volume 2 release.
 
-| Theme | Previous Font Family | New Font Family | 
-|---|---|---|
-| Material | Segoe UI | Roboto | 
-| Bootstrap 5 | Segoe UI | Helvetica | 
-| Bootstrap 4 | Segoe UI | Helvetica | 
-| Bootstrap | Segoe UI | Helvetica | 
-| TailWind | Segoe UI | Inter | 
+| Theme | Previous Font Family| New Font Family |
+| -------- | -------- | -------- |
+| Material | Segoe UI | Roboto |
+| Bootstrap 5 | Segoe UI | Helvetica  |
+| Bootstrap 4 | Segoe UI | Helvetica |
+| Bootstrap | Segoe UI | Helvetica  |
+| TailWind | Segoe UI | Inter|
 
 #### Bug Fixes
 
@@ -628,13 +650,13 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 - The print option has been removed from the period selector because it is already available in the export dropdown. This modification provides a cleaner interface and reduces clutter in the stock chart's period selector.
 - The font family for stock chart elements such as the title, axis labels, data labels, legend, tooltip, etc., has been changed based on the theme in the 2023 Volume 2 release.
 
-| Theme | Previous Font Family | New Font Family | 
-|---|---|---|
-| Material | Segoe UI | Roboto | 
-| Bootstrap 5 | Segoe UI | Helvetica | 
-| Bootstrap 4 | Segoe UI | Helvetica | 
-| Bootstrap | Segoe UI | Helvetica | 
-| TailWind | Segoe UI | Inter | 
+| Theme | Previous Font Family| New Font Family |
+| -------- | -------- | -------- |
+| Material | Segoe UI | Roboto |
+| Bootstrap 5 | Segoe UI | Helvetica  |
+| Bootstrap 4 | Segoe UI | Helvetica |
+| Bootstrap | Segoe UI | Helvetica  |
+| TailWind | Segoe UI | Inter|
 
 ### Accumulation chart
 
@@ -642,13 +664,13 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 
 - The font family for accumulation chart elements such as the title, data labels, legend, tooltip, etc., has been changed based on the theme in the 2023 Volume 2 release.
 
-| Theme | Previous Font Family | New Font Family | 
-|---|---|---|
-| Material | Segoe UI | Roboto | 
-| Bootstrap 5 | Segoe UI | Helvetica | 
-| Bootstrap 4 | Segoe UI | Helvetica | 
-| Bootstrap | Segoe UI | Helvetica | 
-| TailWind | Segoe UI | Inter | 
+| Theme | Previous Font Family| New Font Family |
+| -------- | -------- | -------- |
+| Material | Segoe UI | Roboto |
+| Bootstrap 5 | Segoe UI | Helvetica  |
+| Bootstrap 4 | Segoe UI | Helvetica |
+| Bootstrap | Segoe UI | Helvetica  |
+| TailWind | Segoe UI | Inter|
 
 ### Bullet Chart
 
@@ -656,13 +678,13 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 
 - The font family for bullet chart elements such as the title, labels, legend, tooltip, etc., has been changed based on the theme in the 2023 Volume 2 release.
 
-| Theme | Previous Font Family | New Font Family | 
-|---|---|---|
-| Material | Segoe UI | Roboto | 
-| Bootstrap 5 | Segoe UI | Helvetica | 
-| Bootstrap 4 | Segoe UI | Helvetica | 
-| Bootstrap | Segoe UI | Helvetica | 
-| TailWind | Segoe UI | Inter | 
+| Theme | Previous Font Family| New Font Family |
+| -------- | -------- | -------- |
+| Material | Segoe UI | Roboto |
+| Bootstrap 5 | Segoe UI | Helvetica  |
+| Bootstrap 4 | Segoe UI | Helvetica |
+| Bootstrap | Segoe UI | Helvetica  |
+| TailWind | Segoe UI | Inter|
 
 ### RangeNavigator
 
@@ -670,13 +692,13 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 
 - The font family for range navigator elements such as the axis labels, tooltip, etc., has been changed based on the theme in the 2023 Volume 2 release.
 
-| Theme | Previous Font Family | New Font Family | 
-|---|---|---|
-| Material | Segoe UI | Roboto | 
-| Bootstrap 5 | Segoe UI | Helvetica | 
-| Bootstrap 4 | Segoe UI | Helvetica | 
-| Bootstrap | Segoe UI | Helvetica | 
-| TailWind | Segoe UI | Inter | 
+| Theme | Previous Font Family| New Font Family |
+| -------- | -------- | -------- |
+| Material | Segoe UI | Roboto |
+| Bootstrap 5 | Segoe UI | Helvetica  |
+| Bootstrap 4 | Segoe UI | Helvetica |
+| Bootstrap | Segoe UI | Helvetica  |
+| TailWind | Segoe UI | Inter|
 
 ### Sparkline
 
@@ -684,13 +706,13 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 
 - The font family for sparkline elements such as the data labels, tooltip, etc., has been changed based on the theme in the 2023 Volume 2 release.
 
-| Theme | Previous Font Family | New Font Family | 
-|---|---|---|
-| Material | Segoe UI | Roboto | 
-| Bootstrap 5 | Segoe UI | Helvetica | 
-| Bootstrap 4 | Segoe UI | Helvetica | 
-| Bootstrap | Segoe UI | Helvetica | 
-| TailWind | Segoe UI | Inter | 
+| Theme | Previous Font Family| New Font Family |
+| -------- | -------- | -------- |
+| Material | Segoe UI | Roboto |
+| Bootstrap 5 | Segoe UI | Helvetica  |
+| Bootstrap 4 | Segoe UI | Helvetica |
+| Bootstrap | Segoe UI | Helvetica  |
+| TailWind | Segoe UI | Inter|
 
 ### Smith Chart
 
@@ -698,13 +720,13 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 
 - The font family for smith chart elements such as the title, data labels, legend, tooltip, etc., has been changed based on the theme in the 2023 Volume 2 release.
 
-| Theme | Previous Font Family | New Font Family | 
-|---|---|---|
-| Material | Segoe UI | Roboto | 
-| Bootstrap 5 | Segoe UI | Helvetica | 
-| Bootstrap 4 | Segoe UI | Helvetica | 
-| Bootstrap | Segoe UI | Helvetica | 
-| TailWind | Segoe UI | Inter | 
+| Theme | Previous Font Family| New Font Family |
+| -------- | -------- | -------- |
+| Material | Segoe UI | Roboto |
+| Bootstrap 5 | Segoe UI | Helvetica  |
+| Bootstrap 4 | Segoe UI | Helvetica |
+| Bootstrap | Segoe UI | Helvetica  |
+| TailWind | Segoe UI | Inter|
 
 ## 21.2.10 (2023-06-13)
 
@@ -713,7 +735,6 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 #### Bug Fixes
 
 `#I451537` - Spline is now proper for negative points without specify the range.
-
 
 ## 21.2.9 (2023-06-06)
 
@@ -1076,7 +1097,7 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 #### New Features
 
 - Provided border support for area chart types like Area, Step Area, Spline Area, Stacked Area and 100% Stacked Area.
-- `#I298760` - It is now possible to format data labels in the chart, and it supports all global formats.
+- `#I298760` - It is now possible to format data labels in the chart, and it supports all global formats.
 - `#I379807` - A toolbar for zooming and panning has been added to the chart on load.
 - `#I386960` - Provided support to customize the space between legend items in the chart.
 - `#I387973` - Provided legend click event for the accumulation chart.
@@ -1417,6 +1438,7 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 #### Bug Fixes
 
 - `#I339050` - Resolved CSP issues in the chart while using inline styles.
+
 - Data point highlight is now properly working while enabling the tooltip.
 
 ## 19.3.44 (2021-10-05)
@@ -2229,7 +2251,6 @@ A 3D chart is a graphical representation of data in three dimensions, showcasing
 
 Bullet Chart is the variation of bar chart, which displays one or more measures, and compares it to a target value. You can also display the measures in a qualitative range of performance such as poor, satisfactory, or good. All stock elements are rendered by using Scalable Vector Graphics (SVG).
 
-
 - **Data Binding** - Binds the data with local and remote data source.
 - **Animation** - Feature and target bar will be animated when rendering.
 - **Tooltip** - Supports tooltip for the feature and target bar.
@@ -2389,7 +2410,6 @@ Bullet Chart is the variation of bar chart, which displays one or more measures,
 `#243156` - Selection is not proper at the edge issue has been fixed.
 `#245710` - Y-Axis of Spline chart not adjusting scale to suit dataSource issue has been fixed.
 
-
 ## 17.2.36 (2019-07-24)
 
 ### Stock Chart
@@ -2398,20 +2418,17 @@ Bullet Chart is the variation of bar chart, which displays one or more measures,
 
 The `querySelector of null` console error issue has been fixed.
 
-
 ### RangeNavigator
 
 #### Bug Fixes
 
 The `appendChild of null` console error issue has been fixed.
 
-
 ### Chart
 
 #### Bug Fixes
 
 `#240342` - While scrolling chart's scrollbar Vertical HTML scrollbar goes up issue fixed.
-
 
 ### Accumulation chart
 
@@ -2609,7 +2626,6 @@ The `appendChild of null` console error issue has been fixed.
 Stock Chart component is used to track and visualize stock price of any company over a specific period using charting and range tools. All stock elements are rendered by using Scalable Vector
 Graphics (SVG).
 
-
 - **Data Binding** - Binds the data with local and remote data source.
 - **Chart** - To represent the selected data and its supports candle, hilo, OHLC, line, spline and area type series.
 - **Range Selector** - To select the smaller range from a larger collection.
@@ -2725,7 +2741,7 @@ Graphics (SVG).
 
 - Removed chartmeasuretext element from the DOM.
 - Outliers in Box and Whisker series is not rendering on mouse over, when we setting the marker
-- visibility to false.
+visibility to false.
 
 ## 16.2.46 (2018-07-30)
 
@@ -2796,7 +2812,6 @@ Graphics (SVG).
 
 The range navigator provides an intuitive interface for selecting a smaller range from a larger collection. It is commonly used in financial dashboards to filter a date range for which the data needs to be visualized. This control easily combines with other controls such as Chart, Data Grid, etc., to create rich and powerful dashboards.
 
-
 - **Data Binding** - Binds the data with local and remote data source.
 - **Chart** - To represent the data in RangeNavigator and its supports line, step line and area type series.
 - **Slider** - To handle the selected data in RangeNavigator.
@@ -2811,7 +2826,6 @@ The range navigator provides an intuitive interface for selecting a smaller rang
 
 Sparklines are easy to interpret and also it conveys much more information to the user by visualizing the data in a small amount of space.
 
-
 - **Types** - Sparklines had five type of series. Line, Area, Column and WinLoss and Pie.
 - **Marker** - Sparklines support the marker feature.
 - **DataLabel** - Sparklines support the datalabel feature. It uses to identify the x and y value for the current point.
@@ -2822,7 +2836,6 @@ Sparklines are easy to interpret and also it conveys much more information to th
 
 Smith chart is one of the most useful data visualization tools for high frequency circuit applications. It contains two sets of circles to plot the parameters of transmission lines.
 
-
 - **Types** - Smithchart had two type of rendering. Impedance and Admittance.
 - **Marker** - Smithchart supports the marker feature. It used to identify point position.
 - **Datalabel** - Smithchart supports the datalabel feature. It used to identify point values.
@@ -2832,16 +2845,12 @@ Smith chart is one of the most useful data visualization tools for high frequenc
 
 Smith chart is one of the most useful data visualization tools for high frequency circuit applications. It contains two sets of circles to plot the parameters of transmission lines.
 
-
 - **Types** - Smithchart had two type of rendering. Impedance and Admittance.
 - **Marker** - Smithchart supports the marker feature. It used to identify point position.
 - **Datalabel** - Smithchart supports the datalabel feature. It used to identify point values.
 - **Legend** - Smithchart supports the legend feature. It used to denote each series names.
 - **Tooltip** - Smithchart supports the tooltip feature. It used to get point values on user interaction like mouse and touch actions.
-- **Print and Export** - Smithchart supports printing and exporting as different file types.
-
-
-## 16.1.48 (2018-06-13)
+- **Print and Export** - Smithchart supports printing and exporting as different file types.## 16.1.48 (2018-06-13)
 
 ### Chart
 
@@ -2951,7 +2960,6 @@ Chart component is used to visualize the data with user interactivity and provid
 options to configure the data visually. All chart elements are rendered by using Scalable Vector
 Graphics (SVG).
 
-
 - **Series** - Chart can plot over 28 chart types that are ranging from line charts to specialized financial charts
 - **Data Binding** - Binds the data with local and remote data source.
 - **Data Labels and Markers** - Supports data label and marker to annotate and enhance a data.
@@ -2965,5 +2973,3 @@ Graphics (SVG).
 - **User Interaction** - Supports interactive features that are zooming, panning, crosshair, trackball, tooltip, and data point selection.
 - **Annotation** - Supports annotation to mark a specific area in chart.
 - **Export** - Supports to print the chart directly from the browser and exports the chart in both JPEG and PNG format.
-
-

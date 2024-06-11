@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 25.1.35 (2024-03-15)
+## 26.1.35 (2024-06-11)
 
 ### HeatMap
 
@@ -176,7 +176,6 @@
 The `dataSource` property has been split into `dataSource` and `dataSourceSettings` properties.
 The `dataSource` property is used to bind data to HeatMap and the `dataSourceSettings` property is used to configure the data source using adaptor settings.
 
-
 ## 17.2.28-beta (2019-06-27)
 
 ### HeatMap
@@ -267,11 +266,8 @@ The `dataSource` property is used to bind data to HeatMap and the `dataSourceSet
 
 The HeatMap control is used to visualize a two-dimensional data in which the values are represented in gradient or fixed colors.
 
-
 - **Axis Types** - Supports three different types of axes to populate the data, namely Numerical, Categorical,and Datetime.
 - **Axis Feature** - Supports inverted axis, opposed position and axis intervals.
 - **Legend** - Supports legend which provides value information for the colors which represents each values in HeatMap.
 - **Data Binding** - Supports binding data in JSON and two-dimensional array formats.
 - **Rendering Modes** - Supports automatic switching between SVG and Canvas rendering modes based on the data source length.
-
-

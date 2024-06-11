@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-charts",
-	"version": "25.2.6",
+	"version": "20.22.1",
 	"description": "Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -35,13 +35,13 @@
 		"@syncfusion/ej2-charts": "*"
 	},
 	"devDependencies": {
-		"@types/chai": "^3.4.28",
-		"@types/es6-promise": "0.0.28",
+		"@types/chai": "3.5.2",
+		"@types/es6-promise": "0.0.33",
 		"@types/jasmine": "2.8.22",
-		"@types/jasmine-ajax": "^3.1.27",
-		"@types/react": "^15.0.24",
-		"@types/react-dom": "^15.5.0",
-		"@types/requirejs": "^2.1.26",
+		"@types/jasmine-ajax": "3.3.5",
+		"@types/react": "16.4.7",
+		"@types/react-dom": "16.9.7",
+		"@types/requirejs": "2.1.37",
 		"es6-promise": "^3.2.1",
 		"gulp": "^3.9.1",
 		"gulp-sass": "^3.1.0",

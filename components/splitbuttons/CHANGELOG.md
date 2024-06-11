@@ -2,85 +2,19 @@
 
 ## [Unreleased]
 
-## 25.2.4 (2024-05-14)
-
-### ButtonGroup
-
-#### Bug Fixes
-
-- Issue in "box shadow correction while clicking single or multiple selection mode buttons" has been resolved.
-
-## 25.1.38 (2024-04-02)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- Issue in "keyboard action not working in DropDownButton when its append on span tag" has been resolved.
-
-## 25.1.37 (2024-03-26)
-
-### DropDownButton
-
-#### Breaking Changes
-
-- Now, the default value of [`enableHtmlSanitizer`](https://helpej2.syncfusion.com/documentation/api/drop-down-button/#enablehtmlsanitizer) property is true to prevent the XSS attacks in the DropDownButton component.
-
-### ProgressButton
-
-#### Breaking Changes
-
-- Now, the default value of [`enableHtmlSanitizer`](https://helpej2.syncfusion.com/documentation/api/progress-button/#enablehtmlsanitizer) property is true to prevent the XSS attacks in the ProgressButton component.
-
-### SplitButton
-
-#### Breaking Changes
-
-- Now, the default value of [`enableHtmlSanitizer`](https://helpej2.syncfusion.com/documentation/api/split-button/#enablehtmlsanitizer) property is true to prevent the XSS attacks in the SplitButton component.
-
-## 24.2.7 (2024-02-20)
-
-### ProgressButton
-
-- `#I554000` - Console error is thrown when clicking the progress button  has been resolved.
-
-## 24.2.5 (2024-02-13)
-
-### SplitButton
-
-#### Bug Fixes
-
-- `#I552152` - Issue in "Split button select event not triggered while using keyboard action" has been resolved.
-
-## 24.1.46 (2024-01-17)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- `#I863317` -  Issue in "DropDownButton list items do not meet WCAG AA standards for focus indicators" has been resolved.
-
-### ButtonGroup
-
-#### Bug Fixes
-
-- `#I534148` -  Issue in "Focus Css style not removed after clicking outside from button group button in bootstrap4 theme" has been resolved.
-
-## 24.1.45 (2024-01-09)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- `#I863317` - `Dropdownitems` not disabled initially when updating the property dynamically has been resolved.
-
-## 24.1.41 (2023-12-18)
+## 26.1.35 (2024-06-11)
 
 ### DropDownButton
 
 #### Bug Fixes
 
 - `#I445638` - Issue in DropDownButton Popup Alignment issue while setting `enableRtl` property as true has been resolved.
+
+### SplitButton
+
+#### Bug Fixes
+
+- `#I554000` - Console error is thrown when clicking the progress button  has been resolved.
 
 ## 20.4.50 (2023-02-14)
 
@@ -236,10 +170,10 @@
 
 - Type changes done for the following property.
 
-| Property Name | Old Type | New Type | 
-|---|---|---|
-| `animationSettings` | AnimationSettings | AnimationSettingsModel | 
-| `spinSettings` | SpinSettings | SpinSettingsModel | 
+Property Name | Old Type | New Type
+-----|-----|-----
+`animationSettings` | AnimationSettings | AnimationSettingsModel
+`spinSettings` | SpinSettings | SpinSettingsModel
 
 ## 16.3.22 (2018-09-25)
 
@@ -255,11 +189,14 @@
 
 The progress button visualizes the progression of an operation to indicate the user that a process is happening in the background. The progress can be shown with graphics accompanied by a textual representation.
 
-
 - **Types, Sizes, and Styles** - Provided with different types, sizes and predefined styles of progress button.
+
 - **Icons and Spinner** - Supports icon, spinner and its positioning.
+
 - **Animation** - Provided with predefined animation and progress indicator.
+
 - **Events** - Supports event triggering at specified interval.
+
 - **Accessibility** - Provided with built-in accessibility support that helps to access all the ProgressButton component features through the keyboard, screen readers, or other assistive technology devices.
 
 ## 16.2.48 (2018-08-14)
@@ -284,11 +221,14 @@ The progress button visualizes the progression of an operation to indicate the u
 
 ButtonGroup is a graphical user interface that groups series of buttons horizontally or vertically.
 
-
 - **Types, Sizes, and Styles** - Provided with different types, sizes and predefined styles of button.
+
 - **Selection** - Supports single and multiple selection behaviors.
+
 - **Orientation** - Supports horizontal and vertical orientations.
+
 - **Nesting** - Supports nesting with drop-down and split button components.
+
 - **Accessibility** - Built-in accessibility features to access all the button group using the keyboard, screen readers, or other assistive technology devices.
 
 ### SplitButton
@@ -311,20 +251,22 @@ ButtonGroup is a graphical user interface that groups series of buttons horizont
 
 DropDownButton component is used to toggle contextual overlays for displaying list of action items.
 
-
 - **Sizes** - Provided with different sizes of DropDownButton.
+
 - **Icons and Navigations** - Supports text and icon on the DropDownButton and Popup items. URL can be given to Popup items  that creates the anchor link to navigate to the URL provided.
+
 - **Separator** - Supports Popup items grouping by using the Separator.
+
 - **Accessibility** - Provided with built-in accessibility support that helps to access all the DropDownButton component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### SplitButton
 
 SplitButton component has primary and secondary button. Primary button is used to select default action and secondary button is used to toggle contextual overlays for displaying list of action items.
 
-
 - **Sizes** - Provided with different sizes of SplitButton.
+
 - **Icons and Navigations** - Supports text and icon on the SplitButton and Popup items. URL can be given to Popup items  that creates the anchor link to navigate to the URL provided.
+
 - **Separator** - Supports Popup items grouping by using the Separator.
+
 - **Accessibility** - Provided with built-in accessibility support that helps to access all the SplitButton component features through the keyboard, screen readers, or other assistive technology devices.
-
-

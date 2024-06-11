@@ -2,22 +2,6 @@
 
 ## [Unreleased]
 
-## 25.1.42 (2024-04-30)
-
-### Tooltip
-
-#### Bug Fixes
-
-- `#I579519` - The issue with Tooltip position was improper while assigning margin top to the container has been resolved.
-
-## 25.1.39 (2024-04-09)
-
-### Tooltip
-
-#### Bug Fixes
-
-- `#I570443` - The issue with the Tooltip component appearance while hovering using a tab key in the uploader sample has been resolved.
-
 ## 21.1.35 (2023-03-23)
 
 ### Tooltip
@@ -68,6 +52,7 @@
 #### Bug Fixes
 
 - `#I401514` - Now, when we begin to drag the Utility Dialog, it does not move to the left side.
+
 - `#I400881` - Now, When you set a secondary font color in the bootstrap 5 theme using the theme studio, the changes will be reflected for the Dialog Cancel button.
 
 ## 20.2.45 (2022-08-23)
@@ -93,7 +78,9 @@
 #### Bug Fixes
 
 - `#FB35757` - Now, the issue with Content Security Policy is resolved when pasting the contents into the Rich Text Editor.
+
 - `#F175969` - Now, the dragging working properly when dynamically set the dialog header.
+
 - `#FB36339` - Now, the issue with dialog templates not rendered properly is resolved.
 
 ## 20.1.58 (2022-05-31)
@@ -135,6 +122,7 @@
 #### Bug Fixes
 
 - `#I337211` - The issue with "Styles are not properly removed from the body, when open and close the fullscreen `non-modal` dialog" has been resolved.
+
 - `#I339787` - The issue with "Dialog `overlay` element is not removed properly from the DOM" has been resolved.
 
 ## 19.2.56 (2021-08-17)
@@ -182,6 +170,7 @@
 #### Bug Fixes
 
 - `#F164882` - Resolved the issue "Setting the dialog `minHeight` property as number is not working properly".
+
 - `#I326833`, `#F165083`- The issue with "When the content is given as a template function, then the content is not rendered in the Dialog" has been resolved.
 
 ### Popup
@@ -213,6 +202,7 @@
 #### New Features
 
 - `#306971` - In Tooltip, support for `enableHtmlParse` property has been provided to enable or disable the parsing of HTML string content as DOM elements.
+
 - `#305092`, `160582` - In Tooltip, support for `windowCollision` property has been provided to enable or disable collision between target elements of Tooltip and viewport(window).
 
 ## 18.4.41 (2021-02-02)
@@ -238,6 +228,7 @@
 #### Bug Fixes
 
 - `#292549` - The issue with "the tooltip is hidden while clicking the popup in mobile mode" has been resolved.
+
 - `#291626`, `#288720` - Now, the Tooltip will be in the opened state while maintaining a hover over the tooltip popup, even using the close delay property.
 
 ## 18.3.35 (2020-10-01)
@@ -363,7 +354,9 @@
 #### Bug Fixes
 
 - `#240696`- Resolved the odd dragging behaviour on Dialog when scrolling the page.
+
 - `#249144`- Resolved the issue with rendering templates when enabled the policy `"script-src self"` in  Dialog.
+
 - `#249263`, `#249478`- The issue with dynamically updating the Dialog content using the function template has been resolved.
 
 ## 17.2.35 (2019-07-17)
@@ -405,7 +398,9 @@
 #### Bug Fixes
 
 - Provided an additional `cssClass`, `zIndex`, `open` and `close` event properties to dialog utility.
+
 - Enable/ Disable the dialog button issue in dynamic way has been fixed.
+
 - Return type of Dialog Utility method has been changed from `DialogModal` to `Dialog` This changes doesn't lead to breaking changes in application level since these two classes are implicitly convertible.
 
 ## 16.4.47 (2019-01-16)
@@ -447,6 +442,7 @@
 #### New Features
 
 - Provided resizable support to the dialog for both modal dialog and modeless dialog (non-modal).
+
 - Provided option to pass animation settings as an argument to utility methods of dialog.
 
 ## 16.3.32 (2018-11-13)
@@ -494,6 +490,7 @@
 #### Bug Fixes
 
 - Resolved the issue with modal dialog's overlay animation.
+
 - Provided `getButtons` method to access the instances of dialog buttons directly.
 
 ## 16.3.17 (2018-09-12)
@@ -503,6 +500,7 @@
 #### New Features
 
 - Enabled draggable support for modal dialog also.
+
 - Provided built-in utility functions to render the alert and confirm dialogs with minimal code.
 
 #### Bug Fixes
@@ -521,10 +519,7 @@
 
 #### New Features
 
-- Template support provided to the dialog header, footer, and content.
-
-
-### Spinner
+- Template support provided to the dialog header, footer, and content.### Spinner
 
 #### Bug Fixes
 
@@ -549,6 +544,7 @@
 #### Bug Fixes
 
 - The issue with ng-properties were not working inside a Dialog has been fixed.
+
 - Resolved the issue with accessing EJ2 component’s instances when rendering the EJ2 component inside the Dialog.
 
 ### Tooltip
@@ -564,6 +560,7 @@
 #### Bug Fixes
 
 - The issue with `Tab` key press on modal Dialog has been fixed.
+
 - Fixed the issue with Dialog header positioning when its content has text node.
 
 ### Popup
@@ -620,43 +617,36 @@
 
 Tooltip component displays a pop-up containing an information or a message when you hover, click, focus, or touch an element. The information displayed in the Tooltip can include simple text, images, hyperlinks, or custom templates. In mobile devices, to display the Tooltip, you need to tap and hold the target elements.
 
-
 - **Content** - Tooltip content can be assigned with static text, template or loaded dynamically via AJAX.
+
 - **Position** - Tooltip can be displayed in 12 different positions.
+
 - **Open Mode** - Supports 4 opening modes, `hover`, `click`, `focus`, and `custom`.
+
 - **Animation** - Supports animation effects while showing/hiding the Tooltip.
+
 - **Smart Positioning** - Tooltip can be moved along with the mouse pointer using the mouse trailing option.
 
 ### Dialog
 
 Dialog is a window that displays information to the user, and used to get the user input. The available key features are
 
-
 - **Modal** - The user should be working with Dialog before interacting with the parent application.
+
 - **Modeless** - It allows to interact with parent application even the Dialog opened on the page.
+
 - **Buttons** - Provided the built-in support to render the buttons at Dialog footer.
+
 - **Templates** - Customizable Dialog header and footer through the template.
+
 - **Draggable** - Supports to drag the Dialog within the page or container.
+
 - **Positioning** - Provided support to position on built-in 9 places or any custom location.
+
 - **Animation** - Provided built-in animation support on open & close the Dialog with customization.
+
 - **Localization** - Supports to localize the default close icon title text to different cultures.
+
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
+
 - **Keyboard Interaction** - The Dialog can be intractable through keyboard.
-
-
-## 25.1.41 (2024-04-23)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#577299` - Resolved Console error is occurring when navigating the page with dialog in react.
-
-## 25.1.38 (2024-04-02)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#14144` - Resolved issue where the input inside the dialog was not detached from memory after destroying the dialog.
-

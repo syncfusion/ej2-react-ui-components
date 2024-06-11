@@ -2,158 +2,13 @@
 
 ## [Unreleased]
 
-## 25.2.6 (2024-05-28)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I587743` - Fixed an accessibility issue in MultiSelect to improve usability for all users.
-- `#I577257` - Fixed issue with incorrect binding of value property to MultiSelect.
-
-## 25.2.5 (2024-05-21)
+## 26.1.35 (2024-06-11)
 
 ### DropDownTree
 
 #### Bug Fixes
 
-- `#I589141` - The Dropdown Tree component now includes tab focus support for the "Select All" checkbox element. With this enhancement, pressing the Tab key will move the focus to the "Select All" checkbox, and pressing Shift+Tab will move the focus back to the "Select All" checkbox during backward navigation.
-- `#I586376` - Trigger the "select" event instantly after the item selection in Dropdown Tree popup.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I188132` - Fixed an issue where the 'for' attribute was not being added to the label element of MultiSelect.
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I583651` - Fixed the issue with the header remaining fixed on the page after scrolling while using dropdown with grouping on a scrollable page.
-- `#I583092` - Fixed an issue where the dropdownlist did not retrieve the proper index when dynamically updating the datasource with an index.
-
-## 25.2.4 (2024-05-14)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I583683` - Resolved issue with allow object binding property causing errors when binding fields as integers
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I585791` - Resolved the SelectAll checkbox uncheck issue after closing and opening the Dropdown Tree component.
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I580648` - Issue with "The dropdownlist not retrieving the proper index when grouping with allow filtering" has been resolved.
-- `#I581080` - Fixed the issue with the dropdownlist index value not updating in component instances.
-- `#I581098` - Fixed issue where aria-controls was not maintained when popup was in closed state.
-
-## 25.2.3 (2024-05-08)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I582752` - Issue with "Script error thrown in listbox when adding and removing items" has been resolved.
-
-## 25.1.41 (2024-04-23)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I571383` - Resolved issue where removing a long text tag in a multi-select drop down was also removing a short text tag.
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I566450` - Issue with "The disabled itemTemplate item is not move properly for listbox toolbar action" has been resolved.
-
-## 25.1.40 (2024-04-16)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I565976` - Issue with "The getSortedList data not update correctly while removeItem method after drag and drop action in listbox" has been resolved.
-
-## 25.1.39 (2024-04-09)
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `#I556993` - Resolved the issue in Autocomplete where the highlight selection was not removed after selecting a value from the dropdown when autofill was enabled.
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I566450` - Issue with "When clicking moveAllTo toolbar, the disabled item is also moved to the listbox" has been resolved.
-- `#I575330` - Issue with "Script error thrown in listbox while drag and drop hover on textbox element" has been resolved.
-- `#I565976` - Issue with "The getSortedList and getDataList method datasource order is not proper while using addItems, removeItem method and change their position using drag and drop" has been resolved.
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I574653` - The issue aria-label attribute is not added to the input element in the Dropdown Tree component has been resolved.
-- `#I572604` - An issue with "facing a console error when clicking a button inside the footer template in the Dropdown Tree component" has been resolved.
-
-## 25.1.37 (2024-03-26)
-
-### Mention
-
-#### Bug Fixes
-
-- `#FB51909` - Fixed an issue where filtering was not working properly when allow space was set to true.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I567781` - Fixed issue with Request being sent on initial loading when binding remote data and using the allowFiltering property.
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I569983` - Issue with "trim leading or trailing white-space when filtering in the Dropdown Tree" has been resolved.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I567835` -  Fixed XSS issue related to the highlight search feature when setting the filter query parameter without a value.
-- `#I560783` - Fixed issue where clearing the searched value would automatically select another value.
-- `#I524283` - Fixed issue where popup was not aligned properly when opening on top of the component.
-- `#I565659` - Fixed an issue in Multiselect Checkbox mode where the height of the dropdown input would change when selecting and unselecting items.
-
-## 25.1.35 (2024-03-15)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I560957` - Resolved issue with "Combo Box not possible to update the datasource dynamically".
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#I558972` - Issue with "focus from the first item when items are selected in the Dropdown Tree component" has been resolved.
-
-#### New Features
-
-- `#I322379`,`#I521440` - The Dropdown Tree component has been updated to render the popup in the DOM dynamically, significantly improving performance. If you need the popup to render during the initial load, you can set the 'destroyPopupOnHide' property to 'false'.
+- `#I591637` - The close event is now triggered when the popup begins closing, and a cancel option is provided to prevent the close action if needed.
 
 ### ListBox
 
@@ -193,7 +48,7 @@
 
 #### Bug Fixes
 
-- `#I397894` - The issue "aria-label added on input element instead of wrapper element while adding the aria-label by using Html Attribute property" has been resolved.
+- `#I397894` - The issue "aria-label added on input element instead of wrapper element while adding the aria-label by using Html Attribute property" has been resolved.
 
 ## 20.3.47 (2022-09-29)
 
@@ -203,13 +58,18 @@
 
 **Key features**:
 
-
 - **Data binding**: Binds the list of items from local and remote data sources such as JSON, OData, WCF, and RESTful web services.
+
 - **Grouping**: Groups the logically related items under a single or specific category.
+
 - **Filtering**: Filters the list items based on a character typed in the component.
+
 - **Sorting**: Sorts the list items in alphabetical order (either ascending or descending).
+
 - **Highlight search**: Highlights the typed text in the suggestion list.
+
 - **Templates**: Customize the list item, display value, no records, and spinner loading content.
+
 - **Accessibility**: Built-in accessibility support that helps to access all the Mention component features using the keyboard, on-screen readers, or other assistive technology devices.
 
 ### ListBox
@@ -279,6 +139,7 @@
 #### Bug Fixes
 
 - `#F169190` - The issue with "The Dropdown tree is not focused while pressing single tab key" has been resolved.
+
 - `#I341135` - The issue with "The Dropdown Tree selected items are misaligned while adding  the `e-outline` and `e-filled` CSS classes" has been resolved.
 
 ## 19.3.45 (2021-10-12)
@@ -300,6 +161,7 @@
 #### Bug Fixes
 
 - `#I342360`, `#I342351` - The issue with "The Dropdown Tree component is not rendered when providing an id that starts with an integer type" has been resolved.
+
 - `I341114` - Issue with "When listbox is selected with checkbox, drag and drop is not working properly" has been resolved.
 
 ## 19.2.62 (2021-09-14)
@@ -373,6 +235,7 @@
 #### Bug Fixes
 
 - `#I331063`, `#I335590` - Issue with "popup is not opened while rendering the component with HTML select tag and `dataSource` property" has been resolved.
+
 - `#I335674` - Issue with "filtering list item is reset to the popup while scrolling the popup item using mouse" has been resolved.
 
 - `#FB26670` - Issue with "`GroupTemplate` is not displayed while opening the popup at first time" has been resolved.
@@ -429,7 +292,9 @@
 #### Bug Fixes
 
 - `#316046` - Action complete event not triggered when sort order property is given issue is fixed.
+
 - `#311323` - DataSource missing while filtering is applied issue has been resolved.
+
 - `#163935` - Previous index is wrong in drag and drop event has been fixed.
 
 ## 19.1.54 (2021-03-30)
@@ -440,7 +305,6 @@
 
 `#317088` - The issue with "The popup is not opened for the second time in the Dropdown Tree component when it is rendered inside the Dialog" has been resolved.
 
-
 ## 18.4.47 (2021-03-09)
 
 ### MultiSelect
@@ -448,7 +312,6 @@
 #### Bug Fixes
 
 `#317598` - Issue with "selected values are not posted properly while clicking on the select all option with predefined value" has been resolved.
-
 
 ## 18.4.44 (2021-02-23)
 
@@ -629,7 +492,6 @@
 
 `#285164`, `#277294` - Issue with "First list item got selected while pressing space key in the MultiSelect along with checkbox mode and remote data" has been resolved.
 
-
 ## 18.2.47 (2020-07-28)
 
 ### DropDownList
@@ -651,7 +513,6 @@
 #### Bug Fixes
 
 -`#F154635` - Issue with "floating label is not floated properly while rendering with filter and outline theme appearance" has been resolved.
-
 
 - `#277827` - Issue with "typed custom value alone present in the popup after typing the custom value and focus out then again open the popup" has been resolved.
 
@@ -679,13 +540,14 @@
 
 -`#273796` - Now, e-outline class is added to the filter input
 
-
 ### Dropdown Tree
 
 #### Bug Fixes
 
 - `#276800` - The issue with “The selected item is maintained in DOM after clearing the item using clear icon in the Dropdown Tree component” has been resolved.
+
 - `#278072` - The issue with “The Dropdown Tree selected values are not received in the form post back” has been resolved.
+
 - `#274468` - The issue with “The Dropdown Tree popup element is incorrectly positioned when it is rendered inside the Bootstrap dialog” has been fixed.
 
 #### New Features
@@ -770,17 +632,20 @@
 The newly added `Dropdown Tree` component in dropdowns package requires `Navigations` dependency, so now it is mandatory to include the `ej2-navigations.umd.min.js` in `system.js` configuration if you are using the system.js module loader.
 Update the system.js configuration while going with this version and above.
 
-
 ### Dropdown Tree
 
 The Dropdown Tree control allows you to select single or multiple values from hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, check boxes, templates, UI customization, accessibility, and preselected values. The available key features are
 
-
 - **Data binding** - Bind and access a hierarchical list of items from a local or server-side data source.
+
 - **Check boxes** - Select more than one item in the Dropdown Tree control without affecting the UI appearance.
+
 - **Multiple selection** - Select more than one item in the control.
+
 - **Sorting** - Display the Dropdown Tree items in ascending or descending order.
+
 - **Template** - Customize the Dropdown Tree items, header, footer, action failure content, and no records content.
+
 - **Accessibility** - Provide access to all the Dropdown Tree control features through keyboard interaction, on-screen readers, and other assistive technology devices.
 
 ### ListBox
@@ -947,7 +812,9 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - `#251466` - Now, you can set width property in `em` unit.
+
 - `#251650` - Issue with 'filtered list item is not getting focused when set filter type as contains' has been resolved.
+
 - `#251325` - Issue with "once combobox popup open is prevented by setting args.cancel as true in open event then you can't remove the prevent a popup opening using open event" has been resolved.
 
 ### DropDownList
@@ -984,10 +851,7 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 
 - `#250710` - Now, you can filter the data while render the component using `select` element.
 
-- `#248601` - Issue with "selected items hidden from popup when set hideSelectedItem as false" has been resolved.
-
-
-## 17.3.16 (2019-10-09)
+- `#248601` - Issue with "selected items hidden from popup when set hideSelectedItem as false" has been resolved.## 17.3.16 (2019-10-09)
 
 ### ListBox
 
@@ -1066,6 +930,7 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - `#240597` - Dual ListBox causes an error when filtering is activated and disable the checkbox selection settings issue is fixed.
+
 - `#240594` - Form submit occurs while click toolbar item issue is fixed.
 
 ## 17.2.36 (2019-07-24)
@@ -1107,6 +972,7 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - `#239351` - Now, Select event triggers when selecting the value through interaction.
+
 - `#F145367` - Issue with "filtering is not working with item template" has been resolved.
 
 ### ListBox
@@ -1138,6 +1004,7 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - #235631 - Issue with "updating default value after form reset" has been resolved.
+
 - #239136 - Now, you can change `allowFiltering` property value dynamically.
 
 ### MultiSelect
@@ -1177,6 +1044,7 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - #235167 - Multiselect dropdown jump down when the `showDropDownIcon` is set to true issue has been resolved.
+
 - #209393 - Change event not fired during tab key navigation issue has been resolved.
 
 ### DropDownList
@@ -1192,7 +1060,9 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - #233483 - The List not generated properly while clear the value using clear button issue has been resolved.
+
 - #234100 - The search not working on enabling read only in the control initialization issue has been resolved.
+
 - #233137 - The combobox is not focused when click the tab key at single time issue has been resolved.
 
 ### DropDownList
@@ -1200,6 +1070,7 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - #231680 - The data source is observable using Async Pipe with pre select value not updated issue has been resolved.
+
 - #230651 - Eval function security issue has been resolved.
 
 ## 17.1.42 (2019-04-23)
@@ -1209,6 +1080,7 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - #232673 - Issue with prevent the first value when clear value using clear button has been fixed.
+
 - #233432 - The group template text not updated while enable the allow filtering issue has been fixed.
 
 ## 17.1.41 (2019-04-16)
@@ -1218,9 +1090,13 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - #232673 - Issue with browser freeze when clear value using clear button has been fixed.
+
 - #231997 - Issue with duplicate placeholder on multiselect issue has been fixed.
+
 - #232218 - The popup open downward when select the items after scroll the page issue has been resolved.
+
 - #231920 - The Custom value with pre select value not updated when set empty data source issue has been resolved.
+
 - F143612 - Dropdown icon disappeared when set the lengthy placeholder issue has been fixed.
 
 ### DropDownList
@@ -1248,6 +1124,7 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 #### Bug Fixes
 
 - Issue with value selection on disabled dropdown using incremental search has been fixed.
+
 - Clear icon shown when change the value dynamically issue has been fixed.
 
 ### MultiSelect
@@ -1262,13 +1139,18 @@ The Dropdown Tree control allows you to select single or multiple values from hi
 
 The ListBox is a graphical user interface component used to display a list of items. Users can select one or more items in the list using a checkbox or by keyboard selection. It supports sorting, grouping, reordering, and drag and drop of items. The available key features are:
 
-
 - **Data binding**: Binds and accesses the list of items from local or server-side data source.
+
 - **Dual ListBox**: Allows transferring and reordering the list item between two ListBoxes.
+
 - **Drag and Drop**: Allows drag and drop the list item with the same/multiple ListBox.
+
 - **Grouping**: Groups the logically related items under a single or specific category.
+
 - **Templates**: Customizes the list items.
+
 - **Sorting**: Sorts the list items in alphabetical order (either ascending or descending).
+
 - **Accessibility**: Provided with built-in accessibility support that helps to access all the ListBox component features using the keyboard, screen readers, or other assistive technology devices.
 
 ### MultiSelect
@@ -1310,6 +1192,7 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - Pre-select value is not selected when its not present in the list issue fixed.
+
 - Reset text based initial value in form reset action behavior has been changed.
 
 ### AutoComplete
@@ -1329,6 +1212,7 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - List selection throws exception while using quotes within string data issue has been resolved.
+
 - Select all operation's performance issue has been resolved.
 
 ## 16.4.54 (2019-02-19)
@@ -1338,6 +1222,7 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - When page scroll, grouping template is hiding issue has been resolved.
+
 - Reset the initial value in form reset action behavior has been changed.
 
 ### AutoComplete
@@ -1357,6 +1242,7 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - Now, you can enter special characters inside MultiSelect using virtual keyboard.
+
 - Reset the initial value in form reset action behavior has been changed.
 
 ## 16.4.53 (2019-02-13)
@@ -1364,6 +1250,7 @@ The ListBox is a graphical user interface component used to display a list of it
 ### DropDownList
 
 - ItemData parameter supports `object` collection in select and change event.
+
 - Filtering is not working when rendered control by using select element issue has been resolved.
 
 ### MultiSelect
@@ -1371,7 +1258,9 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - Lengthy placeholder breaks UI issue has been resolved.
+
 - Values are not cleared in mobile devices issue has been resolved.
+
 - Values are not selected based on selected attribute in select element rendering issue has been resolved.
 
 ## 16.4.52 (2019-02-05)
@@ -1431,6 +1320,7 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - Item template with checkbox combination is not working issue has been resolved.
+
 - Value update with checkbox selection issue in reactive form has been resolved.
 
 ## 16.3.34 (2018-11-21)
@@ -1456,6 +1346,7 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - Data related attributes are added to input element instead of select element has been fixed.
+
 - Console error thrown as maximum call stack when set the empty `dataSource` that issue has been fixed.
 
 ### MultiSelect
@@ -1525,6 +1416,7 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - MultiSelect values are cleared after performing add operation in Grid, that issue has been fixed.
+
 - Item disappears from popup list after pressing the backspace key, that issue has been fixed.
 
 ### DropDownList
@@ -1796,7 +1688,9 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - custom value support has been given in MultiSelect when the filtering is enabled instead of 'no records found' template.
+
 - The issue, 'Input is rendered again  on typing while resetting value from null with remote data and custom value as true.' has been fixed.
+
 - The issue, 'Enable persistence is not working properly when all the items in the list are selected.' has been fixed.
 
 ## 16.1.34 (2018-04-10)
@@ -1876,14 +1770,19 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Breaking Changes
 
 - Locale key changed from `dropdownlist` to `dropdowns`.
+
 - Changed the fields property type as `FieldSettingsModel`.
+
 - Changed the Angular component selector, component name prefix with `ejs` e.g : `ejs-dropdownlist`.
 
 #### New Features
 
 - Given in-built filtering support without using `filtering` event.
+
 - Diacritics filtering works on enabling the `ignoreAccent`.
+
 - Provided the `zIndex` property to set custom `zIndex` value.
+
 - High contrast theme support.
 
 ### MultiSelect
@@ -1891,12 +1790,15 @@ The ListBox is a graphical user interface component used to display a list of it
 #### New Features
 
 - CheckBox support.
+
 - Prevent the Popup open on component click while `openOnClick` property set as false.
+
 - Provided `chipSelect` event for chip selection action.
 
 #### Breaking Changes
 
 - Pascal casing change to mode property values (`Default`, `Box`, `Delimiter`, `CheckBox`).
+
 - Changed the `maximumSelectionLength` behaviour.
 
 #### Bug Fixes
@@ -1923,13 +1825,14 @@ The ListBox is a graphical user interface component used to display a list of it
 
 #### Bug Fixes
 
-- The Change event argument `isInteraction` is returned properly when clear button is clicked.
+- The Change event argument `isInteraction` is returned properly when clear button is clicked.
 
 ### DropDownList
 
 #### Bug Fixes
 
 - Clear button is not visible, this issue has been fixed.
+
 - Angular reactive form resetting not worked in DropDownList component, this issue has been fixed.
 
 ### MultiSelect
@@ -1993,6 +1896,7 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - Popup left and right collision issue fixed.
+
 - MultiSelect custom value with template issue fixed.
 
 ### AutoComplete
@@ -2020,6 +1924,7 @@ The ListBox is a graphical user interface component used to display a list of it
 #### Bug Fixes
 
 - DropDownList component value cleared while change the value through react setState method issue fixed.
+
 - Empty string value not selected in DropDownList issue fixed.
 
 ## 15.4.19-preview (2017-11-23)
@@ -2042,60 +1947,76 @@ The ListBox is a graphical user interface component used to display a list of it
 
 MultiSelect component contains a list of predefined values from which a multiple value can be chosen. The functionality of MultiSelect resembles the SELECT form element of HTML. The available key features are
 
-
 - **Data binding** - Allows to bind and access the list of items from the local or server-side data source.
+
 - **Grouping** - Supports grouping the logically related items under single or specific category.
+
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
+
 - **Sorting** - Supports sorting of list items in an alphabetical order (either ascending or descending).
+
 - **Filtering** - Allow filtering the list items based on a character typed in component.
+
 - **Custom Value** - Allows user to select a new custom value.
+
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the MultiSelect component features through  the keyboard, screen readers, or other assistive technology devices.
 
 ### ComboBox
 
 ComboBox component allows the user to type a value or choose an option from the list of predefined options. When an arrow icon accompanied with this component is pressed, the dropdown displays a list of values, from which the user can select one. The available key features are
 
-
 - **Data binding** - Allows binding and accessing the list of items from local or server-side data source.
+
 - **Custom values** - Allows setting user-defined values that is not in the popup list.
+
 - **Grouping** - Supports grouping of logically related items under a single or specific category.
+
 - **Sorting** - Supports sorting of list items in an alphabetical order (either ascending or descending).
+
 - **Filtering** - Allows filtering of list items based on a character typed in the component.
+
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
+
 - **Accessibility** - Provided with built-in accessibility support that helps to access all the ComboBox component features through the keyboard, screen readers, or other assistive technology devices.
 
 ### AutoComplete
 
 AutoComplete component provides the matched suggestion list when type into the input, from which the user can select one. The available key features are
 
-
 - **Data binding** - Allows binding and accessing the list of items from local or server-side data source.
+
 - **Grouping** - Supports grouping of logically related items under a single or specific category.
+
 - **Sorting** - Supports sorting of list items in an alphabetical order (either ascending or descending).
+
 - **Highlight search** - Supports highlighting the typed text in the suggestion list.
+
 - **Templates** - Allows customizing the list item, header, footer, category group header, no records and action failure content.
+
 - **Accessibility** - Provided with built-in accessibility support that helps to access all the AutoComplete component features through keyboard, on-screen readers, or other assistive technology devices.
 
 ### DropDownList
 
 DropDownList component contains a list of predefined values from which a single value can be chosen. The functionality of DropDownList resembles the SELECT form element of HTML. When an arrow icon accompanied with this component is pressed, the dropdown displays a list of values from which you can select one. The available key features are
 
-
 - **Data binding** - Allows to bind and access the list of items from the local or server-side data source.
+
 - **Grouping** - Supports grouping the logically related items under single or specific category.
+
 - **Sorting** - Supports sorting of list items in an alphabetical order (either ascending or descending).
+
 - **Filtering** - Allow filtering the list items based on a character typed onto the search box.
+
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
-
-## 19.4.38 (2021-12-17)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 19.4.38 (2021-12-17)
 
 ### MultiSelect
 
 #### Bug Fixes
 
 - `#I342476` - Issue with "ItemTemplate is not rendered properly when preselected item is cleared immediately after render" has been resolved.
+
 - `#I349117` - Issue with "checkbox is not rendered in the group header while rendering component with group checkbox and group template" has been resolved.
 
 ## 19.2.59 (2021-08-31)
@@ -2153,5 +2074,6 @@ DropDownList component contains a list of predefined values from which a single 
 #### Bug Fixes
 
 - `#301242` - Issue with "count template is updated with wrong count value when disable the clear icon" has been resolved.
+
 - `#304600` - Issue with "SelectAll checkbox is not displayed while changing the data source dynamically" has been resolved.
 

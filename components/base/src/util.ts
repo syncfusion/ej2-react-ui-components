@@ -1,19 +1,25 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
 /**
  * Util for React Base
  */
 import * as React from 'react';
-// eslint-disable-next-line
+/**
+ * Apply mixins for the React components.
+ *
+ * @param {any} derivedClass ?
+ * @param {any[]} baseClass ?
+ * @returns {void} ?
+ * @private
+ */
 export function applyMixins(derivedClass: any, baseClass: any[]): void {
-    // tslint:disable:typedef
-    baseClass.forEach(baseClass  => {
-        Object.getOwnPropertyNames(baseClass.prototype).forEach(name => {
+    baseClass.forEach((baseClass: any)  => {
+        Object.getOwnPropertyNames(baseClass.prototype).forEach((name: string) => {
             if (name !== 'isMounted' && name !== 'replaceState' && name !== 'render') {
                 derivedClass.prototype[`${name}`] = baseClass.prototype[`${name}`];
             }
         });
     });
 }
-// tslint:enable:typedef
 
 type MouseEventHandler<T = Element> = React.EventHandler<React.MouseEvent<T>>;
 type FocusEventHandler<T = Element> = React.EventHandler<React.FocusEvent<T>>;
@@ -35,7 +41,6 @@ export interface DefaultHtmlAttributes {
     immediateRender?: boolean;
     isLegacyTemplate?: boolean;
     delayUpdate?: string | boolean;
-    // eslint-disable-next-line
     onChange?: any;
     /**
      * Specifies the array of the template names where the state value updates need to be ignored.

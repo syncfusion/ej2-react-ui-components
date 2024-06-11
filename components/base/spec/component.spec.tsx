@@ -64,7 +64,6 @@ class Sample1 extends React.PureComponent<{ content?: string,name?:string }, { c
 /**
  * Checking for instance creation
  */
-let instance: any = new ComponentBase();
 function templateFunction(prop:any){
     return (
     <div>

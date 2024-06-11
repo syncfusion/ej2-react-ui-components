@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-schedule",
-	"version": "25.2.6",
+	"version": "22.9.0",
 	"description": "Flexible scheduling library with more built-in features and enhanced customization options similar to outlook and google calendar, allowing the users to plan and manage their appointments with efficient data-binding support. for React",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -25,13 +25,13 @@
 		"@syncfusion/ej2-schedule": "*"
 	},
 	"devDependencies": {
-		"@types/chai": "^3.4.28",
-		"@types/es6-promise": "0.0.28",
+		"@types/chai": "3.5.2",
+		"@types/es6-promise": "0.0.33",
 		"@types/jasmine": "2.8.22",
-		"@types/jasmine-ajax": "^3.1.27",
-		"@types/react": "^15.0.24",
-		"@types/react-dom": "^15.5.0",
-		"@types/requirejs": "^2.1.26",
+		"@types/jasmine-ajax": "3.3.5",
+		"@types/react": "16.4.7",
+		"@types/react-dom": "16.9.7",
+		"@types/requirejs": "2.1.37",
 		"es6-promise": "^3.2.1",
 		"gulp": "^3.9.1",
 		"gulp-sass": "^3.1.0",

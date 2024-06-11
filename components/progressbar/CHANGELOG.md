@@ -56,7 +56,7 @@
 
 #### New Features
 
-- `#I386691` - Provided support to display tooltips during initial load of progress bars and mouse hover with numeric or text values of the progress.
+- `#I386691` - Provided support to display tooltips during initial load of progress bars and mouse hover with numeric or text values of the progress.
 - Provided support to customize the width and color of the secondary progress bar.
 
 ## 20.4.38 (2022-12-21)
@@ -132,14 +132,11 @@
 
 - Progress bar label not render at end of the progress has been fixed.
 
-undefinedThe progress bar provides a customizable visual to indicate the progress of a task with different shape such as rectangle and circle.
-
-## 18.1.42 (2020-04-01)
+undefinedThe progress bar provides a customizable visual to indicate the progress of a task with different shape such as rectangle and circle.## 18.1.42 (2020-04-01)
 
 ### ProgressBar
 
 ProgressBar control is used to visualize the changing status of an extended operation such as a download, file transfer, or installation. All Progress bar elements are rendered by using Scalable Vector Graphics (SVG).
-
 
 ### Key features
 
@@ -149,5 +146,3 @@ ProgressBar control is used to visualize the changing status of an extended oper
 - Displays the custom content at the center of the circular progress bar.
 - Visualizes the progress in segments.
 - Customizes the angle of the circular progress bar.
-
-
