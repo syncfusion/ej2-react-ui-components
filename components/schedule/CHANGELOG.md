@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 26.1.38 (2024-06-19)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I587318` - Issues in the Schedule aria-label attributes are fixed.
+- `#I583567` - Resizing the appointment to the last column of the timeline views is not working issue has been resolved.
+- `#I592841` - The issue with the appointment width calculation, when the `endHour` and `timeScale` properties are customized is fixed.
+- `#FB51620` - The `setWorkHours` method sets work hours to the wrong time range if today's date is a DST start is fixed.
+- `#I583293` - The quick info popup shows the wrong time instead of the clicked cell time and adds the appointment to the wrong time if the clicked cell is in the DST start date is fixed.
+
 ## 26.1.35 (2024-06-11)
 
 ### Schedule
@@ -38,6 +50,8 @@
 #### Bug fixes
 
 - `#I582520` - The issue with `scrollToResource` not working in the month view has been resolved.
+
+- `#I528774` - The `eventTemplate` causing memory leak on date navigation has been fixed.
 
 ## 25.1.42 (2024-04-30)
 
@@ -82,6 +96,10 @@
 #### New Features
 
 - `#I511506` - Provided support to prevent the reloading of appointment data source when resource data source changes dynamically by providing an additional boolean parameter `isEventDataRefresh` in the `setResourceCollections` method. To prevent reloading of the appointments you have to send the `isEventDataRefresh` parameter value as `false`.
+
+#### Bug fixes
+
+- `#I521475` - An issue with setting default values to the editor template inputs while opening the editor window through cell double click has been fixed.
 
 ## 24.2.8 (2024-02-27)
 

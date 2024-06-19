@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 26.1.38 (2024-06-19)
+
+### Image Editor
+
+#### Bug Fixes
+
+- The issue with "image not loading in react ug sample" has been resolved.
+
 ## 26.1.35 (2024-06-11)
 
 ### Image Editor

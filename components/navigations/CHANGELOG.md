@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 26.1.38 (2024-06-19)
+
+### TreeView
+
+#### Bug fixes
+
+- `#I596651` - Resolved the fluent 2 theme spacing issue with the checkbox in the TreeView component.
+
+### Breadcrumb
+
+#### Bug Fixes
+
+- Provide support to prevent the breadcrumb item re-rendering action while clicking breadcrumb items through the itemClick event.
+
 ## 26.1.35 (2024-06-11)
 
 ### TreeView
