@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 26.1.38 (2024-06-19)
-
-### Tooltip
-
-#### Bug Fixes
-
-- `#I596087` - The console error that was appearing when the Tooltip was shown or hidden repeatedly has been resolved.
-
 ## 21.1.35 (2023-03-23)
 
 ### Tooltip
@@ -657,4 +649,11 @@ Dialog is a window that displays information to the user, and used to get the us
 
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 
-- **Keyboard Interaction** - The Dialog can be intractable through keyboard.
+- **Keyboard Interaction** - The Dialog can be intractable through keyboard.## 26.1.38 (2024-06-19)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#I596087` - The console error that was appearing when the Tooltip was shown or hidden repeatedly has been resolved.
+
