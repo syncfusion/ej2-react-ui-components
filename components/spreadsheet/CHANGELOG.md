@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 26.2.4 (2024-07-24)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I603035` - Issue with "chart is not rendered properly when the chart range refers to another sheet range" has been resolved.
+
+- `#I609452` - Issue with "exception throws while initializing the cell model with more than one chart in a single cell with customized left and right properties" has been resolved. (React)
+
+- `#I610974` - Issue with "unable to change the size of the pie chart using resizing" has been resolved. (React)
+
 ## 26.1.42 (2024-07-16)
 
 ### Spreadsheet
