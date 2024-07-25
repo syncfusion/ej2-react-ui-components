@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 26.2.5 (2024-07-26)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I609172` - Fixed an issue where enabling the enableVirtualization property with an itemTemplate and remote data caused the popup to appear empty during scrolling.
+
 ## 26.2.4 (2024-07-24)
 
 ### DropdownList

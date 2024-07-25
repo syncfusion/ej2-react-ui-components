@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 26.2.5 (2024-07-26)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I608398` - `autoCalculateDateScheduling` property not working properly with `loadChildOnDemand` feature issue has been fixed.
+- `#896027` - `UpdateTaskId` method not working properly issue has been fixed.
+
+- `#I608398` - `autoCalculateDateScheduling` property not working properly with `loadChildOnDemand` feature issue has been fixed.
+
 ## 26.2.4 (2024-07-24)
 
 ### GanttChart

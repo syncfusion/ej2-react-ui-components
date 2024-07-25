@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 26.2.5 (2024-07-26)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I606278` - Fixed the issue where the popup was opening in an incorrect position when the transform style was applied.
+
+## 26.2.4 (2024-07-24)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#FB59399` - The issue with the tooltip position when using template with animation has been resolved.
+
 ## 26.1.42 (2024-07-16)
 
 ### Tooltip
