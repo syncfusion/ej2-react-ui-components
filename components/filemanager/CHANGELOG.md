@@ -2,6 +2,32 @@
 
 ## [Unreleased]
 
+## 26.2.7 (2024-07-30)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I608803` - The issue with renaming the tree item by directly right-clicking the item has been resolved.
+- `#F189075` - The issue with rendering the File Manager component using flat data support based on the root folder ID has been resolved.
+- `#I608802` - The issue with copy and paste a folder within File Manager component navigation pane has been resolved.
+  
+## 26.1.41 (2024-07-09)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I603942` - Column hide issue in details view pane when utilizing the `hideAtMedia` property in File Manager component has been resolved.
+
+## 26.1.40 (2024-07-02)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I603473` - Resolved the issue where the context menu item in the File Manager component remained disabled after opening the context menu for the root folder in the navigation pane.
+
 ## 26.1.35 (2024-06-11)
 
 ### FileManager

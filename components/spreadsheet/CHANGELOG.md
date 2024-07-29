@@ -2,17 +2,13 @@
 
 ## [Unreleased]
 
-## 26.2.5 (2024-07-26)
+## 26.2.7 (2024-07-30)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I603035` - Issue with "chart is not rendered properly when the chart range refers to another sheet range" has been resolved.
-
-- `#I609452` - Issue with "exception throws while initializing the cell model with more than one chart in a single cell with customized left and right properties" has been resolved. (React)
-
-- `#I610974` - Issue with "unable to change the size of the pie chart using resizing" has been resolved. (React)
+- `#I577428` - The script error that occurred when attempting to open the context menu without an active cell in the spreadsheet will no longer be thrown.
 
 ## 26.1.42 (2024-07-16)
 
@@ -1360,7 +1356,19 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 21.1.39 (2023-04-11)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 26.2.4 (2024-07-24)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I603035` - Issue with "chart is not rendered properly when the chart range refers to another sheet range" has been resolved.
+
+- `#I609452` - Issue with "exception throws while initializing the cell model with more than one chart in a single cell with customized left and right properties" has been resolved. (React)
+
+- `#I610974` - Issue with "unable to change the size of the pie chart using resizing" has been resolved. (React)
+
+## 21.1.39 (2023-04-11)
 
 ### Spreadsheet
 
