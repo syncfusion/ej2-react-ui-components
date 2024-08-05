@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 26.2.8 (2024-08-06)
+
+### PivotTable
+
+#### Bug fixes
+
+- `#I610461` - "Autofit" will now be applied properly even after the column header text has been customized.
+
 ## 26.2.4 (2024-07-24)
 
 ### PivotTable

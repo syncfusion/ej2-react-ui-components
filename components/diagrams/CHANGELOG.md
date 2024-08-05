@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 26.2.8 (2024-08-06)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I612110` - Now, Export Image function exports various image formats properly.
+- `#I612445` - The exception will no longer thrown when adding Phases at runtime and perform undo Action
+
 ## 26.2.5 (2024-07-26)
 
 ### Diagram

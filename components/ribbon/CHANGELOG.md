@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 26.2.8 (2024-08-06)
+
+### Ribbon
+
+#### Features
+
+- `#I604695` - Now we have provided support for automatically scaling the SVG images when used as icons in ribbon split-button and dropdown-button popups.
+
+## 26.2.7 (2024-07-30)
+
+### Ribbon
+
+#### Features
+
+- `#I604471`, `#I604695` - Now we have provided support for automatically scaling SVG images as icons, that are compatible with different Ribbon Layouts.
+
 ## 26.1.42 (2024-07-16)
 
 ### Ribbon

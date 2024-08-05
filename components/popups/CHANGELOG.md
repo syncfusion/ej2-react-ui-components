@@ -2,15 +2,13 @@
 
 ## [Unreleased]
 
-## 26.2.7 (2024-07-30)
+## 26.2.8 (2024-08-06)
 
 ### Dialog
 
 #### Bug Fixes
 
 - `#I606278` - Fixed the issue where the popup was opening in an incorrect position when the transform style was applied.
-
-## 26.2.4 (2024-07-24)
 
 ### Tooltip
 

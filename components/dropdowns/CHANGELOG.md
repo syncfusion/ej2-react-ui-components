@@ -2,13 +2,36 @@
 
 ## [Unreleased]
 
-## 26.2.7 (2024-07-30)
+## 26.2.8 (2024-08-06)
 
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#I609172` - Fixed an issue where enabling the enableVirtualization property with an itemTemplate and remote data caused the popup to appear empty during scrolling.
+- `#I606184` - Fixed an issue where placeholder content was incorrectly displayed as an ellipsis in the MultiSelect component when the Chinese language was selected.
+
+## 26.2.7 (2024-07-30)
+
+- `#I606320` - Fixed an issue where selected values were displayed in a disabled state.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#I609561` - Fixed an issue where an exception occurred when clearing the value using the static clear icon.
+
+### ListBox
+
+#### Bug Fixes
+
+- `#I608662` - Issue with "listbox `RemoveItems` method performance issue occurs while using large number items" has been resolved.
+- `#I897491` - Issue with "Input filter element was focused while clearing the datasource in the listbox" has been resolved.
+
+### MultiSelect
+
+#### Bug fixes
+
+- `#I612325` - Fixed the issue where the form data did not update when clearing values using the clear icon.
 
 ## 26.2.4 (2024-07-24)
 
@@ -2135,7 +2158,15 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 19.4.38 (2021-12-17)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 26.2.5 (2024-07-26)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I609172` - Fixed an issue where enabling the enableVirtualization property with an itemTemplate and remote data caused the popup to appear empty during scrolling.
+
+## 19.4.38 (2021-12-17)
 
 ### MultiSelect
 

@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 26.2.8 (2024-08-06)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I612530` - Now, able to copy text from form field text boxes using Ctrl+C.
+- `#I608686` - Now, the script error no longer occurs when deleting the added annotations using the `deleteAnnotations` API.
+- `#I607610` - Now, we are able to click the checkbox field in the customer-provided document on mobile devices.
+- `#I612848` - Now, The form fields can no longer be pasted outside the page container
+- `#I609340` - Now, the invalid error message is not displayed when loading an incorrect file path in stand-alone mode.
+
 ## 26.2.7 (2024-07-30)
 
 ### PDF Viewer
