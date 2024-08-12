@@ -327,10 +327,10 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                 }
                 return this.compareObjects(tempVal, tempVal2).status;
             }
-            if (value1.constructor &&
-                value1.constructor.name === value2.constructor.name &&
-                (value1.constructor.name === 'Query' ||
-                value1.constructor.name === 'DataManager')) {
+            if (value1.moduleName &&
+                value1.moduleName === value2.moduleName &&
+                (value1.moduleName === 'query' ||
+                value1.moduleName === 'datamanager')) {
                 if (JSON.stringify(value1) === JSON.stringify(value2)) {
                     return true;
                 }

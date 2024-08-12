@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 26.2.9 (2024-08-13)
+
+### PivotTable
+
+#### Bug fixes
+
+- `#I616730` - Value sorting will no longer be performed unintentionally when resizing the column in the pivot table.
+- `#I617149` - The `allowRepeatHeader` option will now work properly when exporting the pivot table as a PDF document.
+
 ## 26.2.8 (2024-08-06)
 
 ### PivotTable

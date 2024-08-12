@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 26.2.9 (2024-08-13)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I612252` - Now, the `ArgumentOutOfRangeException` does not occurs while attempting to download the provided document.
+- Now, the script error does not occurs when searching the non-matched word in the document without magnification module.
+- `#F189402` - Now, the PDF viewer can load the PDF document as a blob URL.
+- `#F190306` - Now, the script error does not occur when loading the provided document.
+
 ## 26.2.8 (2024-08-06)
 
 ### PDF Viewer

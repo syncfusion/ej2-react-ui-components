@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 26.2.9 (2024-08-13)
+
+### Image Editor
+
+#### Bug Fixes
+
+- `#I901333` - The issue with "script error thrown while saving the image" has been resolved.
+
 ## 26.2.8 (2024-08-06)
 
 ### Image Editor
