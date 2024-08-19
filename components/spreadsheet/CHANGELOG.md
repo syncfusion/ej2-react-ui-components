@@ -9,6 +9,12 @@
 #### Bug fixes
 
 - `#I616139` - The script error that occurs while scrolling down and up in a sheet when a cell has filter icon and notes has been resolved.
+
+- `#I613155` - The notes in the spreadsheet are now scrollable when the content length is long.
+
+- `#I613687` - Issue with "text value is converted into date format when the cell text content contains the '-' character" has been resolved.
+
+- `#I616139` - The script error that occurs while scrolling down and up in a sheet when a cell has filter icon and notes has been resolved.
 - `#I613155` - The notes in the spreadsheet are now scrollable when the content length is long.
 
 ## 26.2.7 (2024-07-30)

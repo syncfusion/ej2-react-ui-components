@@ -10,8 +10,6 @@
 
 - `#I612704` - Now, the continuous console error that was being thrown when the editor is destroyed is fixed.
 
-- `#I617167` - Now, The character is not duplicated after switching to the Chinese language in the Rich Text Editor.
-
 - `#I615533` - Now, The mention popup renders correctly when bold text is inserted in the Rich Text Editor.
 
 - `#I617144` - Now, Pressing the backspace or delete key functions correctly in the Chinese language Rich Text Editor.
