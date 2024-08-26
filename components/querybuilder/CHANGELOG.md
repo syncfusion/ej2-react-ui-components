@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 26.2.11 (2024-08-27)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I901740` - Issue with value after comma in Numeric textbox QueryBuilder being deleted has been fixed.
+
 ## 26.2.8 (2024-08-06)
 
 ### QueryBuilder

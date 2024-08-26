@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 26.2.10 (2024-08-20)
+## 26.2.11 (2024-08-27)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#FB60074` - Resolved the issue with tooltip positioning in Angular when using the component within a template.
+
+## 26.2.8 (2024-08-06)
 
 ### Dialog
 

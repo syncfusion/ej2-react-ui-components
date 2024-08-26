@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 26.2.11 (2024-08-27)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I622312` - Issue with "selection is misplaced and the row/column headers are duplicated when inserting a row or column in finite mode with `enableVirtualization` set to false" has been resolved.
+
+- `#I614741` - Issue with "the active sheet is not properly updated when saving the spreadsheet with hidden sheets" has been resolved.
+
 ## 26.2.9 (2024-08-13)
 
 ### Spreadsheet
@@ -1371,7 +1381,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 26.2.4 (2024-07-24)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 26.2.10 (2024-08-20)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I614741` - Issue with "exception occurs when saving the file type as `xls` with `conditional formatting` range more than `65536` rows" has been resolved.
+
+## 26.2.4 (2024-07-24)
 
 ### Spreadsheet
 

@@ -2,7 +2,23 @@
 
 ## [Unreleased]
 
+## 26.2.11 (2024-08-27)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I619234` - Now,Connector routing is proper while setting the segment direction as "Left".
+
 ## 26.2.10 (2024-08-20)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I601125` - Now, Child Nodes position in ComplexHierarchicalTree updated correctly results in avoiding connector overlap.
+
+## 26.2.8 (2024-08-06)
 
 ### Diagram
 
