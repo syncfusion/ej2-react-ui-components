@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 26.2.12 (2024-09-03)
+
+### Stepper
+
+#### Bug Fixes
+
+- `#I620667` - Now the script error raised when resizing the page with the Stepper navigated between pages has been resolved.
+
 ## 26.2.11 (2024-08-27)
 
 ### ContextMenu
