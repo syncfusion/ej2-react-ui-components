@@ -2,7 +2,18 @@
 
 ## [Unreleased]
 
-## 26.2.13 (2024-09-05)
+## 26.2.14 (2024-09-10)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#F60772` - Resolved the unwanted `actionFailure` event triggered when height and width were given in pixels.
+- `#F60579` - Added an interface or type for the column template event handler.
+
+- `#F60772` - Resolved the unwanted `actionFailure` event triggered when height and width were given in pixels.
+
+## 26.2.12 (2024-09-03)
 
 ### Tree Grid
 
