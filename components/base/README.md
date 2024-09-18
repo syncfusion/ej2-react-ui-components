@@ -4,9 +4,9 @@
 
 A common package of Essential JS 2 for React which contains base libraries, methods and class definitions.
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 > 
-> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+> A [free community license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 ## Setup
 
@@ -18,7 +18,7 @@ npm install @syncfusion/ej2-react-base
 
 ## Resources
 
-* [Getting Started](https://ej2.syncfusion.com/react/documentation/base/getting-started.html?utm_source=npm&utm_campaign=ej2-react-base)
+* [Getting Started](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start?utm_source=npm&utm_campaign=ej2-react-base)
 * [View Online Demos](https://ej2.syncfusion.com/react/demos?utm_source=npm&utm_campaign=ej2-react-base)
 * [Product Page](https://www.syncfusion.com/products/react?utm_source=npm&utm_campaign=ej2-react-base)
 
@@ -78,5 +78,5 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 Check the changelog [here](https://ej2.syncfusion.com/react/documentation/release-notes/index?utm_source=npm&utm_campaign=ej2-react-base)
 
-    © Copyright 2019 Syncfusion, Inc. All Rights Reserved.
+    © Copyright 2024 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.

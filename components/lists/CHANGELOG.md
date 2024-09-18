@@ -2,31 +2,7 @@
 
 ## [Unreleased]
 
-## 26.2.14 (2024-09-10)
-
-### ListView
-
-#### Bug Fixes
-
-- `#F194017` -  The console issue while navigating within the nested ListView component has been resolved.
-
-- `#I620913` -  The issue with the ListView component's select event cancellation argument not functioning has been resolved.
-
-## 26.2.11 (2024-08-27)
-
-### ListView
-
-#### Bug Fixes
-
-- `#I616604` -  The issue with the scroll position when dynamically updating the `dataSource` in the ListView component has been fixed.
-
-## 26.1.35 (2024-06-11)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I461648` - Issue with "Drag and drop on mobile browsers, it unable to drag an element to the topmost place in list box component" has been resolved.
+## 27.1.48 (2024-09-18)
 
 ### ListView
 
@@ -56,7 +32,13 @@ let template: Function = (data: any) => {
     `<span class="e-list-content">${data.name} ${data.imgUrl ?  data.imgUrl : 'no image' }</span></div>`;
     return result;
 }
-```## 19.3.43 (2021-09-30)
+```### ListBox
+
+#### Bug Fixes
+
+- `#I461648` - Issue with "Drag and drop on mobile browsers, it unable to drag an element to the topmost place in list box component" has been resolved.
+
+## 19.3.43 (2021-09-30)
 
 ### ListView
 

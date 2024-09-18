@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 26.2.9 (2024-08-13)
-
-### Common
-
-#### Bug Fixes
-
-- `#I616798` - The issue with "multiple requests arising when using query property and `useEffect` in `DropdownList` component" has been resolved.
-
 ## 25.1.35 (2024-03-15)
 
 ### Common

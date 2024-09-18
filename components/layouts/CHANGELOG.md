@@ -2,30 +2,6 @@
 
 ## [Unreleased]
 
-## 26.2.9 (2024-08-13)
-
-### DashboardLayout
-
-#### Bug Fixes
-
-- `#I591785` - The issue with the draggableHandle property when dynamically updating panel contents in the Dashboard Layout component has been resolved.
-
-## 26.1.38 (2024-06-19)
-
-### DashboardLayout
-
-#### Bug Fixes
-
-- `#I599650` - The issue with the type of the element parameter in the Dashboard Layout constructor has been resolved.
-
-## 26.1.35 (2024-06-11)
-
-### DashboardLayout
-
-#### Bug Fixes
-
-- `#I590397` - Resolved the issue where two panels occupy the same cell when dragging panels in the Dashboard Layout.
-
 ## 25.1.35 (2024-03-15)
 
 ### Timeline

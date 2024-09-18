@@ -77,7 +77,7 @@ Image Editor component is also offered in the following frameworks.
 ## Key features
 
 * [Load and save images in various formats](https://ej2.syncfusion.com/react/documentation/image-editor/open-save): The Image Editor control allows users to load and edit existing images, as well as export the edited version in PNG, SVG, and JPG formats.
-* [Selection and cropping](https://ej2.syncfusion.com/documentation/react/image-editor/selection-cropping): The control provides selection and cropping functionality, allowing users to crop images based on a customizable selection region with various aspect ratios and the ability to reposition the selection by dragging and resizing.
+* [Selection and cropping](https://ej2.syncfusion.com/react/documentation/image-editor/selection-cropping): The control provides selection and cropping functionality, allowing users to crop images based on a customizable selection region with various aspect ratios and the ability to reposition the selection by dragging and resizing.
 * [Image transformations](https://ej2.syncfusion.com/react/documentation/image-editor/transform): The control offers basic image editing features such as rotate, flip, zoom, and crop to adjust the appearance and composition of images.
 * [Image annotation](https://ej2.syncfusion.com/react/documentation/image-editor/annotation): Users can insert annotations including text, rectangle, ellipse, freehand draw, and lines to mark up and annotate their images.
 * Image finetune: Includes support to adjust the brightness, contrast, saturation, hue, exposure, opacity, and blur of their images to achieve the desired look and feel.
@@ -108,6 +108,6 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-imageeditor-npm) for more info.
 
-© Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+© Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
 
 

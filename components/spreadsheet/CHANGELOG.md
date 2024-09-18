@@ -2,60 +2,6 @@
 
 ## [Unreleased]
 
-## 26.2.9 (2024-08-13)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I616139` - The script error that occurs while scrolling down and up in a sheet when a cell has filter icon and notes has been resolved.
-
-- `#I613155` - The notes in the spreadsheet are now scrollable when the content length is long.
-
-- `#I613687` - Issue with "text value is converted into date format when the cell text content contains the '-' character" has been resolved.
-
-- `#I616139` - The script error that occurs while scrolling down and up in a sheet when a cell has filter icon and notes has been resolved.
-- `#I613155` - The notes in the spreadsheet are now scrollable when the content length is long.
-
-## 26.2.7 (2024-07-30)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I577428` - The script error that occurred when attempting to open the context menu without an active cell in the spreadsheet will no longer be thrown.
-
-## 26.1.42 (2024-07-16)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I600955` - Issue with "hyperlink navigation action is not prevented when the `cancel` argument of the `beforeHyperlinkClick` event is set to `true`" has been resolved.
-- `#I600874` - Issue with "script error occurs when inserting rows using the `insertRow` method after inserting an image and freezing rows" has been resolved.
-
-## 26.1.41 (2024-07-09)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I605907` - The notes dialog box in the Spreadsheet will not appear outside the viewport when scrolling within the control.
-
-- `#I587684` - Issue with "`ROUND` and `ROUNDUP` functions return the wrong results when performing actions with decimal values" has been resolved.
-
-- `#I597438` - Issue with "rows are not shown correctly and appear hidden when calling the `refresh()` method after scrolling the sheet" has been resolved.
-
-- `#I605907` - The notes dialog box in the Spreadsheet will not appear outside the viewport when scrolling within the control.
-
-## 26.1.38 (2024-06-19)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- Now, the notes can be edited using the `SHIFT` + `F2` keyboard shortcut.
-
 ## 26.1.35 (2024-06-11)
 
 ### Spreadsheet
@@ -1371,37 +1317,7 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 26.2.11 (2024-08-27)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I622312` - Issue with "selection is misplaced and the row/column headers are duplicated when inserting a row or column in finite mode with `enableVirtualization` set to false" has been resolved.
-
-- `#I614741` - Issue with "the active sheet is not properly updated when saving the spreadsheet with hidden sheets" has been resolved.
-
-## 26.2.10 (2024-08-20)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I614741` - Issue with "exception occurs when saving the file type as `xls` with `conditional formatting` range more than `65536` rows" has been resolved.
-
-## 26.2.4 (2024-07-24)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I603035` - Issue with "chart is not rendered properly when the chart range refers to another sheet range" has been resolved.
-
-- `#I609452` - Issue with "exception throws while initializing the cell model with more than one chart in a single cell with customized left and right properties" has been resolved. (React)
-
-- `#I610974` - Issue with "unable to change the size of the pie chart using resizing" has been resolved. (React)
-
-## 21.1.39 (2023-04-11)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 21.1.39 (2023-04-11)
 
 ### Spreadsheet
 

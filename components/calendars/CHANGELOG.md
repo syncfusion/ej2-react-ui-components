@@ -2,54 +2,6 @@
 
 ## [Unreleased]
 
-## 26.2.14 (2024-09-10)
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#I627006` - Fixed an issue where the DateTimePicker popup was not visible in mobile mode due to a fixed z-index value set in the CSS.
-
-## 26.2.11 (2024-08-27)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I613304` - Resolved an issue where toggling the visibility of the date range picker caused a memory leak.
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#I607606` - Fixed the issue where the TimePicker popup was not opening at the center on mobile devices.
-
-## 26.2.10 (2024-08-20)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I189705` - Resolved an issue that caused a console error on mobile devices when utilizing the `maxDays` property in the `DateRangePicker`.
-
-- `#I607606` - Fixed the issue where the TimePicker popup was not opening at the center on mobile devices.
-
-## 26.2.8 (2024-08-06)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#F188894` - Fixed the issue where, in Mobile Mode, opening the popup and pressing the back button without selecting any date would apply an overlay to the entire page.
-
-## 26.1.41 (2024-07-09)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#F58554` - Fixed issue where disabled dates were being selected when enabling html attributes while typing.
-
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
@@ -1241,15 +1193,7 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.## 26.1.40 (2024-07-02)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I600055` - Resolved issue with automatically closing popup when state dynamically changes.
-
-## 19.2.46 (2021-07-06)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.## 19.2.46 (2021-07-06)
 
 ### DatePicker
 

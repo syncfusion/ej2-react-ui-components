@@ -2,54 +2,6 @@
 
 ## [Unreleased]
 
-## 26.2.14 (2024-09-10)
-
-### Ribbon
-
-#### Features
-
-- `#I604695` - Now we have provided support for automatically scaling the SVG images when used as icons in ribbon split-button and dropdown-button popups.
-
-## 26.2.7 (2024-07-30)
-
-### Ribbon
-
-#### Features
-
-- `#I604471`, `#I604695` - Now we have provided support for automatically scaling SVG images as icons, that are compatible with different Ribbon Layouts.
-
-## 26.1.42 (2024-07-16)
-
-### Ribbon
-
-#### Bug Fixes
-
-- `#I606110` - Now the issue with programmatically updating the Gallery item using `updateItem` method has been resolved.
-
-## 26.1.41 (2024-07-09)
-
-### Ribbon
-
-#### Features
-
-- `#I592358` - Now we have provided a new event `ribbonLayoutSwitched`, when the layout is switched between the classic and simplified modes in ribbon.
-
-## 26.1.40 (2024-07-02)
-
-### Ribbon
-
-#### Bug Fixes
-
-- `#I602654` - Now the issue with ribbon overflow popup opens when the button item is programmatically clicked has been resolved.
-
-## 26.1.38 (2024-06-19)
-
-### Ribbon
-
-#### Bug Fixes
-
-- `#I593640` - Now the script issue raised while disabling the last tab of the ribbon has been resolved.
-
 ## 25.1.35 (2024-03-15)
 
 ### Ribbon

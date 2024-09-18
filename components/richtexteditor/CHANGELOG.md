@@ -2,35 +2,46 @@
 
 ## [Unreleased]
 
-## 26.2.14 (2024-09-10)
+## 27.1.48 (2024-09-18)
 
 ### RichTextEditor
 
+#### Features
+
+- **Inline Code**: this feature allow users to highlight small code snippets, commands, or keywords within text, making them stand out for clarity in Rich Text Editor. Explore the demos [here](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/tools.html).
+
+- **Import Export**: this feature allow users to export the Rich Text Editor's content into PDF or Word documents, as well as import Word content directly into the Rich Text Editor. Explore the demos [here](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/tools.html).
+
+- **Slash Menu**: Provided support for / character to open popup and then apply formats such as Headings, Lists and Open insert dialogs of Image, Links, Table and options to add custom commands. Explore the demos [here](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/tools.html).
+
+- **Inline Code**: this feature allow users to highlight small code snippets, commands, or keywords within text, making them stand out for clarity in Rich Text Editor. Explore the demos [here](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/tools).
+
+- **Import Export**: this feature allow users to export the Rich Text Editor's content into PDF or Word documents, as well as import Word content directly into the Rich Text Editor. Explore the demos [here](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/tools).
+
+- **Slash Menu**: Provided support for / character to open popup and then apply formats such as Headings, Lists and Open insert dialogs of Image, Links, Table and options to add custom commands. Explore the demos [here](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/tools).
+
+#### Breaking Changes
+
+- Images saved on the server will no longer be automatically deleted when using keyboard or quick toolbar actions in the editor. This change is necessary because if the images are removed from the server, it would prevent the ability to perform undo/redo actions on them.
+    - **Solution** : To handle image deletions properly, use the `afterImageDelete` event to capture the src of the deleted image. Then, send a request to your server to remove the image from storage, ensuring it is only deleted when explicitly intended.
+
 #### Bug Fixes
 
-- `#I623837` - Now, copying a single item within an ordered list and pasting it back into the same list item works properly in the Rich Text Editor.
+- `#I627631` - Now, pressing the clear format when table is selected work properly in the Rich Text Editor.
 
-- `#I627444` - Now, applying bold and then using the Ctrl + a to select the mention issue is fixed.
+- `#I624158` - Now, typing `1.` after pressing `shift+enter` does not create a list item in the Rich Text Editor.
 
-## 26.2.13 (2024-09-05)
+- `#I621065` - Now, applying the multiple formats along with font-size format works properly by maintaining the font-size as priority.
 
-### RichTextEditor
+- `#I618955` - Now, Pasting images from the OTD word document file functions correctly in the Rich Text Editor.
 
-#### Bug Fixes
+- `#I618955` - Now, Pasting content with images from Mac Outlook or Word into the Rich Text Editor now works properly in the Safari browser on Mac.
 
-- `#I621958` - Now, when pressing the Backspace key on indented text, the indentation is decreased by one level in the Rich Text Editor.
+- `#I624026` - Now, the `actionBegin` event will now be triggered when the numpad enter key is pressed.
 
-- `#I615533` - Now, applying bold and then using the @ character to open the mention popup is fixed.
+- `#I610932` - Now, Updating the image URL in the `actionBegin` event arguments will now correctly insert the new URL.
 
-## 26.2.12 (2024-09-03)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I623355` - Now, merging cells across two or more rows in a table that are copied and pasted from the Excel sheet will work properly.
-
-- `#I623837` - Now, copying a single item within an ordered list and pasting it back into the same list item works properly in the Rich Text Editor.
+- `#I621065` - Now, applying the multiple formats along with font-size format works properly by maintaining the font-size as priority.
 
 ## 26.2.11 (2024-08-27)
 
@@ -167,6 +178,12 @@
 ### RichTextEditor
 
 #### Features
+
+- **Table row and column selection**: Improved the selection of table rows and columns using the mouse or keyboard with Shift + arrow keys, setting the background color of the selected cells. Additionally, enabled table selection when pressing the backspace key after the table and the delete key before the table. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/fluent2/rich-text-editor/tools.html).
+
+- **Default Item in Font Family and Font Size**: Introducing `default` options for font family and font size. When no font family or font size is set for the selected text, it will be manually set to the default values. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/fluent2/rich-text-editor/tools.html).
+
+- `#I525279` - Added support for text formatting in selected table cells, allowing users to apply headings, paragraphs, lists, and inline formats such as bold, italic, and strikethrough to multiple cells at once. Enhanced backspace functionality for clearing selected table cell content. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/fluent2/rich-text-editor/tools.html).
 
 - **Table row and column selection**: Improved the selection of table rows and columns using the mouse or keyboard with Shift + arrow keys, setting the background color of the selected cells. Additionally, enabled table selection when pressing the backspace key after the table and the delete key before the table.
 

@@ -62,8 +62,8 @@ Circular Gauge component is also offered in the following list of frameworks.
 
 ## Showcase samples
 
-* Live update - [Live Demo](https://ej2.syncfusion.com/react/demos/#/material/circular-gauge/data-sample)
-* Direction compass - [Live Demo](https://ej2.syncfusion.com/react/demos/#/material/circular-gauge/direction-compass)
+* Live update - [Live Demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/circular-gauge/data-sample)
+* Direction compass - [Live Demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/circular-gauge/direction-compass)
 * Fitness Tracker - [Source](https://github.com/SyncfusionExamples/showcase-react-health-tracker-dashboard-demo), [Live Demo](https://ej2.syncfusion.com/showcase/react/fitness-tracker-app/)
 
 ## Key features
@@ -71,15 +71,15 @@ Circular Gauge component is also offered in the following list of frameworks.
 * [Arc Gauge/Radial Gauge](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-axes/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#angles-and-direction): The arc gauge or radial gauge helps in the visualization of numerical values of scales in a semi-circular or quarter-circular manner. It is possible to achieve this by changing the start and end angle values.
 * [Axes](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-axes/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Axes is a collection of circular axis that can be used to indicate numeric values.
 * [Ranges](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-ranges/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Supports ranges to categorize the axis values. Any number of ranges can be added to the circular gauge.
-* [Ticks and labels](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/material/circular-gauge/ticks-and-labels): Provides options to customize the ticks and labels of the gauges.
+* [Ticks and labels](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/bootstrap5/circular-gauge/ticks-and-labels): Provides options to customize the ticks and labels of the gauges.
 * [Pointers](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-pointers/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Indicates the values on axis. Circular gauge supports three types of pointers: needle, range bar, and marker.
 * [Annotation](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-annotations/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Uses any custom HTML element as annotation and place it anywhere on the gauge.
 * [Legend](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-legend/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Summarizes the information from the ranges.
 * [Tooltip](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-user-interaction/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#tooltip-for-pointers): Provides information about the pointer and range values on hover.
 * [Pointer drag](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-user-interaction/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#pointer-drag): Provides support to place a pointer at the desired values by dragging it.
-* [Range drag](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/material/circular-gauge/pointer-ranges-drag): Provides support to extend the start or end of the range at the desired values by dragging it.
+* [Range drag](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/bootstrap5/circular-gauge/pointer-ranges-drag): Provides support to extend the start or end of the range at the desired values by dragging it.
 * [Print and Export](https://ej2.syncfusion.com/react/documentation/circular-gauge/gauge-print-and-export/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Prints or exports the rendered circular gauge to a desired format. Exporting supports four formats: PDF, PNG, JPEG and SVG.
-* [Templates](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/material/circular-gauge/tooltip): Templates can be used to create custom user experience in the tooltip of the circular gauge.
+* [Templates](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm#/bootstrap5/circular-gauge/tooltip): Templates can be used to create custom user experience in the tooltip of the circular gauge.
 * [Globalization](https://ej2.syncfusion.com/react/documentation/circular-gauge/internationalization/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Personalize the circular gauge component with different languages, as well as culture-specific number, date and time formatting.
 * [Accessibility](https://ej2.syncfusion.com/react/documentation/circular-gauge/accessibility/?utm_source=npm&utm_medium=listing&utm_campaign=react-circulargauge-npm): Provides with built-in accessibility support which helps to access all the circular gauge component features through the keyboard, screen readers, or other assistive technology devices. 
 
@@ -105,4 +105,4 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/circulargauge/license?utm_source=npm&utm_campaign=react-circulargauge-npm) for more info.
 
-&copyl Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

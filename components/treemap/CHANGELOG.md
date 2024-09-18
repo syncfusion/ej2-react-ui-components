@@ -8,6 +8,14 @@
 
 ## [Unreleased]
 
+## 27.1.48 (2024-09-18)
+
+### TreeMap
+
+#### Bug fixes
+
+- `#I622033` - Duplicate legend items are now correctly removed when excluded legend items from color mapping are present.
+
 ## 18.2.44 (2020-07-07)
 
 ### TreeMap

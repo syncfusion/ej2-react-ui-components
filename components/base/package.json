@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-react-base",
-	"version": "26.2.10",
+	"version": "17.33.0",
 	"description": "A common package of Essential JS 2 React base, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -24,7 +24,8 @@
 	"module": "./index.js",
 	"readme": "ReadMe.md",
 	"dependencies": {
-		"@syncfusion/ej2-base": "*"
+		"@syncfusion/ej2-base": "*",
+		"markdown-spellcheck": "^1.3.1"
 	},
 	"devDependencies": {
 		"@syncfusion/ej2-staging": "^1.0.1",

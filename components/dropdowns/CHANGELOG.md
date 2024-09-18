@@ -2,19 +2,27 @@
 
 ## [Unreleased]
 
-## 26.2.14 (2024-09-10)
+## 27.1.48 (2024-09-18)
 
-### ComboBox
+### ListBox
 
 #### Bug Fixes
 
-- `#FB60719` - The issue where the "Change Event Was Not Triggered When Removing Bound Value Using the Backspace Key" has been resolved.
+- `#I904248` - Issue with "The `removeItems` method not working properly after drag and drop and specific the index value" has been resolved.
 
 ### DropDownTree
+
+#### New Features
+
+- `#I621087` - Provided support to prevent the check action of disabled child nodes using `checkDisabledChildren` API.
+- `#I610462` - Provided valueTemplate support to customize the display of selected values in the Dropdown Tree component.
 
 #### Bug Fixes
 
 - `#I622674` - The issue where, when multi selection is enabled, selected items were just appended into one string for the aria-label in the Dropdown Tree has been resolved.
+- `#I630411` - Facing an console error when all nodes are not selectable while opening the popup in the Dropdown Tree component have been resolved.
+- `#I624932` - Multiple focus issue when enabled the showSelectAll and allowFiltering properties in the Dropdown Tree component has been resolved.
+- `#I625088` - The issue with selected field in the Dropdown Tree component has been resolved.
 
 ## 26.2.11 (2024-08-27)
 
@@ -61,14 +69,6 @@
 
 - `#I615841` - Fixed the issue where preselected values were not bound to the component with RemoteData when enableVirtualization was enabled.
 
-- `#I615659` - Fixed the issue with dropdown list items not displaying properly in the DropDownList.
-
-### DropdownList
-
-#### Bug Fixes
-
-- `#I612396` - Fixed an issue where an empty popup appeared when scrolling up and down with enableVirtualization and itemTemplate enabled.
-
 ## 26.2.8 (2024-08-06)
 
 ### DropdownList
@@ -105,12 +105,6 @@
 
 - `#I608662` - Issue with "listbox `RemoveItems` method performance issue occurs while using large number items" has been resolved.
 - `#I897491` - Issue with "Input filter element was focused while clearing the datasource in the listbox" has been resolved.
-
-### MultiSelect
-
-#### Bug fixes
-
-- `#I612325` - Fixed the issue where the form data did not update when clearing values using the clear icon.
 
 ## 26.2.4 (2024-07-24)
 
@@ -2237,15 +2231,7 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 26.2.5 (2024-07-26)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I609172` - Fixed an issue where enabling the enableVirtualization property with an itemTemplate and remote data caused the popup to appear empty during scrolling.
-
-## 19.4.38 (2021-12-17)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 19.4.38 (2021-12-17)
 
 ### MultiSelect
 

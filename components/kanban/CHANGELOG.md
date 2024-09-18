@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 26.2.14 (2024-09-10)
-
-### Kanban
-
-#### Bug Fixes
-
-- `#F185120` - Now, the resize window works properly after the kanban is destroyed.
-
 ## 25.1.35 (2024-03-15)
 
 ### Kanban

@@ -5,4 +5,5 @@ export * from './switch';
 export * from './chips';
 export * from './floating-action-button';
 export * from './speed-dial';
+export * from './smart-paste-button';
 export * from '@syncfusion/ej2-buttons';

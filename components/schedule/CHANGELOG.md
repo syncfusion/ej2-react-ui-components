@@ -2,12 +2,23 @@
 
 ## [Unreleased]
 
-## 26.2.14 (2024-09-10)
+## 27.1.48 (2024-09-18)
 
 ### Schedule
 
+#### Features
+
+- `#I546459` - Improved timeline views virtual scrolling performance.
+- Provided new keyboard shortcuts to open the editor window and navigate to today's date.
+
+| Keys | Description |
+|-----|-----|
+| <kbd>Shift + Alt + N</kbd> | To open a new editor window. |
+| <kbd>Shift + Alt + Y</kbd> | To navigate today date. |
+
 #### Bug fixes
 
+- `#I194307` - An issue where the `firstDayOfWeek` property was not working in the year view's specific settings has been fixed.
 - `#I621521` - An issue where the tooltip shows the wrong end time value when the start and end of the appointment are the same has been fixed.
 - `#FB60391` - Deleted recurrence appointment added into the `changedRecords` instead of `deletedRecords` and upon clicking `YES` in the series edit confirmation alert to delete the individual occurrences the deleted records not included in the `deletedRecords` in the `actionBegin` event has been fixed.
 
@@ -88,8 +99,6 @@
 - `#I587571` - The issue with the `refreshLayout` method causing UI disruptions when utilizing `allowVirtualscrolling` has been resolved.
 - `#FB57769` - An issue with the events is not overlap properly when the event has same start and end time.
 
-- `#I521475` - An issue with setting default values to the editor template inputs while opening the editor window through cell double click has been fixed.
-
 ## 25.2.6 (2024-05-28)
 
 ### Schedule
@@ -161,10 +170,6 @@
 #### New Features
 
 - `#I511506` - Provided support to prevent the reloading of appointment data source when resource data source changes dynamically by providing an additional boolean parameter `isEventDataRefresh` in the `setResourceCollections` method. To prevent reloading of the appointments you have to send the `isEventDataRefresh` parameter value as `false`.
-
-#### Bug fixes
-
-- `#I521475` - An issue with setting default values to the editor template inputs while opening the editor window through cell double click has been fixed.
 
 ## 24.2.8 (2024-02-27)
 
@@ -2058,7 +2063,15 @@ Schedule is an event calendar which facilitates user with the common Outlook-cal
 - **Adaptive rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Keyboard interaction** - All the common actions such as traversing through the appointments, multiple cell selection, add/edit/delete the appointments, navigate to other views, dates and much more can be performed through keyboard inputs.
 - **Localization** - All the static text and date content can be localized to any desired language. Also, it can be displayed with appropriate time mode and date-format as per the localized language.
-- **RTL** - Supports displaying the component to display in the direction from right to left.## 22.2.8 (2023-08-08)
+- **RTL** - Supports displaying the component to display in the direction from right to left.## 23.2.7 (2023-12-05)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I521475` - An issue with setting default values to the editor template inputs while opening the editor window through cell double click has been fixed.
+
+## 22.2.8 (2023-08-08)
 
 ### Schedule
 

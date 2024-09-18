@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 27.1.48 (2024-09-18)
+
+### FileManager
+
+#### Features
+
+- The Backspace key navigation support is provided for File Manager to navigate to the previous path in File Manager. To navigate to the previous path programmatically, you can use the [traverseBackward](https://ej2.syncfusion.com/documentation/api/file-manager/#traversebackward) method.
+- The File Manager supports for selecting files and folders in specific ranges through mouse drag as like File Explorer. This can be enabled through [enableRangeSelection](https://ej2.syncfusion.com/documentation/api/file-manager/#enablerangeselection) property.
+- `#FB22674`- [SharePoint file service](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider/tree/master) has been implemented to connect as backend with File Manager.
+
 ## 26.2.11 (2024-08-27)
 
 ### FileManager

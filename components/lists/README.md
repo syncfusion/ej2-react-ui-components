@@ -4,7 +4,7 @@ The react listview component allows you to select an item or multiple items from
 
 ![ej2-react-lists](https://ej2.syncfusion.com/products/images/listview/readme.gif)
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/?utm_source=npm&utm_campaign=listview). To acquire a license, you can purchase one at [https://www.syncfusion.com/sales/products](https://www.syncfusion.com/sales/products/?utm_source=npm&utm_campaign=listview) or start a free 30-day trial [here](https://www.syncfusion.com/account/manage-trials/start-trials/?utm_source=npm&utm_campaign=listview).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/?utm_source=npm&utm_campaign=listview). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products/?utm_source=npm&utm_campaign=listview) or start a free 30-day trial [here](https://www.syncfusion.com/account/manage-trials/start-trials/?utm_source=npm&utm_campaign=listview).
 
 > A free [community license](https://www.syncfusion.com/products/communitylicense/?utm_source=npm&utm_campaign=listview) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
@@ -19,7 +19,7 @@ npm install @syncfusion/ej2-react-lists
 ## Resources
 
 * [Getting Started](https://ej2.syncfusion.com/react/documentation/listview/getting-started/?utm_source=npm&utm_campaign=listview)
-* [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/material/listview/default)
+* [View Online Demos](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/fluent2/listview/default)
 * [Product Page](https://www.syncfusion.com/react-ui-components/listview/?utm_source=npm&utm_campaign=listview)
 
 ## Supported Frameworks
@@ -34,23 +34,23 @@ npm install @syncfusion/ej2-react-lists
 
 ## Showcase samples
 
-* Call History ([Live Demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/material/listview/call-history))
+* Call History ([Live Demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/fluent2/listview/call-history))
 
 ## Key Features
 
-* [**Data binding**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/material/listview/default) - Supports data binding to display the list of items from the local or server-side data source.
+* [**Data binding**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/fluent2/listview/default) - Supports data binding to display the list of items from the local or server-side data source.
 
-* [**Grouping**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/material/listview/default) - Provides support to group the logically related items under a category.
+* [**Grouping**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/fluent2/listview/default) - Provides support to group the logically related items under a category.
 
-* [**Nested list**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/material/listview/nested-list) - Displays a set of nested list items in different layout.
+* [**Nested list**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/fluent2/listview/nested-list) - Displays a set of nested list items in different layout.
 
-* [**Virtualization**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/material/listview/virtualization) - Allows you to load only viewable list items in a view port which will increase ListView performance on loading large number of data.
+* [**Virtualization**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/fluent2/listview/virtualization) - Allows you to load only viewable list items in a view port which will increase ListView performance on loading large number of data.
 
-* [**Check list**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/material/listview/check-list) - Displays list item with checkbox which allows you to select single or select multiple items.
+* [**Check list**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/fluent2/listview/check-list) - Displays list item with checkbox which allows you to select single or select multiple items.
 
-* [**Customizing templates**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/material/listview/group-template) - Allows you to customize the list item, header, and category group header.
+* [**Customizing templates**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/fluent2/listview/group-template) - Allows you to customize the list item, header, and category group header.
 
-* [**Accessibility**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/material/listview/default) - Provides built-in accessibility support that helps to access all the ListView component features through the keyboard, on-screen readers, or other assistive technology devices.
+* [**Accessibility**](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=listview#/fluent2/listview/default) - Provides built-in accessibility support that helps to access all the ListView component features through the keyboard, on-screen readers, or other assistive technology devices.
 
 ## Support
 
@@ -68,4 +68,4 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/lists/CHANGELOG.md/?utm_source=npm&utm_campaign=listview)
 
-© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+© Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

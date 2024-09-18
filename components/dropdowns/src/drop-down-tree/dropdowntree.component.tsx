@@ -6,6 +6,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 export interface DropDownTreeTypecast {
     footerTemplate?: string | Function | any;
     headerTemplate?: string | Function | any;
+    valueTemplate?: string | Function | any;
     itemTemplate?: string | Function | any;
 }
 /**
