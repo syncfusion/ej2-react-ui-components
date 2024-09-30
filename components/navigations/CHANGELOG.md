@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.51 (2024-09-30)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I636879` - Resolved the console error that occurred when dragging tree items in the TreeView component while using the Firefox browser.
+
 ## 27.1.50 (2024-09-24)
 
 ### TreeView
