@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.52 (2024-10-08)
+
+### Schedule
+
+#### Bug fixes
+
+- `#FB61586` - The issue with the schedule component tooltip rendering outside the viewport has been fixed.
+
 ## 27.1.51 (2024-09-30)
 
 ### Schedule

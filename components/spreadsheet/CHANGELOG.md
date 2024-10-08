@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 27.1.52 (2024-10-08)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I633175` - The border styles will now display correctly when printing a sheet or workbook.
+
+- `#I633175` - The border styles will now display correctly when printing a sheet or workbook.
+
+- `#I627746` - Issue with "range used in the formula is updated when a row or column is inserted into a  spreadsheet" has been resolved.
+
+- `#I632293` - Issue with "script issue occurs when using a custom long date format for a cell with a string value" has been resolved.
+
+- `#I633572` - Issue with "The `autoFill()` method does not fill data in the expected sheet when using fill range and data range arguments" has been resolved.
+
+- `#I631071` - Issue with "context menu is not visible when using freeze panes with merged cells" has been resolved.
+
+- `#I631639` - Issue with "template does not load into the ribbon toolbar when providing a custom component as a template to the `addRibbonTabs` function" has been resolved.
+
 ## 26.1.35 (2024-06-11)
 
 ### Spreadsheet

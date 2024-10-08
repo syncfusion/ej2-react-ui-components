@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.52 (2024-10-08)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#I628570` - Now, the drag-and-drop functionality for the kanban cards is now working properly without any errors when the configuration includes the `field` property in both `sortSettings` and `query`.
+
 ## 25.1.35 (2024-03-15)
 
 ### Kanban
