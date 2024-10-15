@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 27.1.53 (2024-10-15)
+
+### Stepper
+
+#### Bug Fixes
+
+- `#F194542` - The issue with the text indicators disappearing when the disabled property is updated dynamically in the stepper component has been resolved.
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I637759` - The issue with the collapseAll API not collapsing TreeView nodes correctly based on the specified node level in the TreeView component has been resolved.
+- `#I912588` - The issue with filtered selected item in the DropdownTree component has been fixed.
+
 ## 27.1.52 (2024-10-08)
 
 ### ContextMenu

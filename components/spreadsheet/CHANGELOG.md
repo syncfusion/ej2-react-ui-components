@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.53 (2024-10-15)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I634293` - Issue with "`autofit` function shrinks the columns when there are no values in the cells" has been resolved.
+
 ## 27.1.52 (2024-10-08)
 
 ### Spreadsheet

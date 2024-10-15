@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.53 (2024-10-15)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#I628570` - Now, the Kanban card filter and drag-and-drop functionality are now functioning properly, with only the filtered cards displayed when the `field` property is configured in both `sortSettings` and `query`.
+
 ## 27.1.52 (2024-10-08)
 
 ### Kanban
