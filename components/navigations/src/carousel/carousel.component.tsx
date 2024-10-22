@@ -27,6 +27,7 @@ export class CarouselComponent extends Carousel {
     private statelessTemplateProps: string[] = ["itemTemplate"];
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
+    private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<CarouselModel | DefaultHtmlAttributes| CarouselTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
@@ -41,6 +42,7 @@ export class CarouselComponent extends Carousel {
     }
 
     public render(): any {
+        this.isReactMock = false;
         if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;

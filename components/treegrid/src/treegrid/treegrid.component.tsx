@@ -27,6 +27,7 @@ export class TreeGridComponent extends TreeGrid {
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
+    private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<TreeGridModel | DefaultHtmlAttributes| TreeGridTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
@@ -41,6 +42,7 @@ export class TreeGridComponent extends TreeGrid {
     }
 
     public render(): any {
+        this.isReactMock = false;
         if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;

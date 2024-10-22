@@ -23,6 +23,7 @@ export class UploaderComponent extends Uploader {
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
+    private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<UploaderModel | DefaultHtmlAttributes| UploaderTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
@@ -37,6 +38,7 @@ export class UploaderComponent extends Uploader {
     }
 
     public render(): any {
+        this.isReactMock = false;
         if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;

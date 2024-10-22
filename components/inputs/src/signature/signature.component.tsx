@@ -20,6 +20,7 @@ export class SignatureComponent extends Signature {
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = true;
+    private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SignatureModel | DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
@@ -34,6 +35,7 @@ export class SignatureComponent extends Signature {
     }
 
     public render(): any {
+        this.isReactMock = false;
         if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;

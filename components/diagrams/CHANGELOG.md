@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 27.1.55 (2024-10-22)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I635721` - The undo and redo actions work during swimlane deletion, even when the swimlane's delete constraint is disabled.
+- `#I638627` - The tooltip for the annotation is now visible when the text overflow is set to Ellipsis or Clip.
+
 ## 27.1.53 (2024-10-15)
 
 ### Diagram
