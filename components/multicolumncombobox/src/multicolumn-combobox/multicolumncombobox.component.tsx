@@ -25,6 +25,7 @@ export class MultiColumnComboBoxComponent extends MultiColumnComboBox {
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
+    private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<MultiColumnComboBoxModel | DefaultHtmlAttributes| MultiColumnComboBoxTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
@@ -39,6 +40,7 @@ export class MultiColumnComboBoxComponent extends MultiColumnComboBox {
     }
 
     public render(): any {
+        this.isReactMock = false;
         if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;

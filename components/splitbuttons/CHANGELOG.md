@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.56 (2024-10-23)
+
+### SplitButton
+
+#### Bug Fixes
+
+- `#I914299` - Split buttons `popup` not closed when we open with mouse click and select with key down action has been resolved.
+
 ## 27.1.48 (2024-09-18)
 
 ### DropDownButton
