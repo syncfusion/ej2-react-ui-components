@@ -26,6 +26,7 @@ export class DropDownListComponent extends DropDownList {
     private statelessTemplateProps: string[] = ["headerTemplate","valueTemplate","itemTemplate"];
     private templateProps: string[] = null;
     private immediateRender: boolean = false;
+    private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<DropDownListModel | DefaultHtmlAttributes| DropDownListTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
@@ -40,6 +41,7 @@ export class DropDownListComponent extends DropDownList {
     }
 
     public render(): any {
+        this.isReactMock = false;
         if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;

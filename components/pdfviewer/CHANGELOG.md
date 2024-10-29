@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 27.1.57 (2024-10-29)
+
+### PDF Viewer
+
+#### Breaking Changes
+
+- The `getPageDetails` API has been renamed to `getPageInfo`. Additionally, the zoom factor parameter has been removed from the `getPageInfo` API, as the zoom factor can be accessed directly through the `zoomPercentage` API.
+
+| Existing API name| New API Name |
+|------|-------------|
+| `getPageDetails`| `getPageInfo`|
+
 ## 27.1.55 (2024-10-22)
 
 ### PDF Viewer

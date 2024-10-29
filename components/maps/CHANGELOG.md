@@ -12,6 +12,14 @@
 
 ### Maps
 
+#### Bug fixes
+
+- `#F194675` - The `panComplete` event is now functioning properly with online map providers.
+
+## 27.1.48 (2024-09-18)
+
+### Maps
+
 #### New Features
 
 - An animation transition will now occur when the data labels are first rendered.
