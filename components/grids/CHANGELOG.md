@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 27.1.58 (2024-11-05)
+
+### Grid
+
+#### Bug fixes
+
+- `I644169` - Resolved an issue where the `actionBegin` event triggers multiple times when dynamically updating the data source.
+- `I645803` - Resolved an issue where the Grid displays an empty state when a grouped column contains `null` values.
+
 ## 27.1.57 (2024-10-29)
 
 ### Grid

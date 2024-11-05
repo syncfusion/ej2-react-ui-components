@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.58 (2024-11-05)
+
+### Image Editor
+
+#### Bug Fixes
+
+- `#I648400` - The issue with "Script error thrown while `calling` resize public method of image editor when toolbar property was `empty`" has been resolved.
+
 ## 27.1.57 (2024-10-29)
 
 ### Image Editor

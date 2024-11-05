@@ -20,6 +20,7 @@ export class SkeletonComponent extends Skeleton {
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = true;
+    private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
      & Readonly<SkeletonModel | DefaultHtmlAttributes>;
     public forceUpdate: (callBack?: () => any) => void;
@@ -34,6 +35,7 @@ export class SkeletonComponent extends Skeleton {
     }
 
     public render(): any {
+        this.isReactMock = false;
         if (((this.element && !this.initRenderCalled) || this.refreshing) && !(this as any).isReactForeceUpdate) {
             super.render();
             this.initRenderCalled = true;
