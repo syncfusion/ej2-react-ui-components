@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.2.2 (2024-11-15)
+
+### Checkbox
+
+#### Bug Fixes
+
+- `#F95768`- The issue with "Parent element click event `prevented` while clicking on switch component in angular." has been resolved.
+
 ## 27.1.58 (2024-11-05)
 
 ### Checkbox

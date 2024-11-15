@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 27.2.2 (2024-11-15)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I641003` - Issue with "selection misalignment happens when applying autofill to wrapped cells that are outside of the viewport" has been resolved.
+
+- `#I635185` - Issue with "custom row height is not maintained when editing a cell and performing undo actions" has been resolved.
+
+- `#I645695` - Issue with "row height increases when a merged cell with wrap text is copied into the Spreadsheet" has been resolved.
+
 ## 27.1.52 (2024-10-08)
 
 ### Spreadsheet

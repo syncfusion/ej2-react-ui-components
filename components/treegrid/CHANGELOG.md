@@ -2,13 +2,17 @@
 
 ## [Unreleased]
 
-## 27.1.58 (2024-11-05)
+## 27.2.2 (2024-11-15)
 
 ### Tree Grid
 
 #### Bug Fixes
 
-- `#I637870` - White space when expand and collapse action issue has been fixed.
+- `#I644706` - Resolved issues related to cell editing when virtualization is enabled.
+- `#I646360` - `Dialog` now renders properly when both the template column and detail template are enabled in Tree Grid.
+- `#I644696` - Page refreshes now prevented when adding a record on the last page with virtualization enabled.
+
+- `#I646360` - `Dialog` now renders properly when both the template column and detail template are enabled in Tree Grid.
 
 ## 27.1.56 (2024-10-23)
 
@@ -243,7 +247,15 @@
 #### Bug Fixes
 
 - Expanding and Collapsing records is working fine when `pageSizeMode` is set as `All`.
-- `expandAtLevel`, `collapseAtLevel`, `expandAll` and `collapseAll` methods are working fine when `pageSizeMode` is set as `All`.## 19.1.54 (2021-03-30)
+- `expandAtLevel`, `collapseAtLevel`, `expandAll` and `collapseAll` methods are working fine when `pageSizeMode` is set as `All`.## 27.1.57 (2024-10-29)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I637870` - White space when expand and collapse action issue has been fixed.
+
+## 19.1.54 (2021-03-30)
 
 ### Tree Grid
 

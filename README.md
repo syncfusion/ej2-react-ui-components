@@ -1,4 +1,4 @@
- # Syncfusion React UI Components Library (Essential JS 2)
+# Syncfusion React UI Components Library (Essential JS 2)
  Syncfusion React UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 70+ UI components that every applications will ever need.
  > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
 >
@@ -22,8 +22,11 @@
  Easily build applications to be used by a global audience in various language and culture settings.
  ### Stay current
  With our commitment to at least four major updates per year, you receive the most up-to-date functionality and new components in addition to monthly service packs and bug fixes. Custom patches are available as needed.
+
  ## Control List
+
 ### Grids
+
 <table>
  <tr>
        <td>
@@ -96,6 +99,7 @@
 </table>
 
 ### Editors
+
 <table>
    <tr>
        <td>
@@ -151,6 +155,7 @@
 </table>
 
 ### Dropdowns
+
 <table>
    <tr>
        <td>
@@ -242,6 +247,7 @@
 </table>
 
 ### Inputs
+
 <table>
    <tr>
        <td>
@@ -392,6 +398,7 @@
 </table>
 
 ### Data Visualization
+
 <table>
    <tr>
        <td>
@@ -619,6 +626,7 @@
 </table>
 
 ### Calendars
+
 <table>
    <tr>
        <td>
@@ -730,6 +738,7 @@
 </table>
 
 ### Navigation
+
 <table>
    <tr>
        <td>
@@ -880,6 +889,7 @@
 </table>
 
 ### Buttons
+
 <table>
    <tr>
        <td>
@@ -974,6 +984,7 @@
 </table>
 
 ### Layout
+
 <table>
    <tr>
        <td>
@@ -1085,6 +1096,7 @@
 </table>
 
 ### Notification
+
 <table>
    <tr>
        <td>
@@ -1137,6 +1149,7 @@
 </table>
 
 ### Forms
+
 <table>
    <tr>
        <td>
@@ -1158,6 +1171,7 @@
 </table>
 
 ### Viewer
+
 <table>
    <tr>
        <td>
@@ -1194,5 +1208,5 @@
  Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license).
  ## Changelog
  Check the changelog [here](https://ej2.syncfusion.com/react/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-react-ui-components)
-     © Copyright 2024 Syncfusion, Inc. All Rights Reserved.
+     © Copyright 2022 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.
