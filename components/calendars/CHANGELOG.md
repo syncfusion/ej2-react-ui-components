@@ -2,7 +2,33 @@
 
 ## [Unreleased]
 
+## 27.2.3 (2024-11-21)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I648389` -  Fixed an issue where the CSS for the selected value was removed when the minimum and maximum properties were changed dynamically.
+
+- `#I654432` - Fixed an issue where the Clear Icon was displayed when the enable mask support had no value.
+
 ## 27.2.2 (2024-11-15)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I648389` -  Fixed an issue where the CSS for the selected value was removed when the minimum and maximum properties were changed dynamically.
+
+## 27.1.57 (2024-10-29)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I643169` -  Fixed an issue where the popup repositions to `Right-Bottom` when clicking on the custom range, even though it is set to `Left-Bottom`.
+
+## 27.1.55 (2024-10-22)
 
 ### DateTimePicker
 

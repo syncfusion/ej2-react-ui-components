@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 27.2.3 (2024-11-21)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I349006` - Issue with "Multi select component not render for complex data binding sample for In/notIn operators" has been fixed.
+- `#I650981` - Issue with "The value template is not destroyed when two dropdownlist popups are opened back to back in the query builder" has been fixed.
+
 ## 27.1.58 (2024-11-05)
 
 ### QueryBuilder
