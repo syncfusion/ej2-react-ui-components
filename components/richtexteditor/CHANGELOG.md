@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.2.4 (2024-11-26)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I651190` - Now, the bold format will be removed for the specified text content.
+
 ## 27.2.3 (2024-11-21)
 
 ### RichTextEditor

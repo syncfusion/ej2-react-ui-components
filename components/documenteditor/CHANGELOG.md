@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 27.2.4 (2024-11-26)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+- `#I647577` - Resolved the control freezing issue when opening Word document in Document Editor.
+- `#I648529` - Resolved the script error issue when form fields inside header and footer.
+- `#I649632` - Resolved the lists with negative `nsid` values in exported document.
+- `#I649605` - Resolved the missing other properties of content control in `setContentControlInfo` API.
+- `#I651950` - Now, disabled the comment insertion when selection inside footnote and endnote.
+
 ## 27.2.3 (2024-11-21)
 
 ### DocumentEditor

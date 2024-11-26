@@ -2,13 +2,23 @@
 
 ## [Unreleased]
 
-## 27.2.3 (2024-11-21)
+## 27.2.4 (2024-11-26)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I656269` - Fixed an exception that occurred in the `NumericTextBox` when the `PDF viewer` was destroyed.
+
+## 27.2.2 (2024-11-15)
 
 ### Uploader
 
 #### Bug Fixes
 
 - `#I648755` - Fixed an issue where, with sequential upload enabled, if the first file is paused, the second file will not automatically start uploading.
+
+- `#I648407` - Fixed an issue where users were unable to add custom form data in the beforeUpload event.
 
 ### TextBox
 
