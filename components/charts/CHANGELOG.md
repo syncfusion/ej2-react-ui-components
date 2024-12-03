@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 27.2.5 (2024-12-03)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I653576` - Now, the data label for zero will not overlap with the previous rectangle in inverted stacking series.
+- `#I656631` - The data label for the polar and radar series renders properly, even when it collides with the axis.
+- `#I657609` - Now, the legend tooltip text updates properly when changes are made in the legend render event.
+
 ## 27.2.4 (2024-11-26)
 
 ### Chart

@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 27.2.4 (2024-11-26)
+## 27.2.5 (2024-12-03)
+
+### Image Editor
+
+#### Features
+
+- Added new parameter, `transformCollection`, to the `drawText` method, enabling support for drawing text in multiple transformed states.
+
+## 27.1.58 (2024-11-05)
 
 ### Image Editor
 

@@ -2,7 +2,18 @@
 
 ## [Unreleased]
 
-## 27.2.4 (2024-11-26)
+## 27.2.5 (2024-12-03)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I657144` - Fixed an issue with the move event arguments in the File Manager component's flat data support.
+- `#I656248` - Addressed an issue with search results in the File Manager component's flat data support when searching within a subdirectory.
+- `#I655646` - Resolved the delete operation issue while performing delete operation for nested level of folder in the File Manager component navigation pane.
+- `#I658910` - The issue with navigation pane not reflect the renamed item data in File Manager component has been resolved.
+
+## 27.2.3 (2024-11-21)
 
 ### FileManager
 

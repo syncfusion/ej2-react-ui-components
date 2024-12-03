@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 27.2.4 (2024-11-26)
+## 27.2.5 (2024-12-03)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I656916` - - Issue with "Script error occurs while loading the JSON data with `isNoteEditable` property set to true in the cell model" has been resolved.
+
+## 27.2.3 (2024-11-21)
 
 ### Spreadsheet
 

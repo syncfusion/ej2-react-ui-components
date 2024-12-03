@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 27.2.5 (2024-12-03)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I649636` - An issue where the Tab `selecting` event `isInteracted` field value returned `false` in random cases upon item selection through interaction when the `allowDragAndDrop` property is enabled has been fixed.
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I656345` - The issue with child items being skipped when navigating tree items with the down arrow key while the filtering input is active in the DropdownTree has been resolved.
+
 ## 27.2.4 (2024-11-26)
 
 ### TreeView

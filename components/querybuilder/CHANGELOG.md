@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 27.2.4 (2024-11-26)
+## 27.2.5 (2024-12-03)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I655498` - Issue with "date type value is not update properly while using the `setMongoQuery` method of query builder" has been fixed.
+- `#I80058` - Issue with "String type between values not update properly in query builder rules" has been fixed.
+
+## 27.2.3 (2024-11-21)
 
 ### QueryBuilder
 

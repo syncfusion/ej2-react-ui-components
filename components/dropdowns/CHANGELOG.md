@@ -2,6 +2,28 @@
 
 ## [Unreleased]
 
+## 27.2.5 (2024-12-03)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I655507` - Fixed an issue where the selected value was not loading after scrolling the popup.
+
+- `#I659840` - Fixed the issue where the Clear icon was not functioning properly.
+
+### DropDownTree
+
+#### Bug Fixes
+
+- `#I652479` - Resolved the duplicate ID issue in the Dropdown Tree component, which is impacting accessibility.
+
+- `#I658444` - Resolved the console error that occurred when selecting the `Select All` option after adding a new item to the Dropdown Tree component through the search functionality.
+
+- `#F195051` - The issue with pre-selecting child nodes in the Dropdown Tree component for Remote data has been resolved.
+
+- `#I656345` - The issue with child items being skipped when navigating tree items with the down arrow key while the filtering input is active in the Dropdown Tree has been resolved.
+
 ## 27.2.4 (2024-11-26)
 
 ### MultiSelect

@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 27.2.5 (2024-12-03)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I643775` - The `queryTaskbarInfo` event wasn't triggered for virtualization with multiple taskbars enabled and tasks in a collapsed state issue has been fixed.
+- `#I660550` - Work calculation not working properly while changing end Date in grid columns issue has been fixed.
+- `#I660532` - `SchedulingType` Value Resets to Null even we passed value issue has been fixed.
+- `#I652260` - Splitter persistence object is not working properly in local storage issue has been fixed.
+- `#I658881` - Right label is not rendered properly while giving decimal value for duration issue has been fixed.
+- `#I654502` - `fontFamily` is not changing in the PDF export for header and footer issue has been fixed.
+- `#F194824` - On expand parent records, data not aligned properly when `loadChildOnDemand` and virtualization enabled issue has been fixed.
+
+- `#I660550` - Work calculation not working properly while changing end Date in grid columns issue has been fixed.
+- `#I660532` - `SchedulingType` Value Resets to Null even we passed value issue has been fixed.
+- `#F194824` - On expand parent records, data not aligned properly when `loadChildOnDemand` and virtualization enabled issue has been fixed.
+
 ## 27.2.4 (2024-11-26)
 
 ### GanttChart

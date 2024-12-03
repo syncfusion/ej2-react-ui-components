@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 27.2.5 (2024-12-03)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I649989` - Now, the image quality of the printed document is properly preserved.
+- `#I646167` - Now, the scrolling is consistent during word search at high zoom levels.
+- `#I651103` - Now, the tab navigation works properly in the customer provided document.
+- `#I641323` - Now, the PDF pages render properly when performing a text search in the provided document.
+- `#I641323` - Now, the text search match count is displayed correctly when searching for the first word on a PDF page.
+- `#I656223` - Now, the custom stamp dialog opens on the desktop when the enableDesktopMode API is set to true.
+- `#I652167` - Now, programmatically setting `fontStyle` to `none` is working properly for the form fields.
+- `#I654176` - Now, the programmatically added form field is no longer missing when downloading the digital signature document.
+
 ## 27.2.4 (2024-11-26)
 
 ### PDF Viewer

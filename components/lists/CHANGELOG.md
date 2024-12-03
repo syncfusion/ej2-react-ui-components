@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 27.2.4 (2024-11-26)
+## 27.2.5 (2024-12-03)
+
+### ListView
+
+#### Bug Fixes
+
+- `#I654492` - The issue with the dynamic data source update in ListView virtualization has been resolved.
+
+## 27.2.3 (2024-11-21)
 
 ### ListView
 

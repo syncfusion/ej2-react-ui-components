@@ -2,6 +2,28 @@
 
 ## [Unreleased]
 
+## 27.2.5 (2024-12-03)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#F195165` - Now, the font color is correctly applied to the specified pasted text content in the Rich Text Editor.
+
+- `#I656600` - Now, the background color is applied correctly when formatting multiple pieces of content in the Rich Text Editor.
+
+- `#I622428` - Now, setting the font size and font family to null works correctly in the Rich Text Editor.
+
+- `#I656594` - - `#I656594` - Now, decreasing indent using `outdent` toolbar icon works properly.
+
+- `#I651237` - Now, when multiple `iframes` are embedded in the document, the Rich Text Editor's resizing operation will stop upon triggering the `mouseup` event within any of the `iframes`.
+
+- `#I652730` - Now, the undo action is working properly when pressing backspace before the DIV element in the Rich Text Editor.
+
+- `#I653810` - Now, the list items are pasted correctly when copied from Word documents into the Rich Text Editor.
+
+- `#I919705` - Now, the pasted image other than the allowed types is being prevented in the Rich Text Editor.
+
 ## 27.2.4 (2024-11-26)
 
 ### RichTextEditor
@@ -9,6 +31,8 @@
 #### Bug Fixes
 
 - `#I651190` - Now, the bold format will be removed for the specified text content.
+
+- `#I652730` - Now, the `<div>` element is retained when pressing Backspace at the beginning of the `<div>` within the Rich Text Editor.
 
 ## 27.2.3 (2024-11-21)
 

@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 27.2.5 (2024-12-03)
+
+### Grid
+
+#### Bug fixes
+
+- `#I645200` - Fixed an issue where focus would get stuck on the toolbar's last element if the checkbox column was the first and set to hidden.
+- `#I655341` - Resolved an issue where the resize line was not appearing while resizing frozen columns.
+
 ## 27.2.4 (2024-11-26)
 
 ### Grid

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.2.5 (2024-12-03)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I657588` - The issue with the schedule's current time indicator not being properly aligned has been resolved
+
 ## 27.2.3 (2024-11-21)
 
 ### Schedule

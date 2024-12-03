@@ -2,7 +2,26 @@
 
 ## [Unreleased]
 
+## 27.2.5 (2024-12-03)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I656496` - The shadow region is no longer drawn while creating a freehand connector with `DragSegmentThumb` enabled.
+- `#I656689` - The resize cursor is now enabled even for phases with small widths, allowing them to be resized.
+- `#I657602` - Ports now rotate properly with the node after performing Group and Flip actions.
+- `#I655032` - The z-order of native nodes now updates properly at the UI level during undo and redo actions.
+
 ## 27.2.4 (2024-11-26)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I651029` - Flip and rotation transformations for image nodes are now applied in exported images.
+
+## 27.2.3 (2024-11-21)
 
 ### Diagram
 
