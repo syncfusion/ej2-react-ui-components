@@ -2,20 +2,6 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
-
-### DocumentEditor
-
-#### Bug Fixes
-
-- `#I646634` - Resolved the horizontal and vertical border rendering issue when applying the cell background in the table.
-- `#I648872` - Resolved the issue with paragraph indentation in lists when opening .docx files in the Document Editor.
-- `#I647138`, `#I657678` - Resolved the font rendering issue that occurred when opening Chinese text documents in the Document Editor.
-- `#I647834` - Resolved the layout issue that occurred when performing undo and redo operations.
-- `#I649032` - Resolved the issue where table properties were not applied when a non-English locale was set in the Document Editor.
-- `#I651642` - Resolved the script error issue related to layout when the document has a column break.
-- `#I652084` - Resolved the issue with text visibility inside the table when the table has cell shading.
-
 ## 27.2.4 (2024-11-26)
 
 ### DocumentEditor

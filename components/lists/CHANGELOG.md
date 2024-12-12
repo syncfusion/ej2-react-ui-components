@@ -2,23 +2,7 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
-
-### ListView
-
-#### Bug Fixes
-
-- `#I654492` - The issue with the dynamic data source update in ListView virtualization has been resolved.
-
-## 27.2.3 (2024-11-21)
-
-### ListView
-
-#### Bug Fixes
-
-- `#I654535` - The issue with the icons in the `Bootstrap 5.3` theme in ListView has been resolved.
-
-## 27.1.48 (2024-09-18)
+## 28.1.33 (2024-12-12)
 
 ### ListView
 

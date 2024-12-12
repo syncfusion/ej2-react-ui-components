@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 27.1.56 (2024-10-23)
-
-### SplitButton
-
-#### Bug Fixes
-
-- `#I914299` - Split buttons `popup` not closed when we open with mouse click and select with key down action has been resolved.
-
-## 27.1.48 (2024-09-18)
+## 28.1.33 (2024-12-12)
 
 ### DropDownButton
 
@@ -18,10 +10,17 @@
 
 - `#I445638` - Issue in DropDownButton Popup Alignment issue while setting `enableRtl` property as true has been resolved.
 
-### SplitButton
+#### Features
+
+- The DropDownButton now includes a  `Template supports` embedding custom layouts, controls, or components, allowing for flexible integration of text, buttons, images, and icons to enhance user-friendliness.
+
+- The DropDownButton component now includes a `PopupWidth` property, enabling users to define the width of its `popup`, providing enhanced design flexibility.
+
+- The DropDownButton component now includes the `AnimationSettings` feature, enabling users to customize `popup` animations by controlling the duration, easing, and effects. This enhancement improves visual appeal, ensures smooth transitions, and provides a consistent interactive experience.### SplitButton
 
 #### Bug Fixes
 
+- `#I914299` - Split buttons `popup` not closed when we open with mouse click and select with key down action has been resolved.
 - `#I554000` - Console error is thrown when clicking the progress button  has been resolved.
 
 ## 20.4.50 (2023-02-14)

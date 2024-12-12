@@ -2,55 +2,23 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
+## 28.1.33 (2024-12-12)
 
 ### Spreadsheet
 
-#### Bug fixes
+#### Features
 
-- `#I656916` - - Issue with "Script error occurs while loading the JSON data with `isNoteEditable` property set to true in the cell model" has been resolved.
+- `#I491300`, `#I271239`, `#I636239` - Now, you can use custom data validation with formulas, allowing you to define rules based on custom formulas.
 
-## 27.2.3 (2024-11-21)
+- `#I370203` - Now, you can experience chunked response processing to enhance performance when opening large Excel files in the Spreadsheet.
 
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I646465` - Issue with "script error occurring when importing an Excel file that contains an exclamation mark (!) in the sheet name" has been resolved.
-
-- `#I647116` - Issue with "#VALUE! error that occurred in a formula cell when the formatted value of its dependent cell was changed" has been resolved.
-
-## 27.2.2 (2024-11-15)
-
-### Spreadsheet
+- You can now use the manual calculation mode, allowing you to manually trigger formula calculations. This feature continues to enhance performance and accuracy, especially when handling large datasets.
 
 #### Bug fixes
 
-- `#I641003` - Issue with "selection misalignment happens when applying autofill to wrapped cells that are outside of the viewport" has been resolved.
+- `#I656922` - Issue with "autofill a formula containing cell references resulted in incorrect references in the auto-filled cells" has been resolved.
 
-- `#I635185` - Issue with "custom row height is not maintained when editing a cell and performing undo actions" has been resolved.
-
-- `#I645695` - Issue with "row height increases when a merged cell with wrap text is copied into the Spreadsheet" has been resolved.
-
-## 27.1.52 (2024-10-08)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I633175` - The border styles will now display correctly when printing a sheet or workbook.
-
-- `#I633175` - The border styles will now display correctly when printing a sheet or workbook.
-
-- `#I627746` - Issue with "range used in the formula is updated when a row or column is inserted into a  spreadsheet" has been resolved.
-
-- `#I632293` - Issue with "script issue occurs when using a custom long date format for a cell with a string value" has been resolved.
-
-- `#I633572` - Issue with "The `autoFill()` method does not fill data in the expected sheet when using fill range and data range arguments" has been resolved.
-
-- `#I631071` - Issue with "context menu is not visible when using freeze panes with merged cells" has been resolved.
-
-- `#I631639` - Issue with "template does not load into the ribbon toolbar when providing a custom component as a template to the `addRibbonTabs` function" has been resolved.
+- `#I654829` - Issue with "exception that occurred when exporting files with column widths specified in decimal values" has been resolved.
 
 ## 26.1.35 (2024-06-11)
 
@@ -1367,33 +1335,7 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 27.1.56 (2024-10-23)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I631071` - Issue with "context menu is not visible when using freeze panes with merged cells" has been resolved.
-
-## 27.1.55 (2024-10-22)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I634293` - Issue with "after using wrap text on merged cells, the autofit feature doesn’t adjust the row height correctly, so the full content isn’t shown" has been resolved.
-
-- `#I633155` - Issue with "`delete` method throws a script error when deleting sheets before the current active sheet" has been resolved.
-
-## 27.1.53 (2024-10-15)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I634293` - Issue with "`autofit` function shrinks the columns when there are no values in the cells" has been resolved.
-
-## 21.1.39 (2023-04-11)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 21.1.39 (2023-04-11)
 
 ### Spreadsheet
 

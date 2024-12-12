@@ -31,9 +31,9 @@ cd my-app
 npm start
 ```
 
-### Adding Syncfusion PDF Viewer package
+### Adding Syncfusion&reg; PDF Viewer package
 
-All Syncfusion react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react PDF Viewer package, use the following command.
+All Syncfusion&reg; react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react PDF Viewer package, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-react-pdfviewer --save
@@ -58,7 +58,7 @@ Add CSS references needed for a PDF Viewer in **src/index.css** from the **../no
 
 ### Add PDF Viewer component
 
-In the **src/index.js** file, use the following code snippet to render the Syncfusion React PDF Viewer control and import **index.css** to apply styles to the PDF Viewer:
+In the **src/index.js** file, use the following code snippet to render the Syncfusion&reg; React PDF Viewer control and import **index.css** to apply styles to the PDF Viewer:
 
 ```typescript
 import { createRoot } from 'react-dom/client';
@@ -157,10 +157,9 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. The Syncfusion&reg; licensed software, including this component, is subject to the terms and conditions of the Syncfusion&reg; [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm) for more info.
 
-&copy; Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

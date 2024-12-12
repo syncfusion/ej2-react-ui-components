@@ -2,6 +2,7 @@ import { ComplexBase } from '@syncfusion/ej2-react-base';
 import { ChipModel } from '@syncfusion/ej2-buttons';
 
 export interface ChipDirTypecast {
+    template?: string | Function | any;
 }
 /**
  * `ChipDirective` directive represent a chip of the React ChipList.

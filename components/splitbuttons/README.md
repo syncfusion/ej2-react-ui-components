@@ -1,10 +1,10 @@
 # ej2-react-splitbuttons
 
-A package of Syncfusion React UI Components (Essential JS 2) DropDownButton, SplitButton, ProgressButton and ButtonGroup.
+A package of Syncfusion<sup>®</sup> React UI Components (Essential JS 2) DropDownButton, SplitButton, ProgressButton and ButtonGroup.
 
 ![SplitButton](https://ej2.syncfusion.com/products/images/splitbutton/readme.gif)
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A [free community license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
@@ -96,7 +96,7 @@ These components are available in following list of frameworks.
 
 Product support is available for through following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=split-button) support system or [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_campaign=split-button).
+* Creating incident in Syncfusion<sup>®</sup> [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=split-button) support system or [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_campaign=split-button).
 * New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_campaign=split-button) with tag `syncfusion`, `ej2`.
 
@@ -108,4 +108,4 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/splitbuttons/CHANGELOG.md?utm_source=npm&utm_campaign=split-button)
 
-© Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+© Copyright 2024 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential<sup>®</sup> Studio license and copyright applies to this distribution.

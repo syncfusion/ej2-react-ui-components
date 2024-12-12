@@ -4,6 +4,14 @@
 
 ## [Unreleased]
 
+## 28.1.33 (2024-12-12)
+
+### Circular Gauge
+
+#### New features
+
+`#I642465` - The drag-and-drop interaction for pointers can now be enabled individually by using the `enableDrag` property within the `pointers` property when multiple pointers are available.
+
 ## 27.1.58 (2024-11-05)
 
 ### Circular Gauge

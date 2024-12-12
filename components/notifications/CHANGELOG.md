@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
-
-### Toast
-
-#### Bug Fixes
-
-- `I654672` - Fixed an exception that occurred when navigating to another page.
-
-## 27.1.48 (2024-09-18)
+## 28.1.33 (2024-12-12)
 
 ### Message
 

@@ -2,85 +2,26 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
+## 28.1.33 (2024-12-12)
 
 ### QueryBuilder
-
-#### Bug Fixes
 
 - `#I655498` - Issue with "date type value is not update properly while using the `setMongoQuery` method of query builder" has been fixed.
-- `#I80058` - Issue with "String type between values not update properly in query builder rules" has been fixed.
-
-## 27.2.3 (2024-11-21)
 
 ### QueryBuilder
-
-#### Bug Fixes
 
 - `#I349006` - Issue with "Multi select component not render for complex data binding sample for In/notIn operators" has been fixed.
-- `#I650981` - Issue with "The value template is not destroyed when two dropdownlist popups are opened back to back in the query builder" has been fixed.
-
-## 27.1.58 (2024-11-05)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- Issue with "Validation message appears for valid field in query builder" has been fixed.
-
-## 27.1.57 (2024-10-29)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- Issue with "Input element value get selected while double clicking on query builder rules." has been fixed.
-
-## 27.1.55 (2024-10-22)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- Issue with "Script error thrown while clicking on svg element within the query builder" has been fixed.
-
-## 27.1.53 (2024-10-15)
-
-### QueryBuilder
-
 - `#I639409` - Issue with "Custom operator not working properly in QueryBuilder While dynamically change locale property" has been fixed.
 
-#### Bug Fixes
-
-## 27.1.52 (2024-10-08)
-
 ### QueryBuilder
 
 #### Bug Fixes
-
-- `#I594200` - Issue with "Script error thrown while adding the new condition in complex data binding sample with template in angular" has been fixed.
-
-## 27.1.50 (2024-09-24)
 
 ### QueryBuilder
 
 #### Bug Fixes
 
 - `#I898205` - Issue with While setting rule value as an empty string the rule was not created in QueryBuilder has been fixed.
-- `#I594200` - Issue with Script error thrown while filtering the field items of complex data binding in angular has been fixed.
-
-## 27.1.48 (2024-09-18)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I901740` - Issue with value after comma in Numeric textbox QueryBuilder being deleted has been fixed.
-
-### QueryBuilder
-
-#### Bug Fixes
-
 - `#I604645` - When typing a comma in a numeric textbox in QueryBuilder, the comma gets removed has been fixed.
 
 ### QueryBuilder

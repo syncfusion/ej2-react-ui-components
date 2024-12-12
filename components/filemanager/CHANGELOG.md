@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 28.1.33 (2024-12-12)
+
+### FileManager
+
+#### Features
+
+- `#FB22569` - Provided chunk upload support in the File Manager, making it easier to upload large files or folders by breaking them into smaller chunks based on the specified `chunkSize` within [uploadSettings](https://ej2.syncfusion.com/documentation/api/file-manager/#uploadsettings) property.
+
+#### Bug Fixes
+
+- `#I659845` - The persistence issue with the sorting direction in the File Manager component details view has been resolved.
+- `#I654478` - Resolve the inconsistent path issue in File Manager component ID based service.
+- `#I658815` - The issue with the `ctrl` and `cmd` buttons for selecting multiple files in the macOS has been resolved.
+- `#I662195` - The issue with navigation pane not reflect the renamed item data in the macOS has been resolved.
+
 ## 27.2.5 (2024-12-03)
 
 ### FileManager
@@ -27,7 +42,7 @@
 
 #### Bug Fixes
 
-- `#I641183` - Resolved the flat data navigation path and rename arguments issues in File Manager component.
+- `#I641183` - Resolved the flat data navigation path and rename arguments issues in the File Manager component.
 
 ## 27.1.53 (2024-10-15)
 
@@ -199,6 +214,10 @@ Event Name | Argument Name | Properties | Description
 ## 25.1.35 (2024-03-15)
 
 ### FileManager
+
+#### Bug Fixes
+
+- `#FB50961` - The issues related to XSS attacks with file or folder names in the File Manager details view template is fixed.
 
 #### Features
 

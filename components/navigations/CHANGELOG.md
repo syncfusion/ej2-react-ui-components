@@ -2,6 +2,42 @@
 
 ## [Unreleased]
 
+## 28.1.33 (2024-12-12)
+
+### ContextMenu
+
+#### Features
+
+- The context menu now includes `scroller support`, improving accessibility and usability across all devices. Submenus dynamically adjust to fit the available screen space.
+
+- The context menu now includes `Template Support`, enabling the embedding of custom layouts, controls, or components for seamless integration of text, buttons, images, and icons.
+
+### Menu
+
+#### Features
+
+- The Menu component now supports `HTML attributes`, allowing users to assign custom attributes such as `role`, `tabindex`, `aria`, and `data` to individual menu items. This enhancement improves accessibility, provides greater control, and ensures a more customizable and user-friendly experience.
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I659354` - The issue where the hidden target's parent node expands after adding a new node using the addNodes method with preventTargetExpand set to true in the TreeView component has been resolved.
+- `#I656707` - The issue where the source node fails to move under a hidden target node using the moveNodes method in the TreeView component has been resolved.
+
+### Carousel
+
+#### Features
+
+- `#I513228` - Provided support to enable/disable the keyboard interactions in the carousel component by using `allowKeyboardInteraction` property.
+
+### Tab
+
+#### Features
+
+- `#I313872`, `#I511661`, `#F163147`, `#F163322` - Provided the content rendering support that allows you to specify the modes for loading tab content.
+- `#F153247` - Provided support to enable/disable the Tab content swiping by using the `swipeMode` property.
+
 ## 27.2.5 (2024-12-03)
 
 ### Tab
@@ -14,7 +50,7 @@
 
 #### Bug Fixes
 
-- `#I656345` - The issue with child items being skipped when navigating tree items with the down arrow key while the filtering input is active in the DropdownTree has been resolved.
+- `#I656345` - The issue with child items being skipped when navigating tree items with the down arrow key while the filtering input is active in the `DropdownTree` has been resolved.
 
 ## 27.2.4 (2024-11-26)
 
@@ -22,7 +58,7 @@
 
 #### Bug Fixes
 
-- `#I658444` -  Resolved console error when clicking Select All after adding a new item to the DropdownTree component using the search functionality.
+- `#I658444` -  Resolved console error when clicking Select All after adding a new item to the `DropdownTree` component using the search functionality.
 
 ## 27.2.3 (2024-11-21)
 
@@ -30,7 +66,7 @@
 
 #### Bug Fixes
 
-- `#I625957` - The issue with "Context menu reposition issue while using the insertBefore and insertAfter method" has been resolved.
+- `#I625957` - The issue with "Context menu reposition issue while using the `insertBefore` and `insertAfter` method" has been resolved.
 
 ### Tab
 
@@ -42,11 +78,11 @@
 
 #### Bug Fixes
 
-- `#I650340` - The alignment issue in the TreeView component, which occurred when using the IconCss field property with the e-icons class while enabling checkbox support, has been resolved.
+- `#I650340` - The alignment issue in the TreeView component, which occurred when using the `IconCss` field property with the e-icons class while enabling checkbox support, has been resolved.
 
-- `#I649622` - The issue with the preventTargetExpand parameter, when set to true in the TreeView component's addNodes method, has been resolved.
+- `#I649622` - The issue with the `preventTargetExpand` parameter, when set to true in the TreeView component's addNodes method, has been resolved.
 
-- `#I639573` - Resolved an issue where all child nodes of a parent node were automatically selected upon reopening the DropdownTree component after filtering and selecting the parent node.
+- `#I639573` - Resolved an issue where all child nodes of a parent node were automatically selected upon reopening the `DropdownTree` component after filtering and selecting the parent node.
 
 ## 27.2.2 (2024-11-15)
 
@@ -86,7 +122,7 @@
 
 ### TreeView
 
-- `#I639573` - Resolved issues with selected items and the checked state of the parent node when filtering in the DropdownTree component.
+- `#I639573` - Resolved issues with selected items and the checked state of the parent node when filtering in the `DropdownTree` component.
 
 #### Bug Fixes
 
@@ -134,8 +170,8 @@
 
 #### Bug Fixes
 
-- `#I637759` - The issue with the collapseAll API not collapsing TreeView nodes correctly based on the specified node level in the TreeView component has been resolved.
-- `#I912588` - The issue with filtered selected item in the DropdownTree component has been fixed.
+- `#I637759` - The issue with the `collapseAll` API not collapsing TreeView nodes correctly based on the specified node level in the TreeView component has been resolved.
+- `#I912588` - The issue with filtered selected item in the `DropdownTree` component has been fixed.
 
 ## 27.1.52 (2024-10-08)
 
@@ -209,14 +245,6 @@
 - `#I620667` - Now the script error raised when resizing the page with the Stepper navigated between pages has been resolved.
 
 ## 26.2.11 (2024-08-27)
-
-### ContextMenu
-
-#### Bug Fixes
-
-- `#I902438` - The issue with "Facing a flickering issue with the ContextMenu component on a Mac device" has been resolved.
-
-## 26.2.10 (2024-08-20)
 
 ### ContextMenu
 

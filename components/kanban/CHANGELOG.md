@@ -2,30 +2,6 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
-
-### Kanban
-
-#### Bug Fixes
-
-- `#I650922` - Now, the Kanban cards are updated properly without any errors while having the `CustomDataAdaptor` configuration.
-
-## 27.1.53 (2024-10-15)
-
-### Kanban
-
-#### Bug Fixes
-
-- `#I628570` - Now, the Kanban card filter and drag-and-drop functionality are now functioning properly, with only the filtered cards displayed when the `field` property is configured in both `sortSettings` and `query`.
-
-## 27.1.52 (2024-10-08)
-
-### Kanban
-
-#### Bug Fixes
-
-- `#I628570` - Now, the drag-and-drop functionality for the kanban cards is now working properly without any errors when the configuration includes the `field` property in both `sortSettings` and `query`.
-
 ## 25.1.35 (2024-03-15)
 
 ### Kanban

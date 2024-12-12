@@ -2,48 +2,6 @@
 
 ## [Unreleased]
 
-## 27.2.2 (2024-11-15)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#I646678` - Fixed an issue where the dialog would not close when the Escape key was pressed.
-
-- `#FB60123` - Fixed an issue where dynamically changing the dialog target caused the dialog element to remain stuck in its previous DOM position.
-
-## 27.1.58 (2024-11-05)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#F194699` - Fixed an issue where the scrollbar appears as soon as the modal dialog is closed.
-
-## 27.1.57 (2024-10-29)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#I28945` - Fixed an issue where the Dialog's `enableResize` property was not functioning for dynamic changes.
-
-## 27.1.56 (2024-10-23)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#I633873` - Resolved the inconsistent resizing behaviour observed with the modal dialog.
-
-## 27.1.53 (2024-10-15)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#I633873` - Resolved the inconsistent resizing behaviour observed with the modal dialog.
-
 ## 21.1.35 (2023-03-23)
 
 ### Tooltip

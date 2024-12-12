@@ -2,9 +2,9 @@
 
 # ej2-react-base
 
-A common package of Essential JS 2 for React which contains base libraries, methods and class definitions.
+A common package of Essential<sup>®</sup> JS 2 for React which contains base libraries, methods and class definitions.
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 > 
 > A [free community license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
@@ -26,7 +26,7 @@ npm install @syncfusion/ej2-react-base
 
 ### Lightweight and user friendly
 
-The entire Essential JS 2 framework is built from scratch to be lightweight and modular. Its footprint can be reduced further by including only the specific components and features your application requires.
+The entire Essential<sup>®</sup> JS 2 framework is built from scratch to be lightweight and modular. Its footprint can be reduced further by including only the specific components and features your application requires.
 
 ### Modular architecture
 
@@ -38,7 +38,7 @@ Performance is critical for delivering a good user experience. We ensure that al
 
 ### Responsive and touch friendly
 
-All Essential JS 2 controls are touch friendly and render adaptively based on the device they are on to provide optimal usage experience on phones, tablets and desktops.
+All Essential<sup>®</sup> JS 2 controls are touch friendly and render adaptively based on the device they are on to provide optimal usage experience on phones, tablets and desktops.
 
 ### Stunning built-in themes
 
@@ -54,7 +54,7 @@ With our commitment to at least four major updates per year, you receive the mos
 
 ## Supported Frameworks
 
-The Essential JS 2 is also offered in following list of frameworks.
+The Essential<sup>®</sup> JS 2 is also offered in following list of frameworks.
 
 * [JavaScript](https://www.syncfusion.com/products/javascript?utm_source=npm&utm_campaign=ej2-react-base)
 * [Angular](https://www.syncfusion.com/products/angular?utm_source=npm&utm_campaign=ej2-react-base)
@@ -66,7 +66,7 @@ The Essential JS 2 is also offered in following list of frameworks.
 
 Product support is available for through following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-react-base) support system or [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_campaign=ej2-react-base).
+* Creating incident in Syncfusion<sup>®</sup> [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-react-base) support system or [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_campaign=ej2-react-base).
 * New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/) with tag `syncfusion` and `ej2`.
 
@@ -78,5 +78,5 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 Check the changelog [here](https://ej2.syncfusion.com/react/documentation/release-notes/index?utm_source=npm&utm_campaign=ej2-react-base)
 
-    © Copyright 2024 Syncfusion, Inc. All Rights Reserved.
-    The Syncfusion Essential Studio license and copyright applies to this distribution.
+    © Copyright 2024 Syncfusion<sup>®</sup> Inc. All Rights Reserved.
+    The Syncfusion<sup>®</sup> Essential<sup>®</sup> Studio license and copyright applies to this distribution.

@@ -2,67 +2,13 @@
 
 ## [Unreleased]
 
-## 27.2.4 (2024-11-26)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I656269` - Fixed an exception that occurred in the `NumericTextBox` when the `PDF viewer` was destroyed.
-
-## 27.2.2 (2024-11-15)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I648755` - Fixed an issue where, with sequential upload enabled, if the first file is paused, the second file will not automatically start uploading.
-
-- `#I648407` - Fixed an issue where users were unable to add custom form data in the beforeUpload event.
-
-### TextBox
-
-#### Bug Fixes
-
-- `#I648833` - Fixed an issue with the floating label and border changes that occur upon clicking the reset button.
-
-## 27.1.58 (2024-11-05)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I641562` - Fixed an issue where pasting a number with spaces resulted in a blank entry.
-
-## 27.1.55 (2024-10-22)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I641562` - Fixed an issue where pasting a number with spaces resulted in a blank entry.
-
-## 27.1.50 (2024-09-24)
-
-### ColorPicker
-
-#### Bug Fixes
-
-- Issue with "Hovering style for primary button of color picker in bootstrap 5 theme" has been resolved.
-
-## 27.1.48 (2024-09-18)
+## 28.1.33 (2024-12-12)
 
 ### ColorPicker
 
 #### Bug Fixes
 
 - `#I904686` - Issue with "Color picker component was not properly read in accessibility tool" has been resolved.
-
-### Slider
-
-#### Bug Fixes
-
-- `#I624218` - An issue with Slider ticks in material theme has been resolved.
 
 ## 26.1.35 (2024-06-11)
 

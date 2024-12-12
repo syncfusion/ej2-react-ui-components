@@ -2,191 +2,21 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
+## 28.1.33 (2024-12-12)
 
 ### RichTextEditor
 
 #### Bug Fixes
 
-- `#F195165` - Now, the font color is correctly applied to the specified pasted text content in the Rich Text Editor.
+- `#I656029` - Now, the link quick toolbar now opens properly in the `Firefox` browser when the link is inside a table in the Rich Text Editor.
 
-- `#I656600` - Now, the background color is applied correctly when formatting multiple pieces of content in the Rich Text Editor.
+- `#I659319` - Now, the inline emoji picker popup now closes properly after certain characters when the `No Result Found` status is displayed in the Rich Text Editor.
 
-- `#I622428` - Now, setting the font size and font family to null works correctly in the Rich Text Editor.
+- `#I659591` - Now, the content now scrolls to the cursor position correctly when inserted through the `executeCommand` method in the Rich Text Editor.
 
-- `#I656594` - - `#I656594` - Now, decreasing indent using `outdent` toolbar icon works properly.
+- `#I648421` - Now, enhanced the documentation for `imageUploadFailed` and `imageUploadSuccess` events in the Rich Text Editor to include detailed descriptions of the event parameters.
 
-- `#I651237` - Now, when multiple `iframes` are embedded in the document, the Rich Text Editor's resizing operation will stop upon triggering the `mouseup` event within any of the `iframes`.
-
-- `#I652730` - Now, the undo action is working properly when pressing backspace before the DIV element in the Rich Text Editor.
-
-- `#I653810` - Now, the list items are pasted correctly when copied from Word documents into the Rich Text Editor.
-
-- `#I919705` - Now, the pasted image other than the allowed types is being prevented in the Rich Text Editor.
-
-## 27.2.4 (2024-11-26)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I651190` - Now, the bold format will be removed for the specified text content.
-
-- `#I652730` - Now, the `<div>` element is retained when pressing Backspace at the beginning of the `<div>` within the Rich Text Editor.
-
-## 27.2.3 (2024-11-21)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I647911` - Now, with the pre-wrap style applied to the Rich Text Editor, the enter action functions as expected.
-
-- `#I629344` - Now, the `Insert` button is disabled in the image dialog when the replacement image size exceeds the maximum allowed file size.
-
-- `#I649583`, `#I650404` - Now, the localization is properly applied to the `NumberFormatList` and `BulletFormatList` dropdown elements in the Rich Text Editor.
-
-- `#I195065` - Fixed an issue where the "Minimize" toolbar icon did not update when the toolbar was dynamically enabled or disabled.
-
-## 27.2.2 (2024-11-15)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I646789` - Now, the table is correctly inserted at the end of the span element when the cursor is focused there in the Rich Text Editor.
-
-- `#I649390` - Now, pressing space after mentioned items with `-` functions correctly in the Rich Text Editor.
-
-- `#I637655` - Now, the list retains its format properly when pasted into the Rich Text Editor, even when within an `<h6>` tag.
-
-- `#I649429` - Now, the custom table with the class name `e-rte-custom-table` will not have the editor's default table styles.
-
-- `#I647956` - Now, the percentage values for image height and width are now applied to image in the Rich Text Editor.
-
-- `#I652208` - Now, the console error that occurred when clicking the image toolbar icon with the cursor at the table side has now been resolved.
-
-- `#I627784` - Now, the slow image resizing smoothness in the IFrame editor has been improved.
-
-## 27.1.58 (2024-11-05)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I644007` - Now, after deleting an empty line in the Rich Text Editor, the line will no longer reappear when clicking outside the editor.
-
-- `#I641442` - Now, the link quick toolbar opens when clicking on an anchor element with a relative URL, without redirecting to the linked page.
-
-- `#I643173` - Now, when applying bold, italic, or other inline formatting to text adjacent to an anchor tag, the space between the text and the anchor tag will remain preserved.
-
-- `#I644738` - Now, the undo action now behaves correctly when selecting text with `Shift + Left Arrow` in the Rich Text Editor.
-
-- `#I637881` - Now, the lines retained after pasting content to VS Code from the Rich Text Editor have been resolved.
-
-- `#I645142` - Now, When resize is set to false in `insertImageSettings`, the resize handles do not appear, and the functionality operates as expected.
-
-## 27.1.57 (2024-10-29)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I640976` - Now, the width and height attributes of the image are set with correct values instead of `auto`, when inserting and replacing the image in the Rich Text Editor.
-
-- `#I637660` - Now, the OneNote list that has been copied and pasted will now have a correct element structure.
-
-- `#I644239` - Now, the link insertion is prevented when clicking the insert button in the link dialog when the cancel argument is set to true in the `beforeDialogClose` event.
-
-- `#I633901` - Now, the table height adjusts correctly when resized within the Rich Text Editor in Firefox.
-
-- Now, the issue with image resizing in the IFrame editor, particularly when the editor area is small, has been resolved.
-
-## 27.1.55 (2024-10-22)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I628053` - Now, the rich text editor properly sanitizes and encodes tab characters in JavaScript alerts.
-
-- `#I553157` - Now, the bullet list format is properly removed when pasting content from MS Word in the Rich Text Editor.
-
-- `#I640949` - Now, image duplication is prevented when `shiftEnterKey` is pressed on a paragraph in the Rich Text Editor.
-
-- `#I639924` - Now, the format toolbar will be updated properly when the cursor is in front of the table.
-
-- `#I640818` - Now, being typed with zero-width-space works without any console error.
-
-- `#I640976` - Now, the width and height attributes of images will reflect their specified values, rather than defaulting to `auto`, after insertion and replacement in the Rich Text Editor.
-
-- `#I639718` - Now, when `enableResize` is set to true, the IFrame editor resize event will be unbound properly.
-
-- `#I637651` - Now, the issue where the editor was lagging after inserting a mention value has been resolved.
-
-- `#I641503` - Now the cutting and pasting list works properly in the rich text editor.
-
-## 27.1.52 (2024-10-08)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I638381` - Now, decreasing the indent for list items correctly preserves the paragraph format instead of converting them into a single paragraph in the Rich Text Editor.
-
-- `#I627005` - Now, the issue where applying a list or alignment at the last line in Firefox caused the page to scroll to the top when the Rich Text Editor was rendered in an `iframe` has been successfully resolved.
-
-- `#I625044` - Now, Resolved an issue where pasting mention chips inside a `<span>` resulted in unnecessary nested `<span>` tags in the Rich Text Editor.
-
-- `#I636882` - Now, inserting the link with a URL as multiple spaces using the link dialog is prevented in the Rich Text Editor.
-
-- `#I623355` - Now, the order list start attribute is maintained while copying and pasting content from Word document in the Rich Text Editor.
-
-- `#I633767` - Now, the tooltip for custom toolbar items works properly in the Rich Text Editor.
-
-- `#I631260` - Now, the Iframe editor's table border styles are handled with class names instead of tags.
-
-- Now the default font size and font family will be applied to the editor when the Iframe mode is enabled.
-
-- Now the browser spell check will work when the Iframe mode is enabled.
-
-- Now the editor content will have proper line height when the Iframe mode is enabled.
-
-- Now the Iframe editor's body element will have the class name `e-content` and then id.
-
-- Now, the issue where the page would scroll with the Iframe editor `height` set to `auto` when the table quick toolbar was opened has been resolved.
-
-## 27.1.51 (2024-09-30)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I630952` - Now, pressing the delete key when the cursor is at the end of the container correctly removes the correct `br` tag in the Rich Text Editor.
-
-- `#I629344` - Now, the `Insert` button is disabled in the image dialog when the selected image size exceeds the maximum file size.
-
-- `#I630816` - Now, the `beforePasteCleanup` event arguments `Value` is not empty when content is copied and pasted from the Adobe Acrobat PDF read.
-
-- `#I629364` - Now, Border right will appear when pasting from the Excel in the Rich Text Editor.
-
-- `#I634675` - Now, pressing the enter key after inserting the `hr` tag using `executeCommand` works properly in the Rich Text Editor.
-
-## 27.1.50 (2024-09-24)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I620537` - Now, In localization, different text are used in alternative text quick toolbar item and alternative text dialog header.
-
-- `#I623355` - Now, the ordered and unordered lists are now rendered properly in the table when copied and pasted from an MS Word document to the Rich Text Editor.
-
-- `#I630039` - Now, when formatting is applied to the content, it functions correctly in the Firefox browser.
-
-- `#I627005` - Now, when the Rich Text Editor is placed inside a list, the list functionality works properly.
-
-- `#F191200` - Now, when a `blockquote` is applied and the `clearFormat` action is selected, the process correctly removes the `blockquote` and applies the appropriate `p` tags.
+- `#I657212` - Now, when adding an emoji before or after a URL, it will remain separate and will not be included in the link's display text.
 
 ## 27.1.48 (2024-09-18)
 

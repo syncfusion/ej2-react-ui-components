@@ -2,56 +2,18 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
+## 28.1.33 (2024-12-12)
 
 ### Image Editor
+
+- The issue with "Localization issue in ImageEditor" has been resolved.
+- The issue with "Image Editor arrow intersection point is improper" has bee resolved.
 
 #### Features
 
-- Added new parameter, `transformCollection`, to the `drawText` method, enabling support for drawing text in multiple transformed states.
+- The Image Editor component now supports image restrictions via the `uploadSettings` property, enabling users to specify allowed image extensions and define minimum and maximum image sizes.
 
-## 27.1.58 (2024-11-05)
-
-### Image Editor
-
-#### Bug Fixes
-
-- `#I648400` - The issue with "Script error thrown while `calling` resize public method of image editor when toolbar property was `empty`" has been resolved.
-
-## 27.1.57 (2024-10-29)
-
-### Image Editor
-
-#### Bug Fixes
-
-- `#I910189` - The issue with "Browser window gets zoomed while zooming the image editor with mouse wheel support" has been resolved.
-
-## 27.1.53 (2024-10-15)
-
-### Image Editor
-
-#### Bug Fixes
-
-- The issue with "Localization issue in ImageEditor" has been resolved.
-- The issue with "redact with straightening not working properly" has been resolved.
-
-## 27.1.52 (2024-10-08)
-
-### Image Editor
-
-#### Bug Fixes
-
-- The issue with "text annotation not proper in transformed state" has been resolved.
-- The issue with "image annotation not working properly in safari browser" has been resolved.
-
-## 27.1.51 (2024-09-30)
-
-### Image Editor
-
-#### Bug Fixes
-
-- The issue with "undo-redo collection updated multiple times while customizing arrow annotation" has been resolved.
-- The issue with "Image Editor arrow intersection point is improper" has bee resolved.
+- The Image Editor component now supports the `WEBP` format, allowing users to upload and save WEBP images.
 
 ## 27.1.50 (2024-09-24)
 

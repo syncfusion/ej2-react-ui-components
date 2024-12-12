@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 28.1.33 (2024-12-12)
+
+### PDF Viewer
+
+#### New Features
+
+- `#I593597` - Added support for preserving `unicode` text in free text annotations within the `standalone` PDF Viewer.
+- `#I630970` - Added support for local session storage in the PDF Viewer.
+- Added support for preserving `unicode` text in form fields within the `standalone` PDF Viewer.
+
+#### Bug Fixes
+
+- `#I655125` - Now, the page renders correctly with form fields after zooming in and out on an iOS device.
+- `#I655531` - Now, the button field color is rendered properly in the PDF viewer.
+- `#I655380` - Now, the `signatureIndicatorSettings` updated properly for the existing signature fields in the document.
+- `#I655530` - Now, able to load the provided document when form designer module is enabled.
+- `#I653882` - Now, the sticky notes is properly visible by import after delete the annotation using the `deleteAnnotations` API.
+
 ## 27.2.5 (2024-12-03)
 
 ### PDF Viewer
@@ -33,10 +51,18 @@
 
 #### Bug Fixes
 
-- `#I652381` - Now, the signature with custom font is visible properly in downloaded PDF document.
-- `#I645218` - Now, the memory out-of-bounds exception no longer occurs in `Vue 2`.
 - `#I651818` - Now, the dropdown values are correctly preserved when opening the PDF document, with different item names and values for the dropdown options.
+- `#I645218` - Now, the memory out-of-bounds exception no longer occurs in `Vue 2`.
 - `#I645714` - Now, the added text markup annotation bounds and the exported annotation bounds are the same.
+- `#I652381` - Now, the signature with custom font is visible properly in downloaded PDF document.
+- `#I645043` - Now, the radio button field data is not lost when scrolling through the provided document.
+- `#I646730` - Now, the Text Selection and Pan keyboard shortcuts are disabled when the corresponding options are not available in the toolbar.
+- `#I635071` - Now, the checkbox form fields are properly checked in the downloaded document.
+
+- `#I645218` - Now, the memory out-of-bounds exception no longer occurs in `Vue 2`.
+- `#I645714` - Now, the added text markup annotation bounds and the exported annotation bounds are the same.
+- `#I652381` - Now, the signature with custom font is visible properly in downloaded PDF document.
+- `#I651818` - Now, the dropdown values are correctly preserved when opening the PDF document, with different item names and values for the dropdown options.
 - `#I645043` - Now, the radio button field data is not lost when scrolling through the provided document.
 - `#I646730` - Now, the Text Selection and Pan keyboard shortcuts are disabled when the corresponding options are not available in the toolbar.
 - `#I635071` - Now, the checkbox form fields are properly checked in the downloaded document.
@@ -101,12 +127,27 @@
 - `#I637275` - Now, the download option is disabled in mobile mode when `enableDownload` API is set to false.
 - `#I633438` , `#I633453` - Now, the invalid file corrupted dialog closes automatically after a valid PDF document is loaded.
 - `#I619099` - Now, the delay in searching for text after completing text extraction has been reduced.
-- `#I631265` - Now, the signature is correctly saved in the downloaded document provided by the customer.
 - `#I635120` - Now, the undo and redo functions for free text annotations, as well as the ability to change alignment and font size using the `editAnnotation` method, are now functioning correctly.
 - `#I608686` - Now, a script error does not occur when trying to update and delete annotations simultaneously after importing them.
 - `#I635119` - Now, after programmatically highlighting and deleting text, the text will not be highlighted again unless a new selection is made, as the selection is cleared when the delete method is called programmatically.
 - Now, the close button is clickable across all size scenarios when the thumbnail container is resized.
 - `#I908781` - Now, the Form field data will be accurately preserved after scrolling, even when form fields with the same name are updated, and the form designer module is not included.
+- `#I631265` - Now, the signature is correctly saved in the downloaded document provided by the customer.
+
+- `#I638294` - Now, the notification dialog is not shown for search text with no matches when `showNotificationDialog` API is set to false.
+- `#I636244` - Now, the annotation toolbar is programmatically opened on a mobile device using the `showAnnotationToolbar` method.
+- `#I637351` - Now, the signature collection ID and ID from the `addSignature` event are the same on mobile devices.
+- `#F194443` - Now, the tooltip is properly removed when programmatically removing a form field tooltip using the `updateFormField` API.
+- `#I637275` - Now, the download option is disabled in mobile mode when `enableDownload` API is set to false.
+- `#I637350` - Now, the PDF Viewer does not stop responding when searching the text.
+- `#I633438` , `#I633453` - Now, the invalid file corrupted dialog closes automatically after a valid PDF document is loaded.
+- `#I619099` - Now, the delay in searching for text after completing text extraction has been reduced.
+- `#I635120` - Now, the undo and redo functions for free text annotations, as well as the ability to change alignment and font size using the `editAnnotation` method, are now functioning correctly.
+- `#I608686` - Now, a script error does not occur when trying to update and delete annotations simultaneously after importing them.
+- `#I635119` - Now, after programmatically highlighting and deleting text, the text will not be highlighted again unless a new selection is made, as the selection is cleared when the delete method is called programmatically.
+- Now, the close button is clickable across all size scenarios when the thumbnail container is resized.
+- `#I908781` - Now, the Form field data will be accurately preserved after scrolling, even when form fields with the same name are updated, and the form designer module is not included.
+- `#I631265` - Now, the signature is correctly saved in the downloaded document provided by the customer.
 
 #### New Features
 
@@ -118,8 +159,8 @@
 
 #### Bug Fixes
 
-- `#I631430` - Now, the form field index is correctly calculated, and `NaN` is no longer added to the form field name when creating new fields from the designer in PDF Viewer.
 - `#I634439` - Now, the value of the dropdown field name does not set to null in the `formFieldCollections` when the `enableFormDesigner` API is disabled.
+- `#I631430` - Now, the form field index is correctly calculated, and `NaN` is no longer added to the form field name when creating new fields from the designer in PDF Viewer.
 - `#I631901` - Now, the keyboard shortcuts for the `OpenOption` are disabled when the `OpenOption` item is not included in the toolbar.
 
 ## 27.1.51 (2024-09-30)
@@ -188,10 +229,10 @@
 
 - `#I621133` - The `IsDocumentEdited` API does not return true for documents with form fields.
 - `#I620047` - Now, the text markup annotation rotation is correctly rendered after rotating the PDF pages.
+- `#I625999` - Now, the free text annotation font size is updating properly.
 - `#I620349` - Now, the `FormFieldPropertiesChange` event is triggered when adding or deleting the dropdown options.
 - `#I622415` - Now, the able to copy text from the input box of the search dialog.
 - `#I626450` - Now, no more console errors occur when focusing on the PDF Viewer.
-- `#I625999` - Now, the free text annotation font size is updating properly.
 - `#I626966` - The invalid behavior of font alignment and font color tools in the `annotationToolbarItems` has been resolved now.
 - `#I626108` - The polygon annotation is now preserved properly when adding and rotating the pages.
 - `#I627416` - Now, the form field background color is now correctly updated when changing form field visibility from `hidden` to `visible` mode.
@@ -219,6 +260,11 @@
 - `#I615933` - Now, the Radio button retains selection when clicked more than once.
 - `#I615285` - Now, form fields are being correctly retrieved from the widget in the provided document.
 - `#I612386` - Now, the checkbox and radio button size is increased properly using `updateFormField` method.
+
+- `#I614475` - Now, when deleting a signature field image after zooming in the image is removed and does not remains visually presented on the screen.
+- `#I615933` - Now, the Radio button retains selection when clicked more than once.
+- `#I615285` - Now, form fields are being correctly retrieved from the widget in the provided document.
+- `#I612386` - Now, the Form field data will be accurately preserved after scrolling, even when form fields with the same name are updated, and the form designer module is not included.
 
 ## 26.2.9 (2024-08-13)
 

@@ -2,62 +2,7 @@
 
 ## [Unreleased]
 
-## 27.2.3 (2024-11-21)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I643179` - Keyboard selection with up and down key scroll actions now working properly when virtualization is enabled.
-
-## 27.2.2 (2024-11-15)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I644706` - Resolved issues related to cell editing when virtualization is enabled.
-- `#I646360` - `Dialog` now renders properly when both the template column and detail template are enabled in Tree Grid.
-- `#I644696` - Page refreshes now prevented when adding a record on the last page with virtualization enabled.
-
-- `#I646360` - `Dialog` now renders properly when both the template column and detail template are enabled in Tree Grid.
-
-## 27.1.56 (2024-10-23)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#F61285` - Resolved an issue with unwanted mouse wheel scrolling during row drag and drop operations.
-
-## 27.1.55 (2024-10-22)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I625060` - Fixed an issue where the delete action would not function correctly when the expand/collapse icon was clicked repeatedly.
-- `F61804` - Fixed an issue where the selection was not clearing when a checkbox was selected and the row was expanded.
-- `#I637870` - White space when expand and collapse action issue has been fixed.
-
-## 27.1.53 (2024-10-15)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#F61461` - Fixed an issue where the scroll position was not maintained correctly when using `enablePersistence`.
-- `#I635845` - The alignment issue with aggregates and treegrid columns has been fixed when `allowResizing` and `frozenColumns` are enabled.
-
-## 27.1.51 (2024-09-30)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I632368` - Last record removed during virtual scroll issue has been fixed.
-
-## 27.1.48 (2024-09-18)
+## 28.1.33 (2024-12-12)
 
 ### Tree Grid
 
@@ -255,15 +200,7 @@
 #### Bug Fixes
 
 - Expanding and Collapsing records is working fine when `pageSizeMode` is set as `All`.
-- `expandAtLevel`, `collapseAtLevel`, `expandAll` and `collapseAll` methods are working fine when `pageSizeMode` is set as `All`.## 27.1.57 (2024-10-29)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I637870` - White space when expand and collapse action issue has been fixed.
-
-## 19.1.54 (2021-03-30)
+- `expandAtLevel`, `collapseAtLevel`, `expandAll` and `collapseAll` methods are working fine when `pageSizeMode` is set as `All`.## 19.1.54 (2021-03-30)
 
 ### Tree Grid
 

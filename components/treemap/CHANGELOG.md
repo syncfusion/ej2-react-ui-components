@@ -8,7 +8,31 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
+## 28.1.33 (2024-12-12)
+
+### TreeMap
+
+#### New features
+
+- `#I647939`, `#I637797` - Unsafe HTML codes in the TreeMap control can also be sanitized by setting the `enableHtmlSanitizer` property to **true**.
+
+## 27.1.55 (2024-10-22)
+
+### TreeMap
+
+#### Bug fixes
+
+- `#I636287` - You can now set different colors for the labels of TreeMap items using the `textColor` property in the `itemRendering` event arguments.
+
+## 27.1.53 (2024-10-15)
+
+### TreeMap
+
+#### Bug fixes
+
+- `#I636287` - You can now set different colors for the labels of TreeMap items using the `textColor` property in the `itemRendering` event arguments.
+
+## 27.1.48 (2024-09-18)
 
 ### TreeMap
 
@@ -22,7 +46,7 @@
 
 #### New Features
 
-- `#280380` - `isResized` argument is exposed in the `loaded` event arguments for indicating that the component is resized.
+- `#280380` - `isResized` argument is exposed in the `loaded` event arguments for indicating that the component is resized
 
 #### Bug Fixes
 

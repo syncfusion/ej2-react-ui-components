@@ -2,6 +2,25 @@
 
 ## [Unreleased]
 
+## 28.1.33 (2024-12-12)
+
+### Schedule
+
+#### Features
+
+- `#I354565` - Provided support to enables clipboard functionality for appointments, allowing them to be copied using keyboard shortcuts and pasted onto the Scheduler by setting `allowClipboard` property as `true`. When set to `true`, users can use keyboard shortcuts to cut, copy appointments and paste them into different time slots.
+
+| Keys | Description |
+|-----|-----|
+| <kbd>Ctrl + X</kbd> | To cut the selected appointment. |
+| <kbd>Ctrl + C</kbd> | To copy the selected appointment. |
+| <kbd>Ctrl + V</kbd> | To paste the cut/copied appointment. |
+
+Methods `cut`, `copy`, and `paste` have been implemented to allow users to perform clipboard actions on appointments.
+
+- Provided method `getViewDates` to get the previous, next, or current view render dates.
+- Provided method `getDateRangeText` to get the date range text for the given date collection.
+
 ## 27.2.5 (2024-12-03)
 
 ### Schedule

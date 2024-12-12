@@ -2,6 +2,33 @@
 
 ## [Unreleased]
 
+## 28.1.33 (2024-12-12)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I659555` - Now, the minor gridlines and ticks are rendered in canvas mode.
+
+#### New Features
+
+- `#I567864` - Legends can be arranged horizontally or vertically, with a fixed-width option and a maximum column count for consistent and flexible presentation.
+- `#I620773` - The crosshair now snaps to the nearest data point, providing improved precision and focus on individual data points.
+- `#F194134` - Users can now customize the position of the zoom toolbar within the chart using drag-and-drop functionality, allowing easy repositioning anywhere within the chart area.
+- Users can now customize the ARIA label, role, tab index, and focusable options for chart elements to improve accessibility and keyboard navigation.
+- Added options for adjusting the spacing between the chart area and container.
+- When hovering over a data point, the corresponding series is now highlighted, improving clarity and interaction with the tooltip.
+
+#### Breaking Changes
+
+- The default value of the `edgeLabelPlacement` property has been changed from `None` to `Shift` for better visibility of axis labels.
+
+### Stock Chart
+
+#### New Features
+
+- `#I620773` - The crosshair now snaps to the nearest data point, providing improved precision and focus on individual data points.
+
 ## 27.2.5 (2024-12-03)
 
 ### Chart
@@ -25,7 +52,7 @@
 - `#I653442` - The selection rectangle now renders properly in canvas mode.
 - `#I654149` - Now the spline series animation is proper when adding null values.
 
-## 27.2.3 (2024-11-21)
+## 27.2.3 (2024-11-19)
 
 ### Chart
 
@@ -33,14 +60,14 @@
 
 - `#I650885` - Now, the subtitle will align properly without cut off.
 - `#I651405` - Legends with paging now render correctly when toggling in canvas mode.
-
+  
 ### Stock Chart
 
 #### Bug Fixes
 
 - `#I652007` - The tick mark now remains consistent for the selected indicator after refresh or resize.
 
-## 27.2.2 (2024-11-15)
+## 27.2.2 (2024-11-14)
 
 ### Chart
 
@@ -161,7 +188,7 @@
 - `#I539415`- Provided support for smooth animation transitions when zooming the chart.
 - Added support to disable risers in the step line series for enhanced customization.
 
-### Accumulation chart
+### Accumulation Chart
 
 #### Features
 
@@ -169,7 +196,7 @@
 - Added support for rounded corners in pie, donut, pyramid, and funnel charts.
 - Provided pattern support for data points in accumulation charts.
 
-## 26.2.13 (2024-09-10)
+## 26.2.14 (2024-09-10)
 
 ### Chart
 

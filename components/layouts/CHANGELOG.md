@@ -2,26 +2,6 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
-
-### DashboardLayout
-
-#### Bug Fixes
-
-- `#I650290` - Enhanced the transition effect when performing drag and drop between panels in the Dashboard component.
-
-## 27.1.53 (2024-10-15)
-
-### DashboardLayout
-
-- `#I636600` - Panels overlapping when adding a panel dynamically using `addPanel` method in the `Vue` DashboardLayout component has been resolved.
-
-## 27.1.51 (2024-09-30)
-
-### Timeline
-
-- `#I631862` - An alignment issue while utilizing `content` or `oppositeContent` property as template in Timeline component has been resolved.
-
 ## 25.1.35 (2024-03-15)
 
 ### Timeline

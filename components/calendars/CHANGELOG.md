@@ -2,56 +2,6 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I648389` -  Fixed an issue where the CSS for the selected value was removed when the minimum and maximum properties were changed dynamically.
-
-- `#I654432` - Fixed an issue where the Clear Icon was displayed when the enable mask support had no value.
-
-## 27.2.2 (2024-11-15)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I648389` -  Fixed an issue where the CSS for the selected value was removed when the minimum and maximum properties were changed dynamically.
-
-## 27.1.57 (2024-10-29)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I643169` -  Fixed an issue where the popup repositions to `Right-Bottom` when clicking on the custom range, even though it is set to `Left-Bottom`.
-
-## 27.1.55 (2024-10-22)
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#I632734` -  Fixed an issue where the page automatically scrolled to the top when users began typing in the masked datetime picker on iPad.
-
-## 27.1.51 (2024-09-30)
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#I628891` - Resolved the issue where the "DateTimePicker Mask" was not functioning correctly after deletion using the keyboard.
-
-## 27.1.50 (2024-09-24)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I628537` -  Fixed an issue where users were unable to navigate through data cells using the arrow keys while a popup was open.
-
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker

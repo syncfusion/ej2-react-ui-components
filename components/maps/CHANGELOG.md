@@ -8,6 +8,14 @@
 
 ## [Unreleased]
 
+## 28.1.33 (2024-12-12)
+
+### Maps
+
+#### New features
+
+- `#I523666`, `#I613689` - Marker clusters can now be enabled for individual marker groups using the `clusterSettings` property in the `markerSettings` of the map layer. This allows you to apply customizations such as different colors, shapes, connector lines, and marker count labels to marker clusters in each group.
+
 ## 27.1.56 (2024-10-23)
 
 ### Maps

@@ -2,7 +2,21 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
+## 28.1.33 (2024-12-12)
+
+### Switch
+
+#### Features
+
+- The Switch component now includes a `beforeChange` event, allowing users to intercept and manage state changes before they occur, such as for validation or cancellation.
+
+### Chip
+
+#### Features
+
+- `#FB16787` - Provided template support to render HTML elements as chip item content.
+
+## 27.2.4 (2024-11-26)
 
 ### Checkbox
 

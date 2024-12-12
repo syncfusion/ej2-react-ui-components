@@ -2,79 +2,20 @@
 
 ## [Unreleased]
 
-## 27.2.4 (2024-11-26)
+## 28.1.33 (2024-12-12)
 
 ### Pivot Table
 
 #### Bug fixes
 
+- `#I657448` - Double-clicking the 'No records to display' cell for drill-through in the pivot table will no longer trigger an error.
 - `#I655109` - The calculated field option will now work properly with the 'Defer Layout Update' option enabled in the pivot table when using the server-side engine.
+- `#I661608` - The pivot button will now show the proper text in the static field list when the 'showAggregationOnValueField' property is disabled.
+- `#I653425` - The pivot table will now be rendered properly when changing the aggregation type dynamically using the 'Value field settings' popup for a value field name that begins with numeric text.
 
-## 27.2.3 (2024-11-21)
+#### Features
 
-### Pivot Table
-
-#### Bug fixes
-
-- `#I651756` - Field searching will now work properly within the field list UI when searching for grouped child fields.
-
-## 27.2.2 (2024-11-15)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#I645195` - The pivot table will now display the proper data based on the current page size when using the paging option.
-- `#I645619` - The error popup will now appear correctly when entering an invalid formula in the calculated field UI.
-
-## 27.1.58 (2024-11-05)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#I645787` - Number formatting will now be applied correctly when using the number formatting popup in the pivot table.
-- `#I648479` - The context menu will now appear when clicking on a value cell in the pivot table.
-
-## 27.1.57 (2024-10-29)
-
-### Pivot Table
-
-#### Bug fixes
-
-- The pivot table will now be rendered properly when creating a new report using the toolbar.
-
-## 27.1.55 (2024-10-22)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#I640765` - The cumulative percentage values will now be displayed correctly in the tooltip when hovering over the chart series of the Pareto chart.
-
-## 27.1.53 (2024-10-15)
-
-### Pivot Table
-
-#### Bug fixes
-
-- The pivot table will now work properly while dynamically disabling grouping with the pivot chart enabled.
-
-## 27.1.51 (2024-09-30)
-
-### Pivot Table
-
-#### Bug fixes
-
-- `#I628997` - The drill-through popup will now display the proper data when using the Pivot Table with the server-side engine and DataTable.
-
-## 27.1.50 (2024-09-24)
-
-### Pivot Table
-
-#### Bug fixes
-
-- The pivot chart will now render properly when the `displayOption` property is changed dynamically with the toolbar option enabled.
+- The classic (tabular) layout support has been added, allowing the pivot table to display in a traditional format with separate columns for row headers, offering a more detailed and organized table structure. Explore the [demo](https://ej2.syncfusion.com/demos/#/fluent2/pivot-table/tabular-layout.html) here.
 
 ## 27.1.48 (2024-09-18)
 
