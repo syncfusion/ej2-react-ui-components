@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 28.1.35 (2024-12-18)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I647640` - Issue with "data got changed when multiple text-formatted values from Excel were pasted into Spreadsheet" has been resolved.
+
+- `#I657475` - Issue with "values in the editing cell element were not selected when clicking the retry option in the data validation dialog" has been resolved.
+
+- `#I660016` - Issue with "`autoFit()` method did not function as expected when a range was passed along with the sheet name" has been resolved.
+
+- `#I549016` - Issue with "visible rows are hidden when attempting to unhide rows located outside the viewport area" has been resolved.
+
 ## 28.1.33 (2024-12-12)
 
 ### Spreadsheet

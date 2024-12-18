@@ -12,11 +12,11 @@
 
 #### Features
 
-- The DropDownButton now includes a  `Template supports` embedding custom layouts, controls, or components, allowing for flexible integration of text, buttons, images, and icons to enhance user-friendliness.
+- The DropDownButton component now includes a  `Template support` embedding custom layouts, controls, or components, allowing for flexible integration of text, buttons, images, and icons to enhance user-friendliness.
 
-- The DropDownButton component now includes a `PopupWidth` property, enabling users to define the width of its `popup`, providing enhanced design flexibility.
+- The DropDownButton component now includes a `PopupWidth` property, allowing `users` to define the width of the `dropdown popup`. This feature offers greater design flexibility.
 
-- The DropDownButton component now includes the `AnimationSettings` feature, enabling users to customize `popup` animations by controlling the duration, easing, and effects. This enhancement improves visual appeal, ensures smooth transitions, and provides a consistent interactive experience.### SplitButton
+- The DropDownButton component now includes the `AnimationSettings` feature, which allows `users` to customize `submenu` animations by controlling the duration, easing, and effects. This enhancement improves visual dynamics, ensures smooth transitions, and provides a consistent interactive experience.### SplitButton
 
 #### Bug Fixes
 

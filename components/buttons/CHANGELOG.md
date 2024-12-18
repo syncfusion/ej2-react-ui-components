@@ -8,7 +8,7 @@
 
 #### Features
 
-- The Switch component now includes a `beforeChange` event, allowing users to intercept and manage state changes before they occur, such as for validation or cancellation.
+- The Switch component now includes a `beforeChange` event, which enables users to intercept and manage state changes before they occur. This feature supports custom logic, such as validation or cancellation, thereby offering greater flexibility.
 
 ### Chip
 
