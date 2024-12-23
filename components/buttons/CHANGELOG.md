@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.1.36 (2024-12-24)
+
+### Switch
+
+#### Bug Fixes
+
+- `#I664001`- The issue with "Form reset functionality does not work properly for the switch component when it is in a disabled state" has been resolved.
+
 ## 28.1.33 (2024-12-12)
 
 ### Switch

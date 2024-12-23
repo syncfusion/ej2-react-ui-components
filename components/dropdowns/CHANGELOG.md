@@ -2,6 +2,28 @@
 
 ## [Unreleased]
 
+## 28.1.36 (2024-12-24)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I663752` - The issue where the "No records found" template was displayed when closing and opening the popup has been resolved.
+
+### ListBox
+
+#### Bug Fixes
+
+- `#I929759` - Issue with "Correction in Ctrl + A key down action for single mode selection of listbox component" has been resolved.
+- `#I664408` - Changing the type of value property of ListboxChangeEvents arguments from (number | string | boolean) to (number[] | string[] | boolean[]) in listbox.
+
+### DropDownTree
+
+#### Bug Fixes
+
+- `#I665182` - The issue with skipping last child items in tree navigation in Dropdown Tree when custom filtering is applied has been resolved.
+- `#I659157`, `#I659195` - Resolved the change event incorrect argument value issue during the node selection in Dropdown Tree component.
+
 ## 28.1.35 (2024-12-18)
 
 ### DropDownTree

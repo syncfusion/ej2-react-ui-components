@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 28.1.36 (2024-12-24)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `I662513` - Resolved a script error that occurred when scrolling in the virtualization sample with `allowSelection` set to `false`
+- `I664039` - Resolved a console warning that occurred on using freeze feature in treegrid.
+
 ## 28.1.35 (2024-12-18)
 
 ### Tree Grid

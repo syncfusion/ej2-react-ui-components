@@ -2,7 +2,20 @@
 
 ## [Unreleased]
 
-## 28.1.35 (2024-12-18)
+## 28.1.36 (2024-12-24)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I663792` - The issue with the child item's filter path during the rename operation in the File Manager component flat data has been resolved.
+- `#I663788` - The issue with the incorrect filter path during the folder creation operation in the File Manager component flat data has been resolved.
+- `#I663794` - The issue with the error dialog appearing during drag-and-drop operations between nested folders in the flat data File Manager component has been resolved.
+- `#I663789` - The issue with drag-and-drop functionality in the navigation pane of the flat data File Manager has been resolved.
+- `#I663795` - The issue with the `hasChild` property not updating during move operations in the Navigation Pane of the flat data File Manager component has been resolved.
+- `#I663864` - The issue with nested-level drag and drop in the navigation pane of the File Manager component using SQL service has been resolved.
+
+## 28.1.33 (2024-12-12)
 
 ### FileManager
 

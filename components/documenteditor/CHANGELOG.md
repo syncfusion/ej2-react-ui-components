@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 28.1.36 (2024-12-24)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+- `#I664697` - Implemented image cropping for metafile images in the Document Editor.
+- `#I662670` - Fixed the navigation pane issue where it moved to the start position when clicking sub-level headings. The selected heading is now properly highlighted.
+- `#I653747` - Resolved the font family rendering issue for special characters when the `FontHintType` property is applied in the character format.
+- `#I658305` - Corrected the updating of ordered list numbers when the list includes level overrides.
+- `#I662705` - The `setDefaultCharacterFormat` API now functions correctly in the Document Editor.
+- `#I652850` - Fixed cursor position updates and keyboard navigation issues for content controls in the Document Editor.
+- `#I668350` - Addressed the bullet list symbol rendering issue in exported DOCX documents after inserting a bullet list in the Document Editor.
+- `#I662244` - Resolved the track changes inconsistency issue in collaborative mode.
+- `#I660426` - Fixed the undo issue that occurred after merging table cells.
+- `#I661535` - Resolved the issue of span elements being present in comment data.
+
 ## 28.1.35 (2024-12-18)
 
 ### DocumentEditor
@@ -22,22 +39,6 @@
 - `#I656347` - Resolved the table layout issue when opening the exported document due to an improperly added row widget during exporting.
 - `#I645286`, `#I647203` - Handled the logic to combine text ranges with the same character formatting in the paragraph when exporting as SFDT to resolve performance issues.
 - `#I653756` - Resolved the content control border rendering issue for paragraph with lists and indentation applied.
-
-- `#I653914` - Script error no longer thrown when drag and drop the text in document editor.
-- `#I655487` - Now, table column is rendered properly when imported the exported document.
-- `#I656985` - Now, oval shape is preserved properly in the document editor.
-- `#I658167` - Now table row get resized properly when we resize the row fast.
-- `F194125` - Now, Footnote and content does not get overlap when edit inside the document.
-- `#I640675` - Resolved the document freezing issue when reject the track changes.
-- `#I651428` - Now, comment get removed properly when delete the paragraph and accept the changes.
-- `#I661065` - Table border is rendered properly when table cell border's line style is set as none.
-- `#I658922` - Now, check box is rendered properly after change the value as checked.
-- `#I651509` - Provided content change event support to notify when protect and unprotected the document.
-- `#I658140` - Resolved the performance issue that occurs when performing the undo and redo functions after copy pasting multiple paragraphs within a table.
-- `#I656347` - Resolved the table layout issue when opening the exported document due to an improperly added row widget during exporting.
-- `#I645286`, `#I647203` - Handled the logic to combine text ranges with the same character formatting in the paragraph when exporting as SFDT to resolve performance issues.
-- `#I653756` - Resolved the content control border rendering issue for paragraph with lists and indentation applied.
-Unreleased]
 
 ## 27.2.4 (2024-11-26)
 

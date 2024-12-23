@@ -2,7 +2,17 @@
 
 ## [Unreleased]
 
-## 28.1.35 (2024-12-18)
+## 28.1.36 (2024-12-24)
+
+### Pivot Table
+
+#### Bug fixes
+
+- `#I660802` - The autofit option will now be applied correctly to the pivot table cells without any extra space.
+- `#I664290` - The server-side Excel export option will now work properly when using the server-side engine in the pivot table.
+- `#I662951` - Applied number formatting will now be properly retained in the exported Excel file when exporting the pivot table using grid export.
+
+## 28.1.33 (2024-12-12)
 
 ### Pivot Table
 
