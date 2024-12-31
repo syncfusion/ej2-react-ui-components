@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I664340` - Issue with "columns do not scroll when autofill the cell values by dragging to the left with frozen columns" has been resolved.
+
 ## 28.1.35 (2024-12-18)
 
 ### Spreadsheet

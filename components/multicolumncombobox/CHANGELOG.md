@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### MultiColumn ComboBox
+
+#### Bug Fixes
+
+- `#I666815` - Now the issue with value selection using complex data binding in the Multicolumn ComboBox has been resolved.
+
 ## 27.1.48 (2024-09-18)
 
 ### MultiColumn ComboBox

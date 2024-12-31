@@ -2,6 +2,36 @@
 
 ## [Unreleased]
 
+### Mention
+
+#### Bug Fixes
+
+- `#I666283` - Fixed an issue where the `Select` event did not trigger when using the `Tab` key for selection.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I664927` - Fixed a console error that occurred when attempting to filter data using pasted text.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I584660` - Fixed a console error that occurred when using the `getTextByValue` method without a dataset.
+
+- `#I661577` - Fixed the issue where the placeholder was not displayed after clearing the value.
+
+- `#I663752` - The issue where the "No records found" template was displayed when closing and opening the popup has been resolved.
+
+- `#I661577` - Fixed the issue where the placeholder was not displayed after clearing the value.
+
+### DropDownTree
+
+#### Bug Fixes
+
+- `#I662775` - Resolved the empty chip element creation when setting empty string for value property in Dropdown Tree component.
+
 ## 28.1.36 (2024-12-24)
 
 ### MultiSelect

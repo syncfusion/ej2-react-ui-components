@@ -2,7 +2,11 @@
 
 ## [Unreleased]
 
-## 28.1.36 (2024-12-24)
+### Tab
+
+#### Bug Fixes
+
+- `#I664211` - The issue with tab resizing does not work properly when the height adjust mode is set to `None` has been resolved.
 
 ### Carousel
 

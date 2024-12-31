@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Uploader
+
+#### Bug Fixes
+
+- `#I666908` - Resolved a console error that occurred when copying an image from `Microsoft Word` and pasting it into the uploader.
+
 ## 28.1.33 (2024-12-12)
 
 ### ColorPicker

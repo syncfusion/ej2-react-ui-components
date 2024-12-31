@@ -8,8 +8,6 @@
 
 ## [Unreleased]
 
-## 28.1.36 (2024-12-24)
-
 ### Maps
 
 #### New features
