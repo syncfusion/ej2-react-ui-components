@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 28.1.38 (2025-01-07)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I668052` - Now, the Rich Text Editor works properly when using `Shift+Enter` while applying and removing formats such as bold, italic, and underline.
+
+- `#I642043` - Now, after pasting an image, the `afterPasteCleanup` event will be triggered properly.
+
+## 28.1.37 (2024-12-31)
+
 ### RichTextEditor
 
 #### Bug Fixes

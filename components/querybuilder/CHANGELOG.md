@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 28.1.38 (2025-01-07)
+
 ### QueryBuilder
 
 - `#I925175` - Issue with "Script error occurs when opening a multi-select `popup` with `dropdown` tree mode, supported by the data manager of the query builder" has been fixed.

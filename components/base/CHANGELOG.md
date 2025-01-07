@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.1.38 (2025-01-07)
+
+### Common
+
+#### New Features
+
+- `#I667506` - Provided support for Default HTML role Attribute in Syncfusion React components
+
 ## 25.1.35 (2024-03-15)
 
 ### Common

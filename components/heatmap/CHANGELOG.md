@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 28.1.33 (2024-12-12)
+
 ### HeatMap
 
 #### New features

@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 28.1.37 (2024-12-31)
+
 ### Kanban
 
 #### Bug Fixes
