@@ -8,7 +8,15 @@
 
 ## [Unreleased]
 
-## 28.1.38 (2025-01-07)
+## 28.1.39 (2024-01-14)
+
+### TreeMap
+
+#### Bug Fixes
+
+- `#I674661` - Now, `colorMapping` works as expected even when the legend is set to **false**.
+
+## 28.1.33 (2024-12-12)
 
 ### TreeMap
 

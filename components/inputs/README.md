@@ -189,16 +189,25 @@ The [React Rating](https://www.syncfusion.com/react-components/react-rating?utm_
 
 ### React OTP Input
 
-The `React OTP Input` component is designed to securely enter and verify single-use passwords for multi-factor authentication purposes in various applications, such as banking, e-commerce, or account login processes. It has several built-in features such as support for input types, styling modes, placeholder, seperators, and customization.
+The [React OTP Input](https://www.syncfusion.com/react-components/react-otp-input?utm_source=npm&utm_medium=listing&utm_campaign=react-inputs-npm) component is designed to securely enter and verify single-use passwords for multi-factor authentication purposes in various applications, such as banking, e-commerce, or account login processes. It has several built-in features such as support for input types, styling modes, placeholder, seperators, and customization.
+
+<p align="center">
+  <a href="https://ej2.syncfusion.com/react/documentation/otp-input/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-inputs-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-inputs-npm#/fluent2/otp-input/default">Online demos</a> .
+  <a href="https://www.syncfusion.com/react-components/react-otp-input?utm_source=npm&utm_medium=listing&utm_campaign=react-inputs-npm">Learn more</a>
+</p>
+
+<p align="center">
+<img alt="React OTP Input Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-otp-input.png">
+</p>
 
 #### Key features
 
-* `Input types` - Allow specifying the input type as text, number, or password for the OTP input..
-* `Styling modes` - Offer built-in styling options such as underline, outline, or fill.
-* `Tooltip` - Displays additional information of the rating items.
-* `Placeholders` - Allow setting a hint character for each input field, indicating the expected value.
-* `Separators` - Specify a character to be placed between input fields. 
-* `Customization` - Allows customizing the default appearance, including input field styling, input length, and more. 
+* [Input types](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-otp-input-npm#/fluent2/otp-input/default) - Allow specifying the input type as text, number, or password for the OTP input..
+* [Styling modes](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-otp-input-npm#/fluent2/otp-input/api) - Offer built-in styling options such as underline, outline, or fill.
+* [Placeholders](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-otp-input-npm#/fluent2/otp-input/api) - Allow setting a hint character for each input field, indicating the expected value.
+* [Separators](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-otp-input-npm#/fluent2/otp-input/api) - Specify a character to be placed between input fields. 
+* [Customization](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-otp-input-npm#/fluent2/otp-input/api) - Allows customizing the default appearance, including input field styling, input length, and more. 
 
 <p align="center">
 Trusted by the world's leading companies

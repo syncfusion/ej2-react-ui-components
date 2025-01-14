@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 28.1.39 (2024-01-14)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I668317` - Timeline tiers get misaligned while using timeline virtualization in `DST` zone issue has been fixed.
+- `#I676849` - When the context menu action is cancel, the added child record is still considered as a parent issue has been fixed.
+- `#I606658` - Taskbar not render correct position when `zoomToFit` issue has been fixed.
+- `#I668145` - A script error is thrown when the Delete Dependency context menu item is clicked issue has been fixed.
+- `#I676845` - Console error occurred while exporting PDF without columns property issue has been fixed.
+- `#I661832` - collapsed records were not in the viewport for the last set of records with a large number of child records, issue has been fixed.
+- `#I664339` - Template not destroyed while zooming action issue has been fixed.
+
+- `#I668145` - A script error is thrown when the 'Delete Dependency' context menu item is clicked issue has been fixed.
+- `#I661832` - collapsed records were not in the viewport for the last set of records with a large number of child records, issue has been fixed.
+- `#I664339` - Template not destroyed while zooming action issue has been fixed.
+
 ## 28.1.38 (2025-01-07)
 
 ### GanttChart

@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 28.1.38 (2025-01-07)
+## 28.1.39 (2024-01-14)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I664340` - Issue with "columns do not scroll when autofill the cell values by dragging to the left with frozen columns" has been resolved.
+- `#I667725` - Issue with "cell misalignment occurs when importing an Excel file that contains merged cells outside the viewport" has been resolved.
 
 ## 28.1.35 (2024-12-18)
 
@@ -1357,7 +1357,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 21.1.39 (2023-04-11)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.1.37 (2024-12-31)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I664340` - Issue with "columns do not scroll when autofill the cell values by dragging to the left with frozen columns" has been resolved.
+
+## 21.1.39 (2023-04-11)
 
 ### Spreadsheet
 
