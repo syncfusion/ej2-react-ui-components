@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.1.41 (2025-01-21)
+
+### DropDownButton
+
+#### Bug Fixes
+
+- Issue in "template not rendering in a function type in the React DropDownButton component" has been resolved.
+
 ## 28.1.33 (2024-12-12)
 
 ### DropDownButton
