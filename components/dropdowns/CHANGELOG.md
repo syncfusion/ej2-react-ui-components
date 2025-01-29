@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.2.3 (2025-01-29)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I679387` - Fixed an issue where no records were found in the popup after selecting all items.
+
 ## 28.1.41 (2025-01-21)
 
 ### ComboBox

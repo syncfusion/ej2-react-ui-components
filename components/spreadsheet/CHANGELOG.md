@@ -2,16 +2,6 @@
 
 ## [Unreleased]
 
-## 28.1.41 (2025-01-21)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- Issue with "circular reference alert is not being displayed when two formulas refer to each other, creating a circular dependency" has been resolved.
-- `#F195667` - Issue with "`unsafe-eval` Content Security Policy (CSP) violation occurs while resizing columns or rows" has been resolved.
-- `#I675147` - Issue with "cell values are not displayed correctly during printing when the vertical alignment is set to `top`" has been resolved.
-
 ## 28.1.35 (2024-12-18)
 
 ### Spreadsheet
@@ -1359,7 +1349,17 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.1.39 (2024-01-14)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.1.41 (2025-01-21)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- Issue with "circular reference alert is not being displayed when two formulas refer to each other, creating a circular dependency" has been resolved.
+- `#F195667` - Issue with "`unsafe-eval` Content Security Policy (CSP) violation occurs while resizing columns or rows" has been resolved.
+- `#I675147` - Issue with "cell values are not displayed correctly during printing when the vertical alignment is set to `top`" has been resolved.
+
+## 28.1.39 (2024-01-14)
 
 ### Spreadsheet
 
