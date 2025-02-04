@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 28.2.4 (2025-02-04)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I675147` -  Issue with "cell values were not properly aligned in the print window when text wrapping was enabled, and the alignment was set to right" has been resolved.
+
+- `#I677532` - Issue with "formulas containing defined names with underscore characters resulted in a #NAME? error" has been resolved.
+
+- `#F195846` - Issue with "font color was not updating properly when changing the value in a cell with a color code number format" has been resolved.
+
 ## 28.1.35 (2024-12-18)
 
 ### Spreadsheet

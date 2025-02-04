@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.2.4 (2025-02-04)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I682491` - Resolved the issue with the flat data in the FileManager component, where the "This folder is empty" message still appeared after clearing the search input.
+
 ## 28.2.3 (2025-01-29)
 
 ### FileManager
