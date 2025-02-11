@@ -2,17 +2,14 @@
 
 ## [Unreleased]
 
-## 28.2.4 (2025-02-04)
+## 28.2.5 (2025-02-11)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I675147` -  Issue with "cell values were not properly aligned in the print window when text wrapping was enabled, and the alignment was set to right" has been resolved.
-
-- `#I677532` - Issue with "formulas containing defined names with underscore characters resulted in a #NAME? error" has been resolved.
-
-- `#F195846` - Issue with "font color was not updating properly when changing the value in a cell with a color code number format" has been resolved.
+- `#I683923` - The issue with "column selection does not work properly when multiple columns are selected with a merged cell as the active cell" has been resolved.
+- `#I684489` - Issue with "formulas containing negative arithmetic expressions and nested structures resulted in an Incorrect number of arguments error" has been resolved.
 
 ## 28.1.35 (2024-12-18)
 
@@ -1361,7 +1358,19 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.1.41 (2025-01-21)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.2.4 (2025-02-04)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I675147` -  Issue with "cell values were not properly aligned in the print window when text wrapping was enabled, and the alignment was set to right" has been resolved.
+
+- `#I677532` - Issue with "formulas containing defined names with underscore characters resulted in a #NAME? error" has been resolved.
+
+- `#F195846` - Issue with "font color was not updating properly when changing the value in a cell with a color code number format" has been resolved.
+
+## 28.1.41 (2025-01-21)
 
 ### Spreadsheet
 

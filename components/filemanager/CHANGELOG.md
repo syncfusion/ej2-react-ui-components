@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 28.2.5 (2025-02-11)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I676641` - The issue with the details View column and selection when dynamically changing the view in the File Manager component has been resolved.
+- `#I681088`, `#FB628089` - Provided `enableMenuItems` API method support to enable the menu items in the File Manager component.
+
 ## 28.2.4 (2025-02-04)
 
 ### FileManager

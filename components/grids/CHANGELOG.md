@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 28.2.5 (2025-02-11)
+
+### Grid
+
+#### Bug fixes
+
+- `#I679470` - The issue of the missing focus border on grid cells after adding rows has been resolved.
+- `#I679056` - The problem of a script error occurring when updating the dataSource with a frozen column and the `All` option in the pager dropdown has been resolved.
+- `#I682856` - Resolved an issue where pressing `ESC` or the cancel button in the toolbar did not properly restore a row after editing.
+- `#I687968` - Fixed an issue where virtual scrolling did not function correctly when frozen columns were enabled.
+- `#I679046` - Resolved an issue where infinite scrolling not loading correctly in Firefox at specific resolutions.
+- `#I682690` - The issue where the `DropDownList popup` does not opening with `Alt + Down Arrow` in the Grid for remote data binding has been resolved.
+
 ## 28.2.4 (2025-02-04)
 
 ### Grid
