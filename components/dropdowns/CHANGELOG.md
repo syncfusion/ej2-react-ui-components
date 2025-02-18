@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+## 28.2.6 (2025-02-18)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I688364` - Fixed an issue with the positioning issue of the Multi select component popup while enabling the RTL mode.
+
+- `#I661577` - Fixed an issue where the placeholder was not displayed after clearing the value.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I683160` - Fixed the issue where an ComboBox makes the page unresponsive after filtering with no result.
+
+### DropDownTree
+
+#### Bug Fixes
+
+- `#I682127` - Resolved an issue where the checkbox state was not maintained properly during custom filtering operations in the Dropdown Tree component.
+
+- `#I682703`, `#I691872` - An Focusing issues in Dropdown Tree component when `showSelectAll` property is true has been resolved.
+
 ## 28.2.5 (2025-02-11)
 
 ### ComboBox

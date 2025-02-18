@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 28.2.5 (2025-02-11)
+## 28.2.6 (2025-02-18)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `I682605` - Resolved a script error issue occurred when expanding the remote data after clearing filter.
+
+## 28.2.4 (2025-02-04)
 
 ### Tree Grid
 

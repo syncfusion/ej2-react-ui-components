@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 28.2.6 (2025-02-18)
+
+### Grid
+
+#### Bug fixes
+
+- `#I684532` - Resolved the issue where the `dataSourceChanged` event was not triggered when end editing in batch mode with custom data binding.
+- `#I686671` - Fixed an issue where the updated React state was not accessible inside the Grid `filterTemplate`.
+- `#I689691` - Fixed a script error that occurred during the save action when using grouping and hierarchy features.
+- `#I682492` - Resolved the script error that was thrown when copying with column selection in cell selection mode.
+
 ## 28.2.5 (2025-02-11)
 
 ### Grid
