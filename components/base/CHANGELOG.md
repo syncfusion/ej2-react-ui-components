@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.2.7 (2025-02-25)
+
+### Common
+
+#### New Features
+
+- `#I682638` - Provided support for Default HTML ref Attribute in Syncfusion React components
+
 ## 28.1.38 (2025-01-07)
 
 ### Common

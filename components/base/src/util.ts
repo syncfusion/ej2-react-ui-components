@@ -24,6 +24,7 @@ export function applyMixins(derivedClass: any, baseClass: any[]): void {
 type MouseEventHandler<T = Element> = React.EventHandler<React.MouseEvent<T>>;
 type FocusEventHandler<T = Element> = React.EventHandler<React.FocusEvent<T>>;
 export interface DefaultHtmlAttributes {
+    ref?: React.Ref<any>;
     alt?: string;
     className?: string;
     disabled?: boolean;

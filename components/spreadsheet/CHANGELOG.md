@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 28.2.6 (2025-02-18)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I683923` - The issue with "column selection does not work properly when multiple columns are selected with a merged cell as the active cell" has been resolved.
-- `#I684489` - Issue with "formulas containing negative arithmetic expressions and nested structures resulted in an Incorrect number of arguments error" has been resolved.
-
 ## 28.1.35 (2024-12-18)
 
 ### Spreadsheet
@@ -1358,7 +1349,16 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.2.4 (2025-02-04)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.2.5 (2025-02-11)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I683923` - The issue with "column selection does not work properly when multiple columns are selected with a merged cell as the active cell" has been resolved.
+- `#I684489` - Issue with "formulas containing negative arithmetic expressions and nested structures resulted in an Incorrect number of arguments error" has been resolved.
+
+## 28.2.4 (2025-02-04)
 
 ### Spreadsheet
 
