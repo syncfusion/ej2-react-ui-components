@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.2.11 (2025-03-11)
+
+### Form Validator
+
+#### Bug Fixes
+
+- `#I696386` - Resolved an exception issue in the Number Validator of the FormValidator.
+
 ## 28.2.9 (2025-03-04)
 
 ### Uploader

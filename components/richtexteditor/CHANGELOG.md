@@ -2,7 +2,85 @@
 
 ## [Unreleased]
 
+## 28.2.11 (2025-03-11)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I694952` - Now, the change event works properly when the value changes in the Rich Text Editor.
+
+- `#I691323` - Now, the image caption is handled properly in the Rich Text Editor after posting.
+
+- `#I942836` - Now, the Rich Text Editor works properly when disabling the toolbar and resizing the editor.
+
+- `#I943056` - Now, the Rich Text Editor works properly when resizing the `iframe` editor and disabling the toolbar, preventing a script error on initial rendering.
+
+- `#I695002` - Now, the Rich Text Editor works properly when pasting content copied from Google Sheets.
+
+- `#I649583` - Now, the tooltip descriptions work properly when shortcut keys are displayed in a localized environment.
+
 ## 28.2.9 (2025-03-04)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I689382` - Now, the backspace functionality works correctly within the table after the mention chip.
+
+- `#I676899` -  Now, the background color functionality works properly when applied to pasted content in the Rich Text Editor.
+
+- `#I691820` - Now, the backspace functionality works properly when applied to indented bullet lists in the Rich Text Editor.
+
+- `#I692332` - Now, the `shift + enter` functionality works properly when applied after an image with `<br>` tag in the Rich Text Editor.
+
+- `#I691812` - Now, pressing the backspace key twice within the table does not remove the table in the Rich Text Editor.
+
+- `#I691805` - Now, the "Insert Row Before Header" option works properly by being disabled or removed when trying to insert a row above the header.
+
+- `#I691770` - Now, the Rich Text Editor works properly when inserting a link to an image via the quick toolbar, with validation applied to empty values and spaces in the web address field.
+
+- `#I691792` - Now, the Rich Text Editor works properly when using the Insert Link popup, removing the validation error when a valid web address is entered after an initial error.
+
+## 28.2.7 (2025-02-25)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I688646` - Now, the list will be removed when pressing backspace at the beginning of the text.
+
+- `#I688646` - Now, after applying a format using the `slash menu` in the Rich Text Editor, the toolbar updates correctly.
+
+- `#I688345` - Now, the cursor and backspace functionality work properly in the Rich Text Editor.
+
+- `#I687267` - Now, the screen reader works properly when navigating the color picker in the toolbar using the keyboard.
+
+## 28.2.6 (2025-02-18)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I685085` - Now, the Rich Text Editor works properly when pressing the backspace key within list elements, and the list structure no longer collapses.
+
+- `#I682872` - Now, pressing `Shift + Enter` after selecting a video will no longer create a duplicate video in the Rich Text Editor.
+
+- `#F195768` - Now, the font size will be preserved for numbered and bulleted lists in the Rich Text Editor.
+
+- `#F195933` - Now, the Add Table popup works properly when using two Rich Text Editors.
+
+## 28.2.5 (2025-02-11)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#F195633` - Now, the change event will trigger when `Cmd+Backspace` is performed on a Mac.
+
+- `#I687260` - Now, the issue with the toolbar action not being applied to the selected text in the Rich Text Editor when using keyboard actions in the Safari browser has now been resolved.
+
+## 28.2.4 (2025-02-04)
 
 ### RichTextEditor
 

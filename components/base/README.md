@@ -56,11 +56,8 @@ With our commitment to at least four major updates per year, you receive the mos
 
 The Essential<sup>®</sup> JS 2 is also offered in following list of frameworks.
 
-* [JavaScript](https://www.syncfusion.com/products/javascript?utm_source=npm&utm_campaign=ej2-react-base)
-* [Angular](https://www.syncfusion.com/products/angular?utm_source=npm&utm_campaign=ej2-react-base)
-* [Vue.js](https://www.syncfusion.com/products/vue?utm_source=npm&utm_campaign=ej2-react-base)
-* [ASP.NET Core](https://www.syncfusion.com/products/aspnetcore?utm_source=npm&utm_campaign=ej2-react-base)
-* [ASP.NET MVC](https://www.syncfusion.com/products/aspnetmvc?utm_source=npm&utm_campaign=ej2-react-base)
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/products/javascript?utm_source=npm&utm_campaign=ej2-react-base)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/products/javascript?utm_source=npm&utm_campaign=ej2-react-base)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular-new.svg"  height="50" />](https://www.syncfusion.com/products/angular?utm_source=npm&utm_campaign=ej2-react-base)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/products/angular?utm_source=npm&utm_campaign=ej2-react-base)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/products/vue?utm_source=npm&utm_campaign=ej2-react-base)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/products/vue?utm_source=npm&utm_campaign=ej2-react-base)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/products/aspnetcore?utm_source=npm&utm_campaign=ej2-react-base)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/products/aspnetcore?utm_source=npm&utm_campaign=ej2-react-base)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/products/aspnetmvc?utm_source=npm&utm_campaign=ej2-react-base)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/products/aspnetmvc?utm_source=npm&utm_campaign=ej2-react-base)&nbsp;&nbsp; | 
+| :-----: | :-----: | :-----: | :-----: | :-----: |
 
 ## Support
 

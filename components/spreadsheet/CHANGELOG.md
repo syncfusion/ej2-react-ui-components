@@ -2,16 +2,17 @@
 
 ## [Unreleased]
 
-## 28.2.9 (2025-03-04)
+## 28.2.11 (2025-03-11)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I691259` - Issue with "`CONCAT` formula is not working properly with the nested `TEXT` formula" has been resolved.
-- `#I691669`, `#I694143` - Issue with "list validation drop-down could not be opened when merged cells existed between frozen and unfrozen areas" has been resolved.
-- `#I691093` - Issue with "fraction-formatted values were incorrectly converted to number-formatted values" has been resolved.
-- `#I689450` - Issue with "hiding rows containing read-only cells using the `hideRow` method causing script error" has been resolved.
+- `#I690915` - Issue with "the formula cell range being incorrect while importing an Excel file containing a user-defined function" has been resolved.
+
+- `#I693750` - Issue with "formula not updating when using `updateCell` method in manual calculation mode" has been resolved.
+
+- `#I690893` - Issue with "the top borders are not updating properly in merged cells" has been resolved.
 
 ## 28.1.35 (2024-12-18)
 
@@ -1360,7 +1361,18 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.2.5 (2025-02-11)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.2.9 (2025-03-04)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I691259` - Issue with "`CONCAT` formula is not working properly with the nested `TEXT` formula" has been resolved.
+- `#I691669`, `#I694143` - Issue with "list validation drop-down could not be opened when merged cells existed between frozen and unfrozen areas" has been resolved.
+- `#I691093` - Issue with "fraction-formatted values were incorrectly converted to number-formatted values" has been resolved.
+- `#I689450` - Issue with "hiding rows containing read-only cells using the `hideRow` method causing script error" has been resolved.
+
+## 28.2.5 (2025-02-11)
 
 ### Spreadsheet
 
