@@ -2,13 +2,21 @@
 
 ## [Unreleased]
 
-## 28.2.12 (2025-03-19)
+## 29.1.33 (2025-03-25)
 
-### MultiSelect
+### DropDownTree
 
 #### Bug Fixes
 
-- `#I695096` - Fixed an issue where data was not displaying correctly during scrolling.
+- `#I694965` - Resolved an issue where the parent node check state was not maintained in nested data after filtering when Select All was used in the Dropdown Tree component.
+
+- `#I693819` - An issue with the select All checkbox in Dropdown Tree component when filtering is enabled and the tree contains disabled items has been resolved.
+
+### Mention
+
+#### New Features
+
+- `#I645793` - Now, the Mention component supports triggering the suggestion popup without requiring a leading space. When `requireLeadingSpace` is set to false, the popup appears as the mention character is typed continuously, enhancing flexibility in user input. By default, the suggestion popup appears only when there is a leading space before typing the mention character.
 
 ## 28.2.9 (2025-03-04)
 
@@ -65,12 +73,6 @@
 - `#I682127` - Resolved an issue where the checkbox state was not maintained properly during custom filtering operations in the Dropdown Tree component.
 
 - `#I682703`, `#I691872` - An Focusing issues in Dropdown Tree component when `showSelectAll` property is true has been resolved.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I661577` - Fixed an issue where the placeholder was not displayed after clearing the value.
 
 ## 28.2.5 (2025-02-11)
 
@@ -156,12 +158,6 @@
 
 - `#FB64462` - Resolved an issue where the `readonly` feature was not functioning correctly when integrating the Rich Text Editor with the mention functionality.
 
-### ComboBox
-
-#### Bug Fixes
-
-- `#I656124` - Fixed the issue where an empty popup appeared when manually opening and closing the popup in remote data.
-
 ## 28.1.38 (2025-01-07)
 
 ### DropDownTree
@@ -189,10 +185,6 @@
 #### Bug Fixes
 
 - `#I584660` - Fixed a console error that occurred when using the `getTextByValue` method without a dataset.
-
-- `#I661577` - Fixed the issue where the placeholder was not displayed after clearing the value.
-
-- `#I663752` - The issue where the "No records found" template was displayed when closing and opening the popup has been resolved.
 
 - `#I661577` - Fixed the issue where the placeholder was not displayed after clearing the value.
 

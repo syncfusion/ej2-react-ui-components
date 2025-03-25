@@ -31,7 +31,6 @@ export interface DefaultHtmlAttributes {
     form?: string;
     id?: string;
     name?: string;
-    role?: string;
     readOnly?: boolean;
     style?: React.CSSProperties;
     tabIndex?: number;

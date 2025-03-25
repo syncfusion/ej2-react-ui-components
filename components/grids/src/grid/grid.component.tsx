@@ -11,6 +11,7 @@ export interface GridTypecast {
     pagerTemplate?: string | Function | any;
     editSettings?: any;
     groupSettings?: any;
+    columnChooserSettings?: any;
 }
 /**
  * `GridComponent` represents the react Grid.
@@ -27,7 +28,7 @@ export class GridComponent extends Grid {
     private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'columns': {'column': {'stackedColumns': 'stackedColumn'}}, 'aggregates': {'aggregate': {'aggregateColumns': 'aggregateColumn'}}};
     private statelessTemplateProps: string[] = null;
-    private templateProps: string[] = ["template","headerTemplate","commandsTemplate","filter.itemTemplate","editTemplate","filterTemplate"];
+    private templateProps: string[] = ["template","headerTemplate","commandsTemplate","filter.itemTemplate","editTemplate","filterTemplate","columnChooserSettings.headerTemplate","columnChooserSettings.template","columnChooserSettings.footerTemplate"];
     private immediateRender: boolean = false;
     private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>

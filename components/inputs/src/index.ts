@@ -9,4 +9,5 @@ export * from './signature';
 export * from './rating';
 export * from './otp-input';
 export * from './smart-textarea';
+export * from './speech-to-text';
 export * from '@syncfusion/ej2-inputs';

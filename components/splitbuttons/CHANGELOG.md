@@ -2,14 +2,14 @@
 
 ## [Unreleased]
 
-## 28.2.12 (2025-03-19)
+## 29.1.33 (2025-03-25)
 
 ### DropDownButton
 
 #### Bug Fixes
 
-- Issue in "template not rendering in a function type in the React DropDownButton component" has been resolved.
-
+- `#F65779` - The issue with the "Split button click event trigger for dropdown arrow click and key down action of popup" has been resolved.
+  
 ## 28.1.33 (2024-12-12)
 
 ### DropDownButton

@@ -8,7 +8,19 @@
 
 ## [Unreleased]
 
-## 28.2.12 (2025-03-19)
+## 29.1.33 (2025-03-25)
+
+### Maps
+
+#### New Features
+
+- An animation transition will now occur when the data labels are first rendered.
+
+#### Bug Fixes
+
+- `#I493376` - The tooltip will now be displayed properly above the marker templates.
+
+## 28.2.9 (2025-03-04)
 
 ### Maps
 
@@ -22,50 +34,10 @@
 
 #### Bug fixes
 
-- `#I686420` - Now, the legend renders properly regardless of the letter casing of latitude and longitude.
-
-## 28.2.5 (2025-02-11)
-
-### Maps
-
-#### Bug fixes
-
 - `#I681991` - Now, the marker will not be translated for the maximum zoomed-out layers.
 - `#I686422` - Now, the marker cluster expands properly when clicked.
 
 ## 28.2.3 (2025-01-29)
-
-### Maps
-
-#### New features
-
-- `#I665480` - Now, the `location` property in `legendSettings` accepts percentage values for the `x` and `y` properties when the `position` property is set to **Float**, allowing the legend to be rendered relative to the Maps element.
-
-## 28.1.38 (2025-01-07)
-
-### Maps
-
-#### Bug fixes
-
-- `#I668862` - Markers will now render correctly at certain zoom levels when the `animationDuration` is enabled for layers in Maps.
-
-## 28.1.33 (2024-12-12)
-
-### Maps
-
-#### New features
-
-- `#I523666`, `#I613689` - Marker clusters can now be enabled for individual marker groups using the `clusterSettings` property in the `markerSettings` of the map layer. This allows you to apply customizations such as different colors, shapes, connector lines, and marker count labels to marker clusters in each group.
-
-## 27.1.56 (2024-10-23)
-
-### Maps
-
-#### Bug fixes
-
-- `#F194675` - The `panComplete` event is now functioning properly with online map providers.
-
-## 27.1.48 (2024-09-18)
 
 ### Maps
 

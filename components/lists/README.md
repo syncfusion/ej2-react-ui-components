@@ -4,7 +4,7 @@ The react listview component allows you to select an item or multiple items from
 
 ![ej2-react-lists](https://ej2.syncfusion.com/products/images/listview/readme.gif)
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/?utm_source=npm&utm_campaign=listview). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products/?utm_source=npm&utm_campaign=listview) or start a free 30-day trial [here](https://www.syncfusion.com/account/manage-trials/start-trials/?utm_source=npm&utm_campaign=listview).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/?utm_source=npm&utm_campaign=listview). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products/?utm_source=npm&utm_campaign=listview) or start a free 30-day trial [here](https://www.syncfusion.com/account/manage-trials/start-trials/?utm_source=npm&utm_campaign=listview).
 
 > A free [community license](https://www.syncfusion.com/products/communitylicense/?utm_source=npm&utm_campaign=listview) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
@@ -65,4 +65,4 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/lists/CHANGELOG.md/?utm_source=npm&utm_campaign=listview)
 
-© Copyright 2024 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.
+© Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

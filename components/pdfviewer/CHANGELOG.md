@@ -2,15 +2,21 @@
 
 ## [Unreleased]
 
-## 28.2.12 (2025-03-19)
+## 29.1.33 (2025-03-25)
 
 ### PDF Viewer
 
+#### New Features
+
+- Enhanced text search performance for large PDF documents.
+- Added support for asynchronously extracting and finding text using the `extractText` and `findTextAsync` APIs.
+- `#I645218` - Optimized memory usage when loading large PDF documents, with further enhancements available through the `ExtractTextOptions`.
+- `#I645354` - Added the `resourcesLoaded` event in PDF Viewer.
+
 #### Bug Fixes
 
-- `#I693186` - Now, the Angular change detection event does not trigger continuously while zooming.
 - `#I686925` - Now, the text search works correctly when searching for multiple words in Unicode text.
-- `#I689380` - Now, the File size will not increase when saving the document without making any changes.
+- `#I693186` - Now, the Angular change detection event does not trigger continuously while zooming.
 
 ## 28.2.11 (2025-03-11)
 
@@ -19,8 +25,8 @@
 #### Bug Fixes
 
 - `#I696432` - Now, the form fields no longer disappear when reloading the PDF document after a pinch zoom without the form designer module.
-- `#I695167` - Now, the custom data value is updated properly for non-rendered pages using the `updateFormField` API.
 - `#I695648` - Now, the exception did not occur when saving the provided document without scrolling.
+- `#I695167` - Now, the custom data value is updated properly for non-rendered pages using the `updateFormField` API.
 
 #### Breaking Changes
 
@@ -43,10 +49,16 @@
 
 #### Bug Fixes
 
+- `#I687949` - Now, the Exception will not occur while loading the customer provided document with form fields.
+- `#I688986` - Now, the form field bounds values are available in the `formFieldAdd` event.
 - `#I691472` - Now, the exception did not occur when trying to print the document without annotation modules.
+- Now, the script error did not occur when loading the document with modified toolbar settings.
+- `#I689173` - Now, the form field on the non-rendered page does not disappear after filling in the textbox field.
+
 - `#I687949` - Now, the Exception will not occur while loading the customer provided document with form fields.
 - `#I688986` - Now, the form field bounds values are available in the `formFieldAdd` event.
 - Now, the script error did not occur when loading the document with modified toolbar settings.
+- `#I691472` - Now, the exception did not occur when trying to print the document without annotation modules.
 - `#I689173` - Now, the form field on the non-rendered page does not disappear after filling in the textbox field.
 
 ## 28.2.6 (2025-02-18)
@@ -144,6 +156,11 @@
 - `#I551643`, `#I664728` - Now, the script error does not occur when importing the large annotations.
 - `#I663071` - Now, the `printStart` event is triggered when printing a PDF using the `Ctrl + P` shortcut.
 - `#I662257` - No script error occurs when loading the provided document and scrolling quickly to the end of the page.
+
+- `#I551643`, `#I664728` - Now, the script error does not occur when importing the large annotations.
+- `#I663071` - Now, the `printStart` event is triggered when printing a PDF using the `Ctrl + P` shortcut.
+- `#I662257` - No script error occurs when loading the provided document and scrolling quickly to the end of the page.
+- `#I659553` - Now, the text field background color appears as expected.
 
 ## 28.1.35 (2024-12-18)
 

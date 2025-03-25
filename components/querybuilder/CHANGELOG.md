@@ -2,12 +2,10 @@
 
 ## [Unreleased]
 
-## 28.1.35 (2024-12-18)
+## 29.1.33 (2025-03-25)
 
 ### QueryBuilder
 
-- `#I925175` - Issue with "Script error occurs when opening a multi-select `popup` with `dropdown` tree mode, supported by the data manager of the query builder" has been fixed.
-- `#I927733` - Issue with "Script error thrown while typing the number value in numeric textbox of query builder in angular" has been fixed.
 - `#I80058` - Issue with "String type between values not update properly in query builder rules" has been fixed.
 
 ## 28.1.33 (2024-12-12)

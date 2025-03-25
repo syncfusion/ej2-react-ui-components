@@ -2,31 +2,16 @@
 
 ## [Unreleased]
 
-## 28.2.12 (2025-03-19)
+## 29.1.33 (2025-03-25)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I690915` - Issue with "the formula cell range being incorrect while importing an Excel file containing a user-defined function" has been resolved.
+- This release improves usability and stability in Spreadsheet by addressing issues in Conditional Formatting, Editing, Notes, Autofit, Autofill, Protection, Undo/Redo, Filtering, Sorting, and Virtual Scrolling. Enhancements in Import/Export, Data Validation, Number and Cell Formatting, Wrap, Merge, Freeze Pane, and Read-Only Mode further optimize performance, security, and user experience.
 
-- `#I693750` - Issue with "formula not updating when using `updateCell` method in manual calculation mode" has been resolved.
-
-- `#I690893` - Issue with "the top borders are not updating properly in merged cells" has been resolved.
-
-## 28.1.35 (2024-12-18)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I647640` - Issue with "data got changed when multiple text-formatted values from Excel were pasted into Spreadsheet" has been resolved.
-
-- `#I657475` - Issue with "values in the editing cell element were not selected when clicking the retry option in the data validation dialog" has been resolved.
-
-- `#I660016` - Issue with "`autoFit()` method did not function as expected when a range was passed along with the sheet name" has been resolved.
-
-- `#I549016` - Issue with "visible rows are hidden when attempting to unhide rows located outside the viewport area" has been resolved.
+- `#I694402` - Issue with "exception occurred while saving the spreadsheet when a cell with a number format contained the value `NAN`" has been resolved.
+- `#I696164` - Issue with "export fails when the spreadsheet contains a custom-defined formula in custom data validation" has been resolved.
 
 ## 28.1.33 (2024-12-12)
 
@@ -1361,65 +1346,7 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.2.9 (2025-03-04)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I691259` - Issue with "`CONCAT` formula is not working properly with the nested `TEXT` formula" has been resolved.
-- `#I691669`, `#I694143` - Issue with "list validation drop-down could not be opened when merged cells existed between frozen and unfrozen areas" has been resolved.
-- `#I691093` - Issue with "fraction-formatted values were incorrectly converted to number-formatted values" has been resolved.
-- `#I689450` - Issue with "hiding rows containing read-only cells using the `hideRow` method causing script error" has been resolved.
-
-## 28.2.5 (2025-02-11)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I683923` - The issue with "column selection does not work properly when multiple columns are selected with a merged cell as the active cell" has been resolved.
-- `#I684489` - Issue with "formulas containing negative arithmetic expressions and nested structures resulted in an Incorrect number of arguments error" has been resolved.
-
-## 28.2.4 (2025-02-04)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I675147` -  Issue with "cell values were not properly aligned in the print window when text wrapping was enabled, and the alignment was set to right" has been resolved.
-
-- `#I677532` - Issue with "formulas containing defined names with underscore characters resulted in a #NAME? error" has been resolved.
-
-- `#F195846` - Issue with "font color was not updating properly when changing the value in a cell with a color code number format" has been resolved.
-
-## 28.1.41 (2025-01-21)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- Issue with "circular reference alert is not being displayed when two formulas refer to each other, creating a circular dependency" has been resolved.
-- `#F195667` - Issue with "`unsafe-eval` Content Security Policy (CSP) violation occurs while resizing columns or rows" has been resolved.
-- `#I675147` - Issue with "cell values are not displayed correctly during printing when the vertical alignment is set to `top`" has been resolved.
-
-## 28.1.39 (2024-01-14)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I667725` - Issue with "cell misalignment occurs when importing an Excel file that contains merged cells outside the viewport" has been resolved.
-
-## 28.1.37 (2024-12-31)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I664340` - Issue with "columns do not scroll when autofill the cell values by dragging to the left with frozen columns" has been resolved.
-
-## 21.1.39 (2023-04-11)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 21.1.39 (2023-04-11)
 
 ### Spreadsheet
 

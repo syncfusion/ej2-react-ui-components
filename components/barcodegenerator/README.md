@@ -32,9 +32,9 @@ cd my-app
 npm start
 ```
 
-### Adding Syncfusion<sup>®</sup> Barcode Generator package
+### Adding Syncfusion Barcode Generator package
 
-All Syncfusion<sup>®</sup> react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react barcode generator package, use the following command.
+All Syncfusion react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react barcode generator package, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-react-barcode-generator --save
@@ -42,7 +42,7 @@ npm install @syncfusion/ej2-react-barcode-generator --save
 
 ### Add Barcode component
 
-In the **src/App.tsx** file, use the following code snippet to render the Syncfusion<sup>®</sup> Barcode component
+In the **src/App.tsx** file, use the following code snippet to render the Syncfusion Barcode component
 
 ```typescript
 import { BarcodeGeneratorComponent } from '@syncfusion/ej2-react-barcode-generator';
@@ -109,10 +109,10 @@ Check the changelog [here](https://ej2.syncfusion.com/react/documentation/releas
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license) for more info.
 
-&copy; Copyright 2022 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.
+&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

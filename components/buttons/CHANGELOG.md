@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 29.1.33 (2025-03-25)
+
+### Chip
+
+#### Features
+
+- `#FB63852` - Provided drag-and-drop functionality to rearrange chips and move them between containers. To enable drag and drop, set `allowDragAndDrop` to true.
+
 ## 28.2.7 (2025-02-25)
 
 ### Button
