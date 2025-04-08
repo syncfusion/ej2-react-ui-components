@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 29.1.37 (2025-04-08)
+
+### Dashboard Layout
+
+#### Bug Fixes
+
+- `#I703775` - Resolved the console error when adding panels dynamically after performing a drag and drop action in the Dashboard Layout component.
+
 ## 29.1.35 (2025-04-01)
 
 ### Dashboard Layout

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 29.1.37 (2025-04-08)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I709572` - The spinner is incorrectly loading when performing zoom-in or zoom-out actions, even when `args.cancel` is set as true issue has been resolved.
+
 ## 29.1.35 (2025-04-01)
 
 ### GanttChart
