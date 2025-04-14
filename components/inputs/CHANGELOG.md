@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 29.1.38 (2025-04-15)
+
+### TextArea
+
+#### Bug Fixes
+
+`#I698848` - Fixed an issue where the width property was not functioning correctly in the textarea component.
+
 ## 29.1.33 (2025-03-25)
 
 ### SpeechToText

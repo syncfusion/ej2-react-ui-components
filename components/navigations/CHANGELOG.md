@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 29.1.38 (2025-04-15)
+
+### Carousel
+
+#### Bug Fixes
+
+- `#F196435` - Carousel `SwipeMode` property not working properly while enabling touch action and disabling mouse actions has been resolved
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I710659` - The issue with child nodes not loading when dropping a parent node in an external TreeView component has been resolved.
+
+### ContextMenu
+
+#### Bug Fixes
+
+- `#I707435` - Resolved an issue where the Context Menu component did not resize its height correctly.
+
 ## 29.1.37 (2025-04-08)
 
 ### Tab
