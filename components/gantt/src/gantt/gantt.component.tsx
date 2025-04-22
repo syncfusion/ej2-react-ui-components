@@ -8,6 +8,7 @@ export interface GanttTypecast {
     timelineTemplate?: string | Function | any;
     milestoneTemplate?: string | Function | any;
     taskbarTemplate?: string | Function | any;
+    editTemplate?: string | Function | any;
     labelSettings?: any;
     tooltipSettings?: any;
 }

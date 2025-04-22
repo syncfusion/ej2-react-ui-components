@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 29.1.38 (2025-04-15)
+## 29.1.39 (2025-04-22)
+
+### Dashboard Layout
+
+#### Bug Fixes
+
+- `#I654305` - Provided an additional argument in the `resizeStop` and `dragStop` events to predict the panels for which the positions were changed during resize and drag actions.
+
+## 29.1.37 (2025-04-08)
 
 ### Dashboard Layout
 

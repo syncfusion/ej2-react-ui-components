@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 29.1.38 (2025-04-15)
+## 29.1.39 (2025-04-22)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I707302` - Fixed a script error that occurred when attempting to render an empty rule within the complex data binding sample of the Query Builder.
+
+## 29.1.33 (2025-03-25)
 
 ### QueryBuilder
 

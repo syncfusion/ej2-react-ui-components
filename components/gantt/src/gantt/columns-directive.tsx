@@ -4,6 +4,7 @@ import { ColumnModel } from '@syncfusion/ej2-gantt';
 export interface ColumnDirTypecast {
     template?: string | Function | any;
     headerTemplate?: string | Function | any;
+    editTemplate?: string | Function | any;
 }
 /**
  * `ColumnDirective` represent a column of the react Gantt. 

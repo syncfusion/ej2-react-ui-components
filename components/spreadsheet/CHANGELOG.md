@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 29.1.39 (2025-04-22)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I700006` - Issue with "image left position changes when switching between sheets after importing" has been resolved.
+
+- `#I700338` - Issue with "image positioning not maintained during spreadsheet resizing" has been resolved.
+
 ## 29.1.37 (2025-04-08)
 
 ### Spreadsheet
