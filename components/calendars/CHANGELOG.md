@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 29.1.40 (2025-04-29)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#709169` - Fixed HTML accessibility errors and warnings in the popup component of the DateRangePicker.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I705395` - Fixed an issue where the DateTimePicker value was not updated correctly in the form data when using `ServerTimezoneOffset` during the initial rendering.
+
 ## 29.1.39 (2025-04-22)
 
 ### TimePicker

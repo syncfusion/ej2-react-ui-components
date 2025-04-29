@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 29.1.40 (2025-04-29)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I717013` - Issue with "space key is not working in spreadsheet cell when `enableKeyboardShortcut` is disabled" has been resolved.
+
 ## 29.1.39 (2025-04-22)
 
 ### Spreadsheet

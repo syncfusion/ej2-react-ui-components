@@ -1,0 +1,44 @@
+{
+	"name": "@syncfusion/ej2-react-inplace-editor",
+	"version": "29.1.33",
+	"description": "A package of Essential JS 2 Inplace editor components, which is used to edit and update the value dynamically in server. for React",
+	"author": "Syncfusion Inc.",
+	"license": "SEE LICENSE IN license",
+	"keywords": [
+		"react",
+		"react-inplace-editor",
+		"react-inplace-editor-component",
+		"ej2-react-inplace-editor"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/syncfusion/ej2-react-inplace-editor.git"
+	},
+	"main": "./dist/ej2-react-inplace-editor.umd.min.js",
+	"module": "./index.js",
+	"es2015": "dist/es6/ej2-react-inplace-editor.es2015.js",
+	"readme": "ReadMe.md",
+	"dependencies": {
+		"@syncfusion/ej2-base": "*",
+		"@syncfusion/ej2-react-base": "*",
+		"@syncfusion/ej2-inplace-editor": "*"
+	},
+	"devDependencies": {
+		"@types/chai": "3.5.2",
+		"@types/es6-promise": "0.0.33",
+		"@types/jasmine": "2.8.22",
+		"@types/jasmine-ajax": "3.3.5",
+		"@types/react": "16.4.7",
+		"@types/react-dom": "16.9.7",
+		"@types/requirejs": "2.1.37",
+		"es6-promise": "^3.2.1",
+		"gulp": "^3.9.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-typescript": "^3.1.6",
+		"requirejs": "^2.3.3",
+		"typescript": "2.3.4"
+	},
+	"scripts": {
+		"build": "gulp build"
+	}
+}
