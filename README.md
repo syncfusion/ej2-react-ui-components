@@ -994,7 +994,7 @@
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-layouts"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-layouts" title="@syncfusion/ej2-react-layouts" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-layouts"><img src="https://ej2.syncfusion.com/badges/ej2-layouts/coverage.svg" alt="code coverage of @syncfusion/ej2-react-layouts" title="@syncfusion/ej2-react-layouts" /></a>
        </td>
        <td>
-           <a href="src/layouts/styles/avatar">Styles</a>
+           <a href="https://github.com/syncfusion/ej2-react-ui-components/tree/master/components/layouts/styles/avatar">Styles</a>
        </td>
        <td>
            <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/avatar/default">Live demo</a>
@@ -1008,7 +1008,7 @@
            <a href="https://www.syncfusion.com/react-ui-components/react-card"><b>Card</b></a>
        </td>
        <td>
-           <a href="src/layouts/styles/card">Styles</a>
+           <a href="https://github.com/syncfusion/ej2-react-ui-components/tree/master/components/layouts/styles/card">Styles</a>
        </td>
        <td>
            <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/card/basic">Live demo</a>
@@ -1106,7 +1106,7 @@
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-notifications"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-notifications" title="@syncfusion/ej2-react-notifications" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-notifications"><img src="https://ej2.syncfusion.com/badges/ej2-notifications/coverage.svg" alt="code coverage of @syncfusion/ej2-react-notifications" title="@syncfusion/ej2-react-notifications" /></a>
        </td>
        <td>
-           <a href="src/notifications/styles/badge">Styles</a>
+           <a href="https://github.com/syncfusion/ej2-react-ui-components/tree/master/components/notifications/styles/badge">Styles</a>
        </td>
        <td>
            <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/badge/default">Live demo</a>
