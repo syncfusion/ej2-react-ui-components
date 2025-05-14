@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 29.2.4 (2025-05-14)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I709663` - Issue with "right border of the cells are not rendered properly in the merged cells" has been resolved.
+
 ## 29.1.41 (2025-05-06)
 
 ### Spreadsheet
