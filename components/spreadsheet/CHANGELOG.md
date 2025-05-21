@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 29.2.4 (2025-05-14)
+## 29.2.5 (2025-05-21)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I709663` - Issue with "right border of the cells are not rendered properly in the merged cells" has been resolved.
+- `#I723285` - Issue with "formula result not updated during editing when selecting more than 100 cells as formula range" has been resolved.
 
 ## 29.1.41 (2025-05-06)
 
@@ -1393,7 +1393,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 29.1.40 (2025-04-29)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 29.2.4 (2025-05-14)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I709663` - Issue with "right border of the cells are not rendered properly in the merged cells" has been resolved.
+
+## 29.1.40 (2025-04-29)
 
 ### Spreadsheet
 

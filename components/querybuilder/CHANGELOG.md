@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 29.2.4 (2025-05-14)
+## 29.2.5 (2025-05-21)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I717768` -  Resolved an issue where a child group was incorrectly converted to a condition when the parent group's condition was changed to "OR".
+- `#I720928` - Resolved an issue where a setRulesFromSql fails on Valid SQL Syntax Without Parentheses in LIKE Clause.
+
+## 29.1.41 (2025-05-06)
 
 ### QueryBuilder
 
