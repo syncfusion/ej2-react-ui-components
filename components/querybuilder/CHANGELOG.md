@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 29.2.7 (2025-05-27)
+## 29.2.8 (2025-06-03)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I723782` - Enhanced the query builder to display in a vertical orientation on tablet devices, similar to the mobile device mode.
+- `#I720928` - Resolved an issue where a setRulesFromSql fails on Valid SQL Syntax Without Parentheses in LIKE Clause.
+
+## 29.2.5 (2025-05-21)
 
 ### QueryBuilder
 

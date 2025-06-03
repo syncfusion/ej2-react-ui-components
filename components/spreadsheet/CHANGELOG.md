@@ -2,13 +2,15 @@
 
 ## [Unreleased]
 
-## 29.2.7 (2025-05-27)
+## 29.2.8 (2025-06-03)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I723285` - Issue with "formula result not updated during editing when selecting more than 100 cells as formula range" has been resolved.
+- `#I714036` - Issue with "custom data validation formula containing double quotes with cell reference is altered unexpectedly" has been resolved.
+
+- `#I725284` - Issue with "chart design properties not updating correctly when switching between different charts" has been resolved.
 
 ## 29.1.41 (2025-05-06)
 
@@ -1393,7 +1395,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 29.2.4 (2025-05-14)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 29.2.5 (2025-05-21)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I723285` - Issue with "formula result not updated during editing when selecting more than 100 cells as formula range" has been resolved.
+
+## 29.2.4 (2025-05-14)
 
 ### Spreadsheet
 
