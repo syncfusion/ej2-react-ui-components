@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 29.2.10 (2025-06-10)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I720928` - Fixed an issue related to W3C validation errors in markup, specifically addressing the use of the attribute `aria-label`, which was not permitted on the SPAN element at that location.
+
 ## 29.2.8 (2025-06-03)
 
 ### QueryBuilder
