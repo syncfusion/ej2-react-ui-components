@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 29.2.11 (2025-06-17)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I731138` - Fixed an issue where the MultiSelect Checkbox would unintentionally select all options when navigating with the keyboard after interacting with the `SelectAll` feature.
+
 ## 29.2.10 (2025-06-10)
 
 ### MultiSelect
