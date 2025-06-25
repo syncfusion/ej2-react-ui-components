@@ -2,54 +2,19 @@
 
 ## [Unreleased]
 
-## 29.2.8 (2025-06-03)
+## 30.1.37 (2025-06-25)
 
 ### Spreadsheet
 
-#### Bug fixes
+#### Features
 
-- `#I714036` - Issue with "custom data validation formula containing double quotes with cell reference is altered unexpectedly" has been resolved.
-
-- `#I725284` - Issue with "chart design properties not updating correctly when switching between different charts" has been resolved.
-
-## 29.1.41 (2025-05-06)
-
-### Spreadsheet
+- **Improved Excel import performance:** Added support to skip styles and formats during Excel file import using the server-side library. This optimization reduces the generated JSON size and significantly improves rendering speed, especially for large or style-heavy Excel files.
 
 #### Bug fixes
 
-- `#I714036` - Issue with "custom data validation formula is not retained as entered when the formula contains `?`" has been resolved.
-- `#I709078` - Issue with "double quotes not parsed correctly in nested formulas using & for string concatenation" has been resolved.
+- `#I733762` - Issue with "`IF` formula with string values being mistakenly considered as date values and returning the wrong result" has been resolved.
 
-- `#I706866` - Issue with "exception occurring while importing an Excel file containing an external reference and a custom function in a defined name" has been resolved.
-
-## 29.1.39 (2025-04-22)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I700006` - Issue with "image left position changes when switching between sheets after importing" has been resolved.
-
-- `#I700338` - Issue with "image positioning not maintained during spreadsheet resizing" has been resolved.
-
-## 29.1.37 (2025-04-08)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I700006` - Issue with "images missing or being misplaced when importing an Excel file into the Spreadsheet" has been resolved.
-
-## 29.1.35 (2025-04-01)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I696599` - Issue with "spreadsheet becomes unresponsive when switching to a sheet with table-referenced formulas" has been resolved.
-
-- `#I701855` - Issue with "column selection failed after vertical scrolling in a sheet with frozen rows" has been resolved.
+- `#I730658` - Issue with "dependent formula results were updated in the wrong cells" has been resolved.
 
 ## 29.1.33 (2025-03-25)
 
@@ -1395,31 +1360,7 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 29.2.5 (2025-05-21)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I723285` - Issue with "formula result not updated during editing when selecting more than 100 cells as formula range" has been resolved.
-
-## 29.2.4 (2025-05-14)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I709663` - Issue with "right border of the cells are not rendered properly in the merged cells" has been resolved.
-
-## 29.1.40 (2025-04-29)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I717013` - Issue with "space key is not working in spreadsheet cell when `enableKeyboardShortcut` is disabled" has been resolved.
-
-## 21.1.39 (2023-04-11)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 21.1.39 (2023-04-11)
 
 ### Spreadsheet
 

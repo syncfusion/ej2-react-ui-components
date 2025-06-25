@@ -8,6 +8,22 @@
 
 ## [Unreleased]
 
+## 30.1.37 (2025-06-25)
+
+### Maps
+
+#### Bug fixes
+
+- `#I695421` - The data label will render correctly when binds to the specified label Path.
+
+#### New Features
+
+- An animation transition will now occur when the data labels are first rendered.
+
+#### Bug Fixes
+
+- `#I493376` - The tooltip will now be displayed properly above the marker templates.
+
 ## 28.2.9 (2025-03-04)
 
 ### Maps
@@ -542,15 +558,4 @@ The Maps control is used to visualize the geographical data. It is used to repre
 - **Data Labels** - Supports data label to provide additional information about the shapes.
 - **Navigation Lines** - Lines can be rendered between various points in map.
 - **Annotations** - Supports placing any HTML element on desired location in the map.
-- **User interaction** - Supports interactive features like zooming, panning, tooltip, highlight, selection and interactive legend.## 29.1.33 (2025-03-25)
-
-### Maps
-
-#### New Features
-
-- An animation transition will now occur when the data labels are first rendered.
-
-#### Bug Fixes
-
-- `#I493376` - The tooltip will now be displayed properly above the marker templates.
-
+- **User interaction** - Supports interactive features like zooming, panning, tooltip, highlight, selection and interactive legend.

@@ -2,13 +2,19 @@
 
 ## [Unreleased]
 
-## 29.2.11 (2025-06-17)
+## 30.1.37 (2025-06-25)
 
 ### Chart
 
 #### Bug Fixes
 
 - `#I730840` - Now, the column with single point renders properly on date time category axis.
+
+### Stock Chart
+
+#### Feature
+
+- Added support to highlight the last value of the series with a label and grid line indicator, offering a clear and immediate reference point for the series endpoint. Explore the demo [here](https://ej2.syncfusion.com/demos/#/tailwind3/stock-chart/spline.html)
 
 ## 29.2.10 (2025-06-10)
 
