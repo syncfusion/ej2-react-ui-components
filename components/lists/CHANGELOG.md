@@ -4,14 +4,6 @@
 
 ## 30.1.37 (2025-06-25)
 
-### ListBox
-
-#### Bug Fixes
-
-- `#I634319` - The issue with incorrect index values in the ListBox component during drag and drop from bottom to top position has been resolved.
-
-## 29.1.33 (2025-03-25)
-
 ### ListView
 
 #### Bug Fixes

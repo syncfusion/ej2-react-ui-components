@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 30.1.38 (2025-07-02)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I735984` - Issue with "multiple empty cell values appearing as options in list validation drop-down when using a formula-based range" has been resolved.
+
+- `#I736615` - Issue with "spreadsheet freezing during calculation of formulas involving a negative sign combined with the power operator" has been resolved.
+
 ## 30.1.37 (2025-06-25)
 
 ### Spreadsheet

@@ -8,13 +8,135 @@
 
 #### Bug Fixes
 
-- `#I697590` - An issue where the tab content is not rendered in `init` mode when enabling persistence has been fixed.
+- `#F733919` - The issue with the context menu popup does not open when we press `Shift+F10` key has been resolved.
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#I731032` - An issue where focus moved to a disabled item in the toolbar popup when pressing the down arrow key has been fixed.
 
 ### Treeview
 
 #### Bug Fixes
 
 - `#I730143` - The flickering issue on animation due to height calculation while expanding a node in TreeView has been resolved.
+
+## 29.2.8 (2025-06-03)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I717262` - The issue with `hideTab` not working correctly in mobile (popup) mode of the Tab component has been resolved.
+
+- `#I696042` - The issue with the `ActiveTab` is not set properly in the mobile mode of the Tab component has been resolved.
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#I705994` - The issue with the tooltip and click handling, which occurred when hovering over the toolbar item instead of the button has been resolved.
+
+- `#I727011` - The issue with the Height difference when buttons are inserted inside toolbar has been resolved.
+
+### ContextMenu
+
+#### Bug Fixes
+
+- `#I715938` - Resolved an issue in the Context Menu component where the scrollbar was not added when menu items were changed dynamically, and unwanted spacing was being added to the element.
+
+## 29.2.5 (2025-05-21)
+
+### ContextMenu
+
+#### Bug Fixes
+
+- `#I725006` - The issue where the ID attribute was missing when template support was enabled in the Context Menu component has been resolved.
+
+- `#I725680` - The issue where item in arguments of the select event was undefined when template support was enabled in the Context Menu component has been resolved.
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I712180` - Enhanced the node selection behaviour in the TreeView component by introducing a new property `checkOnClick`, which provides control over node interaction and helps prevent unintended actions during user interactions.
+
+## 29.2.4 (2025-05-14)
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#I719724` - The issue with toolbar items being incorrectly ordered when `overflowMode` is set to `Extended` mode has been resolved.
+
+## 29.1.40 (2025-04-29)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I700929` - The issue that occurred when closing the Tab using the close icon with the `headerPlacement` set to `Bottom` has been fixed.
+
+### ContextMenu
+
+#### Bug Fixes
+
+- `#I715484` - Resolved the collision issue with submenu of the Context Menu component.
+
+## 29.1.38 (2025-04-15)
+
+### Carousel
+
+#### Bug Fixes
+
+- `#F196435` - Carousel `SwipeMode` property not working properly while enabling touch action and disabling mouse actions has been resolved
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I710659` - The issue with child nodes not loading when dropping a parent node in an external TreeView component has been resolved.
+
+### ContextMenu
+
+#### Bug Fixes
+
+- `#I707435` - Resolved an issue where the Context Menu component did not resize its height correctly.
+
+## 29.1.37 (2025-04-08)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I703472` - The issue with misalignment of the tab header text and close icon in Tailwind 3 and Fluent 2 themes has been resolved.
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#I705438` - An issue where focus was maintained on a disabled toolbar item has been fixed.
+
+## 29.1.33 (2025-03-25)
+
+### Menu
+
+#### Bug Fixes
+
+- `#I695706` - The accessibility violation issue encountered when opening the submenu of the menu component has been resolved.
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#I689782` - An issue with the toolbar focus style not being applied in Tailwind 3 and Fluent 2 themes while using keyboard navigation in the Mac Safari browser has been resolved.
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I694965` - Resolved an issue where the parent node check state was not maintained in nested data after filtering when Select All was used in the `DropdownTree` component.
 
 ## 28.2.11 (2025-03-11)
 

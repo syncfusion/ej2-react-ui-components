@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.1.38 (2025-07-02)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I731243` - Resolved the issue causing a mismatch between the displayed value in the UI and the form model in the NumericTextBox when decimals were pasted.
+
 ## 30.1.37 (2025-06-25)
 
 ### ColorPicker

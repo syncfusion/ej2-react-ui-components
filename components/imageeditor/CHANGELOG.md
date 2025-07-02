@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.1.38 (2025-07-02)
+
+### Image Editor
+
+#### Bug Fixes
+
+- `#I736512` - The issue with "Aspect ratio selection not being maintained during bottom edge resize of the crop selection in the Image Editor" has been resolved.
+
 ## 30.1.37 (2025-06-25)
 
 ### Image Editor
