@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 30.1.39 (2025-07-08)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I732921` - Resolved the issue of node dimension changes when dragging multiple selected nodes.
+- `#I739052` - Undo now works correctly for connectors without a target id.
+
 ## 30.1.38 (2025-07-02)
 
 ### Diagram

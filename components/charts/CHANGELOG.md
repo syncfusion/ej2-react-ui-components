@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.1.39 (2025-07-08)
+
+### Chart
+
+#### Feature
+
+- `#I653358` - Provided support for DateTime value type on the primary Y-axis.
+
 ## 30.1.37 (2025-06-25)
 
 ### Chart

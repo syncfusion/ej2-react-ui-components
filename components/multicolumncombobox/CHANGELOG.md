@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.1.39 (2025-07-08)
+
+### MultiColumn ComboBox
+
+#### Bug Fixes
+
+- `#I720762` - Resolved an issue with the Multi-Column ComboBox related to DataManagerRequest and improved the filtering behavior.
+
 ## 27.1.48 (2024-09-18)
 
 ### MultiColumn ComboBox
