@@ -2,15 +2,14 @@
 
 ## [Unreleased]
 
-## 30.1.39 (2025-07-08)
+## 30.1.40 (2025-07-15)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I737366` - Issue with "script error occurs when editing a cell with fast typing using the tab key in spreadsheet" has been resolved.
-- `#I734277` - Issue with "`#NAME?` error occurring when the `IFERROR` formula is used with an unidentified custom function" has been resolved.
-- `#I738184` - Issue with "text indent style not being properly updated in the exported Excel file" has been resolved.
+- `#I738445` - Issue with "`hideRow` method fails to unhide the rows beyond viewport in spreadsheet" has been resolved.
+- `#I738304` - Issue with "nested formulas in list validation throws `#REF` error while importing the excel file" has been resolved.
 
 ## 30.1.37 (2025-06-25)
 
@@ -1370,7 +1369,17 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 30.1.38 (2025-07-02)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 30.1.39 (2025-07-08)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I737366` - Issue with "script error occurs when editing a cell with fast typing using the tab key in spreadsheet" has been resolved.
+- `#I734277` - Issue with "`#NAME?` error occurring when the `IFERROR` formula is used with an unidentified custom function" has been resolved.
+- `#I738184` - Issue with "text indent style not being properly updated in the exported Excel file" has been resolved.
+
+## 30.1.38 (2025-07-02)
 
 ### Spreadsheet
 

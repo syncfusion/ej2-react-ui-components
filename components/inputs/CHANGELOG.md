@@ -2,15 +2,13 @@
 
 ## [Unreleased]
 
-## 30.1.39 (2025-07-08)
+## 30.1.40 (2025-07-15)
 
-### NumericTextBox
+### Textbox
 
 #### Bug Fixes
 
-- `#I731243` - Resolved the issue causing a mismatch between the displayed value in the UI and the form model in the NumericTextBox when decimals were pasted.
-
-## 30.1.37 (2025-06-25)
+- `#I732408` - Fixed the issue where the placeholder value did not update when setting the value with double quotes in the textbox.
 
 ### ColorPicker
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.1.40 (2025-07-15)
+
+### MultiColumn ComboBox
+
+#### Bug Fixes
+
+- `#I740434` - Resolved an issue with Multiple request has been sent for Multi-Column ComboBox when remote data is bind.
+
 ## 30.1.39 (2025-07-08)
 
 ### MultiColumn ComboBox
