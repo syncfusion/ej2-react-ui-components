@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 30.1.41 (2025-07-22)
+
+### Breadcrumb
+
+#### Bug Fixes
+
+- `#I741569` - Fixed an issue where UI did not reflect updates to the items list when using the maxItems property in the Breadcrumb component.
+
+### Tab
+
+#### Bug Fixes
+
+- `#I733289` - Resolved a console error that occurred when switching between large header tab items in popup mode.
+
+### ContextMenu
+
+#### Bug Fixes
+
+- `#I744139` - Resolved an issue where the Context Menu closed during quick hover actions over submenu items.
+
 ## 30.1.39 (2025-07-08)
 
 ### ContextMenu

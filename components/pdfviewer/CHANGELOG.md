@@ -2,13 +2,23 @@
 
 ## [Unreleased]
 
+## 30.1.41 (2025-07-22)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I744124` - Resolved an issue where the context menu is not proper with nested custom context menu items.
+- `#I738912` - Resolved an issue where the signature and initial field indicators were cut off at lower zoom levels.
+- `#I729371` - Resolved an issue where a script error occurred when adding a comment after programmatically editing the annotation author.
+
 ## 30.1.40 (2025-07-15)
 
 ### PDF Viewer
 
 #### Bug Fixes
 
-- `I743298` - Resolved an issue where the `findText` bounds are not proper for the different line sentence.
+- `#I743298` - Resolved an issue where the `findText` bounds are not proper for the different line sentence.
 
 ## 30.1.39 (2025-07-08)
 

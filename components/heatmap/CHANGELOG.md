@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 30.1.40 (2025-07-15)
+## 30.1.41 (2025-07-22)
+
+### HeatMap
+
+#### Bug fixes
+
+- `#I744075` - Now, the heat map component renders the series for any number of data sources.
+
+## 30.1.37 (2025-06-25)
 
 ### HeatMap
 

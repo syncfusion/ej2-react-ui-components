@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 30.1.41 (2025-07-22)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I743241` - Improved performance when dragging group nodes containing multiple child nodes.
+- `#I742692` - Resolved diagram flickering issue during panning.
+- `#I742819` - Fixed connector overlapping issue in complex hierarchical tree.
+- `#I743248` - The CollectionChange event now provides arguments to notify copy and paste actions, enabling proper tracking and handling of these operations.
+
 ## 30.1.40 (2025-07-15)
 
 ### Diagram
