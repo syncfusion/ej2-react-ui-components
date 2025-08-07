@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 30.2.4 (2025-08-07)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+- `#I739494` - Resolved the document content is missing issue.
+- `#I738922` - Resolved the data loss issue in web layout.
+- `#I745777` - Resolved the document content is missing issue.
+
 ## 30.1.42 (2025-07-29)
 
 ### DocumentEditor
@@ -17,6 +27,12 @@
 - `#I741247` - Resolved an application crash issue when opening a `.txt` file.
 - `#I744394` - Fixed a script error in documents opened in protection mode.
 - `#I744057` - Modified the Dialog content when closing the comments panel
+
+- `#I737518` - Handled Ms Word behaviour when styles are duplicated in a document
+- `#I744551` - Resolved the performance issue in Ribbon mode when press and hold key
+- `#I741625` - Resolved parsing issue when field type splits into multiple paragraphs
+- `#I734726` - Resolved table layout issue when document contains both floating and normal tables
+- `#I743853` - Resolved the paragraph styles are not properly visible in Ribbon UI
 
 ## 30.1.40 (2025-07-15)
 
@@ -4612,4 +4628,19 @@ The Document Editor component is used to create, edit, view, and print Word docu
 - Allows user interactions like zoom, scroll, select contents through touch, mouse, and keyboard.
 - Provides intuitive UI options like context menu, dialogs, and navigation pane.
 - Creates a lightweight Word viewer using module injection to view and prints Word documents.
-- Added `Syncfusion.EJ2.DocumentEditor` NuGet package that contains helper library for converting Word documents to `Syncfusion Document Text (*.sfdt)`. It supports .NET Standard 2.0 Framework.
+- Added `Syncfusion.EJ2.DocumentEditor` NuGet package that contains helper library for converting Word documents to `Syncfusion Document Text (*.sfdt)`. It supports .NET Standard 2.0 Framework.## 30.1.41 (2025-07-22)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+- `#I734726` - Fixed table layout issues when documents contain multiple floating tables.
+- `#I702538` - Enhanced performance when editing large documents with editable regions.
+- `#I737779` - Fixed an issue where Undo did not work correctly with bookmark elements.
+- `#I742694` - Corrected layout problems in Hebrew right to left documents containing form fields.
+- `#I740631` - Resolved a script error that occurred when pasting a table row containing bookmarks inside a cell.
+- `#I743329` - Fixed browser freezing when performing the `Accept` action in Track Changes mode.
+- `#I741247` - Resolved an application crash issue when opening a `.txt` file.
+- `#I744394` - Fixed a script error in documents opened in protection mode.
+- `#I744057` - Modified the Dialog content when closing the comments panel
+

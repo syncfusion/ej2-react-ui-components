@@ -2,14 +2,19 @@
 
 ## [Unreleased]
 
-## 30.1.42 (2025-07-29)
+## 30.2.4 (2025-08-07)
 
 ### Spreadsheet
 
+#### Features
+
+- `#I706975` - Now, interpolation support has been introduced for charts that reference date values, providing behaviour similar to Microsoft Excel.
+
+- `#I681626`, `#I744389` - Now, you can apply cell styles and perform aggregate formula calculations on discontinuous range selections in the Spreadsheet.
+
 #### Bug fixes
 
-- `#I738445` - Issue with "`hideRow` method fails to unhide the rows beyond viewport in spreadsheet" has been resolved.
-- `#I738304` - Issue with "nested formulas in list validation throws `#REF` error while importing the excel file" has been resolved.
+- `#I747371` - Issue with "extra blank line was added when copying and pasting text from an external source" has been resolved.
 
 ## 30.1.37 (2025-06-25)
 
@@ -1369,7 +1374,25 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 30.1.39 (2025-07-08)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 30.1.42 (2025-07-29)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I741599` - Issue with "incorrect time value being displayed in the formatted text when applying a custom date-time format" has been resolved.
+- `#I734260` - Issue with "filter value being incorrectly parsed when applying a custom filter with the `notequal` operator" has been resolved.
+
+## 30.1.40 (2025-07-15)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I738445` - Issue with "`hideRow` method fails to unhide the rows beyond viewport in spreadsheet" has been resolved.
+- `#I738304` - Issue with "nested formulas in list validation throws `#REF` error while importing the excel file" has been resolved.
+
+## 30.1.39 (2025-07-08)
 
 ### Spreadsheet
 

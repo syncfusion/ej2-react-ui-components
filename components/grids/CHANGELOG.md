@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.2.4 (2025-08-07)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I747642` - The issue where the `ResizeStop` event failed to trigger during rapid column resizing has been resolved.
+
 ## 30.1.42 (2025-07-29)
 
 ### Grid

@@ -2,13 +2,51 @@
 
 ## [Unreleased]
 
-## 30.1.40 (2025-07-15)
+## 30.2.4 (2025-08-07)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#I749286` - Fixed an issue where the numeric keypad `0` was not triggering the listbox filtering.
 
 ### MultiSelect
 
 #### Bug fixes
 
+- `#I732425` - Fixed an issue where the `actionComplete` event was being triggered twice when the `allowCustomValue` property was enabled.
+
 - `#I732169` - Fixed an issue where focus was not applied to the custom value when the Sort Order property was enabled.
+
+#### Bug Fixes
+
+- `#I745180` - Fixed an issue where the MultiSelect component did not scroll to the top after programmatically clearing its value when virtualization was enabled.
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#I747869` - Fixed an issue where the selected value would be removed when the Escape key was pressed while the popup was open.
+
+## 30.1.42 (2025-07-29)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I729862` - Fixed an issue where enabling virtualization caused the scrollbar to unexpectedly jump back to the top when scrolling to the bottom of the list.
+
+## 30.1.40 (2025-07-15)
+
+### DropDownTree
+
+#### Bug fixes
+
+- `#I744501` - Dropdown Tree opening issue in the Firefox browser has been Resolved.
+
+### MultiSelect
+
+#### Bug fixes
 
 - `#I714583` - Fixed an issue where the value was not updating dynamically when using `groupTemplate`.
 
@@ -2254,7 +2292,21 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 29.1.33 (2025-03-25)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 29.1.41 (2025-05-06)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I728371` - Fixed an issue where the value was not being cleared correctly when removed dynamically via a button click.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I707526` - Fixed an issue where the selected value was displayed twice within the popup when using virtualization.
+
+## 29.1.33 (2025-03-25)
 
 ### Mention
 

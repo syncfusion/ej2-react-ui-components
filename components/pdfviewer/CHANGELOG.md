@@ -2,7 +2,24 @@
 
 ## [Unreleased]
 
+## 30.2.4 (2025-08-07)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I743981` - Resolved an issue where worker memory increased when loading the PDF document continuously.
+- `#I749027` - Resolved an issue where the script error occurred when downloading the customer provided document.
+
 ## 30.1.42 (2025-07-29)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I741878` - Enhanced performance of the `findText` and `deleteAnnotations` methods.
+
+## 30.1.41 (2025-07-22)
 
 ### PDF Viewer
 

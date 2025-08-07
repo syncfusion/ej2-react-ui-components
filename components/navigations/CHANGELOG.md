@@ -4,6 +4,12 @@
 
 ## 30.1.42 (2025-07-29)
 
+### Stepper
+
+#### Bug Fixes
+
+- `#FB68847` - An issue where null value is not assignable to isValid property in the stepper component has been resolved..
+
 ### Breadcrumb
 
 #### Bug Fixes
@@ -15,6 +21,7 @@
 #### Bug Fixes
 
 - `#I733289` - Resolved a console error that occurred when switching between large header tab items in popup mode.
+- `#I746796` - An issue where the toolbar popup does not close when clicked outside the popup has been fixed.
 
 ### ContextMenu
 
