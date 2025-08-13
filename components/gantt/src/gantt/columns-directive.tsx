@@ -5,6 +5,8 @@ export interface ColumnDirTypecast {
     template?: string | Function | any;
     headerTemplate?: string | Function | any;
     editTemplate?: string | Function | any;
+    filter?: any;
+    filterTemplate?: string | Function | any;
 }
 /**
  * `ColumnDirective` represent a column of the react Gantt. 
@@ -20,6 +22,7 @@ export interface ColumnDirTypecast {
  */
 export class ColumnDirective extends ComplexBase<ColumnModel| ColumnDirTypecast & { children?: React.ReactNode }, ColumnModel| ColumnDirTypecast> {
     public static moduleName: string = 'column';
+    public static complexTemplate: Object = {'filter.itemTemplate': 'filter.itemTemplate'};
 }
 
 export class ColumnsDirective extends ComplexBase<{}, {}> {

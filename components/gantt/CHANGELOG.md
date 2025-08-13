@@ -2,7 +2,42 @@
 
 ## [Unreleased]
 
+## 30.2.5 (2025-08-13)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I750331` - Fixed an issue where label customization using the `pdfQueryTaskbarInfo` event was not working properly.
+- `#I745469` - Resolved a white space issue that occurred while scrolling up and down at the bottom of the Tree Grid side.
+
 ## 30.2.4 (2025-08-07)
+
+### GanttChart
+
+#### Feature
+
+- `#I705390`, `#I665780` - Improved the Gantt chart's baseline functionality by adding support for `baselineDuration` data mapping, alongside the `baselineStartDate` and `baselineEndDate` properties. These enhancements make it easier to configure baseline milestones.
+
+#### Bug fix
+
+- `#I746805` - Fixed blank spaces and missing rows during scroll with timeline virtualization in Gantt Chart.
+
+## 30.1.42 (2025-07-29)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I745434` - Taskbar rendering is mismatched between UI and pdf export while using split task issue has been resolved.
+- `#I732347` - Spinner is not shown when editing a cell issue has been resolved.
+- `#I751091` - Disabling `allowEditing` property for custom columns does not work issue has been resolved.
+
+- `#F197011` - Fixed an issue where collapsed parent tasks automatically expanded during drag-and-drop in the `multitaskbar` feature, ensuring they remain collapsed as intended.
+- `#I744105` - Console error occurs while refresh the component with toolbar template issue has been resolved.
+- `#I744544` - Fixed incorrect parent taskbar rendering by ensuring child tasks update before parent during dependency has been resolved.
+
+## 30.1.41 (2025-07-08)
 
 ### GanttChart
 
@@ -13,10 +48,6 @@
 - `#I744544` - Fixed incorrect parent taskbar rendering by ensuring child tasks update before parent during dependency has been resolved.
 - `#I746332` - Console error occurs when refresh action is performed in Gantt followed by toolbar add action issue has been resolved.
 - `#I748609` - The issue where the `actionBegin` event was not triggered during the save operation following cell editing has been successfully resolved.
-
-- `#F197011` - Fixed an issue where collapsed parent tasks automatically expanded during drag-and-drop in the `multitaskbar` feature, ensuring they remain collapsed as intended.
-- `#I744105` - Console error occurs while refresh the component with toolbar template issue has been resolved.
-- `#I744544` - Fixed incorrect parent taskbar rendering by ensuring child tasks update before parent during dependency has been resolved.
 
 ## 30.1.39 (2025-07-08)
 

@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 30.2.5 (2025-08-13)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I747378` - Resolved an issue where custom fonts were not properly applied to form fields when reloading the PDF document.
+- `#I747633` - Resolved an issue where the script error occurs when saving PDF after adding rectangle annotation with zero height and zero width.
+- `#I751778` - Resolved an issue where the annotations in non-rendered pages are not deleting properly when deleted using `deleteAnnotationById` method.
+- `#I750004` - Resolved an issue where annotations are duplicated on non-rendered pages when importing the annotations.
+
 ## 30.2.4 (2025-08-07)
 
 ### PDF Viewer
@@ -182,6 +193,7 @@
 - `#I704004` - The `ajaxRequestSuccess` event is triggered properly after the download action is completed.
 - `#I701556` - The image signature in the signature/initial field is preserved correctly when printing the document.
 - `#I702570` - The form fields on non-rendered pages are now visible when printing the document.
+- `#I705546` - The form field position is updated correctly for non-rendered pages using the `updateFormField` method.
 
 ## 29.1.37 (2025-04-08)
 

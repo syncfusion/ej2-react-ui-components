@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 30.2.5 (2025-08-13)
+
+### Treeview
+
+#### Bug Fixes
+
+- `#I743651` - The performance issue with the `checkAll` and `uncheckAll` methods, when passing arguments to them while the `autoCheck` feature is enabled, has been resolved.
+
+### Tab
+
+#### Bug Fixes
+
+- `#I733289` - Fixed tab header visibility and content refresh issues on resize in popup mode.
+
 ## 30.1.42 (2025-07-29)
 
 ### Stepper

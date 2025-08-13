@@ -2,16 +2,6 @@
 
 ## [Unreleased]
 
-## 30.2.4 (2025-08-07)
-
-### DocumentEditor
-
-#### Bug Fixes
-
-- `#I739494` - Resolved the document content is missing issue.
-- `#I738922` - Resolved the data loss issue in web layout.
-- `#I745777` - Resolved the document content is missing issue.
-
 ## 30.1.42 (2025-07-29)
 
 ### DocumentEditor
@@ -4628,7 +4618,17 @@ The Document Editor component is used to create, edit, view, and print Word docu
 - Allows user interactions like zoom, scroll, select contents through touch, mouse, and keyboard.
 - Provides intuitive UI options like context menu, dialogs, and navigation pane.
 - Creates a lightweight Word viewer using module injection to view and prints Word documents.
-- Added `Syncfusion.EJ2.DocumentEditor` NuGet package that contains helper library for converting Word documents to `Syncfusion Document Text (*.sfdt)`. It supports .NET Standard 2.0 Framework.## 30.1.41 (2025-07-22)
+- Added `Syncfusion.EJ2.DocumentEditor` NuGet package that contains helper library for converting Word documents to `Syncfusion Document Text (*.sfdt)`. It supports .NET Standard 2.0 Framework.## 30.2.4 (2025-08-07)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+- `#I739494` - Resolved the document content is missing issue.
+- `#I738922` - Resolved the data loss issue in web layout.
+- `#I745777` - Resolved the document content is missing issue.
+
+## 30.1.41 (2025-07-22)
 
 ### DocumentEditor
 

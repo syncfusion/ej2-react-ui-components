@@ -11,6 +11,8 @@ export interface GanttTypecast {
     editTemplate?: string | Function | any;
     labelSettings?: any;
     tooltipSettings?: any;
+    filter?: any;
+    filterTemplate?: string | Function | any;
 }
 /**
  * `GanttComponent` represents the react Gantt.
