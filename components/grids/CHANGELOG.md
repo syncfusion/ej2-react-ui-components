@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 30.2.6 (2025-08-19)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I752626` - Fixed an issue where the command column icon remained unchanged after the edit action for a parent row in the hierarchy grid was cancelled.
+- `#I750491` - Fixed a misalignment issue with indent header cells when grouping a column with stacked headers.
+
 ## 30.2.5 (2025-08-13)
 
 ### Grid

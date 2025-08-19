@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.2.6 (2025-08-19)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I754192` - Now, the Rich Text Editor works properly when a binding value is wrapped with a `<div>`, and no extra `<p>` tags are added.
+
 ## 30.2.5 (2025-08-13)
 
 ### RichTextEditor

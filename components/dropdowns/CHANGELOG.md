@@ -2,7 +2,21 @@
 
 ## [Unreleased]
 
+## 30.2.6 (2025-08-19)
+
+### MultiSelect
+
+#### Bug fixes
+
+- `#I748629` - Resolved an issue where selecting an empty option resulted in the incorrect value.
+
 ## 30.2.5 (2025-08-13)
+
+### DropDownTree
+
+#### Bug fixes
+
+- `#I754645` - Fixed an issue where checkbox selections were cleared after filtering when both showCheckBox and allowFiltering properties were enabled.
 
 ### MultiSelect
 

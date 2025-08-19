@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 30.2.5 (2025-08-13)
+## 30.2.6 (2025-08-19)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I751482` - Fixed the appearance of the file size text, which was displaying as disabled in the Tailwind and Bootstrap 5.3 themes of the file uploader.
+
+## 30.2.4 (2025-08-07)
 
 ### Rating
 

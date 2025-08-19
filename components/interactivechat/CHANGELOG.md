@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 30.2.5 (2025-08-13)
+## 30.2.6 (2025-08-19)
 
 ### Chat UI
 
@@ -13,6 +13,8 @@
 - `#I742746` - Now the issue with message toolbar not rendered when the `messageTemplate` is configured has been resolved.
 
 - `#I746116` - Now the issue with `tabIndex` property not being updated properly for the header toolbar items in the ChatUI has been resolved.
+
+- `#I746122` - Now the issue with DropDownButton disappearing after drag, when configured the headerToolbar template inside Rnd component has been resolved in the Chat UI.
 
 ## 29.1.33 (2025-03-25)
 
