@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.2.7 (2025-08-26)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I751627` - Issue with "cell selection and console errors when using formula references in a cell" has been resolved.
+
 ## 30.2.4 (2025-08-07)
 
 ### Spreadsheet

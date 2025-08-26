@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 30.2.6 (2025-08-19)
+## 30.2.7 (2025-08-26)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I736712` - Fixed an issue where the `getItemIndex` method returned an incorrect tab item index when tab items were dynamically shown or hidden.
+
+## 30.2.5 (2025-08-13)
 
 ### Treeview
 

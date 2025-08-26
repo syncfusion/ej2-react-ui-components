@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 30.2.7 (2025-08-26)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I744881` - Fixed an issue where the scroll position was not maintained when `enablePersistence` was set to true.
+- `#I753562` - Fixed an issue where appointment resizing did not work correctly when using timeline views with header rows.
+
 ## 30.1.42 (2025-07-29)
 
 ### Schedule

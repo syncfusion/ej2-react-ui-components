@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.2.7 (2025-08-26)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I753156` - Connector segments now move along with nodes and connectors during multi-selection dragging.
+
 ## 30.2.5 (2025-08-13)
 
 ### Diagram

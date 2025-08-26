@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 30.2.6 (2025-08-19)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+- `#I712717` - Fixed an issue where undo functionality failed after inserting grouped text.
+- `#I754664` - Addressed a looping problem that occurred when accepting a deleted revision containing comments.
+
+- `#I712717` - Fixed an issue where undo functionality failed after inserting grouped text.
+- `#I754664` - Addressed a looping problem that occurred when accepting a deleted revision containing comments.
+- `#I745808` - Handled the form field popup trigger when the enter key is pressed.
+
 ## 30.2.5 (2025-08-13)
 
 ### DocumentEditor

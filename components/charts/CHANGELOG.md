@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 30.2.7 (2025-08-26)
+
+### Chart
+
+#### Bug Fixes
+
+- `#T745980` - The legend text trim tooltip will no longer be cropped at the bottom of the legend bounds.
+- `#T754125` - The marker will no longer render when it exceeds the axis range.
+
 ## 30.2.6 (2025-08-19)
 
 ### Chart
