@@ -2,36 +2,7 @@
 
 ## [Unreleased]
 
-## 30.1.42 (2025-07-29)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#I741630` - The fields in the pivot field list treeview will now be organized correctly according to the datasource order when the `defaultFieldListOrder` property is set to `None` during the `load` event in the pivot table.
-- `#I747426` - The pivot table will now export correctly as an Excel file when using the server-side engine.
-
-## 30.1.40 (2025-07-15)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#I740338` - The issue with sub-totals not rendering correctly when virtualization is enabled in the pivot table has been resolved.
-
-## 30.1.39 (2025-07-08)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#I734750` - The pivot table will now be exported correctly as a PDF document when the tabular layout is enabled.
-- `#I734750` - The pivot table cells will now render correctly without any misalignment when the tabular layout is enabled.
-- The primary X-axis border can now be used to modify the multi-level labels border of the pivot chart.
-- Users can now choose to show or hide subtotals when exporting the pivot table to Excel pivot format.
-- The grouping bar buttons will now display correctly when virtualization is enabled in the pivot table.
-
-## 30.1.37 (2025-06-25)
+## 31.1.17 (2025-09-05)
 
 ### Pivot Table
 

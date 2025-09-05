@@ -2,98 +2,6 @@
 
 ## [Unreleased]
 
-## 30.2.7 (2025-08-26)
-
-### MultiSelect
-
-#### Bug fixes
-
-- `#I748629` - Resolved an issue where selecting an empty option resulted in the incorrect value.
-
-## 30.2.5 (2025-08-13)
-
-### DropDownTree
-
-#### Bug fixes
-
-- `#I754645` - Fixed an issue where checkbox selections were cleared after filtering when both showCheckBox and allowFiltering properties were enabled.
-
-### MultiSelect
-
-#### Bug fixes
-
-- `#I748341` - Fixed an issue where data was not loading properly and the popup closed automatically after selecting `Select All` and scrolling the list.
-
-## 30.2.4 (2025-08-07)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I749286` - Fixed an issue where the numeric keypad `0` was not triggering the listbox filtering.
-
-### MultiSelect
-
-#### Bug fixes
-
-- `#I732425` - Fixed an issue where the `actionComplete` event was being triggered twice when the `allowCustomValue` property was enabled.
-
-- `#I732169` - Fixed an issue where focus was not applied to the custom value when the Sort Order property was enabled.
-
-#### Bug Fixes
-
-- `#I745180` - Fixed an issue where the MultiSelect component did not scroll to the top after programmatically clearing its value when virtualization was enabled.
-
-### DropdownList
-
-#### Bug Fixes
-
-- `#I747869` - Fixed an issue where the selected value would be removed when the Escape key was pressed while the popup was open.
-
-## 30.1.42 (2025-07-29)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I729862` - Fixed an issue where enabling virtualization caused the scrollbar to unexpectedly jump back to the top when scrolling to the bottom of the list.
-
-## 30.1.40 (2025-07-15)
-
-### DropDownTree
-
-#### Bug fixes
-
-- `#I744501` - Dropdown Tree opening issue in the Firefox browser has been Resolved.
-
-### MultiSelect
-
-#### Bug fixes
-
-- `#I714583` - Fixed an issue where the value was not updating dynamically when using `groupTemplate`.
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I729413` - Fixed an issue where the toolbar settings buttons are enabled when no item is selected if the refresh method is called.
-
-## 30.1.39 (2025-07-08)
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I734293` - Fixed Dropdown Tree popup misalignment issue at 100% display scale on windows.
-
-- `#I737384` - Fixed the alignment issue in the input content of the Dropdown Tree Component in both the material3 and bootstrap5 themes.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I734116` - Fixed an issue where the Item Template with a Combo Box caused virtualization rendering problems in the dropdown.
-
 ## 28.2.9 (2025-03-04)
 
 ### ComboBox
@@ -2314,21 +2222,7 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 29.1.41 (2025-05-06)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I728371` - Fixed an issue where the value was not being cleared correctly when removed dynamically via a button click.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I707526` - Fixed an issue where the selected value was displayed twice within the popup when using virtualization.
-
-## 29.1.33 (2025-03-25)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 29.1.33 (2025-03-25)
 
 ### Mention
 
