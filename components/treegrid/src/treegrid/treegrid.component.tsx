@@ -9,6 +9,8 @@ export interface TreeGridTypecast {
     rowTemplate?: string | Function | any;
     detailTemplate?: string | Function | any;
     editSettings?: any;
+    emptyRecordTemplate?: string | Function | any;
+    columnChooserSettings?: any;
 }
 /**
  * `TreeTreeGridComponent` represents the react TreeTreeGrid.

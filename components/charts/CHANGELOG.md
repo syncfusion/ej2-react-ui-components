@@ -2,14 +2,21 @@
 
 ## [Unreleased]
 
-## 31.1.17 (2025-09-05)
+## 31.1.18 (2025-09-10)
 
 ### Chart
 
 #### Bug Fixes
 
-- `#T745980` - The legend text trim tooltip will no longer be cropped at the bottom of the legend bounds.
-- `#T754125` - The marker will no longer render when it exceeds the axis range.
+- `#T742786` - Trendlines now render correctly when dynamically enabled.
+- `#F69182` - Columns with a single X-axis value now render with the correct width.
+- `#T757693` - Now the secondary axis label renders properly when the position is set to 'inside'.
+
+### 3D Chart
+
+#### Bug Fixes
+
+- `#T756018` - The axis label tooltip text now renders correctly without being trimmed.
 
 ## 30.2.6 (2025-08-19)
 
@@ -17,21 +24,13 @@
 
 #### Bug Fixes
 
-- `#T745980` - The legend text and symbol will no longer overlap when RTL is enabled.
-
-## 30.2.4 (2025-08-13)
+- `#F69147` - Highlighting functionality is now working correctly for marker-enabled scatter series.
 
 ### Accumulation Chart
 
 #### Bug Fixes
 
 - `#F69009` - The accumulation chart now correctly assigns the ID for rendering.
-
-### Chart
-
-#### Bug Fixes
-
-- `#F69147` - Highlighting functionality is now working correctly for marker-enabled scatter series.
 
 ## 30.1.42 (2025-07-29)
 
@@ -63,14 +62,6 @@
 - `#I741842` - Now, the legend symbol color can be applied using the arguments fill property in the legend render event.
 
 ## 30.1.39 (2025-07-08)
-
-### Chart
-
-#### Feature
-
-- `#I653358` - Provided support for DateTime value type on the primary Y-axis.
-
-## 30.1.37 (2025-06-25)
 
 ### Chart
 
@@ -3614,4 +3605,29 @@ Graphics (SVG).
 - **Animation** - Chart series will be animated when rendering and refreshing the chart widget.
 - **User Interaction** - Supports interactive features that are zooming, panning, crosshair, trackball, tooltip, and data point selection.
 - **Annotation** - Supports annotation to mark a specific area in chart.
-- **Export** - Supports to print the chart directly from the browser and exports the chart in both JPEG and PNG format.
+- **Export** - Supports to print the chart directly from the browser and exports the chart in both JPEG and PNG format.## 31.1.17 (2025-09-05)
+
+### Charts
+
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Charts to define a custom template that clearly indicates when chart data is unavailable.
+        Explore the demo [here](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/no-data-template)
+
+#### Bug Fixes
+
+- `#T745980` - The legend text trim tooltip will no longer be cropped at the bottom of the legend bounds.
+- `#T754125` - The marker will no longer render when it exceeds the axis range.
+
+### Accumulation Chart
+
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Accumulation Chart to define a custom template that clearly indicates when chart data is unavailable.
+
+### Stock Chart
+
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Stock Chart to define a custom template that clearly indicates when chart data is unavailable.
+

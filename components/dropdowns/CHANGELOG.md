@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.1.18 (2025-09-10)
+
+### Mention
+
+#### Bug Fixes
+
+- `#I761793` - The issue of editing in Firefox after utilizing the home and end keys following Mention item insertion has been successfully resolved.
+
 ## 28.2.9 (2025-03-04)
 
 ### ComboBox

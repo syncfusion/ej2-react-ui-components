@@ -3,7 +3,9 @@ import { SymbolPalette, SymbolPaletteModel } from '@syncfusion/ej2-diagrams';
 import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/ej2-react-base';
 
 
-
+export interface SymbolPaletteTypecast {
+    nodeTemplate?: string | Function | any;
+}
 /**
  * Represents react SymbolPalette Component
  * ```tsx
@@ -12,7 +14,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class SymbolPaletteComponent extends SymbolPalette {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<SymbolPaletteModel | DefaultHtmlAttributes>;
+    & Readonly<SymbolPaletteModel | DefaultHtmlAttributes| SymbolPaletteTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -20,10 +22,10 @@ export class SymbolPaletteComponent extends SymbolPalette {
     public directivekeys: { [key: string]: Object } = {'palettes': 'palette'};
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
-    private immediateRender: boolean = true;
+    private immediateRender: boolean = false;
     private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<SymbolPaletteModel | DefaultHtmlAttributes>;
+     & Readonly<SymbolPaletteModel | DefaultHtmlAttributes| SymbolPaletteTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

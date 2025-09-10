@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.1.18 (2025-09-10)
+
+### Menu
+
+#### Bug Fixes
+
+- `#I759090` -  Resolved an alignment issue with the `e-caret` icon in the Menu Component.
+
 ## 31.1.17 (2025-09-05)
 
 ### Tab
@@ -30,13 +38,13 @@
 
 #### Bug Fixes
 
-- `#FB68847` - An issue where null value is not assignable to isValid property in the stepper component has been resolved..
+- `#FB68847` - An issue where null value is not assignable to `isValid` property in the stepper component has been resolved.
 
 ### Breadcrumb
 
 #### Bug Fixes
 
-- `#I741569` - Fixed an issue where UI did not reflect updates to the items list when using the maxItems property in the Breadcrumb component.
+- `#I741569` - Fixed an issue where UI did not reflect updates to the items list when using the `maxItems` property in the Breadcrumb component.
 
 ### Tab
 

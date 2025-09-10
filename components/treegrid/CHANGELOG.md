@@ -2,45 +2,19 @@
 
 ## [Unreleased]
 
-## 30.1.38 (2025-07-02)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#F68080` - Fixed an issue where the header checkbox remained checked when the data source was empty and aggregate columns were included.
-- `#F68277` - Fixed an issue where the `getCheckedRecords()` method returned incorrect results when the auto-check hierarchy feature was disabled.
-
-## 30.1.37 (2025-06-25)
+## 31.1.17 (2025-09-05)
 
 ### Tree Grid
 
 #### Features
 
-- `#I341079` - Provided support for exporting data to PDF, CSV, and Excel formats using server-side functionality. Please find the demo [here](https://ej2.syncfusion.com/aspnetcore/TreeGrid/ServerSideExporting#/material3).
+- Introduced sticky header support in the Tree Grid, allowing column headers to stay fixed during scrolling. This improves navigation and readability in large hierarchical data views. Explore the demo [here](https://ej2.syncfusion.com/demos/#/tailwind3/tree-grid/sticky-header.html).
 
-- Added support for the new `fixed` mode within the `freeze` property of column settings. When a column is set as `fixed`, it will stay within the viewport during horizontal scrolling, enhancing the user experience with improved visibility and efficiency.
+- Enhanced support for `LoadChildOnDemand` in the Tree Grid with remote data binding and virtual scrolling. This improvement enables efficient, on-demand retrieval of child records, ensuring smoother performance when working with large hierarchical datasets.
 
-- Provided support for inline editing with virtualization enabled. Please find the demo [here](https://ej2.syncfusion.com/react/demos/#/bootstrap5/treegrid/virtualscrolling).
-- `#I323425`, `#I332700`, `#I344742`, `#I375307` - Provided support for frozen column with virtualization enabled.
+undefined- Introduced sticky header support in the Tree Grid, allowing column headers to stay fixed during scrolling. This improves navigation and readability in large hierarchical data views. Explore the demo [here](https://ej2.syncfusion.com/react/demos/#/tailwind3/treegrid/stickyheader).
 
-#### Breaking Changes
-
-- Optimized the frozen columns feature in Tree Grid and thus changed the dom structure of tree grid from two table to single table architecture. Also, the following methods have been removed, and it's recommended to use the following alternatives instead.
-
-| Removed methods  | Suggested to use alternative methods |
-|----------|----------|
-| `getMoavableRows`, `getFrozenRightRows` | `getRows` |
-| `getMovableRowByIndex`, `getFrozenRowByIndex`, `getFrozenRightRowByIndex` | `getRowByIndex` |
-| `getMovableCellFromIndex`, `getFrozenRightCellFromIndex` | `getCellFromIndex` |
-| `getMovableDataRows`, `getFrozenRightDataRows`, `getFrozenDataRows` | `getDataRows` |
-| `getAllMovableDataRows`, `getAllFrozenDataRows`, `getAllFrozenRightDataRows` | `getAllDataRows` |
-| `getMovableColumnHeaderByIndex`, `getFrozenRightColumnHeaderByIndex`, `getFrozenLeftColumnHeaderByIndex` | `getColumnHeaderByIndex` |
-| `getFrozenRightHeader`, `getMovableHeader` | `getHeaderContent` |
-| `getFrozenRightRowsObject`, `getMovableRwsObject` | `getRowsObject` |
-| `getFrozenRightHeaderTbody`, `getMovableHeaderTbody`, `getFrozenHeaderTbody` | `getContent().querySelector(‘tbody’)` |
-| `getFrozenLeftContentTbody`, `getFrozenRightContentTbody`, `getMovableContentTbody` | `getHeaderContent().querySelector(‘tbody’)` |
-| `getFrozenRightContent`, `getMovableContent` | `getContent` |
+- Enhanced support for `LoadChildOnDemand` in the Tree Grid with remote data binding and virtual scrolling. This improvement enables efficient, on-demand retrieval of child records, ensuring smoother performance when working with large hierarchical datasets.
 
 ## 20.2.36 (2022-06-30)
 

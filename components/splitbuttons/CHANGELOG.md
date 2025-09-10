@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 31.1.17 (2025-09-05)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- `#I738674` - The issue preventing the dropdown popup element from receiving focus while canceling the closing action in the Dropdown button has been resolved.
-
 ## 28.1.33 (2024-12-12)
 
 ### DropDownButton
