@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.1.20 (2025-09-10)
+
+### Tree Grid
+
+#### Bug Fixes
+
+-`#I759266` - The `addRecord` method of the TreeGrid correctly adds a child record to the specified parent node.- `#F69767` - Fixed an issue where data was being duplicated when dragging and dropping items and refreshing in the treegrid.
+
 ## 31.1.17 (2025-09-05)
 
 ### Tree Grid

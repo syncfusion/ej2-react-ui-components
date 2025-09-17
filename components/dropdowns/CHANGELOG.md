@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 31.1.20 (2025-09-10)
+
+### Mention
+
+#### Bug Fixes
+
+- `#I762396` - Resolved the script error that occurred when copying and pasting bullet list content from Outlook into the `RichTextEditor`.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I749390` - Fixed an issue with the initial selected value when using remote data binding and virtualization in the combobox with the GraphQLAdaptor.
+
 ## 28.2.9 (2025-03-04)
 
 ### ComboBox

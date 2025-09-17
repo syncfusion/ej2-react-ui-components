@@ -2,6 +2,33 @@
 
 ## [Unreleased]
 
+## 31.1.20 (2025-09-10)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I762115` - The issue where the Offset value was not updating correctly when a dependency was connected to parent tasks has been resolved.
+- `#I759114` - The issue where the 'Start No Later Than' constraint type was not properly enforced on the Start Date has been resolved.
+- `#I763040` - Cell navigation not working properly when selection is disabled issue has been resolved.
+- `#I759336` - Resolved critical task calculation to use `projectEndDate` as the maximum end date when it is mapped, replacing the previous approach of considering the task's maximum end date.
+- `#I759336` - Resolved an issue where the `workWeek` and `weekWorkingTime` properties were not functioning correctly, causing unresponsiveness during dynamic updates.
+
+## 31.1.18 (2025-09-10)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I759097` - The issue where setting the constraint type to "Must Start On" caused the spinner to run continuously when modifying the End Date or Duration has been resolved.
+ `#I758384` - Console error occur while add action after hiding column by method issue has been resolved.
+ `#I755129` - The `readOnly` property not working for hierarchy data binding issue has been resolved.
+ `#I756416` - Console error occur while using different filter options issue has been resolved.
+
+#### Bug fix
+
+- `#I755129` - The `readOnly` property not working for hierarchy data binding issue has been resolved.
+
 ## 30.1.37 (2025-06-25)
 
 ### GanttChart

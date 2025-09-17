@@ -2,29 +2,15 @@
 
 ## [Unreleased]
 
-## 31.1.19 (2025-09-11)
+## 31.1.20 (2025-09-10)
 
-### Uploader
-
-#### Bug Fixes
-
-- `#I751482` - Fixed the appearance of the file size text, which was displaying as disabled in the Tailwind and Bootstrap 5.3 themes of the file uploader.
-
-## 30.2.4 (2025-08-07)
-
-### Rating
+### ColorPicker
 
 #### Bug Fixes
 
-- `#I736421` - Fixed flickering issue that occurred when hovering over the `emptyTemplate` rating component.
+- `#I751146` - Added the title attribute for the preview and current color span element in the color picker.
 
-## 30.1.40 (2025-07-15)
-
-### Textbox
-
-#### Bug Fixes
-
-- `#I732408` - Fixed the issue where the placeholder value did not update when setting the value with double quotes in the textbox.
+## 31.1.17 (2025-09-05)
 
 ### ColorPicker
 

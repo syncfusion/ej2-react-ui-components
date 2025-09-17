@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 31.1.19 (2025-09-11)
+## 31.1.20 (2025-09-10)
+
+### Treeview
+
+#### Bug Fixes
+
+- `#I766330` - The issue where the ripple effect remained visible on the screen when the checkbox was checked rapidly and the mouse was moved quickly has been resolved in the TreeView component.
+
+## 31.1.18 (2025-09-10)
 
 ### Menu
 
