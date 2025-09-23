@@ -2,17 +2,15 @@
 
 ## [Unreleased]
 
-## 31.1.20 (2025-09-10)
+## 31.1.21 (2025-09-23)
 
 ### Grid
 
 #### Bug Fixes
 
-- `#I754033` - Fixed a problem where column resizing didn't work properly if the total column width was more than 100%.
-- `#I762851` - Resolved an issue where clearing the filter caused the pagination dropdown to incorrectly show `All`.
-- `#I750250` - Resolved a memory leak issue in the Grid component that occurred during the column reordering process.
-- `#I762476` - Removed the `aria-selected` attribute from the detail row's expand and collapse icon cell to resolve an issue with screen reader compatibility.
-- `#I761478` - Added clear type definitions to the `IFilterMUI` interface in the Grid component to improve type safety.
+- `#I759048` - Fixed aggregate calculation issue during edit and save operations in `VirtualScrolling`.
+- `#FB69913` - Fixed the script error that occurs when opening the custom filter dialog on a device in an adaptive grid with `adaptiveUIMode` set to Desktop.
+- `#FB70042` - Added native event details into the `recordClick` and `recordDoubleClick` events.
 
 ## 31.1.17 (2025-09-05)
 
@@ -2795,4 +2793,15 @@ Grid component is used to display and manipulate tabular data with configuration
 - **Hierarchy Grid** - It is used to display table data in hierarchical structure which can show or hide by clicking on expand or collapse button.
 - **Print and Exporting** - Provides the option to print and exporting grid records.
 - **RTL** - Provides a full-fledged right-to-left mode which aligns content in the Grid component from right to left.
-- **Localization** - Provides inherent support to localize the UI.
+- **Localization** - Provides inherent support to localize the UI.## 31.1.20 (2025-09-10)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I754033` - Fixed a problem where column resizing didn't work properly if the total column width was more than 100%.
+- `#I762851` - Resolved an issue where clearing the filter caused the pagination dropdown to incorrectly show `All`.
+- `#I750250` - Resolved a memory leak issue in the Grid component that occurred during the column reordering process.
+- `#I762476` - Removed the `aria-selected` attribute from the detail row's expand and collapse icon cell to resolve an issue with screen reader compatibility.
+- `#I761478` - Added clear type definitions to the `IFilterMUI` interface in the Grid component to improve type safety.
+

@@ -14,7 +14,15 @@
 
 #### Bug Fixes
 
+- `#I762995` - Fixed an issue where the combobox did not update its value when the `ignoreAccent` property was set to true.
+
 - `#I749390` - Fixed an issue with the initial selected value when using remote data binding and virtualization in the combobox with the GraphQLAdaptor.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `I761815` - Resolved an issue where MultiSelect items remained enabled when the maximum selection length was set to zero.
 
 ## 28.2.9 (2025-03-04)
 

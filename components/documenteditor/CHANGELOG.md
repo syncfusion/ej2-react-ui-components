@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 31.1.21 (2025-09-23)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+- `#I763990` - Fixed issue where footnotes were undefined during document serialization.
+- `#I763888` - Resolved script error when opening documents containing dropdown form fields.
+- `#I197369` - Fixed script error triggered while disabling the toolbar.
+- `#I748269` - Addressed content overlapping issue during document loading.
+- `#I759178` - Corrected layout change issue in the Ribbon Layout API after manual interactions.
+- `#I729357` - Fixed selection issue occurring when deleting comments.
+
 ## 31.1.20 (2025-09-10)
 
 ### DocumentEditor
