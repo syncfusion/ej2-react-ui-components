@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.1.22 (2025-10-01)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- #I769011 - Issue with "cell values not being preserved correctly when importing Excel files containing `TextBox` shapes" has been resolved.
+
 ## 31.1.21 (2025-09-23)
 
 ### Spreadsheet

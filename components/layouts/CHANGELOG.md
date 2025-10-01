@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.1.22 (2025-10-01)
+
+### Splitter
+
+#### Bug Fixes
+
+- `#I764336` - An issue with Splitter component while adapting itself to min and max values in specific browser has been resolved.
+
 ## 25.1.35 (2024-03-15)
 
 ### Timeline

@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 31.1.22 (2025-10-01)
+
+### QueryBuilder
+
+- `#I764996` - Issue where the lock rule did not disable the field selector in complex data binding scenarios.
+
 ## 31.1.17 (2025-09-05)
 
 ### QueryBuilder
