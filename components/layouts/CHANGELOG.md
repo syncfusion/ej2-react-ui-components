@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 31.1.23 (2025-10-07)
+## 31.2.2 (2025-10-15)
+
+### Timeline
+
+#### Bug Fixes
+
+- `#I770847` - Resolved an issue that occurred when including layout packages in the React NextJs sample.
+
+## 31.1.22 (2025-10-01)
 
 ### Splitter
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.2 (2025-10-15)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I764198` - Fixed the issue where selection events were triggered twice after updating a record with persist selection enabled.
+
 ## 31.1.23 (2025-10-07)
 
 ### Grid

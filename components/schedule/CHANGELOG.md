@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 31.2.2 (2025-10-15)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I757470` - An issue where cells were misaligned and events were added to the wrong cell when using the `enableLazyLoading` property has been fixed.
+- `#I770447` - The issue where the tooltip displayed incorrect content in the `Year` view has been fixed.
+
 ## 31.1.21 (2025-09-23)
 
 ### Schedule

@@ -2,13 +2,15 @@
 
 ## [Unreleased]
 
-## 31.1.23 (2025-10-07)
+## 31.1.22 (2025-10-01)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- #I769011 - Issue with "cell values not being preserved correctly when importing Excel files containing `TextBox` shapes" has been resolved.
+-`#I752195` - Issue with "`getSingleSelectedRange` was not found in spreadsheet while building an Angular application with Angular Spreadsheet's `ngcc` package" has been resolved.
+
+- `#I769011` - Issue with "cell values not being preserved correctly when importing Excel files containing `TextBox` shapes" has been resolved.
 
 ## 31.1.21 (2025-09-23)
 
