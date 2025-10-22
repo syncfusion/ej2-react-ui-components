@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 31.2.3 (2025-10-22)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I746004` - Fixed an issue where appointments overlapped when a large number of them were rendered.
+- `#I738200` - Fixed an issue where the Scheduler became unresponsive when many appointments overlapped simultaneously.
+
 ## 31.2.2 (2025-10-15)
 
 ### Schedule

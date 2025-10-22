@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.3 (2025-10-22)
+
+### Breadcrumb
+
+#### Bug Fixes
+
+- `#I775259` - The issue with the aria-label attribute in the Breadcrumb component has been resolved.
+
 ## 31.1.20 (2025-09-10)
 
 ### Treeview
