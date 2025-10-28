@@ -1,6 +1,6 @@
 # React Data Grid Component
 
-The [React Data Grid](https://www.syncfusion.com/react-ui-components/react-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm) component is a powerful and flexible tool for displaying and manipulating tabular data. React Data Grid component is its ability to bind to a wide range of data sources, including arrays of JSON objects, `OData web services`, and the Syncfusion [DataManager](https://ej2.syncfusion.com/react/documentation/data/data-binding/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm). This makes it easy to integrate the grid into your application and display data from a variety of sources. In addition to its data binding capabilities, the React Data Grid also offers support for features such as sorting, filtering, paging, grouping, editing, frozen rows and columns, virtualization, and more. These features allow you to easily manipulate and present large datasets in an efficient and user-friendly way.
+The [React Data Grid](https://www.syncfusion.com/react-ui-components/react-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm) component is a powerful and flexible tool for displaying and manipulating tabular data. React Data Grid component is its ability to bind to a wide range of data sources, including arrays of JSON objects, `OData web services`, and the Syncfusion<sup>®</sup> [DataManager](https://ej2.syncfusion.com/react/documentation/data/data-binding/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm). This makes it easy to integrate the grid into your application and display data from a variety of sources. In addition to its data binding capabilities, the React Data Grid also offers support for features such as sorting, filtering, paging, grouping, editing, frozen rows and columns, virtualization, and more. These features allow you to easily manipulate and present large datasets in an efficient and user-friendly way.
 
 <p align="center">
   <a href="https://ej2.syncfusion.com/react/documentation/grid/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm">Getting Started</a> . 
@@ -13,7 +13,7 @@ The [React Data Grid](https://www.syncfusion.com/react-ui-components/react-grid?
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com">
-    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Bootstrap logo">
   </a>
 </p>
 
@@ -29,9 +29,9 @@ cd my-app
 npm start
 ```
 
-### Adding Syncfusion Grid package
+### Adding Syncfusion<sup>®</sup> Grid package
 
-All Syncfusion react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react grid package, use the following command.
+All Syncfusion<sup>®</sup> react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react grid package, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-react-grids --save
@@ -55,7 +55,7 @@ Add CSS references needed for a Grid in **src/App.css** from the **../node_modul
 
 ### Add Grid component
 
-In the **src/App.tsx** file, use the following code snippet to render the Syncfusion React Grid component and import **App.css** to apply styles to the grid:
+In the **src/App.tsx** file, use the following code snippet to render the Syncfusion<sup>®</sup> React Grid component and import **App.css** to apply styles to the grid:
 
 ```typescript
 import { ColumnDirective, ColumnsDirective, GridComponent } from '@syncfusion/ej2-react-grids';
@@ -120,6 +120,15 @@ Grid component is also offered in the following list of frameworks.
 * [Accessibility](https://ej2.syncfusion.com/react/documentation/grid/accessibility/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#wai-aria): Designed to be accessible to users with disabilities, with features such as WAI-ARIA standard compliance and keyboard navigation to ensure that the grid can be effectively used with assistive technologies such as screen readers.
 * [Localization](https://ej2.syncfusion.com/react/documentation/grid/global-local/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#localization): The Localization library enables you to adapt the default text content of the grid to fit the language and cultural preferences of your target audience.
 
+## Resources
+
+* [Documentation](https://ej2.syncfusion.com/react/documentation/grid/getting-started)
+* [Theme Studio](https://ej2.syncfusion.com/themestudio/)
+* [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_medium=listing&utm_source=github)
+* [Road Map](https://www.syncfusion.com/products/roadmap/react)
+* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=react&type=all)
+* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
+
 ## Support
 
 Product support is available through the following mediums.
@@ -136,10 +145,10 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm) for more info.
 
-&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2025 Syncfusion, Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio license and copyright applies to this distribution.

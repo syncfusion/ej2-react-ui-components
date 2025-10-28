@@ -1,11 +1,11 @@
 # React PDF Viewer Component
 
-The [React PDF Viewer](https://www.syncfusion.com/react-ui-components/react-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm) component enables you to view, annotate, prepare and fill forms, and print PDF files from your web applications.
+The [React PDF Viewer](https://www.syncfusion.com/pdf-viewer-sdk/react-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm) component enables you to view, annotate, prepare and fill forms, and print PDF files from your web applications.
 
 <p align="center">
-    <a href="https://ej2.syncfusion.com/react/documentation/pdfviewer/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm">Getting started</a> . 
-    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm#/bootstrap5/pdfviewer/default">Online demos</a> . 
-    <a href="https://www.syncfusion.com/react-components/react-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm">Learn more</a>
+    <a href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm">Getting started</a> . 
+    <a href="https://document.syncfusion.com/demos/pdf-viewer/react/index.html#/tailwind3/pdfviewer/default/?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm#/bootstrap5/pdfviewer/default">Online demos</a> . 
+    <a href="https://www.syncfusion.com/pdf-viewer-sdk/react-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm">Learn more</a>
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@ The [React PDF Viewer](https://www.syncfusion.com/react-ui-components/react-pdf-
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com">
-    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Bootstrap logo">
   </a>
 </p>
 
@@ -124,31 +124,39 @@ root.render(<Default />);
 
 PDF Viewer component is also offered in the following list of frameworks.
 
-| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular-new.svg"  height="50" />](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/pdf-viewer-sdk/javascript-pdf-viewer?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/pdf-viewer-sdk/javascript-pdf-viewer?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular-new.svg"  height="50" />](https://www.syncfusion.com/pdf-viewer-sdk/angular-pdf-viewer/?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/pdf-viewer-sdk/angular-pdf-viewer/?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/pdf-viewer-sdk/vue-pdf-viewer?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/pdf-viewer-sdk/vue-pdf-viewer?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/pdf-viewer-sdk/asp-net-core-pdf-viewer?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/pdf-viewer-sdk/asp-net-core-pdf-viewer?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/pdf-viewer-sdk/asp-net-mvc-pdf-viewer?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/pdf-viewer-sdk/asp-net-mvc-pdf-viewer?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 
 ## Key features
 
-* [View PDF Document](https://ej2.syncfusion.com/react/documentation/pdfviewer/getting-started/) - Open and display both the normal and the protected PDF files with AES and RC4 encryption.
-* [Annotations](https://ej2.syncfusion.com/react/documentation/pdfviewer/annotation/text-markup-annotation/) - Annotate with text markup, shapes, stamps, ink, and sticky notes.
-* [Form Fields](https://ej2.syncfusion.com/react/documentation/pdfviewer/form-designer/create-fillable-PDF-forms/create-programmatically/) - Form filling and form designing can be done.
-* [Signature](https://ej2.syncfusion.com/angular/documentation/pdfviewer/handwritten-signature/) - Hand-written and digital signatures are allowed.
-* [Toolbar](https://ej2.syncfusion.com/react/documentation/pdfviewer/toolbar/) - Built-in-toolbar and custom toolbars to perform user interaction of PDF Viewer functionalities.
-* [Navigation](https://ej2.syncfusion.com/react/documentation/pdfviewer/navigation/) - Easy navigation with the help of bookmarks, thumbnails, hyperlinks, and table of contents.
-* [Magnification](https://ej2.syncfusion.com/react/documentation/pdfviewer/magnification/) - Fit to page, fit to width, and automatic (fits to the visible area).
-* [Search](https://ej2.syncfusion.com/react/documentation/pdfviewer/text-search/) - Search a text easily across the PDF document.	
-* [Core Interactions](https://ej2.syncfusion.com/react/documentation/pdfviewer/interaction-mode/) - Allows scrolling, zooming, panning, selection, and page navigation.
-* [Print](https://ej2.syncfusion.com/react/documentation/pdfviewer/print/) - Print the entire document or a specific page directly from the browser.
-* [Globalization](https://ej2.syncfusion.com/react/documentation/pdfviewer/globalization/) - Provides inherent support to localize the UI.
+* [View PDF Document](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/getting-started/) - Open and display both the normal and the protected PDF files with AES and RC4 encryption.
+* [Annotations](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/annotation/text-markup-annotation/) - Annotate with text markup, shapes, stamps, ink, and sticky notes.
+* [Form Fields](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/form-designer/create-fillable-pdf-forms/create-programmatically/) - Form filling and form designing can be done.
+* [Signature](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/handwritten-signature/) - Hand-written and digital signatures are allowed.
+* [Toolbar](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/toolbar/) - Built-in-toolbar and custom toolbars to perform user interaction of PDF Viewer functionalities.
+* [Navigation](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/navigation/) - Easy navigation with the help of bookmarks, thumbnails, hyperlinks, and table of contents.
+* [Magnification](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/magnification/) - Fit to page, fit to width, and automatic (fits to the visible area).
+* [Search](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/text-search/) - Search a text easily across the PDF document.	
+* [Core Interactions](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/interaction-mode/) - Allows scrolling, zooming, panning, selection, and page navigation.
+* [Print](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/print/) - Print the entire document or a specific page directly from the browser.
+* [Globalization](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/globalization/) - Provides inherent support to localize the UI.
+
+## Resources
+
+* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
+* [Theme Studio](https://ej2.syncfusion.com/themestudio/)
+* [What's New](https://www.syncfusion.com/products/whatsnew/pdf-viewer-sdk?utm_medium=listing&utm_source=github)
+* [Road Map](https://www.syncfusion.com/products/roadmap/pdf-viewer-sdk)
+* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=react&type=all)
 
 ## Support
 
 Product support is available through the following mediums.
 
 * [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
-* [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm)
+* [Community forum](https://www.syncfusion.com/forums/pdf-viewer-sdk?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm)
 * [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues/new)
-* [Request feature or report bug](https://www.syncfusion.com/feedback/react?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm)
+* [Request feature or report bug](https://www.syncfusion.com/feedback/pdf-viewer-sdk?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm)
 * Live chat
 
 ## Changelog
@@ -157,9 +165,8 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. The Syncfusion&reg; licensed software, including this component, is subject to the terms and conditions of the Syncfusion&reg; [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
-See [LICENSE FILE](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-pdf-viewer-npm) for more info.
-
+&copy; Copyright 2025 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.

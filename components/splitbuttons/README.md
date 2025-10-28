@@ -89,6 +89,14 @@ These components are available in following list of frameworks.
 
 * [**Accessibility**](https://ej2.syncfusion.com/react/documentation/button-group/accessibility#accessibility) - Built-in accessibility features to access all the button group using the keyboard, screen readers, or other assistive technology devices.
 
+## Resources
+
+* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
+* [Theme Studio](https://ej2.syncfusion.com/themestudio/)
+* [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_medium=listing&utm_source=github)
+* [Road Map](https://www.syncfusion.com/products/roadmap/react)
+* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=react&type=all)
+
 ## Support
 
 Product support is available for through following mediums.
@@ -105,4 +113,4 @@ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-compo
 
 Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/components/splitbuttons/CHANGELOG.md?utm_source=npm&utm_campaign=split-button)
 
-© Copyright 2024 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential<sup>®</sup> Studio license and copyright applies to this distribution.
+&copy; Copyright 2025 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.

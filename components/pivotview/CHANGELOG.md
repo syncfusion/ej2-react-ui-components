@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.4 (2025-10-28)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#I773098` - The date filtering is now functioning correctly when filtering identical date members in the pivot table.
+
 ## 31.2.3 (2025-10-22)
 
 ### Pivot Table
