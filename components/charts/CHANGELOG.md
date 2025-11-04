@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 31.2.5 (2025-11-04)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I777320` - The scrollbar will now update properly when it is dragged.
+- `#I767509` - The range column chart now renders correctly using a datetime Y-axis.
+- `#I779972` - Chart data is now properly updated for duplicate X values when exporting to Excel.
+
 ## 31.2.4 (2025-10-28)
 
 ### Chart

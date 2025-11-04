@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.5 (2025-11-04)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#I759062` - Row subtotals are now properly hidden when the `showRowSubTotals` property is disabled in tabular pivot table.
+
 ## 31.2.4 (2025-10-28)
 
 ### Pivot Table

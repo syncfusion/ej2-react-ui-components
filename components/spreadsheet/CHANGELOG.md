@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.5 (2025-11-04)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#776027` - Issue with "right borders being applied incorrectly when changing the font family, and row heights shifting during horizontal scrolling for merged cells" has been resolved.
+
 ## 31.2.4 (2025-10-28)
 
 ### Spreadsheet
