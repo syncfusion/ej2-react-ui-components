@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.10 (2025-11-13)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I771969` - Now, the multi level label renders properly for different width.
+
 ## 31.2.5 (2025-11-04)
 
 ### Chart

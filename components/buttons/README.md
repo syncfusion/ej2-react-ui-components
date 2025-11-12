@@ -127,13 +127,6 @@ The [React Speed Dial](https://www.syncfusion.com/react-components/react-speed-d
 * [Modal](https://ej2.syncfusion.com/react/documentation/speed-dial/modal) - Adds an overlay to prevent the background interaction.
 * [Templates](https://ej2.syncfusion.com/react/documentation/speed-dial/template) - Customize Speed Dial items and the popup content using templates.
 
-<p align="center">
-Trusted by the world's leading companies
-  <a href="https://www.syncfusion.com/">
-    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Syncfusion logo">
-  </a>
-</p>
-
 ## Setup
 
 To install `buttons` and its dependent packages, use the following command.
@@ -153,12 +146,21 @@ Button components are offered in following list of frameworks.
 
 * Loan Calculator - [Source](https://github.com/syncfusion/ej2-showcase-react-loan-calculator), [Live Demo](https://ej2.syncfusion.com/showcase/react/loancalculator/?utm_source=npm&utm_medium=listing&utm_campaign=react-button-npm#/default)
 
+## Resources
+
+* [Documentation](https://ej2.syncfusion.com/react/documentation/button/getting-started)
+* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
+* [Theme Studio](https://ej2.syncfusion.com/themestudio/)
+* [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_medium=listing&utm_source=github)
+* [Road Map](https://www.syncfusion.com/products/roadmap/react)
+* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=react&type=all)
+
 ## Support
 
 Product support is available through following mediums.
 
 * [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
-* [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm)
+* [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm)
 * [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues/new)
 * [Request feature or report bug](https://www.syncfusion.com/feedback/react?utm_source=npm&utm_medium=listing&utm_campaign=react-buttons-npm)
 * Live chat
@@ -169,10 +171,10 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license) for more info.
 
-&copy; Copyright 2024 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.
+&copy; Copyright 2025 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.

@@ -8,13 +8,13 @@
 
 ## [Unreleased]
 
-## 30.1.37 (2025-06-25)
+## 31.1.17 (2025-09-05)
 
 ### Maps
 
 #### Bug fixes
 
-- `#I695421` - The data label will render correctly when binds to the specified label Path.
+- `#I732333` - The map rendered in the pop-up will no longer throw console warnings during user interaction.
 
 #### New Features
 

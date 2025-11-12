@@ -13,7 +13,7 @@ The [React Image Editor](https://www.syncfusion.com/react-components/react-image
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com">
-    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Bootstrap logo">
   </a>
 </p>
 
@@ -29,9 +29,9 @@ cd my-app
 npm start
 ```
 
-### Adding Syncfusion React Image Editor package
+### Adding Syncfusion<sup>®</sup> React Image Editor package
 
-All Syncfusion react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react image editor package, use the following command.
+All Syncfusion<sup>®</sup> react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the react image editor package, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-react-image-editor --save
@@ -51,9 +51,9 @@ Add CSS references needed for a react image editor in **src/App.css** from the *
 @import "../node_modules/@syncfusion/ej2-image-editor/styles/bootstrap5.css";
 ```
 
-### Add Syncfusion React Image Editor component
+### Add Syncfusion<sup>®</sup> React Image Editor component
 
-In the **src/App.tsx** file, use the following code snippet to render the Syncfusion React Image Editor component and import **App.css** to apply styles to the image editor:
+In the **src/App.tsx** file, use the following code snippet to render the Syncfusion<sup>®</sup> React Image Editor component and import **App.css** to apply styles to the image editor:
 
 ```typescript
 import { ImageEditorComponent } from '@syncfusion/ej2-react-image-editor';
@@ -86,6 +86,15 @@ Image Editor component is also offered in the following frameworks.
 * RTL and localization support: The control supports RTL (right-to-left) mode and provides inherent support for localization, allowing users to easily translate the user interface into different languages.
 * Various theme support: The component supports a range of themes, including fluent, tailwind css, bootstrap 5, material, and high contrast, giving users the ability to customize the look and feel of the image editor to match their preferences or brand guidelines.
 
+## Resources
+
+* [Documentation](https://ej2.syncfusion.com/react/documentation/image-editor/getting-started)
+* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
+* [Theme Studio](https://ej2.syncfusion.com/themestudio/)
+* [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_medium=listing&utm_source=github)
+* [Road Map](https://www.syncfusion.com/products/roadmap/react)
+* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=react&type=all)
+
 ## Support
 
 Product support is available through the following mediums.
@@ -102,12 +111,10 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use.Syncfusion<sup>®</sup> Essential Studio<sup>®</sup>licensed software, including this component, is subject to the terms and conditions ofSyncfusion<sup>®</sup> Essential Studio<sup>®</sup>[EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use.Syncfusion<sup>®</sup> Essential Studio<sup>®</sup>licensed software, including this component, is subject to the terms and conditions ofSyncfusion<sup>®</sup> Essential Studio<sup>®</sup>[EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-imageeditor-npm) for more info.
 
-© Copyright 2024Syncfusion<sup>®</sup> Essential Studio<sup>®</sup>Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.
-
-
+© Copyright 2025 Syncfusion<sup>®</sup> Essential Studio<sup>®</sup>Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.

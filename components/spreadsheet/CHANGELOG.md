@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 31.2.5 (2025-11-04)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#776027` - Issue with "right borders being applied incorrectly when changing the font family, and row heights shifting during horizontal scrolling for merged cells" has been resolved.
-
 ## 31.2.4 (2025-10-28)
 
 ### Spreadsheet
@@ -1402,7 +1394,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 21.1.39 (2023-04-11)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.5 (2025-11-04)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#776027` - Issue with "right borders being applied incorrectly when changing the font family, and row heights shifting during horizontal scrolling for merged cells" has been resolved.
+
+## 21.1.39 (2023-04-11)
 
 ### Spreadsheet
 
