@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 31.2.10 (2025-11-13)
+## 31.2.12 (2025-11-18)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I776606` – Fixed an issue where the `MultiSelect` in Query Builder passes data requests without applying the filtered value.
+
+## 31.2.4 (2025-10-28)
 
 ### QueryBuilder
 

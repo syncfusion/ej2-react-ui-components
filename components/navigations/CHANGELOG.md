@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.12 (2025-11-18)
+
+### ContextMenu
+
+#### Bug Fixes
+
+- `#I761398` - Resolved an issue where the context menu width increased every time it was opened using the public open method.
+
 ## 31.2.5 (2025-11-04)
 
 ### Treeview

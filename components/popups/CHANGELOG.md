@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.5 (2025-11-04)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#F70075` - Fixed a miscalculation of the dialog's z-index caused by DOM elements injected by extensions.
+
 ## 31.2.2 (2025-10-15)
 
 ### Dialog
