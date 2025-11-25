@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.15 (2025-11-25)
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#I48889` - Fixed an issue where the dropdown popup was not visible in mobile view when opened inside a scrollable dialog.
+
 ## 31.2.5 (2025-11-04)
 
 ### DropDownTree

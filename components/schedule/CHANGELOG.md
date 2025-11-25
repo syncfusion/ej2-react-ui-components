@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 31.2.12 (2025-11-18)
+## 31.2.15 (2025-11-25)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I779068` - Fixed an issue where the Scheduler toolbar displayed an incorrect date range instead of the date range based on the first visible appointment when virtual scrolling was enabled.
+
+## 31.2.10 (2025-11-13)
 
 ### Schedule
 

@@ -10,6 +10,12 @@
 
 - `#I771080` - Fixed an issue where values could not be pasted into the `MaskedTextBox`.
 
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I781158` - Fixed an issue where decimal values were not properly rounded with suffix format.
+
 ## 31.2.5 (2025-11-04)
 
 ### Slider
