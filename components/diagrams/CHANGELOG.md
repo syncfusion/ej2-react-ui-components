@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 31.2.16 (2025-12-02)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I786872` - Exceptions will no longer be thrown when drawing connectors from a node port.
+- `#I780846` - The CTRL + Arrow Key gestures will now be restricted to prevent nudge actions.
+
 ## 31.2.15 (2025-11-25)
 
 ### Diagram

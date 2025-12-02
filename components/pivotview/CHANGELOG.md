@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 31.2.16 (2025-12-02)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#I781277` - The pivot table now renders correctly during vertical scrolling when virtualization is enabled.
+- `#I763839` - Dynamic column resizing and width updates now function properly in the pivot table.
+
+## 31.2.12 (2025-11-18)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- Grand Totals are now correctly displayed at the top of OLAP Pivot Tables when virtualization is enabled.
+
 ## 31.2.5 (2025-11-04)
 
 ### Pivot Table

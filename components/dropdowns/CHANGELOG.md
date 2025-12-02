@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.16 (2025-12-02)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I784260` - Resolved an issue where the dropdown refreshed unexpectedly when the dataset size was below the virtualization threshold.
+
 ## 31.2.15 (2025-11-25)
 
 ### DropdownList
