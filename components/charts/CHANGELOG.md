@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 31.2.16 (2025-12-02)
+## 31.2.18 (2025-12-09)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I774573` - Now, the column chart is rendered properly with `columnWidthInPixel` when rendered with column.
+
+## 31.2.9 (2025-12-09)
 
 ### Chart
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.18 (2025-12-09)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I787365` - The annotation template for a group node will now be removed properly when the group node is deleted.
+
 ## 31.2.16 (2025-12-02)
 
 ### Diagram

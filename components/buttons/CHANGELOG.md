@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.18 (2025-12-09)
+
+### Button
+
+#### Bug Fixes
+
+- `#I785731` - Fixed the issue where a CSP violation occurs when clicking the Apply button in the `DateRangePicker` component.
+
 ## 31.2.3 (2025-10-22)
 
 ### Chip
