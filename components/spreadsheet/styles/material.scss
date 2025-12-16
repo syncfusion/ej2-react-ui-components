@@ -1,2 +1,2 @@
-@import 'spreadsheet/material.scss';
-@import 'spreadsheet-ribbon/material.scss';
+@use 'spreadsheet/material' as *;
+@use 'spreadsheet-ribbon/material' as *;

@@ -1,4 +1,4 @@
-@import 'badge/fluent.scss';
-@import 'toast/fluent.scss';
-@import 'message/fluent.scss';
-@import 'skeleton/fluent.scss';
+@use 'badge/fluent' as *;
+@use 'toast/fluent' as *;
+@use 'message/fluent' as *;
+@use 'skeleton/fluent' as *;

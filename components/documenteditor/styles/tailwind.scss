@@ -1,2 +1,2 @@
-@import 'document-editor/tailwind.scss';
-@import 'document-editor-container/tailwind.scss';
+@use 'document-editor/tailwind' as *;
+@use 'document-editor-container/tailwind' as *;

@@ -1,2 +1,2 @@
-@import 'spreadsheet/highcontrast.scss';
-@import 'spreadsheet-ribbon/highcontrast.scss';
+@use 'spreadsheet/highcontrast' as *;
+@use 'spreadsheet-ribbon/highcontrast' as *;

@@ -1,2 +1,2 @@
-@import 'spreadsheet/bds.scss';
-@import 'spreadsheet-ribbon/bds.scss';
+@use 'spreadsheet/bds' as *;
+@use 'spreadsheet-ribbon/bds' as *;

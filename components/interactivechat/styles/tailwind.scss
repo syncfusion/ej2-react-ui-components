@@ -1,2 +1,2 @@
-@import 'ai-assistview/tailwind.scss';
-@import 'chat-ui/tailwind.scss';
+@use 'ai-assistview/tailwind' as *;
+@use 'chat-ui/tailwind' as *;

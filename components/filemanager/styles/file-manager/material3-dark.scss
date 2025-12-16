@@ -1,2 +1,1 @@
-@import 'ej2-base/styles/definition/material3-dark.scss';
-@import 'ej2-filemanager/styles/file-manager/material3-dark.scss';
+@use 'ej2-filemanager/styles/file-manager/material3-dark' as *;

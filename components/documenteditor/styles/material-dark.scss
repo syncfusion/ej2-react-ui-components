@@ -1,2 +1,2 @@
-@import 'document-editor/material-dark.scss';
-@import 'document-editor-container/material-dark.scss';
+@use 'document-editor/material-dark' as *;
+@use 'document-editor-container/material-dark' as *;

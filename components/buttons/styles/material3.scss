@@ -1,8 +1,7 @@
-
-@import 'button/material3.scss';
-@import 'check-box/material3.scss';
-@import 'radio-button/material3.scss';
-@import 'switch/material3.scss';
-@import 'chips/material3.scss';
-@import 'floating-action-button/material3.scss';
-@import 'speed-dial/material3.scss';
+@use 'button/material3' as *;
+@use 'check-box/material3' as *;
+@use 'radio-button/material3' as *;
+@use 'switch/material3' as *;
+@use 'chips/material3' as *;
+@use 'floating-action-button/material3' as *;
+@use 'speed-dial/material3' as *;

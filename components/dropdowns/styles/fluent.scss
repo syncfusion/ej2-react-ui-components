@@ -1,8 +1,8 @@
-@import 'drop-down-base/fluent.scss';
-@import 'drop-down-list/fluent.scss';
-@import 'drop-down-tree/fluent.scss';
-@import 'combo-box/fluent.scss';
-@import 'auto-complete/fluent.scss';
-@import 'multi-select/fluent.scss';
-@import 'list-box/fluent.scss';
-@import 'mention/fluent.scss';
+@use 'drop-down-base/fluent' as *;
+@use 'drop-down-list/fluent' as *;
+@use 'drop-down-tree/fluent' as *;
+@use 'combo-box/fluent' as *;
+@use 'auto-complete/fluent' as *;
+@use 'multi-select/fluent' as *;
+@use 'list-box/fluent' as *;
+@use 'mention/fluent' as *;

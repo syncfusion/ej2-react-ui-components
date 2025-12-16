@@ -1,2 +1,2 @@
-@import 'spreadsheet/fluent-dark.scss';
-@import 'spreadsheet-ribbon/fluent-dark.scss';
+@use 'spreadsheet/fluent-dark' as *;
+@use 'spreadsheet-ribbon/fluent-dark' as *;

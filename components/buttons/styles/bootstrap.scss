@@ -1,7 +1,7 @@
-@import 'button/bootstrap.scss';
-@import 'check-box/bootstrap.scss';
-@import 'radio-button/bootstrap.scss';
-@import 'switch/bootstrap.scss';
-@import 'chips/bootstrap.scss';
-@import 'floating-action-button/bootstrap.scss';
-@import 'speed-dial/bootstrap.scss';
+@use 'button/bootstrap' as *;
+@use 'check-box/bootstrap' as *;
+@use 'radio-button/bootstrap' as *;
+@use 'switch/bootstrap' as *;
+@use 'chips/bootstrap' as *;
+@use 'floating-action-button/bootstrap' as *;
+@use 'speed-dial/bootstrap' as *;

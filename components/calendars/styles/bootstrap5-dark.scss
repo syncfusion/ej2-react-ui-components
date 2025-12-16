@@ -1,5 +1,5 @@
-@import 'calendar/bootstrap5-dark.scss';
-@import 'timepicker/bootstrap5-dark.scss';
-@import 'datepicker/bootstrap5-dark.scss';
-@import 'daterangepicker/bootstrap5-dark.scss';
-@import 'datetimepicker/bootstrap5-dark.scss';
+@use 'calendar/bootstrap5-dark' as *;
+@use 'timepicker/bootstrap5-dark' as *;
+@use 'datepicker/bootstrap5-dark' as *;
+@use 'daterangepicker/bootstrap5-dark' as *;
+@use 'datetimepicker/bootstrap5-dark' as *;

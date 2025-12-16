@@ -7,7 +7,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 /**
  * Represents the React BlockEditor Component
  * ```tsx
- * <BlockEditor></BlockEditor>
+ * <BlockEditorComponent></BlockEditorComponent>
  * ```
  */
 export class BlockEditorComponent extends BlockEditor {
@@ -17,7 +17,6 @@ export class BlockEditorComponent extends BlockEditor {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
-    public directivekeys: { [key: string]: Object } = {'blocks': 'block'};
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = true;

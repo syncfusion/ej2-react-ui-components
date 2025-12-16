@@ -1,5 +1,5 @@
-@import 'calendar/bootstrap.scss';
-@import 'timepicker/bootstrap.scss';
-@import 'datepicker/bootstrap.scss';
-@import 'daterangepicker/bootstrap.scss';
-@import 'datetimepicker/bootstrap.scss';
+@use 'calendar/bootstrap' as *;
+@use 'timepicker/bootstrap' as *;
+@use 'datepicker/bootstrap' as *;
+@use 'daterangepicker/bootstrap' as *;
+@use 'datetimepicker/bootstrap' as *;

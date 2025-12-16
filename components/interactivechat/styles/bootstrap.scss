@@ -1,2 +1,2 @@
-@import 'ai-assistview/bootstrap.scss';
-@import 'chat-ui/bootstrap.scss';
+@use 'ai-assistview/bootstrap' as *;
+@use 'chat-ui/bootstrap' as *;

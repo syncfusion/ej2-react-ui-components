@@ -1,4 +1,4 @@
-@import 'dialog/tailwind.scss';
-@import 'popup/tailwind.scss';
-@import 'tooltip/tailwind.scss';
-@import 'spinner/tailwind.scss';
+@use 'dialog/tailwind' as *;
+@use 'popup/tailwind' as *;
+@use 'tooltip/tailwind' as *;
+@use 'spinner/tailwind' as *;

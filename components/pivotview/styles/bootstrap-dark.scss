@@ -1,2 +1,2 @@
-@import 'pivotview/bootstrap-dark.scss';
-@import 'pivotfieldlist/bootstrap-dark.scss';
+@use 'pivotview/bootstrap-dark' as *;
+@use 'pivotfieldlist/bootstrap-dark' as *;

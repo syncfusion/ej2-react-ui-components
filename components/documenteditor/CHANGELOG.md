@@ -2,7 +2,18 @@
 
 ## [Unreleased]
 
-## 31.2.18 (2025-12-09)
+## 32.1.19 (2025-12-16)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I781421` - Fixed the issue where paragraph formatting was lost after pressing Enter when Track Changes was enabled.
+`#I779125` - Fixed a script error that occurred while exporting the document as DOCX.
+`#I775775` - Fixed the issue where white space appeared when opening the attached document.
+`#I778025` - Fixed a script error that occurred when opening a document containing chart elements.
+
+## 31.2.15 (2025-11-25)
 
 ### DocumentEditor
 

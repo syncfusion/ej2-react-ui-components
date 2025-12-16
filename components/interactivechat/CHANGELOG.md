@@ -2,20 +2,6 @@
 
 ## [Unreleased]
 
-## 31.2.18 (2025-12-09)
-
-### AI AssistView
-
-#### Bug Fixes
-
-- `#I762089` - Now the issue with maxFileSize validation when locale is configured for the file status text has been resolved.
-
-### Chat UI
-
-#### Bug Fixes
-
-- `#I788355` - Now the issue with navigating Chat UI mention suggestions by using arrow keys when suggestions have identical display names has been resolved.
-
 ## 29.1.33 (2025-03-25)
 
 ### Chat UI

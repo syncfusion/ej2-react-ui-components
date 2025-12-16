@@ -1,3 +1,2 @@
-
-@import 'spreadsheet/material3-dark.scss';
-@import 'spreadsheet-ribbon/material3-dark.scss';
+@use 'spreadsheet/material3-dark' as *;
+@use 'spreadsheet-ribbon/material3-dark' as *;

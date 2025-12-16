@@ -1,2 +1,2 @@
-@import 'list-view/highcontrast-light.scss';
-@import 'sortable/highcontrast-light.scss';
+@use 'list-view/highcontrast-light' as *;
+@use 'sortable/highcontrast-light' as *;

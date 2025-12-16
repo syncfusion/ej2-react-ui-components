@@ -1,5 +1,5 @@
-@import 'calendar/fabric-dark.scss';
-@import 'timepicker/fabric-dark.scss';
-@import 'datepicker/fabric-dark.scss';
-@import 'daterangepicker/fabric-dark.scss';
-@import 'datetimepicker/fabric-dark.scss';
+@use 'calendar/fabric-dark' as *;
+@use 'timepicker/fabric-dark' as *;
+@use 'datepicker/fabric-dark' as *;
+@use 'daterangepicker/fabric-dark' as *;
+@use 'datetimepicker/fabric-dark' as *;

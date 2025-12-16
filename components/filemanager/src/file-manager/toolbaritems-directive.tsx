@@ -3,6 +3,8 @@ import { ToolbarItemModel } from '@syncfusion/ej2-filemanager';
 
 export interface ToolbarItemDirTypecast {
     template?: string | Function | any;
+    largeIconsTemplate?: string | Function | any;
+    navigationPaneTemplate?: string | Function | any;
 }
 
 export class ToolbarItemDirective extends ComplexBase<ToolbarItemModel| ToolbarItemDirTypecast & { children?: React.ReactNode }, ToolbarItemModel| ToolbarItemDirTypecast> {

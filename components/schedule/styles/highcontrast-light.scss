@@ -1,2 +1,2 @@
-@import 'schedule/highcontrast-light.scss';
-@import 'recurrence-editor/highcontrast-light.scss';
+@use 'schedule/highcontrast-light' as *;
+@use 'recurrence-editor/highcontrast-light' as *;

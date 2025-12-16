@@ -1,5 +1,5 @@
-@import 'avatar/tailwind.scss';
-@import 'card/tailwind.scss';
-@import 'splitter/tailwind.scss';
-@import 'dashboard-layout/tailwind.scss';
-@import 'timeline/tailwind.scss';
+@use 'avatar/tailwind' as *;
+@use 'card/tailwind' as *;
+@use 'splitter/tailwind' as *;
+@use 'dashboard-layout/tailwind' as *;
+@use 'timeline/tailwind' as *;

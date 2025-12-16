@@ -1,2 +1,2 @@
-@import 'schedule/fabric-dark.scss';
-@import 'recurrence-editor/fabric-dark.scss';
+@use 'schedule/fabric-dark' as *;
+@use 'recurrence-editor/fabric-dark' as *;

@@ -1,2 +1,2 @@
-@import 'excel-filter/bootstrap-dark.scss';
-@import 'grid/bootstrap-dark.scss';
+@use 'excel-filter/bootstrap-dark' as *;
+@use 'grid/bootstrap-dark' as *;

@@ -10,6 +10,8 @@ export interface ChatUITypecast {
     messageTemplate?: string | Function | any;
     typingUsersTemplate?: string | Function | any;
     timeBreakTemplate?: string | Function | any;
+    previewTemplate?: string | Function | any;
+    attachmentTemplate?: string | Function | any;
 }
 /**
  * Represents the React ChatUI Component

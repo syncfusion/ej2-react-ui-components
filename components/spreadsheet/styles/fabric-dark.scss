@@ -1,2 +1,2 @@
-@import 'spreadsheet/fabric-dark.scss';
-@import 'spreadsheet-ribbon/fabric-dark.scss';
+@use 'spreadsheet/fabric-dark' as *;
+@use 'spreadsheet-ribbon/fabric-dark' as *;

@@ -1,2 +1,2 @@
-@import 'list-view/tailwind-dark.scss';
-@import 'sortable/tailwind-dark.scss';
+@use 'list-view/tailwind-dark' as *;
+@use 'sortable/tailwind-dark' as *;

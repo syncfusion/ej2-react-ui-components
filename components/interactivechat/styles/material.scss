@@ -1,2 +1,2 @@
-@import 'ai-assistview/material.scss';
-@import 'chat-ui/material.scss';
+@use 'ai-assistview/material' as *;
+@use 'chat-ui/material' as *;

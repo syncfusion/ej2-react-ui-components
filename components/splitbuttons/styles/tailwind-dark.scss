@@ -1,4 +1,4 @@
-@import 'drop-down-button/tailwind-dark.scss';
-@import 'split-button/tailwind-dark.scss';
-@import 'button-group/tailwind-dark.scss';
-@import 'progress-button/tailwind-dark.scss';
+@use 'drop-down-button/tailwind-dark' as *;
+@use 'split-button/tailwind-dark' as *;
+@use 'button-group/tailwind-dark' as *;
+@use 'progress-button/tailwind-dark' as *;

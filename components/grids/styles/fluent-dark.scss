@@ -1,2 +1,2 @@
-@import 'excel-filter/fluent-dark.scss';
-@import 'grid/fluent-dark.scss';
+@use 'excel-filter/fluent-dark' as *;
+@use 'grid/fluent-dark' as *;

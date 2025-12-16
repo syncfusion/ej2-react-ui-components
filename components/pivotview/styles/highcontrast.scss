@@ -1,2 +1,2 @@
-@import 'pivotview/highcontrast.scss';
-@import 'pivotfieldlist/highcontrast.scss';
+@use 'pivotview/highcontrast' as *;
+@use 'pivotfieldlist/highcontrast' as *;

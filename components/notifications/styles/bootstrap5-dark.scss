@@ -1,4 +1,4 @@
-@import 'badge/bootstrap5-dark.scss';
-@import 'toast/bootstrap5-dark.scss';
-@import 'message/bootstrap5-dark.scss';
-@import 'skeleton/bootstrap5-dark.scss';
+@use 'badge/bootstrap5-dark' as *;
+@use 'toast/bootstrap5-dark' as *;
+@use 'message/bootstrap5-dark' as *;
+@use 'skeleton/bootstrap5-dark' as *;

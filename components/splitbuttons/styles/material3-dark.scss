@@ -1,5 +1,4 @@
-
-@import 'drop-down-button/material3-dark.scss';
-@import 'split-button/material3-dark.scss';
-@import 'button-group/material3-dark.scss';
-@import 'progress-button/material3-dark.scss';
+@use 'drop-down-button/material3-dark' as *;
+@use 'split-button/material3-dark' as *;
+@use 'button-group/material3-dark' as *;
+@use 'progress-button/material3-dark' as *;

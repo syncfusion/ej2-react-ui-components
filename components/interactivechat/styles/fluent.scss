@@ -1,2 +1,2 @@
-@import 'ai-assistview/fluent.scss';
-@import 'chat-ui/fluent.scss';
+@use 'ai-assistview/fluent' as *;
+@use 'chat-ui/fluent' as *;

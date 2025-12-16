@@ -1,2 +1,2 @@
-@import 'schedule/material-dark.scss';
-@import 'recurrence-editor/material-dark.scss';
+@use 'schedule/material-dark' as *;
+@use 'recurrence-editor/material-dark' as *;

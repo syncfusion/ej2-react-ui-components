@@ -13,6 +13,7 @@ export interface GanttTypecast {
     tooltipSettings?: any;
     filter?: any;
     filterTemplate?: string | Function | any;
+    emptyRecordTemplate?: string | Function | any;
 }
 /**
  * `GanttComponent` represents the react Gantt.

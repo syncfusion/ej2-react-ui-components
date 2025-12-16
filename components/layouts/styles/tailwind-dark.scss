@@ -1,5 +1,5 @@
-@import 'avatar/tailwind-dark.scss';
-@import 'card/tailwind-dark.scss';
-@import 'splitter/tailwind-dark.scss';
-@import 'dashboard-layout/tailwind-dark.scss';
-@import 'timeline/tailwind-dark.scss';
+@use 'avatar/tailwind-dark' as *;
+@use 'card/tailwind-dark' as *;
+@use 'splitter/tailwind-dark' as *;
+@use 'dashboard-layout/tailwind-dark' as *;
+@use 'timeline/tailwind-dark' as *;

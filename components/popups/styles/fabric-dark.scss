@@ -1,4 +1,4 @@
-@import 'dialog/fabric-dark.scss';
-@import 'popup/fabric-dark.scss';
-@import 'tooltip/fabric-dark.scss';
-@import 'spinner/fabric-dark.scss';
+@use 'dialog/fabric-dark' as *;
+@use 'popup/fabric-dark' as *;
+@use 'tooltip/fabric-dark' as *;
+@use 'spinner/fabric-dark' as *;

@@ -1,2 +1,2 @@
-@import 'ai-assistview/bootstrap-dark.scss';
-@import 'chat-ui/bootstrap-dark.scss';
+@use 'ai-assistview/bootstrap-dark' as *;
+@use 'chat-ui/bootstrap-dark' as *;

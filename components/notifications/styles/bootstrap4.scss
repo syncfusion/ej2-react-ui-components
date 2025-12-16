@@ -1,4 +1,4 @@
-@import 'badge/bootstrap4.scss';
-@import 'toast/bootstrap4.scss';
-@import 'message/bootstrap4.scss';
-@import 'skeleton/bootstrap4.scss';
+@use 'badge/bootstrap4' as *;
+@use 'toast/bootstrap4' as *;
+@use 'message/bootstrap4' as *;
+@use 'skeleton/bootstrap4' as *;

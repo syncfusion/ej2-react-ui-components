@@ -1,5 +1,4 @@
-
-@import 'dialog/material3-dark.scss';
-@import 'popup/material3-dark.scss';
-@import 'tooltip/material3-dark.scss';
-@import 'spinner/material3-dark.scss';
+@use 'dialog/material3-dark' as *;
+@use 'popup/material3-dark' as *;
+@use 'tooltip/material3-dark' as *;
+@use 'spinner/material3-dark' as *;

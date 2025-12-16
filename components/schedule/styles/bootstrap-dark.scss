@@ -1,2 +1,2 @@
-@import 'schedule/bootstrap-dark.scss';
-@import 'recurrence-editor/bootstrap-dark.scss';
+@use 'schedule/bootstrap-dark' as *;
+@use 'recurrence-editor/bootstrap-dark' as *;

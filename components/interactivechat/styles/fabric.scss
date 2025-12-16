@@ -1,2 +1,2 @@
-@import 'ai-assistview/fabric.scss';
-@import 'chat-ui/fabric.scss';
+@use 'ai-assistview/fabric' as *;
+@use 'chat-ui/fabric' as *;

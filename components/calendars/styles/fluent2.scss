@@ -1,5 +1,5 @@
-@import 'calendar/fluent2.scss';
-@import 'timepicker/fluent2.scss';
-@import 'datepicker/fluent2.scss';
-@import 'daterangepicker/fluent2.scss';
-@import 'datetimepicker/fluent2.scss';
+@use 'calendar/fluent2' as *;
+@use 'timepicker/fluent2' as *;
+@use 'datepicker/fluent2' as *;
+@use 'daterangepicker/fluent2' as *;
+@use 'datetimepicker/fluent2' as *;

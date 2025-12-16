@@ -1,2 +1,2 @@
-@import 'schedule/bds.scss';
-@import 'recurrence-editor/bds.scss';
+@use 'schedule/bds' as *;
+@use 'recurrence-editor/bds' as *;

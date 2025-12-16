@@ -1,5 +1,5 @@
-@import 'avatar/bootstrap5.scss';
-@import 'card/bootstrap5.scss';
-@import 'splitter/bootstrap5.scss';
-@import 'dashboard-layout/bootstrap5.scss';
-@import 'timeline/bootstrap5.scss';
+@use 'avatar/bootstrap5' as *;
+@use 'card/bootstrap5' as *;
+@use 'splitter/bootstrap5' as *;
+@use 'dashboard-layout/bootstrap5' as *;
+@use 'timeline/bootstrap5' as *;

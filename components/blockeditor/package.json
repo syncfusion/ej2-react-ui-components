@@ -8,7 +8,12 @@
 		"react",
 		"reactjs",
 		"ej2-react-blockeditor",
-		"react-blockeditor"
+		"react-blockeditor",
+		"block editor",
+		"blocks",
+		"editor",
+		"modular-editor",
+		"block-based"
 	],
 	"repository": {
 		"type": "git",

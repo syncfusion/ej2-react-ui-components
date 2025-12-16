@@ -1,8 +1,8 @@
-@import 'drop-down-base/bootstrap4.scss';
-@import 'drop-down-list/bootstrap4.scss';
-@import 'drop-down-tree/bootstrap4.scss';
-@import 'combo-box/bootstrap4.scss';
-@import 'auto-complete/bootstrap4.scss';
-@import 'multi-select/bootstrap4.scss';
-@import 'list-box/bootstrap4.scss';
-@import 'mention/bootstrap4.scss';
+@use 'drop-down-base/bootstrap4' as *;
+@use 'drop-down-list/bootstrap4' as *;
+@use 'drop-down-tree/bootstrap4' as *;
+@use 'combo-box/bootstrap4' as *;
+@use 'auto-complete/bootstrap4' as *;
+@use 'multi-select/bootstrap4' as *;
+@use 'list-box/bootstrap4' as *;
+@use 'mention/bootstrap4' as *;

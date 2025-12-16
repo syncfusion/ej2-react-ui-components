@@ -1,2 +1,2 @@
-@import 'pivotview/tailwind.scss';
-@import 'pivotfieldlist/tailwind.scss';
+@use 'pivotview/tailwind' as *;
+@use 'pivotfieldlist/tailwind' as *;

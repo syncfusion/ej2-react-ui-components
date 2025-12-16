@@ -1,2 +1,1 @@
-@import 'ej2-base/styles/definition/material3-dark.scss';
-@import 'ej2-inputs/styles/rating/material3-dark.scss';
+@use 'ej2-inputs/styles/rating/material3-dark' as *;

@@ -1,2 +1,2 @@
-@import 'document-editor/bds.scss';
-@import 'document-editor-container/bds.scss';
+@use 'document-editor/bds' as *;
+@use 'document-editor-container/bds' as *;

@@ -1,4 +1,4 @@
-@import 'drop-down-button/tailwind.scss';
-@import 'split-button/tailwind.scss';
-@import 'button-group/tailwind.scss';
-@import 'progress-button/tailwind.scss';
+@use 'drop-down-button/tailwind' as *;
+@use 'split-button/tailwind' as *;
+@use 'button-group/tailwind' as *;
+@use 'progress-button/tailwind' as *;

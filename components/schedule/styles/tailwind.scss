@@ -1,2 +1,2 @@
-@import 'schedule/tailwind.scss';
-@import 'recurrence-editor/tailwind.scss';
+@use 'schedule/tailwind' as *;
+@use 'recurrence-editor/tailwind' as *;

@@ -1,2 +1,2 @@
-@import 'list-view/fluent-dark.scss';
-@import 'sortable/fluent-dark.scss';
+@use 'list-view/fluent-dark' as *;
+@use 'sortable/fluent-dark' as *;

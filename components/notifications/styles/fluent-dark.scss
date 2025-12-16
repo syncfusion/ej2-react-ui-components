@@ -1,4 +1,4 @@
-@import 'badge/fluent-dark.scss';
-@import 'toast/fluent-dark.scss';
-@import 'message/fluent-dark.scss';
-@import 'skeleton/fluent-dark.scss';
+@use 'badge/fluent-dark' as *;
+@use 'toast/fluent-dark' as *;
+@use 'message/fluent-dark' as *;
+@use 'skeleton/fluent-dark' as *;

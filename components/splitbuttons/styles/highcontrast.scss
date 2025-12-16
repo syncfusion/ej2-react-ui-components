@@ -1,4 +1,4 @@
-@import 'drop-down-button/highcontrast.scss';
-@import 'split-button/highcontrast.scss';
-@import 'button-group/highcontrast.scss';
-@import 'progress-button/highcontrast.scss';
+@use 'drop-down-button/highcontrast' as *;
+@use 'split-button/highcontrast' as *;
+@use 'button-group/highcontrast' as *;
+@use 'progress-button/highcontrast' as *;

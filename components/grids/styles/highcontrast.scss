@@ -1,2 +1,2 @@
-@import 'excel-filter/highcontrast.scss';
-@import 'grid/highcontrast.scss';
+@use 'excel-filter/highcontrast' as *;
+@use 'grid/highcontrast' as *;

@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 31.2.18 (2025-12-09)
-
-### Chart
-
-#### Bug Fixes
-
-- `#I774573` - Now, the column chart is rendered properly with `columnWidthInPixel` when rendered with column.
-
-## 31.2.9 (2025-12-09)
+## 32.1.19 (2025-12-16)
 
 ### Chart
 
@@ -18,23 +10,31 @@
 
 - `#I788505` - Hovering over the scatter chart in the spreadsheet now does not throw a console error.
 
-## 31.2.8 (2025-12-02)
+### Charts
 
-### Chart
+#### Feature
 
-#### Bug Fixes
-
-- `#I784564` - The chart is now updated properly after removing the multilevel label.
-
-## 31.2.7 (2025-11-25)
-
-### Chart
+- Users can now use the `noDataTemplate` property in Charts to define a custom template that clearly indicates when chart data is unavailable.
+        Explore the demo [here](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/no-data-template)
 
 #### Bug Fixes
 
-- `#F71059` - Polar range column now display properly even when the low and high values are the same.
+- `#T745980` - The legend text trim tooltip will no longer be cropped at the bottom of the legend bounds.
+- `#T754125` - The marker will no longer render when it exceeds the axis range.
 
-## 31.2.6 (2025-11-18)
+### Accumulation Chart
+
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Accumulation Chart to define a custom template that clearly indicates when chart data is unavailable.
+
+### Stock Chart
+
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Stock Chart to define a custom template that clearly indicates when chart data is unavailable.
+
+## 31.2.6 (2025-12-02)
 
 ### Chart
 
@@ -74,10 +74,6 @@
 - `#I771969` - Now, no extra space will be created on multilevel labels when the text width is reduced.
 - `#I770538` - Axis label colors were updated for dark and high-contrast themes to improve visibility.
 - `#I774667` - The console error will no longer occur when hovering over the trendline legend text.
-
-#### Breaking Changes
-
-- The axis label color was updated to `#FFFFFFE6` for the dark theme and `#FFFFFF` for the high contrast theme.
 
 ## 31.2.2 (2025-10-15)
 
@@ -145,14 +141,14 @@
 
 #### Bug Fixes
 
-- `#F69182` - Columns with a single X-axis value now render with the correct width.
+- `#FB69182` - Columns with a single X-axis value now render with the correct width.
 - `#I762508` - The legend highlight now works correctly when the highlight mode is set to `Series`.
 - `#I760409` - The Zoom toolbar tooltip will be displayed on the pop-up.
 - `#I762919` - The sparkline tooltip renders properly on enabling RTL.
 
 ## 31.1.18 (2025-09-10)
 
-### Chart
+### Charts
 
 #### Bug Fixes
 
@@ -163,7 +159,33 @@
 
 #### Bug Fixes
 
-- `#T756018` - The axis label tooltip text now renders correctly without being trimmed.
+- `#I756018` - The axis label tooltip text now renders correctly without being trimmed
+
+## 31.1.17 (2025-09-05)
+
+### Charts
+
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Charts to define a custom template that clearly indicates when chart data is unavailable.
+        Explore the demo [here](https://ej2.syncfusion.com/angular/demos/#/tailwind3/chart/no-data-template)
+
+#### Bug Fixes
+
+- `#I745980` - The legend text trim tooltip will no longer be cropped at the bottom of the legend bounds.
+- `#I754125` - The marker will no longer render when it exceeds the axis range.
+
+### Accumulation Chart
+
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Accumulation Chart to define a custom template that clearly indicates when chart data is unavailable.
+
+### Stock Chart
+
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Stock Chart to define a custom template that clearly indicates when chart data is unavailable.
 
 ## 30.2.6 (2025-08-19)
 
@@ -3752,29 +3774,4 @@ Graphics (SVG).
 - **Animation** - Chart series will be animated when rendering and refreshing the chart widget.
 - **User Interaction** - Supports interactive features that are zooming, panning, crosshair, trackball, tooltip, and data point selection.
 - **Annotation** - Supports annotation to mark a specific area in chart.
-- **Export** - Supports to print the chart directly from the browser and exports the chart in both JPEG and PNG format.## 31.1.17 (2025-09-05)
-
-### Charts
-
-#### Feature
-
-- Users can now use the `noDataTemplate` property in Charts to define a custom template that clearly indicates when chart data is unavailable.
-        Explore the demo [here](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/no-data-template)
-
-#### Bug Fixes
-
-- `#T745980` - The legend text trim tooltip will no longer be cropped at the bottom of the legend bounds.
-- `#T754125` - The marker will no longer render when it exceeds the axis range.
-
-### Accumulation Chart
-
-#### Feature
-
-- Users can now use the `noDataTemplate` property in Accumulation Chart to define a custom template that clearly indicates when chart data is unavailable.
-
-### Stock Chart
-
-#### Feature
-
-- Users can now use the `noDataTemplate` property in Stock Chart to define a custom template that clearly indicates when chart data is unavailable.
-
+- **Export** - Supports to print the chart directly from the browser and exports the chart in both JPEG and PNG format.

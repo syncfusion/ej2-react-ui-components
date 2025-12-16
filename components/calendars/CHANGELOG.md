@@ -2,13 +2,7 @@
 
 ## [Unreleased]
 
-## 31.2.18 (2025-12-09)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I761820` - Fixed an issue where the DatePicker became disabled or unresponsive when the `min` property changed from null to a date value.
+## 32.1.19 (2025-12-16)
 
 ### DateRangePicker
 

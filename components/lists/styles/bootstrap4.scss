@@ -1,2 +1,2 @@
-@import 'list-view/bootstrap4.scss';
-@import 'sortable/bootstrap4.scss';
+@use 'list-view/bootstrap4' as *;
+@use 'sortable/bootstrap4' as *;

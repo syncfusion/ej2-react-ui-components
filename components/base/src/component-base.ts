@@ -363,7 +363,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
                         if (this.getModuleName() === 'grid' && key === 'field') {
                             curObj[`${key}`] = newValue;
                         }
-                        if (!Object.prototype.hasOwnProperty.call(oldProp, key) || !((templateProps.length > 0 && templateProps.indexOf(`${key}`) === -1 && typeof(newValue) === 'function') ? this.compareValues(oldValue.toString(), newValue.toString()) : this.compareValues(oldValue, newValue))) {
+                        if (!Object.prototype.hasOwnProperty.call(oldProp, key) || !((templateProps.length > 0 && templateProps.indexOf(`${key}`) === -1 && typeof(newValue) === 'function') ? this.compareValues(oldValue != null ? oldValue.toString() : oldValue, newValue.toString()) : this.compareValues(oldValue, newValue))) {
                             if (!propName) {
                                 return { status: false };
                             }

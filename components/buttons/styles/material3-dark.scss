@@ -1,8 +1,7 @@
-
-@import 'button/material3-dark.scss';
-@import 'check-box/material3-dark.scss';
-@import 'radio-button/material3-dark.scss';
-@import 'switch/material3-dark.scss';
-@import 'chips/material3-dark.scss';
-@import 'floating-action-button/material3-dark.scss';
-@import 'speed-dial/material3-dark.scss';
+@use 'button/material3-dark' as *;
+@use 'check-box/material3-dark' as *;
+@use 'radio-button/material3-dark' as *;
+@use 'switch/material3-dark' as *;
+@use 'chips/material3-dark' as *;
+@use 'floating-action-button/material3-dark' as *;
+@use 'speed-dial/material3-dark' as *;

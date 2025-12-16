@@ -5,7 +5,10 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
 export interface MaskedTextBoxHtmlAttributes {
     name?: string;
 }
-
+export interface MaskedTextBoxTypecast {
+    prependTemplate?: string | Function | any;
+    appendTemplate?: string | Function | any;
+}
 /**
  * Represents the React MaskedTextBox Component
  * ```html
@@ -14,7 +17,7 @@ export interface MaskedTextBoxHtmlAttributes {
  */
 export class MaskedTextBoxComponent extends MaskedTextBox {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<MaskedTextBoxModel | DefaultHtmlAttributes & MaskedTextBoxHtmlAttributes>;
+    & Readonly<MaskedTextBoxModel | DefaultHtmlAttributes & MaskedTextBoxHtmlAttributes| MaskedTextBoxTypecast>;
     public setState: any;
     private controlAttributes: string[] = ['name'];
     private getDefaultAttributes: Function;
@@ -22,10 +25,10 @@ export class MaskedTextBoxComponent extends MaskedTextBox {
     private checkInjectedModules: boolean = false;
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
-    private immediateRender: boolean = true;
+    private immediateRender: boolean = false;
     private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<MaskedTextBoxModel | DefaultHtmlAttributes & MaskedTextBoxHtmlAttributes>;
+     & Readonly<MaskedTextBoxModel | DefaultHtmlAttributes & MaskedTextBoxHtmlAttributes| MaskedTextBoxTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

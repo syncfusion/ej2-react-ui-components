@@ -1,2 +1,2 @@
-@import 'document-editor/fabric.scss';
-@import 'document-editor-container/fabric.scss';
+@use 'document-editor/fabric' as *;
+@use 'document-editor-container/fabric' as *;

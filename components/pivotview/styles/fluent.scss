@@ -1,2 +1,2 @@
-@import 'pivotview/fluent.scss';
-@import 'pivotfieldlist/fluent.scss';
+@use 'pivotview/fluent' as *;
+@use 'pivotfieldlist/fluent' as *;

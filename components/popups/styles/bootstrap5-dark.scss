@@ -1,4 +1,4 @@
-@import 'dialog/bootstrap5-dark.scss';
-@import 'popup/bootstrap5-dark.scss';
-@import 'tooltip/bootstrap5-dark.scss';
-@import 'spinner/bootstrap5-dark.scss';
+@use 'dialog/bootstrap5-dark' as *;
+@use 'popup/bootstrap5-dark' as *;
+@use 'tooltip/bootstrap5-dark' as *;
+@use 'spinner/bootstrap5-dark' as *;

@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 31.1.21 (2025-09-23)
-
-### HeatMap
-
-#### Bug fixes
-
-- `#I767114` - The loaded event will now trigger as expected when the HeatMap is rendered.
-
-## 31.1.17 (2025-09-05)
+## 32.1.19 (2025-12-16)
 
 ### HeatMap
 

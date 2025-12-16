@@ -1,4 +1,4 @@
-@import 'dialog/fluent2.scss';
-@import 'popup/fluent2.scss';
-@import 'tooltip/fluent2.scss';
-@import 'spinner/fluent2.scss';
+@use 'dialog/fluent2' as *;
+@use 'popup/fluent2' as *;
+@use 'tooltip/fluent2' as *;
+@use 'spinner/fluent2' as *;

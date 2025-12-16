@@ -8,15 +8,7 @@
 
 ## [Unreleased]
 
-## 31.2.18 (2025-12-09)
-
-### Maps
-
-#### Bug fixes
-
-- `#I780383` - The Brazil map now renders 500,000 data points in just 4–7 seconds, ensuring faster and smoother visualization.
-
-## 31.1.17 (2025-09-05)
+## 32.1.19 (2025-12-16)
 
 ### Maps
 

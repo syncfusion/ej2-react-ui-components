@@ -1,2 +1,2 @@
-@import 'document-editor/fluent-dark.scss';
-@import 'document-editor-container/fluent-dark.scss';
+@use 'document-editor/fluent-dark' as *;
+@use 'document-editor-container/fluent-dark' as *;

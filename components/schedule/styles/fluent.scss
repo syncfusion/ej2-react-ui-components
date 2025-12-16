@@ -1,2 +1,2 @@
-@import 'schedule/fluent.scss';
-@import 'recurrence-editor/fluent.scss';
+@use 'schedule/fluent' as *;
+@use 'recurrence-editor/fluent' as *;

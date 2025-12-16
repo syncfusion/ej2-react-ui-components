@@ -3,7 +3,10 @@ import { TextBox, TextBoxModel } from '@syncfusion/ej2-inputs';
 import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/ej2-react-base';
 
 
-
+export interface TextBoxTypecast {
+    prependTemplate?: string | Function | any;
+    appendTemplate?: string | Function | any;
+}
 /**
  * Represents the React TextBox Component
  * ```html
@@ -12,17 +15,17 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class TextBoxComponent extends TextBox {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<TextBoxModel | DefaultHtmlAttributes>;
+    & Readonly<TextBoxModel | DefaultHtmlAttributes| TextBoxTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = false;
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
-    private immediateRender: boolean = true;
+    private immediateRender: boolean = false;
     private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<TextBoxModel | DefaultHtmlAttributes>;
+     & Readonly<TextBoxModel | DefaultHtmlAttributes| TextBoxTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

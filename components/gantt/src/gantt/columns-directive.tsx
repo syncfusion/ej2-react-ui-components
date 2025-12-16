@@ -7,6 +7,7 @@ export interface ColumnDirTypecast {
     editTemplate?: string | Function | any;
     filter?: any;
     filterTemplate?: string | Function | any;
+    emptyRecordTemplate?: string | Function | any;
 }
 /**
  * `ColumnDirective` represent a column of the react Gantt. 

@@ -1,4 +1,4 @@
-@import 'drop-down-button/fabric.scss';
-@import 'split-button/fabric.scss';
-@import 'button-group/fabric.scss';
-@import 'progress-button/fabric.scss';
+@use 'drop-down-button/fabric' as *;
+@use 'split-button/fabric' as *;
+@use 'button-group/fabric' as *;
+@use 'progress-button/fabric' as *;

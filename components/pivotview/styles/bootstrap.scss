@@ -1,2 +1,2 @@
-@import 'pivotview/bootstrap.scss';
-@import 'pivotfieldlist/bootstrap.scss';
+@use 'pivotview/bootstrap' as *;
+@use 'pivotfieldlist/bootstrap' as *;

@@ -1,4 +1,4 @@
-@import 'dialog/tailwind-dark.scss';
-@import 'popup/tailwind-dark.scss';
-@import 'tooltip/tailwind-dark.scss';
-@import 'spinner/tailwind-dark.scss';
+@use 'dialog/tailwind-dark' as *;
+@use 'popup/tailwind-dark' as *;
+@use 'tooltip/tailwind-dark' as *;
+@use 'spinner/tailwind-dark' as *;

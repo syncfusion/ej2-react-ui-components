@@ -1,2 +1,2 @@
-@import 'excel-filter/tailwind-dark.scss';
-@import 'grid/tailwind-dark.scss';
+@use 'excel-filter/tailwind-dark' as *;
+@use 'grid/tailwind-dark' as *;

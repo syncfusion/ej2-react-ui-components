@@ -1,4 +1,4 @@
-@import 'dialog/fluent-dark.scss';
-@import 'popup/fluent-dark.scss';
-@import 'tooltip/fluent-dark.scss';
-@import 'spinner/fluent-dark.scss';
+@use 'dialog/fluent-dark' as *;
+@use 'popup/fluent-dark' as *;
+@use 'tooltip/fluent-dark' as *;
+@use 'spinner/fluent-dark' as *;

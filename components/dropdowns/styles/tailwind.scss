@@ -1,8 +1,8 @@
-@import 'drop-down-base/tailwind.scss';
-@import 'drop-down-list/tailwind.scss';
-@import 'drop-down-tree/tailwind.scss';
-@import 'combo-box/tailwind.scss';
-@import 'auto-complete/tailwind.scss';
-@import 'multi-select/tailwind.scss';
-@import 'list-box/tailwind.scss';
-@import 'mention/tailwind.scss';
+@use 'drop-down-base/tailwind' as *;
+@use 'drop-down-list/tailwind' as *;
+@use 'drop-down-tree/tailwind' as *;
+@use 'combo-box/tailwind' as *;
+@use 'auto-complete/tailwind' as *;
+@use 'multi-select/tailwind' as *;
+@use 'list-box/tailwind' as *;
+@use 'mention/tailwind' as *;

@@ -1,2 +1,2 @@
-@import 'document-editor/fluent2.scss';
-@import 'document-editor-container/fluent2.scss';
+@use 'document-editor/fluent2' as *;
+@use 'document-editor-container/fluent2' as *;

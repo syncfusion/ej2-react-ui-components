@@ -2,13 +2,19 @@
 
 ## [Unreleased]
 
-## 31.2.18 (2025-12-09)
+## 32.1.19 (2025-12-16)
 
 ### Spreadsheet
 
-#### Bug fixes
+#### Features
 
-- `#I778016` - Issue with "row height does not adjust properly when thick borders are applied" has been resolved.
+- `#I766184` - Introduced rich, threaded cell comments, featuring reply, edit, delete, and resolve actions. Includes visual indicators, a dedicated review pane for streamlined collaboration, and a comprehensive API for creating, updating, and managing comment threads. Explore the demo [here](https://document.syncfusion.com/demos/spreadsheet-editor/javascript/#/tailwind3/spreadsheet/comment.html).
+- `#I766095`, `#I766088` - Added lightweight, non-threaded cell notes, designed for quick annotations with ribbon controls for easy navigation and visibility toggling. Provides full API support for integration and automation. Explore the demo [here](https://document.syncfusion.com/demos/spreadsheet-editor/javascript/#/tailwind3/spreadsheet/notes.html).
+- `#I764457` - Enhanced chunk processing, triggering the `beforeOpen` event for each chunk request to enable per-chunk header customization.
+
+- `#I766184` - Introduced rich, threaded cell comments, featuring reply, edit, delete, and resolve actions. Includes visual indicators, a dedicated review pane for streamlined collaboration, and a comprehensive API for creating, updating, and managing comment threads. Explore the demo [here](https://document.syncfusion.com/demos/spreadsheet-editor/react/#/tailwind3/spreadsheet/comment).
+- `#I766095`, `#I766088` - Added lightweight, non-threaded cell notes, designed for quick annotations with ribbon controls for easy navigation and visibility toggling. Provides full API support for integration and automation. Explore the demo [here](https://document.syncfusion.com/demos/spreadsheet-editor/react/#/tailwind3/spreadsheet/notes).
+- `#I764457` - Enhanced chunk processing, triggering the `beforeOpen` event for each chunk request to enable per-chunk header customization.
 
 ## 31.2.4 (2025-10-28)
 
@@ -1402,7 +1408,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.5 (2025-11-04)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.18 (2025-12-09)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I778016` - Issue with "row height does not adjust properly when thick borders are applied" has been resolved.
+
+## 31.2.5 (2025-11-04)
 
 ### Spreadsheet
 

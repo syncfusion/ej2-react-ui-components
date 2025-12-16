@@ -1,3 +1,2 @@
-
-@import 'excel-filter/material3.scss';
-@import 'grid/material3.scss';
+@use 'excel-filter/material3' as *;
+@use 'grid/material3' as *;

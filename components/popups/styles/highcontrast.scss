@@ -1,4 +1,4 @@
-@import 'dialog/highcontrast.scss';
-@import 'popup/highcontrast.scss';
-@import 'tooltip/highcontrast.scss';
-@import 'spinner/highcontrast.scss';
+@use 'dialog/highcontrast' as *;
+@use 'popup/highcontrast' as *;
+@use 'tooltip/highcontrast' as *;
+@use 'spinner/highcontrast' as *;

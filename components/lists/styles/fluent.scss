@@ -1,2 +1,2 @@
-@import 'list-view/fluent.scss';
-@import 'sortable/fluent.scss';
+@use 'list-view/fluent' as *;
+@use 'sortable/fluent' as *;

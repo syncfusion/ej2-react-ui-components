@@ -1,4 +1,4 @@
-@import 'dialog/fabric.scss';
-@import 'popup/fabric.scss';
-@import 'tooltip/fabric.scss';
-@import 'spinner/fabric.scss';
+@use 'dialog/fabric' as *;
+@use 'popup/fabric' as *;
+@use 'tooltip/fabric' as *;
+@use 'spinner/fabric' as *;

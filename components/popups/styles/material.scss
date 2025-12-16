@@ -1,4 +1,4 @@
-@import 'dialog/material.scss';
-@import 'popup/material.scss';
-@import 'tooltip/material.scss';
-@import 'spinner/material.scss';
+@use 'dialog/material' as *;
+@use 'popup/material' as *;
+@use 'tooltip/material' as *;
+@use 'spinner/material' as *;

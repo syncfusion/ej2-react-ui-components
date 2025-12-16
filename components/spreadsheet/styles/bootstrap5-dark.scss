@@ -1,2 +1,2 @@
-@import 'spreadsheet/bootstrap5-dark.scss';
-@import 'spreadsheet-ribbon/bootstrap5-dark.scss';
+@use 'spreadsheet/bootstrap5-dark' as *;
+@use 'spreadsheet-ribbon/bootstrap5-dark' as *;

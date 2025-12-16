@@ -1,4 +1,4 @@
-@import 'drop-down-button/fabric-dark.scss';
-@import 'split-button/fabric-dark.scss';
-@import 'button-group/fabric-dark.scss';
-@import 'progress-button/fabric-dark.scss';
+@use 'drop-down-button/fabric-dark' as *;
+@use 'split-button/fabric-dark' as *;
+@use 'button-group/fabric-dark' as *;
+@use 'progress-button/fabric-dark' as *;

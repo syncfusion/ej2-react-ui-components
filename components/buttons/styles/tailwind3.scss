@@ -1,7 +1,7 @@
-@import 'button/tailwind3.scss';
-@import 'check-box/tailwind3.scss';
-@import 'radio-button/tailwind3.scss';
-@import 'switch/tailwind3.scss';
-@import 'chips/tailwind3.scss';
-@import 'floating-action-button/tailwind3.scss';
-@import 'speed-dial/tailwind3.scss';
+@use 'button/tailwind3' as *;
+@use 'check-box/tailwind3' as *;
+@use 'radio-button/tailwind3' as *;
+@use 'switch/tailwind3' as *;
+@use 'chips/tailwind3' as *;
+@use 'floating-action-button/tailwind3' as *;
+@use 'speed-dial/tailwind3' as *;

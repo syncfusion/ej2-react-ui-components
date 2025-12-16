@@ -1,7 +1,7 @@
-@import 'button/fluent.scss';
-@import 'check-box/fluent.scss';
-@import 'radio-button/fluent.scss';
-@import 'switch/fluent.scss';
-@import 'chips/fluent.scss';
-@import 'floating-action-button/fluent.scss';
-@import 'speed-dial/fluent.scss';
+@use 'button/fluent' as *;
+@use 'check-box/fluent' as *;
+@use 'radio-button/fluent' as *;
+@use 'switch/fluent' as *;
+@use 'chips/fluent' as *;
+@use 'floating-action-button/fluent' as *;
+@use 'speed-dial/fluent' as *;

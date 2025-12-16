@@ -1,4 +1,4 @@
-@import 'badge/fabric-dark.scss';
-@import 'toast/fabric-dark.scss';
-@import 'message/fabric-dark.scss';
-@import 'skeleton/fabric-dark.scss';
+@use 'badge/fabric-dark' as *;
+@use 'toast/fabric-dark' as *;
+@use 'message/fabric-dark' as *;
+@use 'skeleton/fabric-dark' as *;

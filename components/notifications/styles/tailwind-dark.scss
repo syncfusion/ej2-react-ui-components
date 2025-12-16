@@ -1,4 +1,4 @@
-@import 'badge/tailwind-dark.scss';
-@import 'toast/tailwind-dark.scss';
-@import 'message/tailwind-dark.scss';
-@import 'skeleton/tailwind-dark.scss';
+@use 'badge/tailwind-dark' as *;
+@use 'toast/tailwind-dark' as *;
+@use 'message/tailwind-dark' as *;
+@use 'skeleton/tailwind-dark' as *;

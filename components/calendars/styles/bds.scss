@@ -1,5 +1,5 @@
-@import 'calendar/bds.scss';
-@import 'timepicker/bds.scss';
-@import 'datepicker/bds.scss';
-@import 'daterangepicker/bds.scss';
-@import 'datetimepicker/bds.scss';
+@use 'calendar/bds' as *;
+@use 'timepicker/bds' as *;
+@use 'datepicker/bds' as *;
+@use 'daterangepicker/bds' as *;
+@use 'datetimepicker/bds' as *;

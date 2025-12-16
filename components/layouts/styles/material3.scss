@@ -1,6 +1,5 @@
-
-@import 'avatar/material3.scss';
-@import 'card/material3.scss';
-@import 'splitter/material3.scss';
-@import 'dashboard-layout/material3.scss';
-@import 'timeline/material3.scss';
+@use 'avatar/material3' as *;
+@use 'card/material3' as *;
+@use 'splitter/material3' as *;
+@use 'dashboard-layout/material3' as *;
+@use 'timeline/material3' as *;

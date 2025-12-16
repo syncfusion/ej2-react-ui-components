@@ -1,2 +1,2 @@
-@import 'spreadsheet/fluent.scss';
-@import 'spreadsheet-ribbon/fluent.scss';
+@use 'spreadsheet/fluent' as *;
+@use 'spreadsheet-ribbon/fluent' as *;

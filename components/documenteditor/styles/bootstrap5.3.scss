@@ -1,2 +1,2 @@
-@import 'document-editor/bootstrap5.3.scss';
-@import 'document-editor-container/bootstrap5.3.scss';
+@use 'document-editor/bootstrap5.3' as *;
+@use 'document-editor-container/bootstrap5.3' as *;

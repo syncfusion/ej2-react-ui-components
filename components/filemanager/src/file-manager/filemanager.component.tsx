@@ -3,7 +3,10 @@ import { FileManager, FileManagerModel } from '@syncfusion/ej2-filemanager';
 import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/ej2-react-base';
 
 
-
+export interface FileManagerTypecast {
+    largeIconsTemplate?: string | Function | any;
+    navigationPaneTemplate?: string | Function | any;
+}
 /**
  Represents the Essential JS 2 react FileManager Component.
  * ```tsx
@@ -12,7 +15,7 @@ import { ComponentBase, applyMixins, DefaultHtmlAttributes } from '@syncfusion/e
  */
 export class FileManagerComponent extends FileManager {
     public state: Readonly<{ children?: React.ReactNode | React.ReactNode[] }> 
-    & Readonly<FileManagerModel | DefaultHtmlAttributes>;
+    & Readonly<FileManagerModel | DefaultHtmlAttributes| FileManagerTypecast>;
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
@@ -23,7 +26,7 @@ export class FileManagerComponent extends FileManager {
     private immediateRender: boolean = false;
     private isReactMock: boolean = true;
     public props: Readonly<{ children?: React.ReactNode | React.ReactNode[] }>
-     & Readonly<FileManagerModel | DefaultHtmlAttributes>;
+     & Readonly<FileManagerModel | DefaultHtmlAttributes| FileManagerTypecast>;
     public forceUpdate: (callBack?: () => any) => void;
     public context: Object;
     public portals: any = [];

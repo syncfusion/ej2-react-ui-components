@@ -277,7 +277,6 @@ Navigation components are also offered in following list of frameworks.
 
 ## Resources
 
-* [Documentation](https://ej2.syncfusion.com/react/documentation/introduction)
 * [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
 * [Theme Studio](https://ej2.syncfusion.com/themestudio/)
 * [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_medium=listing&utm_source=github)

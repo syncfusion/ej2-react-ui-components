@@ -1,2 +1,2 @@
-@import 'spreadsheet/tailwind-dark.scss';
-@import 'spreadsheet-ribbon/tailwind-dark.scss';
+@use 'spreadsheet/tailwind-dark' as *;
+@use 'spreadsheet-ribbon/tailwind-dark' as *;

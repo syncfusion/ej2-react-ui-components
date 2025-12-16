@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.19 (2025-12-16)
+
+### Common
+
+#### Bug Fixes
+
+- `#I790158` - Fixed script error caused by calling `toString()` on undefined `oldValue` during function property comparison.
+
 ## 25.1.35 (2024-03-15)
 
 ### Common

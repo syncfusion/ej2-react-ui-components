@@ -1,2 +1,2 @@
-@import 'excel-filter/bds.scss';
-@import 'grid/bds.scss';
+@use 'excel-filter/bds' as *;
+@use 'grid/bds' as *;

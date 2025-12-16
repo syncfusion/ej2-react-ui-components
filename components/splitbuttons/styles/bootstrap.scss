@@ -1,4 +1,4 @@
-@import 'drop-down-button/bootstrap.scss';
-@import 'split-button/bootstrap.scss';
-@import 'button-group/bootstrap.scss';
-@import 'progress-button/bootstrap.scss';
+@use 'drop-down-button/bootstrap' as *;
+@use 'split-button/bootstrap' as *;
+@use 'button-group/bootstrap' as *;
+@use 'progress-button/bootstrap' as *;

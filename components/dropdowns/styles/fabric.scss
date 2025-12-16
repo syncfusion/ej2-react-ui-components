@@ -1,8 +1,8 @@
-@import 'drop-down-base/fabric.scss';
-@import 'drop-down-list/fabric.scss';
-@import 'drop-down-tree/fabric.scss';
-@import 'combo-box/fabric.scss';
-@import 'auto-complete/fabric.scss';
-@import 'multi-select/fabric.scss';
-@import 'list-box/fabric.scss';
-@import 'mention/fabric.scss';
+@use 'drop-down-base/fabric' as *;
+@use 'drop-down-list/fabric' as *;
+@use 'drop-down-tree/fabric' as *;
+@use 'combo-box/fabric' as *;
+@use 'auto-complete/fabric' as *;
+@use 'multi-select/fabric' as *;
+@use 'list-box/fabric' as *;
+@use 'mention/fabric' as *;

@@ -1,4 +1,4 @@
-@import 'drop-down-button/fluent-dark.scss';
-@import 'split-button/fluent-dark.scss';
-@import 'button-group/fluent-dark.scss';
-@import 'progress-button/fluent-dark.scss';
+@use 'drop-down-button/fluent-dark' as *;
+@use 'split-button/fluent-dark' as *;
+@use 'button-group/fluent-dark' as *;
+@use 'progress-button/fluent-dark' as *;

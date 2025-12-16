@@ -67,8 +67,8 @@ Interactive chat components are also offered in following list of frameworks.
 
 ## Resources
 
-* [AI AssistView Documentation](https://ej2.syncfusion.com/react/documentation/ai-assistview/getting-started)
-* [Chat UI Documentation](https://ej2.syncfusion.com/react/documentation/chat-ui/getting-started)
+* [AI AssistView  Documentation](https://ej2.syncfusion.com/react/documentation/ai-assistview/getting-started)
+* [Chat UI  Documentation](https://ej2.syncfusion.com/react/documentation/chat-ui/getting-started)
 * [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
 * [Theme Studio](https://ej2.syncfusion.com/themestudio/)
 * [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_medium=listing&utm_source=github)

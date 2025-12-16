@@ -1,5 +1,5 @@
-@import 'avatar/fluent2.scss';
-@import 'card/fluent2.scss';
-@import 'splitter/fluent2.scss';
-@import 'dashboard-layout/fluent2.scss';
-@import 'timeline/fluent2.scss';
+@use 'avatar/fluent2' as *;
+@use 'card/fluent2' as *;
+@use 'splitter/fluent2' as *;
+@use 'dashboard-layout/fluent2' as *;
+@use 'timeline/fluent2' as *;

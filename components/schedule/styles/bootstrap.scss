@@ -1,2 +1,2 @@
-@import 'schedule/bootstrap.scss';
-@import 'recurrence-editor/bootstrap.scss';
+@use 'schedule/bootstrap' as *;
+@use 'recurrence-editor/bootstrap' as *;

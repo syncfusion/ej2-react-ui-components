@@ -127,6 +127,13 @@ The [React Speed Dial](https://www.syncfusion.com/react-components/react-speed-d
 * [Modal](https://ej2.syncfusion.com/react/documentation/speed-dial/modal) - Adds an overlay to prevent the background interaction.
 * [Templates](https://ej2.syncfusion.com/react/documentation/speed-dial/template) - Customize Speed Dial items and the popup content using templates.
 
+<p align="center">
+Trusted by the world's leading companies
+  <a href="https://www.syncfusion.com/">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Syncfusion logo">
+  </a>
+</p>
+
 ## Setup
 
 To install `buttons` and its dependent packages, use the following command.
@@ -149,11 +156,11 @@ Button components are offered in following list of frameworks.
 ## Resources
 
 * [Documentation](https://ej2.syncfusion.com/react/documentation/button/getting-started)
-* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
 * [Theme Studio](https://ej2.syncfusion.com/themestudio/)
 * [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_medium=listing&utm_source=github)
 * [Road Map](https://www.syncfusion.com/products/roadmap/react)
 * [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=react&type=all)
+* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
 
 ## Support
 

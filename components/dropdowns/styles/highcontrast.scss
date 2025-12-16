@@ -1,8 +1,8 @@
-@import 'drop-down-base/highcontrast.scss';
-@import 'drop-down-list/highcontrast.scss';
-@import 'drop-down-tree/highcontrast.scss';
-@import 'combo-box/highcontrast.scss';
-@import 'auto-complete/highcontrast.scss';
-@import 'multi-select/highcontrast.scss';
-@import 'list-box/highcontrast.scss';
-@import 'mention/highcontrast.scss';
+@use 'drop-down-base/highcontrast' as *;
+@use 'drop-down-list/highcontrast' as *;
+@use 'drop-down-tree/highcontrast' as *;
+@use 'combo-box/highcontrast' as *;
+@use 'auto-complete/highcontrast' as *;
+@use 'multi-select/highcontrast' as *;
+@use 'list-box/highcontrast' as *;
+@use 'mention/highcontrast' as *;

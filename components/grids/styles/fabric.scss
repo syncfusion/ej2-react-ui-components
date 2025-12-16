@@ -1,2 +1,2 @@
-@import 'excel-filter/fabric.scss';
-@import 'grid/fabric.scss';
+@use 'excel-filter/fabric' as *;
+@use 'grid/fabric' as *;

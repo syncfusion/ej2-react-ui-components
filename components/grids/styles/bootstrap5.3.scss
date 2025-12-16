@@ -1,2 +1,2 @@
-@import 'excel-filter/bootstrap5.3.scss';
-@import 'grid/bootstrap5.3.scss';
+@use 'excel-filter/bootstrap5.3' as *;
+@use 'grid/bootstrap5.3' as *;

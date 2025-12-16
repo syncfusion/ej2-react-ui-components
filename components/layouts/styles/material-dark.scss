@@ -1,5 +1,5 @@
-@import 'avatar/material-dark.scss';
-@import 'card/material-dark.scss';
-@import 'splitter/material-dark.scss';
-@import 'dashboard-layout/material-dark.scss';
-@import 'timeline/material-dark.scss';
+@use 'avatar/material-dark' as *;
+@use 'card/material-dark' as *;
+@use 'splitter/material-dark' as *;
+@use 'dashboard-layout/material-dark' as *;
+@use 'timeline/material-dark' as *;

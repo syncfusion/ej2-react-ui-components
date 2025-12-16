@@ -1,2 +1,2 @@
-@import 'document-editor/highcontrast-light.scss';
-@import 'document-editor-container/highcontrast-light.scss';
+@use 'document-editor/highcontrast-light' as *;
+@use 'document-editor-container/highcontrast-light' as *;

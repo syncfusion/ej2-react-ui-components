@@ -1,4 +1,4 @@
-@import 'badge/highcontrast.scss';
-@import 'toast/highcontrast.scss';
-@import 'message/highcontrast.scss';
-@import 'skeleton/highcontrast.scss';
+@use 'badge/highcontrast' as *;
+@use 'toast/highcontrast' as *;
+@use 'message/highcontrast' as *;
+@use 'skeleton/highcontrast' as *;

@@ -1,6 +1,5 @@
-
-@import 'calendar/material3-dark.scss';
-@import 'timepicker/material3-dark.scss';
-@import 'datepicker/material3-dark.scss';
-@import 'daterangepicker/material3-dark.scss';
-@import 'datetimepicker/material3-dark.scss';
+@use 'calendar/material3-dark' as *;
+@use 'timepicker/material3-dark' as *;
+@use 'datepicker/material3-dark' as *;
+@use 'daterangepicker/material3-dark' as *;
+@use 'datetimepicker/material3-dark' as *;

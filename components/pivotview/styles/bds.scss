@@ -1,2 +1,2 @@
-@import 'pivotview/bds.scss';
-@import 'pivotfieldlist/bds.scss';
+@use 'pivotview/bds' as *;
+@use 'pivotfieldlist/bds' as *;

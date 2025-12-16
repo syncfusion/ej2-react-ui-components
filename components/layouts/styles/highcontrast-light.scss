@@ -1,5 +1,5 @@
-@import 'avatar/highcontrast-light.scss';
-@import 'card/highcontrast-light.scss';
-@import 'splitter/highcontrast-light.scss';
-@import 'dashboard-layout/highcontrast-light.scss';
-@import 'timeline/highcontrast-light.scss';
+@use 'avatar/highcontrast-light' as *;
+@use 'card/highcontrast-light' as *;
+@use 'splitter/highcontrast-light' as *;
+@use 'dashboard-layout/highcontrast-light' as *;
+@use 'timeline/highcontrast-light' as *;

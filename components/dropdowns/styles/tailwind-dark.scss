@@ -1,8 +1,8 @@
-@import 'drop-down-base/tailwind-dark.scss';
-@import 'drop-down-list/tailwind-dark.scss';
-@import 'drop-down-tree/tailwind-dark.scss';
-@import 'combo-box/tailwind-dark.scss';
-@import 'auto-complete/tailwind-dark.scss';
-@import 'multi-select/tailwind-dark.scss';
-@import 'list-box/tailwind-dark.scss';
-@import 'mention/tailwind-dark.scss';
+@use 'drop-down-base/tailwind-dark' as *;
+@use 'drop-down-list/tailwind-dark' as *;
+@use 'drop-down-tree/tailwind-dark' as *;
+@use 'combo-box/tailwind-dark' as *;
+@use 'auto-complete/tailwind-dark' as *;
+@use 'multi-select/tailwind-dark' as *;
+@use 'list-box/tailwind-dark' as *;
+@use 'mention/tailwind-dark' as *;

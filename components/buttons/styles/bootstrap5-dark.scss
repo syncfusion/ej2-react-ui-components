@@ -1,7 +1,7 @@
-@import 'button/bootstrap5-dark.scss';
-@import 'check-box/bootstrap5-dark.scss';
-@import 'radio-button/bootstrap5-dark.scss';
-@import 'switch/bootstrap5-dark.scss';
-@import 'chips/bootstrap5-dark.scss';
-@import 'floating-action-button/bootstrap5-dark.scss';
-@import 'speed-dial/bootstrap5-dark.scss';
+@use 'button/bootstrap5-dark' as *;
+@use 'check-box/bootstrap5-dark' as *;
+@use 'radio-button/bootstrap5-dark' as *;
+@use 'switch/bootstrap5-dark' as *;
+@use 'chips/bootstrap5-dark' as *;
+@use 'floating-action-button/bootstrap5-dark' as *;
+@use 'speed-dial/bootstrap5-dark' as *;

@@ -1,2 +1,2 @@
-@import 'ai-assistview/highcontrast.scss';
-@import 'chat-ui/highcontrast.scss';
+@use 'ai-assistview/highcontrast' as *;
+@use 'chat-ui/highcontrast' as *;

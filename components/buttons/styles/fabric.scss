@@ -1,7 +1,7 @@
-@import 'button/fabric.scss';
-@import 'check-box/fabric.scss';
-@import 'radio-button/fabric.scss';
-@import 'switch/fabric.scss';
-@import 'chips/fabric.scss';
-@import 'floating-action-button/fabric.scss';
-@import 'speed-dial/fabric.scss';
+@use 'button/fabric' as *;
+@use 'check-box/fabric' as *;
+@use 'radio-button/fabric' as *;
+@use 'switch/fabric' as *;
+@use 'chips/fabric' as *;
+@use 'floating-action-button/fabric' as *;
+@use 'speed-dial/fabric' as *;

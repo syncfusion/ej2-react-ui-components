@@ -1,2 +1,2 @@
-@import 'spreadsheet/fabric.scss';
-@import 'spreadsheet-ribbon/fabric.scss';
+@use 'spreadsheet/fabric' as *;
+@use 'spreadsheet-ribbon/fabric' as *;

@@ -1,3 +1,2 @@
-
-@import 'pivotview/material3.scss';
-@import 'pivotfieldlist/material3.scss';
+@use 'pivotview/material3' as *;
+@use 'pivotfieldlist/material3' as *;
