@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.20 (2025-12-23)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I778016` - Issue with "row height does not adjust properly when thick borders are applied" has been resolved.
+
 ## 32.1.19 (2025-12-16)
 
 ### Spreadsheet

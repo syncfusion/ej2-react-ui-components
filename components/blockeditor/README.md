@@ -8,12 +8,12 @@ The React Block Editor package includes the following,
 
 ### React Block Editor
 
-This [React Block Editor](https://www.syncfusion.com/react-components/react-blockeditor?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm) is a modern, block-based editor for composing rich, structured documents. It’s ideal for document editing, knowledge bases, note-taking, and content creation tools. The editor provides an intuitive UI with mobile support and modular architecture. It offers multiple block types, inline content (mentions, links, labels), slash commands, and contextual menus, returning well-structured content models and valid HTML when needed.
+This [React Block Editor](https://www.syncfusion.com/react-components/react-block-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm) is a modern, block-based editor for composing rich, structured documents. It’s ideal for document editing, knowledge bases, note-taking, and content creation tools. The editor provides an intuitive UI with mobile support and modular architecture. It offers multiple block types, inline content (mentions, links, labels), slash commands, and contextual menus, returning well-structured content models and valid HTML when needed.
 
 <p align="center">
   <a href="https://ej2.syncfusion.com/react/documentation/block-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm">Getting Started</a> .
   <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm#/bootstrap5/block-editor/overview">Online demos</a> .
-  <a href="https://www.syncfusion.com/react-components/react-blockeditor?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm">Learn more</a>
+  <a href="https://www.syncfusion.com/react-components/react-block-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm">Learn more</a>
 </p>
 
 <p align="center">
@@ -41,23 +41,22 @@ npm install @syncfusion/ej2-react-blockeditor
 
 <blockquote>
     <p>ℹ <b>Note:</b></p>
-    <span>For more information on using Block Editor with Syncfusion, refer to our <a href="https://ej2.syncfusion.com/documentation/block-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm">Documentation</a>.</span>
+    <span>For more information on using Block Editor with Syncfusion, refer to our <a href="https://ej2.syncfusion.com/react/documentation/block-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm">Documentation</a>.</span>
 </blockquote>
 
 ## ✨ Key features
 
-* **Multiple block types**: Includes Heading levels 1-4, Table, Paragraph, Lists, Checklist, Quote, Callout, Divider, Code block, Table blocks and more.
-* **Inline conten**: Insert mentions, anchors, and labels; includes cleanup of mention artifacts.
-* **Slash commands**: Interactive `/` commands to insert or transform content blocks, with filtering and keyboard shortcuts.
-* **Drag and drop**: Reorder blocks effortlessly with built-in drag-and-drop support.
-* **Rich text formatting**: Apply styles such as Bold, Italic, Underline, Strikethrough, Uppercase and more.
-* **Action menu**: Perform block-level operations such as Move, Delete, and Duplicate.
-* **Contextmenu support**: Right-click context menus for quick block actions.
-* **Inline content support**: Insert inline elements like Links, Labels and Mention directly within blocks.
-* **Undo/Redo operations**: Undo and redo support for the user interactions.
-* **Events for Customization**: The Block Editor includes a rich set of events such as block addition, removal, update, selection change, command execution, paste, and mention selection allowing developers to customize and extend functionality easily.
+* [Multiple block types](https://ej2.syncfusion.com/react/documentation/block-editor/built-in-blocks/built-in-blocks?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm#block-types): Includes Heading levels 1-4, Table, Paragraph, Table, Lists, Checklist, Quote, Callout, Divider, Code block, and more.
+* [Slash commands](https://ej2.syncfusion.com/react/documentation/block-editor/editor-menus?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm#slash-command-menu): Interactive `/` commands to insert or transform content blocks, with filtering and keyboard shortcuts.
+* [Drag and drop](https://ej2.syncfusion.com/react/documentation/block-editor/drag-drop?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm): Reorder blocks effortlessly with built-in drag-and-drop support.
+* [Rich text formatting](https://ej2.syncfusion.com/react/documentation/block-editor/editor-menus?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm#inline-toolbar): Apply styles such as Bold, Italic, Underline, Strikethrough, Uppercase and more.
+* [Action menu](https://ej2.syncfusion.com/react/documentation/block-editor/editor-menus?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm#block-action-menu): Perform block-level operations such as Move, Delete, and Duplicate.
+* [Contextmenu support](https://ej2.syncfusion.com/react/documentation/block-editor/editor-menus?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm#context-menu): Right-click context menus for quick block actions.
+* [Inline content support](https://ej2.syncfusion.com/react/documentation/block-editor/built-in-blocks/inline-content?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm): Insert inline elements like Links, Labels and Mention directly within blocks.
+* [Undo/Redo operations](https://ej2.syncfusion.com/react/documentation/block-editor/undo-redo?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm): Undo and redo support for the user interactions.
+* [Events for Customization](https://ej2.syncfusion.com/react/documentation/block-editor/events?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm): The Block Editor includes a rich set of events such as block addition, removal, update, selection change, command execution, paste, and mention selection allowing developers to customize and extend functionality easily.
 * **Accessibility & WCAG 2.0 Compliance**: Accessibility support for assistive technologies and keyboard navigation.
-* **Keyboard Navigation**: Navigate and manage blocks efficiently using intuitive keyboard shortcuts for a faster editing experience.
+* [Keyboard Navigation](https://ej2.syncfusion.com/react/documentation/block-editor/keyboard-shortcuts?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm): Navigate and manage blocks efficiently using intuitive keyboard shortcuts for a faster editing experience.
 
 <p align="center">
 Trusted by the world's leading companies
