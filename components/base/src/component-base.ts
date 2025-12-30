@@ -70,6 +70,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
     private modelObserver: any;
     private isDestroyed: boolean;
     private isCreated: boolean = false;
+    private isSelfTriggeredEvent: boolean = false;
     private isProtectedOnChange: boolean;
     private canDelayUpdate: boolean;
     private reactElement: HTMLElement;
@@ -176,6 +177,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         if (dProps['children']) {
             delete dProps['children'];
         }
+        if (Object.keys(dProps).length) {
+            this.isSelfTriggeredEvent = true;
+        }
         if (this.initRenderCalled && (this.canDelayUpdate || (prevProps as any).delayUpdate)) {
             setTimeout(() => {
                 this.refreshProperties(dProps, nextProps, silent);
@@ -195,6 +199,7 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         if (statelessTemplates.indexOf('directiveTemplates') === -1) {
             this.refreshChild(silent, nextProps);
         }
+        this.isSelfTriggeredEvent = false;
     }
 
     private processComplexTemplate(curObject: Object, context: { complexTemplate: Object }): void {
@@ -263,6 +268,9 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
 
     public trigger(eventName: string, eventProp?: any, successHandler?: any): void {
         if (this.isDestroyed !== true && this.modelObserver) {
+            if (this.isSelfTriggeredEvent) {
+                return;
+            }
             if (isColEName.test(eventName)) {
                 const handler: Function = getValue(eventName, this);
                 if (handler) {

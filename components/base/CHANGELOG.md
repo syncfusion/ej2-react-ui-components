@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.21 (2025-12-30)
+
+### Common
+
+#### Bug Fixes
+
+- `#I779790` - The `actionComplete` event is no longer triggered again when reapplying the same sort in the React Grid.
+
 ## 32.1.20 (2025-12-23)
 
 ### Common

@@ -8,6 +8,14 @@
 
 ## [Unreleased]
 
+## 32.1.21 (2025-12-30)
+
+### Maps
+
+#### Bug fixes
+
+- `#I793444` - Color mappings without an initially specified value now function correctly when toggling the legend.
+
 ## 32.1.19 (2025-12-16)
 
 ### Maps
