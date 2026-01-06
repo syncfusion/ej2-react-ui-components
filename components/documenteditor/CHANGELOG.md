@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 32.1.22 (2026-01-06)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#787822` - Fixed issue where error words were underlined when typing new words.
+`#789001` - Resolved spell check issue where the loader appeared during "Change" and "Ignore" actions.
+`#792760` - Fixed problem where applying table shading left a gap at the right corner of the table.
+`#786142` - Resolved exception occurring during SFDT to DOCX conversion after adding a comment.
+
 ## 32.1.21 (2025-12-30)
 
 ### DocumentEditor

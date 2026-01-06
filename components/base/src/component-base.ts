@@ -177,8 +177,17 @@ export class ComponentBase<P, S> extends React.Component<P, S> {
         if (dProps['children']) {
             delete dProps['children'];
         }
-        if (Object.keys(dProps).length) {
-            this.isSelfTriggeredEvent = true;
+        if (this.getModuleName() === 'grid') {
+            const controlledProps: string[] = [
+                'sortSettings', 'allowPaging', 'filterSettings', 'pageSettings',
+                'groupSettings', 'searchSettings', 'allowSorting', 'allowFiltering'
+            ];
+            if (
+                Object.keys(dProps).length > 0 &&
+                Object.keys(dProps).some((key: string) => controlledProps.indexOf(key) !== -1)
+            ) {
+                this.isSelfTriggeredEvent = true;
+            }
         }
         if (this.initRenderCalled && (this.canDelayUpdate || (prevProps as any).delayUpdate)) {
             setTimeout(() => {

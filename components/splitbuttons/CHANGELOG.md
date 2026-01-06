@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.22 (2026-01-06)
+
+### ProgressButton
+
+#### Bug Fixes
+
+- `#I787460` - Fixed color variable mapping issues in the ProgressButton component for Bootstrap 5.3 theme.
+
 ## 28.1.33 (2024-12-12)
 
 ### DropDownButton

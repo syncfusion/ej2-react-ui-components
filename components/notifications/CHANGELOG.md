@@ -2,7 +2,13 @@
 
 ## [Unreleased]
 
-## 31.1.17 (2025-09-05)
+## 32.1.22 (2026-01-06)
+
+### Message
+
+#### Bug Fixes
+
+- `#I787460` - Fixed color variable mapping issues in the Message component for Bootstrap 5.3 theme.## 31.1.17 (2025-09-05)
 
 ### Message
 

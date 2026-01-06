@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.22 (2026-01-06)
+
+### Common
+
+#### Bug Fixes
+
+- `#I71325` - Fixed issue where data count did not update after changing the data source in React Grid
+
 ## 32.1.21 (2025-12-30)
 
 ### Common

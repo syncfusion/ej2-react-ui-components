@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 32.1.22 (2026-01-06)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I798242` - Now, when dynamically setting the value to `null` in the Rich Text Editor, the toolbar status is updated properly.
+
+- `#I792426` - Now, continuously dragging and dropping images works properly in the Rich Text Editor when the `saveUrl` API is configured.
+
 ## 32.1.21 (2025-12-30)
 
 ### RichTextEditor

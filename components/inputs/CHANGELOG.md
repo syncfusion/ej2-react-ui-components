@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.22 (2026-01-06)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `#I787460` - Fixed color variable mapping issues in the ColorPicker component for Bootstrap 5.3 theme.
+
 ## 32.1.19 (2025-12-16)
 
 ### ColorPicker
