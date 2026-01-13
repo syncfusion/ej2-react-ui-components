@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 32.1.23 (2026-01-13)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I799247` - Now, the inline toolbar popup will be visible when the editor has minimal height.
+
+- `#I762475` - Now, applying clear format in the Rich Text Editor will remove all formatting from table's `tbody` and `tr` elements.
+
 ## 32.1.22 (2026-01-06)
 
 ### RichTextEditor
