@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 32.1.23 (2026-01-13)
+## 32.1.24 (2026-01-20)
 
-### ColorPicker
+### Uploader
 
 #### Bug Fixes
 
-- `#I787460` - Fixed color variable mapping issues in the ColorPicker component for Bootstrap 5.3 theme.
+- `#I797631` - Fixed an issue where custom headers set via `currentRequest` in the `canceling` event were not being sent with the cancel/abort request in chunk upload scenarios.
 
 ## 32.1.19 (2025-12-16)
 
@@ -1316,7 +1316,15 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 
-- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 29.1.33 (2025-03-25)
+- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 32.1.22 (2026-01-06)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `#I787460` - Fixed color variable mapping issues in the ColorPicker component for Bootstrap 5.3 theme.
+
+## 29.1.33 (2025-03-25)
 
 ### SpeechToText
 

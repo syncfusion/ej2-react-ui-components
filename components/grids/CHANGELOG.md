@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 32.1.24 (2026-01-20)
+
+### Grid
+
+#### Bug fixes
+
+- `#I799719` - Resolved an issue where the filter option was shown as enabled in the column menu when the filter item was included in `columnMenuItems` and `allowFiltering` is set to false.
+- `#I798391` - Fixed an issue where grid focus behaviour did not work correctly when `enableHeaderFocus` is set to false.
+
 ## 32.1.23 (2026-01-13)
 
 ### Grid
