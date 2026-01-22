@@ -74,6 +74,7 @@ Real-world demos built with Syncfusion React components:
 - **Document Explorer** — File management & viewing  
   [Demo](https://ej2.syncfusion.com/showcase/react/documentexplorer/)
 
+More showcases and code examples: https://www.syncfusion.com/showcase-apps/react
 ---
 ## Supported Frameworks
  The Essential JS 2 is also offered in following list of frameworks.
