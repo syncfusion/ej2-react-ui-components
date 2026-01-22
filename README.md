@@ -48,7 +48,7 @@ For the exhaustive list and latest additions, see: [Documentation Introduction](
 ## Quick Links
 
 - **Installation** — `npm install @syncfusion/ej2-react-grids --save` (per-component)  
-- **Getting Started** — https://helpej2.syncfusion.com/react/documentation/getting-started/quick-start  
+- **Getting Started** — https://ej2.syncfusion.com/react/documentation/getting-started/quick-start  
 - **Live Demos** — https://ej2.syncfusion.com/react/demos/  
 - **Themes & Customization** — [Theme Studio](https://ej2.syncfusion.com/themestudio/)  
 - **NPM Packages** — https://www.npmjs.com/search?q=%40syncfusion%2Fej2-react   
@@ -59,14 +59,12 @@ For the exhaustive list and latest additions, see: [Documentation Introduction](
 
 Real-world demos built with Syncfusion React components:
 
-- **Fitness Tracker** — Charts, grids, calendars for health monitoring  
-  [Demo](https://www.syncfusion.com/showcase-apps/react/fitness-tracker) | [GitHub](https://github.com/syncfusion/ej2-showcase-react-fitness-application)
 - **Loan Calculator** — Interactive sliders and visualizations  
   [Demo](https://ej2.syncfusion.com/showcase/react/loancalculator/)
 - **Diagram Builder** — Drag-and-drop diagramming  
   [Demo](https://ej2.syncfusion.com/showcase/react/diagrambuilder/)
 - **Logic Circuit Designer** — Interactive simulation  
-  [Demo](https://ej2.syncfusion.com/showcase/react/logic-circuit/) | [GitHub](https://github.com/syncfusion/ej2-showcase-react-logic-circuit-designer)
+  [Demo](https://ej2.syncfusion.com/showcase/react/logic-circuit/)
 - **Hotel Booking** — Reservation system  
   [Demo](https://ej2.syncfusion.com/showcase/react/hotelbooking/)
 - **BPMN Editor** — Process modeling  
@@ -75,8 +73,6 @@ Real-world demos built with Syncfusion React components:
   [Demo](https://ej2.syncfusion.com/showcase/react/mind-map/)
 - **Document Explorer** — File management & viewing  
   [Demo](https://ej2.syncfusion.com/showcase/react/documentexplorer/)
-
-Explore more at: https://www.syncfusion.com/showcase-apps/react
 
 ---
 ## Supported Frameworks
