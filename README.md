@@ -1,5 +1,5 @@
 # Syncfusion React UI Components Library (Essential JS 2)
- Syncfusion React UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 100+ UI components that every applications will ever need.
+ Syncfusion React UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 145+ UI components that every applications will ever need.
  > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
 >
 > A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
@@ -30,7 +30,7 @@
 <table>
  <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-data-grid"><b>Data Grid</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-data-grid"><b>Data Grid</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-grids"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-grids" title="@syncfusion/ej2-react-grids" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-grids"><img src="https://ej2.syncfusion.com/badges/ej2-grids/coverage.svg" alt="code coverage of @syncfusion/ej2-react-grids" title="@syncfusion/ej2-react-grids" /></a>
@@ -47,7 +47,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-pivot-table"><b>Pivot Table</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-pivot-table"><b>Pivot Table</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-pivotview"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-pivotview" title="@syncfusion/ej2-react-pivotview" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-pivotview"><img src="https://ej2.syncfusion.com/badges/ej2-pivotview/coverage.svg" alt="code coverage of @syncfusion/ej2-react-pivotview" title="@syncfusion/ej2-react-pivotview" /></a>
@@ -64,7 +64,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-tree-grid"><b>Tree Grid</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-tree-grid"><b>Tree Grid</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-treegrid"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-treegrid" title="@syncfusion/ej2-react-treegrid" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-treegrid"><img src="https://ej2.syncfusion.com/badges/ej2-treegrid/coverage.svg" alt="code coverage of @syncfusion/ej2-react-treegrid" title="@syncfusion/ej2-react-treegrid" /></a>
@@ -81,12 +81,38 @@
    </tr>
 </table>
 
+### Smart Components
+<table>
+    <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-components/react-smart-paste-button"><b>Smart Paste Button</b></a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/tailwind3/ai-smart-paste/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/smart-paste-button/getting-started">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-components/react-smart-textarea"><b>Smart Text Area</b></a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/tailwind3/ai-smart-textarea/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/smart-textarea/getting-started">Documentation</a>
+       </td>
+   </tr>
+</table>
+
 ### Editors
 
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-in-place-editor"><b>In-place Editor</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-in-place-editor"><b>In-place Editor</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-inplace-editor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-inplace-editor" title="@syncfusion/ej2-react-inplace-editor" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-inplace-editor"><img src="https://ej2.syncfusion.com/badges/ej2-inplace-editor/coverage.svg" alt="code coverage of @syncfusion/ej2-react-inplace-editor" title="@syncfusion/ej2-react-inplace-editor" /></a>
@@ -135,8 +161,23 @@
            <a href="https://ej2.syncfusion.com/react/documentation/block-editor/getting-started/">Documentation</a>
        </td>
    </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-components/react-image-editor"><b>Image Editor</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-image-editor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-image-editor" title="@syncfusion/ej2-react-image-editor" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-image-editor"><img src="https://ej2.syncfusion.com/badges/ej2-image-editor/coverage.svg" alt="code coverage of @syncfusion/ej2-react-image-editor" title="@syncfusion/ej2-react-image-editor" /></a>
+       </td>
+       <td>
+           <a href="components/imageeditor/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/tailwind3/image-editor/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/image-editor/getting-started/">Documentation</a>
+       </td>
    </tr>
-
 </table>
 
 ### Dropdowns
@@ -144,7 +185,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-autocomplete"><b>AutoComplete</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-autocomplete"><b>AutoComplete</b></a>
        </td>
        <td rowspan="6">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-dropdowns"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-dropdowns" title="@syncfusion/ej2-react-dropdowns" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-dropdowns"><img src="https://ej2.syncfusion.com/badges/ej2-dropdowns/coverage.svg" alt="code coverage of @syncfusion/ej2-react-dropdowns" title="@syncfusion/ej2-react-dropdowns" /></a>
@@ -161,7 +202,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-combobox"><b>ComboBox</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-combobox"><b>ComboBox</b></a>
        </td>
        <td>
            <a href="components/dropdowns/src/combo-box">Source</a>
@@ -175,7 +216,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-dropdown-list"><b>Dropdown List</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-dropdown-list"><b>Dropdown List</b></a>
        </td>
        <td>
            <a href="components/dropdowns/src/drop-down-list">Source</a>
@@ -189,7 +230,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-dropdown-tree"><b>Dropdown Tree</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-dropdown-tree"><b>Dropdown Tree</b></a>
        </td>
        <td>
            <a href="components/dropdowns/src/drop-down-tree">Source</a>
@@ -203,7 +244,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-listbox"><b>List Box</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-listbox"><b>List Box</b></a>
        </td>
        <td>
            <a href="components/dropdowns/src/list-box">Source</a>
@@ -217,7 +258,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-multiselect-dropdown"><b>MultiSelect Dropdown</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-multiselect-dropdown"><b>MultiSelect Dropdown</b></a>
        </td>
        <td>
            <a href="components/dropdowns/src/multi-select">Source</a>
@@ -231,7 +272,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-mention"><b>Mention</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-mention"><b>Mention</b></a>
        </td>
        <td>
            <a href="components/dropdowns/src/mention">Source</a>
@@ -264,7 +305,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-checkbox"><b>Checkbox</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-checkbox"><b>Checkbox</b></a>
        </td>
        <td rowspan="3">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-buttons"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-buttons" title="@syncfusion/ej2-react-buttons" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-buttons"><img src="https://ej2.syncfusion.com/badges/ej2-buttons/coverage.svg" alt="code coverage of @syncfusion/ej2-react-buttons" title="@syncfusion/ej2-react-buttons" /></a>
@@ -281,7 +322,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-radio-button"><b>Radio Button</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-radio-button"><b>Radio Button</b></a>
        </td>
        <td>
            <a href="components/buttons/src/radio-button">Source</a>
@@ -295,7 +336,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-toggle-switch-button"><b>Toggle Switch Button</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-toggle-switch-button"><b>Toggle Switch Button</b></a>
        </td>
        <td>
            <a href="components/buttons/src/switch">Source</a>
@@ -309,7 +350,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-color-picker"><b>Color Picker</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-color-picker"><b>Color Picker</b></a>
        </td>
        <td rowspan="8">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-inputs"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-inputs" title="@syncfusion/ej2-react-inputs" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-inputs"><img src="https://ej2.syncfusion.com/badges/ej2-inputs/coverage.svg" alt="code coverage of @syncfusion/ej2-react-inputs" title="@syncfusion/ej2-react-inputs" /></a>
@@ -326,7 +367,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-file-upload"><b>File Upload</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-file-upload"><b>File Upload</b></a>
        </td>
        <td>
            <a href="components/inputs/src/uploader">Source</a>
@@ -340,7 +381,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-input-mask"><b>Input Mask</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-input-mask"><b>Input Mask</b></a>
        </td>
        <td>
            <a href="components/inputs/src/maskedtextbox">Source</a>
@@ -354,7 +395,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-numeric-textbox"><b>Numeric Textbox</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-numeric-textbox"><b>Numeric Textbox</b></a>
        </td>
        <td>
            <a href="components/inputs/src/numerictextbox">Source</a>
@@ -368,7 +409,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-range-selector"><b>Range Slider</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-range-selector"><b>Range Slider</b></a>
        </td>
        <td>
            <a href="components/inputs/src/slider">Source</a>
@@ -382,7 +423,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-textbox"><b>TextBox</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-textbox"><b>TextBox</b></a>
        </td>
        <td>
            <a href="components/inputs/src/textbox">Source</a>
@@ -396,7 +437,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-signature"><b>Signature</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-signature"><b>Signature</b></a>
        </td>
        <td>
            <a href="components/inputs/src/signature">Source</a>
@@ -410,7 +451,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-textarea"><b>TextArea</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-textarea"><b>TextArea</b></a>
        </td>
        <td>
            <a href="components/inputs/src/textarea">Source</a>
@@ -424,7 +465,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-rating"><b>Rating</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-rating"><b>Rating</b></a>
        </td>
        <td>
            <a href="components/inputs/src/rating">Source</a>
@@ -492,7 +533,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-barcode"><b>Barcode Generator</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-barcode"><b>Barcode Generator</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-barcode-generator"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-barcode-generator" title="@syncfusion/ej2-react-barcode-generator" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-barcode-generator"><img src="https://ej2.syncfusion.com/badges/ej2-barcode-generator/coverage.svg" alt="code coverage of @syncfusion/ej2-react-barcode-generator" title="@syncfusion/ej2-react-barcode-generator" /></a>
@@ -509,7 +550,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-circular-gauge"><b>Circular Gauge</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-circular-gauge"><b>Circular Gauge</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-circulargauge"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-circulargauge" title="@syncfusion/ej2-react-circulargauge" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-circulargauge"><img src="https://ej2.syncfusion.com/badges/ej2-circulargauge/coverage.svg" alt="code coverage of @syncfusion/ej2-react-circulargauge" title="@syncfusion/ej2-react-circulargauge" /></a>
@@ -526,7 +567,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-diagram"><b>Diagram</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-diagram"><b>Diagram</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-diagrams"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-diagrams" title="@syncfusion/ej2-react-diagrams" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-diagrams"><img src="https://ej2.syncfusion.com/badges/ej2-diagrams/coverage.svg" alt="code coverage of @syncfusion/ej2-react-diagrams" title="@syncfusion/ej2-react-diagrams" /></a>
@@ -543,7 +584,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-heatmap-chart"><b>HeatMap Chart</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-heatmap-chart"><b>HeatMap Chart</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-heatmap"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-heatmap" title="@syncfusion/ej2-react-heatmap" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-heatmap"><img src="https://ej2.syncfusion.com/badges/ej2-heatmap/coverage.svg" alt="code coverage of @syncfusion/ej2-react-heatmap" title="@syncfusion/ej2-react-heatmap" /></a>
@@ -560,7 +601,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-kanban-board"><b>Kanban</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-kanban-board"><b>Kanban</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-kanban"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-kanban" title="@syncfusion/ej2-react-kanban" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-kanban"><img src="https://ej2.syncfusion.com/badges/ej2-kanban/coverage.svg" alt="code coverage of @syncfusion/ej2-react-kanban" title="@syncfusion/ej2-react-kanban" /></a>
@@ -577,7 +618,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-linear-gauge"><b>Linear Gauge</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-linear-gauge"><b>Linear Gauge</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-lineargauge"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-lineargauge" title="@syncfusion/ej2-react-lineargauge" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-lineargauge"><img src="https://ej2.syncfusion.com/badges/ej2-lineargauge/coverage.svg" alt="code coverage of @syncfusion/ej2-react-lineargauge" title="@syncfusion/ej2-react-lineargauge" /></a>
@@ -594,7 +635,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-maps"><b>Maps</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-maps"><b>Maps</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-maps"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-maps" title="@syncfusion/ej2-react-maps" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-maps"><img src="https://ej2.syncfusion.com/badges/ej2-maps/coverage.svg" alt="code coverage of @syncfusion/ej2-react-maps" title="@syncfusion/ej2-react-maps" /></a>
@@ -611,7 +652,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-treemap"><b>TreeMap</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-treemap"><b>TreeMap</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-treemap"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-treemap" title="@syncfusion/ej2-react-treemap" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-treemap"><img src="https://ej2.syncfusion.com/badges/ej2-treemap/coverage.svg" alt="code coverage of @syncfusion/ej2-react-treemap" title="@syncfusion/ej2-react-treemap" /></a>
@@ -628,7 +669,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-bullet-chart"><b>Bullet Chart</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-bullet-chart"><b>Bullet Chart</b></a>
        </td>
        <td rowspan="6">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-charts"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-charts" title="@syncfusion/ej2-react-charts" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-charts"><img src="https://ej2.syncfusion.com/badges/ej2-charts/coverage.svg" alt="code coverage of @syncfusion/ej2-react-charts" title="@syncfusion/ej2-react-charts" /></a>
@@ -645,7 +686,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-charts"><b>Charts</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-charts"><b>Charts</b></a>
        </td>
        <td>
            <a href="components/charts/src/chart">Source</a>
@@ -687,7 +728,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-range-selector"><b>Range Selector</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-range-selector"><b>Range Selector</b></a>
        </td>
        <td>
            <a href="components/charts/src/range-navigator">Source</a>
@@ -701,7 +742,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-smith-chart"><b>Smith Chart</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-smith-chart"><b>Smith Chart</b></a>
        </td>
        <td>
            <a href="components/charts/src/smithchart">Source</a>
@@ -715,7 +756,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-sparkline"><b>Sparkline Charts</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-sparkline"><b>Sparkline Charts</b></a>
        </td>
        <td>
            <a href="components/charts/src/sparkline">Source</a>
@@ -729,7 +770,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-stock-chart"><b>Stock Chart</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-stock-chart"><b>Stock Chart</b></a>
        </td>
        <td>
            <a href="components/charts/src/stock-chart">Source</a>
@@ -748,7 +789,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-calendar"><b>Calendar</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-calendar"><b>Calendar</b></a>
        </td>
        <td rowspan="5">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-calendars"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-calendars" title="@syncfusion/ej2-react-calendars" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-calendars"><img src="https://ej2.syncfusion.com/badges/ej2-calendars/coverage.svg" alt="code coverage of @syncfusion/ej2-react-calendars" title="@syncfusion/ej2-react-calendars" /></a>
@@ -765,7 +806,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-datepicker"><b>DatePicker</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-datepicker"><b>DatePicker</b></a>
        </td>
        <td>
            <a href="components/calendars/src/datepicker">Source</a>
@@ -779,7 +820,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-daterangepicker"><b>DateRangePicker</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-daterangepicker"><b>DateRangePicker</b></a>
        </td>
        <td>
            <a href="components/calendars/src/daterangepicker">Source</a>
@@ -793,7 +834,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-datetime-picker"><b>DateTime Picker</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-datetime-picker"><b>DateTime Picker</b></a>
        </td>
        <td>
            <a href="components/calendars/src/datetimepicker">Source</a>
@@ -807,7 +848,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-timepicker"><b>TimePicker</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-timepicker"><b>TimePicker</b></a>
        </td>
        <td>
            <a href="components/calendars/src/timepicker">Source</a>
@@ -821,7 +862,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-gantt-chart"><b>Gantt Chart</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-gantt-chart"><b>Gantt Chart</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-gantt"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-gantt" title="@syncfusion/ej2-react-gantt" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-gantt"><img src="https://ej2.syncfusion.com/badges/ej2-gantt/coverage.svg" alt="code coverage of @syncfusion/ej2-react-gantt" title="@syncfusion/ej2-react-gantt" /></a>
@@ -838,7 +879,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-scheduler"><b>Scheduler</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-scheduler"><b>Scheduler</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-schedule"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-schedule" title="@syncfusion/ej2-react-schedule" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-schedule"><img src="https://ej2.syncfusion.com/badges/ej2-schedule/coverage.svg" alt="code coverage of @syncfusion/ej2-react-schedule" title="@syncfusion/ej2-react-schedule" /></a>
@@ -860,7 +901,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-accordion"><b>Accordion</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-accordion"><b>Accordion</b></a>
        </td>
        <td rowspan="9">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-navigations"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-navigations" title="@syncfusion/ej2-react-navigations" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-navigations"><img src="https://ej2.syncfusion.com/badges/ej2-navigations/coverage.svg" alt="code coverage of @syncfusion/ej2-react-navigations" title="@syncfusion/ej2-react-navigations" /></a>
@@ -891,7 +932,7 @@
    </tr>
     <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/breadcrumb"><b>Breadcrumb</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-breadcrumb"><b>Breadcrumb</b></a>
        </td>
        <td>
            <a href="components/navigations/src/breadcrumb">Source</a>
@@ -905,7 +946,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/carousel"><b>Carousel</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-carousel"><b>Carousel</b></a>
        </td>
        <td>
            <a href="components/navigations/src/carousel">Source</a>
@@ -919,7 +960,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-context-menu"><b>Context Menu</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-context-menu"><b>Context Menu</b></a>
        </td>
        <td>
            <a href="components/navigations/src/context-menu">Source</a>
@@ -933,7 +974,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-menu-bar"><b>Menu Bar</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-menu-bar"><b>Menu Bar</b></a>
        </td>
        <td>
            <a href="components/navigations/src/menu">Source</a>
@@ -948,7 +989,7 @@
    
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-sidebar"><b>Sidebar</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-sidebar"><b>Sidebar</b></a>
        </td>
        <td>
            <a href="components/navigations/src/sidebar">Source</a>
@@ -962,7 +1003,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-stepper"><b>Stepper</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-stepper"><b>Stepper</b></a>
        </td>
        <td>
            <a href="components/navigations/src/stepper">Source</a>
@@ -976,7 +1017,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-tabs"><b>Tabs</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-tabs"><b>Tabs</b></a>
        </td>
        <td>
            <a href="components/navigations/src/tab">Source</a>
@@ -990,7 +1031,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-toolbar"><b>Toolbar</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-toolbar"><b>Toolbar</b></a>
        </td>
        <td>
            <a href="components/navigations/src/toolbar">Source</a>
@@ -1004,7 +1045,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-treeview"><b>TreeView</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-treeview"><b>TreeView</b></a>
        </td>
        <td>
            <a href="components/navigations/src/treeview">Source</a>
@@ -1018,7 +1059,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-file-manager"><b>File Manager</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-file-manager"><b>File Manager</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-filemanager"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-filemanager" title="@syncfusion/ej2-react-filemanager" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-filemanager"><img src="https://ej2.syncfusion.com/badges/ej2-filemanager/coverage.svg" alt="code coverage of @syncfusion/ej2-react-filemanager" title="@syncfusion/ej2-react-filemanager" /></a>
@@ -1035,13 +1076,13 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-ribbon"><b>Ribbon</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-ribbon"><b>Ribbon</b></a>
        </td>
        <td>
-           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-ribbon"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-filemanager" title="@syncfusion/ej2-react-filemanager" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-ribbon"><img src="https://ej2.syncfusion.com/badges/ej2-ribbon/coverage.svg" alt="code coverage of @syncfusion/ej2-react-ribbon" title="@syncfusion/ej2-react-ribbon" /></a>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-ribbon"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-ribbon" title="@syncfusion/ej2-react-ribbon" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-ribbon"><img src="https://ej2.syncfusion.com/badges/ej2-ribbon/coverage.svg" alt="code coverage of @syncfusion/ej2-react-ribbon" title="@syncfusion/ej2-react-ribbon" /></a>
        </td>
        <td>
-           <a href="components/ribobn/src">Source</a>
+           <a href="components/ribbon/src">Source</a>
        </td>
        <td>
            <a href="https://ej2.syncfusion.com/react/demos/#/tailwind3/ribbon/default">Live demo</a>
@@ -1057,7 +1098,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-button"><b>Button</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-button"><b>Button</b></a>
        </td>
        <td rowspan="2">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-buttons"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-buttons" title="@syncfusion/ej2-react-buttons" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-buttons"><img src="https://ej2.syncfusion.com/badges/ej2-buttons/coverage.svg" alt="code coverage of @syncfusion/ej2-react-buttons" title="@syncfusion/ej2-react-buttons" /></a>
@@ -1074,7 +1115,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-chips"><b>Chips</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-chips"><b>Chips</b></a>
        </td>
        <td>
            <a href="components/buttons/src/chips">Source</a>
@@ -1088,7 +1129,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-button-group"><b>Button Group</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-button-group"><b>Button Group</b></a>
        </td>
        <td rowspan="4">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-splitbuttons"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-splitbuttons" title="@syncfusion/ej2-react-splitbuttons" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-splitbuttons"><img src="https://ej2.syncfusion.com/badges/ej2-splitbuttons/coverage.svg" alt="code coverage of @syncfusion/ej2-react-splitbuttons" title="@syncfusion/ej2-react-splitbuttons" /></a>
@@ -1105,7 +1146,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-dropdown-menu"><b>Dropdown Menu</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-dropdown-menu"><b>Dropdown Menu</b></a>
        </td>
        <td>
            <a href="components/splitbuttons/src/drop-down-button">Source</a>
@@ -1119,7 +1160,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-progress-button"><b>Progress Button</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-progress-button"><b>Progress Button</b></a>
        </td>
        <td>
            <a href="components/splitbuttons/src/progress-button">Source</a>
@@ -1133,7 +1174,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-split-button"><b>Split Button</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-split-button"><b>Split Button</b></a>
        </td>
        <td>
            <a href="components/splitbuttons/src/split-button">Source</a>
@@ -1147,7 +1188,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-fab"><b>FAB</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-fab"><b>FAB</b></a>
        </td>
        <td>
            <a href="components/buttons/src/floating-action-button">Source</a>
@@ -1180,7 +1221,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-avatar"><b>Avatar</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-avatar"><b>Avatar</b></a>
        </td>
        <td rowspan="4">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-layouts"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-layouts" title="@syncfusion/ej2-react-layouts" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-layouts"><img src="https://ej2.syncfusion.com/badges/ej2-layouts/coverage.svg" alt="code coverage of @syncfusion/ej2-react-layouts" title="@syncfusion/ej2-react-layouts" /></a>
@@ -1197,7 +1238,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-card"><b>Card</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-card"><b>Card</b></a>
        </td>
        <td>
            <a href="components/layouts/styles/card">Styles</a>
@@ -1211,7 +1252,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-dashboard-layout"><b>Dashboard Layout</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-dashboard-layout"><b>Dashboard Layout</b></a>
        </td>
        <td>
            <a href="components/layouts/src/dashboard-layout">Source</a>
@@ -1225,7 +1266,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-splitter"><b>Splitter</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-splitter"><b>Splitter</b></a>
        </td>
        <td>
            <a href="components/layouts/src/splitter">Source</a>
@@ -1239,7 +1280,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-modal-dialog"><b>Dialog</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-modal-dialog"><b>Dialog</b></a>
        </td>
        <td rowspan="2">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-popups"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-popups" title="@syncfusion/ej2-react-popups" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-popups"><img src="https://ej2.syncfusion.com/badges/ej2-popups/coverage.svg" alt="code coverage of @syncfusion/ej2-react-popups" title="@syncfusion/ej2-react-popups" /></a>
@@ -1256,7 +1297,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-tooltip"><b>Tooltip</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-tooltip"><b>Tooltip</b></a>
        </td>
        <td>
            <a href="components/popups/src/tooltip">Source</a>
@@ -1270,7 +1311,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-timeline"><b>Timeline</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-timeline"><b>Timeline</b></a>
        </td>
        <td>
            <a href="components/popups/src/timeline">Source</a>
@@ -1284,7 +1325,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-listview"><b>ListView</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-listview"><b>ListView</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-lists"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-lists" title="@syncfusion/ej2-react-lists" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-lists"><img src="https://ej2.syncfusion.com/badges/ej2-lists/coverage.svg" alt="code coverage of @syncfusion/ej2-react-lists" title="@syncfusion/ej2-react-lists" /></a>
@@ -1306,7 +1347,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-badge"><b>Badge</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-badge"><b>Badge</b></a>
        </td>
        <td rowspan="2">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-notifications"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-notifications" title="@syncfusion/ej2-react-notifications" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-notifications"><img src="https://ej2.syncfusion.com/badges/ej2-notifications/coverage.svg" alt="code coverage of @syncfusion/ej2-react-notifications" title="@syncfusion/ej2-react-notifications" /></a>
@@ -1323,7 +1364,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-toast"><b>Toast</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-toast"><b>Toast</b></a>
        </td>
        <td>
            <a href="components/notifications/src/toast">Source</a>
@@ -1365,7 +1406,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-progressbar"><b>Progress Bar</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-progressbar"><b>Progress Bar</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-progressbar"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-progressbar" title="@syncfusion/ej2-react-progressbar" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-progressbar"><img src="https://ej2.syncfusion.com/badges/ej2-progressbar/coverage.svg" alt="code coverage of @syncfusion/ej2-react-progressbar" title="@syncfusion/ej2-react-progressbar" /></a>
@@ -1387,7 +1428,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/react-ui-components/react-query-builder"><b>Query Builder UI</b></a>
+           <a href="https://www.syncfusion.com/react-components/react-query-builder"><b>Query Builder UI</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-querybuilder"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-querybuilder" title="@syncfusion/ej2-react-querybuilder" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-querybuilder"><img src="https://ej2.syncfusion.com/badges/ej2-querybuilder/coverage.svg" alt="code coverage of @syncfusion/ej2-react-querybuilder" title="@syncfusion/ej2-react-querybuilder" /></a>
