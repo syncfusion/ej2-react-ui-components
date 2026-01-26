@@ -1,89 +1,170 @@
-# Syncfusion React UI Components Library – Essential JS 2
+# Syncfusion React UI Components
 
-Syncfusion Essential JS 2 (EJ2) for React is a complete enterprise-grade UI component library with **145+** high-performance, responsive, lightweight, modular, and touch-friendly React components. Build modern, cross-platform web applications faster with rich features like accessibility (WCAG 2.2 compliant), built-in themes (Material 3, Bootstrap 5.3, Tailwind 3, Fluent 2, etc.), globalization, right-to-left (RTL) support, and seamless integration.
+[![npm](https://img.shields.io/npm/v/@syncfusion/ej2-react-grids?logo=npm)](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-react)
+[![Downloads](https://img.shields.io/npm/dm/@syncfusion/ej2-react-base)](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-react)
+[![GitHub stars](https://img.shields.io/github/stars/syncfusion/ej2-react-ui-components?style=social)](https://github.com/syncfusion/ej2-react-ui-components)
+[![GitHub forks](https://img.shields.io/github/forks/syncfusion/ej2-react-ui-components?style=social)](https://github.com/syncfusion/ej2-react-ui-components)
 
-> **Note:** This is a commercial library. A **free community license** is available for companies/teams with < $1M USD annual gross revenue, ≤5 developers, and ≤10 total employees.  
-> See: [Community License](https://www.syncfusion.com/products/communitylicense)
+**145+ enterprise-grade, high-performance, pure React UI components** built from the ground up with hooks and functional components. Includes fully React-19-compatible implementations of DataGrid, Charts, Scheduler, Rich Text Editor, and more — all lightweight, modular, responsive, and touch-friendly.
 
-[![npm version](https://badge.fury.io/js/%40syncfusion%2Fej2-react-grids.svg)](https://www.npmjs.com/package/@syncfusion/ej2-react-grids)  
-For latest updates: Check [Releases](https://github.com/syncfusion/ej2-react-ui-components/releases) or [What's New](https://www.syncfusion.com/products/whatsnew/essential-js2)
-
-* [Product Overview](https://www.syncfusion.com/react-ui-components)
-* [Documentation](https://ej2.syncfusion.com/react/documentation)
-* [Live Demos](https://ej2.syncfusion.com/react/demos)
-* [API Reference](https://ej2.syncfusion.com/react/documentation/api/)
+**Quick Links**  
+[Live Demos](https://ej2.syncfusion.com/react/demos/) • [Documentation](https://ej2.syncfusion.com/react/documentation/) • [API Reference](https://ej2.syncfusion.com/react/documentation/api/) • [Free 30-Day Trial](https://www.syncfusion.com/downloads/react) • [Community License](https://www.syncfusion.com/products/communitylicense)
 
 ## Features
 
-- **145+ Components** — Including established React components
-- **Lightweight & Modular** – Tree-shakable; include only what you need.
-- **Top-tier Performance** – Virtualization, lazy loading, and optimized rendering.
-- **Modern Theming** – Material 3, Bootstrap 5.3, Tailwind 3 CSS, Fabric, Fluent 2, and High-Contrast themes.
-- **Full Accessibility** – WCAG 2.2, Section 508, ARIA compliant.
-- **AI-Ready Components** – AI AssistView, Chat UI, Smart Paste, Speech-to-Text, OTP Input, Block Editor.
-- **React 19 Ready** – Complete support including latest React Server Components patterns.
-- **Frequent Releases** – 4 major upgrades per year + weekly patches.
+- **Lightweight & Modular** – Tree-shakable; include only what you need
+- **Top-tier Performance** – Virtualization, lazy loading, and optimized rendering
+- **Modern Theming** – Material, Bootstrap, Tailwind CSS, Fabric, Fluent, and High-Contrast themes
+- **Full Accessibility** – WCAG 2.2, Section 508, ARIA compliant
+- **AI-Ready Components** – AI AssistView, Chat UI, Smart Paste, Speech-to-Text, OTP Input, Block Editor
+- **React 19 Ready** – Complete support including latest React Server Components patterns
+- **Frequent Releases** – 4 major upgrades per year + weekly service packs
 
-## Components List
+## Installation
 
-Components are grouped by category. Install individually via NPM (e.g., `npm install @syncfusion/ej2-react-grids`) for a modular bundle.
+```bash
+npm install @syncfusion/ej2-react-base @syncfusion/ej2-react-grids @syncfusion/ej2-react-charts
+# or install any specific package(s) you need
+```
 
-| Category | Key Components | Highlights / Features |
-|---|---|---|
-| **Smart / AI Components** | AI AssistView, Smart TextArea, Smart Paste Button | AI-assisted text, intelligent pasting, chat-like interfaces |
-| **Grids** | Data Grid, Pivot Table, Tree Grid | Virtual scrolling, Editing/filtering/sorting, Excel/PDF/CSV export |
-| **Data Visualization** | Charts, 3D Charts, Stock Chart, Circular Gauge, Linear Gauge, Maps, Diagram, HeatMap, TreeMap, Bullet Chart, Kanban, Sparkline, Barcode, Smith Chart, Range Selector | 80+ chart types, real-time updates, interactive diagrams, geospatial rendering |
-| **Calendars & Scheduling** | Scheduler, Gantt Chart, Calendar, DatePicker, DateRangePicker, DateTimePicker, TimePicker | Drag-and-drop events, resources, recurring appointments, timeline views |
-| **Dropdowns** | AutoComplete, ComboBox, MultiSelect Dropdown, Dropdown List, ListBox, DropDown Tree, MultiColumn ComboBox, Mention | Filtering, grouping, virtualization, remote data, templates |
-| **Inputs & Editors** | TextBox, TextArea, Numeric TextBox, Masked TextBox, CheckBox, RadioButton, Color Picker, File Upload, Range Slider, Switch, Signature, Rating, OTP Input | Validation, floating labels, file drag-drop, accessibility |
-| **Buttons & Chips** | Button, ButtonGroup, SplitButton, Dropdown Menu, Progress Button, Chips, FAB, Speed Dial | Icons, animations, loading states, predefined styles |
-| **Navigation & Layout** | Accordion, Tabs, TreeView, Toolbar, Sidebar, Menu Bar, Context Menu, Carousel, AppBar, Breadcrumb, Ribbon, Stepper, Pager, File Manager, Dialog, Card, Splitter, ListView, Tooltip, Dashboard Layout | Collapsible, draggable, multi-level, responsive layouts |
-| **Forms & Query** | Query Builder, Form Validator | Visual rule/filter building, complex queries, validation |
-| **Editors** | Rich Text Editor, In-place Editor, Image Editor, Block Editor | Markdown/HTML editing, annotations, AI Assistant integration |
-| **Notifications** | Toast, Progress Bar, Spinner, Badge, Skeleton, Message | Custom positions, animations, non-blocking alerts |
+## Component Categories (145+)
 
-For detailed documentation for all the components, see: [Documentation Introduction](https://ej2.syncfusion.com/react/documentation/introduction).
+Explore all requested components with direct links to **Getting Started** docs and **Live Demos** (demos default to Material theme; switch themes on the site).
 
-## Quick Links
+| Category                  | Component                  | Features                                                                                          | Documentation                                                                 | Demo Link                                                                                           |
+|---------------------------|----------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **AI / Smart**            | AI AssistView              | **AI-driven assistance**, **contextual suggestions**, **real-time interaction**, **integrates with editors** | [Link](https://ej2.syncfusion.com/react/documentation/ai-assistview/getting-started/)           | [Demo](https://ej2.syncfusion.com/react/demos/#/material/ai-assistview/default/)                   |
+|                           | Smart TextArea             | **Intelligent editing**, **auto-complete suggestions**, **context-aware corrections**, **AI-powered** | [Link](https://ej2.syncfusion.com/react/documentation/smart-textarea/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/smart-textarea/default/)                  |
+|                           | Smart Paste Button         | **Intelligent paste handling**, **content formatting**, **smart insertion**, **AI-enhanced**     | [Link](https://ej2.syncfusion.com/react/documentation/smart-paste-button/getting-started/)      | [Demo](https://ej2.syncfusion.com/react/demos/#/material/smart-paste/default/)                     |
+| **Grids**                 | Data Grid                  | **Virtual scrolling**, **Excel-like editing/sorting/filtering**, **large dataset support**, **export to Excel/PDF**, **grouping & aggregation** | [Link](https://ej2.syncfusion.com/react/documentation/grid/getting-started/)                    | [Demo](https://ej2.syncfusion.com/react/demos/#/material/grid/overview/)                           |
+|                           | Pivot Table                | **Drag-and-drop summarization**, **calculated fields**, **chart integration**, **virtual scrolling**, **Excel export** | [Link](https://ej2.syncfusion.com/react/documentation/pivotview/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/pivotview/default/)                       |
+|                           | Tree Grid                  | **Hierarchical data display**, **expand/collapse**, **row templates**, **editing & drag-and-drop**, **virtualization** | [Link](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/treegrid/overview/)                       |
+| **Charts & Data Viz**     | Charts                     | **50+ chart types**, **zooming & panning**, **interactive legends**, **real-time updates**, **animation** | [Link](https://ej2.syncfusion.com/react/documentation/chart/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/chart/line/)                              |
+|                           | 3D Charts                  | **3D visualization**, **rotation & perspective**, **multiple series**, **high customization**   | [Link](https://ej2.syncfusion.com/react/documentation/chart-3d/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/chart-3d/default/)                        |
+|                           | Stock Chart                | **Financial time-series**, **technical indicators**, **range navigator**, **candle/OHLC**       | [Link](https://ej2.syncfusion.com/react/documentation/stock-chart/getting-started/)             | [Demo](https://ej2.syncfusion.com/react/demos/#/material/stock-chart/default/)                     |
+|                           | Circular Gauge             | **Analog gauges**, **ranges & needles**, **annotations**, **directional indicators**            | [Link](https://ej2.syncfusion.com/react/documentation/circular-gauge/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/circular-gauge/default/)                  |
+|                           | Linear Gauge               | **Progress/measurement bars**, **ranges**, **pointers**, **custom shapes**                      | [Link](https://ej2.syncfusion.com/react/documentation/linear-gauge/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/linear-gauge/default/)                    |
+|                           | Maps                       | **Geo-spatial plotting**, **markers & shapes**, **drill-down**, **bubble visualization**        | [Link](https://ej2.syncfusion.com/react/documentation/maps/getting-started/)                    | [Demo](https://ej2.syncfusion.com/react/demos/#/material/maps/default/)                            |
+|                           | Diagram                    | **Flowcharts & org charts**, **drag-and-drop**, **connectors**, **undo/redo**, **AI-enhanced**  | [Link](https://ej2.syncfusion.com/react/documentation/diagram/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/diagram/default/)                         |
+|                           | HeatMap                    | **Density visualization**, **gradient colors**, **row/column labels**, **tooltip**              | [Link](https://ej2.syncfusion.com/react/documentation/heatmap-chart/getting-started/)           | [Demo](https://ej2.syncfusion.com/react/demos/#/material/heatmap/default/)                         |
+|                           | TreeMap                    | **Hierarchical rectangles**, **drill-down**, **color mapping**, **legend**                      | [Link](https://ej2.syncfusion.com/react/documentation/treemap/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/treemap/default/)                         |
+|                           | Bullet Chart               | **Compact performance metering**, **ranges & targets**, **comparisons**                         | [Link](https://ej2.syncfusion.com/react/documentation/bullet-chart/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/bullet-chart/default/)                    |
+|                           | Kanban                     | **Drag-and-drop boards**, **swimlanes**, **card customization**, **drag multiple cards**        | [Link](https://ej2.syncfusion.com/react/documentation/kanban/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/kanban/board-view/)                       |
+|                           | Sparkline                  | **Inline trend charts**, **compact size**, **multiple types**                                   | [Link](https://ej2.syncfusion.com/react/documentation/sparkline/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/sparkline/default/)                       |
+|                           | Barcode                    | **1D/2D barcode generation**, **multiple formats**, **scanning support**                        | [Link](https://ej2.syncfusion.com/react/documentation/barcode/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/barcode/default/)                         |
+|                           | Smith Chart                | **RF engineering data**, **impedance/admittance**, **markers**                                  | [Link](https://ej2.syncfusion.com/react/documentation/smithchart/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/smithchart/default/)                      |
+|                           | Range Selector             | **Time-range navigation**, **chart integration**, **zoom support**                              | [Link](https://ej2.syncfusion.com/react/documentation/range-selector/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/range-selector/default/)                  |
+| **Scheduling**            | Scheduler                  | **Multiple views (day/week/month)**, **drag-and-drop events**, **multiple event selection**, **resource grouping** | [Link](https://ej2.syncfusion.com/react/documentation/schedule/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/schedule/day-view/)                       |
+|                           | Gantt Chart                | **Project timelines**, **task dependencies**, **progress tracking**, **critical path**          | [Link](https://ej2.syncfusion.com/react/documentation/gantt/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/gantt/project-management/)                |
+|                           | Calendar                   | **Multiple views**, **event rendering**, **multi-date selection**                               | [Link](https://ej2.syncfusion.com/react/documentation/calendar/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/calendar/default/)                        |
+|                           | DatePicker                 | **Inline/dropdown mode**, **validation**, **custom formats**                                    | [Link](https://ej2.syncfusion.com/react/documentation/datepicker/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/datepicker/default/)                      |
+|                           | DateRangePicker            | **Start/end selection**, **preset ranges**, **calendar preview**                                | [Link](https://ej2.syncfusion.com/react/documentation/daterangepicker/getting-started/)         | [Demo](https://ej2.syncfusion.com/react/demos/#/material/daterangepicker/default/)                 |
+|                           | DateTimePicker             | **Combined date & time**, **format customization**, **strict mode**                             | [Link](https://ej2.syncfusion.com/react/documentation/datetimepicker/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/datetimepicker/default/)                  |
+|                           | TimePicker                 | **24/12-hour format**, **interval selection**, **spin buttons**                                 | [Link](https://ej2.syncfusion.com/react/documentation/timepicker/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/timepicker/default/)                      |
+| **Dropdowns**             | AutoComplete               | **Suggestion dropdown**, **filtering**, **multi-select**, **remote data**                       | [Link](https://ej2.syncfusion.com/react/documentation/autocomplete/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/autocomplete/default/)                    |
+|                           | ComboBox                   | **Hybrid textbox + dropdown**, **search & filtering**, **grouping**                             | [Link](https://ej2.syncfusion.com/react/documentation/combo-box/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/combobox/local-data/)                     |
+|                           | MultiSelect Dropdown       | **Tag/chip selection**, **checkbox mode**, **remote binding**                                   | [Link](https://ej2.syncfusion.com/react/documentation/multi-select/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/multi-select/default/)                    |
+|                           | Dropdown List              | **Simple selection**, **grouping**, **virtual scrolling**                                       | [Link](https://ej2.syncfusion.com/react/documentation/drop-down-list/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dropdownlist/default/)                    |
+|                           | ListBox                    | **Multi-selection**, **drag-and-drop reordering**, **checkbox support**                         | [Link](https://ej2.syncfusion.com/react/documentation/listbox/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/listbox/default/)                         |
+|                           | DropDown Tree              | **Hierarchical selection**, **checkboxes**, **multi-select**                                    | [Link](https://ej2.syncfusion.com/react/documentation/drop-down-tree/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dropdowntree/default/)                    |
+|                           | MultiColumn ComboBox       | **Multiple value columns**, **custom templates**, **search**                                    | [Link](https://ej2.syncfusion.com/react/documentation/multi-column-combo-box/getting-started/)  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/multicolumn-combobox/default/)            |
+|                           | Mention                    | **@tagging autocomplete**, **suggestions**, **custom templates**                               | [Link](https://ej2.syncfusion.com/react/documentation/mention/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/mention/default/)                         |
+| **Inputs**                | TextBox                    | **Validation & masking**, **floating label**, **icons**                                         | [Link](https://ej2.syncfusion.com/react/documentation/textbox/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/textbox/default/)                         |
+|                           | TextArea                   | **Auto-resize**, **character counter**, **resize handles**                                      | [Link](https://ej2.syncfusion.com/react/documentation/textarea/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/textarea/default/)                        |
+|                           | Numeric TextBox            | **Spin buttons**, **formatting**, **strict mode**                                               | [Link](https://ej2.syncfusion.com/react/documentation/numerictextbox/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/numerictextbox/default/)                  |
+|                           | Masked TextBox             | **Input format enforcement** (phone/SSN/etc.), **prompt char**                                  | [Link](https://ej2.syncfusion.com/react/documentation/maskedtextbox/getting-started/)           | [Demo](https://ej2.syncfusion.com/react/demos/#/material/maskedtextbox/default/)                   |
+|                           | CheckBox                   | **Tri-state**, **label position**, **indeterminate state**                                      | [Link](https://ej2.syncfusion.com/react/documentation/check-box/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/checkbox/default/)                        |
+|                           | RadioButton                | **Group selection**, **label customization**, **checked state**                                 | [Link](https://ej2.syncfusion.com/react/documentation/radio-button/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/radiobutton/default/)                     |
+|                           | Color Picker               | **Palette/sliders**, **gradient support**, **opacity**                                          | [Link](https://ej2.syncfusion.com/react/documentation/color-picker/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/color-picker/default/)                    |
+|                           | File Upload                | **Drag-and-drop**, **progress tracking**, **multiple files**, **validation**                    | [Link](https://ej2.syncfusion.com/react/documentation/uploader/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/uploader/default/)                        |
+|                           | Range Slider               | **Dual-thumb**, **step & limits**, **tooltip**                                                  | [Link](https://ej2.syncfusion.com/react/documentation/slider/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/slider/default/)                          |
+|                           | Switch                     | **On/off toggle**, **custom labels**, **animation**                                             | [Link](https://ej2.syncfusion.com/react/documentation/switch/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/switch/default/)                          |
+|                           | Signature                  | **Touch/mouse capture**, **save as image**, **clear/undo**                                      | [Link](https://ej2.syncfusion.com/react/documentation/signature/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/signature/default/)                       |
+|                           | Rating                     | **Star/custom shapes**, **partial rating**, **precision**                                       | [Link](https://ej2.syncfusion.com/react/documentation/rating/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/rating/default/)                          |
+|                           | OTP Input                  | **Auto-focus & masking**, **paste support**, **resend timer**                                   | [Link](https://ej2.syncfusion.com/react/documentation/otp-input/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/otp-input/default/)                       |
+| **Buttons**               | Button                     | **Variants & icons**, **loading state**, **disabled**                                           | [Link](https://ej2.syncfusion.com/react/documentation/button/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/button/default/)                          |
+|                           | ButtonGroup                | **Grouped buttons**, **toggle/selection**, **vertical mode**                                    | [Link](https://ej2.syncfusion.com/react/documentation/button-group/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/buttongroup/default/)                     |
+|                           | SplitButton                | **Primary + dropdown**, **split actions**, **icons**                                            | [Link](https://ej2.syncfusion.com/react/documentation/split-button/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/splitbutton/default/)                     |
+|                           | Dropdown Menu              | **Menu items**, **icons & separators**, **submenus**                                            | [Link](https://ej2.syncfusion.com/react/documentation/drop-down-menu/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dropdownmenu/default/)                    |
+|                           | Progress Button            | **Loading indicator**, **spinner integration**, **progress percentage**                         | [Link](https://ej2.syncfusion.com/react/documentation/progress-button/getting-started/)         | [Demo](https://ej2.syncfusion.com/react/demos/#/material/progress-button/default/)                 |
+|                           | Chips                      | **Tags/filters**, **deletable**, **custom templates**                                           | [Link](https://ej2.syncfusion.com/react/documentation/chips/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/chips/default/)                           |
+|                           | FAB (Floating Action Button) | **Prominent action**, **motion effects**, **extended modes**                                 | [Link](https://ej2.syncfusion.com/react/documentation/floating-action-button/getting-started/) | [Demo](https://ej2.syncfusion.com/react/demos/#/material/floating-action-button/default/)          |
+|                           | Speed Dial                 | **Multiple actions**, **directional expansion**, **FAB extension**                              | [Link](https://ej2.syncfusion.com/react/documentation/speed-dial/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/speeddial/default/)                       |
+| **Navigation & Layout**   | Accordion                  | **Collapsible sections**, **multiple expand**, **templates**                                    | [Link](https://ej2.syncfusion.com/react/documentation/accordion/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/accordion/default/)                       |
+|                           | Tabs                       | **Tabbed content**, **scrollable**, **closeable tabs**                                          | [Link](https://ej2.syncfusion.com/react/documentation/tab/getting-started/)                     | [Demo](https://ej2.syncfusion.com/react/demos/#/material/tab/default/)                             |
+|                           | TreeView                   | **Hierarchical navigation**, **drag-and-drop**, **checkboxes**                                  | [Link](https://ej2.syncfusion.com/react/documentation/treeview/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/treeview/default/)                        |
+|                           | Toolbar                    | **Button collection**, **overflow popup**, **responsive**                                       | [Link](https://ej2.syncfusion.com/react/documentation/toolbar/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/toolbar/default/)                         |
+|                           | Sidebar                    | **Side panel**, **collapsible**, **positioning**                                                | [Link](https://ej2.syncfusion.com/react/documentation/sidebar/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/sidebar/default/)                         |
+|                           | Menu Bar                   | **Navigation menu**, **submenus**, **keyboard support**                                         | [Link](https://ej2.syncfusion.com/react/documentation/menu-bar/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/menubar/default/)                         |
+|                           | Context Menu               | **Right-click actions**, **custom items**, **submenus**                                         | [Link](https://ej2.syncfusion.com/react/documentation/context-menu/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/contextmenu/default/)                     |
+|                           | Carousel                   | **Sliding panels**, **auto-play**, **indicators**                                               | [Link](https://ej2.syncfusion.com/react/documentation/carousel/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/carousel/default/)                        |
+|                           | AppBar                     | **Top/bottom bar**, **actions & content**, **responsive**                                       | [Link](https://ej2.syncfusion.com/react/documentation/appbar/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/appbar/default/)                          |
+|                           | Breadcrumb                 | **Path navigation**, **overflow menu**, **custom separators**                                   | [Link](https://ej2.syncfusion.com/react/documentation/breadcrumb/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/breadcrumb/default/)                      |
+|                           | Ribbon                     | **Tabbed toolbar**, **grouped commands**, **contextual tabs**                                   | [Link](https://ej2.syncfusion.com/react/documentation/ribbon/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/ribbon/default/)                          |
+|                           | Stepper                    | **Multi-step process**, **validation**, **linear/non-linear**                                   | [Link](https://ej2.syncfusion.com/react/documentation/stepper/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/stepper/default/)                         |
+|                           | Pager                      | **Pagination controls**, **page size selector**, **numeric/symbolic**                           | [Link](https://ej2.syncfusion.com/react/documentation/pager/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/pager/default/)                           |
+|                           | File Manager               | **File browsing**, **upload/rename/delete**, **drag-and-drop**                                  | [Link](https://ej2.syncfusion.com/react/documentation/file-manager/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/file-manager/default/)                    |
+|                           | Dialog                     | **Modal/popover**, **custom content**, **buttons & actions**                                    | [Link](https://ej2.syncfusion.com/react/documentation/dialog/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dialog/default/)                          |
+|                           | Card                       | **Content container**, **headers/footers**, **actions**                                         | [Link](https://ej2.syncfusion.com/react/documentation/card/getting-started/)                    | [Demo](https://ej2.syncfusion.com/react/demos/#/material/card/default/)                            |
+|                           | Splitter                   | **Resizable panels**, **horizontal/vertical**, **nested**                                       | [Link](https://ej2.syncfusion.com/react/documentation/splitter/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/splitter/default/)                        |
+|                           | ListView                   | **Scrollable list**, **templates**, **selection & grouping**                                    | [Link](https://ej2.syncfusion.com/react/documentation/listview/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/listview/default/)                        |
+|                           | Tooltip                    | **Hover/contextual hints**, **positioning**, **custom content**                                 | [Link](https://ej2.syncfusion.com/react/documentation/tooltip/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/tooltip/default/)                         |
+|                           | Dashboard Layout           | **Drag-and-drop widgets**, **resizing**, **responsive**                                         | [Link](https://ej2.syncfusion.com/react/documentation/dashboard-layout/getting-started/)        | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dashboard-layout/default/)                |
+| **Forms & Editors**       | Query Builder              | **Visual query construction**, **conditions & operators**, **rule templates**                   | [Link](https://ej2.syncfusion.com/react/documentation/query-builder/getting-started/)           | [Demo](https://ej2.syncfusion.com/react/demos/#/material/querybuilder/default/)                    |
+|                           | Form Validator             | **Client-side validation**, **custom rules**, **error messages**                                | [Link](https://ej2.syncfusion.com/react/documentation/form-validator/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/form-validator/default/)                  |
+|                           | Rich Text Editor           | **WYSIWYG formatting**, **tables & media**, **AI-powered**, **markdown support**                | [Link](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/)        | [Demo](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/default/)                |
+|                           | In-place Editor            | **Inline/pop-up editing**, **grid integration**, **custom UI**                                  | [Link](https://ej2.syncfusion.com/react/documentation/inplace-editor/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/inplace-editor/default/)                  |
+|                           | Image Editor               | **Crop/rotate/filters**, **annotations**, **redaction**                                         | [Link](https://ej2.syncfusion.com/react/documentation/image-editor/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/image-editor/default/)                    |
+|                           | Block Editor               | **Block-based content**, **modular editing**, **preview mode**                                  | [Link](https://ej2.syncfusion.com/react/documentation/block-editor/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/block-editor/default/)                    |
+| **Notifications**         | Toast                      | **Temporary notifications**, **auto-dismiss**, **progress & actions**                           | [Link](https://ej2.syncfusion.com/react/documentation/toast/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/toast/default/)                           |
+|                           | Progress Bar               | **Determinate/indeterminate**, **segmented**, **circular mode**                                 | [Link](https://ej2.syncfusion.com/react/documentation/progress-bar/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/progress-bar/default/)                    |
+|                           | Spinner                    | **Loading indicator**, **size variants**, **overlay support**                                   | [Link](https://ej2.syncfusion.com/react/documentation/spinner/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/spinner/default/)                         |
+|                           | Badge                      | **Count/status indicator**, **positioning**, **dot/overlap**                                    | [Link](https://ej2.syncfusion.com/react/documentation/badge/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/badge/default/)                           |
+|                           | Skeleton                   | **Loading placeholder**, **shimmer effect**, **custom shapes**                                  | [Link](https://ej2.syncfusion.com/react/documentation/skeleton/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/skeleton/default/)                        |
+|                           | Message                    | **Inline alerts/status**, **severity levels**, **dismissible**                                  | [Link](https://ej2.syncfusion.com/react/documentation/message/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/message/default/)                         |
 
-- **Installation** — `npm install @syncfusion/ej2-react-grids --save` (per-component)  
-- **Getting Started** — https://ej2.syncfusion.com/react/documentation/getting-started/quick-start  
-- **Live Demos** — https://ej2.syncfusion.com/react/demos/  
-- **Themes & Customization** — [Theme Studio](https://ej2.syncfusion.com/themestudio/)  
-- **NPM Packages** — https://www.npmjs.com/search?q=%40syncfusion%2Fej2-react   
-- **Community License** — https://www.syncfusion.com/products/communitylicense  
-- **Support** — [Tickets](https://support.syncfusion.com/create) • [Forums](https://www.syncfusion.com/forums/react-js2)
+**Full list of 145+ components** → [Documentation](https://ej2.syncfusion.com/react/documentation/introduction)
 
-## Showcase Applications
+## Resources
 
-Real-world demos built with Syncfusion React components:
+- **Live Demos** – https://ej2.syncfusion.com/react/demos/  
+  Try interactive examples of all 145+ components with real-time theme switching
+- **Documentation** – https://ej2.syncfusion.com/react/documentation/  
+  Complete API reference, getting started guides, migration help, and tutorials
+- **API Reference** – https://ej2.syncfusion.com/react/documentation/api/  
+  Detailed class, method, and property documentation
+- **Theme Studio** – https://ej2.syncfusion.com/themestudio/  
+  Online tool to customize Material, Bootstrap, Tailwind, Fluent, and other themes
+- **Release Notes** – https://ej2.syncfusion.com/react/documentation/release-notes/  
+  What's new in each version, bug fixes, and breaking changes
+- **Showcase Applications** – https://ej2.syncfusion.com/showcase/react/  
+  Real-world demo apps built with Syncfusion React components (Fitness Tracker, Hotel Booking, Diagram Builder, etc.)
+- **Support Channels**  
+  - [Support ticket](https://support.syncfusion.com/support/tickets/create)
+  - [Community Forum](https://www.syncfusion.com/forums)
+  - Stack Overflow (use tags: `syncfusion`, `ej2`, `ej2-react`)  
+  - GitHub Issues (for open-source feedback or samples)
 
-- **Loan Calculator** — Interactive sliders and visualizations  
-  [Demo](https://ej2.syncfusion.com/showcase/react/loancalculator/)
-- **Diagram Builder** — Drag-and-drop diagramming  
-  [Demo](https://ej2.syncfusion.com/showcase/react/diagrambuilder/)
-- **Logic Circuit Designer** — Interactive simulation  
-  [Demo](https://ej2.syncfusion.com/showcase/react/logic-circuit/)
-- **Hotel Booking** — Reservation system  
-  [Demo](https://ej2.syncfusion.com/showcase/react/hotelbooking/)
-- **BPMN Editor** — Process modeling  
-  [Demo](https://ej2.syncfusion.com/showcase/react/bpmn-editor/)
-- **Mind Map Maker** — Brainstorming tool  
-  [Demo](https://ej2.syncfusion.com/showcase/react/mind-map/)
+## License
 
-Explore more at: https://www.syncfusion.com/showcase-apps/react
+This is a **commercial product** subject to the Syncfusion End User License Agreement (EULA).
 
----
-## Supported Frameworks
- The Essential JS 2 is also offered in following list of frameworks.
- * [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-react-ui-components)
-* [Angular](https://www.syncfusion.com/angular-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
-* [Vue](https://www.syncfusion.com/vue-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
-* [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_campaign=ej2-react-ui-components)
-* [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_campaign=ej2-react-ui-components)
+**Free Community License** is available for qualifying users/organizations:  
+- Annual gross revenue < $1 million USD  
+- 5 or fewer total developers  
+- 10 or fewer total employees  
 
-## Changelog
-Check the changelog [here](https://ej2.syncfusion.com/react/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-react-ui-components).
+The community license allows free use in both internal and commercial applications under these conditions.  
+No registration or approval is required — just comply with the terms.
 
-© Copyright 2026 Syncfusion, Inc. All Rights Reserved.
-The Syncfusion Essential Studio license and copyright applies to this distribution.
+**Paid Licenses** are required for:  
+- Larger organizations  
+- Teams exceeding the community license limits  
+- Priority support, custom patches, or on-premise deployment options  
+
+Purchase options and pricing: https://www.syncfusion.com/sales/products  
+30-day free trial (full features, no credit card required): https://www.syncfusion.com/downloads/react  
+Community License details & FAQ: https://www.syncfusion.com/products/communitylicense  
+Full EULA: https://www.syncfusion.com/eula/es/
+
+© 2026 Syncfusion, Inc. All Rights Reserved.
