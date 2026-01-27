@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.25 (2026-01-27)
+
+### Chart
+
+#### Bug Fixes
+
+- The `columnWidthInPixel` property works correctly when the `enableSideBySidePlacement` property is disabled.
+
 ## 32.1.24 (2026-01-20)
 
 ### Chart

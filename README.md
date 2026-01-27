@@ -1,170 +1,1212 @@
-# Syncfusion React UI Components
+# Syncfusion React UI Components Library (Essential JS 2)
+ Syncfusion React UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 70+ UI components that every applications will ever need.
+ > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
+>
+> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+ ## Resources
+ * [Getting Started](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start?utm_source=npm&utm_campaign=ej2-react-ui-components)
+* [View Online Demos](https://ej2.syncfusion.com/react/demos?utm_source=npm&utm_campaign=ej2-react-ui-components)
+* [Product Page](https://www.syncfusion.com/react-ui-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
+ ## Framework highlights
+ ### Lightweight and user friendly
+ The entire Library framework is built from scratch to be lightweight and modular. Its footprint can be reduced further by including only the specific components and features your application requires.
+ ### Modular architecture
+ All components have been built as modules to enable selective referencing, so only the components and features you need are included in your application.
+ ### Built for performance
+ Performance is critical for delivering a good user experience. We ensure that all our components are designed and built to achieve the best performance possible.
+ ### Responsive and touch friendly
+ All the components are touch friendly and render adaptively based on the device they are on to provide optimal usage experience on phones, tablets and desktops.
+ ### Stunning built-in themes
+ Pixel-perfect built-in themes are available in material, bootstrap and fabric design. In addition, it comes with Accessible high-contrast theme and an online tool "[Theme Studio](https://ej2.syncfusion.com/themestudio/)" to customize the provided built-in themes.
+ ### Globalization simplified
+ Easily build applications to be used by a global audience in various language and culture settings.
+ ### Stay current
+ With our commitment to at least four major updates per year, you receive the most up-to-date functionality and new components in addition to monthly service packs and bug fixes. Custom patches are available as needed.
 
-[![npm](https://img.shields.io/npm/v/@syncfusion/ej2-react-grids?logo=npm)](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-react)
-[![Downloads](https://img.shields.io/npm/dm/@syncfusion/ej2-react-base)](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-react)
-[![GitHub stars](https://img.shields.io/github/stars/syncfusion/ej2-react-ui-components?style=social)](https://github.com/syncfusion/ej2-react-ui-components)
-[![GitHub forks](https://img.shields.io/github/forks/syncfusion/ej2-react-ui-components?style=social)](https://github.com/syncfusion/ej2-react-ui-components)
+ ## Control List
 
-**145+ enterprise-grade, high-performance, pure React UI components** built from the ground up with hooks and functional components. Includes fully React-19-compatible implementations of DataGrid, Charts, Scheduler, Rich Text Editor, and more — all lightweight, modular, responsive, and touch-friendly.
+### Grids
 
-**Quick Links**  
-[Live Demos](https://ej2.syncfusion.com/react/demos/) • [Documentation](https://ej2.syncfusion.com/react/documentation/) • [API Reference](https://ej2.syncfusion.com/react/documentation/api/) • [Free 30-Day Trial](https://www.syncfusion.com/downloads/react) • [Community License](https://www.syncfusion.com/products/communitylicense)
+<table>
+ <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-data-grid"><b>Data Grid</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-grids"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-grids" title="@syncfusion/ej2-react-grids" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-grids"><img src="https://ej2.syncfusion.com/badges/ej2-grids/coverage.svg" alt="code coverage of @syncfusion/ej2-react-grids" title="@syncfusion/ej2-react-grids" /></a>
+       </td>
+       <td>
+           <a href="src/grids/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/grid/over-view">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/grid/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-pivot-table"><b>Pivot Table</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-pivotview"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-pivotview" title="@syncfusion/ej2-react-pivotview" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-pivotview"><img src="https://ej2.syncfusion.com/badges/ej2-pivotview/coverage.svg" alt="code coverage of @syncfusion/ej2-react-pivotview" title="@syncfusion/ej2-react-pivotview" /></a>
+       </td>
+       <td>
+           <a href="src/pivotview/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/pivot-table/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/pivotview/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-spreadsheet"><b>Spreadsheet</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-spreadsheet"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-spreadsheet" title="@syncfusion/ej2-react-spreadsheet" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-spreadsheet"><img src="https://ej2.syncfusion.com/badges/ej2-spreadsheet/coverage.svg" alt="code coverage of @syncfusion/ej2-react-spreadsheet" title="@syncfusion/ej2-react-spreadsheet" /></a>
+       </td>
+       <td>
+           <a href="src/spreadsheet/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/spreadsheet/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/spreadsheet/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-tree-grid"><b>Tree Grid</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-treegrid"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-treegrid" title="@syncfusion/ej2-react-treegrid" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-treegrid"><img src="https://ej2.syncfusion.com/badges/ej2-treegrid/coverage.svg" alt="code coverage of @syncfusion/ej2-react-treegrid" title="@syncfusion/ej2-react-treegrid" /></a>
+       </td>
+       <td>
+           <a href="src/treegrid/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/treegrid/treegrid-overview">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/treegrid/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
 
-## Features
+### Editors
 
-- **Lightweight & Modular** – Tree-shakable; include only what you need
-- **Top-tier Performance** – Virtualization, lazy loading, and optimized rendering
-- **Modern Theming** – Material, Bootstrap, Tailwind CSS, Fabric, Fluent, and High-Contrast themes
-- **Full Accessibility** – WCAG 2.2, Section 508, ARIA compliant
-- **AI-Ready Components** – AI AssistView, Chat UI, Smart Paste, Speech-to-Text, OTP Input, Block Editor
-- **React 19 Ready** – Complete support including latest React Server Components patterns
-- **Frequent Releases** – 4 major upgrades per year + weekly service packs
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-in-place-editor"><b>In-place Editor</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-inplace-editor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-inplace-editor" title="@syncfusion/ej2-react-inplace-editor" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-inplace-editor"><img src="https://ej2.syncfusion.com/badges/ej2-inplace-editor/coverage.svg" alt="code coverage of @syncfusion/ej2-react-inplace-editor" title="@syncfusion/ej2-react-inplace-editor" /></a>
+       </td>
+       <td>
+           <a href="src/inplaceeditor/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/inplace-editor/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/inplace-editor/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-wysiwyg-rich-text-editor"><b>Rich Text Editor</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-richtexteditor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-richtexteditor" title="@syncfusion/ej2-react-richtexteditor" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-richtexteditor"><img src="https://ej2.syncfusion.com/badges/ej2-richtexteditor/coverage.svg" alt="code coverage of @syncfusion/ej2-react-richtexteditor" title="@syncfusion/ej2-react-richtexteditor" /></a>
+       </td>
+       <td>
+           <a href="src/richtexteditor/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/tools">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-word-processor"><b>Word Processor</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-documenteditor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-documenteditor" title="@syncfusion/ej2-react-documenteditor" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-documenteditor"><img src="https://ej2.syncfusion.com/badges/ej2-documenteditor/coverage.svg" alt="code coverage of @syncfusion/ej2-react-documenteditor" title="@syncfusion/ej2-react-documenteditor" /></a>
+       </td>
+       <td>
+           <a href="src/documenteditor/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/document-editor/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/document-editor/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
 
-## Installation
+### Dropdowns
 
-```bash
-npm install @syncfusion/ej2-react-base @syncfusion/ej2-react-grids @syncfusion/ej2-react-charts
-# or install any specific package(s) you need
-```
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-autocomplete"><b>AutoComplete</b></a>
+       </td>
+       <td rowspan="6">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-dropdowns"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-dropdowns" title="@syncfusion/ej2-react-dropdowns" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-dropdowns"><img src="https://ej2.syncfusion.com/badges/ej2-dropdowns/coverage.svg" alt="code coverage of @syncfusion/ej2-react-dropdowns" title="@syncfusion/ej2-react-dropdowns" /></a>
+       </td>
+       <td>
+           <a href="src/dropdowns/src/auto-complete">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/auto-complete/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/auto-complete/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-combobox"><b>ComboBox</b></a>
+       </td>
+       <td>
+           <a href="src/dropdowns/src/combo-box">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/combo-box/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/combo-box/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-dropdown-list"><b>Dropdown List</b></a>
+       </td>
+       <td>
+           <a href="src/dropdowns/src/drop-down-list">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/drop-down-list/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/drop-down-list/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-dropdown-tree"><b>Dropdown Tree</b></a>
+       </td>
+       <td>
+           <a href="src/dropdowns/src/drop-down-tree">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/drop-down-tree/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/drop-down-tree/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-listbox"><b>List Box</b></a>
+       </td>
+       <td>
+           <a href="src/dropdowns/src/list-box">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/list-box/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/list-box/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-multiselect-dropdown"><b>MultiSelect Dropdown</b></a>
+       </td>
+       <td>
+           <a href="src/dropdowns/src/multi-select">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/multi-select/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/multi-select/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
 
-## Component Categories (145+)
+### Inputs
 
-Explore all requested components with direct links to **Getting Started** docs and **Live Demos** (demos default to Material theme; switch themes on the site).
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-checkbox"><b>Checkbox</b></a>
+       </td>
+       <td rowspan="3">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-buttons"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-buttons" title="@syncfusion/ej2-react-buttons" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-buttons"><img src="https://ej2.syncfusion.com/badges/ej2-buttons/coverage.svg" alt="code coverage of @syncfusion/ej2-react-buttons" title="@syncfusion/ej2-react-buttons" /></a>
+       </td>
+       <td>
+           <a href="src/buttons/src/check-box">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/button/checkbox">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/check-box/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-radio-button"><b>Radio Button</b></a>
+       </td>
+       <td>
+           <a href="src/buttons/src/radio-button">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/button/radio-button">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/radio-button/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-toggle-switch-button"><b>Toggle Switch Button</b></a>
+       </td>
+       <td>
+           <a href="src/buttons/src/switch">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/button/switch">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/switch/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-color-picker"><b>Color Picker</b></a>
+       </td>
+       <td rowspan="8">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-inputs"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-inputs" title="@syncfusion/ej2-react-inputs" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-inputs"><img src="https://ej2.syncfusion.com/badges/ej2-inputs/coverage.svg" alt="code coverage of @syncfusion/ej2-react-inputs" title="@syncfusion/ej2-react-inputs" /></a>
+       </td>
+       <td>
+           <a href="src/inputs/src/color-picker">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/color-picker/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/color-picker/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-file-upload"><b>File Upload</b></a>
+       </td>
+       <td>
+           <a href="src/inputs/src/uploader">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/uploader/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/uploader/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-input-mask"><b>Input Mask</b></a>
+       </td>
+       <td>
+           <a href="src/inputs/src/maskedtextbox">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/maskedtextbox/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/maskedtextbox/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-numeric-textbox"><b>Numeric Textbox</b></a>
+       </td>
+       <td>
+           <a href="src/inputs/src/numerictextbox">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/numerictextbox/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/numerictextbox/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-range-selector"><b>Range Slider</b></a>
+       </td>
+       <td>
+           <a href="src/inputs/src/slider">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/range-slider/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/range-slider/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-textbox"><b>TextBox</b></a>
+       </td>
+       <td>
+           <a href="src/inputs/src/textbox">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/textboxes/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/textbox/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/Signature"><b>Signature</b></a>
+       </td>
+       <td>
+           <a href="src/inputs/src/signature">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/signature/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/signature/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
 
-| Category                  | Component                  | Features                                                                                          | Documentation                                                                 | Demo Link                                                                                           |
-|---------------------------|----------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| **AI / Smart**            | AI AssistView              | **AI-driven assistance**, **contextual suggestions**, **real-time interaction**, **integrates with editors** | [Link](https://ej2.syncfusion.com/react/documentation/ai-assistview/getting-started/)           | [Demo](https://ej2.syncfusion.com/react/demos/#/material/ai-assistview/default/)                   |
-|                           | Smart TextArea             | **Intelligent editing**, **auto-complete suggestions**, **context-aware corrections**, **AI-powered** | [Link](https://ej2.syncfusion.com/react/documentation/smart-textarea/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/smart-textarea/default/)                  |
-|                           | Smart Paste Button         | **Intelligent paste handling**, **content formatting**, **smart insertion**, **AI-enhanced**     | [Link](https://ej2.syncfusion.com/react/documentation/smart-paste-button/getting-started/)      | [Demo](https://ej2.syncfusion.com/react/demos/#/material/smart-paste/default/)                     |
-| **Grids**                 | Data Grid                  | **Virtual scrolling**, **Excel-like editing/sorting/filtering**, **large dataset support**, **export to Excel/PDF**, **grouping & aggregation** | [Link](https://ej2.syncfusion.com/react/documentation/grid/getting-started/)                    | [Demo](https://ej2.syncfusion.com/react/demos/#/material/grid/overview/)                           |
-|                           | Pivot Table                | **Drag-and-drop summarization**, **calculated fields**, **chart integration**, **virtual scrolling**, **Excel export** | [Link](https://ej2.syncfusion.com/react/documentation/pivotview/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/pivotview/default/)                       |
-|                           | Tree Grid                  | **Hierarchical data display**, **expand/collapse**, **row templates**, **editing & drag-and-drop**, **virtualization** | [Link](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/treegrid/overview/)                       |
-| **Charts & Data Viz**     | Charts                     | **50+ chart types**, **zooming & panning**, **interactive legends**, **real-time updates**, **animation** | [Link](https://ej2.syncfusion.com/react/documentation/chart/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/chart/line/)                              |
-|                           | 3D Charts                  | **3D visualization**, **rotation & perspective**, **multiple series**, **high customization**   | [Link](https://ej2.syncfusion.com/react/documentation/chart-3d/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/chart-3d/default/)                        |
-|                           | Stock Chart                | **Financial time-series**, **technical indicators**, **range navigator**, **candle/OHLC**       | [Link](https://ej2.syncfusion.com/react/documentation/stock-chart/getting-started/)             | [Demo](https://ej2.syncfusion.com/react/demos/#/material/stock-chart/default/)                     |
-|                           | Circular Gauge             | **Analog gauges**, **ranges & needles**, **annotations**, **directional indicators**            | [Link](https://ej2.syncfusion.com/react/documentation/circular-gauge/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/circular-gauge/default/)                  |
-|                           | Linear Gauge               | **Progress/measurement bars**, **ranges**, **pointers**, **custom shapes**                      | [Link](https://ej2.syncfusion.com/react/documentation/linear-gauge/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/linear-gauge/default/)                    |
-|                           | Maps                       | **Geo-spatial plotting**, **markers & shapes**, **drill-down**, **bubble visualization**        | [Link](https://ej2.syncfusion.com/react/documentation/maps/getting-started/)                    | [Demo](https://ej2.syncfusion.com/react/demos/#/material/maps/default/)                            |
-|                           | Diagram                    | **Flowcharts & org charts**, **drag-and-drop**, **connectors**, **undo/redo**, **AI-enhanced**  | [Link](https://ej2.syncfusion.com/react/documentation/diagram/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/diagram/default/)                         |
-|                           | HeatMap                    | **Density visualization**, **gradient colors**, **row/column labels**, **tooltip**              | [Link](https://ej2.syncfusion.com/react/documentation/heatmap-chart/getting-started/)           | [Demo](https://ej2.syncfusion.com/react/demos/#/material/heatmap/default/)                         |
-|                           | TreeMap                    | **Hierarchical rectangles**, **drill-down**, **color mapping**, **legend**                      | [Link](https://ej2.syncfusion.com/react/documentation/treemap/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/treemap/default/)                         |
-|                           | Bullet Chart               | **Compact performance metering**, **ranges & targets**, **comparisons**                         | [Link](https://ej2.syncfusion.com/react/documentation/bullet-chart/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/bullet-chart/default/)                    |
-|                           | Kanban                     | **Drag-and-drop boards**, **swimlanes**, **card customization**, **drag multiple cards**        | [Link](https://ej2.syncfusion.com/react/documentation/kanban/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/kanban/board-view/)                       |
-|                           | Sparkline                  | **Inline trend charts**, **compact size**, **multiple types**                                   | [Link](https://ej2.syncfusion.com/react/documentation/sparkline/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/sparkline/default/)                       |
-|                           | Barcode                    | **1D/2D barcode generation**, **multiple formats**, **scanning support**                        | [Link](https://ej2.syncfusion.com/react/documentation/barcode/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/barcode/default/)                         |
-|                           | Smith Chart                | **RF engineering data**, **impedance/admittance**, **markers**                                  | [Link](https://ej2.syncfusion.com/react/documentation/smithchart/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/smithchart/default/)                      |
-|                           | Range Selector             | **Time-range navigation**, **chart integration**, **zoom support**                              | [Link](https://ej2.syncfusion.com/react/documentation/range-selector/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/range-selector/default/)                  |
-| **Scheduling**            | Scheduler                  | **Multiple views (day/week/month)**, **drag-and-drop events**, **multiple event selection**, **resource grouping** | [Link](https://ej2.syncfusion.com/react/documentation/schedule/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/schedule/day-view/)                       |
-|                           | Gantt Chart                | **Project timelines**, **task dependencies**, **progress tracking**, **critical path**          | [Link](https://ej2.syncfusion.com/react/documentation/gantt/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/gantt/project-management/)                |
-|                           | Calendar                   | **Multiple views**, **event rendering**, **multi-date selection**                               | [Link](https://ej2.syncfusion.com/react/documentation/calendar/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/calendar/default/)                        |
-|                           | DatePicker                 | **Inline/dropdown mode**, **validation**, **custom formats**                                    | [Link](https://ej2.syncfusion.com/react/documentation/datepicker/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/datepicker/default/)                      |
-|                           | DateRangePicker            | **Start/end selection**, **preset ranges**, **calendar preview**                                | [Link](https://ej2.syncfusion.com/react/documentation/daterangepicker/getting-started/)         | [Demo](https://ej2.syncfusion.com/react/demos/#/material/daterangepicker/default/)                 |
-|                           | DateTimePicker             | **Combined date & time**, **format customization**, **strict mode**                             | [Link](https://ej2.syncfusion.com/react/documentation/datetimepicker/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/datetimepicker/default/)                  |
-|                           | TimePicker                 | **24/12-hour format**, **interval selection**, **spin buttons**                                 | [Link](https://ej2.syncfusion.com/react/documentation/timepicker/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/timepicker/default/)                      |
-| **Dropdowns**             | AutoComplete               | **Suggestion dropdown**, **filtering**, **multi-select**, **remote data**                       | [Link](https://ej2.syncfusion.com/react/documentation/autocomplete/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/autocomplete/default/)                    |
-|                           | ComboBox                   | **Hybrid textbox + dropdown**, **search & filtering**, **grouping**                             | [Link](https://ej2.syncfusion.com/react/documentation/combo-box/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/combobox/local-data/)                     |
-|                           | MultiSelect Dropdown       | **Tag/chip selection**, **checkbox mode**, **remote binding**                                   | [Link](https://ej2.syncfusion.com/react/documentation/multi-select/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/multi-select/default/)                    |
-|                           | Dropdown List              | **Simple selection**, **grouping**, **virtual scrolling**                                       | [Link](https://ej2.syncfusion.com/react/documentation/drop-down-list/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dropdownlist/default/)                    |
-|                           | ListBox                    | **Multi-selection**, **drag-and-drop reordering**, **checkbox support**                         | [Link](https://ej2.syncfusion.com/react/documentation/listbox/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/listbox/default/)                         |
-|                           | DropDown Tree              | **Hierarchical selection**, **checkboxes**, **multi-select**                                    | [Link](https://ej2.syncfusion.com/react/documentation/drop-down-tree/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dropdowntree/default/)                    |
-|                           | MultiColumn ComboBox       | **Multiple value columns**, **custom templates**, **search**                                    | [Link](https://ej2.syncfusion.com/react/documentation/multi-column-combo-box/getting-started/)  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/multicolumn-combobox/default/)            |
-|                           | Mention                    | **@tagging autocomplete**, **suggestions**, **custom templates**                               | [Link](https://ej2.syncfusion.com/react/documentation/mention/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/mention/default/)                         |
-| **Inputs**                | TextBox                    | **Validation & masking**, **floating label**, **icons**                                         | [Link](https://ej2.syncfusion.com/react/documentation/textbox/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/textbox/default/)                         |
-|                           | TextArea                   | **Auto-resize**, **character counter**, **resize handles**                                      | [Link](https://ej2.syncfusion.com/react/documentation/textarea/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/textarea/default/)                        |
-|                           | Numeric TextBox            | **Spin buttons**, **formatting**, **strict mode**                                               | [Link](https://ej2.syncfusion.com/react/documentation/numerictextbox/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/numerictextbox/default/)                  |
-|                           | Masked TextBox             | **Input format enforcement** (phone/SSN/etc.), **prompt char**                                  | [Link](https://ej2.syncfusion.com/react/documentation/maskedtextbox/getting-started/)           | [Demo](https://ej2.syncfusion.com/react/demos/#/material/maskedtextbox/default/)                   |
-|                           | CheckBox                   | **Tri-state**, **label position**, **indeterminate state**                                      | [Link](https://ej2.syncfusion.com/react/documentation/check-box/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/checkbox/default/)                        |
-|                           | RadioButton                | **Group selection**, **label customization**, **checked state**                                 | [Link](https://ej2.syncfusion.com/react/documentation/radio-button/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/radiobutton/default/)                     |
-|                           | Color Picker               | **Palette/sliders**, **gradient support**, **opacity**                                          | [Link](https://ej2.syncfusion.com/react/documentation/color-picker/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/color-picker/default/)                    |
-|                           | File Upload                | **Drag-and-drop**, **progress tracking**, **multiple files**, **validation**                    | [Link](https://ej2.syncfusion.com/react/documentation/uploader/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/uploader/default/)                        |
-|                           | Range Slider               | **Dual-thumb**, **step & limits**, **tooltip**                                                  | [Link](https://ej2.syncfusion.com/react/documentation/slider/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/slider/default/)                          |
-|                           | Switch                     | **On/off toggle**, **custom labels**, **animation**                                             | [Link](https://ej2.syncfusion.com/react/documentation/switch/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/switch/default/)                          |
-|                           | Signature                  | **Touch/mouse capture**, **save as image**, **clear/undo**                                      | [Link](https://ej2.syncfusion.com/react/documentation/signature/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/signature/default/)                       |
-|                           | Rating                     | **Star/custom shapes**, **partial rating**, **precision**                                       | [Link](https://ej2.syncfusion.com/react/documentation/rating/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/rating/default/)                          |
-|                           | OTP Input                  | **Auto-focus & masking**, **paste support**, **resend timer**                                   | [Link](https://ej2.syncfusion.com/react/documentation/otp-input/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/otp-input/default/)                       |
-| **Buttons**               | Button                     | **Variants & icons**, **loading state**, **disabled**                                           | [Link](https://ej2.syncfusion.com/react/documentation/button/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/button/default/)                          |
-|                           | ButtonGroup                | **Grouped buttons**, **toggle/selection**, **vertical mode**                                    | [Link](https://ej2.syncfusion.com/react/documentation/button-group/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/buttongroup/default/)                     |
-|                           | SplitButton                | **Primary + dropdown**, **split actions**, **icons**                                            | [Link](https://ej2.syncfusion.com/react/documentation/split-button/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/splitbutton/default/)                     |
-|                           | Dropdown Menu              | **Menu items**, **icons & separators**, **submenus**                                            | [Link](https://ej2.syncfusion.com/react/documentation/drop-down-menu/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dropdownmenu/default/)                    |
-|                           | Progress Button            | **Loading indicator**, **spinner integration**, **progress percentage**                         | [Link](https://ej2.syncfusion.com/react/documentation/progress-button/getting-started/)         | [Demo](https://ej2.syncfusion.com/react/demos/#/material/progress-button/default/)                 |
-|                           | Chips                      | **Tags/filters**, **deletable**, **custom templates**                                           | [Link](https://ej2.syncfusion.com/react/documentation/chips/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/chips/default/)                           |
-|                           | FAB (Floating Action Button) | **Prominent action**, **motion effects**, **extended modes**                                 | [Link](https://ej2.syncfusion.com/react/documentation/floating-action-button/getting-started/) | [Demo](https://ej2.syncfusion.com/react/demos/#/material/floating-action-button/default/)          |
-|                           | Speed Dial                 | **Multiple actions**, **directional expansion**, **FAB extension**                              | [Link](https://ej2.syncfusion.com/react/documentation/speed-dial/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/speeddial/default/)                       |
-| **Navigation & Layout**   | Accordion                  | **Collapsible sections**, **multiple expand**, **templates**                                    | [Link](https://ej2.syncfusion.com/react/documentation/accordion/getting-started/)               | [Demo](https://ej2.syncfusion.com/react/demos/#/material/accordion/default/)                       |
-|                           | Tabs                       | **Tabbed content**, **scrollable**, **closeable tabs**                                          | [Link](https://ej2.syncfusion.com/react/documentation/tab/getting-started/)                     | [Demo](https://ej2.syncfusion.com/react/demos/#/material/tab/default/)                             |
-|                           | TreeView                   | **Hierarchical navigation**, **drag-and-drop**, **checkboxes**                                  | [Link](https://ej2.syncfusion.com/react/documentation/treeview/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/treeview/default/)                        |
-|                           | Toolbar                    | **Button collection**, **overflow popup**, **responsive**                                       | [Link](https://ej2.syncfusion.com/react/documentation/toolbar/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/toolbar/default/)                         |
-|                           | Sidebar                    | **Side panel**, **collapsible**, **positioning**                                                | [Link](https://ej2.syncfusion.com/react/documentation/sidebar/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/sidebar/default/)                         |
-|                           | Menu Bar                   | **Navigation menu**, **submenus**, **keyboard support**                                         | [Link](https://ej2.syncfusion.com/react/documentation/menu-bar/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/menubar/default/)                         |
-|                           | Context Menu               | **Right-click actions**, **custom items**, **submenus**                                         | [Link](https://ej2.syncfusion.com/react/documentation/context-menu/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/contextmenu/default/)                     |
-|                           | Carousel                   | **Sliding panels**, **auto-play**, **indicators**                                               | [Link](https://ej2.syncfusion.com/react/documentation/carousel/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/carousel/default/)                        |
-|                           | AppBar                     | **Top/bottom bar**, **actions & content**, **responsive**                                       | [Link](https://ej2.syncfusion.com/react/documentation/appbar/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/appbar/default/)                          |
-|                           | Breadcrumb                 | **Path navigation**, **overflow menu**, **custom separators**                                   | [Link](https://ej2.syncfusion.com/react/documentation/breadcrumb/getting-started/)              | [Demo](https://ej2.syncfusion.com/react/demos/#/material/breadcrumb/default/)                      |
-|                           | Ribbon                     | **Tabbed toolbar**, **grouped commands**, **contextual tabs**                                   | [Link](https://ej2.syncfusion.com/react/documentation/ribbon/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/ribbon/default/)                          |
-|                           | Stepper                    | **Multi-step process**, **validation**, **linear/non-linear**                                   | [Link](https://ej2.syncfusion.com/react/documentation/stepper/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/stepper/default/)                         |
-|                           | Pager                      | **Pagination controls**, **page size selector**, **numeric/symbolic**                           | [Link](https://ej2.syncfusion.com/react/documentation/pager/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/pager/default/)                           |
-|                           | File Manager               | **File browsing**, **upload/rename/delete**, **drag-and-drop**                                  | [Link](https://ej2.syncfusion.com/react/documentation/file-manager/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/file-manager/default/)                    |
-|                           | Dialog                     | **Modal/popover**, **custom content**, **buttons & actions**                                    | [Link](https://ej2.syncfusion.com/react/documentation/dialog/getting-started/)                  | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dialog/default/)                          |
-|                           | Card                       | **Content container**, **headers/footers**, **actions**                                         | [Link](https://ej2.syncfusion.com/react/documentation/card/getting-started/)                    | [Demo](https://ej2.syncfusion.com/react/demos/#/material/card/default/)                            |
-|                           | Splitter                   | **Resizable panels**, **horizontal/vertical**, **nested**                                       | [Link](https://ej2.syncfusion.com/react/documentation/splitter/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/splitter/default/)                        |
-|                           | ListView                   | **Scrollable list**, **templates**, **selection & grouping**                                    | [Link](https://ej2.syncfusion.com/react/documentation/listview/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/listview/default/)                        |
-|                           | Tooltip                    | **Hover/contextual hints**, **positioning**, **custom content**                                 | [Link](https://ej2.syncfusion.com/react/documentation/tooltip/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/tooltip/default/)                         |
-|                           | Dashboard Layout           | **Drag-and-drop widgets**, **resizing**, **responsive**                                         | [Link](https://ej2.syncfusion.com/react/documentation/dashboard-layout/getting-started/)        | [Demo](https://ej2.syncfusion.com/react/demos/#/material/dashboard-layout/default/)                |
-| **Forms & Editors**       | Query Builder              | **Visual query construction**, **conditions & operators**, **rule templates**                   | [Link](https://ej2.syncfusion.com/react/documentation/query-builder/getting-started/)           | [Demo](https://ej2.syncfusion.com/react/demos/#/material/querybuilder/default/)                    |
-|                           | Form Validator             | **Client-side validation**, **custom rules**, **error messages**                                | [Link](https://ej2.syncfusion.com/react/documentation/form-validator/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/form-validator/default/)                  |
-|                           | Rich Text Editor           | **WYSIWYG formatting**, **tables & media**, **AI-powered**, **markdown support**                | [Link](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/)        | [Demo](https://ej2.syncfusion.com/react/demos/#/material/rich-text-editor/default/)                |
-|                           | In-place Editor            | **Inline/pop-up editing**, **grid integration**, **custom UI**                                  | [Link](https://ej2.syncfusion.com/react/documentation/inplace-editor/getting-started/)          | [Demo](https://ej2.syncfusion.com/react/demos/#/material/inplace-editor/default/)                  |
-|                           | Image Editor               | **Crop/rotate/filters**, **annotations**, **redaction**                                         | [Link](https://ej2.syncfusion.com/react/documentation/image-editor/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/image-editor/default/)                    |
-|                           | Block Editor               | **Block-based content**, **modular editing**, **preview mode**                                  | [Link](https://ej2.syncfusion.com/react/documentation/block-editor/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/block-editor/default/)                    |
-| **Notifications**         | Toast                      | **Temporary notifications**, **auto-dismiss**, **progress & actions**                           | [Link](https://ej2.syncfusion.com/react/documentation/toast/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/toast/default/)                           |
-|                           | Progress Bar               | **Determinate/indeterminate**, **segmented**, **circular mode**                                 | [Link](https://ej2.syncfusion.com/react/documentation/progress-bar/getting-started/)            | [Demo](https://ej2.syncfusion.com/react/demos/#/material/progress-bar/default/)                    |
-|                           | Spinner                    | **Loading indicator**, **size variants**, **overlay support**                                   | [Link](https://ej2.syncfusion.com/react/documentation/spinner/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/spinner/default/)                         |
-|                           | Badge                      | **Count/status indicator**, **positioning**, **dot/overlap**                                    | [Link](https://ej2.syncfusion.com/react/documentation/badge/getting-started/)                   | [Demo](https://ej2.syncfusion.com/react/demos/#/material/badge/default/)                           |
-|                           | Skeleton                   | **Loading placeholder**, **shimmer effect**, **custom shapes**                                  | [Link](https://ej2.syncfusion.com/react/documentation/skeleton/getting-started/)                | [Demo](https://ej2.syncfusion.com/react/demos/#/material/skeleton/default/)                        |
-|                           | Message                    | **Inline alerts/status**, **severity levels**, **dismissible**                                  | [Link](https://ej2.syncfusion.com/react/documentation/message/getting-started/)                 | [Demo](https://ej2.syncfusion.com/react/demos/#/material/message/default/)                         |
+### Data Visualization
 
-**Full list of 145+ components** → [Documentation](https://ej2.syncfusion.com/react/documentation/introduction)
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-barcode"><b>Barcode Generator</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-barcode-generator"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-barcode-generator" title="@syncfusion/ej2-react-barcode-generator" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-barcode-generator"><img src="https://ej2.syncfusion.com/badges/ej2-barcode-generator/coverage.svg" alt="code coverage of @syncfusion/ej2-react-barcode-generator" title="@syncfusion/ej2-react-barcode-generator" /></a>
+       </td>
+       <td>
+           <a href="src/barcodegenerator/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/barcode/default-functionalities">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/barcode/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-circular-gauge"><b>Circular Gauge</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-circulargauge"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-circulargauge" title="@syncfusion/ej2-react-circulargauge" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-circulargauge"><img src="https://ej2.syncfusion.com/badges/ej2-circulargauge/coverage.svg" alt="code coverage of @syncfusion/ej2-react-circulargauge" title="@syncfusion/ej2-react-circulargauge" /></a>
+       </td>
+       <td>
+           <a href="src/circulargauge/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/circular-gauge/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/circular-gauge/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-diagram"><b>Diagram</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-diagrams"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-diagrams" title="@syncfusion/ej2-react-diagrams" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-diagrams"><img src="https://ej2.syncfusion.com/badges/ej2-diagrams/coverage.svg" alt="code coverage of @syncfusion/ej2-react-diagrams" title="@syncfusion/ej2-react-diagrams" /></a>
+       </td>
+       <td>
+           <a href="src/diagrams/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/default-functionalities">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/diagram/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-heatmap-chart"><b>HeatMap Chart</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-heatmap"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-heatmap" title="@syncfusion/ej2-react-heatmap" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-heatmap"><img src="https://ej2.syncfusion.com/badges/ej2-heatmap/coverage.svg" alt="code coverage of @syncfusion/ej2-react-heatmap" title="@syncfusion/ej2-react-heatmap" /></a>
+       </td>
+       <td>
+           <a href="src/heatmap/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/heatmap-chart/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/heatmap-chart/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-kanban-board"><b>Kanban</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-kanban"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-kanban" title="@syncfusion/ej2-react-kanban" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-kanban"><img src="https://ej2.syncfusion.com/badges/ej2-kanban/coverage.svg" alt="code coverage of @syncfusion/ej2-react-kanban" title="@syncfusion/ej2-react-kanban" /></a>
+       </td>
+       <td>
+           <a href="src/kanban/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/kanban/overview">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/kanban/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-linear-gauge"><b>Linear Gauge</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-lineargauge"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-lineargauge" title="@syncfusion/ej2-react-lineargauge" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-lineargauge"><img src="https://ej2.syncfusion.com/badges/ej2-lineargauge/coverage.svg" alt="code coverage of @syncfusion/ej2-react-lineargauge" title="@syncfusion/ej2-react-lineargauge" /></a>
+       </td>
+       <td>
+           <a href="src/lineargauge/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/linear-gauge/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/linear-gauge/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-maps"><b>Maps</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-maps"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-maps" title="@syncfusion/ej2-react-maps" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-maps"><img src="https://ej2.syncfusion.com/badges/ej2-maps/coverage.svg" alt="code coverage of @syncfusion/ej2-react-maps" title="@syncfusion/ej2-react-maps" /></a>
+       </td>
+       <td>
+           <a href="src/maps/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/maps/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/maps/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-treemap"><b>TreeMap</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-treemap"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-treemap" title="@syncfusion/ej2-react-treemap" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-treemap"><img src="https://ej2.syncfusion.com/badges/ej2-treemap/coverage.svg" alt="code coverage of @syncfusion/ej2-react-treemap" title="@syncfusion/ej2-react-treemap" /></a>
+       </td>
+       <td>
+           <a href="src/treemap/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/treemap/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/treemap/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-bullet-chart"><b>Bullet Chart</b></a>
+       </td>
+       <td rowspan="6">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-charts"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-charts" title="@syncfusion/ej2-react-charts" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-charts"><img src="https://ej2.syncfusion.com/badges/ej2-charts/coverage.svg" alt="code coverage of @syncfusion/ej2-react-charts" title="@syncfusion/ej2-react-charts" /></a>
+       </td>
+       <td>
+           <a href="src/charts/src/bullet-chart">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/bullet-chart/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/bullet-chart/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-charts"><b>Charts</b></a>
+       </td>
+       <td>
+           <a href="src/charts/src/chart">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/chart/line">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/chart/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-range-selector"><b>Range Selector</b></a>
+       </td>
+       <td>
+           <a href="src/charts/src/range-navigator">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/range-navigator/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/range-navigator/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-smith-chart"><b>Smith Chart</b></a>
+       </td>
+       <td>
+           <a href="src/charts/src/smithchart">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/smith-chart/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/smithchart/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-sparkline"><b>Sparkline Charts</b></a>
+       </td>
+       <td>
+           <a href="src/charts/src/sparkline">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/sparkline/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/sparkline/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-stock-chart"><b>Stock Chart</b></a>
+       </td>
+       <td>
+           <a href="src/charts/src/stock-chart">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/stock-chart/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/stock-chart/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
 
-## Resources
+### Calendars
 
-- **Live Demos** – https://ej2.syncfusion.com/react/demos/  
-  Try interactive examples of all 145+ components with real-time theme switching
-- **Documentation** – https://ej2.syncfusion.com/react/documentation/  
-  Complete API reference, getting started guides, migration help, and tutorials
-- **API Reference** – https://ej2.syncfusion.com/react/documentation/api/  
-  Detailed class, method, and property documentation
-- **Theme Studio** – https://ej2.syncfusion.com/themestudio/  
-  Online tool to customize Material, Bootstrap, Tailwind, Fluent, and other themes
-- **Release Notes** – https://ej2.syncfusion.com/react/documentation/release-notes/  
-  What's new in each version, bug fixes, and breaking changes
-- **Showcase Applications** – https://ej2.syncfusion.com/showcase/react/  
-  Real-world demo apps built with Syncfusion React components (Fitness Tracker, Hotel Booking, Diagram Builder, etc.)
-- **Support Channels**  
-  - [Support ticket](https://support.syncfusion.com/support/tickets/create)
-  - [Community Forum](https://www.syncfusion.com/forums)
-  - Stack Overflow (use tags: `syncfusion`, `ej2`, `ej2-react`)  
-  - GitHub Issues (for open-source feedback or samples)
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-calendar"><b>Calendar</b></a>
+       </td>
+       <td rowspan="5">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-calendars"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-calendars" title="@syncfusion/ej2-react-calendars" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-calendars"><img src="https://ej2.syncfusion.com/badges/ej2-calendars/coverage.svg" alt="code coverage of @syncfusion/ej2-react-calendars" title="@syncfusion/ej2-react-calendars" /></a>
+       </td>
+       <td>
+           <a href="src/calendars/src/calendar">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/calendar/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/calendar/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-datepicker"><b>DatePicker</b></a>
+       </td>
+       <td>
+           <a href="src/calendars/src/datepicker">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/datepicker/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/datepicker/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-daterangepicker"><b>DateRangePicker</b></a>
+       </td>
+       <td>
+           <a href="src/calendars/src/daterangepicker">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/daterangepicker/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/daterangepicker/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-datetime-picker"><b>DateTime Picker</b></a>
+       </td>
+       <td>
+           <a href="src/calendars/src/datetimepicker">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/datetimepicker/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/datetimepicker/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-timepicker"><b>TimePicker</b></a>
+       </td>
+       <td>
+           <a href="src/calendars/src/timepicker">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/timepicker/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/timepicker/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-gantt-chart"><b>Gantt Chart</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-gantt"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-gantt" title="@syncfusion/ej2-react-gantt" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-gantt"><img src="https://ej2.syncfusion.com/badges/ej2-gantt/coverage.svg" alt="code coverage of @syncfusion/ej2-react-gantt" title="@syncfusion/ej2-react-gantt" /></a>
+       </td>
+       <td>
+           <a href="src/gantt/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/gantt/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/gantt/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-scheduler"><b>Scheduler</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-schedule"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-schedule" title="@syncfusion/ej2-react-schedule" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-schedule"><img src="https://ej2.syncfusion.com/badges/ej2-schedule/coverage.svg" alt="code coverage of @syncfusion/ej2-react-schedule" title="@syncfusion/ej2-react-schedule" /></a>
+       </td>
+       <td>
+           <a href="src/schedule/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/schedule/overview">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/schedule/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
 
-## License
+### Navigation
 
-This is a **commercial product** subject to the Syncfusion End User License Agreement (EULA).
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-accordion"><b>Accordion</b></a>
+       </td>
+       <td rowspan="9">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-navigations"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-navigations" title="@syncfusion/ej2-react-navigations" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-navigations"><img src="https://ej2.syncfusion.com/badges/ej2-navigations/coverage.svg" alt="code coverage of @syncfusion/ej2-react-navigations" title="@syncfusion/ej2-react-navigations" /></a>
+       </td>
+       <td>
+           <a href="src/navigations/src/accordion">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/accordion/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/accordion/getting-started/">Documentation</a>
+       </td>
+   </tr>
+    <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/breadcrumb"><b>Breadcrumb</b></a>
+       </td>
+       <td>
+           <a href="src/navigations/src/breadcrumb">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/breadcrumb/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/breadcrumb/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/carousel"><b>Carousel</b></a>
+       </td>
+       <td>
+           <a href="src/navigations/src/carousel">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/carousel/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/carousel/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-context-menu"><b>Context Menu</b></a>
+       </td>
+       <td>
+           <a href="src/navigations/src/context-menu">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/context-menu/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/context-menu/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-menu-bar"><b>Menu Bar</b></a>
+       </td>
+       <td>
+           <a href="src/navigations/src/menu">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/menu/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/menu/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-sidebar"><b>Sidebar</b></a>
+       </td>
+       <td>
+           <a href="src/navigations/src/sidebar">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/sidebar/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/sidebar/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-tabs"><b>Tabs</b></a>
+       </td>
+       <td>
+           <a href="src/navigations/src/tab">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/tab/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/tab/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-toolbar"><b>Toolbar</b></a>
+       </td>
+       <td>
+           <a href="src/navigations/src/toolbar">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/toolbar/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/toolbar/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-treeview"><b>TreeView</b></a>
+       </td>
+       <td>
+           <a href="src/navigations/src/treeview">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/treeview/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/treeview/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-file-manager"><b>File Manager</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-filemanager"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-filemanager" title="@syncfusion/ej2-react-filemanager" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-filemanager"><img src="https://ej2.syncfusion.com/badges/ej2-filemanager/coverage.svg" alt="code coverage of @syncfusion/ej2-react-filemanager" title="@syncfusion/ej2-react-filemanager" /></a>
+       </td>
+       <td>
+           <a href="src/filemanager/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/file-manager/overview">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/file-manager/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
 
-**Free Community License** is available for qualifying users/organizations:  
-- Annual gross revenue < $1 million USD  
-- 5 or fewer total developers  
-- 10 or fewer total employees  
+### Buttons
 
-The community license allows free use in both internal and commercial applications under these conditions.  
-No registration or approval is required — just comply with the terms.
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-button"><b>Button</b></a>
+       </td>
+       <td rowspan="2">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-buttons"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-buttons" title="@syncfusion/ej2-react-buttons" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-buttons"><img src="https://ej2.syncfusion.com/badges/ej2-buttons/coverage.svg" alt="code coverage of @syncfusion/ej2-react-buttons" title="@syncfusion/ej2-react-buttons" /></a>
+       </td>
+       <td>
+           <a href="src/buttons/src/button">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/button/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/button/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-chips"><b>Chips</b></a>
+       </td>
+       <td>
+           <a href="src/buttons/src/chips">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/chips/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/chips/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-button-group"><b>Button Group</b></a>
+       </td>
+       <td rowspan="4">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-splitbuttons"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-splitbuttons" title="@syncfusion/ej2-react-splitbuttons" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-splitbuttons"><img src="https://ej2.syncfusion.com/badges/ej2-splitbuttons/coverage.svg" alt="code coverage of @syncfusion/ej2-react-splitbuttons" title="@syncfusion/ej2-react-splitbuttons" /></a>
+       </td>
+       <td>
+           <a href="src/splitbuttons/src/button-group">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/button/button-group">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/button-group/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-dropdown-menu"><b>Dropdown Menu</b></a>
+       </td>
+       <td>
+           <a href="src/splitbuttons/src/drop-down-button">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/button/dropdown-button">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/drop-down-button/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-progress-button"><b>Progress Button</b></a>
+       </td>
+       <td>
+           <a href="src/splitbuttons/src/progress-button">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/button/progress-button">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/progress-button/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-split-button"><b>Split Button</b></a>
+       </td>
+       <td>
+           <a href="src/splitbuttons/src/split-button">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/button/split-button">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/split-button/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
 
-**Paid Licenses** are required for:  
-- Larger organizations  
-- Teams exceeding the community license limits  
-- Priority support, custom patches, or on-premise deployment options  
+### Layout
 
-Purchase options and pricing: https://www.syncfusion.com/sales/products  
-30-day free trial (full features, no credit card required): https://www.syncfusion.com/downloads/react  
-Community License details & FAQ: https://www.syncfusion.com/products/communitylicense  
-Full EULA: https://www.syncfusion.com/eula/es/
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-avatar"><b>Avatar</b></a>
+       </td>
+       <td rowspan="4">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-layouts"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-layouts" title="@syncfusion/ej2-react-layouts" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-layouts"><img src="https://ej2.syncfusion.com/badges/ej2-layouts/coverage.svg" alt="code coverage of @syncfusion/ej2-react-layouts" title="@syncfusion/ej2-react-layouts" /></a>
+       </td>
+       <td>
+           <a href="src/layouts/styles/avatar">Styles</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/avatar/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/avatar/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-card"><b>Card</b></a>
+       </td>
+       <td>
+           <a href="src/layouts/styles/card">Styles</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/card/basic">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/card/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-dashboard-layout"><b>Dashboard Layout</b></a>
+       </td>
+       <td>
+           <a href="src/layouts/src/dashboard-layout">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/dashboard-layout/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/dashboard-layout/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-splitter"><b>Splitter</b></a>
+       </td>
+       <td>
+           <a href="src/layouts/src/splitter">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/splitter/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/splitter/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-modal-dialog"><b>Dialog</b></a>
+       </td>
+       <td rowspan="2">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-popups"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-popups" title="@syncfusion/ej2-react-popups" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-popups"><img src="https://ej2.syncfusion.com/badges/ej2-popups/coverage.svg" alt="code coverage of @syncfusion/ej2-react-popups" title="@syncfusion/ej2-react-popups" /></a>
+       </td>
+       <td>
+           <a href="src/popups/src/dialog">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/dialog/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/dialog/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-tooltip"><b>Tooltip</b></a>
+       </td>
+       <td>
+           <a href="src/popups/src/tooltip">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/tooltip/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/tooltip/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-listview"><b>ListView</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-lists"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-lists" title="@syncfusion/ej2-react-lists" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-lists"><img src="https://ej2.syncfusion.com/badges/ej2-lists/coverage.svg" alt="code coverage of @syncfusion/ej2-react-lists" title="@syncfusion/ej2-react-lists" /></a>
+       </td>
+       <td>
+           <a href="src/lists/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/listview/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/listview/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
 
-© 2026 Syncfusion, Inc. All Rights Reserved.
+### Notification
+
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-badge"><b>Badge</b></a>
+       </td>
+       <td rowspan="2">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-notifications"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-notifications" title="@syncfusion/ej2-react-notifications" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-notifications"><img src="https://ej2.syncfusion.com/badges/ej2-notifications/coverage.svg" alt="code coverage of @syncfusion/ej2-react-notifications" title="@syncfusion/ej2-react-notifications" /></a>
+       </td>
+       <td>
+           <a href="src/notifications/styles/badge">Styles</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/badge/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/badge/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-toast"><b>Toast</b></a>
+       </td>
+       <td>
+           <a href="src/notifications/src/toast">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/toast/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/toast/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-progressbar"><b>Progress Bar</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-progressbar"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-progressbar" title="@syncfusion/ej2-react-progressbar" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-progressbar"><img src="https://ej2.syncfusion.com/badges/ej2-progressbar/coverage.svg" alt="code coverage of @syncfusion/ej2-react-progressbar" title="@syncfusion/ej2-react-progressbar" /></a>
+       </td>
+       <td>
+           <a href="src/progressbar/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/progress-bar/linear">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/progress-bar/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
+
+### Forms
+
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-query-builder"><b>Query Builder UI</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-querybuilder"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-querybuilder" title="@syncfusion/ej2-react-querybuilder" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-querybuilder"><img src="https://ej2.syncfusion.com/badges/ej2-querybuilder/coverage.svg" alt="code coverage of @syncfusion/ej2-react-querybuilder" title="@syncfusion/ej2-react-querybuilder" /></a>
+       </td>
+       <td>
+           <a href="src/querybuilder/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/query-builder/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/query-builder/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
+
+### Viewer
+
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/react-ui-components/react-pdf-viewer"><b>PDF Viewer</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-react-pdfviewer"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-react-pdfviewer" title="@syncfusion/ej2-react-pdfviewer" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-pdfviewer"><img src="https://ej2.syncfusion.com/badges/ej2-pdfviewer/coverage.svg" alt="code coverage of @syncfusion/ej2-react-pdfviewer" title="@syncfusion/ej2-react-pdfviewer" /></a>
+       </td>
+       <td>
+           <a href="src/pdfviewer/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/pdfviewer/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/react/documentation/pdfviewer/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
+
+ ## Supported Frameworks
+ The Essential JS 2 is also offered in following list of frameworks.
+ * [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-react-ui-components)
+* [Angular](https://www.syncfusion.com/angular-ui-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
+* [Vue.js](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
+* [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_campaign=ej2-react-ui-components)
+* [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_campaign=ej2-react-ui-components)
+ ## Support
+ Product support is available for through following mediums.
+ * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-react-ui-components) support system or [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_campaign=ej2-react-ui-components).
+* New [GitHub issue](https://github.com/syncfusion/ej2-react-ui-components/issues/new).
+* Ask your query in [Stack Overflow](https://stackoverflow.com/) with tag `syncfusion` and `ej2`.
+ ## License
+ Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license).
+ ## Changelog
+ Check the changelog [here](https://ej2.syncfusion.com/react/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-react-ui-components)
+     © Copyright 2022 Syncfusion, Inc. All Rights Reserved.
+    The Syncfusion Essential Studio license and copyright applies to this distribution.

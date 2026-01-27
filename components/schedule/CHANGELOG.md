@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 32.1.24 (2026-01-20)
+## 32.1.25 (2026-01-27)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I799572` - Fixed an issue where the wrong date range was shown in the quick info popup for a recurrence appointment in Agenda view.
+
+## 32.1.22 (2026-01-06)
 
 ### Schedule
 

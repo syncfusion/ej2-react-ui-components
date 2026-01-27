@@ -2,13 +2,7 @@
 
 ## [Unreleased]
 
-## 32.1.24 (2026-01-20)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I776606`, `#I798223` - Fixed the issue where the query filter was not included in the Data Manager request when the query was set dynamically. Also resolved the problem where multiple queries were sent when binding the query directly, and the Multiselect popups was not opening properly.## 32.1.19 (2025-12-16)
+## 32.1.19 (2025-12-16)
 
 ### QueryBuilder
 
@@ -769,4 +763,10 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.
+- **Queries**: Queries supports JSON/SQL rules.## 32.1.23 (2026-01-13)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I776606`, `#I798223` - Fixed the issue where the query filter was not included in the Data Manager request when the query was set dynamically. Also resolved the problem where multiple queries were sent when binding the query directly, and the Multiselect popups was not opening properly.

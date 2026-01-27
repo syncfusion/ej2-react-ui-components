@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.25 (2026-01-27)
+
+### Tree Grid
+
+#### Bug Fixes
+
+-`I798336` - Resolved the issue where selection was not cleared after actions when Single Selection and `persistSelection` were enabled.
+
 ## 32.1.24 (2026-01-20)
 
 ### Tree Grid

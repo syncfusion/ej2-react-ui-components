@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.25 (2026-01-27)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#795663` - Issue with "`#VALUE!` error occurs when nesting `ISNUMBER` and `EXACT` formula inside `IF` formula" has been resolved.
+
 ## 32.1.21 (2025-12-30)
 
 ### Spreadsheet
