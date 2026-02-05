@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 32.1.25 (2026-01-27)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I797631` - Fixed an issue where custom headers set via `currentRequest` in the `canceling` event were not being sent with the cancel/abort request in chunk upload scenarios.
-
 ## 32.1.19 (2025-12-16)
 
 ### ColorPicker
@@ -1316,7 +1308,15 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 
-- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 32.1.22 (2026-01-06)
+- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 32.1.24 (2026-01-20)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I797631` - Fixed an issue where custom headers set via `currentRequest` in the `canceling` event were not being sent with the cancel/abort request in chunk upload scenarios.
+
+## 32.1.22 (2026-01-06)
 
 ### ColorPicker
 

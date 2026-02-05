@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 32.1.25 (2026-01-27)
+## 32.2.3 (2026-02-05)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#795663` - Issue with "`#VALUE!` error occurs when nesting `ISNUMBER` and `EXACT` formula inside `IF` formula" has been resolved.
+- `#I795894` - Issue with "cell values containing large decimal values not rounding correctly when a number format is applied" has been resolved.
 
 ## 32.1.21 (2025-12-30)
 
@@ -1435,7 +1435,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.18 (2025-12-09)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 32.1.25 (2026-01-27)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#795663` - Issue with "`#VALUE!` error occurs when nesting `ISNUMBER` and `EXACT` formula inside `IF` formula" has been resolved.
+
+## 31.2.18 (2025-12-09)
 
 ### Spreadsheet
 

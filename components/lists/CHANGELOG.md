@@ -2,6 +2,35 @@
 
 ## [Unreleased]
 
+## 32.2.3 (2026-02-05)
+
+### ListView
+
+#### Feature
+
+- `#I770932` – Introduced the new `enabled` property to enable or disable the ListView, replacing the older `enable` API. This update improves consistency with standard naming conventions and enhances clarity in documentation.
+
+**Example Usage**
+
+```typescript
+  import {ListView} from '@syncfusion/ej2-lists';
+  let arts: string[] = ["Artwork", "Abstract", "Modern Painting", "Ceramics", "Animation Art", "Oil Painting"];
+
+    //Initialize ListView control
+    let listviewObject: ListView = new ListView({
+        //set the data to datasource property
+        dataSource: arts,
+        enabled: false
+    });
+
+    //Render initialized ListView
+    listviewObject.appendTo("#list");
+```
+
+**Deprecated**
+
+- The `enable` property has been deprecated and replaced with `enabled` to align with API standards. The deprecated `enable` property will be supported for four major releases before removal.
+
 ## 32.1.23 (2026-01-13)
 
 ### ListView
