@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.7 (2026-02-24)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I811744` - Now, Font Family dropdown displays the actual font name for content copied from Microsoft Word.
+
 ## 32.2.5 (2026-02-17)
 
 ### RichTextEditor
@@ -15,6 +23,8 @@
 - `#I809024` - Now, when configuring the `headerToolbarSettings` property within the `aiAssistantSettings` option to include the `Close` item, will function correctly without throwing any console errors.
 
 - `#I807359` - Now, when images are deleted in mobile mode using the quick toolbar, the focus will stay inside the editor.
+
+- `#I808077` - Now, the Rich Text Editor works properly by maintaining inline formatting styles when moving to a new line after removing all characters from the previous line.
 
 ## 32.2.4 (2026-02-11)
 

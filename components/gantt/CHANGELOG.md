@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 32.2.7 (2026-02-24)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#F198069` - Fixed issue where context menu not opened after performing horizontal scrolling on the Grid columns.
+- `#I813079` - Fixed an issue where the spinner remained visible after dynamically clearing filters via an external button click.
+
+#### Bug fix
+
+- `#F198069` - Fixed issue where context menu not opened after performing horizontal scrolling on the Grid columns.
+
 ## 32.2.5 (2026-02-17)
 
 ### GanttChart

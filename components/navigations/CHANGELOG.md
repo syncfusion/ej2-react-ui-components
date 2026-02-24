@@ -2,6 +2,45 @@
 
 ## [Unreleased]
 
+## 32.2.7 (2026-02-24)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I809774` - Resolved an inconsistency in the height calculation logic when `heightAdjustMode` was set to Fill, where the component failed to properly adapt to the available parent height.
+
+### TreeView
+
+#### Feature
+
+- `#I803243` - Introduced the new `disableHtmlEncode` property to control how text content is rendered in the Treeview. When set to `true`, the component will render raw text exactly as provided (including HTML tags or special characters) without encoding or truncation. To preserve and render raw HTML content correctly, `enableHtmlSanitizer` must also be set to `false`. This update provides greater flexibility in displaying literal text and HTML content within Treeview nodes.
+
+**Example Usage**
+
+```typescript
+  import { TreeView } from '@syncfusion/ej2-navigations';
+  let data: Object[] = [
+    { id: '1', name: 'Australia' },
+    { id: '2', name: 'New<york' },
+    { id: '3', name: 'Normal Text' }
+  ];
+  // Initialize TreeView control
+  let treeViewObj: TreeView = new TreeView({
+    fields: { dataSource: data, id: 'id', text: 'name' },
+    disableHtmlEncode: true,
+    enableHtmlSanitizer: false
+  });
+  // Render initialized TreeView
+  treeViewObj.appendTo('#treeview');
+```
+
+### Sidebar
+
+#### Bug Fixes
+
+- `#I811704` - Fixed an issue where the Sidebar did not fully collapse when the `enableDock` property was toggled from `true` to `false` dynamically.
+
 ## 32.2.3 (2026-02-05)
 
 ### TreeView

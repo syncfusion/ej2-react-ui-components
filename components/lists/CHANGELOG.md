@@ -2,6 +2,31 @@
 
 ## [Unreleased]
 
+## 32.2.7 (2026-02-24)
+
+### Common
+
+#### Feature
+
+- `#I803243` - Introduced the new `disableHtmlEncode` property to control how text content is rendered in the List components. When set to `true`, the component will render raw text exactly as provided (including HTML tags or special characters) without encoding or truncation. To preserve and render raw HTML content correctly, `enableHtmlSanitizer` must also be set to `false`. This update provides greater flexibility in displaying literal text and HTML content within List text.
+
+**Example Usage**
+
+```typescript
+  import { ListView } from '@syncfusion/ej2-lists';
+  const data: { id: string, text: string }[] = [
+    { id: '1', text: 'Australia' },
+    { id: '2', text: 'New<york' },
+    { id: '3', text: 'Normal Text' }
+  ];
+  const listview = new ListView({
+    fields: { dataSource: data, id: 'id', text: 'text' },
+    disableHtmlEncode: true,
+    enableHtmlSanitizer: false
+  });
+listview.appendTo('#listview');
+```
+
 ## 32.2.3 (2026-02-05)
 
 ### ListView

@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 32.2.5 (2026-02-17)
+## 32.2.7 (2026-02-24)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I812514` - Resolved Incorrect State Values in sourcePointChange and targetPointChange Events.
+
+## 32.2.4 (2026-02-11)
 
 ### Diagram
 

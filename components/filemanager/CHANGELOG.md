@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 32.2.7 (2026-02-24)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I800811` - The issue with NVDA screen reader fails to announce view change options during keyboard navigation in File Manager component has been resolved.
+
+- `#I806109` - The issue where upload sub-menu items are not localizing based on the culture applied in the File Manager component has been resolved.
+
 ## 32.1.19 (2025-12-16)
 
 ### FileManager

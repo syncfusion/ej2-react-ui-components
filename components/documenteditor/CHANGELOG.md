@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.7 (2026-02-24)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I796630` -  Fixed a layout mismatch issue between the Document Editor and Microsoft Word.
+
 ## 32.2.5 (2026-02-17)
 
 ### DocumentEditor

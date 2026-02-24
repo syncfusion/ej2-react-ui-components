@@ -2,13 +2,15 @@
 
 ## [Unreleased]
 
-## 32.2.5 (2026-02-17)
+## 32.2.7 (2026-02-24)
 
 ### Tree Grid
 
 #### Bug Fixes
 
-- `I805487` - Resolved an issue where data was not added correctly using the `addRecord` method when batch editing, persistence, and multiple selection were enabled.
+- `I811698` - Resolved an issue where the records expand on clearing filter in virtualization when the filter type is `Excel`.
+- `I810364` - Fixed selection not persisting after updating records with `setRowData` following post cell edit in virtualization.
+- `#F72695` - Fixed an issue where child records were not exported in remote data when `isCollapsedStatePersist` is set to false.
 
 ## 32.2.3 (2026-02-05)
 
@@ -235,7 +237,15 @@ undefined- Introduced sticky header support in the Tree Grid, allowing column he
 #### Bug Fixes
 
 - Expanding and Collapsing records is working fine when `pageSizeMode` is set as `All`.
-- `expandAtLevel`, `collapseAtLevel`, `expandAll` and `collapseAll` methods are working fine when `pageSizeMode` is set as `All`.## 19.1.54 (2021-03-30)
+- `expandAtLevel`, `collapseAtLevel`, `expandAll` and `collapseAll` methods are working fine when `pageSizeMode` is set as `All`.## 32.2.4 (2026-02-11)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `I805487` - Resolved an issue where data was not added correctly using the `addRecord` method when batch editing, persistence, and multiple selection were enabled.
+
+## 19.1.54 (2021-03-30)
 
 ### Tree Grid
 

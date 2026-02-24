@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 32.2.5 (2026-02-17)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I798223` - Fixed an issue where two requests were made when the popups opened after dynamically updating the query in the QueryBuilder.
-
 ## 32.1.19 (2025-12-16)
 
 ### QueryBuilder
@@ -771,7 +763,15 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.## 32.1.23 (2026-01-13)
+- **Queries**: Queries supports JSON/SQL rules.## 32.2.4 (2026-02-11)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I798223` - Fixed an issue where two requests were made when the popups opened after dynamically updating the query in the QueryBuilder.
+
+## 32.1.23 (2026-01-13)
 
 ### QueryBuilder
 
