@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.8 (2025-12-22)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I812645` - Resolved the issue in which the filter value was included only in the first request, while subsequent requests were missing the filter parameter.
+
 ## 32.2.7 (2026-02-24)
 
 ### DropDownTree

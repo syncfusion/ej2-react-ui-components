@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 32.2.8 (2025-12-22)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I813615` - Fixed an error that occurred when deleting a table column containing embedded content controls.
+`#I810273` - Resolved an issue where entering a space caused the cursor to jump after the next character.
+`#I812200` - Fixed a problem where the document jumped to the following page when deleting a table.
+`#I810311` - Corrected the behaviour where Bold/Italic formatting was incorrectly applied to bullet symbols.
+`#I807767` - Resolved an issue where the Document Editor became unresponsive while loading the attached document.
+`#I799682` - Fixed list formatting being lost when the exported document was opened in online Microsoft Word.
+`#I787996` - Fixed an RTL issue where highlighting Arabic text caused the words to split.
+`#I800024` - Corrected footnote positioning issues when moving content across pages.
+`#I810289` - Fixed localization not updating properly in the Drop down Form Field dialog.
+`#I796649` - Resolved an issue where the first list number or bullet outside a content control could not be edited.
+`#I797591` - Fixed an issue where newton soft version 13.0.1.0 could not be loaded in the MVC project.
+
 ## 32.2.7 (2026-02-24)
 
 ### DocumentEditor

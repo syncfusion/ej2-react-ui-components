@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 32.2.8 (2025-12-22)
+
+### Grid
+
+#### Bug fixes
+
+- `#I793520` - Resolved an inconsistency in keyboard navigation when using `Shift+Tab` to focus on the Grid component with column template.
+- `#FB72878` - Fixed an issue where the details of the deselected records were not available in the `rowDeselecting` event when clearing the selection using the header checkbox.
+
 ## 32.2.7 (2026-02-24)
 
 ### Grid

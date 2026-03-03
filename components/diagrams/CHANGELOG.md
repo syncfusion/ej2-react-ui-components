@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.8 (2025-12-22)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I810414` - Resolved the difference in scroll speed between Chrome and Firefox browser.
+
 ## 32.2.7 (2026-02-24)
 
 ### Diagram

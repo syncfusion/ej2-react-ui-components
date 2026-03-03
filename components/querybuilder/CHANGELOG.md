@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.8 (2025-12-22)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I798223` - Fixed an issue when dynamic query updated not properly in QueryBuilder.
+
 ## 32.1.19 (2025-12-16)
 
 ### QueryBuilder

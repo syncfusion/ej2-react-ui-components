@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 32.2.8 (2025-12-22)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I812278` - Fixed an issue where textboxes did not receive focus in touch mode when a custom class and tooltip were used.
+- `#I812633` - Fixed accessibility issues in the EJ2 PDF Viewer.
+- `#I812685` - Fixed an issue where the viewer failed to load a new document after opening a corrupted PDF document.
+
+## 32.2.7 (2026-02-24)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#F198084` - Fixed a script error that occurred on mobile devices when dynamically updating the component height with `enableToolbar` set to false.
+- `#I809779` - Resolved an issue where the Add Reply option appeared twice in the Comment Panel when `isCommentLock` was set to true.
+- `#I810351` - Fixed an issue where importing annotations failed when using older format JSON data for sticky note annotations.
+
 ## 32.2.5 (2026-02-17)
 
 ### PDF Viewer

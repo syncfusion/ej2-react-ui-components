@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 32.2.8 (2025-12-22)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I813029` - Now, the Rich Text Editor's robust HTML sanitization effectively prevents XSS attacks by filtering out malicious content, including event handlers and inline scripts.
+
+- `#I812077` - Now, updating content with script tags does not remove the content in the Rich Text Editor.
+
 ## 32.2.7 (2026-02-24)
 
 ### RichTextEditor
