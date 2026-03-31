@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#F73428` - Fixed an expand and collapse issue in the TreeGrid URL adaptor when using a checkbox column.
+
 ## 33.1.45 (2026-03-24)
 
 ### Tree Grid

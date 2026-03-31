@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I817071` - Now, performance of the Rich Text Editor is improved while performing multiple undo action and switching from code view mode.
+
+- `#I819268` - Now, the dropdown in the Rich Text Editor have unique aria-labels for better accessibility.
+
+- `#I821408` - Now, the Ctrl+Shift+H shortcut now works correctly when switching from CodeMirror back to Preview mode in the Rich Text Editor.
+
 ## 33.1.45 (2026-03-24)
 
 ### RichTextEditor

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I819231` - Scrolling will now perform without any flickering or jump when multiple page set to false with page settings defined.
+
 ## 33.1.45 (2026-03-24)
 
 ### Diagram

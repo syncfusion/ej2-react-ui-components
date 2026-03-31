@@ -2,6 +2,29 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `I821668` - Fixed an issue where the browser default print dialog appeared even when `enablePrint` was set to false while the PDF Viewer was in focus.
+- `I819221` - Resolved an exception that occurred when printing a PDF in Microsoft Edge with the `AlwaysOpenPdfExternally` policy enabled.
+- `I821467` - Fixed an issue where Free Text annotation bounds were incorrectly exported after updating bounds using the `editAnnotation` method.
+- `I821182` - Resolved an issue where the `findText` method returned incorrect bound values for PDF documents that contain `CropBox` and `MediaBox` values.
+- `I822227` - Fixed an issue where annotations were not rendered in `Standalone` rendering mode for the customer provided PDF document.
+
+## 33.1.45 (2026-03-24)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I818575` - Fixed an issue where the `vertexPoints` and bounds were not updated properly after resizing a distance annotation.
+- `#I814654` - Fixed an issue where a tile rendering document failed to render when navigating programmatically to the first page in a single page document.
+- `#I814098` - Fixed an issue where a CSP exception occurred during text search.
+- `#I818873` - Fixed an issue where the comment status was not preserved properly while annotation mode was active.
+
 ## 33.1.44 (2026-03-16)
 
 ### PDF Viewer

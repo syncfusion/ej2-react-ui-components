@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#FB73187` - Fixed an issue where taskbar customization using `queryTaskbarInfo` with `enableMultiTaskbar` was not applied when a record was collapsed.
+- `#FB73189` - Fixed an issue where the last record was not visible after dynamically adding or deleting a record and scrolling when `allowTaskbarOverlap` was set to `false`.
+
 ## 33.1.45 (2026-03-24)
 
 ### GanttChart

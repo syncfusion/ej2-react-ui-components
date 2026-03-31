@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I819206` - Fixed an issue where drag-and-drop incorrectly allowed content to be moved into non-editable regions.
+
+## 33.1.45 (2026-03-24)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I810756` - Script error after reloading page with collaborative edits.
+
 ## 32.2.5 (2026-02-17)
 
 ### DocumentEditor

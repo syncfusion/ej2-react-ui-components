@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 33.1.45 (2026-03-24)
+## 33.1.46 (2026-03-31)
 
-### Mention
+### DropDownTree
 
 #### Bug Fixes
 
-- `#I761793` - The issue of editing in Firefox after utilizing the home and end keys following Mention item insertion has been successfully resolved.
+- `#I816579` - Resolved a console error that occurred when filtering in the DropDown Tree component with node IDs containing the hash `#` symbol.
 
 ## 28.2.9 (2025-03-04)
 
@@ -2230,7 +2230,15 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 29.1.33 (2025-03-25)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 33.1.44 (2026-03-16)
+
+### Mention
+
+#### Bug Fixes
+
+- `#I761793` - The issue of editing in Firefox after utilizing the home and end keys following Mention item insertion has been successfully resolved.
+
+## 29.1.33 (2025-03-25)
 
 ### Mention
 

@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I816579` - Resolved a console error that occurred when filtering in the `DropdownTree` component with node IDs containing the hash `#` symbol.
+
+### Tab
+
+#### Bug Fixes
+
+- `#I821520` - The issue where a console error occurred when dynamically updating `cssClass` in the Tab component has been resolved.
+
 ## 33.1.45 (2026-03-24)
 
 ### Tab
