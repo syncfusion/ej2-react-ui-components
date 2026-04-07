@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.1.46 (2026-03-31)
+## 33.1.47 (2026-04-07)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I824355` - Resolved the issue where the last breadcrumb path item in the File Manager component was not accessible via keyboard navigation and lacked proper ARIA role announcements.
+
+## 33.1.45 (2026-03-24)
 
 ### FileManager
 

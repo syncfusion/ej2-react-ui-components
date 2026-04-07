@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 33.1.47 (2026-04-07)
+
+### drop-down-tree
+
+- `#I813436` - Resolved a memory leak in the DropDownTree component by ensuring the window resize event listener is correctly detached during destroy, preventing retained instances in Angular Material Dialog scenarios.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I823632` - Resolved an issue that caused duplicate API calls when the query property was used with the actionBegin event.
+
 ## 33.1.46 (2026-03-31)
 
 ### DropDownTree

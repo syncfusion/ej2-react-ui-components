@@ -2,7 +2,21 @@
 
 ## [Unreleased]
 
-## 33.1.46 (2026-03-31)
+## 33.1.47 (2026-04-07)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#I818290` - Fixed an issue where refresh() destroyed the MaskedTextBox instance.
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I822257` - Fixed an issue where the component assigned an incorrect default name attribute when neither id nor name was provided.
+
+## 33.1.44 (2026-03-16)
 
 ### Uploader
 

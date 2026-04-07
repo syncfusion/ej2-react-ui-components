@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.1.46 (2026-03-31)
+## 33.1.47 (2026-04-07)
+
+### Sortable
+
+#### Bug Fixes
+
+- `#I824102` -  Resolved an issue where the `beforeDrop` event of the Sortable component returned an incorrect `currentIndex` value during drag-and-drop operations.
+
+## 33.1.44 (2026-03-16)
 
 ### ListView
 

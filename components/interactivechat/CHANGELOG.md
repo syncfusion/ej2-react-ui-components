@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 33.1.47 (2026-04-07)
+
+### Chat UI
+
+#### Bug Fixes
+
+- `#I823171` - Now the issue with unpin `ItemClick` event not firing for the pinned message has been resolved.
+
+### AI AssistView
+
+#### Bug Fixes
+
+- Now the issue with interacting prompt suggestions containing HTML content not working in AI AssistView has been resolved.
+
 ## 29.1.33 (2025-03-25)
 
 ### Chat UI

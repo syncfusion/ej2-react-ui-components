@@ -2,13 +2,50 @@
 
 ## [Unreleased]
 
+## 33.1.47 (2026-04-07)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I819468` - Fixed a script error that occurred when the header contained comments.
+`#I817314` - Resolved a layout issue when the header contained a wrapped image.
+`#I820418` - Added a prohibition cursor for blocked drag-and-drop operations.
+`#I826724` - Fixed a script error in the Picture Format tab after inserting an image.
+`#I822512` - Fixed an issue where bullet points were removed when pasting SFDT content into a selected range.
+`#I822969` - Resolved an issue where mouse selection caused bookmark loss during paste operations.
+`#I802829` - Fixed a table layout collapse issue after applying a fill color.
+`#I822187` - Fixed an issue where bookmark highlighting was removed after drag-and-drop.
+`#I823499` - Corrected incorrect row resize behaviour.
+`#I821686` - Resolved a formatting loss issue when using the Paste API with the `MergeWithExistingFormatting` option.
+
 ## 33.1.46 (2026-03-31)
 
 ### DocumentEditor
 
 #### Bug Fixes
 
+`#I818359` - Fixed an issue where underline formatting was not removed when choosing Ignore Once.
+`#I804008` - Resolved text overlapping issues when using both machine fonts and the custom font API.
+`#I810045` - Fixed an issue where the font size dropdown did not allow setting half-point values.
+`#I816757` - Fixed an issue where automatic hyperlink conversion failed for long links.
+`#I820417` - Resolved an issue where pasting text added an unwanted closing HTML tag.
+`#I814760` - Fixed multiple issues related to spell check.
+`#I818705` - Fixed a script error that occurred when copying the entire document content using Ctrl + A and Ctrl + C.
+`#I817043` - Fixed an issue where deleting text caused content to shift to an extra page.
 `#I819206` - Fixed an issue where drag-and-drop incorrectly allowed content to be moved into non-editable regions.
+`#I819095` - Resolved a browser freezing issue that occurred when continuously pasting content with spell check enabled.
+`#I810021` - Fixed an issue where page numbers were displayed incorrectly for partially numbered sections.
+`#I814014` - Fixed an issue where the date picker was unresponsive when selecting Today.
+`#I800589` - Resolved an issue where table positioning shifted when toggling between layouts.
+`#I815790` - Fixed an issue where the ribbon remained active when the document was read-only.
+`#I806986` - Improved usability when resizing by fixing issues with grabbing borders.
+`#I800985` - Fixed table formatting misalignment that occurred after saving and reopening the document.
+`#I795470` - Fixed an issue where English text was not appended correctly after Arabic input.
+`#F72948` - Fixed an issue where line spacing values were not retained after being set.
+`#I806994` - Fixed an issue where empty comments were added for other users in Web Layout mode during collaborative editing.
+`#I818405` - Fixed an issue where the Form Field pop-up appeared during multiple selection.
+`#I805914` - Fixed an auto-save script error that occurred during initialization.
 
 ## 33.1.45 (2026-03-24)
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.47 (2026-04-07)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I824582` - The Y‑axis range is now calculated properly when rendering multiple charts.
+
 ## 33.1.44 (2026-03-16)
 
 ### Chart

@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 33.1.47 (2026-04-07)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I825534` - Now, updating the value in the `beforePasteCleanup` event will properly update the content in the Rich Text Editor.
+
+- `#818640` - Now, the AI-generated response is correctly inserted into the Rich Text Editor even when the AI command is triggered without editor focus.
+
+- `#I822566` - Now, bold text copied from the shape format in Microsoft Excel will retain its formatting when pasted into the Rich Text Editor.
+
+- `#I822391` - Now, the `BulletFormatList`and `NumberFormatList` dropdown items correctly maintain their active state even when using custom list types.
+
+- `#I820760` - Now row/column insertion via quick-insert icons; table backspace removal now behaves consistently.
+
 ## 33.1.46 (2026-03-31)
 
 ### RichTextEditor

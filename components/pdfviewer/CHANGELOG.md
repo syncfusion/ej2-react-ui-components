@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 33.1.47 (2026-04-07)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I823501` - Fixed an issue where the List Box font color was not retained in the print preview and the downloaded PDF documents.
+- `#I823444` - The `findTextAsync` method now works in server side rendering mode before the `extractTextCompleted` event is triggered.
+- `#I821565` - Fixed an issue where changes to handwritten signature opacity were not applied correctly when adjusting opacity and interacting with the PDF page.
+- `#I821279` - Resolved a script error that occurred while redacting the customer provided document.
+
 ## 33.1.46 (2026-03-31)
 
 ### PDF Viewer

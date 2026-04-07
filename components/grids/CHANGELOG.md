@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.47 (2026-04-07)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I823122` - Resolved an issue where a duplicate filter query was added when grouping with `pageWiseAggregates` enabled.
+
 ## 33.1.46 (2026-03-31)
 
 ### Grid

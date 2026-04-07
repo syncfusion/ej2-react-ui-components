@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 33.1.47 (2026-04-07)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I805024`, `#I810416` - Fixed an issue where the resize functionality failed under certain timeScale slot count and interval configurations when the browser zoom was set to 90%.
+- `#I819087` - Fixed an issue with event resize calculation in the `TimelineMonth` view when header rows are present.
+- `#I814447` - Resolved an issue where appointments were rendered with an incorrect end time in time zones observing Daylight Saving Time (DST).
+
 ## 33.1.44 (2026-03-16)
 
 ### Schedule

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.47 (2026-04-07)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#F73428` - Fixed an issue where expand and collapse functionality did not work after clearing filters in the TreeGrid.
+
 ## 33.1.46 (2026-03-31)
 
 ### Tree Grid
