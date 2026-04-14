@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 33.1.49 (2026-04-14)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I825110` - Fixed an issue where selection between the `TreeGrid` and Gantt chart is not maintained after a menu filter action, and additional white space appears when scrolling to the last collapsed record.
+- `#I807756` - Fixed an issue where using an ng-template for the editing tooltip template caused it to appear below the Gantt grid instead of the correct position when connecting tasks.
+
 ## 33.1.47 (2026-04-07)
 
 ### GanttChart

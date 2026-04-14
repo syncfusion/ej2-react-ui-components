@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 33.1.49 (2026-04-14)
+
+### Badge
+
+#### Bug Fixes
+
+- `I826670` - Fixed an issue where the Badge component did not support the Contrast: Subtle style defined in Theme Studio.
+
+- For the Contrast: Subtle style, please use the following new CSS class names:
+    - e-badge-primary-subtle - Primary
+    - e-badge-secondary-subtle - Secondary
+    - e-badge-success-subtle - Success
+    - e-badge-danger-subtle - Danger
+    - e-badge-warning-subtle - Warning
+    - e-badge-info-subtle - Info
+    - e-badge-light-subtle - Light
+    - e-badge-dark-subtle - Dark
+
 ## 31.1.17 (2025-09-05)
 
 ### Message

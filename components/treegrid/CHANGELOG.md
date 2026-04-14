@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.49 (2026-04-14)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I824627` - Fixed an issue where drag and drop did not work when all records were collapsed, and dropping items on summary rows caused a script error.
+
 ## 33.1.47 (2026-04-07)
 
 ### Tree Grid

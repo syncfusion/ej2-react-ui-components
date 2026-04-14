@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.49 (2026-04-14)
+
+### Ribbon
+
+#### Bug Fixes
+
+- Now the issue with tooltip not displayed for the overflow buttons in the Ribbon has been resolved.
+
 ## 25.1.35 (2024-03-15)
 
 ### Ribbon
