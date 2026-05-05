@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.5 (2026-05-05)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I834648` - Fixed a memory leak caused by event listeners not being removed when the Uploader component was destroyed.
+
 ## 33.1.47 (2026-04-07)
 
 ### MaskedTextBox

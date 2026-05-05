@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 33.2.5 (2026-05-05)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I828952, #I828480, #I828633` - The issue with MultiSelect, where inconsistencies occurred when enable Virtualization was used along with other APIs, has been resolved.
+
+- `#I823016` - Fixed an accessibility issue where screen readers did not announce the keyboard key used to remove a focused chip.
+
+- `#I831920` -  Fixed an issue where the change event was not triggered after selecting a value and then scrolling the parent container with the mouse wheel.
+
 ## 33.2.4 (2026-04-28)
 
 ### MultiSelect
