@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 33.2.6 (2026-05-12)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I832625` - Fixed an issue where unscheduled tasks with predecessors caused an exception during the initial load of the Gantt chart has been resolved.
+- `#I830330` - Fixed an issue where, on initial load, the parent task ignored unscheduled child task dates, resulting in an incorrect parent taskbar timeline.
+- `#I833869` - Fixed an issue where the `EventMarker` date was rendered at an incorrect position when a timezone was specified.
+
 ## 33.2.4 (2026-04-28)
 
 ### GanttChart
@@ -9,7 +19,6 @@
 #### Bug fixes
 
 - `#FB73605` - Fixed an issue where the context menu did not open in both the Grid and Chart areas when the Gantt component had no records to display.
-- `#I830330` - Fixed an issue where, on initial load, the parent task ignored unscheduled child task dates, resulting in an incorrect parent taskbar timeline.
 
 #### Bug fix
 
