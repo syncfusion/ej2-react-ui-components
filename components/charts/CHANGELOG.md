@@ -1,8 +1,6 @@
 # Changelog
 
-## [Unreleased]
-
-## 33.2.6 (2026-05-12)
+## 33.2.4 (2026-04-28)
 
 ### Chart
 
@@ -3829,4 +3827,5 @@ Graphics (SVG).
 - **Animation** - Chart series will be animated when rendering and refreshing the chart widget.
 - **User Interaction** - Supports interactive features that are zooming, panning, crosshair, trackball, tooltip, and data point selection.
 - **Annotation** - Supports annotation to mark a specific area in chart.
-- **Export** - Supports to print the chart directly from the browser and exports the chart in both JPEG and PNG format.
+- **Export** - Supports to print the chart directly from the browser and exports the chart in both JPEG and PNG format.## [Unreleased]
+

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.7 (2026-05-19)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I837866` - Issue with "a script error occurring during auto-detection of number formats in the second spreadsheet after destroying the first spreadsheet" has been resolved.
+
 ## 33.2.4 (2026-04-28)
 
 ### Spreadsheet

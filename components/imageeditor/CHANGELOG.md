@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.7 (2026-05-19)
+
+### Image Editor
+
+#### Bug Fixes
+
+- `#I837578` - Resolved an issue where the application could freeze when editing or moving text after adding multiple text elements.
+
 ## 33.1.44 (2026-03-16)
 
 ### Image Editor
@@ -325,8 +333,7 @@ The Image Editor control is a graphical user interface used for editing images. 
 - **Freehand drawing** - Draw freehand on the image and adjust the pen's stroke width and stroke color.
 - **Reset** - Revert all the edited states and load the original image.
 - **Save** - Save the edited image in JPEG, PNG, and SVG formats.
-- **Annotation** - `Text`, `rectangle`, `ellipse`, and `line` annotation shapes are supported.
-The Image Editor component is a graphical user interface used for editing images. It provides built-in support for rotate, flip, zoom, and crop the images based on the selection. It also has support for inserting an annotations including rectangle, ellipse, line, text, and freehand drawings.
+- **Annotation** - `Text`, `rectangle`, `ellipse`, and `line` annotation shapes are supported.The Image Editor component is a graphical user interface used for editing images. It provides built-in support for rotate, flip, zoom, and crop the images based on the selection. It also has support for inserting an annotations including rectangle, ellipse, line, text, and freehand drawings.
 
 - **Selection** - The selection region can be a `square` or `circle`, customized to various aspects ratios, and customized by dragging and resizing.
 - **Crop** - The image can be cropped based on the selection.

@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.6 (2026-05-12)
+## 33.2.7 (2026-05-19)
+
+### Toast
+
+#### Bug Fixes
+
+- `#I837121` - Fixed an issue where Toast predefined types displayed incorrect or broken icons in the `Fluent2` theme when using `ToastUtility.show`.
+
+- `#I837121` - Fixed an issue where Toast predefined types displayed incorrect or broken icons in the `Fluent2` theme when using `ToastUtility.show`.## 33.1.49 (2026-04-14)
 
 ### Badge
 
