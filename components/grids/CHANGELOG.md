@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 33.2.8 (2026-05-26)
+## 33.2.10 (2026-06-02)
 
 ### Grid
 
@@ -2859,4 +2859,13 @@ Grid component is used to display and manipulate tabular data with configuration
 - **Hierarchy Grid** - It is used to display table data in hierarchical structure which can show or hide by clicking on expand or collapse button.
 - **Print and Exporting** - Provides the option to print and exporting grid records.
 - **RTL** - Provides a full-fledged right-to-left mode which aligns content in the Grid component from right to left.
-- **Localization** - Provides inherent support to localize the UI.
+- **Localization** - Provides inherent support to localize the UI.## 33.2.8 (2026-05-26)
+
+### Grid
+
+#### Bugs
+
+- `I838244` - The issue where editing a new row using a column template button caused a script error when another row was already in edit mode has been resolved.
+- `I835370` - The script error that occurred when clearing the persisted filter in Adaptive UI within the EJ2 Grid has been resolved.
+- `I839347` - The issue where the scrollbar jumped to the top during virtual scrolling when the data count was less than the page size has been resolved.
+

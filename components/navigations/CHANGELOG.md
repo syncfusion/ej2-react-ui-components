@@ -2,7 +2,13 @@
 
 ## [Unreleased]
 
-## 33.2.8 (2026-05-26)
+## 33.2.10 (2026-06-02)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I842780` - Issue with "Console error occurs when opening ContextMenu in TreeView" has been resolved.
 
 ### Sidebar
 

@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.8 (2026-05-26)
+## 33.2.10 (2026-06-02)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- Fixed an issue where the toolbar sample was crashing during actions.
+
+## 33.2.5 (2026-05-05)
 
 ### Uploader
 

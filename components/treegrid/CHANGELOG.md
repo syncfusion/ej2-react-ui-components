@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.10 (2026-06-02)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I837003` - Fixed an issue where the selection was not maintained for newly added records when virtualization was enabled.
+
 ## 33.2.8 (2026-05-26)
 
 ### Tree Grid

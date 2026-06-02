@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 33.2.10 (2026-06-02)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I836247` - Now, the hyperlink text will not duplicate when pasted from Word into Angular RichTextEditor.
+
+- `#I842108` - Now, The UI inconsistency will no longer occur after repeated use of the AI Commands dropdown in the RichTextEditor.
+
+- `#I840448` - Now, Ordered list numbers will reflect the selected Font Name and Font Size styles in RichTextEditor.
+
+- `#I842908` - Now, the RTL Mode will not hide Left Border of table pasted from Excel in RichTextEditor.
+
 ## 33.2.8 (2026-05-26)
 
 ### RichTextEditor

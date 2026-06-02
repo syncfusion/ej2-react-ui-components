@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 33.2.10 (2026-06-02)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I840406` - Resolved UI issues in annotation toolbar items in mobile rendering mode.
+- `#I842212` - Resolved a permissions policy violation caused by the deprecated unload event listener.
+
 ## 33.2.8 (2026-05-26)
 
 ### PDF Viewer

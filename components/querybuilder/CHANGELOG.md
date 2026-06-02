@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.8 (2026-05-26)
+## 33.2.10 (2026-06-02)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I839882` - The issue where the `OR` operator changed to `AND` while dragging and dropping groups and conditions has been resolved.
+
+## 33.2.7 (2026-05-19)
 
 ### QueryBuilder
 

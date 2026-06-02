@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.8 (2026-05-26)
+## 33.2.10 (2026-06-02)
+
+### Ribbon
+
+#### Bug Fixes
+
+- `#I820214` - Now the issue with Ribbon split button popup opening unexpectedly when dynamically adding the 'e-active' class to highlight the split button has been resolved.
+
+## 33.2.5 (2026-05-05)
 
 ### Ribbon
 

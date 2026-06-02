@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 33.2.10 (2026-06-02)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I835992` - The issue with the console error occurs when selecting a not displayed column in the File Manager sort by menu has been resolved.
+
+## 33.2.6 (2026-05-12)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I824355` - Enhanced breadcrumb accessibility by correcting navigation semantics and ARIA roles.
+
 ## 33.2.4 (2026-04-28)
 
 ### FileManager

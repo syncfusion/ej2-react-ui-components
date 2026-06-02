@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 33.2.8 (2026-05-26)
+## 33.2.10 (2026-06-02)
 
 ### MultiSelect
 
@@ -11,6 +11,8 @@
 - `#I840154` - Fixed an issue where the MultiSelect displayed "N selected" instead of the selected item when initialized before layout completion.
 
 - `823331` - Resolved an issue where the MultiSelect component accepted whitespace as a custom value, leading to invalid numeric values.
+
+- `#I842162` - Fixed an issue where the MultiSelect GroupTemplate was not rendering when both allow filtering and ItemTemplate were enabled.
 
 ### ComboBox
 

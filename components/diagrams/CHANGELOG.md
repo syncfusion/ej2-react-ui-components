@@ -2,12 +2,14 @@
 
 ## [Unreleased]
 
-## 33.2.8 (2026-05-26)
+## 33.2.10 (2026-06-02)
 
 ### Diagram
 
 #### Bug Fixes
 
+- `#I835347` - Fixed Overview resize rectangle incorrectly updates when diagram zoom is outside minimum and maximum zoom bounds.
+- `#I841836` - Fixed the issue where annotation templates were moving unexpectedly while dragging.
 - `#I839614` - Fixed the trackpad zoom interaction is non linear issue.
 
 ## 33.2.7 (2026-05-19)

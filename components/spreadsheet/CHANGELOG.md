@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 33.2.8 (2026-05-26)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I837866` - Issue with "a script error occurring during auto-detection of number formats in the second spreadsheet after destroying the first spreadsheet" has been resolved.
-
 ## 33.2.4 (2026-04-28)
 
 ### Spreadsheet
@@ -1450,7 +1442,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 33.1.46 (2026-03-31)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 33.2.7 (2026-05-19)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I837866` - Issue with "a script error occurring during auto-detection of number formats in the second spreadsheet after destroying the first spreadsheet" has been resolved.
+
+## 33.1.46 (2026-03-31)
 
 ### Spreadsheet
 

@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 33.2.10 (2026-06-02)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I840440` - Fixed an issue where multiple Table of Contents (TOC) were allowed to be inserted in DocumentEditor.
+`#I839118` - Fixed an issue where group shape elements were not properly preserved in Document Editor.
+`#I839117` - Fixed an issue where empty comments were inserted during collaborative editing.
+`#I840926` - Fixed an issue where shape text layout was incorrect in the footer section.
+`#I842828` - Fixed an issue where a script error occurred when exporting DOCX after pasting text and image together.
+
 ## 33.2.8 (2026-05-26)
 
 ### DocumentEditor
