@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.12 (2026-06-09)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I826568` - Improved zoom performance when using the CTRL key with the mouse scroll wheel in Firefox.
+
 ## 33.2.10 (2026-06-02)
 
 ### Diagram

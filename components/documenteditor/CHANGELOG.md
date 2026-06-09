@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.12 (2026-06-09)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I844039` - Resolved a script error when deleting content after text search and selection.
+
 ## 33.2.10 (2026-06-02)
 
 ### DocumentEditor

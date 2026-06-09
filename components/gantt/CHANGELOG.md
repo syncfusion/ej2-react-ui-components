@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 33.2.12 (2026-06-09)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I839116` - Fixed an issue where dependency lines and milestone tasks were not visible during unscheduled task mode in the Gantt chart.
+- `#I832998` - Resolved a load time performance issue caused by extensive holiday rendering.
+- `#FB74245` - Fixed an issue in the react Gantt Chart where expand, collapse, and edit actions became unresponsive after CRUD operations on collapsed tasks when `enableMultiTaskbar` was enabled.
+
+#### Bug fix
+
+- `#FB74245` - Fixed an issue in the react Gantt Chart where expand, collapse, and edit actions became unresponsive after CRUD operations on collapsed tasks when `enableMultiTaskbar` was enabled.
+
 ## 33.2.6 (2026-05-12)
 
 ### GanttChart

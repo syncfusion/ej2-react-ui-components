@@ -2,13 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.10 (2026-06-02)
+## 33.2.12 (2026-06-09)
 
 ### DatePicker
 
 #### Bug Fixes
 
 - `#I838664` - Fixed an accessibility issue causing repeated screen reader announcements in the DatePicker.
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
 
 ### DateRangePicker
 
@@ -17,6 +19,20 @@
 - `#I830285` - Fixed a console error that occurred when presets was set to an empty array ([]) in the date range picker.
 
 - `#I832441` - Fixed an issue where the DateRangePicker start date did not update on the first selection when the popup was opened via the input field after using the range icon.
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
 
 ## 33.1.44 (2026-03-16)
 

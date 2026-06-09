@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 33.2.12 (2026-06-09)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I842396` - The data label is now rendered correctly above the trackball when hovering over a bubble point.
+
+### 3DCircularChart
+
+#### Bug Fixes
+
+- `#I843312` - The console error no longer occurs when moving the mouse over the 3D pie chart after resizing the panel.
+
 ## 33.2.10 (2026-06-02)
 
 ### Chart
@@ -9,6 +23,10 @@
 #### Bug Fixes
 
 - `#I1026972` - Axis label tooltip now correctly interprets `<br>` tags as line breaks, improving readability instead of displaying raw HTML text.
+- `#I1027864` - Stacked column series now toggles visibility correctly through legend interaction without causing incorrect series visibility.
+
+## 33.2.8 (2026-05-26)
+
 - `#I1026478` - The `legendClick` event in Accumulation Chart now triggers correctly when `legendSettings.toggleVisibility` is set to `false`, enabling custom legend interaction logic such as filtering and visibility updates.
 - `#FB73933` - Stacked labels now render correctly after legend toggling in grouped stacked series, without overlapping.
 - `#FB69182` - Column series now renders with the correct width when only a single data point is provided.

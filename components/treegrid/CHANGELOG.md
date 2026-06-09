@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.12 (2026-06-09)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I837003` - Fixed the white space issue that occurred when records were added at the bottom while virtualization was enabled.
+
 ## 33.2.10 (2026-06-02)
 
 ### Tree Grid

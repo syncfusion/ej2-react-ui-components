@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.12 (2026-06-09)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I841172` - Resolved the issue where the undo functionality was not working properly for comment status changes.
+
 ## 33.2.10 (2026-06-02)
 
 ### PDF Viewer

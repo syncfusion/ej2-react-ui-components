@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.12 (2026-06-09)
+
+### Grid
+
+#### Bugs
+
+- `I844550` - Resolved an issue where clipboard copy did not work when `virtualization` was enabled in the Grid.
+
 ## 33.2.10 (2026-06-02)
 
 ### Grid
