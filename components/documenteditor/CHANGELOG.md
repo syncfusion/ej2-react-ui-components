@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 33.2.13 (2026-06-16)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I842884` - Fixed an issue where the Find and Replace script threw an error when selecting placeholders.
+`#I843958` - Fixed an issue where comment actions were not restricted in read-only documents.
+`#I841552` - Fixed an issue where the Document Editor would hang when opening Microsoft Word documents.
+
 ## 33.2.12 (2026-06-09)
 
 ### DocumentEditor

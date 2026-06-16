@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.13 (2026-06-16)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I843505` - Resolved incorrect text truncation and ellipsis placement for Japanese characters in diagram nodes.
+
 ## 33.2.12 (2026-06-09)
 
 ### Diagram

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.13 (2026-06-16)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I844376` - Issue with "selected IME candidate not being preserved when committing formula bar edit by tapping another cell" has been resolved.
+
 ## 33.2.4 (2026-04-28)
 
 ### Spreadsheet
