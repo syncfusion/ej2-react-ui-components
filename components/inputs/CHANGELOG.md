@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.13 (2026-06-16)
+## 33.2.15 (2026-06-23)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `#I845309` - Fixed an issue where a console error occurred when destroying the ColorPicker within the change event.
+
+## 33.2.12 (2026-06-09)
 
 ### NumericTextBox
 

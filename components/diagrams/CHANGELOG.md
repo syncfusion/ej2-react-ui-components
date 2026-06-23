@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 33.2.15 (2026-06-23)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I844489` - Resolved visual breakage of UML Classifier nodes when line routing is enabled in the Diagram.
+- `#I846442` - Resolved an issue where line routing prevented connectors from being moved during multiple selection.
+- `#I846437` - Fixed connector break when moving grouped nodes with line routing and connector splitting enabled.
+- `#F198416` - Fixed cursor switching to a grabbing icon when moving from overview to diagram.
+
 ## 33.2.13 (2026-06-16)
 
 ### Diagram

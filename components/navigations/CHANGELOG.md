@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.15 (2026-06-23)
+
+### Menu
+
+#### Bug Fixes
+
+- `#I845934` - Fixed an issue where the "e-caret" icon in the Menu component was vertically misaligned in Fluent 2 Touch mode, appearing slightly below the center of its parent icon.
+
 ## 33.2.10 (2026-06-02)
 
 ### TreeView

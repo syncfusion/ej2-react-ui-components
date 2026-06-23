@@ -8,6 +8,14 @@
 
 #### Bug Fixes
 
+- `#I835102` - Now, the image preview will be shown properly for drag and dropped images in  RichTextEditor.
+
+## 33.2.12 (2026-06-09)
+
+### RichTextEditor
+
+#### Bug Fixes
+
 - `#I843394` - Now, tables with double borders copied from Word documents will be pasted with proper double border styling when those styles are configured in `allowedStyleProps` in Rich Text Editor.
 
 - `#I843394` - Now, tables with a width value of 0 in their style will be properly rendered when pasted in Rich Text Editor.

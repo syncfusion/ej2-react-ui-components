@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.15 (2026-06-23)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I842384` - Fixed text overlap when deleting or backspacing selected text across two paragraphs.
+
 ## 33.2.13 (2026-06-16)
 
 ### DocumentEditor

@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 33.2.13 (2026-06-16)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I844376` - Issue with "selected IME candidate not being preserved when committing formula bar edit by tapping another cell" has been resolved.
-
 ## 33.2.4 (2026-04-28)
 
 ### Spreadsheet
@@ -1450,7 +1442,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 33.2.7 (2026-05-19)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 33.2.13 (2026-06-16)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I844376` - Issue with "selected IME candidate not being preserved when committing formula bar edit by tapping another cell" has been resolved.
+
+## 33.2.7 (2026-05-19)
 
 ### Spreadsheet
 

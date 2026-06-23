@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-## 33.2.13 (2026-06-16)
+## 33.2.15 (2026-06-23)
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#I845531` - Resolved accessibility issues affecting the DropdownList, including incorrect behavior with Narrator.
+
+### ListBox
+
+#### Bug Fixes
+
+- `#I848672` - Issue with "CSP violation in ListBox component when using showSelectAll with localization functionality" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I844504` - Resolved the issue and enhanced accessibility announcements for keyboard interactions in the `MultiSelectDropdown` component.
+
+## 33.2.12 (2026-06-09)
 
 ### ComboBox
 

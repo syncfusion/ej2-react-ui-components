@@ -2,7 +2,28 @@
 
 ## [Unreleased]
 
+## 33.2.15 (2026-06-23)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I841310` - Resolved an issue where the Organize PDF dialog did not close after organizing large PDF documents.
+- `#I843473` - Fixed a script error that occurred when updating the `isAnnotationToolbarVisible` API before the document was loaded.
+- `#I847238` - Resolved an issue where a script error occurred when saving the PDF document after deleting a signature from the Signature Field.
+- `#I844885` - Fixed an issue where the hyperlink position was incorrect for rotated documents.
+
 ## 33.2.13 (2026-06-16)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I842822` - Resolved an issue where the distance annotation leader length was incorrect during printing and downloading.
+- `#I844468` - Fixed a script error that occurred when adding the redaction annotation when the `enableFormDesigner` is set to false.
+- `#I845713` - Resolved an issue where the stamp annotations were not rendered when the `enableMagnification` is set to false.
+
+## 33.2.12 (2026-06-09)
 
 ### PDF Viewer
 
