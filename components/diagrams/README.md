@@ -4,7 +4,7 @@ The [React Diagram](https://www.syncfusion.com/react-components/react-diagram?ut
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/react/documentation/diagram/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm">Getting started</a> . 
-    <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/default-functionality?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm">Online demos</a> . 
+    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/default-functionality">Online demos</a> . 
     <a href="https://www.syncfusion.com/react-components/react-diagram?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm">Learn more</a>
 </p>
 
@@ -122,34 +122,34 @@ Diagram component is also offered in the following list of frameworks.
 ## Use case demos
 
 * [React Diagram Builder demo](https://ej2.syncfusion.com/showcase/react/diagrambuilder/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
-* [React Organizational Chart demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/organization-model?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
-* [React Mind Map demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/mind-map?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
-* [React BPMN Editor demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/bpmn-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
-* [React Logic Circuit Diagram demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/logic-circuit?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
-* [React UML Activity Diagram demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/activity?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
-* [React Network Diagram demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/network-diagram?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
-* [React UML Class Diagram demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/activity-class?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
-* [React Venn Diagram demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/venn-diagram?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
-* [React Fishbone Diagram demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/diagram/fishbone-diagram?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)
+* [React Organizational Chart demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/organization-model)
+* [React Mind Map demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/mind-map)
+* [React BPMN Editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/bpmn-editor)
+* [React Logic Circuit Diagram demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/logic-circuit)
+* [React UML Activity Diagram demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/activity)
+* [React Network Diagram demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/network-diagram)
+* [React UML Class Diagram demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/activity-class)
+* [React Venn Diagram demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/venn-diagram)
+* [React Fishbone Diagram demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/fishbone-diagram)
 
 ## Key features
 
-* [Nodes](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/getting-started-node?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)  - Nodes are used to host graphical objects (path or controls) that can be arranged and manipulated on a diagram page. Many predefined standard shapes are included. Custom shapes can also be created and added easily.
-* [Connectors](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/connector?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - The relationship between two nodes is represented using a connector.
-* [Labels](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/getting-started-annotation?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - Labels are used to annotate nodes and connectors.
-* [Ports](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/port?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - Ports act as the connection points of the node and allows to create connections with only those specific points.
-* [Interactive features](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/drawing-tool?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - Interactive features are used to improve the run time editing experience of a diagram.
-* [Data binding](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/local-data?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - Generates diagram with nodes and connectors based on the information provided from an external data source.
-* [Commands](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/key-board-functions?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - Supports a set of predefined commands that helps edit the diagram using keyboard. It is also possible to configure new commands and key combinations.
-* [Automatic layout](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/hierarchical-model?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - Automatic layouts are used to arrange nodes automatically based on a predefined layout logic. There is built-in support for organizational chart layout, hierarchical tree layout, symmetric layout, radial tree layout, and mind map layout.
-* [Overview panel](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/overview?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) -  The overview panel is used to improve navigation experience when exploring large diagrams.
-* [SymbolPalettes](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/symbol-palette?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - The symbol palette is a gallery of reusable symbols and nodes that can be dragged and dropped on the surface of a diagram.
-* [Rulers](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/drawing-tool?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - The ruler provides horizontal and vertical guides for measuring diagram objects in diagram component.
-* [Serialization](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/serialization?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - When saved in JSON format a diagram’s state persists, and then it can be loaded back using serialization.
-* [Exporting and Printing](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/print-export?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - Diagrams can be exported as .png, .jpeg, .bmp, and .svg image files, and can also be printed as documents.
-* [Gridlines](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/default-functionalities?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - Gridlines are the pattern of lines drawn behind diagram elements. It provides a visual guidance while dragging or arranging the objects on a diagram surface.
-* [Page layout](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/print-export?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm)- The drawing surface can be configured to page-like appearance using page size, orientation, and margins.
-* [Context menu](https://ej2.syncfusion.com/react/demos/#/tailwind3/diagram/key-board-functions?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm) - Frequently used commands can easily be mapped to the context menu.
+* [Nodes](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/getting-started-node)  - Nodes are used to host graphical objects (path or controls) that can be arranged and manipulated on a diagram page. Many predefined standard shapes are included. Custom shapes can also be created and added easily.
+* [Connectors](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/connector) - The relationship between two nodes is represented using a connector.
+* [Labels](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/getting-started-annotation) - Labels are used to annotate nodes and connectors.
+* [Ports](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/port) - Ports act as the connection points of the node and allows to create connections with only those specific points.
+* [Interactive features](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/drawing-tool) - Interactive features are used to improve the run time editing experience of a diagram.
+* [Data binding](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/local-data) - Generates diagram with nodes and connectors based on the information provided from an external data source.
+* [Commands](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/key-board-functions) - Supports a set of predefined commands that helps edit the diagram using keyboard. It is also possible to configure new commands and key combinations.
+* [Automatic layout](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/hierarchical-model) - Automatic layouts are used to arrange nodes automatically based on a predefined layout logic. There is built-in support for organizational chart layout, hierarchical tree layout, symmetric layout, radial tree layout, and mind map layout.
+* [Overview panel](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/overview) -  The overview panel is used to improve navigation experience when exploring large diagrams.
+* [SymbolPalettes](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/symbol-palette) - The symbol palette is a gallery of reusable symbols and nodes that can be dragged and dropped on the surface of a diagram.
+* [Rulers](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/drawing-tool) - The ruler provides horizontal and vertical guides for measuring diagram objects in diagram component.
+* [Serialization](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/serialization) - When saved in JSON format a diagram’s state persists, and then it can be loaded back using serialization.
+* [Exporting and Printing](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/print-export) - Diagrams can be exported as .png, .jpeg, .bmp, and .svg image files, and can also be printed as documents.
+* [Gridlines](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/default-functionalities) - Gridlines are the pattern of lines drawn behind diagram elements. It provides a visual guidance while dragging or arranging the objects on a diagram surface.
+* [Page layout](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/print-export)- The drawing surface can be configured to page-like appearance using page size, orientation, and margins.
+* [Context menu](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-diagram-npm#/bootstrap5/diagram/key-board-functions) - Frequently used commands can easily be mapped to the context menu.
 
 ## Support
 

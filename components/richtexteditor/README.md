@@ -5,7 +5,7 @@ The [React Rich Text Editor](https://www.syncfusion.com/react-components/react-r
 <div align="center">
     <h4>
         <a href="https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm">📖Getting started</a> &#x2022; 
-        <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/tools?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm">🚀Online demos</a> &#x2022; 
+        <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/tools">🚀Online demos</a> &#x2022; 
         <a href="https://www.syncfusion.com/react-components/react-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm">🌐Learn more</a>
     </h4>
 </div>
@@ -139,20 +139,20 @@ Rich Text Editor control is also offered in following list of frameworks.
 
 ## 🏗️ Showcase samples
 
-* [React HTML editor demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/tools?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
-* [Blog posting using react rich text editor demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/blog-posting?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
-* [React Markdown editor demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/markdown-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
-* [React live HTML editor demo](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/online-html-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* [React HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/tools)
+* [Blog posting using react rich text editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/blog-posting)
+* [React Markdown editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/markdown-editor)
+* [React live HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/online-html-editor)
 
 ## ✨ Key features
 
-* [Edit mode](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/iframe?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - HTML content is possible to edit in a `div` element or an `iframe` in the rich text editor.
+* [Edit mode](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/iframe) - HTML content is possible to edit in a `div` element or an `iframe` in the rich text editor.
 
-* [@Mentions](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/mention-integration?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Easily mention users, tags, or items with an autocomplete suggestion list.
+* [@Mentions](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/mention-integration) - Easily mention users, tags, or items with an autocomplete suggestion list.
 
-* [Slash Menu Support](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/smart-suggestion?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Quickly insert content blocks using the `/` command.
+* [Slash Menu Support](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/smart-suggestion) - Quickly insert content blocks using the `/` command.
 
-* [Checklist Suport](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/tools?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Allows users to create checklists (to-do lists) directly within the editor. Users can easily add interactive checkbox items to their content.
+* [Checklist Suport](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/tools) - Allows users to create checklists (to-do lists) directly within the editor. Users can easily add interactive checkbox items to their content.
 
 * [Accessibility & WCAG 2.0 Compliance](https://ej2.syncfusion.com/react/documentation/rich-text-editor/accessibility?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 
@@ -160,15 +160,15 @@ Rich Text Editor control is also offered in following list of frameworks.
 
 * [HTML code editing](https://ej2.syncfusion.com/react/documentation/rich-text-editor/code-block?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - The rich text editor allows users to edit the HTML code directly in the HTML code view.
 
-* [Markdown editor](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/markdown-editor-preview?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - The rich text editor allows you to edit Markdown content using the Markdown syntax.
+* [Markdown editor](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/markdown-editor-preview) - The rich text editor allows you to edit Markdown content using the Markdown syntax.
 
-* [Markdown content preview](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/markdown-editor-preview?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Preview of the modified Markdown content in the editor, you can give users the ability to see what the formatted content will look like before they save it.
+* [Markdown content preview](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/markdown-editor-preview) - Preview of the modified Markdown content in the editor, you can give users the ability to see what the formatted content will look like before they save it.
 
 * [Tools](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/toolbar-types?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - The rich text editor handles a wide range of features, including inserting images, hyperlinks, tables, formatting tools, and more.
 
-* [Toolbar appearance](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/types?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - The rich text editor can provide a fully customizable toolbar that allows users to access the various formatting and editing options that are available.
+* [Toolbar appearance](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/types) - The rich text editor can provide a fully customizable toolbar that allows users to access the various formatting and editing options that are available.
 
-* [Export and Import](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/export-document?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Supports exporting content to PDF, and Word formats.
+* [Export and Import](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/export-document) - Supports exporting content to PDF, and Word formats.
 
 * [Copy and paste](https://ej2.syncfusion.com/react/documentation/rich-text-editor/paste-cleanup?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Copy and paste from Microsoft Word, Outlook, or other editors or sources while preserving formatting, styles, and structure.
 
