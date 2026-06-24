@@ -57,7 +57,7 @@ The [React Chart Component](https://www.syncfusion.com/react-components/react-ch
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/react/documentation/accumulation-chart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
-   <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/default-pie">Online demos</a> .
+   <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/chart/default-pie?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
 
@@ -74,9 +74,9 @@ The [React Chart Component](https://www.syncfusion.com/react-components/react-ch
    * [React Funnel Chart](https://www.syncfusion.com/react-components/react-charts/chart-types/funnel-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)
 * [Smart labels](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/smartlabels?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports arrangement of data labels smartly to avoid overlapping when the data point value falls in close range.
 * [Grouping](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/grouping?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports grouping of data points based on value and point count.
-* [Semi-pie](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=chart#/tailwind3/chart/semi-pie): Provides options to customize the start and end angle of the pie chart.
-* [Legend](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=chart#/tailwind3/chart/pie-legend): Provides options to display additional information about the points with the help of legend.
-* [Tooltip](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=chart#/tailwind3/chart/default-pie): Provides great user experiance by including a set of interactive features such as tooltip, drill-down, events, and selection.
+* [Semi-pie](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/semi-pie?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides options to customize the start and end angle of the pie chart.
+* [Legend](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/pie-legend?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides options to display additional information about the points with the help of legend.
+* [Tooltip](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/default-pie?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides great user experiance by including a set of interactive features such as tooltip, drill-down, events, and selection.
 
 ### React Stock Chart
  
@@ -84,7 +84,7 @@ The [React Chart Component](https://www.syncfusion.com/react-components/react-ch
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/react/documentation/stock-chart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
-   <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/stock-chart/default">Online demos</a> .
+   <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
 
@@ -95,14 +95,14 @@ The [React Chart Component](https://www.syncfusion.com/react-components/react-ch
 #### Key features
 
 * [Data binding](https://ej2.syncfusion.com/react/documentation/stock-chart/working-with-data?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Bind the stock chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
-* [Range selector](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=stockchart#/tailwind3/stock-chart/disabled-period): Supports range selector to filter a date range for data that needs to be visualized.
-* [Period selector](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=stockchart#/tailwind3/stock-chart/disabled-navigator): Supports period selector to select predefined periods just by a single click.
-* [Technical indicators](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=stockchart#/tailwind3/stock-chart/default): Incidators allows to analyze the past and predict the future market trends based on historic price, volume, or open interest.
-* [Trendlines](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=stockchart#/tailwind3/stock-chart/default): Predicts the future trends with predetermined data for any measurements.
-* [Stock events](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=stockchart#/tailwind3/stock-chart/stock-events): Supports stock events to show different kinds of market events on the chart.
-* [Export](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=stockchart#/tailwind3/stock-chart/multi-pane): Provides the options to Export the stock chart to  PDF, SVG and CSV formats.
-* [Appearance](https://ej2.syncfusion.com/react/documentation/stock-chart/appearance/): Colors for the stock chart are picked by the built-in theme, but each element of the stock chart can be customized by simple configuration options.
-* [Tooltip](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=stockchart#/tailwind3/stock-chart/multi-pane): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
+* [Range selector](https://ej2.syncfusion.com/react/demos/#/tailwind3/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports range selector to filter a date range for data that needs to be visualized.
+* [Period selector](https://ej2.syncfusion.com/react/demos/#/tailwind3/stock-chart/disabled-navigator?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports period selector to select predefined periods just by a single click.
+* [Technical indicators](https://ej2.syncfusion.com/react/demos/#/tailwind3/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Incidators allows to analyze the past and predict the future market trends based on historic price, volume, or open interest.
+* [Trendlines](https://ej2.syncfusion.com/react/demos/#/tailwind3/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Predicts the future trends with predetermined data for any measurements.
+* [Stock events](https://ej2.syncfusion.com/react/demos/#/tailwind3/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports stock events to show different kinds of market events on the chart.
+* [Export](https://ej2.syncfusion.com/react/demos/#/tailwind3/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides the options to Export the stock chart to  PDF, SVG and CSV formats.
+* [Appearance](https://ej2.syncfusion.com/react/documentation/stock-chart/appearance?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Colors for the stock chart are picked by the built-in theme, but each element of the stock chart can be customized by simple configuration options.
+* [Tooltip](https://ej2.syncfusion.com/react/demos/#/tailwind3/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
 
 ### React Range Navigator
 
@@ -110,7 +110,7 @@ The [React Chart Component](https://www.syncfusion.com/react-components/react-ch
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/react/documentation/range-navigator/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
-   <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/range-navigator/default">Online demos</a> .
+   <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/range-navigator/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-range-selector?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
 
@@ -120,11 +120,11 @@ The [React Chart Component](https://www.syncfusion.com/react-components/react-ch
 
 #### Key features
 
-* [Data sources](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=range-navigator#/tailwind3/range-navigator/stock-chart): Bind the range navigator component with an array of JSON objects or DataManager.
-* [Tooltip](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=chart#/tailwind3/range-navigator/default): Provides great user experiance by including a set of interactive features such as tooltip, events, and animation.
-* [Lightweight](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=chart#/tailwind3/range-navigator/light-weight): Supports light-weight range navigator to load in mobile device.
-* [Period-selector](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=chart#/tailwind3/range-navigator/period-selector): Provides options to select the data over the custom period.
-* [Axis types](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=chart#/tailwind3/range-navigator/date-time): Supports multiple axis and able to plot different data such as numbers, datetime, logarithmic and string.
+* [Data sources](https://ej2.syncfusion.com/angular/demos/#/tailwind3/range-navigator/stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Bind the range navigator component with an array of JSON objects or DataManager.
+* [Tooltip](https://ej2.syncfusion.com/react/demos/#/tailwind3/range-navigator/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides great user experiance by including a set of interactive features such as tooltip, events, and animation.
+* [Lightweight](https://ej2.syncfusion.com/react/demos/#/tailwind3/range-navigator/light-weight?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports light-weight range navigator to load in mobile device.
+* [Period-selector](https://ej2.syncfusion.com/react/demos/#/tailwind3/range-navigator/period-selector?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides options to select the data over the custom period.
+* [Axis types](https://ej2.syncfusion.com/react/demos/#/tailwind3/range-navigator/date-time?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports multiple axis and able to plot different data such as numbers, datetime, logarithmic and string.
 
 
 ### React Sparkline
@@ -133,7 +133,7 @@ The [React Chart Component](https://www.syncfusion.com/react-components/react-ch
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/react/documentation/sparkline/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
-   <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/sparkline/default">Online demos</a> .
+   <a href="https://ej2.syncfusion.com/react/demos/#/bootstrap5/sparkline/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-sparkline?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
 
@@ -143,11 +143,11 @@ The [React Chart Component](https://www.syncfusion.com/react-components/react-ch
 
 #### Key features
 
-* [Series types](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=sparkline#/tailwind3/sparkline/series-types): Supports five types of sparklines : line, area, column, win loss, and pie to show data trends.
-* [Axis types](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=sparkline#/tailwind3/sparkline/axis-types): Supports multiple axis and able to plot different data such as numbers, datetime, logarithmic and string.
-* [Data label](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=sparkline#/tailwind3/sparkline/customization):  Supports data label to annotate points with label to improve the readability of data.
-* [Range band](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=sparkline#/tailwind3/sparkline/range-band): Provides options to highlight specific range of values.
-* [Tooltip](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=sparkline#/tailwind3/sparkline/default): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
+* [Series types](https://ej2.syncfusion.com/react/demos/#/tailwind3/sparkline/series-types?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports five types of sparklines : line, area, column, win loss, and pie to show data trends.
+* [Axis types](https://ej2.syncfusion.com/react/demos/#/tailwind3/sparkline/axis-types?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports multiple axis and able to plot different data such as numbers, datetime, logarithmic and string.
+* [Data label](https://ej2.syncfusion.com/react/demos/#/tailwind3/sparkline/customization?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm):  Supports data label to annotate points with label to improve the readability of data.
+* [Range band](https://ej2.syncfusion.com/react/demos/#/tailwind3/sparkline/range-band?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides options to highlight specific range of values.
+* [Tooltip](https://ej2.syncfusion.com/react/demos/#/tailwind3/sparkline/default?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
 
 ### React Bullet Chart
 
@@ -165,10 +165,10 @@ The [React Bullet Chart Component](https://www.syncfusion.com/react-components/r
 
 #### Key features
 
-* [Multiple measures](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=bulletchart#/tailwind3/bullet-chart/multiple-data): Provides options to render multiple measure bars as well as multiple target bars to allow comparison of several measures at once.
-* [Legend](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=bulletchart#/tailwind3/bullet-chart/bullet-legend): Provides options to display additional information about the target and actual bar.
-* [RTL support](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=bulletchart#/tailwind3/bullet-chart/right-to-left): Provides a full-fledged right-to-left mode which aligns axis, tooltip, legend and data in the chart component from right to left.
-* [Tooltip](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_campaign=bulletchart#/tailwind3/bullet-chart/tooltip): Provides options to display additional information about target and actual on mouse hover.
+* [Multiple measures](https://ej2.syncfusion.com/react/demos/#/tailwind3/bullet-chart/multiple-data?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides options to render multiple measure bars as well as multiple target bars to allow comparison of several measures at once.
+* [Legend](https://ej2.syncfusion.com/react/demos/#/tailwind3/bullet-chart/bullet-legend?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides options to display additional information about the target and actual bar.
+* [RTL support](https://ej2.syncfusion.com/react/demos/#/tailwind3/bullet-chart/right-to-left?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides a full-fledged right-to-left mode which aligns axis, tooltip, legend and data in the chart component from right to left.
+* [Tooltip](https://ej2.syncfusion.com/react/demos/#/tailwind3/bullet-chart/tooltip?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Provides options to display additional information about target and actual on mouse hover.
 
 ### React Smith Chart
 

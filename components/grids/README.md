@@ -90,7 +90,7 @@ Grid component is also offered in the following list of frameworks.
 
 ## Showcase samples
 
-* Loan Calculator - [Source](https://github.com/syncfusion/ej2-showcase-react-loan-calculator), [Live Demo](https://ej2.syncfusion.com/showcase/react/loancalculator/#/default?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm)
+* Loan Calculator - [Source](https://github.com/syncfusion/ej2-showcase-react-loan-calculator?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm), [Live Demo](https://ej2.syncfusion.com/showcase/react/loancalculator/#/default?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm)
 
 ## Key features
 
