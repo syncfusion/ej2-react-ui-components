@@ -3,7 +3,7 @@
 The [React Gantt](https://www.syncfusion.com/react-components/react-gantt-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm) component is a project planning and management tool used to display and manage hierarchical tasks with timeline details. It helps assess how long a project should take, determine the resources needed, manage the dependencies between tasks, and plan the order in which the tasks should be completed.
 
 <p align="center">
-  <a href="https://ej2.syncfusion.com/react/documentation/gantt/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/react/documentation/gantt/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm">Getting Started</a> .
   <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm#/bootstrap5/gantt/default">Online demos</a> .
   <a href="https://www.syncfusion.com/react-components/react-gantt-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm">Learn more</a>
 </p>
@@ -130,8 +130,8 @@ Gantt component is also offered in the following list of frameworks.
 * [Row re-ordering](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm#/bootstrap5/gantt/drag-and-drop): Allows rows to be rearranged through drag and drop actions, changing their position and hierarchy level. A child row can be moved as a sibling within the same parent row or as a child to a different parent row.
 * [Selection](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm#/bootstrap5/gantt/selection): Rows or cells can be selected in the Gantt Chart. One or more rows or cells can also be selected by holding Shift, Ctrl or Command, or programmatically.
 * [Templates](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm)#/bootstrap5/gantt/column-template: Templates can be used to create custom user experiences in the gantt.
-* [RTL support](https://ej2.syncfusion.com/react/documentation/gantt/global-local#right-to-left-rtl?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm): Provides the right-to-left mode which aligns content in the Gantt Chart component from right to left. This improves user experience and accessibility for those who work with RTL languages like Hebrew and Arabic.
-* [Localization](https://ej2.syncfusion.com/react/documentation/gantt/global-local#localization?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm): Provides inherent support to localize the UI.
+* [RTL support](https://ej2.syncfusion.com/react/documentation/gantt/global-local?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm#right-to-left-rtl): Provides the right-to-left mode which aligns content in the Gantt Chart component from right to left. This improves user experience and accessibility for those who work with RTL languages like Hebrew and Arabic.
+* [Localization](https://ej2.syncfusion.com/react/documentation/gantt/global-local?utm_source=npm&utm_medium=listing&utm_campaign=react-gantt-npm#localization): Provides inherent support to localize the UI.
 
 ## Resources
 

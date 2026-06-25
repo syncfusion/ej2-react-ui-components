@@ -3,7 +3,7 @@
 The [React Schedule](https://www.syncfusion.com/react-components/react-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm) component is an event calendar that facilitates almost all the basic Outlook and Google Calendar features, allowing the user to plan and manage appointments and time efficiently. It receives event data from a variety of data sources, such as an array of JSON objects, OData web services, RESTful or WCF services, and [DataManager](https://ej2.syncfusion.com/react/documentation/data/data-binding?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm) with built-in load on demand support to reduce the data transfer and load time. Also, it is availed with the multiple resources support that allots an unique individual space for more than one resources on the same calendar.
 
 <p align="center">
-    <a href="https://ej2.syncfusion.com/react/documentation/schedule/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm">Getting started</a> . 
+    <a href="https://ej2.syncfusion.com/react/documentation/schedule/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm">Getting started</a> . 
     <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm#/bootstrap5/schedule/overview">Online demos</a> . 
     <a href="https://www.syncfusion.com/react-components/react-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm">Learn more</a>
 </p>
@@ -108,8 +108,8 @@ Schedule component is also available in the following list of frameworks.
 * [Export to Excel](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm#/bootstrap5/schedule/excel-export) - Provides the options to Export the events to Excel formats.
 * [Export and Import ICS](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm#/bootstrap5/schedule/calendar-export-import) - Provides the options to Export and Import the events as ICS formats.
 * [Keyboard interaction](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm#/bootstrap5/schedule/keyboard-interaction) - All the common actions such as traversing through the appointments, multiple cell selection, add/edit/delete the appointments, navigate to other views, dates and much more can be performed through keyboard inputs.
-* [Localization](https://ej2.syncfusion.com/react/documentation/schedule/localization.html#localization?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm) - All the static text and date content can be localized to any desired language. Also, it can be displayed with appropriate time mode and date-format as per the localized language.
-* [RTL](https://ej2.syncfusion.com/react/documentation/schedule/localization.html#rtl?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm) - Supports displaying the component to display in the direction from right to left.
+* [Localization](https://ej2.syncfusion.com/react/documentation/schedule/localization.html?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm#localization) - All the static text and date content can be localized to any desired language. Also, it can be displayed with appropriate time mode and date-format as per the localized language.
+* [RTL](https://ej2.syncfusion.com/react/documentation/schedule/localization.html?utm_source=npm&utm_medium=listing&utm_campaign=react-scheduler-npm#rtl) - Supports displaying the component to display in the direction from right to left.
 
 ## Resources
 

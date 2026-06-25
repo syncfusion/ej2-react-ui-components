@@ -174,7 +174,7 @@ Rich Text Editor control is also offered in following list of frameworks.
 
 * [Undo and redo](https://ej2.syncfusion.com/react/documentation/rich-text-editor/undo-redo?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Users can use undo and redo actions to reverse or repeat actions they took while editing the content.
 
-* [Module injection](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started#module-injection?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - It is possible to create a editor that utilizes a modular library to load the necessary functionality on demand. This can be useful for optimizing the performance of the editor.
+* [Module injection](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#module-injection) - It is possible to create a editor that utilizes a modular library to load the necessary functionality on demand. This can be useful for optimizing the performance of the editor.
 
 * [Third-party integration](https://ej2.syncfusion.com/react/documentation/rich-text-editor/third-party-integration?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - It is possible to integrate a third-party library into a rich text editor to add additional functionality or features to the editor like `Code-mirror`, `Embedly` and more.
 
