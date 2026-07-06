@@ -3,6 +3,7 @@ export * from './rows-directive';
 export * from './cells-directive';
 export * from './image-directive';
 export * from './chart-directive';
+export * from './richtext-directive';
 export * from './columns-directive';
 export * from './ranges-directive';
 export * from './conditionalformats-directive';

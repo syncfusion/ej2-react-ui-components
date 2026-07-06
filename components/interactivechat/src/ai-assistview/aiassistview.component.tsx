@@ -8,6 +8,8 @@ export interface AIAssistViewTypecast {
     promptItemTemplate?: string | Function | any;
     responseItemTemplate?: string | Function | any;
     promptSuggestionItemTemplate?: string | Function | any;
+    itemTemplate?: string | Function | any;
+    blockTemplate?: string | Function | any;
     bannerTemplate?: string | Function | any;
 }
 /**
@@ -22,7 +24,7 @@ export class AIAssistViewComponent extends AIAssistView {
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
+    private checkInjectedModules: boolean = true;
     public directivekeys: { [key: string]: Object } = {'views': 'view'};
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;

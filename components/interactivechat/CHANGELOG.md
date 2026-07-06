@@ -2,26 +2,6 @@
 
 ## [Unreleased]
 
-## 33.2.15 (2026-06-23)
-
-### Chat UI
-
-#### Bug Fixes
-
-- `#I823171` - Now the issue with unpin `ItemClick` event not firing for the pinned message has been resolved.
-
-#### Features
-
-- `#I824879` - Now we have introduced a new method `prependMessages` to better support loading earlier conversations and improving chat continuity.
-
-    - **prependMessages** – Prepends messages to the beginning of the Chat UI conversation area. This method inserts the specified messages either as `messages[]` or `MessageModel[]` as the first entries in the chat, making it ideal for loading historical messages when users scroll over the chat or reopen previous conversations.
-
-### AI AssistView
-
-#### Bug Fixes
-
-- Now the issue with interacting prompt suggestions containing HTML content not working in AI AssistView has been resolved.
-
 ## 29.1.33 (2025-03-25)
 
 ### Chat UI

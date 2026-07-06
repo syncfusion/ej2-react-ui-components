@@ -38,6 +38,7 @@ npm install @syncfusion/ej2-react-blockeditor
 
 ## ✨ Key features
 
+- [Collaborative editing](https://ej2.syncfusion.com/showcase/react/blockeditor-collaborative-editing/): Allows multiple users to work on the same Block Editor document simultaneously. Updates are synchronized across all active users, allowing teams to collaborate smoothly and maintain a consistent document state.
 * [Multiple block types](https://ej2.syncfusion.com/react/documentation/block-editor/built-in-blocks/built-in-blocks?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm#block-types): Includes Heading levels 1-4, Table, Paragraph, Table, Lists, Checklist, Quote, Callout, Divider, Code block, and more.
 * [Slash commands](https://ej2.syncfusion.com/react/documentation/block-editor/editor-menus?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm#slash-command-menu): Interactive `/` commands to insert or transform content blocks, with filtering and keyboard shortcuts.
 * [Drag and drop](https://ej2.syncfusion.com/react/documentation/block-editor/drag-drop?utm_source=npm&utm_medium=listing&utm_campaign=react-blockeditor-npm): Reorder blocks effortlessly with built-in drag-and-drop support.

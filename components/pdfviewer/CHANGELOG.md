@@ -2,6 +2,28 @@
 
 ## [Unreleased]
 
+## 34.1.29 (2026-07-06)
+
+### PDF Viewer
+
+#### New Features
+
+- `#I393057` - Annotation Comment Filter – Introduced annotation filter support in the EJ2 PDF Viewer, enabling users to efficiently manage and view annotations by applying filters based on specific criteria. The filter options can be accessed through the filter icon in the comments panel, allowing users to display only the annotations that match their requirements. Explore the documentation [here](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/javascript-es6/annotations/annotation-comment-filter)
+- `#I313209`, `#I315475` - Ink Eraser – Introduced ink eraser support in the EJ2 PDF Viewer, allowing users to selectively remove or correct portions of freehand ink annotations drawn on a PDF document. This feature enhances annotation flexibility by enabling precise editing of ink strokes for improved accuracy and usability. Explore the documentation [here](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/javascript-es6/annotations/ink-eraser)
+
+- `#I393057` - Annotation Comment Filter – Introduced annotation filter support in the EJ2 PDF Viewer, enabling users to efficiently manage and view annotations by applying filters based on specific criteria. The filter options can be accessed through the filter icon in the comments panel, allowing users to display only the annotations that match their requirements. Explore the documentation [here](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/annotation/annotation-comment-filter)
+- `#I313209`, `#I315475` - Ink Eraser – Introduced ink eraser support in the EJ2 PDF Viewer, allowing users to selectively remove or correct portions of freehand ink annotations drawn on a PDF document. This feature enhances annotation flexibility by enabling precise editing of ink strokes for improved accuracy and usability. Explore the documentation [here](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/annotation/ink-eraser)
+
+#### Bug Fixes
+
+- `#I847736` - Resolved the issue where accessibility issues occurred in the stamp and signature input fields.
+
+#### Breaking Changes
+
+- Starting with the 2026 Vol 2 main release (June 2026), no new features will be added to the Server-backed mode, as all the PDF Viewer functionalities are now available in the `Standalone` mode. If you are currently using the server-backed mode, please refer to the [migration documentation](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/javascript-es6/server-to-standalone) and migrate to the `Standalone` PDF Viewer.
+
+- Starting with the 2026 Vol 2 main release (June 2026), no new features will be added to the Server-backed mode, as all the PDF Viewer functionalities are now available in the `Standalone` mode. If you are currently using the server-backed mode, please refer to the [migration documentation](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/server-to-standalone) and migrate to the `Standalone` PDF Viewer.
+
 ## 33.2.15 (2026-06-23)
 
 ### PDF Viewer
@@ -127,6 +149,17 @@
 - `#I818873` - Fixed an issue where the comment status was not preserved properly while annotation mode was active.
 
 ## 33.1.44 (2026-03-16)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I810308` - Fixed an issue where grouped radio buttons did not update their selected state correctly during interaction.
+- `#I810736` - Resolved a script error that occurred when annotation comments were edited programmatically after the annotation was locked.
+- `#I813442` - Fixed an issue where the Angular Material Dialog was not properly disposed after closing when the PDF Viewer was used inside it.
+- `#I813892` - Resolved an issue where `exportAsImages` returned empty or invalid image data when exporting after loading a second password-protected document.
+
+## 32.2.8 (2026-03-03)
 
 ### PDF Viewer
 

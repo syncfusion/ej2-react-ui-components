@@ -2,12 +2,6 @@
 
 ## [Unreleased]
 
-## 33.2.3 (2026-04-21)
-
-### Splitter
-
-- `#I813436` - Resolved a Splitter memory leak by removing document and separator event listeners during destroy.
-
 ## 25.1.35 (2024-03-15)
 
 ### Timeline

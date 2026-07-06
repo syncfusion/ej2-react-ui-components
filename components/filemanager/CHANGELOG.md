@@ -2,49 +2,7 @@
 
 ## [Unreleased]
 
-## 33.2.15 (2026-06-23)
-
-### FileManager
-
-#### Bug Fixes
-
-- `#I835992` - The issue with the console error occurs when selecting a not displayed column in the File Manager sort by menu has been resolved.
-
-## 33.2.6 (2026-05-12)
-
-### FileManager
-
-#### Bug Fixes
-
-- `#I824355` - Enhanced breadcrumb accessibility by correcting navigation semantics and ARIA roles.
-
-## 33.2.4 (2026-04-28)
-
-### FileManager
-
-#### Bug Fixes
-
-- `#F198188` - An issue with range selection when using mouse dragging with mouse wheel scrolling in File Manager component has been resolved.
-
-- `#I825545` - An issue with detached event not released on destruction in File Manager component has been resolved.
-
-## 33.1.47 (2026-04-07)
-
-### FileManager
-
-#### Bug Fixes
-
-- `#I824355` - Resolved the issue where the last breadcrumb path item in the File Manager component was not accessible via keyboard navigation and lacked proper ARIA role announcements.
-
-## 33.1.45 (2026-03-24)
-
-### FileManager
-
-#### Bug Fixes
-
-- `#I812812`,`#I812811` - Fixed multiple accessibility issues in the File Manager component related to focus handling. Closing the context menu with the Esc key, closing dialogs after operations such as details or rename, opening folders, and deleting items now correctly restore focus to the appropriate file or folder, ensuring consistent and reliable navigation.
-
-## 33.1.44 (2026-03-16)
+## 34.1.29 (2026-07-06)
 
 ### FileManager
 

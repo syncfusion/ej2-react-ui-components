@@ -2,159 +2,32 @@
 
 ## [Unreleased]
 
-## 33.2.13 (2026-06-16)
+## 34.1.29 (2026-07-06)
 
 ### RichTextEditor
 
 #### Bug Fixes
+
+- `#I822860` - Now, the Rich Text Editor QuickToolbar dropdown will open properly in the limited height web view.
+
+- `#I843394` - Now, `border-collapse` and `border-spacing` are now included in `allowedStyleProps`, enabling correct preservation of double borders when pasting tables.
+
+- Audio and Video saved on the server will no longer be automatically deleted when using keyboard or quick toolbar actions in the editor. This change is necessary because if the audio and video are removed from the server, it would prevent the ability to perform undo/redo actions on them.
+    - **Solution** : To handle audio and video deletions properly, use the `afterMediaDelete` event to capture the `src` of the deleted audio and video. Then, send a request to your server to remove the audio and video from storage, ensuring it is only deleted when explicitly intended.
 
 - `#I835102` - Now, the image preview will be shown properly for drag and dropped images in  RichTextEditor.
 
-## 33.2.12 (2026-06-09)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I843394` - Now, tables with double borders copied from Word documents will be pasted with proper double border styling when those styles are configured in `allowedStyleProps` in Rich Text Editor.
-
-- `#I843394` - Now, tables with a width value of 0 in their style will be properly rendered when pasted in Rich Text Editor.
-
-- `#I844532` - Now, pasted tables in the Rich Text Editor will have no margin on the top and bottom.
-
-- `#I837714` - Now, the unexpected style injection will not happen and `maxLength` will not exceed when pasting with `deniedTags` configuration in RichTextEditor.
-
-- `#I842066` - Now, the unexpected extra line will not appear when reconstructing list after backspace in RichTextEditor.
-
-- `#I845102` - Now, the Rich Text Editor works properly when copy pasting an image placed next to bold formatted text without throwing a script exception.
-
-## 33.2.10 (2026-06-02)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I836247` - Now, the hyperlink text will not duplicate when pasted from Word into Angular RichTextEditor.
-
-- `#I842108` - Now, The UI inconsistency will no longer occur after repeated use of the AI Commands dropdown in the RichTextEditor.
-
-- `#I840448` - Now, Ordered list numbers will reflect the selected Font Name and Font Size styles in RichTextEditor.
-
 - `#I842908` - Now, the RTL Mode will not hide Left Border of table pasted from Excel in RichTextEditor.
 
-## 33.2.8 (2026-05-26)
+- `#F73821` - Now, the image along with text copied from Word, will be pasted into the Rich Text Editor.
 
-### RichTextEditor
+- `#I832430` - Now, the accessibility color contrast issue for the inline code has been resolved.
 
-#### Bug Fixes
+#### Features
 
-- `#I836843` - Now, the multiple white spaces in between text content will not be reverted to a single space in the RichTextEditor.
+- **Export Document Progress Indicator**: The Rich Text Editor now includes a loading spinner for Word and PDF export actions. The spinner is displayed on the export button during the export process and remains visible until the file download is completed, providing clear feedback on the export status. Explore the demo [here](https://ej2.syncfusion.com/demos/#/tailwind3/rich-text-editor/export-word.html).
 
-## 33.2.7 (2026-05-19)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I832062` - Now, the existing image will be removed when pasting new image after Ctrl + A selection.
-
-- `#I837714` - Now, New line creation in the Rich Text Editor is now restricted once the content reaches the `maxLength` API limit.
-
-- `#I835531` - Now, the `getCharCount()` public method will return proper value during change event in Code View Mode in RichTextEditor
-
-## 33.2.6 (2026-05-12)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I828855` - Now, the adjacent text stays on the same line, and clear formatting works properly when removing bold formatting in the Rich Text Editor.
-
-- `#I831768` - Now, the toolbar highlights will update properly after backspacing and typing inside the inline element in RichTextEditor.
-
-- `#I833472` - Now, the dashed border styling is applied to tables pasted from Word or Excel.
-
-- `#I829393` - Now, table pasted from excel renders correctly in Safari browser while pasting in the Rich Text Editor.
-
-- `#I831970` - Now, the image resizing icons shown properly on Safari in RichTextEditor.
-
-- `#I829371` - Now, table cells are selectable using keyboard shortcuts in the Rich Text Editor on Safari.
-
-## 33.2.5 (2026-05-05)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I825108` - Now, HTML content is restructured during paste to match the formatting and behavior of content loaded in the Rich Text Editor.
-
-- `#I818640` - Now, the AI response correctly replaces the manually selected content when inserted using the AI Assistant.
-
-## 33.2.4 (2026-04-28)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I827874` - Now, automatic list creation is prevented when typing in the middle or at the end of a line in the Rich Text Editor.
-
-- `#I828953` - Now, the https:// prepends to `www` links inserted through the link dialog when `enableAutoUrl` is enabled.
-
-- `#I828855` - Now, the alignment dropdown maintains the proper active state for centre aligned pasted content in the Rich Text Editor.
-
-## 33.1.49 (2026-04-14)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I823383` - Now, pasting a list copied from a Microsoft Word document that contains additional left indentation preserves the correct alignment.
-
-- `#I822861` - Now, the image quick toolbar opens as expected and does not conflict with the iOS Cut, Copy, and Paste pop-up in the Rich Text Editor.
-
-- `#I825108` - Now, the SVG element inside the Rich Text Editor will be removed properly on backspace.
-
-- `#I825149` - Now, the Rich Text Editor table quick toolbar displays the correct alignment based on the DOM output.
-
-## 33.1.47 (2026-04-07)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I825534` - Now, updating the value in the `beforePasteCleanup` event will properly update the content in the Rich Text Editor.
-
-- `#818640` - Now, the AI-generated response is correctly inserted into the Rich Text Editor even when the AI command is triggered without editor focus.
-
-- `#I822566` - Now, bold text copied from the shape format in Microsoft Excel will retain its formatting when pasted into the Rich Text Editor.
-
-- `#I822391` - Now, the `BulletFormatList`and `NumberFormatList` dropdown items correctly maintain their active state even when using custom list types.
-
-- `#I820760` - Now row/column insertion via quick-insert icons; table backspace removal now behaves consistently.
-
-- `#I823383` - Now, after pasting a nested list, pressing Enter and then Backspace does not break the nested list structure.
-
-## 33.1.46 (2026-03-31)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I817071` - Now, performance of the Rich Text Editor is improved while performing multiple undo action and switching from code view mode.
-
-- `#I819268` - Now, the dropdown in the Rich Text Editor have unique aria-labels for better accessibility.
-
-- `#I821408` - Now, the Ctrl+Shift+H shortcut now works correctly when switching from CodeMirror back to Preview mode in the Rich Text Editor.
-
-## 33.1.45 (2026-03-24)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I818640` - Now, the AI Assistant’s Insert action correctly handles full-content replacements and subsequent actions.
-
-- `#I819268` - Now, the Rich Text Editor opens the link quick toolbar when the `Alt+F10` keyboard shortcut is pressed.
+- **Paste audio and video files**: Users can copy and paste audio and video files from the local file browser, enabling bulk multimedia ingestion for faster content creation.
 
 ## 33.1.44 (2026-03-16)
 

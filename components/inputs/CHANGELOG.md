@@ -2,59 +2,7 @@
 
 ## [Unreleased]
 
-## 33.2.15 (2026-06-23)
-
-### ColorPicker
-
-#### Bug Fixes
-
-- `#I845309` - Fixed an issue where a console error occurred when destroying the ColorPicker within the change event.
-
-## 33.2.12 (2026-06-09)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
-
-## 33.2.10 (2026-06-02)
-
-### ColorPicker
-
-#### Bug Fixes
-
-- Fixed an issue where the toolbar sample was crashing during actions.
-
-## 33.2.5 (2026-05-05)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I834648` - Fixed a memory leak caused by event listeners not being removed when the Uploader component was destroyed.
-
-## 33.1.47 (2026-04-07)
-
-### MaskedTextBox
-
-#### Bug Fixes
-
-- `#I818290` - Fixed an issue where refresh() destroyed the MaskedTextBox instance.
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I822257` - Fixed an issue where the component assigned an incorrect default name attribute when neither id nor name was provided.
-
-## 33.1.44 (2026-03-16)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I817371` - Fixed an issue where file uploads failed when the filename contained spaces.
+## 34.1.29 (2026-07-06)
 
 ### ColorPicker
 

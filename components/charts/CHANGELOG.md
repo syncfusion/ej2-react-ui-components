@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 33.2.15 (2026-06-23)
+## 34.1.29 (2026-07-06)
 
 ### Chart
 
@@ -16,23 +16,31 @@
 
 - `#I843312` - The console error no longer occurs when moving the mouse over the 3D pie chart after resizing the panel.
 
-## 33.2.10 (2026-06-02)
+### Charts
 
-### Chart
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Charts to define a custom template that clearly indicates when chart data is unavailable.
+        Explore the demo [here](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/no-data-template)
 
 #### Bug Fixes
 
-- `#I1026972` - Axis label tooltip now correctly interprets `<br>` tags as line breaks, improving readability instead of displaying raw HTML text.
-- `#I1027864` - Stacked column series now toggles visibility correctly through legend interaction without causing incorrect series visibility.
+- `#T745980` - The legend text trim tooltip will no longer be cropped at the bottom of the legend bounds.
+- `#T754125` - The marker will no longer render when it exceeds the axis range.
 
-## 33.2.8 (2026-05-26)
+### Accumulation Chart
 
-- `#I1026478` - The `legendClick` event in Accumulation Chart now triggers correctly when `legendSettings.toggleVisibility` is set to `false`, enabling custom legend interaction logic such as filtering and visibility updates.
-- `#FB73933` - Stacked labels now render correctly after legend toggling in grouped stacked series, without overlapping.
-- `#FB69182` - Column series now renders with the correct width when only a single data point is provided.
-- `#I835295` - Zoom out now works correctly after performing maximum zoom-in through all interaction modes.
+#### Feature
 
-## 33.2.4 (2026-04-28)
+- Users can now use the `noDataTemplate` property in Accumulation Chart to define a custom template that clearly indicates when chart data is unavailable.
+
+### Stock Chart
+
+#### Feature
+
+- Users can now use the `noDataTemplate` property in Stock Chart to define a custom template that clearly indicates when chart data is unavailable.
+
+## 33.2.10 (2026-06-02)
 
 ### Chart
 
@@ -42,14 +50,6 @@
 - `#I827966` - Data label line breaks (`\n`) are now correctly applied when mapped from the data source
 
 ## 33.1.47 (2026-04-07)
-
-### Chart
-
-#### Bug Fixes
-
-- `#I824582` - The Y‑axis range is now calculated properly when rendering multiple charts.
-
-## 33.1.44 (2026-03-16)
 
 ### Chart
 
@@ -65,10 +65,6 @@
 
 - **Legend Template** - Added support for customizing legend items in the accumulation chart using templates. Define custom HTML or text templates for legend entries to fully control legend item rendering, enabling tailored and visually rich representations of the accumulation chart.
 
-#### Feature
-
-- Users can now use the `noDataTemplate` property in Accumulation Chart to define a custom template that clearly indicates when chart data is unavailable.
-
 ### Stock Chart
 
 #### Features
@@ -76,10 +72,6 @@
 - **Linear and Radial Gradient** - Added support for applying a gradient fill to chart series, trendlines, and technical indicators. Configure linear or radial gradients with customizable colors and gradient properties to deliver improved visual depth and a more polished appearance across all chart elements.
 
 - **Legend Template** - Added support for customizing legend items in the stock chart using templates. Define custom HTML or text templates for legend entries to fully control legend item rendering, enabling tailored and visually rich representations of the stock chart.
-
-#### Feature
-
-- Users can now use the `noDataTemplate` property in Stock Chart to define a custom template that clearly indicates when chart data is unavailable.
 
 ### Sankey
 
@@ -106,18 +98,6 @@ Explore the demo [here](https://ej2.syncfusion.com/demos/#/material3/sankey/defa
 - **Flexible Layouts** – Switch between horizontal and vertical orientations to best suit your data presentation needs.
 
 - **Export & Print** – Export charts as images (PNG, JPEG, SVG) or PDF, and print directly for reports and presentations.
-
-### Charts
-
-#### Feature
-
-- Users can now use the `noDataTemplate` property in Charts to define a custom template that clearly indicates when chart data is unavailable.
-        Explore the demo [here](https://ej2.syncfusion.com/react/demos/#/tailwind3/chart/no-data-template)
-
-#### Bug Fixes
-
-- `#T745980` - The legend text trim tooltip will no longer be cropped at the bottom of the legend bounds.
-- `#T754125` - The marker will no longer render when it exceeds the axis range.
 
 ## 31.2.6 (2025-12-02)
 

@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 33.2.7 (2026-05-19)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#I831556` - Fixed an issue where TAB Focus Escapes from Modal Dialog When Using Interactive Components.
-
 ## 21.1.35 (2023-03-23)
 
 ### Tooltip
@@ -657,11 +649,4 @@ Dialog is a window that displays information to the user, and used to get the us
 
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 
-- **Keyboard Interaction** - The Dialog can be intractable through keyboard.## 33.2.3 (2026-04-21)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#I829088` - Fixed an issue where the ESC key did not close the Dialog when preventFocus was set to true.
-
+- **Keyboard Interaction** - The Dialog can be intractable through keyboard.

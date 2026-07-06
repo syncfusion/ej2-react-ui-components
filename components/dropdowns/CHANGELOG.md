@@ -2,155 +2,13 @@
 
 ## [Unreleased]
 
-## 33.2.15 (2026-06-23)
-
-### DropdownList
-
-#### Bug Fixes
-
-- `#I845531` - Resolved accessibility issues affecting the DropdownList, including incorrect behavior with Narrator.
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I848672` - Issue with "CSP violation in ListBox component when using showSelectAll with localization functionality" has been resolved.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I844504` - Resolved the issue and enhanced accessibility announcements for keyboard interactions in the `MultiSelectDropdown` component.
-
-## 33.2.12 (2026-06-09)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
-
-### DropdownList
-
-#### Bug Fixes
-
-- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I843443` - Fixed an issue where long chip text caused the tooltip (title attribute) to render inline when interacting with a MultiSelect chip, leading to UI break and improper accessibility behavior.
-
-## 33.2.10 (2026-06-02)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I840154` - Fixed an issue where the MultiSelect displayed "N selected" instead of the selected item when initialized before layout completion.
-
-- `823331` - Resolved an issue where the MultiSelect component accepted whitespace as a custom value, leading to invalid numeric values.
-
-- `#I842162` - Fixed an issue where the MultiSelect GroupTemplate was not rendering when both allow filtering and ItemTemplate were enabled.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I838922` - Fixed an issue where Change event not fired when AutoFill is enabled and item is selected via mouse has been resolved.
+## 34.1.29 (2026-07-06)
 
 ### Mention
 
 #### Bug Fixes
 
-- `#I839712` - Fixed an issue where mention filtering failed to update correctly when characters were deleted.
-
-## 33.2.7 (2026-05-19)
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `F198294` - Fixed with "Tree selection loss by deferring value application until after data binding" has been resolved.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#F198311` - The issue where the MultiSelect displayed “undefined” when virtualization was enabled along with custom preselected values has been resolved.
-
-- `#I837086` - The issue with "MultiSelect default height inconsistency in BDS theme" has been resolved.
-
-## 33.2.6 (2026-05-12)
-
-### DropdownList
-
-#### Bug Fixes
-
-- `#I835445` - Fixed an issue where the Index property was not applied when virtualization was enabled.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I828952, #I828480, #I828633` - The issue with MultiSelect, where inconsistencies occurred when enable Virtualization was used along with other APIs, has been resolved.
-
-## 33.2.5 (2026-05-05)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I823016` - Fixed an accessibility issue where screen readers did not announce the keyboard key used to remove a focused chip.
-
-- `#I831920` -  Fixed an issue where the change event was not triggered after selecting a value and then scrolling the parent container with the mouse wheel.
-
-## 33.2.4 (2026-04-28)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I829508` - Fixed an issue where binding 6,000+ preselected values with virtualization enabled resulted in a “Maximum call stack size exceeded” error.
-
-### Mention
-
-#### Bug Fixes
-
-- `#I58529` - Resolved an issue where mention filtering did not trigger after existing text when `allowSpaces`: true and the data source was empty.
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I829239` - Resolved an issue where `Select All` was incorrectly hidden during filtering in `DropDownTree` based on filtered item count.
-
-- `#I813436` - Resolved a memory leak in the DropDownTree component by ensuring the window resize event listener is correctly detached during destroy, preventing retained instances in Angular Material Dialog scenarios.
-
-## 33.1.49 (2026-04-14)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I816920` - Resolved an issue where the MultiSelect “Select All” option selected only the first 30 items when using string arrays with virtualization enabled.
-
-- `#I823632` - Resolved an issue that caused duplicate API calls when the query property was used with the actionBegin event.
-
-## 33.1.46 (2026-03-31)
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I816579` - Resolved a console error that occurred when filtering in the DropDown Tree component with node IDs containing the hash `#` symbol.
+- `#I761793` - The issue of editing in Firefox after utilizing the home and end keys following Mention item insertion has been successfully resolved.
 
 ## 28.2.9 (2025-03-04)
 
@@ -2372,15 +2230,7 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 33.1.44 (2026-03-16)
-
-### Mention
-
-#### Bug Fixes
-
-- `#I761793` - The issue of editing in Firefox after utilizing the home and end keys following Mention item insertion has been successfully resolved.
-
-## 29.1.33 (2025-03-25)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 29.1.33 (2025-03-25)
 
 ### Mention
 

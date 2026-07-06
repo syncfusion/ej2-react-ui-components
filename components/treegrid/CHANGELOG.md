@@ -2,80 +2,19 @@
 
 ## [Unreleased]
 
-## 33.2.15 (2026-06-23)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I837003` - Fixed the white space issue that occurred when records were added at the bottom while virtualization was enabled.
-
-## 33.2.10 (2026-06-02)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I837003` - Fixed an issue where the selection was not maintained for newly added records when virtualization was enabled.
-
-## 33.2.8 (2026-05-26)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I840376` - Resolved a script error that occurred when double-clicking the expand icon while virtualization was enabled.
-- `#F74107` - Fixed an issue where editing was restricted for certain rows when the virtualization feature was enabled.
-- `#I837003` - Addressed an issue where records on the first page were not displayed after adding new records at the bottom of the TreeGrid with virtualization enabled.
-
-## 33.1.49 (2026-04-14)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I824627` - Fixed an issue where drag and drop did not work when all records were collapsed, and dropping items on summary rows caused a script error.
-
-## 33.1.47 (2026-04-07)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#F73428` - Fixed an issue where expand and collapse functionality did not work after clearing filters in the TreeGrid.
-
-## 33.1.46 (2026-03-31)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#F73428` - Fixed an expand and collapse issue in the TreeGrid URL adaptor when using a checkbox column.
-
-## 33.1.45 (2026-03-24)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#F72915` - Fixed an issue where the duplicate records are added in the dataSource when adding record with `newRowPosition` as `Below`.
-- `#F73087` - Fixed an issue where, in Tree Grid with hierarchy mode set to "None", filtering records after collapsing all rows caused the filtered records to disappear and display a "No records to display" message when scrolling.
-- `#I820291` - Resolved an issue where undefined records were added to the TreeGrid data source after row drag and drop when child aggregates were enabled.
-- `#I820331` - Resolved an exception that occurred when dragging and dropping the child summary row.
-
-## 33.1.44 (2026-03-16)
+## 34.1.29 (2026-07-06)
 
 ### Tree Grid
 
 #### Features
 
-- Introduced sticky header support in the Tree Grid, allowing column headers to stay fixed during scrolling. This improves navigation and readability in large hierarchical data views. Explore the demo [here](https://ej2.syncfusion.com/demos/#/tailwind3/tree-grid/sticky-header.html).
+- The virtual scrolling has been significantly enhanced for smoothness. This ensures fluid vertical and horizontal transitions, providing a much smoother and more responsive experience during fast scrolling when `virtualization` is enabled.
 
-- Enhanced support for `LoadChildOnDemand` in the Tree Grid with remote data binding and virtual scrolling. This improvement enables efficient, on-demand retrieval of child records, ensuring smoother performance when working with large hierarchical datasets.
+#### Breaking changes
 
-undefined- Introduced sticky header support in the Tree Grid, allowing column headers to stay fixed during scrolling. This improves navigation and readability in large hierarchical data views. Explore the demo [here](https://ej2.syncfusion.com/react/demos/#/tailwind3/treegrid/stickyheader).
+- Hover effects on selected rows are now consistent across all themes. The hover and selected colours are aligned, making hovered selected rows easier to recognize and improving visual feedback, usability, and consistency.
 
-- Enhanced support for `LoadChildOnDemand` in the Tree Grid with remote data binding and virtual scrolling. This improvement enables efficient, on-demand retrieval of child records, ensuring smoother performance when working with large hierarchical datasets.
+undefined- The virtual scrolling has been significantly enhanced for smoothness. This ensures fluid vertical and horizontal transitions, providing a much smoother and more responsive experience during fast scrolling when `virtualization` is enabled.
 
 ## 20.2.36 (2022-06-30)
 

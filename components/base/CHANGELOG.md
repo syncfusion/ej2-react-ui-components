@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 34.1.29 (2026-07-06)
+
+### Common
+
+#### New Features
+
+- Upgraded Sass to the latest version `1.100.0`.
+- Enhanced Syncfusion [theme packages](https://ej2.syncfusion.com/react/documentation/appearance/theme#theme-packages) to support both consolidated and component-level styles. Each component now provides dedicated style files with an `index.css/index.scss` that includes required dependencies, enabling simpler and more modular style management.
+
+#### Breaking Changes
+
+- SCSS files are no longer supported within component packages and [EJ2 package](https://www.npmjs.com/package/@syncfusion/ej2), and direct SCSS imports will not work. Use SCSS theming by importing styles from centralized [theme packages](https://ej2.syncfusion.com/react/documentation/appearance/theme#refer-themes-through-npm-packages).
+
 ## 32.1.19 (2025-12-16)
 
 ### Common

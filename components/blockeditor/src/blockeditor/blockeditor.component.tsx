@@ -16,7 +16,7 @@ export class BlockEditorComponent extends BlockEditor {
     public setState: any;
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
-    private checkInjectedModules: boolean = false;
+    private checkInjectedModules: boolean = true;
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = true;

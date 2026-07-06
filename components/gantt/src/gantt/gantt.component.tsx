@@ -7,6 +7,7 @@ export interface GanttTypecast {
     parentTaskbarTemplate?: string | Function | any;
     timelineTemplate?: string | Function | any;
     milestoneTemplate?: string | Function | any;
+    baselineTemplate?: string | Function | any;
     taskbarTemplate?: string | Function | any;
     editTemplate?: string | Function | any;
     labelSettings?: any;

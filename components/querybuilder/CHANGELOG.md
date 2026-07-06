@@ -2,31 +2,47 @@
 
 ## [Unreleased]
 
-## 33.2.15 (2026-06-23)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I839882` - The issue where the `OR` operator changed to `AND` while dragging and dropping groups and conditions has been resolved.
-
-## 33.2.7 (2026-05-19)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I839882` - The issue where the `OR` operator changed to `AND` while dragging and dropping conditions has been resolved.
-
-## 33.1.44 (2026-03-16)
+## 34.1.29 (2026-07-06)
 
 ### QueryBuilder
 
 - `#I80058` - Issue with "String type between values not update properly in query builder rules" has been fixed.
 
+## 28.1.33 (2024-12-12)
+
+### QueryBuilder
+
+- `#I655498` - Issue with "date type value is not update properly while using the `setMongoQuery` method of query builder" has been fixed.
+
+### QueryBuilder
+
+- `#I349006` - Issue with "Multi select component not render for complex data binding sample for In/notIn operators" has been fixed.
+- `#I639409` - Issue with "Custom operator not working properly in QueryBuilder While dynamically change locale property" has been fixed.
+
+### QueryBuilder
+
 #### Bug Fixes
 
-- `#I807680` - Fixed an issue where the validation tooltip remained visible for "is empty", "is not empty" and "is Null" operators even after the field returned to a valid state.## 28.1.33 (2024-12-12)
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I898205` - Issue with While setting rule value as an empty string the rule was not created in QueryBuilder has been fixed.
+- `#I604645` - When typing a comma in a numeric textbox in QueryBuilder, the comma gets removed has been fixed.
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I896995` - Issue with Operator is not set properly when using the `addRules` method has been fixed.
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I600597` - Issue with QueryBuilder validation message is not shown for date type column has been fixed.
+- `#I600637` - Issue with QueryBuilder numeric text box validation message not shown while using template has been fixed.
+- `#599199` - Issue with `setRulesFromSql` and `getSqlFromRules` methods is not working properly when using complex query with `NOT` operator in Query Builder has been fixed.
 
 ### QueryBuilder
 
@@ -41,9 +57,51 @@
 
 #### Bug Fixes
 
+- `#I887637` - Issue with Script error thrown in QueryBuilder when `clicking` the button group component in header template has been fixed.
+
+### QueryBuilder
+
+#### New Features
+
+- `Drag-and-drop support` - The Query Builder component now includes a drag-and-drop feature, allowing users to reposition rules or groups within the component effortlessly. This enhancement provides a more intuitive and flexible way to construct and modify queries.
+
+- `Separate connector support` - The separate connector feature in the Query Builder component enables users to integrate standalone connectors between rules or groups within the same group. This allows for greater flexibility, as users can connect rules or groups using different connectors, enhancing the complexity and precision of query construction.
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#F553588` - Issue with `setRulesFromSql` method is not working while using a field name like `"Name = '|_fn { keyword ' kFinishedProduct '}_|'"` has been fixed.
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I578463` - Issue with popups height is not updated properly in QueryBuilder sub field has been fixed.
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I873568` - Issue with `getSqlFromRules` method not working properly in boolean fields when calling validateFields within the `ruleChange` event has been fixed.
+- `#I873624` - Issue with `getSqlFromRules` method is not working while using a field name like `Http Response Header Name-Verify` has been fixed.
+
+### QueryBuilder
+
+#### Bug Fixes
+
 - `#I568017` - Issue with QueryBuilder 'In' or 'Not in' Operator results in value field as empty list when using fieldMode as default mode has been fixed.
 
 ## 25.1.35 (2024-03-15)
+
+### QueryBuilder
+
+#### New Features
+
+- Provided the support to get / set the Mongo Query from query builder.
+- Provided the support to get / set the Parameter SQL and Named Parameter SQL from query builder.
+- Provided the Clone support to query builder rules/ groups.
+- Provided the Lock support to query builder rules/ groups.
 
 ### QueryBuilder
 
@@ -68,6 +126,14 @@
 
 - `#I545248` - Issue with QueryBuilder validation message removed when navigating away from the QueryBuilder control has been fixed.
 - `#F186129` - Issue with tooltip rendering twice in the operator field while using validateFields method has been fixed.
+
+## 24.1.46 (2024-01-17)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I867810` - Issue with Script error thrown in the header template while adding and deleting the conditions has been fixed.
 
 ## 24.1.46 (2024-01-17)
 
@@ -781,19 +847,4 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.## 33.2.5 (2026-05-05)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I834458` - Fixed a console error that occurred when changing the filter field from Number to Date using the Between condition.
-
-## 33.2.4 (2026-04-28)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I807680` -  Fixed an issue where the validation tooltip disappeared when scrolling inside the QueryBuilder operator dropdown.
-
+- **Queries**: Queries supports JSON/SQL rules.

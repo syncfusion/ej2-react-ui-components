@@ -5,7 +5,7 @@ The [React Rich Text Editor](https://www.syncfusion.com/react-ui-components/reac
 <div align="center">
     <h4>
         <a href="https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-richtexteditor-npm">📖Getting started</a> &#x2022; 
-        <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-richtexteditor-npm#/bootstrap5/rich-text-editor/tools">🚀Online demos</a> &#x2022; 
+        <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-richtexteditor-npm#/tailwind3/rich-text-editor/tools">🚀Online demos</a> &#x2022; 
         <a href="https://www.syncfusion.com/react-components/react-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-richtexteditor-npm">🌐Learn more</a>
     </h4>
 </div>
@@ -54,15 +54,15 @@ npm run dev
 Add CSS references needed for Rich Text Editor in **src/App.css** from **../node_modules/@syncfusion** package folder.
 
 ```css
-@import '../../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-icons/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-lists/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-richtexteditor/styles/bootstrap5.css';
+@import '../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../../node_modules/@syncfusion/ej2-icons/styles/tailwind3.css';
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
+@import '../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
 ```
 
 ### 🔌 Inject Required Services
@@ -139,44 +139,52 @@ Rich Text Editor control is also offered in following list of frameworks.
 
 ## 🏗️ Showcase samples
 
-* [React HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/bootstrap5/rich-text-editor/tools)
-* [Blog posting using react rich text editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/bootstrap5/rich-text-editor/blog-posting)
-* [React Markdown editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/bootstrap5/rich-text-editor/markdown-editor)
-* [React live HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/bootstrap5/rich-text-editor/online-html-editor)
+* [React HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/tools)
+* [Blog posting using react rich text editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/blog-posting)
+* [React Markdown editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/markdown-editor)
+* [React live HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/online-html-editor)
 
 ## ✨ Key features
 
-* [Edit mode](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/bootstrap5/rich-text-editor/iframe) - HTML content is possible to edit in a `div` element or an `iframe` in the rich text editor.
+* [AI Assistant](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/ai-assistant) - The AI Assistant helps generate, rewrite, summarize, and refine editor content. It is designed to speed up content creation and improve editing productivity.
 
-* [@Mentions](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/mention-integration) - Easily mention users, tags, or items with an autocomplete suggestion list.
+* [Paste from MS Word](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/paste-cleanup) - Paste from MS Word brings content into the editor with formatting cleanup and structure preservation. It helps users reuse Word content without carrying over unwanted styles.
 
-* [Slash Menu Support](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/smart-suggestion) - Quickly insert content blocks using the `/` command.
+* [IFrame](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/iframe) - IFrame mode renders the editor content inside an isolated document context. It helps improve style encapsulation and reduces interference from external page styles.
 
-* [Checklist Suport](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/tools) - Allows users to create checklists (to-do lists) directly within the editor. Users can easily add interactive checkbox items to their content.
+* [@Mentions](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/mention-integration) - Mentions let users tag people, topics, or items with an autocomplete suggestion list. They make collaboration and inline referencing faster and more accurate.
 
-* [Accessibility & WCAG 2.0 Compliance](https://ej2.syncfusion.com/react/documentation/rich-text-editor/accessibility) - Ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
+* [Slash Menu](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/smart-suggestion) - Slash menu support lets users trigger editor commands by typing a forward slash. It provides a quick way to insert content blocks and formatting actions.
 
-* [Preventing Cross-Site Scripting (XSS)](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/prevent-cross-site-scripting/?utm_source=npm&utm_medium=listing&utm_campaign=javascript-richtexteditor-npm) - The Rich Text Editor allows users to edit the content with security by preventing cross-site scripting (XSS).
+* [Checklist](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/tools) - Checklist support enables users to create interactive task lists in the editor. It is useful for organizing work items and tracking progress within content.
 
-* [HTML code editing](https://ej2.syncfusion.com/react/documentation/rich-text-editor/miscellaneous/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/rich-text-editor/#code-view) - The rich text editor allows users to edit the HTML code directly in the HTML code view.
+* [Accessibility & WCAG 2.0 Compliance](https://ej2.syncfusion.com/react/documentation/rich-text-editor/accessibility) - Accessibility support helps the editor work with assistive technologies and keyboard navigation. It ensures the component can be used more effectively by a broader audience.
 
-* [Markdown editor](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/bootstrap5/rich-text-editor/markdown-editor-preview) - The rich text editor allows you to edit Markdown content using the Markdown syntax.
+* [Preventing Cross-Site Scripting (XSS)](https://ej2.syncfusion.com/react/documentation/rich-text-editor/validation-security/xhtml-validation#cross-site-scripting-xss-prevention) - XSS protection helps validate and sanitize editor content before it is used or rendered. It reduces security risks by blocking malicious scripts and unsafe markup.
 
-* [Markdown content preview](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/bootstrap5/rich-text-editor/markdown-editor-preview) - Preview of the modified Markdown content in the editor, you can give users the ability to see what the formatted content will look like before they save it.
+* [HTML code editing](https://ej2.syncfusion.com/react/documentation/rich-text-editor/editor-value#source-code-editing) - HTML code editing lets users view and edit the underlying markup directly. It is helpful when precise control over the document structure is required.
 
-* [Tools](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#toolbar-items) - The rich text editor handles a wide range of features, including inserting images, hyperlinks, tables, formatting tools, and more.
+* [Markdown editor](https://ej2.syncfusion.com/react/documentation/rich-text-editor/editor-types/editor-modes#markdown-editor) - Markdown editor mode lets users create and edit content using Markdown syntax. It is ideal for lightweight authoring and text-based workflows.
 
-* [Toolbar appearance](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/bootstrap5/rich-text-editor/types) - The rich text editor can provide a fully customizable toolbar that allows users to access the various formatting and editing options that are available.
+* [Custom Toolbar Items](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#toolbar-items) - Custom toolbar items allow additional actions to be added to the editor toolbar. They help tailor the editing experience to specific application needs.
 
-* [Export and Import](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/export-document) - Supports exporting content to PDF, and Word formats.
+* [Quick Toolbar](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/quick-toolbar) - Quick Toolbar shows contextual actions for selected content such as text, images, and tables. It helps users apply common operations without leaving the editing area.
 
-* [Copy and paste](https://ej2.syncfusion.com/react/documentation/rich-text-editor/paste-cleanup) - Copy and paste from Microsoft Word, Outlook, or other editors or sources while preserving formatting, styles, and structure.
+* [File Browser](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/file-browser) - File Browser integration allows users to browse and select files within editor workflows. It supports file-based content management in a more seamless way.
 
-* [Undo and redo](https://ej2.syncfusion.com/react/documentation/rich-text-editor/undo-redo) - Users can use undo and redo actions to reverse or repeat actions they took while editing the content.
+* [Emoji Picker](https://ej2.syncfusion.com/react/documentation/rich-text-editor/smart-editing/emoji-picker) - Emoji picker support lets users insert emojis into the editor content. It helps make messages and content more expressive and engaging.
 
-* [Module injection](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#module-injection) - It is possible to create a editor that utilizes a modular library to load the necessary functionality on demand. This can be useful for optimizing the performance of the editor.
+* [Insert Media](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/insert-media) - Insert Media allows audio and video content to be embedded in the editor. It is useful for creating richer and more interactive documents.
 
-* [Third-party integration](https://ej2.syncfusion.com/react/documentation/rich-text-editor/third-party-integration/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - It is possible to integrate a third-party library into a rich text editor to add additional functionality or features to the editor like `Code-mirror`, `Embedly` and more.
+* [Toolbar](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#toolbar-items) - Toolbar support provides editing controls and customization options for the editor. It supports floating behavior, multiple layout types, and toolbar positioning for flexible UI setups.
+
+* [Export and Import](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/export-document) - Export and Import support allows content to be moved between the editor and document formats such as PDF and Word. It simplifies content sharing, archiving, and document processing.
+
+* [Undo and redo](https://ej2.syncfusion.com/react/documentation/rich-text-editor/undo-redo) - Undo and redo support lets users reverse or repeat recent editing actions. It improves editing confidence by making changes easier to correct.
+
+* [Module injection](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#module-injection) - Module injection lets the editor load only the features that are needed. It helps reduce bundle size and keeps the component more efficient.
+
+* [Third-party integration](https://ej2.syncfusion.com/react/documentation/rich-text-editor/third-party-integration/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Third-party integration lets the editor work with external libraries and services. It extends the editor with additional capabilities beyond the built-in feature set.
 
 ## 📚 Resources
 

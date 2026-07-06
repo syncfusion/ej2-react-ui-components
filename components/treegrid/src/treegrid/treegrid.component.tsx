@@ -13,9 +13,9 @@ export interface TreeGridTypecast {
     columnChooserSettings?: any;
 }
 /**
- * `TreeTreeGridComponent` represents the react TreeTreeGrid.
+ * `TreeGridComponent` represents the react TreeGrid.
  * ```tsx
- * <TreeTreeGridComponent dataSource={data} allowPaging={true} allowSorting={true}/>
+ * <TreeGridComponent dataSource={data} allowPaging={true} allowSorting={true}/>
  * ```
  */
 export class TreeGridComponent extends TreeGrid {

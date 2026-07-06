@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 33.2.15 (2026-06-23)
-
-### Chip
-
-#### Bug Fixes
-
-- `#I844690` - Resolved an issue where the ChipList component click event did not provide the clickEventArgs.
-
-## 33.1.44 (2026-03-16)
+## 34.1.29 (2026-07-06)
 
 ### Chip
 
