@@ -1,12 +1,12 @@
 # React Rich Text Editor Component | React Markdown Editor
 
-The [React Rich Text Editor](https://www.syncfusion.com/react-ui-components/react-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) is a feature-rich WYSIWYG HTML editor and Markdown editor. The Rich Text Editor is widely used to create blogs, forum posts, notes sections, comment sections, messaging applications, and more. The control provides an efficient user interface for a better editing experience with mobile support. It has a variety of tools to edit and format rich content, and it return a valid HTML markup or Markdown (MD) content. It allows users to insert images, links, tables, media files and lists with modular architectures.
+The [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) is a feature-rich WYSIWYG HTML editor and Markdown editor. The Rich Text Editor is widely used to create blogs, forum posts, notes sections, comment sections, messaging applications, and more. The control provides an efficient user interface for a better editing experience with mobile support. It has a variety of tools to edit and format rich content, and it return a valid HTML markup or Markdown (MD) content. It allows users to insert images, links, tables, media files and lists with modular architectures.
 
 <div align="center">
     <h4>
-        <a href="https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-richtexteditor-npm">📖Getting started</a> &#x2022; 
-        <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-richtexteditor-npm#/tailwind3/rich-text-editor/tools">🚀Online demos</a> &#x2022; 
-        <a href="https://www.syncfusion.com/react-components/react-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-richtexteditor-npm">🌐Learn more</a>
+        <a href="https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm">📖Getting started</a> &#x2022; 
+        <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/tools">🚀Online demos</a> &#x2022; 
+        <a href="https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm">🌐Learn more</a>
     </h4>
 </div>
 
@@ -96,7 +96,7 @@ export default App;
 ```
 <blockquote>
     <p>ℹ️ <b>Note:</b></p>
-    <span>For detailed information on module injection and available services, refer to the Syncfusion Rich Text Editor Module <a href="https://ej2.syncfusion.com/react/documentation/rich-text-editor/module">Documentation</a>.</span>
+    <span>For detailed information on module injection and available services, refer to the Syncfusion Rich Text Editor Module <a href="https://ej2.syncfusion.com/react/documentation/rich-text-editor/module?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm">Documentation</a>.</span>
 </blockquote>
 
 ### 🧩 Add the Rich Text Editor Component
@@ -134,75 +134,67 @@ export default App;
 
 Rich Text Editor control is also offered in following list of frameworks.
 
-| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular-new.svg"  height="50" />](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/angular-components/?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular-new.svg"  height="50" />](https://www.syncfusion.com/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-components?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-components?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)&nbsp;&nbsp; | 
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 
 ## 🏗️ Showcase samples
 
-* [React HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/tools)
-* [Blog posting using react rich text editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/blog-posting)
-* [React Markdown editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/markdown-editor)
-* [React live HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/online-html-editor)
+* [React HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/tools)
+* [Blog posting using react rich text editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/blog-posting)
+* [React Markdown editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/markdown-editor)
+* [React live HTML editor demo](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/online-html-editor)
 
 ## ✨ Key features
 
-* [AI Assistant](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/ai-assistant) - The AI Assistant helps generate, rewrite, summarize, and refine editor content. It is designed to speed up content creation and improve editing productivity.
+* [Edit mode](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/iframe) - HTML content is possible to edit in a `div` element or an `iframe` in the rich text editor.
 
-* [Paste from MS Word](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/paste-cleanup) - Paste from MS Word brings content into the editor with formatting cleanup and structure preservation. It helps users reuse Word content without carrying over unwanted styles.
+* [@Mentions](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/mention-integration) - Easily mention users, tags, or items with an autocomplete suggestion list.
 
-* [IFrame](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#/tailwind3/rich-text-editor/iframe) - IFrame mode renders the editor content inside an isolated document context. It helps improve style encapsulation and reduces interference from external page styles.
+* [Slash Menu Support](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/smart-suggestion) - Quickly insert content blocks using the `/` command.
 
-* [@Mentions](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/mention-integration) - Mentions let users tag people, topics, or items with an autocomplete suggestion list. They make collaboration and inline referencing faster and more accurate.
+* [Checklist Suport](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/tools) - Allows users to create checklists (to-do lists) directly within the editor. Users can easily add interactive checkbox items to their content.
 
-* [Slash Menu](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/smart-suggestion) - Slash menu support lets users trigger editor commands by typing a forward slash. It provides a quick way to insert content blocks and formatting actions.
+* [Accessibility & WCAG 2.0 Compliance](https://ej2.syncfusion.com/react/documentation/rich-text-editor/accessibility?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 
-* [Checklist](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/tools) - Checklist support enables users to create interactive task lists in the editor. It is useful for organizing work items and tracking progress within content.
+* [Preventing Cross-Site Scripting (XSS)](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/prevent-cross-site-scripting?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - The Rich Text Editor allows users to edit the content with security by preventing cross-site scripting (XSS).
 
-* [Accessibility & WCAG 2.0 Compliance](https://ej2.syncfusion.com/react/documentation/rich-text-editor/accessibility) - Accessibility support helps the editor work with assistive technologies and keyboard navigation. It ensures the component can be used more effectively by a broader audience.
+* [HTML code editing](https://ej2.syncfusion.com/react/documentation/rich-text-editor/code-block?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - The rich text editor allows users to edit the HTML code directly in the HTML code view.
 
-* [Preventing Cross-Site Scripting (XSS)](https://ej2.syncfusion.com/react/documentation/rich-text-editor/validation-security/xhtml-validation#cross-site-scripting-xss-prevention) - XSS protection helps validate and sanitize editor content before it is used or rendered. It reduces security risks by blocking malicious scripts and unsafe markup.
+* [Markdown editor](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/markdown-editor-preview) - The rich text editor allows you to edit Markdown content using the Markdown syntax.
 
-* [HTML code editing](https://ej2.syncfusion.com/react/documentation/rich-text-editor/editor-value#source-code-editing) - HTML code editing lets users view and edit the underlying markup directly. It is helpful when precise control over the document structure is required.
+* [Markdown content preview](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/markdown-editor-preview) - Preview of the modified Markdown content in the editor, you can give users the ability to see what the formatted content will look like before they save it.
 
-* [Markdown editor](https://ej2.syncfusion.com/react/documentation/rich-text-editor/editor-types/editor-modes#markdown-editor) - Markdown editor mode lets users create and edit content using Markdown syntax. It is ideal for lightweight authoring and text-based workflows.
+* [Tools](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/toolbar-types?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - The rich text editor handles a wide range of features, including inserting images, hyperlinks, tables, formatting tools, and more.
 
-* [Custom Toolbar Items](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#toolbar-items) - Custom toolbar items allow additional actions to be added to the editor toolbar. They help tailor the editing experience to specific application needs.
+* [Toolbar appearance](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/types) - The rich text editor can provide a fully customizable toolbar that allows users to access the various formatting and editing options that are available.
 
-* [Quick Toolbar](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/quick-toolbar) - Quick Toolbar shows contextual actions for selected content such as text, images, and tables. It helps users apply common operations without leaving the editing area.
+* [Export and Import](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#/bootstrap5/rich-text-editor/export-document) - Supports exporting content to PDF, and Word formats.
 
-* [File Browser](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/file-browser) - File Browser integration allows users to browse and select files within editor workflows. It supports file-based content management in a more seamless way.
+* [Copy and paste](https://ej2.syncfusion.com/react/documentation/rich-text-editor/paste-cleanup?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Copy and paste from Microsoft Word, Outlook, or other editors or sources while preserving formatting, styles, and structure.
 
-* [Emoji Picker](https://ej2.syncfusion.com/react/documentation/rich-text-editor/smart-editing/emoji-picker) - Emoji picker support lets users insert emojis into the editor content. It helps make messages and content more expressive and engaging.
+* [Undo and redo](https://ej2.syncfusion.com/react/documentation/rich-text-editor/undo-redo?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Users can use undo and redo actions to reverse or repeat actions they took while editing the content.
 
-* [Insert Media](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/insert-media) - Insert Media allows audio and video content to be embedded in the editor. It is useful for creating richer and more interactive documents.
+* [Module injection](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#module-injection) - It is possible to create a editor that utilizes a modular library to load the necessary functionality on demand. This can be useful for optimizing the performance of the editor.
 
-* [Toolbar](https://ej2.syncfusion.com/react/documentation/rich-text-editor/toolbar/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm#toolbar-items) - Toolbar support provides editing controls and customization options for the editor. It supports floating behavior, multiple layout types, and toolbar positioning for flexible UI setups.
-
-* [Export and Import](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/export-document) - Export and Import support allows content to be moved between the editor and document formats such as PDF and Word. It simplifies content sharing, archiving, and document processing.
-
-* [Undo and redo](https://ej2.syncfusion.com/react/documentation/rich-text-editor/undo-redo) - Undo and redo support lets users reverse or repeat recent editing actions. It improves editing confidence by making changes easier to correct.
-
-* [Module injection](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm/#module-injection) - Module injection lets the editor load only the features that are needed. It helps reduce bundle size and keeps the component more efficient.
-
-* [Third-party integration](https://ej2.syncfusion.com/react/documentation/rich-text-editor/third-party-integration/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Third-party integration lets the editor work with external libraries and services. It extends the editor with additional capabilities beyond the built-in feature set.
+* [Third-party integration](https://ej2.syncfusion.com/react/documentation/rich-text-editor/third-party-integration?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - It is possible to integrate a third-party library into a rich text editor to add additional functionality or features to the editor like `Code-mirror`, `Embedly` and more.
 
 ## 📚 Resources
 
-* [Documentation](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started)
-* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistants/overview)
-* [Theme Studio](https://ej2.syncfusion.com/themestudio/)
-* [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_medium=listing&utm_source=github)
-* [Road Map](https://www.syncfusion.com/products/roadmap/react)
-* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=react&type=all)
+* [Documentation](https://ej2.syncfusion.com/react/documentation/rich-text-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/mcp-server/ai-coding-assistant/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* [Theme Studio](https://ej2.syncfusion.com/themestudio/?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* [Road Map](https://www.syncfusion.com/products/roadmap/react?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=react&type=all?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
 
 ## 🤝 Support
 
 Product support is available through the following mediums.
 
-* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
-* [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-richtexteditor-npm)
-* [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues/new)
-* [Request feature or report bug](https://www.syncfusion.com/feedback/react?utm_source=npm&utm_medium=listing&utm_campaign=react-richtexteditor-npm)
+* [Support ticket](https://support.syncfusion.com/support/tickets/create?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
+* [Community forum](https://www.syncfusion.com/forums/react-js2?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
+* [Request feature or report bug](https://www.syncfusion.com/feedback/react?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm)
 * Live chat
 
 ## 🔄 Change log
@@ -211,10 +203,10 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 ## ⚖️ License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/license/studio/33.2.3/syncfusion_essential_studio_eula.pdf?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm). To acquire a license for 140+ [React UI components](https://www.syncfusion.com/react-components?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm), you can [purchase](https://www.syncfusion.com/sales/pricing?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) or [start a free 30-day trial](https://www.syncfusion.com/downloads/rich-text-editor-sdk?tag=es-seo-rich-text-editor-sdk-download-trial).
 
 > A free community [license](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
-See [LICENSE FILE](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) for more info.
+See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-rich-text-editor-npm) for more info.
 
 &copy; Copyright 2025 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential<sup>®</sup> Studio license and copyright applies to this distribution.
