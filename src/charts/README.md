@@ -1,14 +1,14 @@
 # React Charts Components
 
-The [React Chart](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) component is a well-crafted charting component for visualizing data with 55+ charts and graphs, ranging from line to financial types. It can bind data from  datasource such as array of JSON objects, `OData web services` or [DataManager](https://ej2.syncfusion.com/react/documentation/data/data-binding?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm). All chart elements are rendered using Scalable Vector Graphics (SVG).
+The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) component is a well-crafted charting component for visualizing data with 55+ charts and graphs, ranging from line to financial types. It can bind data from  datasource such as array of JSON objects, `OData web services` or [DataManager](https://ej2.syncfusion.com/react/documentation/data/data-binding?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm). All chart elements are rendered using Scalable Vector Graphics (SVG).
 
 ## What's Included in the React Charts Package
 
-The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) package includes the following list of components.
+The React Charts package includes the following list of components.
 
 ### React Chart 
 
-The [React Chart Component](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) is a feature-rich chart component with built-in support for over 50 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball.
+The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) is a feature-rich chart component with built-in support for over 55 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball.
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/react/documentation/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
@@ -196,7 +196,7 @@ The [React Smith Chart Component](https://www.syncfusion.com/react-components/re
 
 ### Create a React Application
 
-You can use [`create-react-app`](https://github.com/facebookincubator/create-react-app) to setup applications. To create React app use the following command.
+You can use [`create-react-app`](https://github.com/react/create-react-app) to setup applications. To create React app use the following command.
 
 ```bash
 npx create-react-app my-app --template typescript
@@ -279,7 +279,7 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/license/studio/33.2.3/syncfusion_essential_studio_eula.pdf?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm). To acquire a license for 150+ [React UI components](https://www.syncfusion.com/react-components?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm), you can [purchase](https://www.syncfusion.com/sales/pricing?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/license/studio/33.2.3/syncfusion_essential_studio_eula.pdf?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm). To acquire a license for 150+ [React UI components](https://www.syncfusion.com/react-components?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm), you can [purchase](https://www.syncfusion.com/sales/pricing?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) or [start a free 30-day trial](https://www.syncfusion.com/downloads/react?tag=es-seo-react-download-trial).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
