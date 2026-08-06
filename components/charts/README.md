@@ -1,6 +1,6 @@
 # React Charts Components
 
-The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) component is a well-crafted charting component for visualizing data with 55+ charts and graphs, ranging from line to financial types. It can bind data from  datasource such as array of JSON objects, `OData web services` or [DataManager](https://ej2.syncfusion.com/react/documentation/data/data-binding?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm). All chart elements are rendered using Scalable Vector Graphics (SVG).
+The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) component is a well-crafted charting component for visualizing data with 55+ charts and graphs, ranging from line to financial types. It can bind data from  datasource such as array of JSON objects, `OData web services` or [DataManager](https://help.syncfusion.com/chart-sdk/react/data/data-binding?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm). All chart elements are rendered using Scalable Vector Graphics (SVG).
 
 ## What's Included in the React Charts Package
 
@@ -11,7 +11,7 @@ The React Charts package includes the following list of components.
 The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) is a feature-rich chart component with built-in support for over 55 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/react/documentation/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
+   <a href="https://help.syncfusion.com/chart-sdk/react/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/overview">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
@@ -39,7 +39,7 @@ The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_
     * [React Financial Chart](https://www.syncfusion.com/react-components/react-charts/chart-types/stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)
 * [Data binding](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/local-data): Bind the Chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
 * [Axis types](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/numeric-axis): Supports multiple axes, and able to plot different data such as numbers, datetime, logarithmic and string.
-* [Rendering modes](https://ej2.syncfusion.com/react/documentation/chart/render-methods?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports two type of rendering - SVG and Canvas. By default chart rendered in SVG, You can easily switch between the two simple configuration.
+* [Rendering modes](https://help.syncfusion.com/chart-sdk/react/chart/render-methods?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Supports two type of rendering - SVG and Canvas. By default chart rendered in SVG, You can easily switch between the two simple configuration.
 * [Data label](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/datalabel-template): Supports data label to annotate points with label to improve the readability of data.
 * [Annotation](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/annotation): Provides support to mark any specific area of interest by adding custom element.
 * [Zooming and panning](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/zoom): Provides options to visualize the data points under any region using rectangular selection, pinch, or mouse wheel zooming.
@@ -47,16 +47,16 @@ The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_
 * [Selection](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/selection): Allows you to select any data point or subset of points using selection feature.
 * [Export](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/export): Provides the options to Export the chart to  PDF, SVG and CSV formats.
 * [RTL support](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/rtl): Provides a full-fledged right-to-left mode which aligns axis, tooltip, legend and data in the chart component from right to left.
-* [Appearance](https://ej2.syncfusion.com/react/documentation/chart/chart-appearance?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Colors for the charts are picked by the built-in theme, but each element of the chart can be customized by simple configuration options.
-* [Accessibility](https://ej2.syncfusion.com/react/documentation/chart/accessibility?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#wai-aria): Designed to be accessible to users with disabilities, with features such as WAI-ARIA standard compliance and keyboard navigation to ensure that the chart can be effectively used with assistive technologies such as screen readers.
-* [Localization](https://ej2.syncfusion.com/react/documentation/chart/localization?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#localization): The Localization library enables you to adapt the default text content of the chart to fit the language and cultural preferences of your target audience.
+* [Appearance](https://help.syncfusion.com/chart-sdk/react/chart/chart-appearance?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Colors for the charts are picked by the built-in theme, but each element of the chart can be customized by simple configuration options.
+* [Accessibility](https://help.syncfusion.com/chart-sdk/react/chart/accessibility?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#wai-aria): Designed to be accessible to users with disabilities, with features such as WAI-ARIA standard compliance and keyboard navigation to ensure that the chart can be effectively used with assistive technologies such as screen readers.
+* [Localization](https://help.syncfusion.com/chart-sdk/react/chart/localization?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#localization): The Localization library enables you to adapt the default text content of the chart to fit the language and cultural preferences of your target audience.
 
 ### React Accumulation Chart
 
  Built-in support for pie, doughnut, pyramid and funnel series type, to show the proportions and percentages between the categories.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/react/documentation/accumulation-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
+   <a href="https://help.syncfusion.com/chart-sdk/react/accumulation-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/chart/default-pie">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-charts?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
@@ -83,7 +83,7 @@ The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_
  The [React Stock Chart Component](https://www.syncfusion.com/react-components/react-stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) is a well-crafted, easy-to-use financial charting package to track and visualize stock price of any company over a specific period using charting and range tools.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/react/documentation/stock-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
+   <a href="https://help.syncfusion.com/chart-sdk/react/stock-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/stock-chart/default">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
@@ -94,14 +94,14 @@ The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_
 
 #### Key features
 
-* [Data binding](https://ej2.syncfusion.com/react/documentation/stock-chart/working-with-data?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Bind the stock chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
+* [Data binding](https://help.syncfusion.com/chart-sdk/react/stock-chart/working-with-data?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Bind the stock chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
 * [Range selector](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/stock-chart/default): Supports range selector to filter a date range for data that needs to be visualized.
 * [Period selector](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/stock-chart/disabled-navigator): Supports period selector to select predefined periods just by a single click.
 * [Technical indicators](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/stock-chart/default): Incidators allows to analyze the past and predict the future market trends based on historic price, volume, or open interest.
 * [Trendlines](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/stock-chart/default): Predicts the future trends with predetermined data for any measurements.
 * [Stock events](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/stock-chart/default): Supports stock events to show different kinds of market events on the chart.
 * [Export](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/stock-chart/default): Provides the options to Export the stock chart to  PDF, SVG and CSV formats.
-* [Appearance](https://ej2.syncfusion.com/react/documentation/stock-chart/appearance?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Colors for the stock chart are picked by the built-in theme, but each element of the stock chart can be customized by simple configuration options.
+* [Appearance](https://help.syncfusion.com/chart-sdk/react/stock-chart/appearance?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm): Colors for the stock chart are picked by the built-in theme, but each element of the stock chart can be customized by simple configuration options.
 * [Tooltip](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/stock-chart/default): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
 
 ### React Range Navigator
@@ -109,7 +109,7 @@ The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_
  The [React Chart Component](https://www.syncfusion.com/react-components/react-range-selector?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) is an  interface for selecting a small range from a large collection. It is commonly used in financial dashboards to filter a date range for data that needs to be visualized.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/react/documentation/range-navigator/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
+   <a href="https://help.syncfusion.com/chart-sdk/react/range-navigator/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/range-navigator/default">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-range-selector?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
@@ -132,7 +132,7 @@ The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_
  The [React Sparkline Component](https://www.syncfusion.com/react-components/react-sparkline?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) is a very small chart control drawn without axes or coordinates. The sparklines are easy to interpret and convey more information to users by visualizing data in a small amount of space.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/react/documentation/sparkline/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
+   <a href="https://help.syncfusion.com/chart-sdk/react/sparkline/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/sparkline/default">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-sparkline?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
@@ -154,7 +154,7 @@ The [React Charts](https://www.syncfusion.com/react-components/react-charts?utm_
 The [React Bullet Chart Component](https://www.syncfusion.com/react-components/react-bullet-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm) is an interface  to visually compare measures, similar to the commonly used bar chart. A bullet chart displays one or more measures and compares them with a target value.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/react/documentation/bullet-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
+   <a href="https://help.syncfusion.com/chart-sdk/react/bullet-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/bullet-chart/default">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-bullet-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
@@ -175,7 +175,7 @@ The [React Bullet Chart Component](https://www.syncfusion.com/react-components/r
 The [React Smith Chart Component](https://www.syncfusion.com/react-components/react-smith-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)  visualize data of high frequency circuit applications. It contains two sets of circles to plot parameters of transmission lines.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/react/documentation/smithchart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
+   <a href="https://help.syncfusion.com/chart-sdk/react/smithchart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm#/bootstrap5/smith-chart/default">Online demos</a> .
    <a href="https://www.syncfusion.com/react-components/react-smith-chart?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm">Learn more</a>
 </p>
@@ -256,8 +256,8 @@ Chart components are offered in following list of frameworks.
 
 ## Resources
 
-* [Documentation](https://ej2.syncfusion.com/react/documentation/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)
-* [AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/mcp-server/ai-coding-assistant/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)
+* [Documentation](https://help.syncfusion.com/chart-sdk/react/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)
+* [AI Coding Assistant](https://help.syncfusion.com/chart-sdk/react/mcp-server/ai-coding-assistant/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)
 * [Theme Studio](https://ej2.syncfusion.com/themestudio/?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)
 * [What's New](https://www.syncfusion.com/products/whatsnew/react?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)
 * [Road Map](https://www.syncfusion.com/products/roadmap/react?utm_source=npm&utm_medium=listing&utm_campaign=react-charts-npm)
