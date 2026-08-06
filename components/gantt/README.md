@@ -31,9 +31,9 @@ npm install
 npm run dev
 ```
 
-### Adding Syncfusion Gantt package
+### Adding Syncfusion Gantt and Theme Packages
 
-All Syncfusion react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the React Gantt package and the Tailwind 3 theme package, use the following command.
+All Syncfusion react packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install the React Gantt package and the Tailwind 3 theme package, use the following commands.
 
 ```bash
 npm install @syncfusion/ej2-react-gantt
