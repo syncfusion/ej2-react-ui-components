@@ -1,6 +1,8 @@
 # React Data Grid Component
 
-The [React Data Grid](https://www.syncfusion.com/react-components/react-data-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm) component is a powerful and flexible tool for displaying and manipulating tabular data. React Data Grid component is its ability to bind to a wide range of data sources, including arrays of JSON objects, `OData web services`, and the Syncfusion<sup>®</sup> [DataManager](https://ej2.syncfusion.com/react/documentation/data/data-binding?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm). This makes it easy to integrate the grid into your application and display data from a variety of sources. In addition to its data binding capabilities, the React Data Grid also offers support for features such as sorting, filtering, paging, grouping, editing, frozen rows and columns, virtualization, and more. These features allow you to easily manipulate and present large datasets in an efficient and user-friendly way.
+The [React Data Grid](https://www.syncfusion.com/react-components/react-data-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm) is a high‑performance and flexible component for displaying and managing tabular data. It supports binding to a wide range of data sources, including arrays of JSON objects, OData web services, REST APIs, GraphQL endpoints, SQL databases, and more. This makes it easy to integrate the grid into applications and present data from different backends.
+
+In addition to data binding, the React Data Grid includes features such as sorting, filtering, paging, grouping, editing, frozen rows and columns, virtualization, and more. These features help manage and present large datasets efficiently while maintaining ease of use.
 
 <p align="center">
   <a href="https://ej2.syncfusion.com/react/documentation/grid/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm">Getting Started</a> . 
