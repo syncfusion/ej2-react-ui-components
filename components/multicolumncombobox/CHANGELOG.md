@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 34.1.30 (2026-07-09)
-
-### MultiColumn ComboBox
-
-#### Bug Fixes
-
-- `#I846768` - The issue with "MultiColumnComboBox enter key triggers null change event in remote data and causes form refresh in form tag" has been resolved.
-
 ## 27.1.48 (2024-09-18)
 
 ### MultiColumn ComboBox

@@ -2,7 +2,97 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
+## 35.1.37 (2026-09-29)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- Resolved an issue where text selection was cleared when content outside the PDF Viewer was selected while text search was active.
+- Fixed an issue where annotations remained editable when opening annotation documents configured with isLock set to true in the annotation settings.
+- Resolved an issue where ink annotation coordinates shifted unexpectedly when the annotation path crossed over form fields.
+
+## 34.2.8 (2026-09-15)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I870587` - Fixed an issue where spaces were removed from reply comments when editing them again in the PDF Viewer comment panel.
+- Resolved an issue where list box field values were not rendered properly when the options contained string values.
+
+## 34.2.7 (2026-09-08)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I847797` - Resolved an issue where the color palette was misaligned in mobile rendering mode.
+- `#I869149` - Resolved an issue where the modified comments were not updated properly after importing annotations.
+
+## 34.2.6 (2026-09-01)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I866090` - Fixed an issue where the saved signature was not displayed in the signature toolbar after clearing the signature from the signature dialog.
+
+## 34.2.5 (2026-08-25)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I865449` - Resolved an issue where form fields added programmatically to non-rendered pages were not preserved after downloading the PDF document.
+- `#I862960` - Resolved an issue where pages were not rendered properly for tile rendered documents when the thumbnail pane was opened during initial loading.
+
+## 34.2.4 (2026-08-18)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I863561` - Resolved an issue where a script error occurred when clearing a signature field value programmatically.
+
+## 34.2.3 (2026-08-11)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I859551` - Resolved an issue where the reply comment date and time were updated during comment panel editing, even when no modifications were made to the comment.
+
+#### Breaking Changes
+
+- `#I860805` - Added support for programmatically creating, modifying, and deleting URL Link and Document Link annotations. As part of this change, link annotations are now included in the `annotationCollection` and are returned as annotations of type `Link`.
+
+## 34.2.2 (2026-08-05)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I856562` - Resolved an issue where the signature appearance was not rendered correctly in a rotated document after saving the PDF.
+
+## 34.1.33 (2026-07-28)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I854300` - Fixed an issue where annotations were not properly removed through the `deleteAnnotations` and `deleteAnnotationById` methods when the drawing operation was completed by releasing the mouse outside the PDF Viewer.
+- `#I856939` - Fixed an issue where HTML entities were not displayed correctly in the comment panel after exporting and importing annotations when `enableHtmlSanitizer` property was set to false.
+
+## 34.1.32 (2026-07-21)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I847797` - Resolved UI issues in annotation toolbar items when the browser was scrolled in mobile rendering mode.
+
+## 34.1.31 (2026-07-14)
 
 ### PDF Viewer
 
@@ -303,11 +393,11 @@
 
 - `#I628857` - Implemented Redaction support in the EJ2 PDF Viewer.
 - `#I249427`  - Implemented Extract Page support in [Page Organizer](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/javascript-es6/organize-pages/overview).
-- Enhanced [Print](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/javascript-es6/print) preview performance, achieving up to 80% improvement.
+- Enhanced [Print](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/javascript-es6/print/overview) preview performance, achieving up to 80% improvement.
 
 - `#I628857` - Implemented Redaction support in the EJ2 PDF Viewer.
 - `#I249427`  - Implemented Extract Page support in [Page Organizer](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/organize-pages/overview).
-- Enhanced [Print](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/print) preview performance, achieving up to 80% improvement.
+- Enhanced [Print](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/react/print/overview) preview performance, achieving up to 80% improvement.
 
 #### Bug Fixes
 
@@ -740,7 +830,7 @@
 
 -`#I695236` - The `validateFormFields` API will no longer be triggered after completing the required form fields and initiating `download` or `saveAsBlob`. To proceed with `download` or `saveAsBlob` without filling in the required fields, simply disable the `validateFormFields` event by setting [`enableFormFieldsValidation`](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#enableformfieldsvalidation) to false.
 
--`#I695236` - The `validateFormFields` API will no longer be triggered after completing the required form fields and initiating `download` or `saveAsBlob`. To proceed with `download` or `saveAsBlob` without filling in the required fields, simply disable the `validateFormFields` event by setting [`enableFormFieldsValidation`](https://ej2.syncfusion.com/react/documentation/api/pdfviewer/#enableformfieldsvalidation) to false.
+-`#I695236` - The `validateFormFields` API will no longer be triggered after completing the required form fields and initiating `download` or `saveAsBlob`. To proceed with `download` or `saveAsBlob` without filling in the required fields, simply disable the `validateFormFields` event by setting [`enableFormFieldsValidation`](https://ej2.syncfusion.com/react/documentation/api/pdfviewer/index-default#enableformfieldsvalidation) to false.
 
 ## 28.2.9 (2025-03-04)
 

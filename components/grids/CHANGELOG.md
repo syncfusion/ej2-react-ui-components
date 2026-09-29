@@ -2,18 +2,7 @@
 
 ## [Unreleased]
 
-## 34.1.30 (2026-07-09)
-
-### Grid
-
-#### Bug Fixes
-
-- `#I850753` - Resolved an issue where numeric filtering returned incorrect results when `matchCase` was disabled.
-- `#I845390` - Resolved an issue where `isCtrlPressed` incorrectly returned true during row selection when checkbox selection was enabled.
-- `#I841365` - Resolved an issue where the modal overlay was incorrectly positioned when the Grid dialog was appended to the body.
-- `#I847076` - Resolved an issue where the Menu filter for foreign key columns generated incorrect `OData` queries using the parent field instead of the configured `foreignKeyField`.
-
-## 34.1.29 (2026-07-06)
+## 35.1.37 (2026-09-29)
 
 ### Grid
 

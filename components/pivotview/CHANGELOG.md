@@ -2,24 +2,6 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#I848026` - Resolved an issue in Tabular mode with virtualization where row headers became misaligned when a value field was placed in the row axis and subtotals were displayed at the bottom.
-- `#I854067` - Resolved an issue where the Pivot Table height was calculated incorrectly when the chart was enabled and a predefined height was configured.
-
-## 34.1.30 (2026-07-09)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#I849413` - Resolved a Content Security Policy (CSP) violation caused by an inline context menu handler that generated console errors in the Pivot Table.
-- `#I848615` - Fixed an issue where the Pivot Table did not render correctly when refreshed with an empty data source.
-
 ## 31.1.17 (2025-09-05)
 
 ### Pivot Table

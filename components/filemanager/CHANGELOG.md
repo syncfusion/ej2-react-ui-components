@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
-
-### FileManager
-
-#### Bug Fixes
-
-- `#I853052` - Resolved an issue where keyboard focus was lost when using Tab or Shift+Tab after opening an empty folder in the File Manager Details View.
-
-## 34.1.29 (2026-07-06)
+## 35.1.37 (2026-09-29)
 
 ### FileManager
 

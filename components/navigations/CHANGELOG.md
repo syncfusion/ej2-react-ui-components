@@ -2,31 +2,7 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
-
-### TreeView
-
-#### Bug Fixes
-
-- `I953919` - Fixed an issue in the DropDownTree component where node expand/collapse actions did not work correctly.
-
-## 34.1.30 (2026-07-09)
-
-### Menu
-
-#### Bug Fixes
-
-- `#I846115` - The issue with " When navigating menu items using the up/down arrow keys, causing the parent scroll to activate" has been resolved.
-
-### Tab
-
-#### Bug Fixes
-
-- `#I832084` - Fixed an issue where tab content did not correctly fill the available height when `heightAdjustMode` was set to Fill and custom parent heights were applied.
-
-- `#I847098` - The issue with "Tab component overflow navigation buttons not updating after window resize" has been resolved.
-
-## 34.1.29 (2026-07-06)
+## 35.1.37 (2026-09-29)
 
 ### Tab
 

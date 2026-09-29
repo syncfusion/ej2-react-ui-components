@@ -2,7 +2,49 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
+## 35.1.37 (2026-09-29)
+
+### Schedule
+
+#### Features
+
+- `#FB58931` - Enhanced the Scheduler component to prevent unnecessary API requests during dynamic property changes, improving performance and reducing server load.
+
+- Provided support for the event buffer feature to display configured `bufferBefore` and `bufferAfter` time reservations around appointments. The feature is supported on `Day`, `Week`, `WorkWeek`, `TimelineDay`, `TimelineWeek`, and `TimelineWorkWeek` views when `enableBuffer` is enabled with `TimeScale`.
+
+- `#I618429` - Added the `groupIndex` value to the `dateHeaderTemplate` when the date header is grouped by resource. This enables resource-specific customization of date headers. Applicable only for `Day`, `Week`, `WorkWeek`, and `Agenda` views when resource-specific date headers are rendered.
+
+#### Bug fixes
+
+- `#I744881` - Fixed an issue where the virtual scroll position was not preserved during date navigation when `enablePersistence` was set to true.
+- `#I748623` - Fixed an issue where an empty `resourceHeaderTemplate` was rendered during scrolling when `enableLazyLoading` was set to true.
+- `#I753562` - Fixed an issue where appointment resizing did not work correctly when using timeline views with header rows.
+
+## 34.2.6 (2026-09-01)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I866290` - Fixed an issue where script error occurred when destroying the Schedule component and invoking a retained touch callback associated with the adaptive scroll container.
+
+## 34.2.4 (2026-08-18)
+
+### Schedule
+
+#### Bug fixes
+
+- Updated component name casing in telemetry to ensure consistent event tracking and reporting.
+
+## 34.2.3 (2026-08-11)
+
+### Schedule
+
+#### Bug fixes
+
+- `#F75047` - Fixed an issue where appointment resize throws a script error when the event target is the document.
+
+## 34.1.29 (2026-07-06)
 
 ### Schedule
 
@@ -13,10 +55,6 @@
 #### Bug fixes
 
 - `#I744881` - Fixed an issue where the virtual scroll position was not preserved during date navigation when `enablePersistence` was set to true.
-- `#I753562` - Fixed an issue where appointment resizing did not work correctly when using timeline views with header rows.
-
-- `#I744881` - Fixed an issue where the virtual scroll position was not preserved during date navigation when `enablePersistence` was set to true.
-- `#I748623` - Fixed an issue where an empty `resourceHeaderTemplate` was rendered during scrolling when `enableLazyLoading` was set to true.
 - `#I753562` - Fixed an issue where appointment resizing did not work correctly when using timeline views with header rows.
 
 ## 30.1.42 (2025-07-29)

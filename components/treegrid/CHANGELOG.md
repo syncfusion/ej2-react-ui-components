@@ -2,23 +2,7 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#I853975` - Resolved an issue where the hierarchy of filtered records are misplaced when dynamically changing hierarchy mode in filter settings.
-
-## 34.1.30 (2026-07-09)
-
-### Tree Grid
-
-#### Bug Fixes
-
-- `#F74180` - Resolved incorrect selection behavior in `autoCheckHierarchy` when clicking an intermediate header checkbox.
-
-## 34.1.29 (2026-07-06)
+## 35.1.37 (2026-09-29)
 
 ### Tree Grid
 

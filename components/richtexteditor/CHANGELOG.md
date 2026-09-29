@@ -2,24 +2,6 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#I843720` - Now, the underline color formatting will not be lost when pasting content from Microsoft word into Rich Text Editor.
-
-- `#I850246` - Now, after clicking the Remove Link toolbar button repeatedly the Rich Text Editor will be break.
-
-- `#I845091` - Now, the list content pasted from Microsoft Team will not jumps to incorrect position on backspace in Rich Text Editor.
-
-- `#I847452` - Now, the Rich Text Editor will not show a double cursor when switching from Code View to Preview mode in the Safari browser.
-
-- `#I838893` - Now, in iOS devices, the cursor remains correctly positioned after the mention chip when Backspace is pressed in the Rich Text Editor.
-
-- `#I851933` - Now, the second time pasted image will be saved to configured `saveUrl` properly in Rich Text Editor.
-
 ## 34.1.29 (2026-07-06)
 
 ### RichTextEditor

@@ -2,29 +2,13 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
+## 35.1.37 (2026-09-29)
 
-### ComboBox
-
-#### Bug Fixes
-
-- `#I838922` - Issue with "Change event not fired when AutoFill is enabled and item is selected via mouse" has been resolved.
-
-### DropDownList
-
-#### Bug fixes
-
-- `#I845518` - Issue with "Inconsistency in DropDownList component virtualization support during scrolling" has been resolved.
-
-### MultiSelect
+### Mention
 
 #### Bug Fixes
 
-- `#I852515` - Resolved an accessibility issue in the MultiSelect component that occurred when a value was selected in Box mode, improving compliance with accessibility standards and ensuring proper screen reader support.
-
--`#I848974` - Issue with "Maximum Call Stack Error Occurs When Binding Large Data Sets" has been resolved.
-
-- `#I850322` -  Issue with "MultiSelect Dropdown component input overrides chip text during early filtering with remote data source" has been resolved.
+- `#I761793` - The issue of editing in Firefox after utilizing the home and end keys following Mention item insertion has been successfully resolved.
 
 ## 28.2.9 (2025-03-04)
 
@@ -2246,15 +2230,7 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 34.1.29 (2026-07-06)
-
-### Mention
-
-#### Bug Fixes
-
-- `#I761793` - The issue of editing in Firefox after utilizing the home and end keys following Mention item insertion has been successfully resolved.
-
-## 29.1.33 (2025-03-25)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 29.1.33 (2025-03-25)
 
 ### Mention
 

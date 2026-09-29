@@ -2,17 +2,7 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I851973` - Resolved an accessibility issue in QueryBuilder that occurred when both `enableSeparateConnector` and `allowDragAndDrop` were enabled.
-
-- `#I852514` - Resolved an issue where QueryBuilder allowed multiple connector selections during keyboard navigation.
-
-## 34.1.29 (2026-07-06)
+## 35.1.37 (2026-09-29)
 
 ### QueryBuilder
 
