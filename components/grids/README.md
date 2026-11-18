@@ -5,7 +5,7 @@ The [React Data Grid](https://www.syncfusion.com/react-ui-components/react-grid?
 <p align="center">
   <a href="https://ej2.syncfusion.com/react/documentation/grid/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm">Getting Started</a> . 
   <a href="https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/bootstrap5/grid/overview">Online demos</a> . 
-  <a href="https://www.syncfusion.com/react-components/react-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm">Learn more</a>
+  <a href="https://www.syncfusion.com/react-components/react-data-grid?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm">Learn more</a>
 </p>
 
 ![React Grid Component](https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/react/react-datagrid.png)
@@ -13,7 +13,7 @@ The [React Data Grid](https://www.syncfusion.com/react-ui-components/react-grid?
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com">
-    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Bootstrap logo">
+    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Trusted by top brands">
   </a>
 </p>
 
@@ -35,7 +35,7 @@ Trusted by the world's leading companies
 
 ### Create a React Application
 
-You can use [`create-react-app`](https://github.com/facebookincubator/create-react-app) to setup applications. To create React app use the following command.
+You can use [`create-react-app`](https://github.com/facebookincubator/create-react-app) to setup applications" (npx create-react-app). To create React app use the following command.
 
 ```bash
 npx create-react-app my-app --template typescript
@@ -119,7 +119,7 @@ Grid component is also offered in the following list of frameworks.
 * [Selection](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/selection): Select rows or cells either by using checkbox or by simply clicking them. Select more than one row or cell by holding Ctrl or Shift or Command, or simply dragging the pointer over the cells, or programmatically.
 * [Hierarchical binding](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/hierarchy): Allows you to display table data in a hierarchical structure, allowing you to visualize the relationships between parent and child records in a clear and organized way.
 * [Templates](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-template): Using templates, users can create custom UI. It provides various template options to create custom headers, custom cell contents, custom rows, detail rows, toolbars, and custom editors for edit action.
-* [Row drag and drop](https://ej2.syncfusion.com/vue/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/row-drag-and-drop.html): The Grid rows can be reordered while drag and drop the rows within the grid. Also allows to drop the dragged rows another Grid or custom component.
+* [Row drag and drop](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/row-drag-drop): The Grid rows can be reordered while drag and drop the rows within the grid. Also allows to drop the dragged rows another Grid or custom component.
 * Columns: The column definitions are used as the dataSource schema in the Grid. This plays a vital role in rendering column values in the required format.
   * [Reordering](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/reorder): Allows you to rearrange the columns in the grid by dragging and dropping them to a new position in the column header row.
   * [Column chooser](https://ej2.syncfusion.com/react/demos/?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm#/material/grid/column-chooser): It provides a list of column names paired with check boxes that allow the visibility to be toggled on the fly.
@@ -161,7 +161,7 @@ Check the changelog [here](https://github.com/syncfusion/ej2-react-ui-components
 
 > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [React UI components](https://www.syncfusion.com/react-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
-> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1M revenue, 5 or fewer developers, 10 or fewer employees, never greater than $3M outside capital.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=react-grid-npm) for more info.
 

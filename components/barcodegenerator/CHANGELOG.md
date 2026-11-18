@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 35.1.40 (2026-10-13)
+
+### Barcode
+
+#### Bug Fixes
+
+- `#I877780` - Fixed QR code scanning failures caused by incorrect error correction codeword generation.
+
 ## 32.1.19 (2025-12-16)
 
 ### Barcode

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 35.1.46 (2026-11-11)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I886859` - Resolved an issue in the load-on-demand remote data TreeGrid where expanding one parent record incorrectly changed the expand icon state of other parent records.
+
 ## 35.1.37 (2026-09-29)
 
 ### Tree Grid

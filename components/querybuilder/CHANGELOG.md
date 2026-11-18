@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 35.1.42 (2026-10-27)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#F75945` - Issue with "In QueryBuilder MultiSelect with Virtualization Retains Filtered Results After Clearing Search Text" has been resolved.
+
 ## 35.1.37 (2026-09-29)
 
 ### QueryBuilder

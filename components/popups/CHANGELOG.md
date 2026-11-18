@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 35.1.42 (2026-10-27)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#I876183` - The issue where plain string content was unnecessarily processed using compile, resulting in a CSP unsafe-eval violation, has been resolved.
+
+## 35.1.39 (2026-10-07)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I873163` - Resolved an issue where overlay backdrops became transparent in Bootstrap 5.3 dark mode due to an incorrect overlay background color variable configuration.
+
 ## 21.1.35 (2023-03-23)
 
 ### Tooltip

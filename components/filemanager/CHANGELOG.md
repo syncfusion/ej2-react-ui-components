@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 35.1.41 (2026-10-20)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I873847` - Now, the navigation pane expand state is maintained correctly after drag-and-drop operations from the root folder in the File Manager.
+
 ## 35.1.37 (2026-09-29)
 
 ### FileManager

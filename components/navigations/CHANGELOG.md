@@ -4,6 +4,38 @@
 
 ## 35.1.46 (2026-11-11)
 
+### Menu
+
+#### Bug fixes
+
+- `#I885281` - An issue where orphaned `ul` elements remained in the DOM after destroying the Menu component has been fixed.
+
+## 35.1.43 (2026-11-03)
+
+### Menu
+
+#### Bug Fixes
+
+- `#F75911` - The issue with "Menu component traps keyboard focus when navigating with Tab" has been resolved.
+
+## 35.1.42 (2026-10-27)
+
+### Menu
+
+#### Bug Fixes
+
+- `#I881053` - Fixed an issue where hideItems method does not work correctly when other components render elements with the `e-menu-popup` class.
+
+## 35.1.40 (2026-10-13)
+
+### Ribbon
+
+#### Bug Fixes
+
+- `#I875122` - Now, Ribbon tab item color contrast works properly and meets accessibility requirements.
+
+## 35.1.39 (2026-10-07)
+
 ### Tab
 
 #### Bug Fixes

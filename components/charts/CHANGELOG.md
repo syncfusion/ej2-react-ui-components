@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+## 35.2.12 (2026-11-18)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I879710` - Fixed the issue where the date-time axis range padding and labels were incorrect when all the series were hidden.
+
+## 35.1.46 (2026-11-11)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I883721` - Fixed the issue where chart freezes due to an infinite loop in text wrap when axis title width is smaller than a single character.
+
+## 35.1.43 (2026-11-03)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I876923` - Fixed stack label vertical alignment issue on the last bar in a `StackingBar` chart when `plotOffsetTop` and `plotOffsetBottom` are applied.
+
 ## 35.1.37 (2026-09-29)
 
 ### Chart

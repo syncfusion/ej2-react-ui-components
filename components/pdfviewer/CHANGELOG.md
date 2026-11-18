@@ -2,6 +2,92 @@
 
 ## [Unreleased]
 
+## 35.2.12 (2026-11-18)
+
+### PDF Viewer
+
+#### Features
+
+- `#I579850`, `#646216`, `#664660`, `#721745` - Annotation Appearance Rendering Support - Introduced support for rendering annotations using their native PDF appearance streams through `PDFium`. This enhancement preserves the original visual fidelity of annotations and ensures consistent rendering across viewing, export, printing, and download workflows.
+- Text Field Format Actions Support - Added support for Adobe `AcroForm` text field format actions, enabling Number, Percentage, Special, and Arbitrary Mask formatting `behaviors` in PDF form fields. The feature introduces a typed JavaScript action model for format actions, a new `keyPressed` event for handling text field input, and support for parsing and applying Adobe Form Helper scripts while preserving document security by restricting arbitrary JavaScript execution.
+
+#### Bug Fixes
+
+- Fixed an issue where the redaction appearance fill color was not applied correctly and the comment panel icons were not displayed properly in a customer provided document.
+
+## 35.1.46 (2026-11-11)
+
+### PDF Viewer
+
+#### Features
+
+- `#I874867` - Barcode Form Field Support - Added support for the Barcode Form Field, including create, edit, and linked field capabilities, with barcode data configurable in XML, Tab Delimited, and Custom Value formats for `PDF417`, QR Code, and Data Matrix barcode types.
+- `#I336412`, `I348437`, `I370975`, `I537092`, `I562281`, `I619189`, `I631258` - Move Annotations Between Pages - Added support for moving annotations from one page to another within the PDF Viewer, enabling users to seamlessly reposition annotations across different pages in a document.
+- Freehand Highlight Annotation Support - Introduced support for Freehand Highlight annotations, enabling users to create natural freehand highlight strokes that preserve the visual behavior of traditional text highlights. The feature supports both desktop and mobile platforms and integrates seamlessly with existing annotation workflows, including selection, property modification, undo, redo, export, import, printing, and document reload operations.
+
+#### Bug Fixes
+
+- Resolved an issue where `AM/PM` localization was not applied correctly in the Comments panel in EJ2 PDF Viewer.
+
+## 35.1.43 (2026-11-03)
+
+### PDF Viewer
+
+#### Features
+
+- `#I395279` - Button Field Support - Introduced support for Button Fields, enabling users to create, configure, and interact with button form fields through the Form Designer. The feature provides both UI-based and API-based support for configuring button properties and defining associated actions, allowing seamless integration into form workflows.
+
+#### Bug Fixes
+
+- `#I879832` - Resolved an issue where annotations were duplicated when copying and pasting notes from the Comments panel.
+- `#I881863` - Fixed an issue where nested reply comments were not rendered correctly in the Comments panel.
+
+## 35.1.42 (2026-10-27)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I881317` - Resolved an issue where the author property was overwritten when loading existing annotation documents in the PDF Viewer.
+- `#I880134` - Fixed an issue where the PDF Viewer UI froze when loading documents containing a large number of annotations.
+
+## 35.1.41 (2026-10-20)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- Resolved the bundle size issue by excluding modules from the bundle based on module injection.
+
+## 35.1.40 (2026-10-13)
+
+### PDF Viewer
+
+#### Features
+
+- `I339110`, `I377237`, `I422287`, `I586838`, `I864515` - Cloud Border and Dashed Border Support – Introduced Cloud Border and Dashed Border support for shape, measurement, and Free Text annotations in the PDF Viewer, enabling users to create and customize annotations with advanced border styles. This feature supports both UI-based and programmatic creation and modification of cloud and dashed borders through APIs, while preserving the configured border appearance during import, export, save, download, and reload operations.
+- `I243864`, `I359436` - Free Text `Callout` Annotation Support – Introduced Free Text `Callout` Annotation support in the PDF Viewer, allowing users to create annotations where text is displayed within a text box and connected to a specific location in the document using a `callout` line. This feature supports annotation creation, editing, movement, resizing, and deletion, while ensuring consistent rendering and persistence across zooming, page rotation, save/load, download, and import/export operations.
+
+#### Bug Fixes
+
+- `#I875594` - Resolved an issue where type signature was not visible in a customer provided document in the PDF Viewer.
+
+#### Breaking Changes
+
+- The `enableLocalStorage` property is now set to true by default, causing the PDF Viewer to store its data in an internal collection rather than in session storage. To retain the previous behavior and store data in session storage, set the `enableLocalStorage` property to false.
+
+## 35.1.39 (2026-10-07)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I874062` - Resolved an issue where dropdown values were displayed as undefined when an option value was empty.
+
+#### Features
+
+- `I441430`, `I455993`, `I483451`, `I493343`, `I513361`, `I579427`, `I587654`, `I614418`, `I622360`, `I647832`, `I874841` - `DateTime` Picker - Introduced UI-level support for the `DateTime Picker`, enabling users to select and manage date and time values through an integrated user interface. Programmatic support for configuring and managing the `DateTime Picker` will be provided in upcoming releases.
+
 ## 35.1.37 (2026-09-29)
 
 ### PDF Viewer

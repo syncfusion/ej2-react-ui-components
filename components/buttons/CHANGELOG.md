@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 35.1.41 (2026-10-20)
+
+### Switch
+
+#### Bug Fixes
+
+- `#I874010`- Resolved the issue where the Switch component's visual state changed unexpectedly while inspecting elements in the browser developer tools.
+
 ## 35.1.37 (2026-09-29)
 
 ### Chip

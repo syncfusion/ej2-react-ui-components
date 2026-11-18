@@ -7,5 +7,6 @@ export * from './richtext-directive';
 export * from './columns-directive';
 export * from './ranges-directive';
 export * from './conditionalformats-directive';
+export * from './formcontrols-directive';
 export * from './definednames-directive';
 export * from './spreadsheet.component';

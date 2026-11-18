@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 35.1.41 (2026-10-20)
+
+### Dashboard Layout
+
+#### Bug Fixes
+
+- `#I1060758` - Resolved the issue with the dashboard `mobilePanelHeight` feature.
+
+## 35.1.39 (2026-10-07)
+
+### Dashboard Layout
+
+#### Bug Fixes
+
+- `#I864524` - Resolved an issue where panel content overlapped adjacent panels during window resizing and fixed the improper application of the `mobilePanelHeight` property in responsive layouts.
+
 ## 25.1.35 (2024-03-15)
 
 ### Timeline

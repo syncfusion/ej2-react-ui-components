@@ -2,6 +2,39 @@
 
 ## [Unreleased]
 
+## 35.1.46 (2026-11-11)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I888810` - Fixed an issue where the week number displayed in the Scheduler view did not match the week number shown in the date picker calendar popup when using the `FirstFourDayWeek` week rule for ISO week calculation.
+
+## 35.1.43 (2026-11-03)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I884464` - Fixed an issue where Scheduler events were not rendered when the event data source and template were updated simultaneously.
+
+## 35.1.42 (2026-10-27)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I881099` - Resolved an issue where the Year View More Events popup failed to open for appointments without resource assignments when resource grouping was enabled.
+- `#I880472` - Resolved an issue where Scheduler accessibility labels contained non-localized text and incorrect event announcement formatting, ensuring ARIA labels and resource-related announcements are properly localized.
+
+## 35.1.41 (2026-10-20)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I877371` - Fixed an issue in Firefox where, when appointments were copied and pasted consecutively, the previously copied appointment was pasted instead of the newly copied appointment.
+
 ## 35.1.37 (2026-09-29)
 
 ### Schedule

@@ -2,6 +2,35 @@
 
 ## [Unreleased]
 
+## 35.1.46 (2026-11-11)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I881010` - Issue with "selection misalignment due to a thick top border when using merged cells with lesser row height" has been resolved.
+
+## 35.1.41 (2026-10-20)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I876660` - Issue with "previously hidden file menu items become visible after adding a cell comment and opening the comments review pane" has been resolved.
+
+- `#I878460` - Issue with "nested `IF` formula text values containing a colon being incorrectly treated as cell ranges, resulting in a `#NAME!` error" has been resolved.
+
+## 35.1.40 (2026-10-13)
+
+### Spreadsheet
+
+#### Features
+
+- Introduced client-side import and export support in Spreadsheet, enabling to open and save `.xlsx` files directly on the client side without requiring server-side `openUrl` and `saveUrl` endpoints.
+
+- `#I360816`, `#I365689`, `#I365932`, `#I366919`, `#I375389`, `#I548553`, `#I556870`, `#I584322`, `#I649474`, `#I697090`, `#I733979`, `#I741136` - Introduced client-side import and export support in Spreadsheet, enabling to open and save `.xlsx` files directly on the client side without requiring server-side `openUrl` and `saveUrl` endpoints.
+- `#I865120` - Added support for Excel Form Controls, including Check Box, Combo Box (Drop-Down), and Option Button (Radio Button). This enhancement provides import and export support, client-side overlay rendering, editing and resizing capabilities, drag-and-drop interactions, copy/cut/paste operations, and support for Form Control properties such as Cell Link, Input Range, and Alt Text where applicable, ensuring improved compatibility and seamless user interaction with form controls in Spreadsheet documents.
+
 ## 32.1.20 (2025-12-23)
 
 ### Spreadsheet
@@ -1416,7 +1445,23 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.18 (2025-12-09)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 35.1.42 (2026-10-27)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I879093` - Issue with "Spreadsheet custom number formats containing the `General` format with unit text such as `mm`, `kN`, and `1/min` not being rendered correctly when opening an Excel workbook" has been resolved.
+
+## 35.1.39 (2026-10-07)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I872748` - Issue with "`VLOOKUP` formulas not being calculated properly when they contain inline table array values" has been resolved.
+
+## 31.2.18 (2025-12-09)
 
 ### Spreadsheet
 
