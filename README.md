@@ -1,8 +1,8 @@
-# Syncfusion React UI Components Library (Essential JS 2)
- Syncfusion React UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 70+ UI components that every applications will ever need.
+# Syncfusion React UI Component Suite
+ Syncfusion React UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 140+ React UI components that every applications will ever need.
  > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
 >
-> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1M revenue, 5 or fewer devs, 10 or fewer employees, never greater than $3M outside capital.
  ## Resources
  * [Getting Started](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start?utm_source=npm&utm_campaign=ej2-react-ui-components)
 * [View Online Demos](https://ej2.syncfusion.com/react/demos?utm_source=npm&utm_campaign=ej2-react-ui-components)
@@ -17,7 +17,7 @@
  ### Responsive and touch friendly
  All the components are touch friendly and render adaptively based on the device they are on to provide optimal usage experience on phones, tablets and desktops.
  ### Stunning built-in themes
- Pixel-perfect built-in themes are available in material, bootstrap and fabric design. In addition, it comes with Accessible high-contrast theme and an online tool "[Theme Studio](https://ej2.syncfusion.com/themestudio/)" to customize the provided built-in themes.
+ Pixel-perfect built-in themes are available in Material 3, Fluent 2, Bootstrap 5, Tailwind etc. In addition, it comes with Accessible high-contrast theme and an online tool "[Theme Studio](https://ej2.syncfusion.com/themestudio/)" to customize the provided built-in themes.
  ### Globalization simplified
  Easily build applications to be used by a global audience in various language and culture settings.
  ### Stay current
@@ -1193,7 +1193,7 @@
 </table>
 
  ## Supported Frameworks
- The Essential JS 2 is also offered in following list of frameworks.
+ The UI Component Suite is also offered in following list of frameworks.
  * [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-react-ui-components)
 * [Angular](https://www.syncfusion.com/angular-ui-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
 * [Vue.js](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
@@ -1208,5 +1208,5 @@
  Check the license detail [here](https://github.com/syncfusion/ej2-react-ui-components/blob/master/license).
  ## Changelog
  Check the changelog [here](https://ej2.syncfusion.com/react/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-react-ui-components)
-     © Copyright 2026 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.
-    The Syncfusion Essential Studio license and copyright applies to this distribution.
+     © Copyright 2026 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> UI Component Suite license and copyright applies to this distribution.
+    The Syncfusion UI Component Suite license and copyright applies to this distribution.
