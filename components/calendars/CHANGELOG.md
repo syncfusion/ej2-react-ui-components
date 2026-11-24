@@ -4,6 +4,44 @@
 
 ## 35.2.12 (2026-11-18)
 
+### Datepicker
+
+#### Bug Fixes
+
+- `#I886862` - The issue with "Hard-coded English ARIA labels are not localizable and popup dialogs use technical element IDs as accessible names" has been resolved.
+
+## 35.1.43 (2026-11-03)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I879831` - Fixed an issue where the `required` validation of the `FormValidator` was not triggered when the mask was enabled.
+
+## 35.1.41 (2026-10-20)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I873164` - Resolved the issue where the DatePicker icon appeared larger than expected.
+
+## 35.1.39 (2026-10-07)
+
+### Calendar
+
+#### Bug Fixes
+
+- `#I873164` - Resolved an issue where refreshing the calendar after navigating to another month reset the displayed view to the date derived from the value property instead of preserving the current navigated view.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I872999` - Resolved the issue where the DateRangePicker incorrectly marked the reactive form control as touched when opening the popup using the calendar icon.
+
+## 35.1.37 (2026-09-29)
+
 ### DateRangePicker
 
 #### Bug Fixes

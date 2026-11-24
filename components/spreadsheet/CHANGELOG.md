@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 35.2.13 (2026-11-24)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I890449` - Issue with "duplicate replies appearing in threaded comments during spreadsheet export" has been resolved.
+- `#I889330` - Issue with "number format being improperly inherited by formula cells when importing an Excel workbook" has been resolved.
+- `#I890196` - Issue with "focus not returning to the spreadsheet after interacting with ribbon buttons" has been resolved.
+- `#I890749` - Issue with "spreadsheet conditional formatting range is not shifted correctly when inserting columns using `insertColumn` API" has been resolved.
+
 ## 35.1.46 (2026-11-11)
 
 ### Spreadsheet
