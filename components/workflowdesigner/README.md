@@ -1,1 +1,1 @@
-Repositary for ej2-react-template
+# React Workflow Designer Component

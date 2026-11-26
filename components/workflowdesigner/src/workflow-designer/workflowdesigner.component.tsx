@@ -17,7 +17,6 @@ export class WorkflowDesignerComponent extends WorkflowDesigner {
     private getDefaultAttributes: Function;
     public initRenderCalled: boolean = false;
     private checkInjectedModules: boolean = true;
-    public directivekeys: { [key: string]: Object } = {'workflowSteps': 'workflowStep', 'workflowConnections': 'workflowConnection', 'stickyNotes': 'stickyNote'};
     private statelessTemplateProps: string[] = null;
     private templateProps: string[] = null;
     private immediateRender: boolean = true;

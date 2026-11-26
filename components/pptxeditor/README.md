@@ -1,11 +1,13 @@
 # React PPTX Editor Component
 
-The React PPTX Editor component is a feature-rich UI component that enables you to view, navigate, present, print, and export PowerPoint presentations (PPTX) online without requiring Microsoft PowerPoint or server-side rendering services. Also known as the presentation viewer and editor, it provides a high-performance, accurate solution for displaying PPTX files directly in the browser with an intuitive user experience. In the initial phase, the SDK is available as a viewer only. Editing capabilities will be considered in a future phase.
+The [React PPTX Editor](https://www.syncfusion.com/pptx-editor-sdk/react-pptx-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-pptx-editor-npm) component is a feature-rich UI component that enables you to view, navigate, present, print, and export PowerPoint presentations (PPTX) online without requiring Microsoft PowerPoint or server-side rendering services. Also known as the presentation viewer and editor, it provides a high-performance, accurate solution for displaying PPTX files directly in the browser with an intuitive user experience. In the initial phase, the SDK is available as a viewer only. Editing capabilities will be considered in a future phase.
 
 This example demonstrates how to open and view PowerPoint presentations directly in the browser with high performance and accuracy. The PPTX Editor provides an intuitive user experience for navigating slides, presenting content, printing presentations, and exporting files. It supports essential PowerPoint elements and is optimized to efficiently handle both small and large presentations.
 
 <p align="center">
-  <a href="https://help.syncfusion.com/document-processing/powerpoint/pptx-editor/react/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-pptx-editor-npm">Getting Started</a>  
+  <a href="https://help.syncfusion.com/document-processing/powerpoint/pptx-editor/react/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=react-pptx-editor-npm">Getting Started</a> .
+  <a href="https://document.syncfusion.com/demos/pptx-editor/react/?utm_source=npm&utm_medium=listing&utm_campaign=react-pptx-editor-npm#/tailwind3/pptx-editor/default.html">Online demos</a> . 
+  <a href="https://www.syncfusion.com/pptx-editor-sdk/react-pptx-editor?utm_source=npm&utm_medium=listing&utm_campaign=react-pptx-editor-npm">Learn more</a>   
 </p>
 
 <p align="center">
@@ -81,7 +83,7 @@ export default App;
 
 The PPTX Editor component is also offered in the following list of frameworks.
 
-| <img src="https://ej2.syncfusion.com/github/images/angular-new.svg" height="50" /><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angular&nbsp;&nbsp;&nbsp;&nbsp; | <img src="https://ej2.syncfusion.com/github/images/react.svg"  height="50" /><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;React&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <img src="https://ej2.syncfusion.com/github/images/react.svg" height="50" /><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" /><br/>&nbsp;&nbsp;ASP.NET&nbsp;Core&nbsp;&nbsp; | <img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" /><br/>&nbsp;&nbsp;ASP.NET&nbsp;MVC&nbsp;&nbsp; | 
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/pptx-editor-sdk/javascript-pptx-editor?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/pptx-editor-sdk/javascript-pptx-editor?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/angular-new.svg"  height="50" />](https://www.syncfusion.com/pptx-editor-sdk/angular-pptx-editor?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Angular](https://www.syncfusion.com/pptx-editor-sdk/angular-pptx-editor?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/pptx-editor-sdk/vue-pptx-editor?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/pptx-editor-sdk/vue-pptx-editor?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/pptx-editor-sdk/asp-net-core-pptx-editor?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/pptx-editor-sdk/asp-net-core-pptx-editor?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/pptx-editor-sdk/asp-net-mvc-pptx-editor?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/pptx-editor-sdk/asp-net-mvc-pptx-editor?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 
 ## Key features
@@ -99,6 +101,7 @@ The PPTX Editor component is also offered in the following list of frameworks.
 ## Resources
 
 * [Theme Studio](https://ej2.syncfusion.com/themestudio/)
+* [What's New](https://www.syncfusion.com/products/whatsnew/pptx-editor-sdk?utm_medium=listing&utm_source=github)
 * [Road Map](https://www.syncfusion.com/products/roadmap/pptx-editor-sdk?utm_medium=listing&utm_source=github)
 * [E-Books](https://www.syncfusion.com/ebooks?tag=react&utm_medium=listing&utm_source=github)
 
@@ -111,6 +114,47 @@ Product support is available through the following mediums.
 * [GitHub issues](https://github.com/syncfusion/ej2-react-ui-components/issues/new)
 * [Request feature or report bug](https://www.syncfusion.com/feedback/pptx-editor-sdk?utm_source=npm&utm_medium=listing&utm_campaign=react-pptx-editor-npm)
 * Live chat
+
+## Other Popular React Components
+
+Explore other popular Syncfusion<sup>®</sup> React components curated from UI components, standalone SDKs, and document solution suites.
+
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://www.syncfusion.com/react-components/react-data-grid">React DataGrid</a>
+        </td>
+        <td align="center">
+            <a href="https://www.syncfusion.com/react-components/react-charts">React Charts</a>
+        </td>
+        <td align="center">
+            <a href="https://www.syncfusion.com/react-components/react-file-manager">React File Manager</a>
+        </td>
+        <td align="center">
+            <a href="https://www.syncfusion.com/gantt-sdk/react-gantt-chart">React Gantt Chart</a>
+        </td>
+        <td align="center">
+            <a href="https://www.syncfusion.com/diagram-sdk/react-diagram">React Diagram</a>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <a href="https://www.syncfusion.com/scheduler-sdk/react-scheduler">React Scheduler</a>
+        </td>
+        <td align="center">
+            <a href="https://www.syncfusion.com/spreadsheet-editor-sdk/react-spreadsheet-editor">React Spreadsheet Editor</a>
+        </td>
+        <td align="center">
+            <a href="https://www.syncfusion.com/pdf-viewer-sdk/react-pdf-viewer">React PDF Viewer</a>
+        </td>
+        <td align="center">
+            <a href="https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor">React Rich Text Editor</a>
+        </td>
+        <td align="center">
+            <a href="https://www.syncfusion.com/react-components/react-maps-library">React Maps</a>
+        </td>
+    </tr>
+</table>
 
 ## Changelog
 
